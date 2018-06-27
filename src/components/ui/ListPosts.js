@@ -3,8 +3,8 @@ import { PropTypes } from 'prop-types'
 
 export default class ListPosts extends Component {
 
-    handleSelectPost = (id) => {
-        this.props.onSelect(id)
+    handleSelectPost = ({ id, tag }) => {
+        this.props.onSelect(id, tag)
     }
 
     render() {
@@ -19,7 +19,7 @@ export default class ListPosts extends Component {
             {
                 listPosts.map((post, i) => {
                     return(
-                        <p key={i} onClick={ () => this.handleSelectPost(post.id) } >{`${post.title}`}</p>
+                        <p key={i} onClick={ () => this.handleSelectPost(post) } >{`${post.title}`}</p>
                     )
                 })
             }

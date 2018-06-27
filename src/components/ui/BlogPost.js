@@ -4,10 +4,14 @@ import { PropTypes } from 'prop-types'
 export default class BlogPost extends Component {
 
     render() {
-        const { id } = this.props.match.params,
-            openingId = id || 1
+        const { id, tag } = this.props.match.params,
+            { posts } = this.context
 
-        const post = this.context.posts.find(post => post.id == openingId)
+        let post = id 
+            ? posts.find(post => post.id == id) 
+            : posts.filter(post => post.tag == tag)[0]
+        
+        if (!post) post = posts.find(post => post.id == 1)
 
         return(
             <div className='BlogPost'>

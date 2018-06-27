@@ -5,11 +5,11 @@ import BlogPost from './BlogPost'
 
 export default class Blog extends Component {
 
-    handleOpenPost = (id) => {
+    handleOpenPost = (id, tag) => {
         const { history, match } = this.props
 
         if (match.params.id) history.push(`${id}`)
-        else history.push(`${match.url}/${id}`)
+        else history.push(`${tag}/${id}`)
     }
 
     render() {
