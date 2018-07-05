@@ -4,9 +4,15 @@ import ListPosts from './ListPosts'
 export default class SideBlock extends Component {
 
     render() {
+        const { posts, match, openPost } = this.props
+
         return(
             <div className='SideBlock'>
-                <ListPosts match={ this.props.match } onSelect={ this.props.onOpenPost } /> 
+                <ListPosts 
+                    posts={ posts }
+                    match={ match } 
+                    openPost={ openPost } 
+                /> 
             </div>
         )
     }

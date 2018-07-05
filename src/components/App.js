@@ -11,7 +11,7 @@ export default class App extends Component {
     
     getChildContext() {
         return {
-           posts: this.props.state.posts
+           posts: this.props.state.articles
         }
     }
 

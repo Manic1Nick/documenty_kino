@@ -1,5 +1,5 @@
 {
-    "posts": [
+    "articles": [
         {
             "id": 1,
             "date": "2018-01-01",
@@ -37,6 +37,7 @@
             "date": "2018-01-10",
             "tag": "paragraphs",
             "title": "First paragraph",
+            "image": "http://i.piccy.info/i9/61f176b31d466426c6413dea7c546300/1530797798/295268/1255795/test4.jpg",
             "text": ""
         },
         {
@@ -44,6 +45,47 @@
             "date": "2018-01-11",
             "tag": "paragraphs",
             "title": "Second paragraph",
+            "image": "http://i.piccy.info/i9/41159e0724760549316ae9e8e2d22778/1530797839/173259/1255795/test5.jpg",
+            "text": ""
+        },
+        {
+            "id": 7,
+            "date": "2018-02-01",
+            "tag": "names",
+            "title": "Lars von Trier",
+            "image": "http://www.gstatic.com/tv/thumb/persons/70938/70938_v9_ba.jpg",
+            "text": "Lars von Trier (born Lars Trier; 30 April 1956)[3] is a Danish film director and screenwriter[4] with a prolific and controversial[5][6] career spanning almost four decades. His work is known for its genre and technical innovation;[7][8] confrontational examination of existential, social,[9][10] and political[5][11] issues; and his treatment of subjects[11] such as mercy,[12] sacrifice, and mental health."
+        },
+        {
+            "id": 8,
+            "date": "2018-02-02",
+            "tag": "names",
+            "title": "Martin Scorsese",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Martin_Scorsese_Berlinale_2010_%28cropped%29.jpg",
+            "text": "Martin Charles Scorsese (/skɔːrˈsɛsi/;[1] born November 17, 1942) is an American director, producer, screenwriter, actor and film historian, whose career spans more than 50 years. Scorsese's body of work addresses such themes as Sicilian-American identity, Roman Catholic concepts of guilt and redemption,[2] faith,[3] machismo, modern crime, and gang conflict. Many of his films are also known for their depiction of violence and liberal use of profanity."
+        },
+        {
+            "id": 9,
+            "date": "2018-02-10",
+            "tag": "live",
+            "title": "How I live",
+            "image": "http://i.piccy.info/i9/af257c9de58f3c5af797314564b6570b/1530797617/128439/1255795/test1.jpg",
+            "text": ""
+        },
+        {
+            "id": 10,
+            "date": "2018-02-11",
+            "tag": "live",
+            "title": "Where I live",
+            "image": "http://i.piccy.info/i9/814ad78144e263913294caff06279aa3/1530797654/181097/1255795/test2.jpg",
+            "text": ""
+        },
+        {
+            "id": 11,
+            "date": "2018-02-11",
+            "tag": "live",
+            "title": "Where I sleep",
+            "image": "http://i.piccy.info/i9/e8cfc257dc773ad89ef871cdeb48241b/1530797676/131337/1255795/test3.jpg",
             "text": ""
         }
     ]

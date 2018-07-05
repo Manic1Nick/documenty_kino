@@ -4,8 +4,8 @@ import sampleData from './initialState'
 import App from './components/App'
 import { HashRouter as Router} from 'react-router-dom'
 
-const state = (localStorage["redux-store-posts"]) ?
-    JSON.parse(localStorage["redux-store-posts"]) :
+const state = (localStorage["redux-store-documenty"]) ?
+    JSON.parse(localStorage["redux-store-documenty"]) :
     sampleData
 
 // const saveState = () => 

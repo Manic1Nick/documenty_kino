@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "ba9d5f5f015c731f21cd"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "b3ad9e394a7c7fe1d7e8"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -25486,13 +25486,13 @@ var Blog = function (_Component) {
             args[_key] = arguments[_key];
         }
 
-        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Blog.__proto__ || Object.getPrototypeOf(Blog)).call.apply(_ref, [this].concat(args))), _this), _this.handleOpenPost = function (id) {
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Blog.__proto__ || Object.getPrototypeOf(Blog)).call.apply(_ref, [this].concat(args))), _this), _this.handleOpenPost = function (id, tag) {
             var _this$props = _this.props,
                 history = _this$props.history,
                 match = _this$props.match;
 
 
-            if (match.params.id) history.push('' + id);else history.push(match.url + '/' + id);
+            if (match.params.id) history.push('' + id);else history.push(tag + '/' + id);
         }, _temp), _possibleConstructorReturn(_this, _ret);
     }
 
@@ -25560,12 +25560,20 @@ var BlogPost = function (_Component) {
     _createClass(BlogPost, [{
         key: 'render',
         value: function render() {
-            var id = this.props.match.params.id,
-                openingId = id || 1;
+            var _props$match$params = this.props.match.params,
+                id = _props$match$params.id,
+                tag = _props$match$params.tag,
+                posts = this.context.posts;
 
 
-            var post = this.context.posts.find(function (post) {
-                return post.id == openingId;
+            var post = id ? posts.find(function (post) {
+                return post.id == id;
+            }) : posts.filter(function (post) {
+                return post.tag == tag;
+            })[0];
+
+            if (!post) post = posts.find(function (post) {
+                return post.id == 1;
             });
 
             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -25777,8 +25785,11 @@ var ListPosts = function (_Component) {
             args[_key] = arguments[_key];
         }
 
-        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = ListPosts.__proto__ || Object.getPrototypeOf(ListPosts)).call.apply(_ref, [this].concat(args))), _this), _this.handleSelectPost = function (id) {
-            _this.props.onSelect(id);
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = ListPosts.__proto__ || Object.getPrototypeOf(ListPosts)).call.apply(_ref, [this].concat(args))), _this), _this.handleSelectPost = function (_ref2) {
+            var id = _ref2.id,
+                tag = _ref2.tag;
+
+            _this.props.onSelect(id, tag);
         }, _temp), _possibleConstructorReturn(_this, _ret);
     }
 
@@ -25801,7 +25812,7 @@ var ListPosts = function (_Component) {
                     return React.createElement(
                         'p',
                         { key: i, onClick: function onClick() {
-                                return _this2.handleSelectPost(post.id);
+                                return _this2.handleSelectPost(post);
                             } },
                         '' + post.title
                     );

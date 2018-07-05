@@ -1,33 +1,30 @@
 import { Component } from 'react'
-import { PropTypes } from 'prop-types'
+import classNames from 'classnames'
 
 export default class ListPosts extends Component {
 
-    handleSelectPost = ({ id, tag }) => {
-        this.props.onSelect(id, tag)
-    }
-
     render() {
-        const { tag } = this.props.match.params
-
-        const listPosts = tag 
-            ? this.context.posts.filter(post => post.tag == tag)
-            : this.context.posts
+        const { posts, match, openPost } = this.props
 
         return(
             <div className='ListPosts'>
             {
-                listPosts.map((post, i) => {
+                posts.map((post, i) => {
+                    let activeTitle = post.id === parseInt(match.params.id),
+                        classListItem = classNames('post-title', { activeTitle }),
+                        postTitle = activeTitle 
+                            ? <span><ion-icon name="return-right"></ion-icon>{post.title}</span> 
+                            : <span>{post.title}</span>
+
                     return(
-                        <p key={i} onClick={ () => this.handleSelectPost(post) } >{`${post.title}`}</p>
+                        <p key={i} 
+                            className={ classListItem } 
+                            onClick={ () => openPost(post.id) }
+                        >{ postTitle }</p>
                     )
                 })
             }
             </div>
         )
     }
-}
-
-ListPosts.contextTypes = {
-    posts: PropTypes.array
 }
