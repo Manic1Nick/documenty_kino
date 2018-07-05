@@ -6,6 +6,7 @@ import Blog from './ui/Blog'
 import FooterBlock from './ui/FooterBlock'
 
 import '../assets/styles/style.scss'
+import '../assets/styles/queries.scss'
 
 export default class App extends Component {
     

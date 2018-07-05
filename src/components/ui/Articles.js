@@ -30,7 +30,8 @@ export default class Articles extends Component {
     }
 
     render() {
-        const { posts, activePostIndex } = this.props
+        const { posts, activePostIndex } = this.props,
+            activePost = posts[activePostIndex] || {}
 
         return(
             <div className='Articles'>
@@ -38,7 +39,7 @@ export default class Articles extends Component {
                     onClick={ this.handleOpenPrev }
                 ></ion-icon>
 
-                <Article post={ posts[activePostIndex] || {} } />
+                <Article post={ activePost } />
                 
                 <ion-icon name="ios-arrow-forward" 
                     onClick={ this.handleOpenNext }

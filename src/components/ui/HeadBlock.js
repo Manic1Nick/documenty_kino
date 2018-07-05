@@ -21,16 +21,23 @@ export default class HeadBlock extends Component {
     
         return(
             <header>
-                <h1>Documenty</h1>                
-                <ul className="main-nav">
-                {
-                    LINKS.map((link, i) => 
-                        <li key={i}>
-                            <Link to={`/${link}/${defaultIds[link]}`}>[ {link} ]</Link>
-                        </li>
-                    )
-                }
-                </ul>
+                <div className='site-title'>
+                    <Link to={`/all/${defaultIds.all}`}>
+                        <h1>Documenty</h1>                
+                    </Link>
+                </div>
+                
+                <div className="main-nav">
+                    <ul className="links">
+                    {
+                        LINKS.map((link, i) => 
+                            <li key={i}>
+                                <Link to={`/${link}/${defaultIds[link]}`}>[ {link} ]</Link>
+                            </li>
+                        )
+                    }
+                    </ul>
+                </div>
             </header>
         )
     }
