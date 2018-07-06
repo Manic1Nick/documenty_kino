@@ -31,7 +31,9 @@ export default class Articles extends Component {
 
     render() {
         const { posts, activePostIndex } = this.props,
-            activePost = posts[activePostIndex] || {}
+            activePost = posts[activePostIndex]
+
+        if (!activePost) return null
 
         return(
             <div className='Articles'>
