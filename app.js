@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "27ecfc07b292f1e8d195"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "7a1405b107800882dbd9"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -25750,8 +25750,10 @@ var Articles = function (_Component) {
             var _props = this.props,
                 posts = _props.posts,
                 activePostIndex = _props.activePostIndex,
-                activePost = posts[activePostIndex] || {};
+                activePost = posts[activePostIndex];
 
+
+            if (!activePost) return null;
 
             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'div',
