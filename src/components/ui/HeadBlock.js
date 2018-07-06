@@ -9,12 +9,22 @@ export default class HeadBlock extends Component {
     render() {
         const { posts } = this.context
         
+        // let post = {}, 
+        //     defaultIds = { 
+        //         'all': posts[posts.length - 1].id 
+        //     }
+        
+        // for (let i = posts.length - 1; i >= 0; i--) {
+        //     post = posts[i]
+        //     if (!defaultIds[post.tag]) defaultIds[post.tag] = post.id
+        // }
+
         let post = {}, 
             defaultIds = { 
-                'all': posts[posts.length - 1].id 
+                'all': posts[0].id 
             }
         
-        for (let i = posts.length - 1; i >= 0; i--) {
+        for (let i = 0; i < posts.length - 1; i++) {
             post = posts[i]
             if (!defaultIds[post.tag]) defaultIds[post.tag] = post.id
         }

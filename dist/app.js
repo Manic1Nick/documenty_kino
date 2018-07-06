@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "f9627d9c5f3bfbb39a03"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "fcf67dbaa4357da34fdd"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -787,6 +787,21 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js!./src/assets/styles/queries.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/css-base.js")(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "/* Big tablets to 1200px (widths smaller than 1140px row) */\n/* Small tablets to big tablets from 768px to 1023px */\n/* Small phones to small tablets from 624px to 767px */\n@media only screen and (max-width: 767px) {\n  h1 {\n    font-size: 180%; }\n  .App header .main-nav ul li {\n    margin-left: 10px; }\n    .App header .main-nav ul li a {\n      font-size: 90%; }\n  .App .Blog .Articles {\n    width: 80%; }\n    .App .Blog .Articles ion-icon {\n      width: 30px; }\n    .App .Blog .Articles .Article {\n      padding: 1em; }\n      .App .Blog .Articles .Article .article-content .article-image {\n        width: 150px; }\n      .App .Blog .Articles .Article .article-content .article-text {\n        font-size: 80%; }\n      .App .Blog .Articles .Article .article-content .article-date {\n        font-size: 80%; }\n  .App .Blog .SideBlock {\n    width: 20%; }\n    .App .Blog .SideBlock .ListPosts .post-title {\n      font-size: 80%; }\n  .App footer {\n    height: 4%;\n    font-size: 60%; }\n    .App footer a {\n      margin-right: 10px; } }\n\n/* Small phones to small tablets from 481px to 623px */\n@media only screen and (max-width: 623px) {\n  .App .Blog .Articles .Article .article-content .article-title {\n    font-size: 80%; }\n  .App .Blog .Articles .Article .article-content .article-image {\n    width: 100px; }\n  .App .Blog .Articles .Article .article-content .article-date {\n    font-size: 60%; } }\n\n/* Small phones from 0px to 480px */\n@media only screen and (max-width: 480px) {\n  h1 {\n    font-size: 120%; }\n  .App header .main-nav ul li {\n    margin-left: 5px; }\n    .App header .main-nav ul li a {\n      font-size: 70%; }\n  .App .Blog .Articles {\n    width: 100%; }\n    .App .Blog .Articles ion-icon {\n      width: 20px; }\n    .App .Blog .Articles .Article {\n      padding: 0.5em; }\n      .App .Blog .Articles .Article .article-content .article-image {\n        width: 100px; }\n  .App .Blog .SideBlock {\n    display: none; }\n  .App footer {\n    height: 4%; }\n    .App footer .copyright-text {\n      font-size: 70%; }\n    .App footer .social-icons {\n      font-size: 100%; }\n      .App footer .social-icons a {\n        margin-right: 8px; } }\n", ""]);
+
+// exports
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js!./src/assets/styles/style.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -795,7 +810,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 exports.i(__webpack_require__("./node_modules/css-loader/index.js!./src/assets/styles/animate.css"), "");
 
 // module
-exports.push([module.i, "/*---------------------------------------------------------*/\n/* BASIC SETUP */\n/*---------------------------------------------------------*/\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box; }\n\nhtml,\nbody {\n  color: #555;\n  font-family: 'Pangolin', cursive;\n  font-weight: 300;\n  font-size: 20px;\n  overflow-x: hidden;\n  background-image: url(" + __webpack_require__("./src/assets/images/1920x1080-background.jpg") + ");\n  background-size: cover;\n  background-position: center;\n  height: 100vh; }\n\n/* TITLES \n==================================*/\nh1,\nh2,\nh3 {\n  font-weight: 300;\n  text-transform: uppercase; }\n\nh1 {\n  margin-top: 0;\n  /* color: #fff; */\n  font-size: 240%;\n  word-spacing: 4px;\n  letter-spacing: 1px; }\n\nh2 {\n  font-size: 180%;\n  word-spacing: 2px;\n  text-align: center;\n  margin-bottom: 30px;\n  letter-spacing: 1px; }\n\nh3 {\n  font-size: 110%;\n  margin-bottom: 15px; }\n\n/* LINKS \n==================================*/\n/* APP \n==================================*/\n.App {\n  width: 100vw;\n  height: 100%; }\n  .App header {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    width: 100%;\n    height: 5%;\n    padding: 2%; }\n    .App header h1 {\n      flex: 1; }\n    .App header ul {\n      flex: 1;\n      position: relative;\n      float: right;\n      list-style: none; }\n      .App header ul li {\n        display: inline-block;\n        margin-left: 30px; }\n        .App header ul li a {\n          position: relative;\n          display: inline-block; }\n        .App header ul li a:link,\n        .App header ul li a:visited {\n          padding: 8px 0;\n          color: #555;\n          text-decoration: none;\n          padding-bottom: 2px;\n          transition: font-weight 0.2s; }\n        .App header ul li a:hover,\n        .App header ul li a:active {\n          font-weight: bold; }\n        .App header ul li a:after {\n          content: '';\n          position: absolute;\n          left: 0;\n          right: 0;\n          top: 100%;\n          margin: 2px auto;\n          width: 15px;\n          height: 0;\n          border-bottom: 3px transparent;\n          transition: border-bottom 0.2s; }\n        .App header ul li a:hover:after,\n        .App header ul li a:active:after {\n          border-bottom: 3px dotted #132366ce; }\n  .App .Blog {\n    width: 100%;\n    height: 80%;\n    display: flex; }\n    .App .Blog .Articles {\n      width: 70%;\n      height: 70vh;\n      margin: 0 auto;\n      display: flex; }\n      .App .Blog .Articles ion-icon {\n        width: 40px;\n        height: auto;\n        opacity: 0.3;\n        transition: opacity 0.2s; }\n      .App .Blog .Articles ion-icon:hover {\n        opacity: 1;\n        cursor: pointer; }\n      .App .Blog .Articles ion-icon .disabled:hover {\n        opacity: 1;\n        cursor: pointer; }\n      .App .Blog .Articles .Article {\n        position: relative;\n        padding: 2em;\n        width: 100%; }\n        .App .Blog .Articles .Article .article-content h1 {\n          font-size: 1.8em;\n          text-align: center;\n          padding: 0.2em 0;\n          margin: 0;\n          border-top: 1px solid #ddd;\n          border-bottom: 2px solid #ddd; }\n        .App .Blog .Articles .Article .article-content p {\n          text-align: left; }\n        .App .Blog .Articles .Article .article-content .article-title,\n        .App .Blog .Articles .Article .article-content .article-image,\n        .App .Blog .Articles .Article .article-content .article-text,\n        .App .Blog .Articles .Article .article-content .article-date {\n          margin-bottom: 10px; }\n        .App .Blog .Articles .Article .article-content .article-title {\n          font-weight: bold; }\n        .App .Blog .Articles .Article .article-content .article-image {\n          float: left;\n          margin-right: 15px;\n          width: 200px;\n          height: auto; }\n        .App .Blog .Articles .Article .article-content .article-text {\n          font-style: italic; }\n    .App .Blog .SideBlock {\n      width: 20%;\n      height: 80%;\n      float: right; }\n      .App .Blog .SideBlock .ListPosts .post-title {\n        transition: font-weight font-style 0.2s; }\n      .App .Blog .SideBlock .ListPosts .activeTitle {\n        font-weight: bold;\n        font-style: italic; }\n        .App .Blog .SideBlock .ListPosts .activeTitle ion-icon {\n          color: #132366ce; }\n      .App .Blog .SideBlock .ListPosts:hover {\n        cursor: pointer; }\n  .App footer {\n    width: 100%;\n    height: 5%;\n    display: flex;\n    justify-content: space-between;\n    position: fixed;\n    bottom: 0;\n    left: 0;\n    background-color: #333;\n    padding: 5px;\n    font-size: 80%; }\n    .App footer a {\n      margin-right: 20px; }\n      .App footer a ion-icon {\n        transition: color 0.2s; }\n      .App footer a #fb:hover {\n        color: #3b5999; }\n      .App footer a #tw:hover {\n        color: #55acee; }\n      .App footer a #gp:hover {\n        color: #dd4b39; }\n      .App footer a #ig:hover {\n        color: #e4405f; }\n    .App footer a:link,\n    .App footer a:visited {\n      text-decoration: none;\n      border: 0;\n      color: #888;\n      transition: color 0.2s; }\n    .App footer a:link,\n    .App footer a:visited {\n      font-size: 160%; }\n    .App footer p {\n      color: #888;\n      text-align: center;\n      margin-top: 5px; }\n\n.animationIn {\n  animation: fadeIn 0.8s; }\n", ""]);
+exports.push([module.i, "/*---------------------------------------------------------*/\n/* BASIC SETUP */\n/*---------------------------------------------------------*/\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box; }\n\nhtml,\nbody {\n  color: #555;\n  font-family: 'Pangolin', cursive;\n  font-weight: 300;\n  font-size: 20px;\n  overflow-x: hidden;\n  background-image: url(" + __webpack_require__("./src/assets/images/1920x1080-background.jpg") + ");\n  background-size: cover;\n  background-position: center;\n  height: 100vh; }\n\nul {\n  list-style: none; }\n\n/* TITLES \n==================================*/\nh1,\nh2,\nh3 {\n  font-weight: 300;\n  text-transform: uppercase; }\n\nh1 {\n  margin-top: 0;\n  /* color: #fff; */\n  font-size: 240%;\n  word-spacing: 4px;\n  letter-spacing: 1px; }\n\nh2 {\n  font-size: 180%;\n  word-spacing: 2px;\n  text-align: center;\n  margin-bottom: 30px;\n  letter-spacing: 1px; }\n\nh3 {\n  font-size: 110%;\n  margin-bottom: 15px; }\n\n/* LINKS \n==================================*/\na:link,\na:visited {\n  text-decoration: none;\n  padding-bottom: 1px; }\n\n/* APP \n==================================*/\n.App {\n  width: 100vw;\n  height: 100%; }\n  .App header {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    width: 100%;\n    height: 5%;\n    padding: 2%; }\n    .App header .site-title,\n    .App header .main-nav {\n      flex: 1; }\n      .App header .site-title ul,\n      .App header .main-nav ul {\n        position: relative;\n        float: right; }\n        .App header .site-title ul li,\n        .App header .main-nav ul li {\n          display: inline-block;\n          margin-left: 30px; }\n          .App header .site-title ul li a,\n          .App header .main-nav ul li a {\n            position: relative;\n            display: inline-block; }\n          .App header .site-title ul li a:link,\n          .App header .site-title ul li a:visited,\n          .App header .main-nav ul li a:link,\n          .App header .main-nav ul li a:visited {\n            padding: 8px 0;\n            color: #555;\n            text-decoration: none;\n            padding-bottom: 2px;\n            transition: font-weight 0.2s; }\n          .App header .site-title ul li a:hover,\n          .App header .site-title ul li a:active,\n          .App header .main-nav ul li a:hover,\n          .App header .main-nav ul li a:active {\n            font-weight: bold; }\n          .App header .site-title ul li a:after,\n          .App header .main-nav ul li a:after {\n            content: '';\n            position: absolute;\n            left: 0;\n            right: 0;\n            top: 100%;\n            margin: 2px auto;\n            width: 15px;\n            height: 0;\n            border-bottom: 3px transparent;\n            transition: border-bottom 0.2s; }\n          .App header .site-title ul li a:hover:after,\n          .App header .site-title ul li a:active:after,\n          .App header .main-nav ul li a:hover:after,\n          .App header .main-nav ul li a:active:after {\n            border-bottom: 3px dotted #132366ce; }\n  .App .Blog {\n    width: 100%;\n    height: 80%;\n    display: flex; }\n    .App .Blog .Articles {\n      width: 75%;\n      max-height: 70vh;\n      margin: 0 auto;\n      display: flex; }\n      .App .Blog .Articles ion-icon {\n        width: 40px;\n        height: auto;\n        opacity: 0.3;\n        transition: opacity 0.2s; }\n      .App .Blog .Articles ion-icon:hover {\n        opacity: 1;\n        cursor: pointer; }\n      .App .Blog .Articles .Article {\n        position: relative;\n        padding: 1em;\n        width: 100%; }\n        .App .Blog .Articles .Article .article-content p {\n          text-align: left; }\n        .App .Blog .Articles .Article .article-content .article-title,\n        .App .Blog .Articles .Article .article-content .article-image,\n        .App .Blog .Articles .Article .article-content .article-text,\n        .App .Blog .Articles .Article .article-content .article-date {\n          margin-bottom: 10px; }\n        .App .Blog .Articles .Article .article-content .article-title {\n          font-weight: bold; }\n        .App .Blog .Articles .Article .article-content .article-image {\n          float: left;\n          margin-right: 15px;\n          width: 200px;\n          height: auto; }\n        .App .Blog .Articles .Article .article-content .article-text {\n          font-style: italic; }\n    .App .Blog .SideBlock {\n      width: 20%;\n      height: 80%;\n      float: right; }\n      .App .Blog .SideBlock .ListPosts .post-title {\n        transition: font-weight font-style 0.2s; }\n      .App .Blog .SideBlock .ListPosts .activeTitle {\n        font-weight: bold;\n        font-style: italic; }\n        .App .Blog .SideBlock .ListPosts .activeTitle ion-icon {\n          color: #132366ce; }\n      .App .Blog .SideBlock .ListPosts:hover {\n        cursor: pointer; }\n  .App footer {\n    width: 100%;\n    height: 5%;\n    display: flex;\n    justify-content: space-between;\n    position: fixed;\n    bottom: 0;\n    left: 0;\n    background-color: #333;\n    padding: 5px;\n    font-size: 80%; }\n    .App footer a {\n      margin-right: 20px; }\n      .App footer a ion-icon {\n        transition: color 0.2s; }\n      .App footer a #fb:hover {\n        color: #3b5999; }\n      .App footer a #tw:hover {\n        color: #55acee; }\n      .App footer a #gp:hover {\n        color: #dd4b39; }\n      .App footer a #ig:hover {\n        color: #e4405f; }\n    .App footer a:link,\n    .App footer a:visited {\n      text-decoration: none;\n      border: 0;\n      color: #888;\n      transition: color 0.2s; }\n    .App footer a:link,\n    .App footer a:visited {\n      font-size: 160%; }\n    .App footer p {\n      color: #888;\n      text-align: center;\n      margin-top: 5px; }\n\n.animationIn {\n  animation: fadeIn 0.8s; }\n", ""]);
 
 // exports
 
@@ -25414,6 +25429,38 @@ module.exports = __webpack_require__.p + "assets/1920x1080-background-6c1304767b
 
 /***/ }),
 
+/***/ "./src/assets/styles/queries.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__("./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js!./src/assets/styles/queries.scss");
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {"hmr":true}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__("./node_modules/style-loader/lib/addStyles.js")(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(true) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js!./src/assets/styles/queries.scss", function() {
+			var newContent = __webpack_require__("./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js!./src/assets/styles/queries.scss");
+			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
 /***/ "./src/assets/styles/style.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -25460,6 +25507,8 @@ if(true) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ui_FooterBlock__ = __webpack_require__("./src/components/ui/FooterBlock.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__assets_styles_style_scss__ = __webpack_require__("./src/assets/styles/style.scss");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__assets_styles_style_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__assets_styles_style_scss__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__assets_styles_queries_scss__ = __webpack_require__("./src/assets/styles/queries.scss");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__assets_styles_queries_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__assets_styles_queries_scss__);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -25467,6 +25516,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 
 
 
@@ -25690,7 +25740,8 @@ var Articles = function (_Component) {
         value: function render() {
             var _props = this.props,
                 posts = _props.posts,
-                activePostIndex = _props.activePostIndex;
+                activePostIndex = _props.activePostIndex,
+                activePost = posts[activePostIndex] || {};
 
 
             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -25699,7 +25750,7 @@ var Articles = function (_Component) {
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('ion-icon', { name: 'ios-arrow-back',
                     onClick: this.handleOpenPrev
                 }),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__Article__["a" /* default */], { post: posts[activePostIndex] || {} }),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__Article__["a" /* default */], { post: activePost }),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('ion-icon', { name: 'ios-arrow-forward',
                     onClick: this.handleOpenNext
                 })
@@ -25839,39 +25890,39 @@ Blog.contextTypes = {
 
 var FooterBlock = function FooterBlock() {
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        "footer",
+        'footer',
         null,
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "div",
-            null,
+            'div',
+            { className: 'copyright-text' },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                "p",
+                'p',
                 null,
-                "Copyright \xA9 2018 by Documenty. All rights reserved."
+                'Copyright \xA9 2018 by Documenty. All rights reserved.'
             )
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "div",
-            null,
+            'div',
+            { className: 'social-icons' },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                "a",
-                { href: "#" },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("ion-icon", { id: "fb", name: "logo-facebook" })
+                'a',
+                { href: '#' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('ion-icon', { id: 'fb', name: 'logo-facebook' })
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                "a",
-                { href: "#" },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("ion-icon", { id: "tw", name: "logo-twitter" })
+                'a',
+                { href: '#' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('ion-icon', { id: 'tw', name: 'logo-twitter' })
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                "a",
-                { href: "#" },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("ion-icon", { id: "gp", name: "logo-googleplus" })
+                'a',
+                { href: '#' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('ion-icon', { id: 'gp', name: 'logo-googleplus' })
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                "a",
-                { href: "#" },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("ion-icon", { id: "ig", name: "logo-instagram" })
+                'a',
+                { href: '#' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('ion-icon', { id: 'ig', name: 'logo-instagram' })
             )
         )
     );
@@ -25933,26 +25984,38 @@ var HeadBlock = function (_Component) {
                 'header',
                 null,
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'h1',
-                    null,
-                    'Documenty'
+                    'div',
+                    { className: 'site-title' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        __WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Link */],
+                        { to: '/all/' + defaultIds.all },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'h1',
+                            null,
+                            'Documenty'
+                        )
+                    )
                 ),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'ul',
+                    'div',
                     { className: 'main-nav' },
-                    LINKS.map(function (link, i) {
-                        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'li',
-                            { key: i },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                __WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Link */],
-                                { to: '/' + link + '/' + defaultIds[link] },
-                                '[ ',
-                                link,
-                                ' ]'
-                            )
-                        );
-                    })
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'ul',
+                        { className: 'links' },
+                        LINKS.map(function (link, i) {
+                            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                'li',
+                                { key: i },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    __WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Link */],
+                                    { to: '/' + link + '/' + defaultIds[link] },
+                                    '[ ',
+                                    link,
+                                    ' ]'
+                                )
+                            );
+                        })
+                    )
                 )
             );
         }
@@ -25976,8 +26039,7 @@ HeadBlock.contextTypes = {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_classnames__ = __webpack_require__("./node_modules/classnames/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_classnames___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_classnames__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListPostsItem__ = __webpack_require__("./src/components/ui/ListPostsItem.js");
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -25985,6 +26047,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 
 
 
@@ -26008,32 +26071,14 @@ var ListPosts = function (_Component) {
 
 
             return React.createElement(
-                'div',
+                'ul',
                 { className: 'ListPosts' },
                 posts.map(function (post, i) {
-                    var activeTitle = post.id === parseInt(match.params.id),
-                        classListItem = __WEBPACK_IMPORTED_MODULE_1_classnames___default()('post-title', { activeTitle: activeTitle }),
-                        postTitle = activeTitle ? React.createElement(
-                        'span',
-                        null,
-                        React.createElement('ion-icon', { name: 'return-right' }),
-                        post.title
-                    ) : React.createElement(
-                        'span',
-                        null,
-                        post.title
-                    );
-
-                    return React.createElement(
-                        'p',
-                        { key: i,
-                            className: classListItem,
-                            onClick: function onClick() {
-                                return openPost(post.id);
-                            }
-                        },
-                        postTitle
-                    );
+                    return React.createElement(__WEBPACK_IMPORTED_MODULE_1__ListPostsItem__["a" /* default */], { key: i,
+                        post: post,
+                        match: match,
+                        openPost: openPost
+                    });
                 })
             );
         }
@@ -26043,6 +26088,66 @@ var ListPosts = function (_Component) {
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
 
 /* harmony default export */ __webpack_exports__["a"] = (ListPosts);
+
+/***/ }),
+
+/***/ "./src/components/ui/ListPostsItem.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_classnames__ = __webpack_require__("./node_modules/classnames/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_classnames___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_classnames__);
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+var ListPostsItem = function (_Component) {
+    _inherits(ListPostsItem, _Component);
+
+    function ListPostsItem() {
+        _classCallCheck(this, ListPostsItem);
+
+        return _possibleConstructorReturn(this, (ListPostsItem.__proto__ || Object.getPrototypeOf(ListPostsItem)).apply(this, arguments));
+    }
+
+    _createClass(ListPostsItem, [{
+        key: 'render',
+        value: function render() {
+            var _props = this.props,
+                post = _props.post,
+                match = _props.match,
+                openPost = _props.openPost;
+
+
+            var activeTitle = post.id === parseInt(match.params.id),
+                classListItem = __WEBPACK_IMPORTED_MODULE_1_classnames___default()('post-title', { activeTitle: activeTitle });
+
+            return React.createElement(
+                'li',
+                { className: classListItem,
+                    onClick: function onClick() {
+                        return openPost(post.id);
+                    }
+                },
+                activeTitle ? React.createElement('ion-icon', { name: 'return-right' }) : null,
+                post.title
+            );
+        }
+    }]);
+
+    return ListPostsItem;
+}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
+
+/* harmony default export */ __webpack_exports__["a"] = (ListPostsItem);
 
 /***/ }),
 

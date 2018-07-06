@@ -18,12 +18,15 @@
 
     .App {
         header {
+            .site-title {
+                font-size: 80%;
+            }
             .main-nav {    
                 ul {        
                     li { 
                         margin-left: 10px;
 
-                        a { font-size: 90%; }
+                        a { font-size: 80%; }
                     }
                 }
             }
@@ -33,8 +36,10 @@
             .Articles {
                 width: 80%;
     
-                ion-icon {
-                    width: 30px;            
+                .arrow-buttons {
+                    width: 30px;
+
+                    ion-icon { width: 30px; }
                 }
     
                 .Article {
@@ -65,7 +70,7 @@
     
                 .ListPosts {
                     .post-title {
-                        font-size: 80%;
+                        font-size: 70%;
                     }
                 }
             }
@@ -88,8 +93,15 @@
     .App {
         .Blog {            
             .Articles {
+
+                .arrow-buttons {
+                    width: 20px;
+
+                    ion-icon { width: 20px; }
+                }
     
                 .Article { 
+                    padding: 0.5em;
 
                     .article-content {
                         .article-title {
@@ -101,6 +113,7 @@
                         }    
                 
                         .article-text {
+                            font-size: 70%;
                         }
                 
                         .article-date {
@@ -108,6 +121,16 @@
                         }
                     }
                 }        
+            }
+
+            .SideBlock {    
+                margin-left: 0.5em;
+
+                .ListPosts {
+                    .post-title {
+                        font-size: 60%;
+                    }
+                }
             }
         }
     }
@@ -135,10 +158,6 @@
         .Blog {            
             .Articles {
                 width: 100%;
-    
-                ion-icon {
-                    width: 20px;            
-                }
     
                 .Article {
                     padding: 0.5em;    

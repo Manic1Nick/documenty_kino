@@ -32,6 +32,10 @@ export default class Article extends Component {
         const { post } = this.props,
             { animateIn } = this.state
 
+        const postText = post.text
+            .split('\n')
+            .map((part, i) => <p key={i} className='text-paragraph'>{part}</p>)
+
         let classAnimateIn = classNames({ 'animationIn': animateIn })
 
         return(
@@ -39,7 +43,7 @@ export default class Article extends Component {
                 <div className={`article-content ${classAnimateIn}`}>
                     <h3 className='article-title'>{ post.title }</h3>
                     <img className='article-image' src={`${post.image}`} />
-                    <p className='article-text'>{ post.text }</p>
+                    <p className='article-text'>{ postText }</p>
                     <p className='article-date'>{ post.date }</p>
                 </div>
             </div>
