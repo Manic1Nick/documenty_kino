@@ -14,11 +14,9 @@ export default class ListPostsItem extends Component {
                 onClick={ () => openPost(post.id) }
             >
             {
-                activeTitle ? <ion-icon name="return-right"></ion-icon> : null
+                activeTitle ? <ion-icon name="videocam"></ion-icon> : null //return-right
             }
-            {
-                post.title
-            }
+            <span className='post-title-text'>{ post.title }</span>
             </li>
         )
     }

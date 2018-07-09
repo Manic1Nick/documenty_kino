@@ -9,10 +9,30 @@ import '../assets/styles/style.scss'
 import '../assets/styles/queries.scss'
 
 export default class App extends Component {
+
+    constructor() {
+        super()
+        this.state = { width: 0, height: 0 };
+        this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+    }
+
+    componentDidMount() {
+        this.updateWindowDimensions();
+        window.addEventListener('resize', this.updateWindowDimensions);
+    }
+      
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.updateWindowDimensions);
+    }
+      
+    updateWindowDimensions() {
+        this.setState({ width: window.innerWidth, height: window.innerHeight });
+    }
     
     getChildContext() {
         return {
-           posts: this.props.state.articles
+           posts: this.props.state.articles,
+           screenWidth: this.state.width
         }
     }
 
@@ -32,5 +52,6 @@ export default class App extends Component {
 }
 
 App.childContextTypes = {
-    posts: PropTypes.array
+    posts: PropTypes.array,
+    screenWidth: PropTypes.number
 }

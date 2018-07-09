@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "27ecfc07b292f1e8d195"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "2e2c3e540c2ff7de6632"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -795,7 +795,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "/* Big tablets to 1200px (widths smaller than 1140px row) */\n/* Small tablets to big tablets from 768px to 1023px */\n/* Small phones to small tablets from 624px to 767px */\n@media only screen and (max-width: 767px) {\n  h1 {\n    font-size: 180%; }\n  .App header .site-title {\n    font-size: 80%; }\n  .App header .main-nav ul li {\n    margin-left: 10px; }\n    .App header .main-nav ul li a {\n      font-size: 80%; }\n  .App .Blog .Articles {\n    width: 80%; }\n    .App .Blog .Articles .arrow-buttons {\n      width: 30px; }\n      .App .Blog .Articles .arrow-buttons ion-icon {\n        width: 30px; }\n    .App .Blog .Articles .Article {\n      padding: 1em; }\n      .App .Blog .Articles .Article .article-content .article-image {\n        width: 150px; }\n      .App .Blog .Articles .Article .article-content .article-text {\n        font-size: 80%; }\n      .App .Blog .Articles .Article .article-content .article-date {\n        font-size: 80%; }\n  .App .Blog .SideBlock {\n    width: 20%; }\n    .App .Blog .SideBlock .ListPosts .post-title {\n      font-size: 70%; }\n  .App footer {\n    height: 4%;\n    font-size: 60%; }\n    .App footer a {\n      margin-right: 10px; } }\n\n/* Small phones to small tablets from 481px to 623px */\n@media only screen and (max-width: 623px) {\n  .App .Blog .Articles .arrow-buttons {\n    width: 20px; }\n    .App .Blog .Articles .arrow-buttons ion-icon {\n      width: 20px; }\n  .App .Blog .Articles .Article {\n    padding: 0.5em; }\n    .App .Blog .Articles .Article .article-content .article-title {\n      font-size: 80%; }\n    .App .Blog .Articles .Article .article-content .article-image {\n      width: 100px; }\n    .App .Blog .Articles .Article .article-content .article-text {\n      font-size: 70%; }\n    .App .Blog .Articles .Article .article-content .article-date {\n      font-size: 60%; }\n  .App .Blog .SideBlock {\n    margin-left: 0.5em; }\n    .App .Blog .SideBlock .ListPosts .post-title {\n      font-size: 60%; } }\n\n/* Small phones from 0px to 480px */\n@media only screen and (max-width: 480px) {\n  h1 {\n    font-size: 120%; }\n  .App header .main-nav ul li {\n    margin-left: 5px; }\n    .App header .main-nav ul li a {\n      font-size: 70%; }\n  .App .Blog .Articles {\n    width: 100%; }\n    .App .Blog .Articles .Article {\n      padding: 0.5em; }\n      .App .Blog .Articles .Article .article-content .article-image {\n        width: 100px; }\n  .App .Blog .SideBlock {\n    display: none; }\n  .App footer {\n    height: 4%; }\n    .App footer .copyright-text {\n      font-size: 70%; }\n    .App footer .social-icons {\n      font-size: 100%; }\n      .App footer .social-icons a {\n        margin-right: 8px; } }\n", ""]);
+exports.push([module.i, "/* Big tablets to 1200px (widths smaller than 1140px row) */\n/* Small tablets to big tablets from 768px to 1023px */\n/* Small phones to small tablets from 624px to 767px */\n@media only screen and (max-width: 767px) {\n  h1 {\n    font-size: 180%; }\n  .App header .site-title {\n    font-size: 80%; }\n  .App header .main-nav ul li {\n    margin-left: 10px; }\n    .App header .main-nav ul li a {\n      font-size: 70%; }\n  .App .Blog .Articles {\n    width: 80%; }\n    .App .Blog .Articles .arrow-buttons {\n      width: 30px; }\n      .App .Blog .Articles .arrow-buttons ion-icon {\n        width: 30px; }\n    .App .Blog .Articles .Article {\n      padding: 1em; }\n      .App .Blog .Articles .Article .article-content .article-image img {\n        width: 150px; }\n      .App .Blog .Articles .Article .article-content .article-text {\n        font-size: 80%; }\n      .App .Blog .Articles .Article .article-content .article-date {\n        font-size: 80%; }\n  .App .Blog .SideBlock {\n    width: 20%; }\n    .App .Blog .SideBlock .ListPosts .post-title {\n      font-size: 70%; }\n  .App footer {\n    height: 4%;\n    font-size: 60%; }\n    .App footer a {\n      margin-right: 10px; } }\n\n/* Small phones to small tablets from 481px to 623px */\n@media only screen and (max-width: 623px) {\n  .App header .main-nav ul li {\n    margin-left: 2px; }\n    .App header .main-nav ul li a {\n      font-size: 60%; }\n  .App .Blog .Articles .arrow-buttons {\n    width: 20px; }\n    .App .Blog .Articles .arrow-buttons ion-icon {\n      width: 20px; }\n  .App .Blog .Articles .Article {\n    padding: 0.5em; }\n    .App .Blog .Articles .Article .article-content .article-title {\n      font-size: 80%; }\n    .App .Blog .Articles .Article .article-content .article-image img {\n      width: 100px; }\n    .App .Blog .Articles .Article .article-content .article-text {\n      font-size: 70%; }\n    .App .Blog .Articles .Article .article-content .article-date {\n      font-size: 60%; }\n  .App .Blog .SideBlock {\n    margin-left: 0.5em; }\n    .App .Blog .SideBlock .ListPosts .post-title {\n      font-size: 60%; } }\n\n/* Small phones from 0px to 480px */\n@media only screen and (max-width: 480px) {\n  h1 {\n    font-size: 120%; }\n  .App header .main-nav ul li {\n    margin-left: 5px; }\n    .App header .main-nav ul li a {\n      font-size: 70%; }\n  .App .Blog .Articles {\n    width: 100%; }\n    .App .Blog .Articles .Article {\n      padding: 0.5em; }\n      .App .Blog .Articles .Article .article-content .article-image img {\n        width: 100px; }\n  .App .Blog .SideBlock {\n    display: none; }\n  .App footer {\n    height: 4%; }\n    .App footer .copyright-text {\n      font-size: 70%; }\n    .App footer .social-icons {\n      font-size: 100%; }\n      .App footer .social-icons a {\n        margin-right: 8px; } }\n", ""]);
 
 // exports
 
@@ -808,10 +808,10 @@ exports.push([module.i, "/* Big tablets to 1200px (widths smaller than 1140px ro
 exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/css-base.js")(undefined);
 // imports
 exports.i(__webpack_require__("./node_modules/css-loader/index.js!./src/assets/styles/animate.css"), "");
-exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Comfortaa:300,400,700);", ""]);
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Arimo:400,400i,700,700i|Fira+Sans:300,400,700|Pacifico);", ""]);
 
 // module
-exports.push([module.i, "/*---------------------------------------------------------*/\n/* BASIC SETUP */\n/*---------------------------------------------------------*/\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box; }\n\nhtml,\nbody {\n  color: #555;\n  font-family: 'Comfortaa', cursive;\n  font-weight: 400;\n  font-size: 20px;\n  overflow-x: hidden;\n  background-image: url(" + __webpack_require__("./src/assets/images/1920x1080-background.jpg") + ");\n  background-size: cover;\n  background-position: center;\n  height: 100vh; }\n\nul {\n  list-style: none; }\n\n/* TITLES \n==================================*/\nh1,\nh2,\nh3 {\n  font-weight: 700;\n  text-transform: uppercase; }\n\nh1 {\n  margin-top: 0;\n  /* color: #fff; */\n  font-size: 240%;\n  word-spacing: 4px;\n  letter-spacing: 1px; }\n\nh2 {\n  font-size: 180%;\n  word-spacing: 2px;\n  text-align: center;\n  margin-bottom: 30px;\n  letter-spacing: 1px; }\n\nh3 {\n  font-size: 110%;\n  margin-bottom: 15px; }\n\n/* LINKS \n==================================*/\na:link,\na:visited {\n  text-decoration: none;\n  padding-bottom: 1px; }\n\n/* APP \n==================================*/\n.App {\n  width: 100vw;\n  height: 100%; }\n  .App header {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    width: 100%;\n    height: 5%;\n    padding: 2%; }\n    .App header .site-title {\n      flex: 2; }\n    .App header .main-nav {\n      flex: 3;\n      margin-right: 10px; }\n      .App header .main-nav ul {\n        position: relative;\n        float: right; }\n        .App header .main-nav ul li {\n          display: inline-block;\n          margin-left: 30px; }\n          .App header .main-nav ul li a {\n            position: relative;\n            display: inline-block; }\n          .App header .main-nav ul li a:link,\n          .App header .main-nav ul li a:visited {\n            padding: 8px 0;\n            color: #555;\n            text-decoration: none;\n            padding-bottom: 2px;\n            transition: font-weight 0.2s; }\n          .App header .main-nav ul li a:hover,\n          .App header .main-nav ul li a:active {\n            font-weight: bold; }\n          .App header .main-nav ul li a:after {\n            content: '';\n            position: absolute;\n            left: 0;\n            right: 0;\n            top: 100%;\n            margin: 2px auto;\n            width: 15px;\n            height: 0;\n            border-bottom: 3px transparent;\n            transition: border-bottom 0.2s; }\n          .App header .main-nav ul li a:hover:after,\n          .App header .main-nav ul li a:active:after {\n            border-bottom: 3px dotted #132366ce; }\n  .App .Blog {\n    width: 100%;\n    height: 80%;\n    padding-right: 10px;\n    display: flex; }\n    .App .Blog .Articles {\n      position: relative;\n      width: 80%;\n      margin: 0 auto;\n      display: flex; }\n      .App .Blog .Articles .arrow-buttons {\n        position: relative;\n        width: 40px;\n        height: auto; }\n        .App .Blog .Articles .arrow-buttons ion-icon {\n          position: fixed;\n          top: 15%;\n          width: 40px;\n          height: 80%;\n          opacity: 0.3;\n          transition: opacity 0.2s; }\n        .App .Blog .Articles .arrow-buttons ion-icon:hover {\n          opacity: 1;\n          cursor: pointer; }\n      .App .Blog .Articles .Article {\n        position: relative;\n        padding: 1em;\n        width: 100%; }\n        .App .Blog .Articles .Article .article-content p {\n          text-align: left; }\n        .App .Blog .Articles .Article .article-content .article-title,\n        .App .Blog .Articles .Article .article-content .article-image,\n        .App .Blog .Articles .Article .article-content .article-text,\n        .App .Blog .Articles .Article .article-content .article-date {\n          margin-bottom: 10px; }\n        .App .Blog .Articles .Article .article-content .article-title {\n          font-weight: bold; }\n        .App .Blog .Articles .Article .article-content .article-image {\n          float: left;\n          margin-right: 15px;\n          width: 200px;\n          height: auto; }\n        .App .Blog .Articles .Article .article-content .article-text {\n          font-size: 80%; }\n          .App .Blog .Articles .Article .article-content .article-text .text-paragraph {\n            margin-bottom: 10px; }\n        .App .Blog .Articles .Article .article-content .article-date {\n          margin-bottom: 2em; }\n    .App .Blog .SideBlock {\n      width: 20%;\n      height: 80%;\n      float: right;\n      margin-top: 2em;\n      margin-left: 1em; }\n      .App .Blog .SideBlock .ListPosts .post-title {\n        font-weight: 300;\n        font-size: 80%;\n        margin-bottom: 5px;\n        transition: font-weight font-style 0.2s; }\n      .App .Blog .SideBlock .ListPosts .activeTitle {\n        font-weight: bold;\n        font-style: italic; }\n        .App .Blog .SideBlock .ListPosts .activeTitle ion-icon {\n          color: #132366ce; }\n      .App .Blog .SideBlock .ListPosts:hover {\n        cursor: pointer; }\n  .App footer {\n    width: 100%;\n    height: 5%;\n    display: flex;\n    justify-content: space-between;\n    position: fixed;\n    bottom: 0;\n    left: 0;\n    background-color: #333;\n    padding: 5px;\n    font-size: 80%; }\n    .App footer a {\n      margin-right: 20px; }\n      .App footer a ion-icon {\n        transition: color 0.2s; }\n      .App footer a #fb:hover {\n        color: #3b5999; }\n      .App footer a #tw:hover {\n        color: #55acee; }\n      .App footer a #gp:hover {\n        color: #dd4b39; }\n      .App footer a #ig:hover {\n        color: #e4405f; }\n    .App footer a:link,\n    .App footer a:visited {\n      text-decoration: none;\n      border: 0;\n      color: #888;\n      transition: color 0.2s; }\n    .App footer a:link,\n    .App footer a:visited {\n      font-size: 160%; }\n    .App footer p {\n      color: #888;\n      text-align: center;\n      margin-top: 5px; }\n\n.animationIn {\n  animation: fadeIn 0.8s; }\n", ""]);
+exports.push([module.i, "/*---------------------------------------------------------*/\n/* BASIC SETUP */\n/*---------------------------------------------------------*/\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box; }\n\nhtml,\nbody {\n  color: #555;\n  font-family: 'Fira+Sans', cursive;\n  font-weight: 400;\n  font-size: 20px;\n  overflow-x: hidden;\n  background-image: url(" + __webpack_require__("./src/assets/images/1920x1080-background.jpg") + ");\n  background-size: cover;\n  background-position: center;\n  height: 100vh; }\n\nul {\n  list-style: none; }\n\n/* TITLES \n==================================*/\nh1,\nh2,\nh3 {\n  font-weight: 700;\n  font-family: 'Pacifico', cursive; }\n\nh1 {\n  margin-top: 0;\n  /* color: #fff; */\n  font-size: 240%;\n  word-spacing: 4px;\n  letter-spacing: 1px; }\n\nh2 {\n  font-size: 180%;\n  word-spacing: 2px;\n  text-align: center;\n  margin-bottom: 30px;\n  letter-spacing: 1px; }\n\nh3 {\n  font-size: 110%;\n  margin-bottom: 15px; }\n\n/* LINKS \n==================================*/\na:link,\na:visited {\n  text-decoration: none;\n  padding-bottom: 1px; }\n\n/* APP \n==================================*/\n.App {\n  width: 100vw;\n  height: 100%; }\n  .App header {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    width: 100%;\n    height: 5%;\n    padding: 2%; }\n    .App header .site-title {\n      flex: 2; }\n    .App header .main-nav {\n      flex: 3;\n      margin-right: 10px; }\n      .App header .main-nav ul {\n        position: relative;\n        float: right; }\n        .App header .main-nav ul li {\n          display: inline-block;\n          margin-left: 30px; }\n          .App header .main-nav ul li a {\n            position: relative;\n            display: inline-block; }\n          .App header .main-nav ul li a:link,\n          .App header .main-nav ul li a:visited {\n            padding: 8px 0;\n            color: #555;\n            text-decoration: none;\n            padding-bottom: 2px;\n            transition: font-weight 0.2s; }\n          .App header .main-nav ul li a:hover,\n          .App header .main-nav ul li a:active {\n            font-weight: bold; }\n          .App header .main-nav ul li a:after {\n            content: '';\n            position: absolute;\n            left: 0;\n            right: 0;\n            top: 100%;\n            margin: 2px auto;\n            width: 15px;\n            height: 0;\n            border-bottom: 3px transparent;\n            transition: border-bottom 0.2s; }\n          .App header .main-nav ul li a:hover:after,\n          .App header .main-nav ul li a:active:after {\n            border-bottom: 3px dotted #132366ce; }\n  .App .Blog {\n    width: 100%;\n    height: 80%;\n    padding-right: 10px;\n    display: flex; }\n    .App .Blog .Articles {\n      position: relative;\n      width: 80%;\n      margin: 0 auto;\n      display: flex; }\n      .App .Blog .Articles .arrow-buttons {\n        position: relative;\n        width: 40px;\n        height: auto; }\n        .App .Blog .Articles .arrow-buttons ion-icon {\n          position: fixed;\n          top: 15%;\n          width: 40px;\n          height: 80%;\n          opacity: 0.3;\n          transition: opacity 0.2s; }\n        .App .Blog .Articles .arrow-buttons ion-icon:hover {\n          opacity: 1;\n          cursor: pointer; }\n      .App .Blog .Articles .Article {\n        position: relative;\n        padding: 1em;\n        width: 100%; }\n        .App .Blog .Articles .Article .article-content p {\n          text-align: left; }\n        .App .Blog .Articles .Article .article-content .article-title,\n        .App .Blog .Articles .Article .article-content .article-image,\n        .App .Blog .Articles .Article .article-content .article-text,\n        .App .Blog .Articles .Article .article-content .article-date {\n          margin-bottom: 10px; }\n        .App .Blog .Articles .Article .article-content .article-title {\n          font-weight: bold; }\n        .App .Blog .Articles .Article .article-content .article-image {\n          text-align: center; }\n          .App .Blog .Articles .Article .article-content .article-image img {\n            width: 200px;\n            height: auto; }\n        .App .Blog .Articles .Article .article-content .article-text {\n          font-size: 80%; }\n          .App .Blog .Articles .Article .article-content .article-text .text-paragraph {\n            margin-bottom: 10px; }\n        .App .Blog .Articles .Article .article-content .article-date {\n          margin-bottom: 2em;\n          float: right;\n          font-size: 80%;\n          font-style: italic; }\n    .App .Blog .SideBlock {\n      width: 20%;\n      height: 80%;\n      float: right;\n      margin-top: 2em;\n      margin-left: 1em; }\n      .App .Blog .SideBlock .ListPosts .post-title {\n        font-weight: 300;\n        font-size: 80%;\n        margin-bottom: 5px;\n        transition: font-weight font-style 0.2s; }\n      .App .Blog .SideBlock .ListPosts .activeTitle {\n        font-weight: bold;\n        font-style: italic; }\n        .App .Blog .SideBlock .ListPosts .activeTitle ion-icon {\n          color: #132366ce;\n          margin-right: 5px; }\n      .App .Blog .SideBlock .ListPosts:hover {\n        cursor: pointer; }\n  .App footer {\n    width: 100%;\n    height: 5%;\n    display: flex;\n    justify-content: space-between;\n    position: fixed;\n    bottom: 0;\n    left: 0;\n    background-color: #333;\n    padding: 5px;\n    font-size: 80%; }\n    .App footer a {\n      margin-right: 20px; }\n      .App footer a ion-icon {\n        transition: color 0.2s; }\n      .App footer a #fb:hover {\n        color: #3b5999; }\n      .App footer a #tw:hover {\n        color: #55acee; }\n      .App footer a #gp:hover {\n        color: #dd4b39; }\n      .App footer a #ig:hover {\n        color: #e4405f; }\n    .App footer a:link,\n    .App footer a:visited {\n      text-decoration: none;\n      border: 0;\n      color: #888;\n      transition: color 0.2s; }\n    .App footer a:link,\n    .App footer a:visited {\n      font-size: 160%; }\n    .App footer p {\n      color: #888;\n      text-align: center;\n      margin-top: 5px; }\n\n.animationIn {\n  animation: fadeIn 0.8s; }\n", ""]);
 
 // exports
 
@@ -19693,6 +19693,261 @@ if (process.env.NODE_ENV === 'production') {
 
 /***/ }),
 
+/***/ "./node_modules/react-dropdown/dist/index.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__("./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__("./node_modules/react-dom/index.js");
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+var _classnames = __webpack_require__("./node_modules/classnames/index.js");
+
+var _classnames2 = _interopRequireDefault(_classnames);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var DEFAULT_PLACEHOLDER_STRING = 'Select...';
+
+var Dropdown = function (_Component) {
+  _inherits(Dropdown, _Component);
+
+  function Dropdown(props) {
+    _classCallCheck(this, Dropdown);
+
+    var _this = _possibleConstructorReturn(this, (Dropdown.__proto__ || Object.getPrototypeOf(Dropdown)).call(this, props));
+
+    _this.state = {
+      selected: props.value || {
+        label: typeof props.placeholder === 'undefined' ? DEFAULT_PLACEHOLDER_STRING : props.placeholder,
+        value: ''
+      },
+      isOpen: false
+    };
+    _this.mounted = true;
+    _this.handleDocumentClick = _this.handleDocumentClick.bind(_this);
+    _this.fireChangeEvent = _this.fireChangeEvent.bind(_this);
+    return _this;
+  }
+
+  _createClass(Dropdown, [{
+    key: 'componentWillReceiveProps',
+    value: function componentWillReceiveProps(newProps) {
+      if (newProps.value && newProps.value !== this.state.selected) {
+        this.setState({ selected: newProps.value });
+      } else if (!newProps.value) {
+        this.setState({ selected: {
+            label: typeof newProps.placeholder === 'undefined' ? DEFAULT_PLACEHOLDER_STRING : newProps.placeholder,
+            value: ''
+          } });
+      }
+    }
+  }, {
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      document.addEventListener('click', this.handleDocumentClick, false);
+      document.addEventListener('touchend', this.handleDocumentClick, false);
+    }
+  }, {
+    key: 'componentWillUnmount',
+    value: function componentWillUnmount() {
+      this.mounted = false;
+      document.removeEventListener('click', this.handleDocumentClick, false);
+      document.removeEventListener('touchend', this.handleDocumentClick, false);
+    }
+  }, {
+    key: 'handleMouseDown',
+    value: function handleMouseDown(event) {
+      if (this.props.onFocus && typeof this.props.onFocus === 'function') {
+        this.props.onFocus(this.state.isOpen);
+      }
+      if (event.type === 'mousedown' && event.button !== 0) return;
+      event.stopPropagation();
+      event.preventDefault();
+
+      if (!this.props.disabled) {
+        this.setState({
+          isOpen: !this.state.isOpen
+        });
+      }
+    }
+  }, {
+    key: 'setValue',
+    value: function setValue(value, label) {
+      var newState = {
+        selected: {
+          value: value,
+          label: label
+        },
+        isOpen: false
+      };
+      this.fireChangeEvent(newState);
+      this.setState(newState);
+    }
+  }, {
+    key: 'fireChangeEvent',
+    value: function fireChangeEvent(newState) {
+      if (newState.selected !== this.state.selected && this.props.onChange) {
+        this.props.onChange(newState.selected);
+      }
+    }
+  }, {
+    key: 'renderOption',
+    value: function renderOption(option) {
+      var _classes;
+
+      var classes = (_classes = {}, _defineProperty(_classes, this.props.baseClassName + '-option', true), _defineProperty(_classes, option.className, !!option.className), _defineProperty(_classes, 'is-selected', option === this.state.selected), _classes);
+
+      var optionClass = (0, _classnames2.default)(classes);
+
+      var value = option.value;
+      if (typeof value === 'undefined') {
+        value = option.label || option;
+      }
+      var label = option.label || option.value || option;
+
+      return _react2.default.createElement(
+        'div',
+        {
+          key: value,
+          className: optionClass,
+          onMouseDown: this.setValue.bind(this, value, label),
+          onClick: this.setValue.bind(this, value, label) },
+        label
+      );
+    }
+  }, {
+    key: 'buildMenu',
+    value: function buildMenu() {
+      var _this2 = this;
+
+      var _props = this.props,
+          options = _props.options,
+          baseClassName = _props.baseClassName;
+
+      var ops = options.map(function (option) {
+        if (option.type === 'group') {
+          var groupTitle = _react2.default.createElement(
+            'div',
+            { className: baseClassName + '-title' },
+            option.name
+          );
+          var _options = option.items.map(function (item) {
+            return _this2.renderOption(item);
+          });
+
+          return _react2.default.createElement(
+            'div',
+            { className: baseClassName + '-group', key: option.name },
+            groupTitle,
+            _options
+          );
+        } else {
+          return _this2.renderOption(option);
+        }
+      });
+
+      return ops.length ? ops : _react2.default.createElement(
+        'div',
+        { className: baseClassName + '-noresults' },
+        'No options found'
+      );
+    }
+  }, {
+    key: 'handleDocumentClick',
+    value: function handleDocumentClick(event) {
+      if (this.mounted) {
+        if (!_reactDom2.default.findDOMNode(this).contains(event.target)) {
+          if (this.state.isOpen) {
+            this.setState({ isOpen: false });
+          }
+        }
+      }
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _classNames, _classNames2, _classNames3, _classNames4, _classNames5;
+
+      var _props2 = this.props,
+          baseClassName = _props2.baseClassName,
+          controlClassName = _props2.controlClassName,
+          placeholderClassName = _props2.placeholderClassName,
+          menuClassName = _props2.menuClassName,
+          arrowClassName = _props2.arrowClassName,
+          className = _props2.className;
+
+
+      var disabledClass = this.props.disabled ? 'Dropdown-disabled' : '';
+      var placeHolderValue = typeof this.state.selected === 'string' ? this.state.selected : this.state.selected.label;
+
+      var dropdownClass = (0, _classnames2.default)((_classNames = {}, _defineProperty(_classNames, baseClassName + '-root', true), _defineProperty(_classNames, className, !!className), _defineProperty(_classNames, 'is-open', this.state.isOpen), _classNames));
+      var controlClass = (0, _classnames2.default)((_classNames2 = {}, _defineProperty(_classNames2, baseClassName + '-control', true), _defineProperty(_classNames2, controlClassName, !!controlClassName), _defineProperty(_classNames2, disabledClass, !!disabledClass), _classNames2));
+      var placeholderClass = (0, _classnames2.default)((_classNames3 = {}, _defineProperty(_classNames3, baseClassName + '-placeholder', true), _defineProperty(_classNames3, placeholderClassName, !!placeholderClassName), _classNames3));
+      var menuClass = (0, _classnames2.default)((_classNames4 = {}, _defineProperty(_classNames4, baseClassName + '-menu', true), _defineProperty(_classNames4, menuClassName, !!menuClassName), _classNames4));
+      var arrowClass = (0, _classnames2.default)((_classNames5 = {}, _defineProperty(_classNames5, baseClassName + '-arrow', true), _defineProperty(_classNames5, arrowClassName, !!arrowClassName), _classNames5));
+
+      var value = _react2.default.createElement(
+        'div',
+        { className: placeholderClass },
+        placeHolderValue
+      );
+      var menu = this.state.isOpen ? _react2.default.createElement(
+        'div',
+        { className: menuClass },
+        this.buildMenu()
+      ) : null;
+
+      return _react2.default.createElement(
+        'div',
+        { className: dropdownClass },
+        _react2.default.createElement(
+          'div',
+          { className: controlClass, onMouseDown: this.handleMouseDown.bind(this), onTouchEnd: this.handleMouseDown.bind(this) },
+          value,
+          _react2.default.createElement('span', { className: arrowClass })
+        ),
+        menu
+      );
+    }
+  }]);
+
+  return Dropdown;
+}(_react.Component);
+
+Dropdown.defaultProps = { baseClassName: 'Dropdown' };
+exports.default = Dropdown;
+
+
+/***/ }),
+
+/***/ "./node_modules/react-dropdown/style.css":
+/***/ (function(module, exports) {
+
+throw new Error("Module parse failed: Unexpected token (1:0)\nYou may need an appropriate loader to handle this file type.\n| .Dropdown-root {\n|   position: relative;\n| }");
+
+/***/ }),
+
 /***/ "./node_modules/react-router-dom/es/BrowserRouter.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -25534,14 +25789,35 @@ var App = function (_Component) {
     function App() {
         _classCallCheck(this, App);
 
-        return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
+        var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this));
+
+        _this.state = { width: 0, height: 0 };
+        _this.updateWindowDimensions = _this.updateWindowDimensions.bind(_this);
+        return _this;
     }
 
     _createClass(App, [{
+        key: 'componentDidMount',
+        value: function componentDidMount() {
+            this.updateWindowDimensions();
+            window.addEventListener('resize', this.updateWindowDimensions);
+        }
+    }, {
+        key: 'componentWillUnmount',
+        value: function componentWillUnmount() {
+            window.removeEventListener('resize', this.updateWindowDimensions);
+        }
+    }, {
+        key: 'updateWindowDimensions',
+        value: function updateWindowDimensions() {
+            this.setState({ width: window.innerWidth, height: window.innerHeight });
+        }
+    }, {
         key: 'getChildContext',
         value: function getChildContext() {
             return {
-                posts: this.props.state.articles
+                posts: this.props.state.articles,
+                screenWidth: this.state.width
             };
         }
     }, {
@@ -25570,7 +25846,8 @@ var App = function (_Component) {
 
 
 App.childContextTypes = {
-    posts: __WEBPACK_IMPORTED_MODULE_1_prop_types__["PropTypes"].array
+    posts: __WEBPACK_IMPORTED_MODULE_1_prop_types__["PropTypes"].array,
+    screenWidth: __WEBPACK_IMPORTED_MODULE_1_prop_types__["PropTypes"].number
 };
 
 /***/ }),
@@ -25654,18 +25931,26 @@ var Article = function (_Component) {
                     'div',
                     { className: 'article-content ' + classAnimateIn },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'h3',
+                        'div',
                         { className: 'article-title' },
-                        post.title
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'h3',
+                            null,
+                            post.title
+                        )
                     ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: 'article-image', src: '' + post.image }),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'p',
+                        'div',
+                        { className: 'article-image' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '' + post.image })
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'div',
                         { className: 'article-text' },
                         postText
                     ),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'p',
+                        'div',
                         { className: 'article-date' },
                         post.date
                     )
@@ -25750,8 +26035,10 @@ var Articles = function (_Component) {
             var _props = this.props,
                 posts = _props.posts,
                 activePostIndex = _props.activePostIndex,
-                activePost = posts[activePostIndex] || {};
+                activePost = posts[activePostIndex];
 
+
+            if (!activePost) return null;
 
             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'div',
@@ -25959,6 +26246,12 @@ var FooterBlock = function FooterBlock() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_router_dom__ = __webpack_require__("./node_modules/react-router-dom/es/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__("./node_modules/prop-types/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_classnames__ = __webpack_require__("./node_modules/classnames/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_classnames___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_classnames__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_dropdown__ = __webpack_require__("./node_modules/react-dropdown/dist/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_dropdown___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_react_dropdown__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_react_dropdown_style_css__ = __webpack_require__("./node_modules/react-dropdown/style.css");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_react_dropdown_style_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_react_dropdown_style_css__);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -25971,21 +26264,30 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 
-var LINKS = ['names', 'festivals', 'paragraphs', 'live', 'all'];
+
+
+
+
+var LINKS = ['names', 'festivals', 'paragraphs', 'live', 'all'],
+    LINKS_UKR = ['iмена', 'фестивалi', 'параграфи', 'live', 'все'],
+    MAIN_TITLE = 'Документи';
 
 var HeadBlock = function (_Component) {
     _inherits(HeadBlock, _Component);
 
     function HeadBlock() {
+        var _ref;
+
+        var _temp, _this, _ret;
+
         _classCallCheck(this, HeadBlock);
 
-        return _possibleConstructorReturn(this, (HeadBlock.__proto__ || Object.getPrototypeOf(HeadBlock)).apply(this, arguments));
-    }
+        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+            args[_key] = arguments[_key];
+        }
 
-    _createClass(HeadBlock, [{
-        key: 'render',
-        value: function render() {
-            var posts = this.context.posts;
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = HeadBlock.__proto__ || Object.getPrototypeOf(HeadBlock)).call.apply(_ref, [this].concat(args))), _this), _this._getDefaultIds = function () {
+            var posts = _this.context.posts;
 
             // let post = {}, 
             //     defaultIds = { 
@@ -26007,6 +26309,67 @@ var HeadBlock = function (_Component) {
                 if (!defaultIds[post.tag]) defaultIds[post.tag] = post.id;
             }
 
+            return defaultIds;
+        }, _temp), _possibleConstructorReturn(_this, _ret);
+    }
+
+    _createClass(HeadBlock, [{
+        key: 'renderDropdownLinks',
+        value: function renderDropdownLinks() {
+
+            var defaultOption = LINKS_UKR[0];
+
+            var classListItem = __WEBPACK_IMPORTED_MODULE_3_classnames___default()('list-links', {});
+
+            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                { className: 'links-dropdown' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('ion-icon', { name: 'menu' }),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4_react_dropdown___default.a, { options: LINKS_UKR,
+                    onChange: this._onSelect,
+                    value: defaultOption,
+                    placeholder: 'Select an option'
+                })
+            );
+        }
+    }, {
+        key: 'renderLinks',
+        value: function renderLinks() {
+            var _this2 = this;
+
+            var defaultIds = this._getDefaultIds();
+
+            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'ul',
+                { className: 'links' },
+                LINKS.map(function (link, i) {
+                    return _this2.renderLink(link, defaultIds[link], i);
+                })
+            );
+        }
+    }, {
+        key: 'renderLink',
+        value: function renderLink(tag, id, i) {
+
+            var linkName = '[ ' + LINKS_UKR[i] + ' ]';
+            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'li',
+                { key: i },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    __WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Link */],
+                    { to: '/' + tag + '/' + id },
+                    linkName
+                )
+            );
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var _context = this.context,
+                posts = _context.posts,
+                screenWidth = _context.screenWidth,
+                defaultIds = this._getDefaultIds();
+
             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'header',
                 null,
@@ -26019,30 +26382,14 @@ var HeadBlock = function (_Component) {
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             'h1',
                             null,
-                            'Documenty'
+                            MAIN_TITLE
                         )
                     )
                 ),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'div',
                     { className: 'main-nav' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'ul',
-                        { className: 'links' },
-                        LINKS.map(function (link, i) {
-                            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'li',
-                                { key: i },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    __WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Link */],
-                                    { to: '/' + link + '/' + defaultIds[link] },
-                                    '[ ',
-                                    link,
-                                    ' ]'
-                                )
-                            );
-                        })
-                    )
+                    screenWidth > 480 ? this.renderLinks() : this.renderDropdownLinks()
                 )
             );
         }
@@ -26055,7 +26402,8 @@ var HeadBlock = function (_Component) {
 
 
 HeadBlock.contextTypes = {
-    posts: __WEBPACK_IMPORTED_MODULE_2_prop_types__["PropTypes"].array
+    posts: __WEBPACK_IMPORTED_MODULE_2_prop_types__["PropTypes"].array,
+    screenWidth: __WEBPACK_IMPORTED_MODULE_2_prop_types__["PropTypes"].number
 };
 
 /***/ }),
@@ -26165,8 +26513,13 @@ var ListPostsItem = function (_Component) {
                         return openPost(post.id);
                     }
                 },
-                activeTitle ? React.createElement('ion-icon', { name: 'return-right' }) : null,
-                post.title
+                activeTitle ? React.createElement('ion-icon', { name: 'videocam' }) : null //return-right
+                ,
+                React.createElement(
+                    'span',
+                    { className: 'post-title-text' },
+                    post.title
+                )
             );
         }
     }]);
@@ -26270,7 +26623,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MOD
 /***/ "./src/initialState.json":
 /***/ (function(module, exports) {
 
-module.exports = {"articles":[{"id":1,"date":"2018-01-01","tag":"names","title":"David Lynch","image":"https://upload.wikimedia.org/wikipedia/commons/3/3b/David_Lynch_head_07.jpg","text":"Наприкінці 70-тих років за Девідом Лінчем закріпилось амплуа дослідника ірраціонального, непояснюваного та страшного. Лінч закінчив три вищі навчальні заклади: Школу мистецтв Коркорана у Вашингтоні (клас живопису), Філадельфійську академію образотворчих мистецтв та Центр прискореної кіноосвіти в Лос-Анжелесі.\nДевіда Лінча вважають майстром похмурих, з відтінком сюрреалізму, фантазій. Наскрізні образи його фільмів часто відштовхують своєю фізіологією — відрізане вухо, зідраний з пальця ніготь, скло, що прорізає мозок. За десятиліття роботи в кіно Лінч багато досягнув у двозначності. Зусилля показати, що світ зовсім не такий, яким здається, не минули дарма. Усі його фільми, за великим рахунком, це нескінченні лабіринти людської підсвідомості. Його пошуки виявились особливо близькими рефлексуючій Європі та самоспоглядальній Японії. Завдяки світовому прокату ще жоден фільм Лінча не провалився комерційно.\nНа питання, чому його фільми здаються такими дивними, інтернет-сайт режисера відповідає: «Вони здаються дивними лише тому, хто задає такі питання». Насправді кожен глядач може знайти щось своє у дивних звичках агента Купера з «Твін Піксу» чи у Сейлора з «Диких серцем». У Лінча достатньо власних химерних звичок, щоб поважати їх в інших людей, і навіть колекціонувати у своїх фільмах. \nПовнометражний дебют Лінча — «Голова-гумка» 1978 року — став одним з найбільш похмурих і вражаючих фільмів свого десятиліття. У ньому всі події здатні увести глядача у стан тяжкої депресії. Лінч — один з найвідоміших режисерів-інтелектуалів, хто, не відштовхуючи глядача пафосом, зумів оформити свої думки у вигляді масової культури. Його фільми — це детективи («Твін Пікс»), трилери («Синій оксамит»), фантастика («Дюна»), дорожні історії («Дикі серцем»). Але якщо у вісімдесятих подібна форма викладу шокувала, то тепер вона сприймається цілком буденно. \nКіноспільнота була вражена, коли побачила нову стрічку Лінча у 1999 році. «Проста історія» була новою у всіх відношеннях. Тут відсутні карлики, паралельні світи, наскрізні персонажі та вся та таємничість, характерна для Лінча. Історія виявилась дійсно простою. Про людські стосунки — дружбу, кохання, ненависть, нерозуміння. Лінч зірвав з себе маску містифікатора і надав можливість глядачу розібратися у цьому «одномірному» творі. \nУ 2001 році режисер здійснює свій старий проект «Малголланд Драйв» — заплутану історію взаємовідносин двох подруг, що випадково стали свідками однієї дивної події. Все знову стало на свої місця — Лінч не обманув сподівання і отримав у Каннах Пальмову гілку за режисуру. \nУ 2006 році режисер оголосив про вихід нового фільму після тривалої перерви — «INLAND EMPIRE» (саме так — великими літерами)."},{"id":2,"date":"2018-01-02","tag":"names","title":"Stanley Kubrick","image":"http://www.gstatic.com/tv/thumb/persons/59917/59917_v9_ba.jpg","text":"Stanley Kubrick was an American film director, screenwriter, and producer. He is frequently cited as one of the greatest and most influential directors in cinematic history. His films, which are mostly adaptations of novels or short stories, cover a wide range of genres, and are noted for their realism, dark humor, unique cinematography, extensive set designs, and evocative use of music."},{"id":3,"date":"2018-01-05","tag":"festivals","title":"Docudays","image":"https://www.prostir.ua/wp-content/uploads/2015/12/421.jpg","text":"First festival"},{"id":4,"date":"2018-01-07","tag":"festivals","title":"Odesa kino","image":"https://oiff.com.ua/img/news/2014/5-i-odesskii-kinofestival-v-cifrah-infografika12-13-2017.png","text":"Second festival"},{"id":5,"date":"2018-01-10","tag":"paragraphs","title":"First paragraph","image":"http://i.piccy.info/i9/61f176b31d466426c6413dea7c546300/1530797798/295268/1255795/test4.jpg","text":""},{"id":6,"date":"2018-01-11","tag":"paragraphs","title":"Second paragraph","image":"http://i.piccy.info/i9/41159e0724760549316ae9e8e2d22778/1530797839/173259/1255795/test5.jpg","text":""},{"id":7,"date":"2018-02-01","tag":"names","title":"Lars von Trier","image":"http://www.gstatic.com/tv/thumb/persons/70938/70938_v9_ba.jpg","text":"Lars von Trier (born Lars Trier; 30 April 1956)[3] is a Danish film director and screenwriter[4] with a prolific and controversial[5][6] career spanning almost four decades. His work is known for its genre and technical innovation;[7][8] confrontational examination of existential, social,[9][10] and political[5][11] issues; and his treatment of subjects[11] such as mercy,[12] sacrifice, and mental health."},{"id":8,"date":"2018-02-02","tag":"names","title":"Martin Scorsese","image":"https://upload.wikimedia.org/wikipedia/commons/8/8a/Martin_Scorsese_Berlinale_2010_%28cropped%29.jpg","text":"Martin Charles Scorsese (/skɔːrˈsɛsi/;[1] born November 17, 1942) is an American director, producer, screenwriter, actor and film historian, whose career spans more than 50 years. Scorsese's body of work addresses such themes as Sicilian-American identity, Roman Catholic concepts of guilt and redemption,[2] faith,[3] machismo, modern crime, and gang conflict. Many of his films are also known for their depiction of violence and liberal use of profanity."},{"id":9,"date":"2018-02-10","tag":"live","title":"How I live","image":"http://i.piccy.info/i9/af257c9de58f3c5af797314564b6570b/1530797617/128439/1255795/test1.jpg","text":""},{"id":10,"date":"2018-02-11","tag":"live","title":"Where I live","image":"http://i.piccy.info/i9/814ad78144e263913294caff06279aa3/1530797654/181097/1255795/test2.jpg","text":""},{"id":11,"date":"2018-02-11","tag":"live","title":"Where I sleep","image":"http://i.piccy.info/i9/e8cfc257dc773ad89ef871cdeb48241b/1530797676/131337/1255795/test3.jpg","text":""}]}
+module.exports = {"articles":[{"id":1,"date":"2018-01-01","tag":"names","title":"Девiд Лiнч","image":"https://upload.wikimedia.org/wikipedia/commons/3/3b/David_Lynch_head_07.jpg","text":"Наприкінці 70-тих років за Девідом Лінчем закріпилось амплуа дослідника ірраціонального, непояснюваного та страшного. Лінч закінчив три вищі навчальні заклади: Школу мистецтв Коркорана у Вашингтоні (клас живопису), Філадельфійську академію образотворчих мистецтв та Центр прискореної кіноосвіти в Лос-Анжелесі.\nДевіда Лінча вважають майстром похмурих, з відтінком сюрреалізму, фантазій. Наскрізні образи його фільмів часто відштовхують своєю фізіологією — відрізане вухо, зідраний з пальця ніготь, скло, що прорізає мозок. За десятиліття роботи в кіно Лінч багато досягнув у двозначності. Зусилля показати, що світ зовсім не такий, яким здається, не минули дарма. Усі його фільми, за великим рахунком, це нескінченні лабіринти людської підсвідомості. Його пошуки виявились особливо близькими рефлексуючій Європі та самоспоглядальній Японії. Завдяки світовому прокату ще жоден фільм Лінча не провалився комерційно.\nНа питання, чому його фільми здаються такими дивними, інтернет-сайт режисера відповідає: «Вони здаються дивними лише тому, хто задає такі питання». Насправді кожен глядач може знайти щось своє у дивних звичках агента Купера з «Твін Піксу» чи у Сейлора з «Диких серцем». У Лінча достатньо власних химерних звичок, щоб поважати їх в інших людей, і навіть колекціонувати у своїх фільмах. \nПовнометражний дебют Лінча — «Голова-гумка» 1978 року — став одним з найбільш похмурих і вражаючих фільмів свого десятиліття. У ньому всі події здатні увести глядача у стан тяжкої депресії. Лінч — один з найвідоміших режисерів-інтелектуалів, хто, не відштовхуючи глядача пафосом, зумів оформити свої думки у вигляді масової культури. Його фільми — це детективи («Твін Пікс»), трилери («Синій оксамит»), фантастика («Дюна»), дорожні історії («Дикі серцем»). Але якщо у вісімдесятих подібна форма викладу шокувала, то тепер вона сприймається цілком буденно. \nКіноспільнота була вражена, коли побачила нову стрічку Лінча у 1999 році. «Проста історія» була новою у всіх відношеннях. Тут відсутні карлики, паралельні світи, наскрізні персонажі та вся та таємничість, характерна для Лінча. Історія виявилась дійсно простою. Про людські стосунки — дружбу, кохання, ненависть, нерозуміння. Лінч зірвав з себе маску містифікатора і надав можливість глядачу розібратися у цьому «одномірному» творі. \nУ 2001 році режисер здійснює свій старий проект «Малголланд Драйв» — заплутану історію взаємовідносин двох подруг, що випадково стали свідками однієї дивної події. Все знову стало на свої місця — Лінч не обманув сподівання і отримав у Каннах Пальмову гілку за режисуру. \nУ 2006 році режисер оголосив про вихід нового фільму після тривалої перерви — «INLAND EMPIRE» (саме так — великими літерами)."},{"id":2,"date":"2018-01-02","tag":"names","title":"Стенлi Кубрiк","image":"http://www.gstatic.com/tv/thumb/persons/59917/59917_v9_ba.jpg","text":"Стенлі Кубрик народився 26 липня 1928 рoку в Нью-Йорку і був першою дитиною в єврейської родині Джейкоба Леонарда Кубрика (21 Травня 1902 — 19 Жовтня 1985 Року) і Седі Гертруди Первелер (28 жовтня 1903 — 23 квітня 1985). У травні 1934 року народилася його сестра Барбра Мері. Батько, чиї батьки і бабуся і дідусь по батьківській лінії мали коріння польських, австрійських та румунських євреїв, працював лікарем-хірургом, закінчивши у 1927 році Нью-Йоркський медичний коледж і в той же рік одружився на Седі, яка була дочкою єврейських емігрантів з Австрії. Прадід Кубрика, Герш Кубрик (його прізвище «Kubrick» у різних документах того часу писалася як «Kubrik» або «Kubrike»), прибув у острів Елліс з Ліверпуль на кораблі 27 грудня 1899 року у віці 47 років, залишивши в Європі дружину і двох дорослих дітей (один з яких був дідусем Стенлі Еліасом), щоб почати нове життя з молодою жінкою. У 1902 році в США перебрався і Еліас. Його батько захоплювався шахами й фотографією, чим зацікавився й хлопець. Він також виявив цікавість до джазу й грав на барабанах. У школі Кубрик не був здібним учнем і не одержав вищої освіти. Коли йому минуло 17 років, хлопець вирішив зайнятися фотографією. Його знімки надруковано в журналі Look, і відтоді він працював фотокореспондентом. Незабаром почав відвідувати Нью-Йоркський музей сучасного мистецтва й часто ходив у кінотеатри. У 1951 році за порадою друга Кубрик почав знімати короткометражні фільми й рекламні ролики. Пізніше він сфокусувався на оповідальних фільмах і зняв Fear and Desire (1953), про загін солдатів у тилу ворога на вигаданій війні. 1955 року Стенлі переїхав до Голлівуду, знявши фільм Killer's Kiss (1954). Стрічка The Killing (1956), — про боксера наприкінці своєї кар'єри, вплутаного в організовану злочинність, стала першою роботою Кубрика за участю професіональної знімальної бригади; не мав комерційного успіху, але одержав позитивні відгуки від критиків."},{"id":3,"date":"2018-01-05","tag":"festivals","title":"Docudays","image":"https://www.prostir.ua/wp-content/uploads/2015/12/421.jpg","text":"First festival"},{"id":4,"date":"2018-01-07","tag":"festivals","title":"Odesa kino","image":"https://oiff.com.ua/img/news/2014/5-i-odesskii-kinofestival-v-cifrah-infografika12-13-2017.png","text":"Second festival"},{"id":5,"date":"2018-01-10","tag":"paragraphs","title":"First paragraph","image":"http://i.piccy.info/i9/61f176b31d466426c6413dea7c546300/1530797798/295268/1255795/test4.jpg","text":""},{"id":6,"date":"2018-01-11","tag":"paragraphs","title":"Second paragraph","image":"http://i.piccy.info/i9/41159e0724760549316ae9e8e2d22778/1530797839/173259/1255795/test5.jpg","text":""},{"id":7,"date":"2018-02-01","tag":"names","title":"Lars von Trier","image":"http://www.gstatic.com/tv/thumb/persons/70938/70938_v9_ba.jpg","text":"Lars von Trier (born Lars Trier; 30 April 1956)[3] is a Danish film director and screenwriter[4] with a prolific and controversial[5][6] career spanning almost four decades. His work is known for its genre and technical innovation;[7][8] confrontational examination of existential, social,[9][10] and political[5][11] issues; and his treatment of subjects[11] such as mercy,[12] sacrifice, and mental health."},{"id":8,"date":"2018-02-02","tag":"names","title":"Martin Scorsese","image":"https://upload.wikimedia.org/wikipedia/commons/8/8a/Martin_Scorsese_Berlinale_2010_%28cropped%29.jpg","text":"Martin Charles Scorsese (/skɔːrˈsɛsi/;[1] born November 17, 1942) is an American director, producer, screenwriter, actor and film historian, whose career spans more than 50 years. Scorsese's body of work addresses such themes as Sicilian-American identity, Roman Catholic concepts of guilt and redemption,[2] faith,[3] machismo, modern crime, and gang conflict. Many of his films are also known for their depiction of violence and liberal use of profanity."},{"id":9,"date":"2018-02-10","tag":"live","title":"How I live","image":"http://i.piccy.info/i9/af257c9de58f3c5af797314564b6570b/1530797617/128439/1255795/test1.jpg","text":""},{"id":10,"date":"2018-02-11","tag":"live","title":"Where I live","image":"http://i.piccy.info/i9/814ad78144e263913294caff06279aa3/1530797654/181097/1255795/test2.jpg","text":""},{"id":11,"date":"2018-02-11","tag":"live","title":"Where I sleep","image":"http://i.piccy.info/i9/e8cfc257dc773ad89ef871cdeb48241b/1530797676/131337/1255795/test3.jpg","text":""}]}
 
 /***/ }),
 

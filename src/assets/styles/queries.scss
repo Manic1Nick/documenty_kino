@@ -26,7 +26,7 @@
                     li { 
                         margin-left: 10px;
 
-                        a { font-size: 80%; }
+                        a { font-size: 70%; }
                     }
                 }
             }
@@ -48,7 +48,7 @@
                     .article-content {
                         .article-title {}  
                 
-                        .article-image {
+                        .article-image img {
                             width: 150px;
                         }    
                 
@@ -91,6 +91,17 @@
 /* Small phones to small tablets from 481px to 623px */
 @media only screen and (max-width: 623px) {
     .App {
+        header {
+            .main-nav {    
+                ul {        
+                    li { 
+                        margin-left: 2px;
+
+                        a { font-size: 60%; }
+                    }
+                }
+            }
+        }
         .Blog {            
             .Articles {
 
@@ -108,7 +119,7 @@
                             font-size: 80%;
                         }  
                 
-                        .article-image {
+                        .article-image img {
                             width: 100px;
                         }    
                 
@@ -138,9 +149,9 @@
 
 /* Small phones from 0px to 480px */
 @media only screen and (max-width: 480px) {
-    h1 {
-        font-size: 120%;
-    }
+    // h1 {
+    //     font-size: 120%;
+    // }
 
     .App {
         header {
@@ -165,7 +176,7 @@
                     .article-content {
                         .article-title {}  
                 
-                        .article-image {
+                        .article-image img {
                             width: 100px;
                         }    
                 

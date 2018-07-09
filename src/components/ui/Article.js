@@ -41,10 +41,18 @@ export default class Article extends Component {
         return(
             <div className='Article'>
                 <div className={`article-content ${classAnimateIn}`}>
-                    <h3 className='article-title'>{ post.title }</h3>
-                    <img className='article-image' src={`${post.image}`} />
-                    <p className='article-text'>{ postText }</p>
-                    <p className='article-date'>{ post.date }</p>
+                    <div className='article-title'>
+                        <h3>{ post.title }</h3>
+                    </div>
+                    <div className='article-image'>
+                        <img src={`${post.image}`} />
+                    </div>
+                    <div className='article-text'>
+                        { postText }
+                    </div>
+                    <div className='article-date'>
+                        { post.date }               
+                    </div>                  
                 </div>
             </div>
         )
