@@ -71,27 +71,9 @@ export default class Article extends Component {
 			this.setState({ animateIn: false })
 		}, 1000)
     }
-    
-    // onSwipeStart(event) {
-    //     console.log('Start swiping...', event);
-    // }
-     
-    onSwipeMove(position, event) {
-        const { onPrev, onNext } = this.props
-
-        if (position.x < -50) onPrev()
-        else if (position.x > 50) onNext()
-
-        // console.log(`Moved ${position.x} pixels horizontally`, event);
-        // console.log(`Moved ${position.y} pixels vertically`, event);
-    }
-     
-    // onSwipeEnd(event) {
-    //     console.log('End swiping...', event);
-    // }
 
     render() {
-        const { post } = this.props,
+        const { post, onPrev, onNext } = this.props,
             { animateIn } = this.state
 
         const postText = post.text
@@ -103,9 +85,8 @@ export default class Article extends Component {
         return(
             <div className='Article'>
                 <Swipe
-                    onSwipeMove={ this.onSwipeMove.bind(this) }
-                    //onSwipeStart={ this.onSwipeStart }
-                    //onSwipeEnd={ this.onSwipeEnd }
+                    onSwipeLeft={ () => onNext() }
+                    onSwipeRight={ () => onPrev() }
                 >
                     <div className={`article-content ${classAnimateIn}`}>
                         <div className='article-title'>
@@ -130,7 +111,7 @@ export default class Article extends Component {
                                     <TelegramIcon size={32} round={true} />
                                 </TelegramShareButton>
                             </div>
-                            
+
                             <div className='article-date'>
                                 { post.date }    
                             </div>           

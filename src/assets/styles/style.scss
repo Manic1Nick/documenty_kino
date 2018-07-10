@@ -335,15 +335,13 @@ a:visited {
         .social-icons {
 
             a {
+                width: 25px;
                 margin-right: 20px;
                 cursor: pointer;
                 
                 ion-icon {
-                    width: 25px;
-                    height: 25px;
                     transition: color 0.2s;
                 }
-                width: 25px;
 
                 #fb:hover { color: #3b5999; }
                 #tw:hover { color: #55acee; }
