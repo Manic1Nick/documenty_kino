@@ -30,6 +30,11 @@ body {
 
 ul { list-style: none; }
 
+.social-icon {
+    width: 30px;
+    height: 30px;
+}
+
 
 
 /* TITLES 
@@ -149,9 +154,14 @@ a:visited {
                 }
             }
 
-            .dd-menu {
+            .dd-menu {                
                 float: right;
                 cursor: pointer;
+
+                ion-icon {
+                    width: 30px;
+                    height: 30px;
+                }
 
                 ul { 
                     width: 50vw; 
@@ -220,13 +230,13 @@ a:visited {
                     .article-title,
                     .article-image,
                     .article-text,
-                    .article-date {
+                    .article-footer {
                         margin-bottom: 10px;
                     }    
             
                     .article-title {
                         font-weight: bold;
-                    }  
+                    } 
             
                     .article-image {
                         text-align: center;
@@ -248,11 +258,25 @@ a:visited {
                         }
                     }
             
-                    .article-date {
-                        margin-bottom: 2em;
-                        float: right;
-                        font-size: 80%;
-                        font-style: italic;
+                    .article-footer {
+                        display: flex;
+                        justify-content: space-between;
+
+                        .article-social-shares {
+                            display: flex;
+
+                            .social-icon {
+                                cursor: pointer;
+                                margin-right: 5px;
+                            }
+                        }
+
+                        .article-date {
+                            margin-bottom: 2em;
+                            float: right;
+                            font-size: 80%;
+                            font-style: italic;
+                        }
                     }
                 }
 
@@ -308,30 +332,37 @@ a:visited {
         padding: 5px;
         font-size: 80%;
 
-        a {
-            margin-right: 20px;
+        .social-icons {
 
-            ion-icon {
+            a {
+                margin-right: 20px;
+                cursor: pointer;
+                
+                ion-icon {
+                    width: 25px;
+                    height: 25px;
+                    transition: color 0.2s;
+                }
+                width: 25px;
+
+                #fb:hover { color: #3b5999; }
+                #tw:hover { color: #55acee; }
+                #gp:hover { color: #dd4b39; }
+                #ig:hover { color: #e4405f; }
+            }
+    
+            a:link,
+            a:visited {
+                text-decoration: none;
+                border: 0;
+                color: #888;
                 transition: color 0.2s;
             }
-
-            #fb:hover { color: #3b5999; }
-            #tw:hover { color: #55acee; }
-            #gp:hover { color: #dd4b39; }
-            #ig:hover { color: #e4405f; }
-        }
-
-        a:link,
-        a:visited {
-            text-decoration: none;
-            border: 0;
-            color: #888;
-            transition: color 0.2s;
-        }
-
-        a:link,
-        a:visited {
-            font-size: 160%;
+    
+            a:link,
+            a:visited {
+                font-size: 160%;
+            }
         }
 
         p {

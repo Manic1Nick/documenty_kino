@@ -2,6 +2,51 @@ import React, { Component } from 'react'
 import classNames from 'classnames'
 import Swipe from 'react-easy-swipe'
 
+import {
+    FacebookShareButton,
+    GooglePlusShareButton,
+    LinkedinShareButton,
+    TwitterShareButton,
+    TelegramShareButton,
+    WhatsappShareButton,
+    PinterestShareButton,
+    VKShareButton,
+    OKShareButton,
+    RedditShareButton,
+    TumblrShareButton,
+    LivejournalShareButton,
+    ViberShareButton,
+    EmailShareButton,
+  } from 'react-share'
+
+import {
+    FacebookShareCount,
+    GooglePlusShareCount,
+    LinkedinShareCount,
+    VKShareCount,
+    OKShareCount,
+    RedditShareCount,
+    TumblrShareCount,
+  } from 'react-share'
+
+  import {
+    FacebookIcon,
+    TwitterIcon,
+    TelegramIcon,
+    WhatsappIcon,
+    GooglePlusIcon,
+    LinkedinIcon,
+    PinterestIcon,
+    VKIcon,
+    OKIcon,
+    RedditIcon,
+    TumblrIcon,
+    LivejournalIcon,
+    MailruIcon,
+    EmailIcon,
+    ViberIcon,
+  } from 'react-share'
+
 export default class Article extends Component {
 
     constructor() {
@@ -72,8 +117,23 @@ export default class Article extends Component {
                         <div className='article-text'>
                             { postText }
                         </div>
-                        <div className='article-date'>
-                            { post.date }               
+                        <div className='article-footer'>
+
+                            <div className='article-social-shares'>
+                                <FacebookShareButton className='social-icon' url={'http://facebook.com'}>
+                                    <FacebookIcon size={32} round={true} />
+                                </FacebookShareButton>
+                                <TwitterShareButton className='social-icon' url={'http://twitter.com'}>
+                                    <TwitterIcon size={32} round={true} />
+                                </TwitterShareButton>
+                                <TelegramShareButton className='social-icon' url={'http://telegram.com'}>
+                                    <TelegramIcon size={32} round={true} />
+                                </TelegramShareButton>
+                            </div>
+                            
+                            <div className='article-date'>
+                                { post.date }    
+                            </div>           
                         </div>                  
                     </div>
                 </Swipe>                
