@@ -151,13 +151,15 @@ a:visited {
 
             .dd-menu {
                 float: right;
+                cursor: pointer;
 
                 ul { 
                     width: 50vw; 
                     height: 50vw;
 
                     li { 
-                        width: 90%; 
+                        width: 100%; 
+                        margin: 0 auto;
                         a { text-align: center; }
                     }
                 }

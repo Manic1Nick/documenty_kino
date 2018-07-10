@@ -38,17 +38,17 @@ export default class Articles extends Component {
         return(
             <div className='Articles'>
                 <div className='arrow-buttons' onClick={ this.handleOpenPrev }>
-                    <ion-icon name="ios-arrow-back" 
-                        
-                    ></ion-icon>
+                    <ion-icon name="ios-arrow-back"></ion-icon>
                 </div>
 
-                <Article post={ activePost } />
+                <Article 
+                    post={ activePost } 
+                    onPrev={ this.handleOpenPrev } 
+                    onNext={ this.handleOpenNext } 
+                />
                 
                 <div className='arrow-buttons' onClick={ this.handleOpenNext }>
-                    <ion-icon name="ios-arrow-forward" 
-                        
-                    ></ion-icon>
+                    <ion-icon name="ios-arrow-forward"></ion-icon>
                 </div>
             </div>
         )
