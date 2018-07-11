@@ -12,7 +12,7 @@ export default class Articles extends Component {
     }
 
     handleOpenPrev = () => {
-        const { posts, activePostIndex, openPost } = this.props,            
+        const { posts, activePostIndex, openPost } = this.props,
             changedId = activePostIndex > 0
                 ? posts[activePostIndex - 1].id
                 : posts[posts.length - 1].id

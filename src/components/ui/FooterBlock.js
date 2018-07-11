@@ -9,9 +9,15 @@ const FooterBlock = () => {
                 </p>
             </div>
             <div className='social-icons'>                 
-                <a href="#"><ion-icon id="fb" name="logo-facebook"></ion-icon></a>
-                <a href="#"><ion-icon id="tw" name="logo-twitter"></ion-icon></a>
-                <a href="#"><ion-icon id="gp" name="logo-googleplus"></ion-icon></a>
+                <a href="http://facebook.com">
+                    <ion-icon id="fb" name="logo-facebook"></ion-icon>
+                </a>
+                <a href="http://twitter.com">
+                    <ion-icon id="tw" name="logo-twitter"></ion-icon>
+                </a>
+                <a href="http://googleplus.com">
+                    <ion-icon id="gp" name="logo-googleplus"></ion-icon>
+                </a>
                 {/* <a href="#"><ion-icon id="ig" name="logo-instagram"></ion-icon></a> */}
             </div>
         </footer>
