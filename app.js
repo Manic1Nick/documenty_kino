@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "43d5c514c5f7cb179556"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "995e75c05992273c72ef"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -3163,7 +3163,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "/* Big tablets to 1200px (widths smaller than 1140px row) */\n/* Small tablets to big tablets from 768px to 1023px */\n/* Small phones to small tablets from 624px to 767px */\n@media only screen and (max-width: 767px) {\n  h1 {\n    font-size: 180%; }\n  .App header .site-title {\n    font-size: 80%; }\n  .App header .main-nav ul li {\n    margin-left: 10px; }\n    .App header .main-nav ul li a {\n      font-size: 70%; }\n  .App .Blog .Articles {\n    width: 80%; }\n    .App .Blog .Articles .arrow-buttons {\n      width: 30px; }\n      .App .Blog .Articles .arrow-buttons ion-icon {\n        width: 30px; }\n    .App .Blog .Articles .Article {\n      padding: 1em; }\n      .App .Blog .Articles .Article .article-content .article-image img {\n        width: 150px; }\n      .App .Blog .Articles .Article .article-content .article-text {\n        font-size: 80%; }\n      .App .Blog .Articles .Article .article-content .article-date {\n        font-size: 80%; }\n  .App .Blog .SideBlock {\n    width: 20%; }\n    .App .Blog .SideBlock .ListPosts .post-title {\n      font-size: 70%; }\n  .App footer {\n    height: 30px;\n    font-size: 60%; }\n    .App footer a {\n      margin-right: 10px; } }\n\n/* Small phones to small tablets from 481px to 623px */\n@media only screen and (max-width: 623px) {\n  .App header .main-nav ul li {\n    margin-left: 2px; }\n    .App header .main-nav ul li a {\n      font-size: 60%; }\n  .App .Blog .Articles .arrow-buttons {\n    width: 20px; }\n    .App .Blog .Articles .arrow-buttons ion-icon {\n      width: 20px; }\n  .App .Blog .Articles .Article {\n    padding: 0.5em; }\n    .App .Blog .Articles .Article .article-content .article-title {\n      font-size: 80%; }\n    .App .Blog .Articles .Article .article-content .article-image img {\n      width: 100px; }\n    .App .Blog .Articles .Article .article-content .article-text {\n      font-size: 70%; }\n    .App .Blog .Articles .Article .article-content .article-date {\n      font-size: 60%; }\n  .App .Blog .SideBlock {\n    margin-left: 0.5em; }\n    .App .Blog .SideBlock .ListPosts .post-title {\n      font-size: 60%; } }\n\n/* Small phones from 0px to 480px */\n@media only screen and (max-width: 480px) {\n  .App header .main-nav ul li {\n    margin-left: 5px; }\n    .App header .main-nav ul li a {\n      font-size: 70%; }\n  .App .Blog .Articles {\n    width: 100%; }\n    .App .Blog .Articles .Article {\n      padding: 0.5em; }\n      .App .Blog .Articles .Article .article-content .article-image img {\n        width: 100px; }\n  .App .Blog .SideBlock {\n    display: none; }\n  .App footer .copyright-text {\n    font-size: 70%; }\n  .App footer .social-icons {\n    font-size: 100%; }\n    .App footer .social-icons a {\n      width: 20px;\n      margin-right: 10px; } }\n", ""]);
+exports.push([module.i, "/* Big tablets to 1200px (widths smaller than 1140px row) */\n/* Small tablets to big tablets from 768px to 1023px */\n@media only screen and (max-width: 1023px) {\n  .App header .main-nav ul li {\n    margin-left: 10px; } }\n\n/* Small phones to small tablets from 624px to 767px */\n@media only screen and (max-width: 767px) {\n  h1 {\n    font-size: 180%; }\n  .App header .site-title {\n    font-size: 80%; }\n  .App header .main-nav ul li a {\n    font-size: 70%; }\n  .App .Blog .Articles {\n    width: 80%; }\n    .App .Blog .Articles .arrow-buttons {\n      width: 30px; }\n      .App .Blog .Articles .arrow-buttons ion-icon {\n        width: 30px; }\n    .App .Blog .Articles .Article {\n      padding: 1em; }\n      .App .Blog .Articles .Article .article-content .article-image img {\n        width: 150px; }\n      .App .Blog .Articles .Article .article-content .article-text {\n        font-size: 80%; }\n      .App .Blog .Articles .Article .article-content .article-date {\n        font-size: 80%; }\n  .App .Blog .SideBlock {\n    width: 20%; }\n    .App .Blog .SideBlock .ListPosts .post-title {\n      font-size: 70%; }\n  .App footer {\n    height: 30px;\n    font-size: 60%; }\n    .App footer a {\n      margin-right: 10px; } }\n\n/* Small phones to small tablets from 481px to 623px */\n@media only screen and (max-width: 623px) {\n  .App header .main-nav ul li {\n    margin-left: 2px; }\n    .App header .main-nav ul li a {\n      font-size: 60%; }\n  .App .Blog .Articles .arrow-buttons {\n    width: 20px; }\n    .App .Blog .Articles .arrow-buttons ion-icon {\n      width: 20px; }\n  .App .Blog .Articles .Article {\n    padding: 0.5em; }\n    .App .Blog .Articles .Article .article-content .article-title {\n      font-size: 80%; }\n    .App .Blog .Articles .Article .article-content .article-image img {\n      width: 100px; }\n    .App .Blog .Articles .Article .article-content .article-text {\n      font-size: 70%; }\n    .App .Blog .Articles .Article .article-content .article-date {\n      font-size: 60%; }\n  .App .Blog .SideBlock {\n    margin-left: 0.5em; }\n    .App .Blog .SideBlock .ListPosts .post-title {\n      font-size: 60%; } }\n\n/* Small phones from 0px to 480px */\n@media only screen and (max-width: 480px) {\n  .App header .main-nav ul li {\n    margin-left: 5px; }\n    .App header .main-nav ul li a {\n      font-size: 70%; }\n  .App .Blog .Articles {\n    width: 100%; }\n    .App .Blog .Articles .Article {\n      padding: 0.5em; }\n      .App .Blog .Articles .Article .article-content .article-image img {\n        width: 100px; }\n  .App .Blog .SideBlock {\n    display: none; }\n  .App footer .copyright-text {\n    font-size: 70%; }\n  .App footer .social-icons {\n    font-size: 100%; }\n    .App footer .social-icons a {\n      width: 20px;\n      margin-right: 10px; } }\n", ""]);
 
 // exports
 
@@ -3180,7 +3180,7 @@ exports.i(__webpack_require__("./node_modules/css-loader/index.js!./src/assets/s
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Arimo:400,400i,700,700i|Fira+Sans:300,400,700|Pacifico);", ""]);
 
 // module
-exports.push([module.i, "/*---------------------------------------------------------*/\n/* BASIC SETUP */\n/*---------------------------------------------------------*/\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box; }\n\nhtml,\nbody {\n  color: #555;\n  font-family: 'Fira+Sans', cursive;\n  font-weight: 400;\n  font-size: 20px;\n  overflow-x: hidden;\n  background-image: url(" + __webpack_require__("./src/assets/images/1920x1080-background.jpg") + ");\n  background-size: cover;\n  background-position: center;\n  height: 100vh; }\n\nul {\n  list-style: none; }\n\n.social-icon {\n  width: 30px;\n  height: 30px; }\n\n/* TITLES \n==================================*/\nh1,\nh2,\nh3 {\n  font-weight: 700;\n  font-family: 'Pacifico', cursive; }\n\nh1 {\n  margin-top: 0;\n  /* color: #fff; */\n  font-size: 240%;\n  word-spacing: 4px;\n  letter-spacing: 1px; }\n\nh2 {\n  font-size: 180%;\n  word-spacing: 2px;\n  text-align: center;\n  margin-bottom: 30px;\n  letter-spacing: 1px; }\n\nh3 {\n  font-size: 110%;\n  margin-bottom: 15px; }\n\n/* LINKS \n==================================*/\na:link,\na:visited {\n  text-decoration: none;\n  padding-bottom: 1px; }\n\n/* APP \n==================================*/\n.App {\n  width: 100vw;\n  height: 100%; }\n  .App header {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    width: 100%;\n    height: 5%;\n    padding: 2%; }\n    .App header .site-title {\n      flex: 2; }\n    .App header .main-nav {\n      flex: 3;\n      margin-right: 10px; }\n      .App header .main-nav ul {\n        position: relative;\n        float: right; }\n        .App header .main-nav ul li {\n          display: inline-block;\n          margin-left: 30px; }\n          .App header .main-nav ul li a {\n            position: relative;\n            display: inline-block; }\n          .App header .main-nav ul li a:link,\n          .App header .main-nav ul li a:visited {\n            padding: 8px 0;\n            color: #555;\n            text-decoration: none;\n            padding-bottom: 2px;\n            transition: font-weight 0.2s; }\n          .App header .main-nav ul li a:hover,\n          .App header .main-nav ul li a:active {\n            font-weight: bold; }\n          .App header .main-nav ul li a:after {\n            content: '';\n            position: absolute;\n            left: 0;\n            right: 0;\n            top: 100%;\n            margin: 2px auto;\n            width: 15px;\n            height: 0;\n            border-bottom: 3px transparent;\n            transition: border-bottom 0.2s; }\n          .App header .main-nav ul li a:hover:after,\n          .App header .main-nav ul li a:active:after {\n            border-bottom: 3px dotted #132366ce; }\n      .App header .main-nav .dd-menu {\n        float: right;\n        cursor: pointer; }\n        .App header .main-nav .dd-menu ion-icon {\n          width: 30px;\n          height: 30px; }\n        .App header .main-nav .dd-menu ul {\n          width: 50vw;\n          height: 50vw; }\n          .App header .main-nav .dd-menu ul li {\n            width: 100%;\n            margin: 0 auto; }\n            .App header .main-nav .dd-menu ul li a {\n              text-align: center; }\n  .App .Blog {\n    width: 100%;\n    height: 80%;\n    padding-right: 10px;\n    display: flex; }\n    .App .Blog .Articles {\n      position: relative;\n      width: 80%;\n      margin: 0 auto;\n      display: flex; }\n      .App .Blog .Articles .arrow-buttons {\n        position: relative;\n        width: 40px;\n        height: auto; }\n        .App .Blog .Articles .arrow-buttons ion-icon {\n          position: fixed;\n          top: 15%;\n          width: 40px;\n          height: 80%;\n          opacity: 0.3;\n          transition: opacity 0.2s; }\n        .App .Blog .Articles .arrow-buttons ion-icon:hover {\n          opacity: 1;\n          cursor: pointer; }\n      .App .Blog .Articles .Article {\n        position: relative;\n        padding: 1em;\n        width: 100%; }\n        .App .Blog .Articles .Article .article-content p {\n          text-align: left; }\n        .App .Blog .Articles .Article .article-content .article-title,\n        .App .Blog .Articles .Article .article-content .article-image,\n        .App .Blog .Articles .Article .article-content .article-text,\n        .App .Blog .Articles .Article .article-content .article-footer {\n          margin-bottom: 10px; }\n        .App .Blog .Articles .Article .article-content .article-title {\n          font-weight: bold; }\n        .App .Blog .Articles .Article .article-content .article-image {\n          text-align: center; }\n          .App .Blog .Articles .Article .article-content .article-image img {\n            width: 200px;\n            height: auto; }\n        .App .Blog .Articles .Article .article-content .article-text {\n          font-size: 80%; }\n          .App .Blog .Articles .Article .article-content .article-text .text-paragraph {\n            margin-bottom: 10px; }\n        .App .Blog .Articles .Article .article-content .article-footer {\n          display: flex;\n          justify-content: space-between; }\n          .App .Blog .Articles .Article .article-content .article-footer .article-social-shares {\n            display: flex; }\n            .App .Blog .Articles .Article .article-content .article-footer .article-social-shares .social-icon {\n              cursor: pointer;\n              margin-right: 5px; }\n          .App .Blog .Articles .Article .article-content .article-footer .article-date {\n            margin-bottom: 2em;\n            float: right;\n            font-size: 80%;\n            font-style: italic; }\n    .App .Blog .SideBlock {\n      width: 20%;\n      height: 80%;\n      float: right;\n      margin-top: 2em;\n      margin-left: 1em; }\n      .App .Blog .SideBlock .ListPosts .post-title {\n        font-weight: 300;\n        font-size: 80%;\n        margin-bottom: 5px;\n        transition: font-weight font-style 0.2s; }\n      .App .Blog .SideBlock .ListPosts .activeTitle {\n        font-weight: bold;\n        font-style: italic; }\n        .App .Blog .SideBlock .ListPosts .activeTitle ion-icon {\n          color: #132366ce;\n          margin-right: 5px; }\n      .App .Blog .SideBlock .ListPosts:hover {\n        cursor: pointer; }\n  .App footer {\n    width: 100%;\n    height: 5%;\n    display: flex;\n    justify-content: space-between;\n    position: fixed;\n    bottom: 0;\n    left: 0;\n    background-color: #333;\n    padding: 5px;\n    font-size: 80%; }\n    .App footer .social-icons a {\n      width: 25px;\n      margin-right: 20px;\n      cursor: pointer; }\n      .App footer .social-icons a ion-icon {\n        transition: color 0.2s; }\n      .App footer .social-icons a #fb:hover {\n        color: #3b5999; }\n      .App footer .social-icons a #tw:hover {\n        color: #55acee; }\n      .App footer .social-icons a #gp:hover {\n        color: #dd4b39; }\n      .App footer .social-icons a #ig:hover {\n        color: #e4405f; }\n    .App footer .social-icons a:link,\n    .App footer .social-icons a:visited {\n      text-decoration: none;\n      border: 0;\n      color: #888;\n      transition: color 0.2s; }\n    .App footer .social-icons a:link,\n    .App footer .social-icons a:visited {\n      font-size: 160%; }\n    .App footer p {\n      color: #888;\n      text-align: center;\n      margin-top: 5px; }\n\n.animationIn {\n  animation: fadeIn 0.8s; }\n", ""]);
+exports.push([module.i, "/*---------------------------------------------------------*/\n/* BASIC SETUP */\n/*---------------------------------------------------------*/\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box; }\n\nhtml,\nbody {\n  color: #555;\n  font-family: 'Fira+Sans', cursive;\n  font-weight: 400;\n  font-size: 20px;\n  overflow-x: hidden;\n  background-image: url(" + __webpack_require__("./src/assets/images/1920x1080-background.jpg") + ");\n  background-size: cover;\n  background-position: center;\n  height: 100vh; }\n\nul {\n  list-style: none; }\n\n.social-icon {\n  width: 30px;\n  height: 30px; }\n\n/* TITLES \n==================================*/\nh1,\nh2,\nh3 {\n  font-family: 'Pacifico', cursive; }\n\nh1 {\n  margin-top: 0;\n  /* color: #fff; */\n  font-size: 240%;\n  word-spacing: 4px;\n  letter-spacing: 1px; }\n\nh2 {\n  font-size: 180%;\n  word-spacing: 2px;\n  text-align: center;\n  margin-bottom: 30px;\n  letter-spacing: 1px; }\n\nh3 {\n  font-size: 110%;\n  margin-bottom: 15px; }\n\n/* LINKS \n==================================*/\na:link,\na:visited {\n  text-decoration: none;\n  padding-bottom: 1px; }\n\n/* APP \n==================================*/\n.App {\n  width: 100vw;\n  height: 100%; }\n  .App header {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    width: 100%;\n    height: 5%;\n    padding: 2%; }\n    .App header .site-title {\n      flex: 1; }\n    .App header .main-nav {\n      flex: 4;\n      margin-right: 10px; }\n      .App header .main-nav ul {\n        position: relative;\n        float: right; }\n        .App header .main-nav ul li {\n          display: inline-block;\n          margin-left: 30px; }\n          .App header .main-nav ul li a {\n            position: relative;\n            display: inline-block; }\n          .App header .main-nav ul li a:link,\n          .App header .main-nav ul li a:visited {\n            padding: 8px 0;\n            color: #555;\n            text-decoration: none;\n            padding-bottom: 2px;\n            transition: font-weight 0.2s; }\n          .App header .main-nav ul li a:hover,\n          .App header .main-nav ul li a:active {\n            font-weight: bold; }\n          .App header .main-nav ul li a:after {\n            content: '';\n            position: absolute;\n            left: 0;\n            right: 0;\n            top: 100%;\n            margin: 2px auto;\n            width: 15px;\n            height: 0;\n            border-bottom: 3px transparent;\n            transition: border-bottom 0.2s; }\n          .App header .main-nav ul li a:hover:after,\n          .App header .main-nav ul li a:active:after {\n            border-bottom: 3px dotted #132366ce; }\n      .App header .main-nav .dd-menu {\n        float: right;\n        cursor: pointer; }\n        .App header .main-nav .dd-menu ion-icon {\n          width: 30px;\n          height: 30px; }\n        .App header .main-nav .dd-menu ul {\n          width: 50vw;\n          height: 50vw; }\n          .App header .main-nav .dd-menu ul li {\n            width: 100%;\n            margin: 0 auto; }\n            .App header .main-nav .dd-menu ul li a {\n              text-align: center; }\n  .App .Blog {\n    width: 100%;\n    height: 80%;\n    padding-right: 10px;\n    display: flex; }\n    .App .Blog .Articles {\n      position: relative;\n      width: 80%;\n      margin: 0 auto;\n      display: flex; }\n      .App .Blog .Articles .arrow-buttons {\n        position: relative;\n        width: 40px;\n        height: auto; }\n        .App .Blog .Articles .arrow-buttons ion-icon {\n          position: fixed;\n          top: 15%;\n          width: 40px;\n          height: 80%;\n          opacity: 0.3;\n          transition: opacity 0.2s; }\n        .App .Blog .Articles .arrow-buttons ion-icon:hover {\n          opacity: 1;\n          cursor: pointer; }\n      .App .Blog .Articles .Article {\n        position: relative;\n        padding: 1em;\n        width: 100%; }\n        .App .Blog .Articles .Article .article-content p {\n          text-align: left; }\n        .App .Blog .Articles .Article .article-content .article-title,\n        .App .Blog .Articles .Article .article-content .article-image,\n        .App .Blog .Articles .Article .article-content .article-text,\n        .App .Blog .Articles .Article .article-content .article-footer {\n          margin-bottom: 10px; }\n        .App .Blog .Articles .Article .article-content .article-title {\n          font-weight: bold; }\n        .App .Blog .Articles .Article .article-content .article-image {\n          text-align: center; }\n          .App .Blog .Articles .Article .article-content .article-image img {\n            width: 200px;\n            height: auto; }\n        .App .Blog .Articles .Article .article-content .article-text {\n          font-size: 80%; }\n          .App .Blog .Articles .Article .article-content .article-text .text-paragraph {\n            margin-bottom: 10px; }\n        .App .Blog .Articles .Article .article-content .article-footer {\n          display: flex;\n          justify-content: space-between; }\n          .App .Blog .Articles .Article .article-content .article-footer .article-social-shares {\n            display: flex; }\n            .App .Blog .Articles .Article .article-content .article-footer .article-social-shares .social-icon {\n              cursor: pointer;\n              margin-right: 5px; }\n          .App .Blog .Articles .Article .article-content .article-footer .article-date {\n            margin-bottom: 2em;\n            float: right;\n            font-size: 80%;\n            font-style: italic; }\n    .App .Blog .SideBlock {\n      width: 20%;\n      height: 80%;\n      float: right;\n      margin-top: 2em;\n      margin-left: 1em; }\n      .App .Blog .SideBlock .ListPosts .post-title {\n        font-weight: 300;\n        font-size: 80%;\n        margin-bottom: 5px;\n        transition: font-weight font-style 0.2s; }\n      .App .Blog .SideBlock .ListPosts .activeTitle {\n        font-weight: bold;\n        font-style: italic; }\n        .App .Blog .SideBlock .ListPosts .activeTitle ion-icon {\n          color: #132366ce;\n          margin-right: 5px; }\n      .App .Blog .SideBlock .ListPosts:hover {\n        cursor: pointer; }\n  .App footer {\n    width: 100%;\n    height: 5%;\n    display: flex;\n    justify-content: space-between;\n    position: fixed;\n    bottom: 0;\n    left: 0;\n    background-color: #333;\n    padding: 5px;\n    font-size: 80%; }\n    .App footer .social-icons a {\n      width: 25px;\n      margin-right: 20px;\n      cursor: pointer; }\n      .App footer .social-icons a ion-icon {\n        transition: color 0.2s; }\n      .App footer .social-icons a #fb:hover {\n        color: #3b5999; }\n      .App footer .social-icons a #tw:hover {\n        color: #55acee; }\n      .App footer .social-icons a #gp:hover {\n        color: #dd4b39; }\n      .App footer .social-icons a #ig:hover {\n        color: #e4405f; }\n    .App footer .social-icons a:link,\n    .App footer .social-icons a:visited {\n      text-decoration: none;\n      border: 0;\n      color: #888;\n      transition: color 0.2s; }\n    .App footer .social-icons a:link,\n    .App footer .social-icons a:visited {\n      font-size: 160%; }\n    .App footer p {\n      color: #888;\n      text-align: center;\n      margin-top: 5px; }\n\n.animationIn {\n  animation: fadeIn 0.8s; }\n", ""]);
 
 // exports
 
@@ -33051,9 +33051,7 @@ App.childContextTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_classnames__ = __webpack_require__("./node_modules/classnames/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_classnames___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_classnames__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_easy_swipe__ = __webpack_require__("./node_modules/react-easy-swipe/lib/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_easy_swipe___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react_easy_swipe__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_share__ = __webpack_require__("./node_modules/react-share/es/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ArticleSwiped__ = __webpack_require__("./src/components/ui/ArticleSwiped.js");
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -33061,12 +33059,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-
-
-
-
-
 
 
 
@@ -33082,6 +33074,9 @@ var Article = function (_Component) {
 
         _this.componentDidUpdate = function (prevProps) {
             if (prevProps.post !== _this.props.post) {
+                window.scrollTo(0, 0);
+
+                console.log(window.scrollTo);
                 _this.activeAnimateIn();
             }
         };
@@ -33109,11 +33104,57 @@ var Article = function (_Component) {
     }, {
         key: 'render',
         value: function render() {
-            var _props = this.props,
-                post = _props.post,
-                onPrev = _props.onPrev,
-                onNext = _props.onNext,
-                animateIn = this.state.animateIn;
+            var animateIn = this.state.animateIn;
+
+
+            var classAnimateIn = __WEBPACK_IMPORTED_MODULE_1_classnames___default()({ 'animationIn': animateIn });
+
+            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                { className: 'Article ' + classAnimateIn },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__ArticleSwiped__["a" /* default */], this.props)
+            );
+        }
+    }]);
+
+    return Article;
+}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
+
+/* harmony default export */ __webpack_exports__["a"] = (Article);
+
+/***/ }),
+
+/***/ "./src/components/ui/ArticleContent.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__SocialShareButtons__ = __webpack_require__("./src/components/ui/SocialShareButtons.js");
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+var ArticleContent = function (_Component) {
+    _inherits(ArticleContent, _Component);
+
+    function ArticleContent() {
+        _classCallCheck(this, ArticleContent);
+
+        return _possibleConstructorReturn(this, (ArticleContent.__proto__ || Object.getPrototypeOf(ArticleContent)).apply(this, arguments));
+    }
+
+    _createClass(ArticleContent, [{
+        key: 'render',
+        value: function render() {
+            var post = this.props.post;
 
 
             var postText = post.text.split('\n').map(function (part, i) {
@@ -33124,81 +33165,89 @@ var Article = function (_Component) {
                 );
             });
 
-            var classAnimateIn = __WEBPACK_IMPORTED_MODULE_1_classnames___default()({ 'animationIn': animateIn });
-
             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'div',
-                { className: 'Article' },
+                { className: 'article-content' },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    __WEBPACK_IMPORTED_MODULE_2_react_easy_swipe___default.a,
-                    {
-                        onSwipeLeft: function onSwipeLeft() {
-                            return onNext();
-                        },
-                        onSwipeRight: function onSwipeRight() {
-                            return onPrev();
-                        }
-                    },
+                    'div',
+                    { className: 'article-title' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'h3',
+                        null,
+                        post.title
+                    )
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'article-image' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '' + post.image })
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'article-text' },
+                    postText
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'article-footer' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__SocialShareButtons__["a" /* default */], { post: post }),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         'div',
-                        { className: 'article-content ' + classAnimateIn },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'div',
-                            { className: 'article-title' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'h3',
-                                null,
-                                post.title
-                            )
-                        ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'div',
-                            { className: 'article-image' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '' + post.image })
-                        ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'div',
-                            { className: 'article-text' },
-                            postText
-                        ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'div',
-                            { className: 'article-footer' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'article-social-shares' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    __WEBPACK_IMPORTED_MODULE_3_react_share__["b" /* FacebookShareButton */],
-                                    { className: 'social-icon', url: 'http://facebook.com' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_react_share__["a" /* FacebookIcon */], { size: 32, round: true })
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    __WEBPACK_IMPORTED_MODULE_3_react_share__["f" /* TwitterShareButton */],
-                                    { className: 'social-icon', url: 'http://twitter.com' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_react_share__["e" /* TwitterIcon */], { size: 32, round: true })
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    __WEBPACK_IMPORTED_MODULE_3_react_share__["d" /* TelegramShareButton */],
-                                    { className: 'social-icon', url: 'http://telegram.com' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_react_share__["c" /* TelegramIcon */], { size: 32, round: true })
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'article-date' },
-                                post.date
-                            )
-                        )
+                        { className: 'article-date' },
+                        post.date
                     )
                 )
             );
         }
     }]);
 
-    return Article;
+    return ArticleContent;
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
 
-/* harmony default export */ __webpack_exports__["a"] = (Article);
+/* harmony default export */ __webpack_exports__["a"] = (ArticleContent);
+
+/***/ }),
+
+/***/ "./src/components/ui/ArticleSwiped.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ArticleContent__ = __webpack_require__("./src/components/ui/ArticleContent.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__wrapperSwipe__ = __webpack_require__("./src/components/ui/wrapperSwipe.js");
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+
+var ArticleSwiped = function (_Component) {
+    _inherits(ArticleSwiped, _Component);
+
+    function ArticleSwiped() {
+        _classCallCheck(this, ArticleSwiped);
+
+        return _possibleConstructorReturn(this, (ArticleSwiped.__proto__ || Object.getPrototypeOf(ArticleSwiped)).apply(this, arguments));
+    }
+
+    _createClass(ArticleSwiped, [{
+        key: 'render',
+        value: function render() {
+            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__ArticleContent__["a" /* default */], this.props);
+        }
+    }]);
+
+    return ArticleSwiped;
+}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
+
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_2__wrapperSwipe__["a" /* default */])('onPrev', 'onNext')(ArticleSwiped));
 
 /***/ }),
 
@@ -33362,7 +33411,7 @@ var Blog = function (_Component) {
                 history = _this$props.history;
 
 
-            if (!tag) tag = match.params.tag || 'all';
+            if (!tag && tag !== 'all') tag = match.params.tag || 'all';
             //if (!id) id = listPosts[listPosts.length - 1].id
             if (!id) id = listPosts[0].id;
 
@@ -33447,17 +33496,17 @@ var FooterBlock = function FooterBlock() {
             { className: 'social-icons' },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'a',
-                { href: '#' },
+                { href: 'http://facebook.com' },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('ion-icon', { id: 'fb', name: 'logo-facebook' })
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'a',
-                { href: '#' },
+                { href: 'http://twitter.com' },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('ion-icon', { id: 'tw', name: 'logo-twitter' })
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'a',
-                { href: '#' },
+                { href: 'http://googleplus.com' },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('ion-icon', { id: 'gp', name: 'logo-googleplus' })
             )
         )
@@ -33820,6 +33869,132 @@ var SideBlock = function (_Component) {
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
 
 /* harmony default export */ __webpack_exports__["a"] = (SideBlock);
+
+/***/ }),
+
+/***/ "./src/components/ui/SocialShareButtons.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_share__ = __webpack_require__("./node_modules/react-share/es/index.js");
+
+
+
+
+
+
+
+
+var SocialShareButtons = function SocialShareButtons(_ref) {
+    var post = _ref.post;
+
+
+    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'div',
+        { className: 'article-social-shares' },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_1_react_share__["b" /* FacebookShareButton */],
+            { className: 'social-icon', url: 'http://google.com' },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_share__["a" /* FacebookIcon */], { size: 32, round: true })
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_1_react_share__["f" /* TwitterShareButton */],
+            { className: 'social-icon', url: 'http://google.com' },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_share__["e" /* TwitterIcon */], { size: 32, round: true })
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_1_react_share__["d" /* TelegramShareButton */],
+            { className: 'social-icon', url: 'http://google.com' },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_share__["c" /* TelegramIcon */], { size: 32, round: true })
+        )
+    );
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (SocialShareButtons);
+
+/***/ }),
+
+/***/ "./src/components/ui/wrapperSwipe.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_easy_swipe__ = __webpack_require__("./node_modules/react-easy-swipe/lib/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_easy_swipe___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_easy_swipe__);
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+/* harmony default export */ __webpack_exports__["a"] = (function (funcPrev, funcNext) {
+    return function (SwipingComponent) {
+
+        return function (_Component) {
+            _inherits(wrapperSwipe, _Component);
+
+            function wrapperSwipe() {
+                _classCallCheck(this, wrapperSwipe);
+
+                var _this = _possibleConstructorReturn(this, (wrapperSwipe.__proto__ || Object.getPrototypeOf(wrapperSwipe)).call(this));
+
+                _this.state = { start: 0, end: 0 };
+                return _this;
+            }
+
+            _createClass(wrapperSwipe, [{
+                key: 'swipeMove',
+                value: function swipeMove(position, e) {
+                    this.setState({ end: position.x });
+                }
+            }, {
+                key: 'swipeStart',
+                value: function swipeStart(e) {
+                    this.setState({ start: 0, end: 0 });
+                }
+            }, {
+                key: 'swipeEnd',
+                value: function swipeEnd() {
+                    var onPrev = this.props[funcPrev],
+                        onNext = this.props[funcNext],
+                        _state = this.state,
+                        start = _state.start,
+                        end = _state.end,
+                        movingPx = end - start;
+
+
+                    if (movingPx > 80) onPrev();else if (movingPx < -80) onNext();
+                }
+            }, {
+                key: 'render',
+                value: function render() {
+                    var onPrev = this.props[funcPrev],
+                        onNext = this.props[funcNext];
+
+                    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        __WEBPACK_IMPORTED_MODULE_1_react_easy_swipe___default.a,
+                        {
+                            onSwipeStart: this.swipeStart.bind(this),
+                            onSwipeEnd: this.swipeEnd.bind(this),
+                            onSwipeMove: this.swipeMove.bind(this)
+                        },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(SwipingComponent, this.props)
+                    );
+                }
+            }]);
+
+            return wrapperSwipe;
+        }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
+    };
+});
 
 /***/ }),
 
