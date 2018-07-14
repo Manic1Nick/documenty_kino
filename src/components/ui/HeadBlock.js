@@ -14,7 +14,6 @@ export default class HeadBlock extends Component {
         super()
         this.state = { isMenuOpen: false }
 
-        this.click = this.click.bind(this)
         this.toggle = this.toggle.bind(this)
         this.close = this.close.bind(this)
     }
@@ -25,10 +24,6 @@ export default class HeadBlock extends Component {
      
     close() {
         this.setState({ isMenuOpen: false })
-    }
-     
-    click() {
-        console.log('You clicked an item')
     }
 
     renderDropdownLinks() {
@@ -73,7 +68,7 @@ export default class HeadBlock extends Component {
     }
 
     render() {
-        const { posts, screenWidth } = this.context,
+        const { screenWidth } = this.context,
             defaultIds = this._getDefaultIds()
     
         return(

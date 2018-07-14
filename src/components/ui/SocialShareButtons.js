@@ -45,17 +45,19 @@ import {
     ViberIcon,
   } from 'react-share'
 
-const SocialShareButtons = ({ post }) => {
+const SocialShareButtons = ({ post: { id, tag } }) => {
+
+    const link = `https://manic1nick.github.io/documenty_kino/#/${tag}/${id}`
 
     return(
         <div className='article-social-shares'>
-            <FacebookShareButton className='social-icon' url={'http://google.com'}>
+            <FacebookShareButton className='social-icon' url={link}>
                 <FacebookIcon size={32} round={true} />
             </FacebookShareButton>
-            <TwitterShareButton className='social-icon' url={'http://google.com'}>
+            <TwitterShareButton className='social-icon' url={link}>
                 <TwitterIcon size={32} round={true} />
             </TwitterShareButton>
-            <TelegramShareButton className='social-icon' url={'http://google.com'}>
+            <TelegramShareButton className='social-icon' url={link}>
                 <TelegramIcon size={32} round={true} />
             </TelegramShareButton>
         </div>

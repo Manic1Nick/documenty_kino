@@ -165,7 +165,10 @@
 
     .App {
         header {
-            .main-nav {    
+            .main-nav {   
+                .links {
+                    font-size: 90%;
+                } 
                 ul {        
                     li { 
                         margin-left: 5px;

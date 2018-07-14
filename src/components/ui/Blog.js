@@ -5,7 +5,7 @@ import Articles from './Articles'
 
 export default class Blog extends Component {
 
-    constructor(props) {
+    constructor() {
         super() 
         this.state = { listPosts: [] }
     }
@@ -19,7 +19,7 @@ export default class Blog extends Component {
     }
 
     componentWillReceiveProps = (nextProps) => { 
-        const { id, tag } = nextProps.match.params
+        const { tag } = nextProps.match.params
 
         if (tag !== this.props.match.params.tag) {
             this._updatePosts(tag)
@@ -30,7 +30,7 @@ export default class Blog extends Component {
         const { listPosts } = this.state,
             { match, history } = this.props
 
-        if (!tag && tag !== 'all') tag = match.params.tag || 'all'
+        if (!tag) tag = match.params.tag || 'all'
         //if (!id) id = listPosts[listPosts.length - 1].id
         if (!id) id = listPosts[0].id
 

@@ -10,11 +10,11 @@ export default (funcPrev, funcNext) => (SwipingComponent) => {
             this.state = { start: 0, end: 0 }
         }
 
-        swipeMove(position, e) {
+        swipeMove(position) {
             this.setState({ end: position.x })
         }
 
-        swipeStart(e) {
+        swipeStart() {
             this.setState({ start: 0, end: 0 })
         }
 
