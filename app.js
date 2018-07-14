@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "995e75c05992273c72ef"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "c98cbb651f30bfa00475"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -3163,7 +3163,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "/* Big tablets to 1200px (widths smaller than 1140px row) */\n/* Small tablets to big tablets from 768px to 1023px */\n@media only screen and (max-width: 1023px) {\n  .App header .main-nav ul li {\n    margin-left: 10px; } }\n\n/* Small phones to small tablets from 624px to 767px */\n@media only screen and (max-width: 767px) {\n  h1 {\n    font-size: 180%; }\n  .App header .site-title {\n    font-size: 80%; }\n  .App header .main-nav ul li a {\n    font-size: 70%; }\n  .App .Blog .Articles {\n    width: 80%; }\n    .App .Blog .Articles .arrow-buttons {\n      width: 30px; }\n      .App .Blog .Articles .arrow-buttons ion-icon {\n        width: 30px; }\n    .App .Blog .Articles .Article {\n      padding: 1em; }\n      .App .Blog .Articles .Article .article-content .article-image img {\n        width: 150px; }\n      .App .Blog .Articles .Article .article-content .article-text {\n        font-size: 80%; }\n      .App .Blog .Articles .Article .article-content .article-date {\n        font-size: 80%; }\n  .App .Blog .SideBlock {\n    width: 20%; }\n    .App .Blog .SideBlock .ListPosts .post-title {\n      font-size: 70%; }\n  .App footer {\n    height: 30px;\n    font-size: 60%; }\n    .App footer a {\n      margin-right: 10px; } }\n\n/* Small phones to small tablets from 481px to 623px */\n@media only screen and (max-width: 623px) {\n  .App header .main-nav ul li {\n    margin-left: 2px; }\n    .App header .main-nav ul li a {\n      font-size: 60%; }\n  .App .Blog .Articles .arrow-buttons {\n    width: 20px; }\n    .App .Blog .Articles .arrow-buttons ion-icon {\n      width: 20px; }\n  .App .Blog .Articles .Article {\n    padding: 0.5em; }\n    .App .Blog .Articles .Article .article-content .article-title {\n      font-size: 80%; }\n    .App .Blog .Articles .Article .article-content .article-image img {\n      width: 100px; }\n    .App .Blog .Articles .Article .article-content .article-text {\n      font-size: 70%; }\n    .App .Blog .Articles .Article .article-content .article-date {\n      font-size: 60%; }\n  .App .Blog .SideBlock {\n    margin-left: 0.5em; }\n    .App .Blog .SideBlock .ListPosts .post-title {\n      font-size: 60%; } }\n\n/* Small phones from 0px to 480px */\n@media only screen and (max-width: 480px) {\n  .App header .main-nav ul li {\n    margin-left: 5px; }\n    .App header .main-nav ul li a {\n      font-size: 70%; }\n  .App .Blog .Articles {\n    width: 100%; }\n    .App .Blog .Articles .Article {\n      padding: 0.5em; }\n      .App .Blog .Articles .Article .article-content .article-image img {\n        width: 100px; }\n  .App .Blog .SideBlock {\n    display: none; }\n  .App footer .copyright-text {\n    font-size: 70%; }\n  .App footer .social-icons {\n    font-size: 100%; }\n    .App footer .social-icons a {\n      width: 20px;\n      margin-right: 10px; } }\n", ""]);
+exports.push([module.i, "/* Big tablets to 1200px (widths smaller than 1140px row) */\n/* Small tablets to big tablets from 768px to 1023px */\n@media only screen and (max-width: 1023px) {\n  .App header .main-nav ul li {\n    margin-left: 10px; } }\n\n/* Small phones to small tablets from 624px to 767px */\n@media only screen and (max-width: 767px) {\n  h1 {\n    font-size: 180%; }\n  .App header .site-title {\n    font-size: 80%; }\n  .App header .main-nav ul li a {\n    font-size: 70%; }\n  .App .Blog .Articles {\n    width: 80%; }\n    .App .Blog .Articles .arrow-buttons {\n      width: 30px; }\n      .App .Blog .Articles .arrow-buttons ion-icon {\n        width: 30px; }\n    .App .Blog .Articles .Article {\n      padding: 1em; }\n      .App .Blog .Articles .Article .article-content .article-image img {\n        width: 150px; }\n      .App .Blog .Articles .Article .article-content .article-text {\n        font-size: 80%; }\n      .App .Blog .Articles .Article .article-content .article-date {\n        font-size: 80%; }\n  .App .Blog .SideBlock {\n    width: 20%; }\n    .App .Blog .SideBlock .ListPosts .post-title {\n      font-size: 70%; }\n  .App footer {\n    height: 30px;\n    font-size: 60%; }\n    .App footer a {\n      margin-right: 10px; } }\n\n/* Small phones to small tablets from 481px to 623px */\n@media only screen and (max-width: 623px) {\n  .App header .main-nav ul li {\n    margin-left: 2px; }\n    .App header .main-nav ul li a {\n      font-size: 60%; }\n  .App .Blog .Articles .arrow-buttons {\n    width: 20px; }\n    .App .Blog .Articles .arrow-buttons ion-icon {\n      width: 20px; }\n  .App .Blog .Articles .Article {\n    padding: 0.5em; }\n    .App .Blog .Articles .Article .article-content .article-title {\n      font-size: 80%; }\n    .App .Blog .Articles .Article .article-content .article-image img {\n      width: 100px; }\n    .App .Blog .Articles .Article .article-content .article-text {\n      font-size: 70%; }\n    .App .Blog .Articles .Article .article-content .article-date {\n      font-size: 60%; }\n  .App .Blog .SideBlock {\n    margin-left: 0.5em; }\n    .App .Blog .SideBlock .ListPosts .post-title {\n      font-size: 60%; } }\n\n/* Small phones from 0px to 480px */\n@media only screen and (max-width: 480px) {\n  .App header .main-nav .links {\n    font-size: 90%; }\n  .App header .main-nav ul li {\n    margin-left: 5px; }\n    .App header .main-nav ul li a {\n      font-size: 70%; }\n  .App .Blog .Articles {\n    width: 100%; }\n    .App .Blog .Articles .Article {\n      padding: 0.5em; }\n      .App .Blog .Articles .Article .article-content .article-image img {\n        width: 100px; }\n  .App .Blog .SideBlock {\n    display: none; }\n  .App footer .copyright-text {\n    font-size: 70%; }\n  .App footer .social-icons {\n    font-size: 100%; }\n    .App footer .social-icons a {\n      width: 20px;\n      margin-right: 10px; } }\n", ""]);
 
 // exports
 
@@ -3180,7 +3180,7 @@ exports.i(__webpack_require__("./node_modules/css-loader/index.js!./src/assets/s
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Arimo:400,400i,700,700i|Fira+Sans:300,400,700|Pacifico);", ""]);
 
 // module
-exports.push([module.i, "/*---------------------------------------------------------*/\n/* BASIC SETUP */\n/*---------------------------------------------------------*/\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box; }\n\nhtml,\nbody {\n  color: #555;\n  font-family: 'Fira+Sans', cursive;\n  font-weight: 400;\n  font-size: 20px;\n  overflow-x: hidden;\n  background-image: url(" + __webpack_require__("./src/assets/images/1920x1080-background.jpg") + ");\n  background-size: cover;\n  background-position: center;\n  height: 100vh; }\n\nul {\n  list-style: none; }\n\n.social-icon {\n  width: 30px;\n  height: 30px; }\n\n/* TITLES \n==================================*/\nh1,\nh2,\nh3 {\n  font-family: 'Pacifico', cursive; }\n\nh1 {\n  margin-top: 0;\n  /* color: #fff; */\n  font-size: 240%;\n  word-spacing: 4px;\n  letter-spacing: 1px; }\n\nh2 {\n  font-size: 180%;\n  word-spacing: 2px;\n  text-align: center;\n  margin-bottom: 30px;\n  letter-spacing: 1px; }\n\nh3 {\n  font-size: 110%;\n  margin-bottom: 15px; }\n\n/* LINKS \n==================================*/\na:link,\na:visited {\n  text-decoration: none;\n  padding-bottom: 1px; }\n\n/* APP \n==================================*/\n.App {\n  width: 100vw;\n  height: 100%; }\n  .App header {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    width: 100%;\n    height: 5%;\n    padding: 2%; }\n    .App header .site-title {\n      flex: 1; }\n    .App header .main-nav {\n      flex: 4;\n      margin-right: 10px; }\n      .App header .main-nav ul {\n        position: relative;\n        float: right; }\n        .App header .main-nav ul li {\n          display: inline-block;\n          margin-left: 30px; }\n          .App header .main-nav ul li a {\n            position: relative;\n            display: inline-block; }\n          .App header .main-nav ul li a:link,\n          .App header .main-nav ul li a:visited {\n            padding: 8px 0;\n            color: #555;\n            text-decoration: none;\n            padding-bottom: 2px;\n            transition: font-weight 0.2s; }\n          .App header .main-nav ul li a:hover,\n          .App header .main-nav ul li a:active {\n            font-weight: bold; }\n          .App header .main-nav ul li a:after {\n            content: '';\n            position: absolute;\n            left: 0;\n            right: 0;\n            top: 100%;\n            margin: 2px auto;\n            width: 15px;\n            height: 0;\n            border-bottom: 3px transparent;\n            transition: border-bottom 0.2s; }\n          .App header .main-nav ul li a:hover:after,\n          .App header .main-nav ul li a:active:after {\n            border-bottom: 3px dotted #132366ce; }\n      .App header .main-nav .dd-menu {\n        float: right;\n        cursor: pointer; }\n        .App header .main-nav .dd-menu ion-icon {\n          width: 30px;\n          height: 30px; }\n        .App header .main-nav .dd-menu ul {\n          width: 50vw;\n          height: 50vw; }\n          .App header .main-nav .dd-menu ul li {\n            width: 100%;\n            margin: 0 auto; }\n            .App header .main-nav .dd-menu ul li a {\n              text-align: center; }\n  .App .Blog {\n    width: 100%;\n    height: 80%;\n    padding-right: 10px;\n    display: flex; }\n    .App .Blog .Articles {\n      position: relative;\n      width: 80%;\n      margin: 0 auto;\n      display: flex; }\n      .App .Blog .Articles .arrow-buttons {\n        position: relative;\n        width: 40px;\n        height: auto; }\n        .App .Blog .Articles .arrow-buttons ion-icon {\n          position: fixed;\n          top: 15%;\n          width: 40px;\n          height: 80%;\n          opacity: 0.3;\n          transition: opacity 0.2s; }\n        .App .Blog .Articles .arrow-buttons ion-icon:hover {\n          opacity: 1;\n          cursor: pointer; }\n      .App .Blog .Articles .Article {\n        position: relative;\n        padding: 1em;\n        width: 100%; }\n        .App .Blog .Articles .Article .article-content p {\n          text-align: left; }\n        .App .Blog .Articles .Article .article-content .article-title,\n        .App .Blog .Articles .Article .article-content .article-image,\n        .App .Blog .Articles .Article .article-content .article-text,\n        .App .Blog .Articles .Article .article-content .article-footer {\n          margin-bottom: 10px; }\n        .App .Blog .Articles .Article .article-content .article-title {\n          font-weight: bold; }\n        .App .Blog .Articles .Article .article-content .article-image {\n          text-align: center; }\n          .App .Blog .Articles .Article .article-content .article-image img {\n            width: 200px;\n            height: auto; }\n        .App .Blog .Articles .Article .article-content .article-text {\n          font-size: 80%; }\n          .App .Blog .Articles .Article .article-content .article-text .text-paragraph {\n            margin-bottom: 10px; }\n        .App .Blog .Articles .Article .article-content .article-footer {\n          display: flex;\n          justify-content: space-between; }\n          .App .Blog .Articles .Article .article-content .article-footer .article-social-shares {\n            display: flex; }\n            .App .Blog .Articles .Article .article-content .article-footer .article-social-shares .social-icon {\n              cursor: pointer;\n              margin-right: 5px; }\n          .App .Blog .Articles .Article .article-content .article-footer .article-date {\n            margin-bottom: 2em;\n            float: right;\n            font-size: 80%;\n            font-style: italic; }\n    .App .Blog .SideBlock {\n      width: 20%;\n      height: 80%;\n      float: right;\n      margin-top: 2em;\n      margin-left: 1em; }\n      .App .Blog .SideBlock .ListPosts .post-title {\n        font-weight: 300;\n        font-size: 80%;\n        margin-bottom: 5px;\n        transition: font-weight font-style 0.2s; }\n      .App .Blog .SideBlock .ListPosts .activeTitle {\n        font-weight: bold;\n        font-style: italic; }\n        .App .Blog .SideBlock .ListPosts .activeTitle ion-icon {\n          color: #132366ce;\n          margin-right: 5px; }\n      .App .Blog .SideBlock .ListPosts:hover {\n        cursor: pointer; }\n  .App footer {\n    width: 100%;\n    height: 5%;\n    display: flex;\n    justify-content: space-between;\n    position: fixed;\n    bottom: 0;\n    left: 0;\n    background-color: #333;\n    padding: 5px;\n    font-size: 80%; }\n    .App footer .social-icons a {\n      width: 25px;\n      margin-right: 20px;\n      cursor: pointer; }\n      .App footer .social-icons a ion-icon {\n        transition: color 0.2s; }\n      .App footer .social-icons a #fb:hover {\n        color: #3b5999; }\n      .App footer .social-icons a #tw:hover {\n        color: #55acee; }\n      .App footer .social-icons a #gp:hover {\n        color: #dd4b39; }\n      .App footer .social-icons a #ig:hover {\n        color: #e4405f; }\n    .App footer .social-icons a:link,\n    .App footer .social-icons a:visited {\n      text-decoration: none;\n      border: 0;\n      color: #888;\n      transition: color 0.2s; }\n    .App footer .social-icons a:link,\n    .App footer .social-icons a:visited {\n      font-size: 160%; }\n    .App footer p {\n      color: #888;\n      text-align: center;\n      margin-top: 5px; }\n\n.animationIn {\n  animation: fadeIn 0.8s; }\n", ""]);
+exports.push([module.i, "/*---------------------------------------------------------*/\n/* BASIC SETUP */\n/*---------------------------------------------------------*/\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box; }\n\nhtml,\nbody {\n  color: #555;\n  font-family: 'Fira+Sans', cursive;\n  font-weight: 400;\n  font-size: 20px;\n  background-image: url(" + __webpack_require__("./src/assets/images/1920x1080-background.jpg") + ");\n  background-size: cover;\n  background-position: center; }\n\nhtml {\n  height: 100%;\n  overflow: auto;\n  overflow-x: hidden; }\n\nbody {\n  height: 100%; }\n\nul {\n  list-style: none; }\n\n.social-icon {\n  width: 30px;\n  height: 30px; }\n\n/* TITLES \n==================================*/\nh1,\nh2,\nh3 {\n  font-family: 'Pacifico', cursive; }\n\nh1 {\n  margin-top: 0;\n  /* color: #fff; */\n  font-size: 240%;\n  word-spacing: 4px;\n  letter-spacing: 1px; }\n\nh2 {\n  font-size: 180%;\n  word-spacing: 2px;\n  text-align: center;\n  margin-bottom: 30px;\n  letter-spacing: 1px; }\n\nh3 {\n  font-size: 110%;\n  margin-bottom: 15px; }\n\n/* LINKS \n==================================*/\na:link,\na:visited {\n  text-decoration: none;\n  padding-bottom: 1px; }\n\n/* APP \n==================================*/\n.App {\n  width: 100vw;\n  height: 100%; }\n  .App header {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    width: 100%;\n    height: 5%;\n    padding: 2%; }\n    .App header .site-title {\n      flex: 1; }\n    .App header .main-nav {\n      flex: 4;\n      margin-right: 10px; }\n      .App header .main-nav ul {\n        position: relative;\n        float: right; }\n        .App header .main-nav ul li {\n          display: inline-block;\n          margin-left: 30px; }\n          .App header .main-nav ul li a {\n            position: relative;\n            display: inline-block; }\n          .App header .main-nav ul li a:link,\n          .App header .main-nav ul li a:visited {\n            padding: 8px 0;\n            color: #555;\n            text-decoration: none;\n            padding-bottom: 2px;\n            transition: font-weight 0.2s; }\n          .App header .main-nav ul li a:hover,\n          .App header .main-nav ul li a:active {\n            font-weight: bold; }\n          .App header .main-nav ul li a:after {\n            content: '';\n            position: absolute;\n            left: 0;\n            right: 0;\n            top: 100%;\n            margin: 2px auto;\n            width: 15px;\n            height: 0;\n            border-bottom: 3px transparent;\n            transition: border-bottom 0.2s; }\n          .App header .main-nav ul li a:hover:after,\n          .App header .main-nav ul li a:active:after {\n            border-bottom: 3px dotted #132366ce; }\n      .App header .main-nav .dd-menu {\n        float: right;\n        cursor: pointer; }\n        .App header .main-nav .dd-menu ion-icon {\n          width: 30px;\n          height: 30px; }\n        .App header .main-nav .dd-menu .links {\n          width: 150%; }\n        .App header .main-nav .dd-menu ul li {\n          width: 100%;\n          margin: 0 auto; }\n          .App header .main-nav .dd-menu ul li a {\n            text-align: center; }\n        .App header .main-nav .dd-menu ul li:last-child {\n          padding-bottom: 10px; }\n  .App .Blog {\n    width: 100%;\n    height: 80%;\n    padding-right: 10px;\n    display: flex; }\n    .App .Blog .Articles {\n      position: relative;\n      width: 80%;\n      margin: 0 auto;\n      display: flex; }\n      .App .Blog .Articles .arrow-buttons {\n        position: relative;\n        width: 40px;\n        height: auto; }\n        .App .Blog .Articles .arrow-buttons ion-icon {\n          position: fixed;\n          top: 15%;\n          width: 40px;\n          height: 80%;\n          opacity: 0.3;\n          transition: opacity 0.2s; }\n        .App .Blog .Articles .arrow-buttons ion-icon:hover {\n          opacity: 1;\n          cursor: pointer; }\n      .App .Blog .Articles .Article {\n        position: relative;\n        padding: 1em;\n        width: 100%; }\n        .App .Blog .Articles .Article .article-content p {\n          text-align: left; }\n        .App .Blog .Articles .Article .article-content .article-title,\n        .App .Blog .Articles .Article .article-content .article-image,\n        .App .Blog .Articles .Article .article-content .article-text,\n        .App .Blog .Articles .Article .article-content .article-footer {\n          margin-bottom: 10px; }\n        .App .Blog .Articles .Article .article-content .article-title {\n          font-weight: bold; }\n        .App .Blog .Articles .Article .article-content .article-image {\n          text-align: center; }\n          .App .Blog .Articles .Article .article-content .article-image img {\n            width: 200px;\n            height: auto; }\n        .App .Blog .Articles .Article .article-content .article-text {\n          font-size: 80%; }\n          .App .Blog .Articles .Article .article-content .article-text .text-paragraph {\n            margin-bottom: 10px; }\n        .App .Blog .Articles .Article .article-content .article-footer {\n          display: flex;\n          justify-content: space-between; }\n          .App .Blog .Articles .Article .article-content .article-footer .article-social-shares {\n            display: flex; }\n            .App .Blog .Articles .Article .article-content .article-footer .article-social-shares .social-icon {\n              cursor: pointer;\n              margin-right: 5px; }\n          .App .Blog .Articles .Article .article-content .article-footer .article-date {\n            margin-bottom: 2em;\n            float: right;\n            font-size: 80%;\n            font-style: italic; }\n    .App .Blog .SideBlock {\n      width: 20%;\n      height: 80%;\n      float: right;\n      margin-top: 2em;\n      margin-left: 1em; }\n      .App .Blog .SideBlock .ListPosts .post-title {\n        font-weight: 300;\n        font-size: 80%;\n        margin-bottom: 5px;\n        transition: font-weight font-style 0.2s; }\n      .App .Blog .SideBlock .ListPosts .activeTitle {\n        font-weight: bold;\n        font-style: italic; }\n        .App .Blog .SideBlock .ListPosts .activeTitle ion-icon {\n          color: #132366ce;\n          margin-right: 5px; }\n      .App .Blog .SideBlock .ListPosts:hover {\n        cursor: pointer; }\n  .App footer {\n    width: 100%;\n    height: 5%;\n    display: flex;\n    justify-content: space-between;\n    position: fixed;\n    bottom: 0;\n    left: 0;\n    background-color: #333;\n    padding: 5px;\n    font-size: 80%; }\n    .App footer .social-icons a {\n      width: 25px;\n      margin-right: 20px;\n      cursor: pointer; }\n      .App footer .social-icons a ion-icon {\n        transition: color 0.2s; }\n      .App footer .social-icons a #fb:hover {\n        color: #3b5999; }\n      .App footer .social-icons a #tw:hover {\n        color: #55acee; }\n      .App footer .social-icons a #gp:hover {\n        color: #dd4b39; }\n      .App footer .social-icons a #ig:hover {\n        color: #e4405f; }\n    .App footer .social-icons a:link,\n    .App footer .social-icons a:visited {\n      text-decoration: none;\n      border: 0;\n      color: #888;\n      transition: color 0.2s; }\n    .App footer .social-icons a:link,\n    .App footer .social-icons a:visited {\n      font-size: 160%; }\n    .App footer p {\n      color: #888;\n      text-align: center;\n      margin-top: 5px; }\n\n.animationIn {\n  animation: fadeIn 0.8s; }\n", ""]);
 
 // exports
 
@@ -33075,43 +33075,41 @@ var Article = function (_Component) {
         _this.componentDidUpdate = function (prevProps) {
             if (prevProps.post !== _this.props.post) {
                 window.scrollTo(0, 0);
-
-                console.log(window.scrollTo);
-                _this.activeAnimateIn();
+                _this.activeAnimationIn();
             }
         };
 
-        _this.state = { animateIn: false };
+        _this.state = { animationIn: false };
         return _this;
     }
 
     _createClass(Article, [{
         key: 'componentDidMount',
         value: function componentDidMount() {
-            this.activeAnimateIn();
+            this.activeAnimationIn();
         }
     }, {
-        key: 'activeAnimateIn',
-        value: function activeAnimateIn() {
+        key: 'activeAnimationIn',
+        value: function activeAnimationIn() {
             var _this2 = this;
 
-            this.setState({ animateIn: true });
+            this.setState({ animationIn: true });
 
             setTimeout(function () {
-                _this2.setState({ animateIn: false });
+                _this2.setState({ animationIn: false });
             }, 1000);
         }
     }, {
         key: 'render',
         value: function render() {
-            var animateIn = this.state.animateIn;
+            var animationIn = this.state.animationIn;
 
 
-            var classAnimateIn = __WEBPACK_IMPORTED_MODULE_1_classnames___default()({ 'animationIn': animateIn });
+            var classAnimationIn = __WEBPACK_IMPORTED_MODULE_1_classnames___default()('Article', { animationIn: animationIn });
 
             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'div',
-                { className: 'Article ' + classAnimateIn },
+                { className: classAnimationIn },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__ArticleSwiped__["a" /* default */], this.props)
             );
         }
@@ -33154,10 +33152,14 @@ var ArticleContent = function (_Component) {
     _createClass(ArticleContent, [{
         key: 'render',
         value: function render() {
-            var post = this.props.post;
+            var post = this.props.post,
+                title = post.title,
+                image = post.image,
+                text = post.text,
+                date = post.date;
 
 
-            var postText = post.text.split('\n').map(function (part, i) {
+            var postText = text.split('\n').map(function (part, i) {
                 return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'p',
                     { key: i, className: 'text-paragraph' },
@@ -33174,13 +33176,13 @@ var ArticleContent = function (_Component) {
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         'h3',
                         null,
-                        post.title
+                        title
                     )
                 ),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'div',
                     { className: 'article-image' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '' + post.image })
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '' + image })
                 ),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'div',
@@ -33194,7 +33196,7 @@ var ArticleContent = function (_Component) {
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         'div',
                         { className: 'article-date' },
-                        post.date
+                        date
                     )
                 )
             );
@@ -33380,7 +33382,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var Blog = function (_Component) {
     _inherits(Blog, _Component);
 
-    function Blog(props) {
+    function Blog() {
         _classCallCheck(this, Blog);
 
         var _this = _possibleConstructorReturn(this, (Blog.__proto__ || Object.getPrototypeOf(Blog)).call(this));
@@ -33394,9 +33396,7 @@ var Blog = function (_Component) {
         };
 
         _this.componentWillReceiveProps = function (nextProps) {
-            var _nextProps$match$para = nextProps.match.params,
-                id = _nextProps$match$para.id,
-                tag = _nextProps$match$para.tag;
+            var tag = nextProps.match.params.tag;
 
 
             if (tag !== _this.props.match.params.tag) {
@@ -33411,7 +33411,7 @@ var Blog = function (_Component) {
                 history = _this$props.history;
 
 
-            if (!tag && tag !== 'all') tag = match.params.tag || 'all';
+            if (!tag) tag = match.params.tag || 'all';
             //if (!id) id = listPosts[listPosts.length - 1].id
             if (!id) id = listPosts[0].id;
 
@@ -33582,7 +33582,6 @@ var HeadBlock = function (_Component) {
 
         _this.state = { isMenuOpen: false };
 
-        _this.click = _this.click.bind(_this);
         _this.toggle = _this.toggle.bind(_this);
         _this.close = _this.close.bind(_this);
         return _this;
@@ -33597,11 +33596,6 @@ var HeadBlock = function (_Component) {
         key: 'close',
         value: function close() {
             this.setState({ isMenuOpen: false });
-        }
-    }, {
-        key: 'click',
-        value: function click() {
-            console.log('You clicked an item');
         }
     }, {
         key: 'renderDropdownLinks',
@@ -33651,10 +33645,9 @@ var HeadBlock = function (_Component) {
     }, {
         key: 'render',
         value: function render() {
-            var _context = this.context,
-                posts = _context.posts,
-                screenWidth = _context.screenWidth,
+            var screenWidth = this.context.screenWidth,
                 defaultIds = this._getDefaultIds();
+
 
             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'header',
@@ -33789,8 +33782,8 @@ var ListPostsItem = function (_Component) {
                 openPost = _props.openPost;
 
 
-            var activeTitle = post.id === parseInt(match.params.id),
-                classListItem = __WEBPACK_IMPORTED_MODULE_1_classnames___default()('post-title', { activeTitle: activeTitle });
+            var activePost = post.id === parseInt(match.params.id),
+                classListItem = __WEBPACK_IMPORTED_MODULE_1_classnames___default()('post-title', { activePost: activePost });
 
             return React.createElement(
                 'li',
@@ -33799,7 +33792,7 @@ var ListPostsItem = function (_Component) {
                         return openPost(post.id);
                     }
                 },
-                activeTitle ? React.createElement('ion-icon', { name: 'videocam' }) : null //return-right
+                activePost ? React.createElement('ion-icon', { name: 'videocam' }) : null //return-right
                 ,
                 React.createElement(
                     'span',
@@ -33847,20 +33840,10 @@ var SideBlock = function (_Component) {
     _createClass(SideBlock, [{
         key: 'render',
         value: function render() {
-            var _props = this.props,
-                posts = _props.posts,
-                match = _props.match,
-                openPost = _props.openPost;
-
-
             return React.createElement(
                 'div',
                 { className: 'SideBlock' },
-                React.createElement(__WEBPACK_IMPORTED_MODULE_1__ListPosts__["a" /* default */], {
-                    posts: posts,
-                    match: match,
-                    openPost: openPost
-                })
+                React.createElement(__WEBPACK_IMPORTED_MODULE_1__ListPosts__["a" /* default */], this.props)
             );
         }
     }]);
@@ -33888,25 +33871,29 @@ var SideBlock = function (_Component) {
 
 
 var SocialShareButtons = function SocialShareButtons(_ref) {
-    var post = _ref.post;
+    var _ref$post = _ref.post,
+        id = _ref$post.id,
+        tag = _ref$post.tag;
 
+
+    var link = 'https://manic1nick.github.io/documenty_kino/#/' + tag + '/' + id;
 
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
         { className: 'article-social-shares' },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             __WEBPACK_IMPORTED_MODULE_1_react_share__["b" /* FacebookShareButton */],
-            { className: 'social-icon', url: 'http://google.com' },
+            { className: 'social-icon', url: link },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_share__["a" /* FacebookIcon */], { size: 32, round: true })
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             __WEBPACK_IMPORTED_MODULE_1_react_share__["f" /* TwitterShareButton */],
-            { className: 'social-icon', url: 'http://google.com' },
+            { className: 'social-icon', url: link },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_share__["e" /* TwitterIcon */], { size: 32, round: true })
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             __WEBPACK_IMPORTED_MODULE_1_react_share__["d" /* TelegramShareButton */],
-            { className: 'social-icon', url: 'http://google.com' },
+            { className: 'social-icon', url: link },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_share__["c" /* TelegramIcon */], { size: 32, round: true })
         )
     );
@@ -33952,12 +33939,12 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
             _createClass(wrapperSwipe, [{
                 key: 'swipeMove',
-                value: function swipeMove(position, e) {
+                value: function swipeMove(position) {
                     this.setState({ end: position.x });
                 }
             }, {
                 key: 'swipeStart',
-                value: function swipeStart(e) {
+                value: function swipeStart() {
                     this.setState({ start: 0, end: 0 });
                 }
             }, {
@@ -34015,7 +34002,22 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
+//import fetch from 'isomorphic-fetch'
+//import sampleData from 'https://sendeyo.com/en/3957c0bb3a'
 
+
+
+
+// let sampleData = {}
+
+// fetch('https://api.myjson.com/bins/aa1me')
+// 	.then(response => response.json())
+// 	.then(response => { sampleData = response })
+//     .catch(error => {
+//         console.log(error.message)
+// 	})
+
+// 	console.log(sampleData)
 
 var state = localStorage["redux-store-documenty"] ? JSON.parse(localStorage["redux-store-documenty"]) : __WEBPACK_IMPORTED_MODULE_2__initialState___default.a;
 
