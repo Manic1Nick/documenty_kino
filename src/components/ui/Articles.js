@@ -31,12 +31,12 @@ export default class Articles extends Component {
     }
 
     render() {
-        const { posts, activePostIndex, shuffled, openSideBar } = this.props,
+        const { posts, activePostIndex, shifted, openSideBar } = this.props,
             activePost = posts[activePostIndex]
 
         if (!activePost) return null
 
-        let classArticles = classNames('Articles', { shuffled })
+        let classArticles = classNames('Articles', { shifted })
 
         return(
             <div className={ classArticles }>
@@ -49,7 +49,7 @@ export default class Articles extends Component {
                     onPrev={ this.handleOpenPrev } 
                     onNext={ this.handleOpenNext } 
                     openSideBar={ openSideBar }
-                    shuffled={ shuffled }
+                    shifted={ shifted }
                 />
                 
                 <div className='arrow-buttons' onClick={ this.handleOpenNext }>

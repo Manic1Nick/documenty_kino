@@ -311,7 +311,7 @@ a:visited {
             margin-left: 1em;
 
             .ListPosts {
-                .post-title {
+                .listItem {
                     font-weight: 300;
                     font-size: 80%;
                     margin-bottom: 5px;
@@ -392,6 +392,17 @@ a:visited {
 // =====================
 // ANIMATIONS
 
-.animationIn {
+.fadeIn {
     animation: fadeIn 0.8s;
+}
+
+.fadeInDown {
+    animation: fadeInDown 0.8s;
+}
+
+.fadeInLeft {
+    animation: fadeInLeft 0.8s;
+}
+.fadeOutRight {
+    animation: fadeOutRight 0.8s;
 }

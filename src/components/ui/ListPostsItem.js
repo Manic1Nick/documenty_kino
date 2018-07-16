@@ -7,7 +7,7 @@ export default class ListPostsItem extends Component {
         const { post, match, openPost } = this.props
 
         let activePost = post.id === parseInt(match.params.id),
-            classListItem = classNames('post-title', { activePost })
+            classListItem = classNames('listItem', { activePost })
 
         return(
             <li className={ classListItem } 

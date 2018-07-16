@@ -79,7 +79,7 @@
                 width: 20%;
     
                 .ListPosts {
-                    .post-title {
+                    .listItem {
                         font-size: 70%;
                     }
                 }
@@ -164,7 +164,7 @@
         width: 200px;
         padding-left: 10px;
 
-        .post-title {
+        .listItem {
             font-weight: 300;
             font-size: 70%;
             margin-bottom: 5px;
@@ -231,13 +231,14 @@
                 } 
             }
 
-            .Articles.shuffled {
+            .Articles.shifted {
                 margin-right: -200px;
                 background: rgba(0, 0, 0, 0.3);
                 filter: brightness(50%);
             }
 
             .SideBlock { display: none; }
+
             .SideBar { 
                 display: block; 
                 width: 0;

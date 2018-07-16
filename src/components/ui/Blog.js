@@ -57,7 +57,7 @@ export default class Blog extends Component {
         return(
             <div className='Blog'>
                 <Articles
-                    shuffled={ openSideBar }
+                    shifted={ openSideBar }
                     posts={ listPosts }
                     activePostIndex={ activePostIndex }
                     openPost={ this.handleOpenPost } 

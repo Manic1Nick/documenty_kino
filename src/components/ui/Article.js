@@ -31,14 +31,14 @@ export default class Article extends Component {
 
     render() {
         const { animationIn } = this.state,
-            { shuffled } = this.props
+            { shifted } = this.props
         
-        let classArticle = classNames('Article', { animationIn })
+        let classArticle = classNames('Article', { fadeIn: animationIn })
 
         return(
             <div className={ classArticle }>
             {
-                shuffled
+                shifted
             ?
                 <ArticleContent {...this.props} />
             :

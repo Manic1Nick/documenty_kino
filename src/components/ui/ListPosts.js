@@ -15,6 +15,7 @@ export default class ListPosts extends Component {
                         post={ post } 
                         match={ match } 
                         openPost={ openPost } 
+                        timeout={ 80 * i+1 }
                     />
                 )
             }

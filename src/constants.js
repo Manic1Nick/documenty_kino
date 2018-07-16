@@ -7,3 +7,8 @@ export const LINKS_UKR = [
 ]
 
 export const MAIN_TITLE = 'Документи'
+
+export const ANIMATIONS = {
+    article: 'fadeIn',
+    listPostsItem: 'fadeIn'
+}
