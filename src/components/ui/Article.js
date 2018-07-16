@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import classNames from 'classnames'
+import ArticleContent from './ArticleContent'
 import ArticleSwiped from './ArticleSwiped'
 
 export default class Article extends Component {
@@ -29,13 +30,20 @@ export default class Article extends Component {
     }
 
     render() {
-        const { animationIn } = this.state
+        const { animationIn } = this.state,
+            { shuffled } = this.props
         
-        let classAnimationIn = classNames('Article', { animationIn })
+        let classArticle = classNames('Article', { animationIn })
 
         return(
-            <div className={ classAnimationIn }>
+            <div className={ classArticle }>
+            {
+                shuffled
+            ?
+                <ArticleContent {...this.props} />
+            :
                 <ArticleSwiped {...this.props} />
+            }                
             </div>
         )
     }

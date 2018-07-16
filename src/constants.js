@@ -1,0 +1,9 @@
+export const LINKS = [
+    'names', 'festivals', 'paragraphs', 'live', 'all'
+]
+
+export const LINKS_UKR = [
+    'iмена', 'фестивалi', 'параграфи', 'live', 'все'
+]
+
+export const MAIN_TITLE = 'Документи'

@@ -1,12 +1,9 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { PropTypes } from 'prop-types'
+import { LINKS, LINKS_UKR, MAIN_TITLE } from '../../constants'
 
 import DropdownMenu from 'react-dd-menu'
-
-const LINKS = [ 'names', 'festivals', 'paragraphs', 'live', 'all' ],
-    LINKS_UKR = [ 'iмена', 'фестивалi', 'параграфи', 'live', 'все' ],
-    MAIN_TITLE = 'Документи'
 
 export default class HeadBlock extends Component {
 

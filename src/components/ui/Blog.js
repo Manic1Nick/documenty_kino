@@ -1,13 +1,17 @@
 import React, { Component } from 'react'
 import { PropTypes } from 'prop-types'
 import SideBlock from './SideBlock'
+import SideBar from './SideBar'
 import Articles from './Articles'
 
 export default class Blog extends Component {
 
     constructor() {
         super() 
-        this.state = { listPosts: [] }
+        this.state = { 
+            listPosts: [],
+            openSideBar: false
+         }
     }
 
     componentWillMount = () => {
@@ -37,22 +41,39 @@ export default class Blog extends Component {
         history.push(`/${tag}/${id}`)
     }
 
+    handleOpenSideBar = () => {
+        this.setState({ openSideBar: true })
+    }
+
+    handleHideSideBar = () => {
+        this.setState({ openSideBar: false })
+    }
+
     render() {
-        const { listPosts } = this.state,
+        const { listPosts, openSideBar } = this.state,
             { id } = this.props.match.params,
             activePostIndex = listPosts.findIndex(post => post.id === parseInt(id))
 
         return(
             <div className='Blog'>
                 <Articles
+                    shuffled={ openSideBar }
                     posts={ listPosts }
                     activePostIndex={ activePostIndex }
                     openPost={ this.handleOpenPost } 
+                    openSideBar={ this.handleOpenSideBar }
                 />
                 <SideBlock 
                     posts={ listPosts } 
                     match={ this.props.match } 
-                    openPost={ this.handleOpenPost } 
+                    openPost={ this.handleOpenPost }
+                />
+                <SideBar 
+                    open={ openSideBar }
+                    posts={ listPosts } 
+                    match={ this.props.match } 
+                    openPost={ this.handleOpenPost }
+                    hideSideBar={ this.handleHideSideBar }
                 />
             </div>
         )

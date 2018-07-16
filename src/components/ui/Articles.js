@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import classNames from 'classnames'
 
 import Article from './Article'
 
@@ -30,21 +31,25 @@ export default class Articles extends Component {
     }
 
     render() {
-        const { posts, activePostIndex } = this.props,
+        const { posts, activePostIndex, shuffled, openSideBar } = this.props,
             activePost = posts[activePostIndex]
 
         if (!activePost) return null
 
+        let classArticles = classNames('Articles', { shuffled })
+
         return(
-            <div className='Articles'>
+            <div className={ classArticles }>
                 <div className='arrow-buttons' onClick={ this.handleOpenPrev }>
                     <ion-icon name="ios-arrow-back"></ion-icon>
                 </div>
 
-                <Article 
+                <Article
                     post={ activePost } 
                     onPrev={ this.handleOpenPrev } 
                     onNext={ this.handleOpenNext } 
+                    openSideBar={ openSideBar }
+                    shuffled={ shuffled }
                 />
                 
                 <div className='arrow-buttons' onClick={ this.handleOpenNext }>

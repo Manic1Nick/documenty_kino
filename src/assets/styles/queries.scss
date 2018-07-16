@@ -159,12 +159,37 @@
 
 /* Small phones from 0px to 480px */
 @media only screen and (max-width: 480px) {
-    // h1 {
-    //     font-size: 120%;
-    // }
+
+    .ListPosts {                
+        width: 200px;
+        padding-left: 10px;
+
+        .post-title {
+            font-weight: 300;
+            font-size: 70%;
+            margin-bottom: 5px;
+            transition: font-weight font-style 0.2s;
+        }
+
+        .activeTitle {
+            font-weight: bold;
+            font-style: italic;
+
+            ion-icon {
+                color: #132366ce;
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .ListPosts:hover {
+        cursor: pointer;
+    }
 
     .App {
         header {
+            //position: fixed;
+
             .main-nav {   
                 .links {
                     font-size: 90%;
@@ -179,9 +204,13 @@
             }
         }
 
-        .Blog {            
+        .Blog {        
+            overflow-x: hidden;            
+
             .Articles {
                 width: 100%;
+                transition: all 0.3s ease-out;
+                margin-right: 0;
     
                 .Article {
                     padding: 0.5em;    
@@ -199,13 +228,22 @@
                         .article-date {
                         }
                     }
-
-                }
-        
+                } 
             }
-        
-            .SideBlock {
-                display: none;
+
+            .Articles.shuffled {
+                margin-right: -200px;
+                background: rgba(0, 0, 0, 0.3);
+                filter: brightness(50%);
+            }
+
+            .SideBlock { display: none; }
+            .SideBar { 
+                display: block; 
+                width: 0;
+            }
+            .SideBar.open {
+                width: 200px;
             }
         }
 
