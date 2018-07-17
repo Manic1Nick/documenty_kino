@@ -48,7 +48,7 @@ const webpackConfig = {
 	],
 	devServer: {
 		contentBase: path.resolve(__dirname, './dist'),
-		port: 8081,
+		port: 8080,
 		historyApiFallback: true,
 		inline: true,
 		hot: true,

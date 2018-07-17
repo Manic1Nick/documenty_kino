@@ -16,7 +16,6 @@ html,
 body {
     color: #555;
     font-family: 'Fira+Sans', cursive;
-    //font-family: 'Pangolin', cursive;
     font-weight: 400;
     font-size: 20px;
     //text-rendering: optimizeLegibility;
@@ -25,11 +24,10 @@ body {
     background-image: url(../images/1920x1080-background.jpg);
     background-size: cover;
     background-position: center;
-    //height: 100vh;
+    height: 100%;
 }
 
-html { height: 100%; overflow:auto; overflow-x: hidden; }
-body { height: 100%; }
+html { overflow:auto; overflow-x: hidden; }
 
 ul { list-style: none; }
 
@@ -53,8 +51,6 @@ h3 {
 
 h1 {
     margin-top: 0;
-    // margin-bottom: 20px;
-    /* color: #fff; */
     font-size: 240%;
     word-spacing: 4px;
     letter-spacing: 1px;
@@ -64,13 +60,11 @@ h2 {
     font-size: 180%;
     word-spacing: 2px;
     text-align: center;
-    //margin-bottom: 30px;
     letter-spacing: 1px;
 }
 
 h3 {
     font-size: 110%;
-    //margin-bottom: 15px;
 }
 
 /* LINKS 
@@ -239,7 +233,7 @@ a:visited {
                             flex: 1;
                             text-align: right;
                             font-family: 'Pacific';
-                            //opacity: 0.3;
+                            
                             h3 {
                                 color: rgb(151, 151, 151);
                             }
@@ -299,7 +293,6 @@ a:visited {
             margin-left: -200px;
             overflow-y: hidden;
             overflow-x: hidden;
-            //background: rgb(230, 230, 230);
             transition: all 0.5s ease;
         }
     
@@ -394,15 +387,4 @@ a:visited {
 
 .fadeIn {
     animation: fadeIn 0.8s;
-}
-
-.fadeInDown {
-    animation: fadeInDown 0.8s;
-}
-
-.fadeInLeft {
-    animation: fadeInLeft 0.8s;
-}
-.fadeOutRight {
-    animation: fadeOutRight 0.8s;
 }

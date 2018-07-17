@@ -1,6 +1,8 @@
 import { Component } from 'react'
-
+import posed, { PoseGroup } from 'react-pose'
 import ListPostsItem from './ListPostsItem'
+
+const Item = posed.li()
 
 export default class ListPosts extends Component {
 
@@ -9,16 +11,19 @@ export default class ListPosts extends Component {
 
         return(
             <ul className='ListPosts'>
-            {
-                posts.map((post, i) =>
-                    <ListPostsItem key={i} 
-                        post={ post } 
-                        match={ match } 
-                        openPost={ openPost } 
-                        timeout={ 80 * i+1 }
-                    />
-                )
-            }
+                <PoseGroup>
+                {
+                    posts.map(post =>
+                        <Item key={post.id}>
+                            <ListPostsItem  
+                                post={ post } 
+                                match={ match } 
+                                openPost={ openPost } 
+                            />
+                        </Item>
+                    )
+                }
+                </PoseGroup>
             </ul>
         )
     }

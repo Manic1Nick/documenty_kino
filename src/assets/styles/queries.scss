@@ -188,7 +188,11 @@
 
     .App {
         header {
-            //position: fixed;
+            height: 55px;
+            position: fixed;
+            top: 0;
+            z-index: 10;
+            background-color: rgb(246, 248, 255);
 
             .main-nav {   
                 .links {
@@ -204,16 +208,18 @@
             }
         }
 
-        .Blog {        
-            overflow-x: hidden;            
+        .Blog {
+            overflow-x: hidden;  
+            margin-top: 55px;
 
             .Articles {
                 width: 100%;
                 transition: all 0.3s ease-out;
-                margin-right: 0;
+                margin-right: 0;   
     
                 .Article {
                     padding: 0.5em;    
+                    min-height: 100vh;
 
                     .article-content {
                         .article-title {}  

@@ -10,14 +10,14 @@ export default class ListPostsItem extends Component {
             classListItem = classNames('listItem', { activePost })
 
         return(
-            <li className={ classListItem } 
+            <div className={ classListItem } 
                 onClick={ () => openPost(post.id) }
             >
             {
-                activePost ? <ion-icon name="videocam"></ion-icon> : null //return-right
+                activePost ? <ion-icon name="videocam"></ion-icon> : null
             }
             <span className='post-title-text'>{ post.title }</span>
-            </li>
+            </div>
         )
     }
 }
