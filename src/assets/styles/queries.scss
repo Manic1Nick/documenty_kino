@@ -160,6 +160,10 @@
 /* Small phones from 0px to 480px */
 @media only screen and (max-width: 480px) {
 
+    // html.Articles.shifted {
+    //     overflow-y: hidden;
+    // }
+
     .ListPosts {                
         width: 200px;
         padding-left: 10px;
@@ -248,9 +252,11 @@
             .SideBar { 
                 display: block; 
                 width: 0;
+                padding-bottom: 40px;
             }
             .SideBar.open {
                 width: 200px;
+                overflow-y: auto;
             }
         }
 

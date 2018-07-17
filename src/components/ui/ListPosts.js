@@ -7,7 +7,7 @@ const Item = posed.li()
 export default class ListPosts extends Component {
 
     render() {
-        const { posts, match, openPost } = this.props
+        const { posts } = this.props
 
         return(
             <ul className='ListPosts'>
@@ -17,8 +17,7 @@ export default class ListPosts extends Component {
                         <Item key={post.id}>
                             <ListPostsItem  
                                 post={ post } 
-                                match={ match } 
-                                openPost={ openPost } 
+                                { ...this.props }
                             />
                         </Item>
                     )

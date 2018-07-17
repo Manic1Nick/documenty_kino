@@ -5,7 +5,7 @@ import ListPosts from './ListPosts'
 
 class SideBar extends Component {
 
-    handleClickOutside = evt => {
+    handleClickOutside = (evt) => {
         this.props.hideSideBar()
     }
 
@@ -14,7 +14,7 @@ class SideBar extends Component {
             classSideBar = classNames('SideBar', { open })
 
         return(
-            <div className={ classSideBar } onClick={ () => hideSideBar() }>
+            <div className={ classSideBar }>
                 <ListPosts { ...this.props } /> 
             </div>
         )

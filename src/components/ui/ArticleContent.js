@@ -1,12 +1,19 @@
 import React, { Component } from 'react'
+import { PropTypes } from 'prop-types'
 import { Link } from 'react-router-dom'
 import { LINKS, LINKS_UKR } from '../../constants'
 import SocialShareButtons from './SocialShareButtons'
 
-class ArticleContent extends Component {
+export default class ArticleContent extends Component {
+
+    handleOpenSideBar = () => {
+        if (this.context.screenWidth <= 480) {
+            this.props.openSideBar()
+        }
+    }
 
     render() {
-        const { post, openSideBar } = this.props,
+        const { post } = this.props,
             { id, title, tag, image, text, date } = post
 
         const group = LINKS_UKR[LINKS.indexOf(tag)]
@@ -21,7 +28,7 @@ class ArticleContent extends Component {
                     <div className='article-title-name'>
                         <h3>{ title }</h3>
                     </div>
-                    <div className='article-title-tag' onClick={ () => openSideBar() }>                        
+                    <div className='article-title-tag' onClick={ () => this.handleOpenSideBar() }>                        
                         <span>
                             <Link to={`/${tag}/${id}`}>
                                 <h3>:{ group }</h3>
@@ -48,4 +55,6 @@ class ArticleContent extends Component {
     }
 }
 
-export default ArticleContent
+ArticleContent.contextTypes = {
+    screenWidth: PropTypes.number
+}

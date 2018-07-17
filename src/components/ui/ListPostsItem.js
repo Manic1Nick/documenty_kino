@@ -3,15 +3,22 @@ import classNames from 'classnames'
 
 export default class ListPostsItem extends Component {
 
+    handleSelectItem = (id) => {
+        const { openPost, hideSideBar } = this.props
+        
+        openPost(id)
+        if (hideSideBar) hideSideBar()
+    }
+
     render() {
-        const { post, match, openPost } = this.props
+        const { post, match } = this.props
 
         let activePost = post.id === parseInt(match.params.id),
             classListItem = classNames('listItem', { activePost })
 
         return(
             <div className={ classListItem } 
-                onClick={ () => openPost(post.id) }
+                onClick={ () => this.handleSelectItem(post.id) }
             >
             {
                 activePost ? <ion-icon name="videocam"></ion-icon> : null
