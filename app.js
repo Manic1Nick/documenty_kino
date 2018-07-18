@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "ac67b5e2d4320c0cd29e"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "69aa62a2af33e127e30a"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -40698,17 +40698,21 @@ var SideBar = function (_Component) {
             args[_key] = arguments[_key];
         }
 
-        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = SideBar.__proto__ || Object.getPrototypeOf(SideBar)).call.apply(_ref, [this].concat(args))), _this), _this.handleClickOutside = function (evt) {
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = SideBar.__proto__ || Object.getPrototypeOf(SideBar)).call.apply(_ref, [this].concat(args))), _this), _this.componentWillReceiveProps = function (nextProps) {
+            if (nextProps.open !== _this.props.open) {
+                _this._changeHtmlScrollingY(nextProps.open);
+            }
+        }, _this.handleClickOutside = function (evt) {
             _this.props.hideSideBar();
+        }, _this._changeHtmlScrollingY = function (isOpenSideBar) {
+            document.getElementsByTagName("html")[0].style.overflowY = isOpenSideBar ? 'hidden' : 'auto';
         }, _temp), _possibleConstructorReturn(_this, _ret);
     }
 
     _createClass(SideBar, [{
         key: 'render',
         value: function render() {
-            var _props = this.props,
-                open = _props.open,
-                hideSideBar = _props.hideSideBar,
+            var open = this.props.open,
                 classSideBar = __WEBPACK_IMPORTED_MODULE_1_classnames___default()('SideBar', { open: open });
 
 
