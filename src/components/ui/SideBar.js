@@ -5,12 +5,18 @@ import ListPosts from './ListPosts'
 
 class SideBar extends Component {
 
+    componentWillReceiveProps = (nextProps) => {
+        if (nextProps.open !== this.props.open) {
+            this._changeHtmlScrollingY(nextProps.open)           
+        }
+    }
+
     handleClickOutside = (evt) => {
         this.props.hideSideBar()
     }
 
     render() {
-        const { open, hideSideBar } = this.props,
+        const { open } = this.props,
             classSideBar = classNames('SideBar', { open })
 
         return(
@@ -18,6 +24,10 @@ class SideBar extends Component {
                 <ListPosts { ...this.props } /> 
             </div>
         )
+    }
+
+    _changeHtmlScrollingY = (isOpenSideBar) => {
+        document.getElementsByTagName("html")[0].style.overflowY = isOpenSideBar ? 'hidden' : 'auto'
     }
 }
 
