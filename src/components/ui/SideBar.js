@@ -14,14 +14,14 @@ class SideBar extends Component {
     handleClickOutside = (evt) => {
         this.props.hideSideBar()
     }
-
+    
     render() {
         const { open } = this.props,
             classSideBar = classNames('SideBar', { open })
 
         return(
             <div className={ classSideBar }>
-                <ListPosts { ...this.props } /> 
+                <ListPosts { ...this.props } />
             </div>
         )
     }

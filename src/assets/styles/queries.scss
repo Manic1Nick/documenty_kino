@@ -166,12 +166,17 @@
 
         .listItem {
             font-weight: 300;
-            font-size: 70%;
-            margin-bottom: 5px;
-            transition: font-weight font-style 0.2s;
+            font-size: 80%;
+            padding: 4px 4px;
+            transition: background-color 0.2s;
         }
 
-        .activeTitle {
+        .listItem:hover {
+            cursor: pointer;
+            background-color: rgb(225, 225, 225);
+        }
+
+        .activePost {
             font-weight: bold;
             font-style: italic;
 
@@ -180,10 +185,6 @@
                 margin-right: 5px;
             }
         }
-    }
-
-    .ListPosts:hover {
-        cursor: pointer;
     }
 
     .App {

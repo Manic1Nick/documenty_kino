@@ -15,10 +15,7 @@ export default class ListPosts extends Component {
                 {
                     posts.map(post =>
                         <Item key={post.id}>
-                            <ListPostsItem  
-                                post={ post } 
-                                { ...this.props }
-                            />
+                            <ListPostsItem post={ post } { ...this.props } />
                         </Item>
                     )
                 }
