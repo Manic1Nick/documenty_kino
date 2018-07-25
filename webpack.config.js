@@ -31,7 +31,9 @@ const webpackConfig = {
 			},
 			{    
 				test: /\.(woff|woff2|eot|ttf|otf)$/,
-				loader: "file-loader"
+				exclude: /node_modules/,
+				include: path.resolve(__dirname, './src/assets/fonts/'),
+				loader: 'file-loader'
 			},
 			{
 				test: /\.(gif|png|jpg|jpeg|svg)$/,
@@ -52,7 +54,7 @@ const webpackConfig = {
 	],
 	devServer: {
 		contentBase: path.resolve(__dirname, './dist'),
-		port: 8080,
+		port: 8081,
 		historyApiFallback: true,
 		inline: true,
 		hot: true,
