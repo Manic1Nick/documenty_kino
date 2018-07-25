@@ -28,10 +28,7 @@ export default (funcPrev, funcNext) => (SwipingComponent) => {
             else if (movingPx < -80) onNext()
         }
 
-        render() {
-            const onPrev = this.props[funcPrev],
-                onNext = this.props[funcNext]
-        
+        render() {        
             return(
                 <Swipe
                     onSwipeStart={ this.swipeStart.bind(this) }

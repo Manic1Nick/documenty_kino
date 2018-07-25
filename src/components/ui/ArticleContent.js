@@ -31,7 +31,7 @@ export default class ArticleContent extends Component {
                     <div className='article-title-tag' onClick={ () => this.handleOpenSideBar() }>                        
                         <span>
                             <Link to={`/${tag}/${id}`}>
-                                <h3>:{ group }</h3>
+                                <h4>:{ group }</h4>
                             </Link>
                         </span>
                     </div>

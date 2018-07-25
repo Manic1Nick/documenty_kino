@@ -29,10 +29,14 @@ const webpackConfig = {
 					'sass-loader'
 				]
 			},
+			{    
+				test: /\.(woff|woff2|eot|ttf|otf)$/,
+				loader: "file-loader"
+			},
 			{
 				test: /\.(gif|png|jpg|jpeg|svg)$/,
 				exclude: /node_modules/,
-				include: path.resolve(__dirname, './src/assets/'),
+				include: path.resolve(__dirname, './src/assets/images/'),
 				use: 'url-loader?limit=1000&name=assets/[name]-[hash]-[ext]'
 			}
 		]

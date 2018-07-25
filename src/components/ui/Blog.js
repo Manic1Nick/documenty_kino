@@ -31,12 +31,11 @@ export default class Blog extends Component {
     }
 
     handleOpenPost = (id, tag) => {
-        const { listPosts } = this.state,
-            { match, history } = this.props
+        const { match, history } = this.props
 
         if (!tag) tag = match.params.tag || 'all'
         //if (!id) id = listPosts[listPosts.length - 1].id
-        if (!id) id = listPosts[0].id
+        if (!id) id = this.state.listPosts[0].id
 
         history.push(`/${tag}/${id}`)
     }
@@ -69,7 +68,7 @@ export default class Blog extends Component {
                     openPost={ this.handleOpenPost }
                 />
                 <SideBar 
-                    open={ openSideBar }
+                    isOpen={ openSideBar }
                     posts={ listPosts } 
                     match={ this.props.match } 
                     openPost={ this.handleOpenPost }

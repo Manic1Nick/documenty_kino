@@ -5,9 +5,9 @@ import ListPosts from './ListPosts'
 
 class SideBar extends Component {
 
-    componentWillReceiveProps = (nextProps) => {
-        if (nextProps.open !== this.props.open) {
-            this._changeHtmlScrollingY(nextProps.open)           
+    componentWillReceiveProps = ({ isOpen }) => {
+        if (isOpen !== this.props.isOpen) {
+            this._changeHtmlScrollingY(isOpen)           
         }
     }
 
@@ -16,8 +16,8 @@ class SideBar extends Component {
     }
     
     render() {
-        const { open } = this.props,
-            classSideBar = classNames('SideBar', { open })
+        const { isOpen } = this.props,
+            classSideBar = classNames('SideBar', { open: isOpen })
 
         return(
             <div className={ classSideBar }>
