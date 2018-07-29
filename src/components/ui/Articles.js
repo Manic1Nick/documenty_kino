@@ -5,11 +5,17 @@ import Article from './Article'
 
 export default class Articles extends Component {
 
-    handleChangePage = (indexPost) => {
-        const { posts, match, openPost } = this.props
+    // handleChangePage = (indexPost) => {
+    //     const { posts, match, openPost } = this.props
 
-        let post = posts[indexPost]
-        if (post) openPost(post.id, match.params.tag)
+    //     let post = posts[indexPost]
+    //     if (post) openPost(post.id, match.params.tag)
+    // }
+
+    shouldComponentUpdate = (nextProps) => {
+        return nextProps.posts !== this.props.posts
+            || nextProps.activePostIndex !== this.props.activePostIndex
+            || nextProps.shifted !== this.props.shifted
     }
 
     handleOpenPrev = () => {

@@ -1,13 +1,12 @@
-import { Component } from 'react'
-import ListPosts from './ListPosts'
+import SideBar from './SideBar'
+import SideList from './SideList'
 
-export default class SideBlock extends Component {
+const SideBlock = (props) => {
 
-    render() {
-        return(
-            <div className='SideBlock'>
-                <ListPosts { ...this.props } /> 
-            </div>
-        )
-    }
+    if (props.screenWidth > 480) 
+        return <SideList { ...props } />
+    else 
+        return <SideBar isOpen={ props.isSideBarOpening } { ...props } />
 }
+
+export default SideBlock

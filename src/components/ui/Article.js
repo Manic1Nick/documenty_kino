@@ -7,33 +7,33 @@ export default class Article extends Component {
 
     constructor() {
         super()
-        this.state = { animationIn: false }
+        this.state = { animate: false }
     }
 
     componentDidMount() {
-		this.activeAnimationIn()
+		this.activeAnimate()
     }
     
     componentDidUpdate = (prevProps) => {
         if (prevProps.post !== this.props.post) {
             window.scrollTo(0, 0)
-            this.activeAnimationIn()
+            this.activeAnimate()
         }
     }
 
-    activeAnimationIn() {
-        this.setState({ animationIn: true })
+    activeAnimate() {
+        this.setState({ animate: true })
         
 		setTimeout(() => {
-			this.setState({ animationIn: false })
+			this.setState({ animate: false })
 		}, 1000)
     }
 
     render() {
-        const { animationIn } = this.state,
+        const { animate } = this.state,
             { shifted } = this.props
         
-        let classArticle = classNames('Article', { fadeIn: animationIn })
+        let classArticle = classNames('Article', { fadeIn: animate })
 
         return(
             <div className={ classArticle }>

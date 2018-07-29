@@ -6,6 +6,10 @@ import SocialShareButtons from './SocialShareButtons'
 
 export default class ArticleContent extends Component {
 
+    shouldComponentUpdate = (nextProps) => {
+        return nextProps.post.id !== this.props.post.id
+    }
+
     handleOpenSideBar = () => {
         if (this.context.screenWidth <= 480) {
             this.props.openSideBar()

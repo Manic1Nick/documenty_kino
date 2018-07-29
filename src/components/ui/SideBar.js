@@ -5,6 +5,10 @@ import ListPosts from './ListPosts'
 
 class SideBar extends Component {
 
+    shouldComponentUpdate = (nextProps) => {
+        return nextProps.isOpen !== this.props.isOpen
+    }
+
     componentWillReceiveProps = ({ isOpen }) => {
         if (isOpen !== this.props.isOpen) {
             this._changeHtmlScrollingY(isOpen)           

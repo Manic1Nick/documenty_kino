@@ -63,12 +63,8 @@ export default class Blog extends Component {
                     openSideBar={ this.handleOpenSideBar }
                 />
                 <SideBlock 
-                    posts={ listPosts } 
-                    match={ this.props.match } 
-                    openPost={ this.handleOpenPost }
-                />
-                <SideBar 
-                    isOpen={ openSideBar }
+                    screenWidth={ this.context.screenWidth }
+                    isSideBarOpening={ openSideBar }
                     posts={ listPosts } 
                     match={ this.props.match } 
                     openPost={ this.handleOpenPost }
@@ -89,5 +85,6 @@ export default class Blog extends Component {
 }
 
 Blog.contextTypes = {
-    posts: PropTypes.array
+    posts: PropTypes.array,
+    screenWidth: PropTypes.number
 }

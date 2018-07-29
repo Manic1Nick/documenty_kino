@@ -1,25 +1,25 @@
 import { Component } from 'react'
-import posed, { PoseGroup } from 'react-pose'
 import ListPostsItem from './ListPostsItem'
 
-const Item = posed.li()
-
 export default class ListPosts extends Component {
+
+    shouldComponentUpdate = (nextProps) => {
+        return nextProps.posts !== this.props.posts
+            || nextProps.match.params.id !== this.props.match.params.id
+    }
 
     render() {
         const { posts } = this.props
 
         return(
             <ul className='ListPosts'>
-                <PoseGroup>
                 {
-                    posts.map(post =>
-                        <Item key={post.id}>
-                            <ListPostsItem post={ post } { ...this.props } />
-                        </Item>
+                    posts.map((post, i) =>
+                        <li key={i}>
+                            <ListPostsItem post={ post } { ...this.props } timeoutMs={ 50*i } />
+                        </li>
                     )
                 }
-                </PoseGroup>
             </ul>
         )
     }

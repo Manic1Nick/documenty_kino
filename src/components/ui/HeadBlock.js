@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { PropTypes } from 'prop-types'
-import { LINKS, LINKS_UKR, MAIN_TITLE } from '../../constants'
+import { LINKS, LINKS_UKR } from '../../constants'
 
 import DropdownMenu from 'react-dd-menu'
-import LogoFullImage from '../../assets/images/documenty_logo_full_1.png'
+import LogoFullImage from '../../assets/images/documenty_logo_full_2.png'
 import LogoImage from '../../assets/images/documenty_logo_1.png'
 
 export default class HeadBlock extends Component {
@@ -16,23 +16,23 @@ export default class HeadBlock extends Component {
             isMenuOpen: false 
         }
 
-        this.toggle = this.toggle.bind(this)
-        this.close = this.close.bind(this)
+        this.menuToggle = this.menuToggle.bind(this)
+        this.menuClose = this.menuClose.bind(this)
     }
 
-    toggle() {
+    menuToggle() {
         this.setState({ isMenuOpen: !this.state.isMenuOpen })
     }
      
-    close() {
+    menuClose() {
         this.setState({ isMenuOpen: false })
     }
 
     renderDropdownLinks() {
         const menuOptions = {
             isOpen: this.state.isMenuOpen,
-            close: this.close,
-            toggle: <ion-icon name="menu" onClick={this.toggle}></ion-icon>,
+            close: this.menuClose,
+            toggle: <ion-icon name='menu' onClick={ this.menuToggle }></ion-icon>,
             align: 'right'
         }
         return (
@@ -50,7 +50,7 @@ export default class HeadBlock extends Component {
             {
                 LINKS.map((tag, i) => 
                     <li key={i}>
-                        <Link to={`/${tag}/${this._getDefaultId(tag)}`}>
+                        <Link to={ this._getLinkByTag(tag) }>
                             {LINKS_UKR[i]}
                         </Link>
                     </li>
@@ -66,7 +66,7 @@ export default class HeadBlock extends Component {
         return(
             <header>
                 <div className='site-title'>
-                    <Link to={`/all/${this._getDefaultId('all')}`}>
+                    <Link to={ this._getLinkByTag('all') }>
                         {
                             screenWidth > 624
                         ?
@@ -90,14 +90,14 @@ export default class HeadBlock extends Component {
         )
     }
 
-    _getDefaultId = (tag) => {
+    _getLinkByTag = (tag) => {
         const { posts } = this.context
 
         let id = tag === 'all'
             ? posts[0].id
             : posts.find(post => post.tag === tag).id
 
-        return id
+        return `/${tag}/${id}`
     }
 }
 
