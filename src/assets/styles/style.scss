@@ -505,7 +505,11 @@ a:visited {
     -webkit-animation: pulse 0.8s;
             animation: pulse 0.8s;
 }
-.flash {
-    -webkit-animation: flash 0.8s;
-            animation: flash 0.8s;
+.flipInY {
+    -webkit-animation: flipInY 0.8s;
+            animation: flipInY 0.8s;
+}
+.flipInX {
+    -webkit-animation: flipInX 0.8s;
+            animation: flipInX 0.8s;
 }

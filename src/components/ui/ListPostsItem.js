@@ -7,6 +7,7 @@ export default class ListPostsItem extends Component {
         super()
         this.state = { 
             animateIn: false,
+            animateSelect: false,
             hidden: true 
         }
     }
@@ -20,6 +21,20 @@ export default class ListPostsItem extends Component {
             this.setState({ hidden: true })
             this.activeAnimateIn()
         }
+    }
+
+    componentWillReceiveProps = (nextProps) => {
+        if (nextProps.post.id === parseInt(nextProps.match.params.id)) {
+            this.activeAnimateSelect()
+        }
+    }
+
+    activeAnimateSelect() {
+        this.setState({ animateSelect: true })
+        
+		setTimeout(() => {
+			this.setState({ animateSelect: false })
+        }, 1000)
     }
 
     activeAnimateIn() {
@@ -46,14 +61,15 @@ export default class ListPostsItem extends Component {
 
     render() {
         const { post, match } = this.props,
-            { animateIn, hidden } = this.state
+            { animateIn, animateSelect, hidden } = this.state
 
         let isActivePost = post.id === parseInt(match.params.id),
             styleItem = { 'display': hidden ? 'none' : 'block' },
             classListItem = classNames(
                 'listItem', 
                 { active: isActivePost }, 
-                { fadeInLeft: animateIn }
+                { fadeInLeft: animateIn },
+                { flipInX: animateSelect }
             )
 
         return(
