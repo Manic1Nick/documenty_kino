@@ -93,11 +93,11 @@ export default class HeadBlock extends Component {
     _getLinkByTag = (tag) => {
         const { posts } = this.context
 
-        let id = tag === 'all'
-            ? posts[0].id
-            : posts.find(post => post.tag === tag).id
+        let post = tag === 'all'
+            ? posts[0]
+            : posts.find(post => post.tag === tag)
 
-        return `/${tag}/${id}`
+        return `/${tag}/${post ? post.id : 0}`
     }
 }
 

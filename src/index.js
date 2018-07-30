@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from 'react-dom'
-import sampleData from './initialState'
+import sampleData from './initialState2'
 
 //import fetch from 'isomorphic-fetch'
 //import sampleData from 'https://sendeyo.com/en/3957c0bb3a'

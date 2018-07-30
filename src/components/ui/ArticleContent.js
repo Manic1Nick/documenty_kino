@@ -28,28 +28,31 @@ export default class ArticleContent extends Component {
 
         return(
             <div className='article-content'>
-                <div className='article-title'>
-                    <div className='article-title-name'>
-                        <h3>{ title }</h3>
-                    </div>
-                    <div className='article-title-tag' onClick={ () => this.handleOpenSideBar() }>                        
-                        <span>
+
+                <div className='article-top clearfix'>
+                    <Link to={`/${tag}/${id}`}>
+                        <img src={`${image}`} alt={ title } title={ title } />
+                    </Link>
+
+                    <div className='article-title'>
+                        <div className='article-title-name'>
+                            <h3>{ title }</h3>
+                        </div>
+                        <div className='article-title-tag' onClick={ () => this.handleOpenSideBar() }>   
                             <Link to={`/${tag}/${id}`}>
                                 <h4>:{ group }</h4>
                             </Link>
-                        </span>
+                        </div>
                     </div>
                 </div>
-                <div className='article-image'>
-                    <img src={`${image}`} />
-                </div>
+
+                <SocialShareButtons post={ post } />
+
                 <div className='article-text'>
                     { postText }
                 </div>
-                <div className='article-footer'>
 
-                    <SocialShareButtons post={ post } />
-                    
+                <div className='article-footer'>
                     <div className='article-date'>
                         { date }    
                     </div>           
