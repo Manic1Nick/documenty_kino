@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import classNames from 'classnames'
 
-import Article from './Article'
+import ArticleContainer from './ArticleContainer'
 
 export default class Articles extends Component {
 
@@ -36,6 +36,8 @@ export default class Articles extends Component {
         openPost(changedId)
     }
 
+    tooltip = (title) => <span className='tooltip' >{title}</span>
+
     render() {
         const { posts, activePostIndex, shifted, openSideBar } = this.props,
             activePost = posts[activePostIndex]
@@ -48,9 +50,10 @@ export default class Articles extends Component {
             <div className={ classArticles }>
                 <div className='arrow-buttons' onClick={ this.handleOpenPrev }>
                     <ion-icon name="ios-arrow-back"></ion-icon>
+                    { this.tooltip('Листати назад') }
                 </div>
 
-                <Article
+                <ArticleContainer
                     post={ activePost } 
                     onPrev={ this.handleOpenPrev } 
                     onNext={ this.handleOpenNext } 
@@ -60,6 +63,7 @@ export default class Articles extends Component {
                 
                 <div className='arrow-buttons' onClick={ this.handleOpenNext }>
                     <ion-icon name="ios-arrow-forward"></ion-icon>
+                    { this.tooltip('Листати вперед') }
                 </div>
             </div>
         )

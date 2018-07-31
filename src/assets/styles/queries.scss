@@ -24,6 +24,10 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
                 }
             }
         }
+
+        .Blog {
+            width: 90%;
+        }
     }
     
 }
@@ -55,33 +59,27 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
             }
         }
 
-        .Blog {            
-            .Articles {
-                width: 80%;
-    
+        .Blog { 
+            width: 100%;
+
+            .Articles {    
                 .arrow-buttons {
                     width: 30px;
 
                     ion-icon { width: 30px; }
                 }
     
-                .Article {
+                .ArticleContainer {
                     padding: 1em;    
 
-                    .article-content {
-                        .article-title {}  
-                
-                        .article-slide img {
-                            width: 150px;
-                        }    
-                
-                        .article-text {
-                            font-size: 80%;
+                    .Article {
+                        .article-slide {
+                            .article-title { font-size: 80%; }
                         }
-                
-                        .article-date {
-                            font-size: 80%;
-                        }
+                        .article-content {
+                            .article-text { font-size: 80%; }
+                            .article-date { font-size: 80%; }
+                        }                
                     }
                 }        
             }
@@ -133,24 +131,24 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
                     ion-icon { width: 20px; }
                 }
     
-                .Article { 
+                .ArticleContainer { 
                     padding: 0.5em;
 
-                    .article-content {
-                        .article-title {
-                            font-size: 80%;
-                        }  
-                
-                        .article-slide img {
-                            width: 100px;
-                        }    
-                
-                        .article-text {
-                            font-size: 70%;
+                    .Article {
+                        .article-slide {
+                            .article-title { font-size: 60%; }
                         }
-                
-                        .article-date {
-                            font-size: 60%;
+                        .article-content {
+                            .article-text { font-size: 70%; }                    
+                            .article-date { font-size: 60%; }
+    
+                            .article-social-shares {    
+                                ion-icon,
+                                .social-icon {
+                                    width: 25px;
+                                    height: 25px;
+                                }              
+                            }
                         }
                     }
                 }        
@@ -260,21 +258,20 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
                 transition: all 0.3s ease-out;
                 margin-right: 0;   
     
-                .Article {
+                .ArticleContainer {
                     padding: 0.5em;    
                     min-height: 100vh;
 
-                    .article-content {
-                        .article-title {}  
-                
-                        .article-slide img {
-                            width: 100px;
-                        }    
-                
-                        .article-text {
-                        }
-                
-                        .article-date {
+                    .Article {
+
+                        .article-content {
+                            .article-social-shares {    
+                                ion-icon,
+                                .social-icon {
+                                    width: 20px;
+                                    height: 20px;
+                                }              
+                            }
                         }
                     }
                 } 

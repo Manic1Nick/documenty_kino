@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
-import ArticleContent from './ArticleContent'
+import Article from './Article'
 import wrapperSwipe from './wrapperSwipe'
 
 class ArticleSwiped extends Component {
 
     render() {
         return(
-            <ArticleContent {...this.props} />
+            <Article {...this.props} />
         )
     }
 }
