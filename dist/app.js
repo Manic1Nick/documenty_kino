@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "aebab5870bdd28b27ffc"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "1a69f2cae92f56392262"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -3163,7 +3163,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "/* Big tablets to 1200px (widths smaller than 1140px row) */\n/* Small tablets to big tablets from 768px to 1023px */\n@media only screen and (max-width: 1023px) {\n  .App header .main-nav ul li {\n    margin-left: 20px;\n    font-size: 80%; }\n    .App header .main-nav ul li a:after {\n      margin-top: -20px; } }\n\n/* Small phones to small tablets from 624px to 767px */\n@media only screen and (max-width: 767px) {\n  h1 {\n    font-size: 180%; }\n  .App header .site-title {\n    -webkit-box-flex: 1;\n    -ms-flex: 1;\n    flex: 1;\n    font-size: 80%; }\n  .App header .main-nav {\n    -webkit-box-flex: 2;\n    -ms-flex: 2;\n    flex: 2; }\n    .App header .main-nav ul li {\n      font-size: 70%; }\n  .App .Blog .Articles {\n    width: 80%; }\n    .App .Blog .Articles .arrow-buttons {\n      width: 30px; }\n      .App .Blog .Articles .arrow-buttons ion-icon {\n        width: 30px; }\n    .App .Blog .Articles .Article {\n      padding: 1em; }\n      .App .Blog .Articles .Article .article-content .article-slide img {\n        width: 150px; }\n      .App .Blog .Articles .Article .article-content .article-text {\n        font-size: 80%; }\n      .App .Blog .Articles .Article .article-content .article-date {\n        font-size: 80%; }\n  .App .Blog .SideList {\n    width: 20%; }\n    .App .Blog .SideList .ListPosts .listItem {\n      font-size: 70%; }\n  .App footer {\n    height: 30px;\n    font-size: 60%; }\n    .App footer a {\n      margin-right: 10px; } }\n\n/* Small phones to small tablets from 481px to 623px */\n@media only screen and (max-width: 623px) {\n  .App header .main-nav ul li {\n    margin-left: 10px;\n    font-size: 60%; }\n    .App header .main-nav ul li a:link {\n      padding-bottom: 20px; }\n    .App header .main-nav ul li a:after {\n      margin-top: -30px; }\n  .App .Blog .Articles .arrow-buttons {\n    width: 20px; }\n    .App .Blog .Articles .arrow-buttons ion-icon {\n      width: 20px; }\n  .App .Blog .Articles .Article {\n    padding: 0.5em; }\n    .App .Blog .Articles .Article .article-content .article-title {\n      font-size: 80%; }\n    .App .Blog .Articles .Article .article-content .article-slide img {\n      width: 100px; }\n    .App .Blog .Articles .Article .article-content .article-text {\n      font-size: 70%; }\n    .App .Blog .Articles .Article .article-content .article-date {\n      font-size: 60%; }\n  .App .Blog .SideList {\n    margin-left: 0.5em; }\n    .App .Blog .SideList .ListPosts .post-title {\n      font-size: 60%; } }\n\n/* Small phones from 0px to 480px */\n@media only screen and (max-width: 480px) {\n  .ListPosts {\n    width: 200px;\n    padding-left: 10px; }\n    .ListPosts .listItem {\n      font-weight: 300;\n      font-size: 80%;\n      padding: 4px 4px;\n      -webkit-transition: background-color 0.2s;\n      transition: background-color 0.2s; }\n    .ListPosts .listItem:hover {\n      cursor: pointer;\n      background-color: #e1e1e1; }\n    .ListPosts .listItem.active {\n      font-weight: bold;\n      font-style: italic; }\n      .ListPosts .listItem.active ion-icon {\n        color: #132366ce;\n        margin-right: 5px; }\n  .App header {\n    height: 60px;\n    position: fixed;\n    top: 0;\n    z-index: 10;\n    background-color: #f6f8ff; }\n    .App header .site-title {\n      -webkit-box-flex: 2;\n      -ms-flex: 2;\n      flex: 2; }\n    .App header .main-nav {\n      -webkit-box-flex: 1;\n      -ms-flex: 1;\n      flex: 1;\n      margin-right: 10px; }\n      .App header .main-nav .dd-menu {\n        float: right;\n        cursor: pointer; }\n        .App header .main-nav .dd-menu ion-icon {\n          width: 30px;\n          height: 30px; }\n        .App header .main-nav .dd-menu ul {\n          width: 130%;\n          height: 100%; }\n          .App header .main-nav .dd-menu ul li {\n            width: 100%;\n            margin: 0 auto; }\n            .App header .main-nav .dd-menu ul li a {\n              font-size: 120%;\n              text-align: center; }\n            .App header .main-nav .dd-menu ul li a:link {\n              padding-bottom: 10px; }\n            .App header .main-nav .dd-menu ul li a:hover {\n              background-color: #e1e1e1; }\n            .App header .main-nav .dd-menu ul li a:after {\n              content: ''; }\n  .App .Blog {\n    overflow-x: hidden;\n    margin-top: 55px; }\n    .App .Blog .Articles {\n      width: 100%;\n      -webkit-transition: all 0.3s ease-out;\n      transition: all 0.3s ease-out;\n      margin-right: 0; }\n      .App .Blog .Articles .Article {\n        padding: 0.5em;\n        min-height: 100vh; }\n        .App .Blog .Articles .Article .article-content .article-slide img {\n          width: 100px; }\n    .App .Blog .Articles.shifted {\n      margin-right: -200px;\n      background: rgba(0, 0, 0, 0.3);\n      -webkit-filter: brightness(50%);\n      filter: brightness(50%); }\n    .App .Blog .SideList {\n      display: none; }\n    .App .Blog .SideBar {\n      display: block;\n      width: 0;\n      padding-bottom: 40px; }\n    .App .Blog .SideBar.open {\n      width: 200px;\n      overflow-y: auto; }\n  .App footer .copyright-text {\n    font-size: 70%; }\n  .App footer .social-icons {\n    font-size: 100%; }\n    .App footer .social-icons a {\n      width: 20px;\n      margin-right: 10px; } }\n", ""]);
+exports.push([module.i, "/* Big tablets to 1200px (widths smaller than 1140px row) */\n/* Small tablets to big tablets from 768px to 1023px */\n@media only screen and (max-width: 1023px) {\n  .App header .main-nav ul li {\n    margin-left: 20px;\n    font-size: 80%; }\n    .App header .main-nav ul li a:after {\n      margin-top: -20px; }\n  .App .Blog {\n    width: 90%; } }\n\n/* Small phones to small tablets from 624px to 767px */\n@media only screen and (max-width: 767px) {\n  h1 {\n    font-size: 180%; }\n  .App header .site-title {\n    -webkit-box-flex: 1;\n    -ms-flex: 1;\n    flex: 1;\n    font-size: 80%; }\n  .App header .main-nav {\n    -webkit-box-flex: 2;\n    -ms-flex: 2;\n    flex: 2; }\n    .App header .main-nav ul li {\n      font-size: 70%; }\n  .App .Blog {\n    width: 100%; }\n    .App .Blog .Articles .arrow-buttons {\n      width: 30px; }\n      .App .Blog .Articles .arrow-buttons ion-icon {\n        width: 30px; }\n    .App .Blog .Articles .ArticleContainer {\n      padding: 1em; }\n      .App .Blog .Articles .ArticleContainer .Article .article-slide .article-title {\n        font-size: 80%; }\n      .App .Blog .Articles .ArticleContainer .Article .article-content .article-text {\n        font-size: 80%; }\n      .App .Blog .Articles .ArticleContainer .Article .article-content .article-date {\n        font-size: 80%; }\n    .App .Blog .SideList {\n      width: 20%; }\n      .App .Blog .SideList .ListPosts .listItem {\n        font-size: 70%; }\n  .App footer {\n    height: 30px;\n    font-size: 60%; }\n    .App footer a {\n      margin-right: 10px; } }\n\n/* Small phones to small tablets from 481px to 623px */\n@media only screen and (max-width: 623px) {\n  .App header .main-nav ul li {\n    margin-left: 10px;\n    font-size: 60%; }\n    .App header .main-nav ul li a:link {\n      padding-bottom: 20px; }\n    .App header .main-nav ul li a:after {\n      margin-top: -30px; }\n  .App .Blog .Articles .arrow-buttons {\n    width: 20px; }\n    .App .Blog .Articles .arrow-buttons ion-icon {\n      width: 20px; }\n  .App .Blog .Articles .ArticleContainer {\n    padding: 0.5em; }\n    .App .Blog .Articles .ArticleContainer .Article .article-slide .article-title {\n      font-size: 60%; }\n    .App .Blog .Articles .ArticleContainer .Article .article-content .article-text {\n      font-size: 70%; }\n    .App .Blog .Articles .ArticleContainer .Article .article-content .article-date {\n      font-size: 60%; }\n    .App .Blog .Articles .ArticleContainer .Article .article-content .article-social-shares ion-icon,\n    .App .Blog .Articles .ArticleContainer .Article .article-content .article-social-shares .social-icon {\n      width: 25px;\n      height: 25px; }\n  .App .Blog .SideList {\n    margin-left: 0.5em; }\n    .App .Blog .SideList .ListPosts .post-title {\n      font-size: 60%; } }\n\n/* Small phones from 0px to 480px */\n@media only screen and (max-width: 480px) {\n  .ListPosts {\n    width: 200px;\n    padding-left: 10px; }\n    .ListPosts .listItem {\n      font-weight: 300;\n      font-size: 80%;\n      padding: 4px 4px;\n      -webkit-transition: background-color 0.2s;\n      transition: background-color 0.2s; }\n    .ListPosts .listItem:hover {\n      cursor: pointer;\n      background-color: #e1e1e1; }\n    .ListPosts .listItem.active {\n      font-weight: bold;\n      font-style: italic; }\n      .ListPosts .listItem.active ion-icon {\n        color: #132366ce;\n        margin-right: 5px; }\n  .App header {\n    height: 60px;\n    position: fixed;\n    top: 0;\n    z-index: 10;\n    background-color: #f6f8ff; }\n    .App header .site-title {\n      -webkit-box-flex: 2;\n      -ms-flex: 2;\n      flex: 2; }\n    .App header .main-nav {\n      -webkit-box-flex: 1;\n      -ms-flex: 1;\n      flex: 1;\n      margin-right: 10px; }\n      .App header .main-nav .dd-menu {\n        float: right;\n        cursor: pointer; }\n        .App header .main-nav .dd-menu ion-icon {\n          width: 30px;\n          height: 30px; }\n        .App header .main-nav .dd-menu ul {\n          width: 130%;\n          height: 100%; }\n          .App header .main-nav .dd-menu ul li {\n            width: 100%;\n            margin: 0 auto; }\n            .App header .main-nav .dd-menu ul li a {\n              font-size: 120%;\n              text-align: center; }\n            .App header .main-nav .dd-menu ul li a:link {\n              padding-bottom: 10px; }\n            .App header .main-nav .dd-menu ul li a:hover {\n              background-color: #e1e1e1; }\n            .App header .main-nav .dd-menu ul li a:after {\n              content: ''; }\n  .App .Blog {\n    overflow-x: hidden;\n    margin-top: 55px; }\n    .App .Blog .Articles {\n      width: 100%;\n      -webkit-transition: all 0.3s ease-out;\n      transition: all 0.3s ease-out;\n      margin-right: 0; }\n      .App .Blog .Articles .ArticleContainer {\n        padding: 0.5em;\n        min-height: 100vh; }\n        .App .Blog .Articles .ArticleContainer .Article .article-content .article-social-shares ion-icon,\n        .App .Blog .Articles .ArticleContainer .Article .article-content .article-social-shares .social-icon {\n          width: 20px;\n          height: 20px; }\n    .App .Blog .Articles.shifted {\n      margin-right: -200px;\n      background: rgba(0, 0, 0, 0.3);\n      -webkit-filter: brightness(50%);\n      filter: brightness(50%); }\n    .App .Blog .SideList {\n      display: none; }\n    .App .Blog .SideBar {\n      display: block;\n      width: 0;\n      padding-bottom: 40px; }\n    .App .Blog .SideBar.open {\n      width: 200px;\n      overflow-y: auto; }\n  .App footer .copyright-text {\n    font-size: 70%; }\n  .App footer .social-icons {\n    font-size: 100%; }\n    .App footer .social-icons a {\n      width: 20px;\n      margin-right: 10px; } }\n", ""]);
 
 // exports
 
@@ -3179,7 +3179,7 @@ exports.i(__webpack_require__("./node_modules/css-loader/index.js!./src/assets/s
 exports.i(__webpack_require__("./node_modules/css-loader/index.js!./src/assets/styles/react-dd-menu.css"), "");
 
 // module
-exports.push([module.i, "@font-face {\n  font-family: AkrobatLight;\n  src: url(" + __webpack_require__("./src/assets/fonts/Akrobat-Light.otf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: AkrobatBold;\n  src: url(" + __webpack_require__("./src/assets/fonts/Akrobat-Bold.otf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: AkrobatRegular;\n  src: url(" + __webpack_require__("./src/assets/fonts/Akrobat-Regular.otf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: CaveatRegular;\n  src: url(" + __webpack_require__("./src/assets/fonts/Caveat-Regular.ttf") + ") format(\"opentype\"); }\n\n/*---------------------------------------------------------*/\n/* BASIC SETUP */\n/*---------------------------------------------------------*/\n* {\n  margin: 0;\n  padding: 0;\n  -webkit-box-sizing: border-box;\n  box-sizing: border-box; }\n\nhtml,\nbody {\n  color: #555;\n  font-family: \"AkrobatRegular\", cursive;\n  font-weight: 400;\n  font-size: 20px;\n  background-image: url(" + __webpack_require__("./src/assets/images/1920x1080-background.jpg") + ");\n  background-size: cover;\n  background-position: center;\n  height: 100%; }\n\nhtml {\n  overflow: auto;\n  overflow-x: hidden; }\n\nul {\n  list-style: none; }\n\n.social-icon {\n  width: 30px;\n  height: 30px; }\n\n/* TITLES \n==================================*/\nh1 {\n  margin-top: 0;\n  font-size: 300%;\n  word-spacing: 4px;\n  letter-spacing: 1px; }\n\nh2 {\n  font-size: 180%;\n  word-spacing: 2px;\n  text-align: center;\n  letter-spacing: 1px; }\n\nh3 {\n  font-size: 160%; }\n\nh4 {\n  font-size: 120%; }\n\n/* LINKS \n==================================*/\n.main-nav a {\n  font-family: \"CaveatRegular\", arial !important; }\n\na:link,\na:visited {\n  text-decoration: none;\n  padding-bottom: 1px; }\n\n/* APP \n==================================*/\n.clearfix:after {\n  content: \".\";\n  display: block;\n  clear: both;\n  visibility: hidden;\n  height: 0; }\n\n.ListPosts {\n  margin-bottom: 2em;\n  font-family: \"AkrobatLight\", arial; }\n\n.App {\n  width: 100vw;\n  height: 100%; }\n  .App header {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: justify;\n    -ms-flex-pack: justify;\n    justify-content: space-between;\n    -webkit-box-align: center;\n    -ms-flex-align: center;\n    align-items: center;\n    width: 100%;\n    padding: 0.5% 2%; }\n    .App header .site-title {\n      -webkit-box-flex: 2;\n      -ms-flex: 2;\n      flex: 2; }\n      .App header .site-title img {\n        width: 100%;\n        max-width: 350px;\n        height: auto; }\n    .App header .main-nav {\n      -webkit-box-flex: 3;\n      -ms-flex: 3;\n      flex: 3;\n      margin-right: 30px;\n      font-size: 180%; }\n      .App header .main-nav ul {\n        position: relative;\n        float: right; }\n        .App header .main-nav ul li {\n          display: inline-block;\n          margin-left: 35px; }\n          .App header .main-nav ul li a {\n            position: relative;\n            display: inline-block; }\n          .App header .main-nav ul li a:link,\n          .App header .main-nav ul li a:visited {\n            padding: 8px 0;\n            color: #555;\n            padding-bottom: 2px;\n            -webkit-transition: font-weight 0.2s;\n            transition: font-weight 0.2s; }\n          .App header .main-nav ul li a::after {\n            content: '...';\n            color: #132366ce;\n            position: absolute;\n            left: 0;\n            right: 0;\n            top: 100%;\n            margin: 2px auto;\n            width: 15px;\n            height: 0;\n            opacity: 0;\n            margin-top: -30px;\n            -webkit-transition: opacity 0.3s;\n            transition: opacity 0.3s; }\n          .App header .main-nav ul li a:hover:after,\n          .App header .main-nav ul li a:active:after {\n            opacity: 1; }\n  .App .Blog {\n    width: 80%;\n    margin: 0 auto;\n    padding-right: 10px;\n    padding-top: 80px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex; }\n    .App .Blog .Articles {\n      position: relative;\n      width: 80%;\n      margin: 0 auto;\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex; }\n      .App .Blog .Articles .arrow-buttons {\n        position: relative;\n        width: 40px;\n        height: auto; }\n        .App .Blog .Articles .arrow-buttons ion-icon {\n          position: fixed;\n          width: 40px;\n          height: 80%;\n          opacity: 0.3;\n          -webkit-transition: opacity 0.2s;\n          transition: opacity 0.2s; }\n          .App .Blog .Articles .arrow-buttons ion-icon .icon-inner {\n            display: -webkit-box;\n            display: -ms-flexbox;\n            display: flex;\n            -webkit-box-align: center;\n            -ms-flex-align: center;\n            align-items: center; }\n        .App .Blog .Articles .arrow-buttons ion-icon:hover {\n          opacity: 1;\n          cursor: pointer; }\n      .App .Blog .Articles .Article {\n        position: relative;\n        padding: 1em;\n        width: 100%; }\n        .App .Blog .Articles .Article .article-content .article-top,\n        .App .Blog .Articles .Article .article-content .article-text,\n        .App .Blog .Articles .Article .article-content .article-footer,\n        .App .Blog .Articles .Article .article-content .article-social-shares {\n          margin-bottom: 10px; }\n        .App .Blog .Articles .Article .article-content .article-top {\n          position: relative; }\n          .App .Blog .Articles .Article .article-content .article-top a {\n            text-decoration: none;\n            background-color: transparent; }\n            .App .Blog .Articles .Article .article-content .article-top a img {\n              display: block;\n              max-width: 100%;\n              height: auto; }\n          .App .Blog .Articles .Article .article-content .article-top .article-title {\n            background: rgba(0, 0, 0, 0.45);\n            color: #e1e1e1;\n            width: 100%;\n            bottom: 0;\n            left: 0;\n            position: absolute;\n            padding: 0.5em; }\n            .App .Blog .Articles .Article .article-content .article-top .article-title .article-title-name {\n              float: left;\n              width: 70%;\n              font-weight: bold;\n              font-family: \"AkrobatBold\", arial;\n              font-weight: 700;\n              color: #e1e1e1; }\n            .App .Blog .Articles .Article .article-content .article-top .article-title .article-title-tag {\n              float: right;\n              font-family: \"CaveatRegular\", arial;\n              cursor: pointer; }\n              .App .Blog .Articles .Article .article-content .article-top .article-title .article-title-tag h4 {\n                color: #b5b4b4;\n                -webkit-transition: color 0.2s;\n                transition: color 0.2s; }\n              .App .Blog .Articles .Article .article-content .article-top .article-title .article-title-tag h4:hover {\n                color: #e1e1e1; }\n        .App .Blog .Articles .Article .article-content .article-text {\n          font-size: 80%; }\n          .App .Blog .Articles .Article .article-content .article-text .text-paragraph {\n            margin-bottom: 10px; }\n          .App .Blog .Articles .Article .article-content .article-text p {\n            text-align: left; }\n        .App .Blog .Articles .Article .article-content .article-social-shares {\n          display: -webkit-box;\n          display: -ms-flexbox;\n          display: flex; }\n          .App .Blog .Articles .Article .article-content .article-social-shares .social-icon {\n            cursor: pointer;\n            margin-right: 5px; }\n        .App .Blog .Articles .Article .article-content .article-footer .article-date {\n          margin-bottom: 2em;\n          float: right;\n          font-size: 80%;\n          font-style: italic; }\n    .App .Blog .SideBar {\n      display: none;\n      z-index: 5;\n      position: fixed;\n      left: 200px;\n      height: 85%;\n      margin-left: -200px;\n      overflow-y: hidden;\n      overflow-x: hidden;\n      -webkit-transition: all 0.5s ease;\n      transition: all 0.5s ease; }\n    .App .Blog .SideList {\n      width: 20%;\n      height: 80%;\n      float: right;\n      margin-top: 2em;\n      margin-left: 0.5em; }\n      .App .Blog .SideList .ListPosts {\n        margin-bottom: 2em;\n        font-family: \"AkrobatLight\", arial; }\n        .App .Blog .SideList .ListPosts .listItem {\n          font-weight: 300;\n          font-size: 80%;\n          padding: 4px 4px;\n          -webkit-transition: background-color 0.2s;\n          transition: background-color 0.2s; }\n        .App .Blog .SideList .ListPosts .listItem:hover {\n          cursor: pointer;\n          background-color: #e1e1e1; }\n        .App .Blog .SideList .ListPosts .listItem.active {\n          font-weight: bold;\n          font-style: italic; }\n          .App .Blog .SideList .ListPosts .listItem.active ion-icon {\n            color: #132366ce;\n            margin-right: 5px; }\n  .App footer {\n    width: 100%;\n    height: 5%;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: justify;\n    -ms-flex-pack: justify;\n    justify-content: space-between;\n    position: fixed;\n    bottom: 0;\n    left: 0;\n    background-color: #333;\n    padding: 5px;\n    font-size: 80%; }\n    .App footer .social-icons a {\n      width: 25px;\n      margin-right: 20px;\n      cursor: pointer;\n      color: #888; }\n      .App footer .social-icons a #fb:hover {\n        color: #3b5999; }\n      .App footer .social-icons a #tw:hover {\n        color: #55acee; }\n      .App footer .social-icons a #gp:hover {\n        color: #dd4b39; }\n      .App footer .social-icons a #ig:hover {\n        color: #e4405f; }\n    .App footer .social-icons a:link,\n    .App footer .social-icons a:visited {\n      text-decoration: none;\n      border: 0;\n      font-size: 160%;\n      color: #888;\n      -webkit-transition: color 0.2s;\n      transition: color 0.2s; }\n    .App footer p {\n      color: #888;\n      text-align: center;\n      margin-top: 5px; }\n\n.fadeIn {\n  -webkit-animation: fadeIn 1.5s;\n  animation: fadeIn 1.5s; }\n\n.slideInLeft {\n  -webkit-animation: slideInLeft 0.8s;\n  animation: slideInLeft 0.8s; }\n\n.slideInRight {\n  -webkit-animation: slideInRight 0.8s;\n  animation: slideInRight 0.8s; }\n\n.fadeInLeft {\n  -webkit-animation: fadeInLeft 0.8s;\n  animation: fadeInLeft 0.8s; }\n\n.pulse {\n  -webkit-animation: pulse 0.8s;\n  animation: pulse 0.8s; }\n\n.flipInY {\n  -webkit-animation: flipInY 0.8s;\n  animation: flipInY 0.8s; }\n\n.flipInX {\n  -webkit-animation: flipInX 0.8s;\n  animation: flipInX 0.8s; }\n", ""]);
+exports.push([module.i, "@font-face {\n  font-family: AkrobatExtraLight;\n  src: url(" + __webpack_require__("./src/assets/fonts/Akrobat-ExtraLight.otf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: AkrobatBold;\n  src: url(" + __webpack_require__("./src/assets/fonts/Akrobat-Bold.otf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: AkrobatRegular;\n  src: url(" + __webpack_require__("./src/assets/fonts/Akrobat-Regular.otf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: CaveatRegular;\n  src: url(" + __webpack_require__("./src/assets/fonts/Caveat-Regular.ttf") + ") format(\"opentype\"); }\n\n/*---------------------------------------------------------*/\n/* BASIC SETUP */\n/*---------------------------------------------------------*/\n* {\n  margin: 0;\n  padding: 0;\n  -webkit-box-sizing: border-box;\n  box-sizing: border-box; }\n\nhtml,\nbody {\n  color: #555;\n  font-family: \"AkrobatRegular\", cursive;\n  font-weight: 400;\n  font-size: 20px;\n  background-image: url(" + __webpack_require__("./src/assets/images/1920x1080-background.jpg") + ");\n  background-size: cover;\n  background-position: center;\n  height: 100%; }\n\nhtml {\n  overflow: auto;\n  overflow-x: hidden; }\n\nul {\n  list-style: none; }\n\n.social-icon {\n  width: 30px;\n  height: 30px; }\n\n/* TITLES \n==================================*/\nh1 {\n  margin-top: 0;\n  font-size: 300%;\n  word-spacing: 4px;\n  letter-spacing: 1px; }\n\nh2 {\n  font-size: 180%;\n  word-spacing: 2px;\n  text-align: center;\n  letter-spacing: 1px; }\n\nh3 {\n  font-size: 160%; }\n\nh4 {\n  font-size: 120%; }\n\n/* LINKS \n==================================*/\n.main-nav a {\n  font-family: \"CaveatRegular\", arial !important; }\n\na {\n  text-decoration: none;\n  background: transparent; }\n\na:link,\na:visited {\n  text-decoration: none;\n  padding-bottom: 1px; }\n\n/* TOOLTIP\n==================================*/\n.tooltip {\n  display: none;\n  width: 140px;\n  background-color: #000;\n  color: #fff;\n  text-align: center;\n  font-size: 70%;\n  padding: 5px 0;\n  border-radius: 6px;\n  opacity: 0.7;\n  position: absolute;\n  z-index: 1; }\n\n/* APP \n==================================*/\n.clearfix:after {\n  content: \".\";\n  display: block;\n  clear: both;\n  visibility: hidden;\n  height: 0; }\n\n.ListPosts {\n  margin-bottom: 2em;\n  font-family: \"AkrobatExtraLight\", arial; }\n\n.App {\n  width: 100vw;\n  height: 100%; }\n  .App header {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: justify;\n    -ms-flex-pack: justify;\n    justify-content: space-between;\n    -webkit-box-align: center;\n    -ms-flex-align: center;\n    align-items: center;\n    width: 100%;\n    padding: 0.5% 2%; }\n    .App header .site-title {\n      -webkit-box-flex: 2;\n      -ms-flex: 2;\n      flex: 2; }\n      .App header .site-title img {\n        width: 100%;\n        max-width: 350px;\n        height: auto; }\n    .App header .main-nav {\n      -webkit-box-flex: 3;\n      -ms-flex: 3;\n      flex: 3;\n      margin-right: 30px;\n      font-size: 180%; }\n      .App header .main-nav ul {\n        position: relative;\n        float: right; }\n        .App header .main-nav ul li {\n          display: inline-block;\n          margin-left: 35px; }\n          .App header .main-nav ul li a {\n            position: relative;\n            display: inline-block; }\n          .App header .main-nav ul li a:link,\n          .App header .main-nav ul li a:visited {\n            padding: 8px 0;\n            color: #555;\n            padding-bottom: 2px;\n            -webkit-transition: font-weight 0.2s;\n            transition: font-weight 0.2s; }\n          .App header .main-nav ul li a::after {\n            content: '...';\n            color: #132366ce;\n            position: absolute;\n            left: 0;\n            right: 0;\n            top: 100%;\n            margin: 2px auto;\n            width: 15px;\n            height: 0;\n            opacity: 0;\n            margin-top: -30px;\n            -webkit-transition: opacity 0.3s;\n            transition: opacity 0.3s; }\n          .App header .main-nav ul li a:hover:after,\n          .App header .main-nav ul li a:active:after {\n            opacity: 1; }\n  .App .Blog {\n    width: 80%;\n    min-height: 80%;\n    margin: 0 auto;\n    padding-top: 50px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex; }\n    .App .Blog .Articles {\n      flex: 5;\n      position: relative;\n      margin: 0 auto;\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex; }\n      .App .Blog .Articles .arrow-buttons {\n        position: relative;\n        width: 40px;\n        height: auto; }\n        .App .Blog .Articles .arrow-buttons ion-icon {\n          position: fixed;\n          width: 40px;\n          height: 80%;\n          opacity: 0.3;\n          -webkit-transition: opacity 0.2s;\n          transition: opacity 0.2s; }\n          .App .Blog .Articles .arrow-buttons ion-icon .icon-inner {\n            display: -webkit-box;\n            display: -ms-flexbox;\n            display: flex;\n            -webkit-box-align: center;\n            -ms-flex-align: center;\n            align-items: center; }\n        .App .Blog .Articles .arrow-buttons ion-icon:hover {\n          opacity: 1;\n          cursor: pointer; }\n        .App .Blog .Articles .arrow-buttons .tooltip {\n          top: 30vh; }\n      .App .Blog .Articles .arrow-buttons:hover .tooltip {\n        display: block; }\n      .App .Blog .Articles .ArticleContainer {\n        position: relative;\n        padding: 1em;\n        width: 100%; }\n        .App .Blog .Articles .ArticleContainer .Article .article-slide,\n        .App .Blog .Articles .ArticleContainer .Article .article-text,\n        .App .Blog .Articles .ArticleContainer .Article .article-footer,\n        .App .Blog .Articles .ArticleContainer .Article .article-social-shares {\n          margin-bottom: 10px; }\n        .App .Blog .Articles .ArticleContainer .Article .article-slide {\n          position: relative; }\n          .App .Blog .Articles .ArticleContainer .Article .article-slide img {\n            display: block;\n            max-width: 100%;\n            height: auto; }\n          .App .Blog .Articles .ArticleContainer .Article .article-slide .article-title {\n            background: rgba(0, 0, 0, 0.45);\n            color: #e1e1e1;\n            width: 100%;\n            bottom: 0;\n            left: 0;\n            position: absolute;\n            padding: 0.5em; }\n            .App .Blog .Articles .ArticleContainer .Article .article-slide .article-title .article-title-name {\n              float: left;\n              width: 70%;\n              font-weight: bold;\n              font-family: \"AkrobatBold\", arial;\n              font-weight: 700;\n              color: #e1e1e1; }\n            .App .Blog .Articles .ArticleContainer .Article .article-slide .article-title .article-title-tag {\n              float: right;\n              font-family: \"CaveatRegular\", arial;\n              cursor: pointer; }\n              .App .Blog .Articles .ArticleContainer .Article .article-slide .article-title .article-title-tag h4 {\n                color: #b5b4b4;\n                -webkit-transition: color 0.2s;\n                transition: color 0.2s; }\n              .App .Blog .Articles .ArticleContainer .Article .article-slide .article-title .article-title-tag h4:hover {\n                color: #e1e1e1; }\n        .App .Blog .Articles .ArticleContainer .Article .article-content {\n          max-width: 100%; }\n          .App .Blog .Articles .ArticleContainer .Article .article-content .article-text {\n            font-size: 80%; }\n            .App .Blog .Articles .ArticleContainer .Article .article-content .article-text .text-paragraph {\n              margin-bottom: 10px; }\n            .App .Blog .Articles .ArticleContainer .Article .article-content .article-text p {\n              text-align: left; }\n          .App .Blog .Articles .ArticleContainer .Article .article-content .article-social-shares {\n            display: -webkit-box;\n            display: -ms-flexbox;\n            display: flex; }\n            .App .Blog .Articles .ArticleContainer .Article .article-content .article-social-shares ion-icon {\n              width: 30px;\n              height: 30px;\n              margin-right: 5px;\n              opacity: 0.5; }\n            .App .Blog .Articles .ArticleContainer .Article .article-content .article-social-shares .social-icon {\n              cursor: pointer;\n              margin-right: 5px;\n              outline: 0;\n              opacity: 0.7;\n              transition: opacity 0.2s; }\n            .App .Blog .Articles .ArticleContainer .Article .article-content .article-social-shares .social-icon:hover {\n              opacity: 1; }\n              .App .Blog .Articles .ArticleContainer .Article .article-content .article-social-shares .social-icon:hover .tooltip {\n                display: block; }\n          .App .Blog .Articles .ArticleContainer .Article .article-content .article-footer .article-date {\n            margin-bottom: 2em;\n            float: right;\n            font-size: 80%;\n            font-style: italic; }\n    .App .Blog .SideBar {\n      display: none;\n      z-index: 5;\n      position: fixed;\n      left: 200px;\n      height: 85%;\n      margin-left: -200px;\n      overflow-y: hidden;\n      overflow-x: hidden;\n      -webkit-transition: all 0.5s ease;\n      transition: all 0.5s ease; }\n    .App .Blog .SideList {\n      flex: 1;\n      height: 80%;\n      float: right;\n      margin-top: 2em;\n      margin: 0 0.5em; }\n      .App .Blog .SideList .ListPosts {\n        margin-bottom: 2em;\n        font-family: \"AkrobatExtraLight\", arial; }\n        .App .Blog .SideList .ListPosts .listItem {\n          font-weight: 300;\n          font-size: 70%;\n          padding: 4px 4px;\n          -webkit-transition: background-color 0.2s;\n          transition: background-color 0.2s; }\n        .App .Blog .SideList .ListPosts .listItem:hover {\n          cursor: pointer;\n          background-color: #e1e1e1; }\n        .App .Blog .SideList .ListPosts .listItem.active {\n          font-weight: bold; }\n          .App .Blog .SideList .ListPosts .listItem.active ion-icon {\n            color: #132366ce;\n            margin-right: 5px; }\n  .App footer {\n    margin-bottom: 0;\n    width: 100%;\n    height: 40px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: justify;\n    -ms-flex-pack: justify;\n    justify-content: space-between;\n    background-color: #333;\n    padding: 5px; }\n    .App footer .copyright-text {\n      font-size: 80%; }\n    .App footer .social-icons {\n      float: right; }\n      .App footer .social-icons .social-icon {\n        position: relative;\n        display: inline; }\n        .App footer .social-icons .social-icon a {\n          width: 25px;\n          margin-right: 20px;\n          cursor: pointer;\n          color: #888; }\n          .App footer .social-icons .social-icon a #fb:hover {\n            color: #3b5999; }\n          .App footer .social-icons .social-icon a #tw:hover {\n            color: #55acee; }\n          .App footer .social-icons .social-icon a #gp:hover {\n            color: #dd4b39; }\n          .App footer .social-icons .social-icon a #ig:hover {\n            color: #e4405f; }\n        .App footer .social-icons .social-icon a:link,\n        .App footer .social-icons .social-icon a:visited {\n          text-decoration: none;\n          border: 0;\n          font-size: 130%;\n          color: #888;\n          -webkit-transition: color 0.2s;\n          transition: color 0.2s; }\n        .App footer .social-icons .social-icon .tooltip {\n          right: 40px;\n          bottom: 40px; }\n      .App footer .social-icons .social-icon:hover .tooltip {\n        display: block; }\n    .App footer p {\n      color: #888;\n      text-align: center;\n      margin-top: 5px; }\n\n.fadeIn {\n  -webkit-animation: fadeIn 1.5s;\n  animation: fadeIn 1.5s; }\n\n.slideInLeft {\n  -webkit-animation: slideInLeft 0.8s;\n  animation: slideInLeft 0.8s; }\n\n.slideInRight {\n  -webkit-animation: slideInRight 0.8s;\n  animation: slideInRight 0.8s; }\n\n.fadeInLeft {\n  -webkit-animation: fadeInLeft 0.8s;\n  animation: fadeInLeft 0.8s; }\n\n.pulse {\n  -webkit-animation: pulse 0.8s;\n  animation: pulse 0.8s; }\n\n.flipInY {\n  -webkit-animation: flipInY 0.8s;\n  animation: flipInY 0.8s; }\n\n.flipInX {\n  -webkit-animation: flipInX 0.8s;\n  animation: flipInX 0.8s; }\n", ""]);
 
 // exports
 
@@ -35299,10 +35299,10 @@ module.exports = __webpack_require__.p + "e592c9850a6620fff5708450e1775b5a.otf";
 
 /***/ }),
 
-/***/ "./src/assets/fonts/Akrobat-Light.otf":
+/***/ "./src/assets/fonts/Akrobat-ExtraLight.otf":
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "5abaf200f5f31785abf6c7a28c23965e.otf";
+module.exports = __webpack_require__.p + "eaa410a30ec0c1021c57fa171967cba0.otf";
 
 /***/ }),
 
@@ -35514,88 +35514,6 @@ App.childContextTypes = {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_classnames__ = __webpack_require__("./node_modules/classnames/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_classnames___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_classnames__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ArticleContent__ = __webpack_require__("./src/components/ui/ArticleContent.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ArticleSwiped__ = __webpack_require__("./src/components/ui/ArticleSwiped.js");
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-
-
-
-
-
-var Article = function (_Component) {
-    _inherits(Article, _Component);
-
-    function Article() {
-        _classCallCheck(this, Article);
-
-        var _this = _possibleConstructorReturn(this, (Article.__proto__ || Object.getPrototypeOf(Article)).call(this));
-
-        _this.componentDidUpdate = function (prevProps) {
-            if (prevProps.post !== _this.props.post) {
-                window.scrollTo(0, 0);
-                _this.activeAnimate();
-            }
-        };
-
-        _this.state = { animate: false };
-        return _this;
-    }
-
-    _createClass(Article, [{
-        key: 'componentDidMount',
-        value: function componentDidMount() {
-            this.activeAnimate();
-        }
-    }, {
-        key: 'activeAnimate',
-        value: function activeAnimate() {
-            var _this2 = this;
-
-            this.setState({ animate: true });
-
-            setTimeout(function () {
-                _this2.setState({ animate: false });
-            }, 1000);
-        }
-    }, {
-        key: 'render',
-        value: function render() {
-            var animate = this.state.animate,
-                shifted = this.props.shifted;
-
-
-            var classArticle = __WEBPACK_IMPORTED_MODULE_1_classnames___default()('Article', { fadeIn: animate });
-
-            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                { className: classArticle },
-                shifted ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__ArticleContent__["a" /* default */], this.props) : __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__ArticleSwiped__["a" /* default */], this.props)
-            );
-        }
-    }]);
-
-    return Article;
-}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
-
-/* harmony default export */ __webpack_exports__["a"] = (Article);
-
-/***/ }),
-
-/***/ "./src/components/ui/ArticleContent.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__("./node_modules/prop-types/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_router_dom__ = __webpack_require__("./node_modules/react-router-dom/es/index.js");
@@ -35664,10 +35582,10 @@ var ArticleContent = function (_Component) {
 
             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'div',
-                { className: 'article-content' },
+                { className: 'Article' },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'div',
-                    { className: 'article-top clearfix' },
+                    { className: 'article-slide clearfix' },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         __WEBPACK_IMPORTED_MODULE_2_react_router_dom__["b" /* Link */],
                         { to: '/' + tag + '/' + id },
@@ -35703,19 +35621,23 @@ var ArticleContent = function (_Component) {
                         )
                     )
                 ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__SocialShareButtons__["a" /* default */], { post: post }),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'div',
-                    { className: 'article-text' },
-                    postText
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'article-footer' },
+                    { className: 'article-content' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__SocialShareButtons__["a" /* default */], { post: post }),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         'div',
-                        { className: 'article-date' },
-                        date
+                        { className: 'article-text' },
+                        postText
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'div',
+                        { className: 'article-footer' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'div',
+                            { className: 'article-date' },
+                            date
+                        )
                     )
                 )
             );
@@ -35734,13 +35656,95 @@ ArticleContent.contextTypes = {
 
 /***/ }),
 
+/***/ "./src/components/ui/ArticleContainer.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_classnames__ = __webpack_require__("./node_modules/classnames/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_classnames___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_classnames__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Article__ = __webpack_require__("./src/components/ui/Article.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ArticleSwiped__ = __webpack_require__("./src/components/ui/ArticleSwiped.js");
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+
+
+var ArticleContainer = function (_Component) {
+    _inherits(ArticleContainer, _Component);
+
+    function ArticleContainer() {
+        _classCallCheck(this, ArticleContainer);
+
+        var _this = _possibleConstructorReturn(this, (ArticleContainer.__proto__ || Object.getPrototypeOf(ArticleContainer)).call(this));
+
+        _this.componentDidUpdate = function (prevProps) {
+            if (prevProps.post !== _this.props.post) {
+                window.scrollTo(0, 0);
+                _this.activeAnimate();
+            }
+        };
+
+        _this.state = { animate: false };
+        return _this;
+    }
+
+    _createClass(ArticleContainer, [{
+        key: 'componentDidMount',
+        value: function componentDidMount() {
+            this.activeAnimate();
+        }
+    }, {
+        key: 'activeAnimate',
+        value: function activeAnimate() {
+            var _this2 = this;
+
+            this.setState({ animate: true });
+
+            setTimeout(function () {
+                _this2.setState({ animate: false });
+            }, 1000);
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var animate = this.state.animate,
+                shifted = this.props.shifted;
+
+
+            var classArticle = __WEBPACK_IMPORTED_MODULE_1_classnames___default()('ArticleContainer', { fadeIn: animate });
+
+            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                { className: classArticle },
+                shifted ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__Article__["a" /* default */], this.props) : __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__ArticleSwiped__["a" /* default */], this.props)
+            );
+        }
+    }]);
+
+    return ArticleContainer;
+}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
+
+/* harmony default export */ __webpack_exports__["a"] = (ArticleContainer);
+
+/***/ }),
+
 /***/ "./src/components/ui/ArticleSwiped.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ArticleContent__ = __webpack_require__("./src/components/ui/ArticleContent.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Article__ = __webpack_require__("./src/components/ui/Article.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__wrapperSwipe__ = __webpack_require__("./src/components/ui/wrapperSwipe.js");
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -35766,7 +35770,7 @@ var ArticleSwiped = function (_Component) {
     _createClass(ArticleSwiped, [{
         key: 'render',
         value: function render() {
-            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__ArticleContent__["a" /* default */], this.props);
+            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__Article__["a" /* default */], this.props);
         }
     }]);
 
@@ -35785,7 +35789,7 @@ var ArticleSwiped = function (_Component) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_classnames__ = __webpack_require__("./node_modules/classnames/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_classnames___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_classnames__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Article__ = __webpack_require__("./src/components/ui/Article.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ArticleContainer__ = __webpack_require__("./src/components/ui/ArticleContainer.js");
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -35833,6 +35837,12 @@ var Articles = function (_Component) {
 
 
             openPost(changedId);
+        }, _this.tooltip = function (title) {
+            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'span',
+                { className: 'tooltip' },
+                title
+            );
         }, _temp), _possibleConstructorReturn(_this, _ret);
     }
 
@@ -35864,9 +35874,10 @@ var Articles = function (_Component) {
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'div',
                     { className: 'arrow-buttons', onClick: this.handleOpenPrev },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('ion-icon', { name: 'ios-arrow-back' })
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('ion-icon', { name: 'ios-arrow-back' }),
+                    this.tooltip('Листати назад')
                 ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__Article__["a" /* default */], {
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__ArticleContainer__["a" /* default */], {
                     post: activePost,
                     onPrev: this.handleOpenPrev,
                     onNext: this.handleOpenNext,
@@ -35876,7 +35887,8 @@ var Articles = function (_Component) {
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'div',
                     { className: 'arrow-buttons', onClick: this.handleOpenNext },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('ion-icon', { name: 'ios-arrow-forward' })
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('ion-icon', { name: 'ios-arrow-forward' }),
+                    this.tooltip('Листати вперед')
                 )
             );
         }
@@ -36032,6 +36044,16 @@ Blog.contextTypes = {
 
 
 var FooterBlock = function FooterBlock() {
+
+    var tooltip = function tooltip(social) {
+        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'span',
+            { className: 'tooltip' },
+            '\u0427\u0438\u0442\u0430\u0442\u0438 \u0443 ',
+            social
+        );
+    };
+
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'footer',
         null,
@@ -36048,19 +36070,34 @@ var FooterBlock = function FooterBlock() {
             'div',
             { className: 'social-icons' },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'a',
-                { href: 'http://facebook.com' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('ion-icon', { id: 'fb', name: 'logo-facebook' })
+                'div',
+                { className: 'social-icon' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'a',
+                    { href: 'http://facebook.com' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('ion-icon', { id: 'fb', name: 'logo-facebook' })
+                ),
+                tooltip('Facebook')
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'a',
-                { href: 'http://twitter.com' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('ion-icon', { id: 'tw', name: 'logo-twitter' })
+                'div',
+                { className: 'social-icon' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'a',
+                    { href: 'http://twitter.com' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('ion-icon', { id: 'tw', name: 'logo-twitter' })
+                ),
+                tooltip('Twitter')
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'a',
-                { href: 'http://googleplus.com' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('ion-icon', { id: 'gp', name: 'logo-googleplus' })
+                'div',
+                { className: 'social-icon' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'a',
+                    { href: 'http://googleplus.com' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('ion-icon', { id: 'gp', name: 'logo-googleplus' })
+                ),
+                tooltip('Google+')
             )
         )
     );
@@ -36586,23 +36623,36 @@ var SocialShareButtons = function SocialShareButtons(_ref) {
     var postLink = 'https://manic1nick.github.io/documenty_kino/#/' + tag + '/' + id,
         postTitle = '\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438 - ' + title;
 
+    var tooltip = function tooltip(social) {
+        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'span',
+            { className: 'tooltip' },
+            '\u041F\u043E\u0448\u0438\u0440\u0438\u0442\u0438 \u0443 ',
+            social
+        );
+    };
+
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
         { className: 'article-social-shares' },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('ion-icon', { name: 'share' }),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             __WEBPACK_IMPORTED_MODULE_1_react_share__["b" /* FacebookShareButton */],
             { className: 'social-icon', quote: postTitle, url: postLink },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_share__["a" /* FacebookIcon */], { size: 32, round: true })
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_share__["a" /* FacebookIcon */], { size: 32, round: true }),
+            tooltip('Facebook')
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             __WEBPACK_IMPORTED_MODULE_1_react_share__["f" /* TwitterShareButton */],
             { className: 'social-icon', title: postTitle, url: postLink },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_share__["e" /* TwitterIcon */], { size: 32, round: true })
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_share__["e" /* TwitterIcon */], { size: 32, round: true }),
+            tooltip('Twitter')
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             __WEBPACK_IMPORTED_MODULE_1_react_share__["d" /* TelegramShareButton */],
             { className: 'social-icon', title: postTitle, url: postLink },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_share__["c" /* TelegramIcon */], { size: 32, round: true })
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_share__["c" /* TelegramIcon */], { size: 32, round: true }),
+            tooltip('Telegram')
         )
     );
 };
