@@ -4,8 +4,8 @@
 // @import url('https://fonts.googleapis.com/css?family=Caveat:400,700&subset=cyrillic,latin-ext');
 
 @font-face {
-    font-family: AkrobatLight;
-    src: url('../fonts/Akrobat-Light.otf') format('opentype');
+    font-family: AkrobatExtraLight;
+    src: url('../fonts/Akrobat-ExtraLight.otf') format('opentype');
 }
 
 @font-face {
@@ -30,7 +30,7 @@
 
 $fontTextMain: 'AkrobatRegular';
 $fontTextTitle: 'AkrobatBold';
-$fontTextSecond: 'AkrobatLight';
+$fontTextSecond: 'AkrobatExtraLight';
 $fontMenu: 'CaveatRegular';
 
 $colorTextMain: #555;
@@ -164,6 +164,29 @@ a:visited {
 .ListPosts {
     margin-bottom: 2em;
     font-family: $fontTextSecond, arial;
+    // margin-bottom: 2em;
+    // font-family: $fontTextSecond, arial;
+    .listItem {
+        font-weight: 300;
+        font-size: 70%;
+        padding: 4px 4px;
+        -webkit-transition: background-color 0.2s;
+        transition: background-color 0.2s;
+    }
+    
+    .listItem:hover {
+        cursor: pointer;
+        background-color: $colorBackground;
+    }
+    
+    .listItem.active {
+        font-weight: bold;
+    
+        ion-icon {
+            color: $colorTextHover;
+            margin-right: 5px;
+        }
+    }
 }
 
 .App {
@@ -255,10 +278,8 @@ a:visited {
         width: 80%;
         min-height: 80%;
         margin: 0 auto;
-        padding-top: 80px;
+        padding-top: 40px;
 
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
         
         .Articles {
@@ -278,7 +299,7 @@ a:visited {
                     position: fixed;
                     //top: 50%;
                     width: 40px;
-                    height: 80%;
+                    height: 60%;
                     opacity: 0.3;
                     -webkit-transition: opacity 0.2s;
                     transition: opacity 0.2s;
@@ -299,13 +320,15 @@ a:visited {
                 }
 
                 .tooltip {
-                    top: 30vh;
+                    top: 40%;
                 }
             }
 
             .arrow-buttons:hover {
                 .tooltip {
                     display: block;
+                    position: fixed;
+                    //overflow: hidden;
                 }
             }
 
@@ -314,107 +337,151 @@ a:visited {
                 padding: 1em;
                 width: 100%;  
                 
-                .Article {                    
+                .Article {       
                     
-                    .article-slide,
-                    .article-text,
-                    .article-footer,
-                    .article-social-shares {
-                        margin-bottom: 10px;
-                    }    
-            
-                    .article-slide {
-                        position: relative;
-
-                        img {
-                            display: block;
-                            max-width: 100%;
-                            height: auto;
-                        }
-
-                        .article-title {
-                            background: rgba(0, 0, 0, 0.45);
-                            color: $colorBackground;
-                            width: 100%;
-                            bottom: 0;
-                            left: 0;
-                            position: absolute;
-                            padding: 0.5em;
+                    .article-top {   
+                
+                        .ArticleSlide {
+                            position: relative;
+                            margin-bottom: 10px;
     
-                            .article-title-name {
-                                float: left;
-                                width: 70%;
-                                font-weight: bold;
-                                font-family: $fontTextTitle, arial;
-                                font-weight: 700;
-                                color: $colorBackground;
+                            img {
+                                display: block;
+                                max-width: 100%;
+                                height: auto;
                             }
-                            
-                            .article-title-tag {
-                                float: right;
-                                font-family: $fontMenu, arial;
-                                cursor: pointer;
-                                
-                                h4 {
-                                    color: $colorTextThird;
-                                    -webkit-transition: color 0.2s;
-                                    transition: color 0.2s;
-                                }
     
-                                h4:hover {
+                            .article-title {
+                                background: rgba(0, 0, 0, 0.45);
+                                color: $colorBackground;
+                                width: 100%;
+                                bottom: 0;
+                                left: 0;
+                                position: absolute;
+                                padding: 0.5em;
+        
+                                .article-title-name {
+                                    float: left;
+                                    width: 70%;
+                                    font-weight: bold;
+                                    font-family: $fontTextTitle, arial;
+                                    font-weight: 700;
                                     color: $colorBackground;
                                 }
-                            }
-                        } 
-                    }    
-
-                    .article-content {
-                        max-width: 100%;
-
-                        .article-text {
-                            font-size: 80%;
-    
-                            .text-paragraph { margin-bottom: 10px; }
-    
-                            p { text-align: left;  }
-                        }
-                
-                        .article-social-shares {
-                            display: -webkit-box;
-                            display: -ms-flexbox;
-                            display: flex;
-    
-                            ion-icon {
-                                width: 30px;
-                                height: 30px;
-                                margin-right: 5px;
-                                opacity: 0.5;
-                            }
-    
-                            .social-icon {
-                                cursor: pointer;
-                                margin-right: 5px; 
-                                outline: 0;
-                                opacity: 0.7;
-                                transition: opacity 0.2s;                        
-                            }
-                            
-                            .social-icon:hover {
-                                opacity: 1;
-    
-                                .tooltip {
-                                    display: block;
+                                
+                                .article-title-tag {
+                                    float: right;
+                                    font-family: $fontMenu, arial;
+                                    cursor: pointer;
+                                    
+                                    h4 {
+                                        color: $colorTextThird;
+                                        -webkit-transition: color 0.2s;
+                                        transition: color 0.2s;
+                                    }
+        
+                                    h4:hover {
+                                        color: $colorBackground;
+                                    }
                                 }
-                            }                                
-                        }
+                            } 
+                        }    
+                    }
+                    
+                    .article-main {
+                        display: flex;
                         
+                        .ArticleContent {
+                            flex: 4;
+                            max-width: 70%;
+
+                            .article-text,
+                            .article-footer,
+                            .article-social-shares {
+                                margin-bottom: 10px;
+                            } 
     
-                        .article-footer {
-                            .article-date {
-                                margin-bottom: 2em;
-                                float: right;
+                            .article-text {
                                 font-size: 80%;
-                                font-style: italic;
+        
+                                .text-paragraph { margin-bottom: 10px; }
+        
+                                p { text-align: left;  }
+                            }
+                    
+                            .article-social-shares {
+                                display: -webkit-box;
+                                display: -ms-flexbox;
+                                display: flex;
+        
+                                ion-icon {
+                                    width: 30px;
+                                    height: 30px;
+                                    margin-right: 5px;
+                                    opacity: 0.5;
+                                }
+        
+                                .social-icon {
+                                    cursor: pointer;
+                                    margin-right: 5px; 
+                                    outline: 0;
+                                    opacity: 0.7;
+                                    transition: opacity 0.2s;                        
+                                }
+                                
+                                .social-icon:hover {
+                                    opacity: 1;
+        
+                                    .tooltip {
+                                        display: block;
+                                    }
+                                }                                
+                            }                            
+        
+                            .article-footer {
+                                .article-date {
+                                    margin-bottom: 2em;
+                                    float: right;
+                                    font-size: 80%;
+                                    font-style: italic;
+                                }
+                            }
+                        }
+
+                        .SideList {
+                            width: 30%;
+                            flex: 1;
+                            height: 80%;
+                            float: right;
+                            margin-top: 2em;
+                            margin-left: 2em;    
+                            
+                            .ListPosts {
+                                margin-bottom: 2em;
+                                
+
+                                .listItem {
+                                    font-family: $fontTextSecond, arial;
+                                    font-weight: 300;
+                                    font-size: 70%;
+                                    padding: 4px 4px;
+                                    -webkit-transition: background-color 0.2s;
+                                    transition: background-color 0.2s;
+                                }
+                                
+                                .listItem:hover {
+                                    cursor: pointer;
+                                    background-color: $colorBackground;
+                                }
+                                
+                                .listItem.active {
+                                    font-weight: bold;
+                                
+                                    ion-icon {
+                                        color: $colorTextHover;
+                                        margin-right: 5px;
+                                    }
+                                }
                             }
                         }
                     }
@@ -435,45 +502,10 @@ a:visited {
             -webkit-transition: all 0.5s ease;
             transition: all 0.5s ease;
         }
-    
-        .SideList {
-            width: 20%;
-            height: 80%;
-            float: right;
-            margin-top: 2em;
-            margin: 0 0.5em;
-
-            .ListPosts {
-                margin-bottom: 2em;
-                font-family: $fontTextSecond, arial;
-
-                .listItem {
-                    font-weight: 300;
-                    font-size: 80%;
-                    padding: 4px 4px;
-                    -webkit-transition: background-color 0.2s;
-                    transition: background-color 0.2s;
-                }
-
-                .listItem:hover {
-                    cursor: pointer;
-                    background-color: $colorBackground;
-                }
-
-                .listItem.active {
-                    font-weight: bold;
-
-                    ion-icon {
-                        color: $colorTextHover;
-                        margin-right: 5px;
-                    }
-                }
-            }
-        }
     }
 
     footer {
-        margin-bottom: 0;
+        padding-bottom: 0;
         width: 100%;
         height: 40px;
 
@@ -557,13 +589,13 @@ a:visited {
     -webkit-animation: slideInRight 0.8s;
             animation: slideInRight 0.8s;
 }
+.slideInDown {
+    -webkit-animation: slideInDown 0.8s;
+            animation: slideInDown 0.8s;
+}
 .fadeInLeft {
     -webkit-animation: fadeInLeft 0.8s;
             animation: fadeInLeft 0.8s;
-}
-.pulse {
-    -webkit-animation: pulse 0.8s;
-            animation: pulse 0.8s;
 }
 .flipInY {
     -webkit-animation: flipInY 0.8s;

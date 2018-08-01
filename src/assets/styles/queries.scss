@@ -60,7 +60,7 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
         }
 
         .Blog { 
-            width: 100%;
+            width: 95%;
 
             .Articles {    
                 .arrow-buttons {
@@ -70,29 +70,36 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
                 }
     
                 .ArticleContainer {
-                    padding: 1em;    
+                    width: 90%;
+                    padding: 1em 0.5em;    
 
                     .Article {
-                        .article-slide {
-                            .article-title { font-size: 80%; }
+                        .article-top {
+                            .ArticleSlide {
+                                .article-title { font-size: 80%; }
+                            }
                         }
-                        .article-content {
-                            .article-text { font-size: 80%; }
-                            .article-date { font-size: 80%; }
-                        }                
+
+                        .article-main {
+                            .ArticleContent {
+                                .article-text { font-size: 80%; }
+                                .article-date { font-size: 80%; }
+                            } 
+
+                            .SideList {
+                                width: 20%;
+                    
+                                .ListPosts {
+                                    .listItem {
+                                        font-size: 70%;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }        
             }
         
-            .SideList {
-                width: 20%;
-    
-                .ListPosts {
-                    .listItem {
-                        font-size: 70%;
-                    }
-                }
-            }
         }
 
         footer {
@@ -135,68 +142,45 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
                     padding: 0.5em;
 
                     .Article {
-                        .article-slide {
-                            .article-title { font-size: 60%; }
+                        .article-top {
+                            .ArticleSlide {
+                                .article-title { font-size: 60%; }
+                            }
                         }
-                        .article-content {
-                            .article-text { font-size: 70%; }                    
-                            .article-date { font-size: 60%; }
-    
-                            .article-social-shares {    
-                                ion-icon,
-                                .social-icon {
-                                    width: 25px;
-                                    height: 25px;
-                                }              
+
+                        .article-main {
+                            .ArticleContent {
+                                .article-text { font-size: 70%; }                    
+                                .article-date { font-size: 60%; }
+        
+                                .article-social-shares {    
+                                    ion-icon,
+                                    .social-icon {
+                                        width: 25px;
+                                        height: 25px;
+                                    }              
+                                }
+                            }
+                            .SideList {    
+                                margin-left: 0.5em;
+                
+                                .ListPosts {
+                                    .post-title {
+                                        font-size: 60%;
+                                    }
+                                }
                             }
                         }
                     }
                 }        
             }
 
-            .SideList {    
-                margin-left: 0.5em;
-
-                .ListPosts {
-                    .post-title {
-                        font-size: 60%;
-                    }
-                }
-            }
         }
     }
 }
 
 /* Small phones from 0px to 480px */
 @media only screen and (max-width: 480px) {
-
-    .ListPosts {                
-        width: 200px;
-        padding-left: 10px;
-
-        .listItem {
-            font-weight: 300;
-            font-size: 80%;
-            padding: 4px 4px;
-            -webkit-transition: background-color 0.2s;
-            transition: background-color 0.2s;
-        }
-
-        .listItem:hover {
-            cursor: pointer;
-            background-color: $colorBackground;
-        }
-
-        .listItem.active {
-            font-weight: bold;
-            font-style: italic;
-
-            ion-icon {
-                color: $colorTextHover;
-                margin-right: 5px;
-            }
-        }
-    }
 
     .App {
         header {
@@ -250,7 +234,7 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
 
         .Blog {
             overflow-x: hidden;  
-            margin-top: 55px;
+            margin-top: 20px;
 
             .Articles {
                 width: 100%;
@@ -263,16 +247,26 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
                     min-height: 100vh;
 
                     .Article {
+                        .article-top {
 
-                        .article-content {
-                            .article-social-shares {    
-                                ion-icon,
-                                .social-icon {
-                                    width: 20px;
-                                    height: 20px;
-                                }              
-                            }
                         }
+
+                        .article-main {
+
+                            .ArticleContent {
+                                max-width: 100%;
+    
+                                .article-social-shares {    
+                                    ion-icon,
+                                    .social-icon {
+                                        width: 20px;
+                                        height: 20px;
+                                    }              
+                                }
+                            }
+                            .SideList { display: none; }
+                        }
+
                     }
                 } 
             }
@@ -284,12 +278,40 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
                         filter: brightness(50%);
             }
 
-            .SideList { display: none; }
-
             .SideBar { 
                 display: block; 
                 width: 0;
                 padding-bottom: 40px;
+
+                .ListPosts {                
+                    width: 200px;
+                    //padding-left: 10px;
+                    margin-left: 0;
+                    margin-right: 2em;
+            
+                    .listItem {
+                        font-weight: 300;
+                        font-size: 80%;
+                        padding: 4px 4px;
+                        -webkit-transition: background-color 0.2s;
+                        transition: background-color 0.2s;
+                    }
+            
+                    .listItem:hover {
+                        cursor: pointer;
+                        background-color: $colorBackground;
+                    }
+            
+                    .listItem.active {
+                        font-weight: bold;
+                        font-style: italic;
+            
+                        ion-icon {
+                            color: $colorTextHover;
+                            margin-right: 5px;
+                        }
+                    }
+                }
             }
             .SideBar.open {
                 width: 200px;

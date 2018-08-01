@@ -61,10 +61,10 @@ export default class Blog extends Component {
                     activePostIndex={ activePostIndex }
                     openPost={ this.handleOpenPost } 
                     openSideBar={ this.handleOpenSideBar }
+                    match={ this.props.match } 
                 />
-                <SideBlock 
-                    screenWidth={ this.context.screenWidth }
-                    isSideBarOpening={ openSideBar }
+                <SideBar
+                    isOpen={ openSideBar }
                     posts={ listPosts } 
                     match={ this.props.match } 
                     openPost={ this.handleOpenPost }

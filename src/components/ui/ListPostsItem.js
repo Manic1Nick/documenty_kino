@@ -38,7 +38,8 @@ export default class ListPostsItem extends Component {
     }
 
     activeAnimateIn() {
-        const { timeoutMs } = this.props
+        const { postIndex } = this.props,
+            timeoutMs = 50 * postIndex
 
         setTimeout(() => {
             this.setState({ 
@@ -60,20 +61,21 @@ export default class ListPostsItem extends Component {
     }
 
     render() {
-        const { post, match } = this.props,
-            { animateIn, animateSelect, hidden } = this.state
+        const { postIndex, match } = this.props,
+            { animateIn, animateSelect, hidden } = this.state,
+            post = this.props.posts[postIndex]
 
         let isActivePost = post.id === parseInt(match.params.id),
             styleItem = { 'display': hidden ? 'none' : 'block' },
             classListItem = classNames(
                 'listItem', 
                 { active: isActivePost }, 
-                { fadeInLeft: animateIn },
+                { slideInDown: animateIn },
                 { flipInX: animateSelect }
             )
 
         return(
-            <div className={ classListItem } 
+            <li className={ classListItem } 
                 onClick={ () => this.handleSelectItem(post.id) }
                 style={ styleItem }
             >
@@ -81,7 +83,7 @@ export default class ListPostsItem extends Component {
                 isActivePost ? <ion-icon name="videocam"></ion-icon> : null
             }
             <span className='post-title-text'>{ post.title }</span>
-            </div>
+            </li>
         )
     }
 }
