@@ -262,7 +262,6 @@ a:visited {
         display: flex;
         
         .Articles {
-            flex: 5;
             position: relative;            
             margin: 0 auto;
 
@@ -438,8 +437,7 @@ a:visited {
         }
     
         .SideList {
-            flex: 1;
-            //width: 20%;
+            min-width: 20%;
             height: 80%;
             float: right;
             margin-top: 2em;
