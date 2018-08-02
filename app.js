@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "2a027efa17359f6f921b"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "89951e31d261d6cafe8d"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -1336,6 +1336,37 @@ exports.default = function () {
     return Constructor;
   };
 }();
+
+/***/ }),
+
+/***/ "./node_modules/babel-runtime/helpers/defineProperty.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+exports.__esModule = true;
+
+var _defineProperty = __webpack_require__("./node_modules/babel-runtime/core-js/object/define-property.js");
+
+var _defineProperty2 = _interopRequireDefault(_defineProperty);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = function (obj, key, value) {
+  if (key in obj) {
+    (0, _defineProperty2.default)(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+};
 
 /***/ }),
 
@@ -3163,7 +3194,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "/* Big tablets to 1200px (widths smaller than 1140px row) */\n/* Small tablets to big tablets from 768px to 1023px */\n@media only screen and (max-width: 1023px) {\n  .App header .main-nav ul li {\n    margin-left: 20px;\n    font-size: 80%; }\n    .App header .main-nav ul li a:after {\n      margin-top: -20px; }\n  .App .Blog {\n    width: 90%; } }\n\n/* Small phones to small tablets from 624px to 767px */\n@media only screen and (max-width: 767px) {\n  h1 {\n    font-size: 180%; }\n  .App header .site-title {\n    -webkit-box-flex: 1;\n    -ms-flex: 1;\n    flex: 1;\n    font-size: 80%; }\n  .App header .main-nav {\n    -webkit-box-flex: 2;\n    -ms-flex: 2;\n    flex: 2; }\n    .App header .main-nav ul li {\n      font-size: 70%; }\n  .App .Blog {\n    width: 100%; }\n    .App .Blog .Articles .arrow-buttons {\n      width: 30px; }\n      .App .Blog .Articles .arrow-buttons ion-icon {\n        width: 30px; }\n    .App .Blog .Articles .ArticleContainer {\n      padding: 1em; }\n      .App .Blog .Articles .ArticleContainer .Article .article-slide .article-title {\n        font-size: 80%; }\n      .App .Blog .Articles .ArticleContainer .Article .article-content .article-text {\n        font-size: 80%; }\n      .App .Blog .Articles .ArticleContainer .Article .article-content .article-date {\n        font-size: 80%; }\n    .App .Blog .SideList {\n      width: 20%; }\n      .App .Blog .SideList .ListPosts .listItem {\n        font-size: 70%; }\n  .App footer {\n    height: 30px;\n    font-size: 60%; }\n    .App footer a {\n      margin-right: 10px; } }\n\n/* Small phones to small tablets from 481px to 623px */\n@media only screen and (max-width: 623px) {\n  .App header .main-nav ul li {\n    margin-left: 10px;\n    font-size: 60%; }\n    .App header .main-nav ul li a:link {\n      padding-bottom: 20px; }\n    .App header .main-nav ul li a:after {\n      margin-top: -30px; }\n  .App .Blog .Articles .arrow-buttons {\n    width: 20px; }\n    .App .Blog .Articles .arrow-buttons ion-icon {\n      width: 20px; }\n  .App .Blog .Articles .ArticleContainer {\n    padding: 0.5em; }\n    .App .Blog .Articles .ArticleContainer .Article .article-slide .article-title {\n      font-size: 60%; }\n    .App .Blog .Articles .ArticleContainer .Article .article-content .article-text {\n      font-size: 70%; }\n    .App .Blog .Articles .ArticleContainer .Article .article-content .article-date {\n      font-size: 60%; }\n    .App .Blog .Articles .ArticleContainer .Article .article-content .article-social-shares ion-icon,\n    .App .Blog .Articles .ArticleContainer .Article .article-content .article-social-shares .social-icon {\n      width: 25px;\n      height: 25px; }\n  .App .Blog .SideList {\n    margin-left: 0.5em; }\n    .App .Blog .SideList .ListPosts .post-title {\n      font-size: 60%; } }\n\n/* Small phones from 0px to 480px */\n@media only screen and (max-width: 480px) {\n  .ListPosts {\n    width: 200px;\n    padding-left: 10px; }\n    .ListPosts .listItem {\n      font-weight: 300;\n      font-size: 80%;\n      padding: 4px 4px;\n      -webkit-transition: background-color 0.2s;\n      transition: background-color 0.2s; }\n    .ListPosts .listItem:hover {\n      cursor: pointer;\n      background-color: #e1e1e1; }\n    .ListPosts .listItem.active {\n      font-weight: bold;\n      font-style: italic; }\n      .ListPosts .listItem.active ion-icon {\n        color: #132366ce;\n        margin-right: 5px; }\n  .App header {\n    height: 60px;\n    position: fixed;\n    top: 0;\n    z-index: 10;\n    background-color: #f6f8ff; }\n    .App header .site-title {\n      -webkit-box-flex: 2;\n      -ms-flex: 2;\n      flex: 2; }\n    .App header .main-nav {\n      -webkit-box-flex: 1;\n      -ms-flex: 1;\n      flex: 1;\n      margin-right: 10px; }\n      .App header .main-nav .dd-menu {\n        float: right;\n        cursor: pointer; }\n        .App header .main-nav .dd-menu ion-icon {\n          width: 30px;\n          height: 30px; }\n        .App header .main-nav .dd-menu ul {\n          width: 130%;\n          height: 100%; }\n          .App header .main-nav .dd-menu ul li {\n            width: 100%;\n            margin: 0 auto; }\n            .App header .main-nav .dd-menu ul li a {\n              font-size: 120%;\n              text-align: center; }\n            .App header .main-nav .dd-menu ul li a:link {\n              padding-bottom: 10px; }\n            .App header .main-nav .dd-menu ul li a:hover {\n              background-color: #e1e1e1; }\n            .App header .main-nav .dd-menu ul li a:after {\n              content: ''; }\n  .App .Blog {\n    overflow-x: hidden;\n    margin-top: 55px; }\n    .App .Blog .Articles {\n      width: 100%;\n      -webkit-transition: all 0.3s ease-out;\n      transition: all 0.3s ease-out;\n      margin-right: 0; }\n      .App .Blog .Articles .ArticleContainer {\n        padding: 0.5em;\n        min-height: 100vh; }\n        .App .Blog .Articles .ArticleContainer .Article .article-content .article-social-shares ion-icon,\n        .App .Blog .Articles .ArticleContainer .Article .article-content .article-social-shares .social-icon {\n          width: 20px;\n          height: 20px; }\n    .App .Blog .Articles.shifted {\n      margin-right: -200px;\n      background: rgba(0, 0, 0, 0.3);\n      -webkit-filter: brightness(50%);\n      filter: brightness(50%); }\n    .App .Blog .SideList {\n      display: none; }\n    .App .Blog .SideBar {\n      display: block;\n      width: 0;\n      padding-bottom: 40px; }\n    .App .Blog .SideBar.open {\n      width: 200px;\n      overflow-y: auto; }\n  .App footer .copyright-text {\n    font-size: 70%; }\n  .App footer .social-icons {\n    font-size: 100%; }\n    .App footer .social-icons a {\n      width: 20px;\n      margin-right: 10px; } }\n", ""]);
+exports.push([module.i, "/* Big tablets to 1200px (widths smaller than 1140px row) */\n/* Small tablets to big tablets from 768px to 1023px */\n@media only screen and (max-width: 1023px) {\n  .App header .main-nav ul li {\n    margin-left: 20px;\n    font-size: 80%; }\n    .App header .main-nav ul li a:after {\n      margin-top: -20px; }\n  .App .Blog {\n    width: 90%; } }\n\n/* Small phones to small tablets from 624px to 767px */\n@media only screen and (max-width: 767px) {\n  .tooltip {\n    display: none; }\n  h1 {\n    font-size: 180%; }\n  .App header .site-title {\n    -webkit-box-flex: 1;\n    -ms-flex: 1;\n    flex: 1;\n    font-size: 80%; }\n  .App header .main-nav {\n    -webkit-box-flex: 2;\n    -ms-flex: 2;\n    flex: 2; }\n    .App header .main-nav ul li {\n      font-size: 70%; }\n  .App .Blog {\n    width: 100%; }\n    .App .Blog .Articles .arrow-buttons {\n      width: 30px; }\n      .App .Blog .Articles .arrow-buttons ion-icon {\n        width: 30px; }\n    .App .Blog .Articles .ArticleContainer {\n      padding: 1em; }\n      .App .Blog .Articles .ArticleContainer .Article .article-slide .article-title {\n        font-size: 80%; }\n      .App .Blog .Articles .ArticleContainer .Article .article-content .article-text {\n        font-size: 80%; }\n      .App .Blog .Articles .ArticleContainer .Article .article-content .article-date {\n        font-size: 80%; }\n    .App .Blog .SideList {\n      width: 20%; }\n      .App .Blog .SideList .ListPosts .listItem {\n        font-size: 70%; }\n  .App footer {\n    height: 30px;\n    font-size: 60%; } }\n\n/* Small phones to small tablets from 481px to 623px */\n@media only screen and (max-width: 623px) {\n  .App header .main-nav ul li {\n    margin-left: 10px;\n    font-size: 60%; }\n    .App header .main-nav ul li a:link {\n      padding-bottom: 20px; }\n    .App header .main-nav ul li a:after {\n      margin-top: -30px; }\n  .App .Blog .Articles .arrow-buttons {\n    width: 20px; }\n    .App .Blog .Articles .arrow-buttons ion-icon {\n      width: 20px; }\n  .App .Blog .Articles .ArticleContainer {\n    padding: 0.5em; }\n    .App .Blog .Articles .ArticleContainer .Article .article-slide .article-title {\n      font-size: 60%; }\n    .App .Blog .Articles .ArticleContainer .Article .article-content .article-text {\n      font-size: 70%; }\n    .App .Blog .Articles .ArticleContainer .Article .article-content .article-date {\n      font-size: 60%; }\n    .App .Blog .Articles .ArticleContainer .Article .article-content .article-social-shares ion-icon,\n    .App .Blog .Articles .ArticleContainer .Article .article-content .article-social-shares .social-icon {\n      width: 25px;\n      height: 25px; }\n  .App .Blog .SideList {\n    margin-left: 0.5em; }\n    .App .Blog .SideList .ListPosts .post-title {\n      font-size: 60%; } }\n\n/* Small phones from 0px to 480px */\n@media only screen and (max-width: 480px) {\n  .ListPosts {\n    width: 200px;\n    padding-left: 10px; }\n    .ListPosts .listItem {\n      font-weight: 300;\n      font-size: 80%;\n      padding: 4px 4px;\n      -webkit-transition: background-color 0.2s;\n      transition: background-color 0.2s; }\n    .ListPosts .listItem:hover {\n      cursor: pointer;\n      background-color: #e1e1e1; }\n    .ListPosts .listItem.active {\n      font-weight: bold;\n      font-style: italic; }\n      .ListPosts .listItem.active ion-icon {\n        color: #132366ce;\n        margin-right: 5px; }\n  .App header {\n    height: 60px;\n    position: fixed;\n    top: 0;\n    z-index: 10;\n    background-color: #f6f8ff; }\n    .App header .site-title {\n      -webkit-box-flex: 2;\n      -ms-flex: 2;\n      flex: 2; }\n    .App header .main-nav {\n      -webkit-box-flex: 1;\n      -ms-flex: 1;\n      flex: 1;\n      margin-right: 10px; }\n      .App header .main-nav .dd-menu {\n        float: right;\n        cursor: pointer; }\n        .App header .main-nav .dd-menu ion-icon {\n          width: 30px;\n          height: 30px; }\n        .App header .main-nav .dd-menu ul {\n          width: 130%;\n          height: 100%; }\n          .App header .main-nav .dd-menu ul li {\n            width: 100%;\n            margin: 0 auto; }\n            .App header .main-nav .dd-menu ul li a {\n              font-size: 120%;\n              text-align: center; }\n            .App header .main-nav .dd-menu ul li a:link {\n              padding-bottom: 10px; }\n            .App header .main-nav .dd-menu ul li a:hover {\n              background-color: #e1e1e1; }\n            .App header .main-nav .dd-menu ul li a:after {\n              content: ''; }\n  .App .Blog {\n    overflow-x: hidden;\n    margin-top: 55px; }\n    .App .Blog .Articles {\n      width: 100%;\n      -webkit-transition: all 0.3s ease-out;\n      transition: all 0.3s ease-out;\n      margin-right: 0; }\n      .App .Blog .Articles .ArticleContainer {\n        padding: 0.5em;\n        min-height: 100vh; }\n        .App .Blog .Articles .ArticleContainer .Article .article-content .article-social-shares ion-icon,\n        .App .Blog .Articles .ArticleContainer .Article .article-content .article-social-shares .social-icon {\n          width: 20px;\n          height: 20px; }\n    .App .Blog .Articles.shifted {\n      margin-right: -200px;\n      background: rgba(0, 0, 0, 0.3);\n      -webkit-filter: brightness(50%);\n      filter: brightness(50%); }\n    .App .Blog .SideList {\n      display: none; }\n    .App .Blog .SideBar {\n      display: block;\n      width: 0;\n      padding-bottom: 40px; }\n    .App .Blog .SideBar.open {\n      width: 200px;\n      overflow-y: auto; }\n  .App footer .copyright-text {\n    font-size: 70%; }\n  .App footer .social-icons {\n    font-size: 100%; }\n    .App footer .social-icons .social-icon a {\n      width: 20px;\n      margin-right: 10px; } }\n", ""]);
 
 // exports
 
@@ -3179,7 +3210,7 @@ exports.i(__webpack_require__("./node_modules/css-loader/index.js!./src/assets/s
 exports.i(__webpack_require__("./node_modules/css-loader/index.js!./src/assets/styles/react-dd-menu.css"), "");
 
 // module
-exports.push([module.i, "@font-face {\n  font-family: AkrobatExtraLight;\n  src: url(" + __webpack_require__("./src/assets/fonts/Akrobat-ExtraLight.otf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: AkrobatBold;\n  src: url(" + __webpack_require__("./src/assets/fonts/Akrobat-Bold.otf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: AkrobatRegular;\n  src: url(" + __webpack_require__("./src/assets/fonts/Akrobat-Regular.otf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: CaveatRegular;\n  src: url(" + __webpack_require__("./src/assets/fonts/Caveat-Regular.ttf") + ") format(\"opentype\"); }\n\n/*---------------------------------------------------------*/\n/* BASIC SETUP */\n/*---------------------------------------------------------*/\n* {\n  margin: 0;\n  padding: 0;\n  -webkit-box-sizing: border-box;\n  box-sizing: border-box; }\n\nhtml,\nbody {\n  color: #555;\n  font-family: \"AkrobatRegular\", cursive;\n  font-weight: 400;\n  font-size: 20px;\n  background-image: url(" + __webpack_require__("./src/assets/images/1920x1080-background.jpg") + ");\n  background-size: cover;\n  background-position: center;\n  height: 100%; }\n\nhtml {\n  overflow: auto;\n  overflow-x: hidden; }\n\nul {\n  list-style: none; }\n\n.social-icon {\n  width: 30px;\n  height: 30px; }\n\n/* TITLES \n==================================*/\nh1 {\n  margin-top: 0;\n  font-size: 300%;\n  word-spacing: 4px;\n  letter-spacing: 1px; }\n\nh2 {\n  font-size: 180%;\n  word-spacing: 2px;\n  text-align: center;\n  letter-spacing: 1px; }\n\nh3 {\n  font-size: 160%; }\n\nh4 {\n  font-size: 120%; }\n\n/* LINKS \n==================================*/\n.main-nav a {\n  font-family: \"CaveatRegular\", arial !important; }\n\na {\n  text-decoration: none;\n  background: transparent; }\n\na:link,\na:visited {\n  text-decoration: none;\n  padding-bottom: 1px; }\n\n/* TOOLTIP\n==================================*/\n.tooltip {\n  display: none;\n  width: 140px;\n  background-color: #000;\n  color: #fff;\n  text-align: center;\n  font-size: 70%;\n  padding: 5px 0;\n  border-radius: 6px;\n  opacity: 0.7;\n  position: absolute;\n  z-index: 1; }\n\n/* APP \n==================================*/\n.clearfix:after {\n  content: \".\";\n  display: block;\n  clear: both;\n  visibility: hidden;\n  height: 0; }\n\n.ListPosts {\n  margin-bottom: 2em;\n  font-family: \"AkrobatExtraLight\", arial; }\n\n.App {\n  width: 100vw;\n  height: 100%; }\n  .App header {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: justify;\n    -ms-flex-pack: justify;\n    justify-content: space-between;\n    -webkit-box-align: center;\n    -ms-flex-align: center;\n    align-items: center;\n    width: 100%;\n    padding: 0.5% 2%; }\n    .App header .site-title {\n      -webkit-box-flex: 2;\n      -ms-flex: 2;\n      flex: 2; }\n      .App header .site-title img {\n        width: 100%;\n        max-width: 350px;\n        height: auto; }\n    .App header .main-nav {\n      -webkit-box-flex: 3;\n      -ms-flex: 3;\n      flex: 3;\n      margin-right: 30px;\n      font-size: 180%; }\n      .App header .main-nav ul {\n        position: relative;\n        float: right; }\n        .App header .main-nav ul li {\n          display: inline-block;\n          margin-left: 35px; }\n          .App header .main-nav ul li a {\n            position: relative;\n            display: inline-block; }\n          .App header .main-nav ul li a:link,\n          .App header .main-nav ul li a:visited {\n            padding: 8px 0;\n            color: #555;\n            padding-bottom: 2px;\n            -webkit-transition: font-weight 0.2s;\n            transition: font-weight 0.2s; }\n          .App header .main-nav ul li a::after {\n            content: '...';\n            color: #132366ce;\n            position: absolute;\n            left: 0;\n            right: 0;\n            top: 100%;\n            margin: 2px auto;\n            width: 15px;\n            height: 0;\n            opacity: 0;\n            margin-top: -30px;\n            -webkit-transition: opacity 0.3s;\n            transition: opacity 0.3s; }\n          .App header .main-nav ul li a:hover:after,\n          .App header .main-nav ul li a:active:after {\n            opacity: 1; }\n  .App .Blog {\n    width: 80%;\n    min-height: 80%;\n    margin: 0 auto;\n    padding-top: 50px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex; }\n    .App .Blog .Articles {\n      position: relative;\n      margin: 0 auto;\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex; }\n      .App .Blog .Articles .arrow-buttons {\n        position: relative;\n        width: 40px;\n        height: auto; }\n        .App .Blog .Articles .arrow-buttons ion-icon {\n          position: fixed;\n          width: 40px;\n          height: 80%;\n          opacity: 0.3;\n          -webkit-transition: opacity 0.2s;\n          transition: opacity 0.2s; }\n          .App .Blog .Articles .arrow-buttons ion-icon .icon-inner {\n            display: -webkit-box;\n            display: -ms-flexbox;\n            display: flex;\n            -webkit-box-align: center;\n            -ms-flex-align: center;\n            align-items: center; }\n        .App .Blog .Articles .arrow-buttons ion-icon:hover {\n          opacity: 1;\n          cursor: pointer; }\n        .App .Blog .Articles .arrow-buttons .tooltip {\n          top: 30vh; }\n      .App .Blog .Articles .arrow-buttons:hover .tooltip {\n        display: block; }\n      .App .Blog .Articles .ArticleContainer {\n        position: relative;\n        padding: 1em;\n        width: 100%; }\n        .App .Blog .Articles .ArticleContainer .Article .article-slide,\n        .App .Blog .Articles .ArticleContainer .Article .article-text,\n        .App .Blog .Articles .ArticleContainer .Article .article-footer,\n        .App .Blog .Articles .ArticleContainer .Article .article-social-shares {\n          margin-bottom: 10px; }\n        .App .Blog .Articles .ArticleContainer .Article .article-slide {\n          position: relative; }\n          .App .Blog .Articles .ArticleContainer .Article .article-slide img {\n            display: block;\n            max-width: 100%;\n            height: auto; }\n          .App .Blog .Articles .ArticleContainer .Article .article-slide .article-title {\n            background: rgba(0, 0, 0, 0.45);\n            color: #e1e1e1;\n            width: 100%;\n            bottom: 0;\n            left: 0;\n            position: absolute;\n            padding: 0.5em; }\n            .App .Blog .Articles .ArticleContainer .Article .article-slide .article-title .article-title-name {\n              float: left;\n              width: 70%;\n              font-weight: bold;\n              font-family: \"AkrobatBold\", arial;\n              font-weight: 700;\n              color: #e1e1e1; }\n            .App .Blog .Articles .ArticleContainer .Article .article-slide .article-title .article-title-tag {\n              float: right;\n              font-family: \"CaveatRegular\", arial;\n              cursor: pointer; }\n              .App .Blog .Articles .ArticleContainer .Article .article-slide .article-title .article-title-tag h4 {\n                color: #b5b4b4;\n                -webkit-transition: color 0.2s;\n                transition: color 0.2s; }\n              .App .Blog .Articles .ArticleContainer .Article .article-slide .article-title .article-title-tag h4:hover {\n                color: #e1e1e1; }\n        .App .Blog .Articles .ArticleContainer .Article .article-content {\n          max-width: 100%; }\n          .App .Blog .Articles .ArticleContainer .Article .article-content .article-text {\n            font-size: 80%; }\n            .App .Blog .Articles .ArticleContainer .Article .article-content .article-text .text-paragraph {\n              margin-bottom: 10px; }\n            .App .Blog .Articles .ArticleContainer .Article .article-content .article-text p {\n              text-align: left; }\n          .App .Blog .Articles .ArticleContainer .Article .article-content .article-social-shares {\n            display: -webkit-box;\n            display: -ms-flexbox;\n            display: flex; }\n            .App .Blog .Articles .ArticleContainer .Article .article-content .article-social-shares ion-icon {\n              width: 30px;\n              height: 30px;\n              margin-right: 5px;\n              opacity: 0.5; }\n            .App .Blog .Articles .ArticleContainer .Article .article-content .article-social-shares .social-icon {\n              cursor: pointer;\n              margin-right: 5px;\n              outline: 0;\n              opacity: 0.7;\n              transition: opacity 0.2s; }\n            .App .Blog .Articles .ArticleContainer .Article .article-content .article-social-shares .social-icon:hover {\n              opacity: 1; }\n              .App .Blog .Articles .ArticleContainer .Article .article-content .article-social-shares .social-icon:hover .tooltip {\n                display: block; }\n          .App .Blog .Articles .ArticleContainer .Article .article-content .article-footer .article-date {\n            margin-bottom: 2em;\n            float: right;\n            font-size: 80%;\n            font-style: italic; }\n    .App .Blog .SideBar {\n      display: none;\n      z-index: 5;\n      position: fixed;\n      left: 200px;\n      height: 85%;\n      margin-left: -200px;\n      overflow-y: hidden;\n      overflow-x: hidden;\n      -webkit-transition: all 0.5s ease;\n      transition: all 0.5s ease; }\n    .App .Blog .SideList {\n      min-width: 20%;\n      height: 80%;\n      float: right;\n      margin-top: 2em;\n      margin: 0 0.5em; }\n      .App .Blog .SideList .ListPosts {\n        margin-bottom: 2em;\n        font-family: \"AkrobatExtraLight\", arial; }\n        .App .Blog .SideList .ListPosts .listItem {\n          font-weight: 300;\n          font-size: 70%;\n          padding: 4px 4px;\n          -webkit-transition: background-color 0.2s;\n          transition: background-color 0.2s; }\n        .App .Blog .SideList .ListPosts .listItem:hover {\n          cursor: pointer;\n          background-color: #e1e1e1; }\n        .App .Blog .SideList .ListPosts .listItem.active {\n          font-weight: bold; }\n          .App .Blog .SideList .ListPosts .listItem.active ion-icon {\n            color: #132366ce;\n            margin-right: 5px; }\n  .App footer {\n    margin-bottom: 0;\n    width: 100%;\n    height: 40px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: justify;\n    -ms-flex-pack: justify;\n    justify-content: space-between;\n    background-color: #333;\n    padding: 5px; }\n    .App footer .copyright-text {\n      font-size: 80%; }\n    .App footer .social-icons {\n      float: right; }\n      .App footer .social-icons .social-icon {\n        position: relative;\n        display: inline; }\n        .App footer .social-icons .social-icon a {\n          width: 25px;\n          margin-right: 20px;\n          cursor: pointer;\n          color: #888; }\n          .App footer .social-icons .social-icon a #fb:hover {\n            color: #3b5999; }\n          .App footer .social-icons .social-icon a #tw:hover {\n            color: #55acee; }\n          .App footer .social-icons .social-icon a #gp:hover {\n            color: #dd4b39; }\n          .App footer .social-icons .social-icon a #ig:hover {\n            color: #e4405f; }\n        .App footer .social-icons .social-icon a:link,\n        .App footer .social-icons .social-icon a:visited {\n          text-decoration: none;\n          border: 0;\n          font-size: 130%;\n          color: #888;\n          -webkit-transition: color 0.2s;\n          transition: color 0.2s; }\n        .App footer .social-icons .social-icon .tooltip {\n          right: 40px;\n          bottom: 40px; }\n      .App footer .social-icons .social-icon:hover .tooltip {\n        display: block; }\n    .App footer p {\n      color: #888;\n      text-align: center;\n      margin-top: 5px; }\n\n.fadeIn {\n  -webkit-animation: fadeIn 1.5s;\n  animation: fadeIn 1.5s; }\n\n.slideInLeft {\n  -webkit-animation: slideInLeft 0.8s;\n  animation: slideInLeft 0.8s; }\n\n.slideInRight {\n  -webkit-animation: slideInRight 0.8s;\n  animation: slideInRight 0.8s; }\n\n.fadeInLeft {\n  -webkit-animation: fadeInLeft 0.8s;\n  animation: fadeInLeft 0.8s; }\n\n.pulse {\n  -webkit-animation: pulse 0.8s;\n  animation: pulse 0.8s; }\n\n.flipInY {\n  -webkit-animation: flipInY 0.8s;\n  animation: flipInY 0.8s; }\n\n.flipInX {\n  -webkit-animation: flipInX 0.8s;\n  animation: flipInX 0.8s; }\n", ""]);
+exports.push([module.i, "@font-face {\n  font-family: AkrobatExtraLight;\n  src: url(" + __webpack_require__("./src/assets/fonts/Akrobat-ExtraLight.otf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: AkrobatBold;\n  src: url(" + __webpack_require__("./src/assets/fonts/Akrobat-Bold.otf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: AkrobatRegular;\n  src: url(" + __webpack_require__("./src/assets/fonts/Akrobat-Regular.otf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: CaveatRegular;\n  src: url(" + __webpack_require__("./src/assets/fonts/Caveat-Regular.ttf") + ") format(\"opentype\"); }\n\n/*---------------------------------------------------------*/\n/* BASIC SETUP */\n/*---------------------------------------------------------*/\n* {\n  margin: 0;\n  padding: 0;\n  -webkit-box-sizing: border-box;\n  box-sizing: border-box; }\n\nhtml,\nbody {\n  color: #555;\n  font-family: \"AkrobatRegular\", cursive;\n  font-weight: 400;\n  font-size: 20px;\n  background-image: url(" + __webpack_require__("./src/assets/images/1920x1080-background.jpg") + ");\n  background-size: cover;\n  background-position: center;\n  height: 100%; }\n\nhtml {\n  overflow: auto;\n  overflow-x: hidden; }\n\nul {\n  list-style: none; }\n\n.social-icon {\n  width: 30px;\n  height: 30px; }\n\n/* TITLES \n==================================*/\nh1 {\n  margin-top: 0;\n  font-size: 300%;\n  word-spacing: 4px;\n  letter-spacing: 1px; }\n\nh2 {\n  font-size: 180%;\n  word-spacing: 2px;\n  text-align: center;\n  letter-spacing: 1px; }\n\nh3 {\n  font-size: 160%; }\n\nh4 {\n  font-size: 120%; }\n\n/* LINKS \n==================================*/\n.main-nav a {\n  font-family: \"CaveatRegular\", arial !important; }\n\na {\n  text-decoration: none;\n  background: transparent; }\n\na:link,\na:visited {\n  text-decoration: none;\n  padding-bottom: 1px; }\n\n/* TOOLTIP\n==================================*/\n.tooltip {\n  visibility: hidden;\n  width: 140px;\n  background-color: #000;\n  color: #fff;\n  text-align: center;\n  font-size: 70%;\n  padding: 5px 0;\n  border-radius: 6px;\n  opacity: 0.7;\n  position: absolute;\n  z-index: 1; }\n\n/* APP \n==================================*/\n.clearfix:after {\n  content: \".\";\n  display: block;\n  clear: both;\n  visibility: hidden;\n  height: 0; }\n\n.ListPosts {\n  margin-bottom: 2em;\n  font-family: \"AkrobatExtraLight\", arial; }\n\n.App {\n  width: 100vw;\n  height: 100%; }\n  .App header {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: justify;\n    -ms-flex-pack: justify;\n    justify-content: space-between;\n    -webkit-box-align: center;\n    -ms-flex-align: center;\n    align-items: center;\n    width: 100%;\n    padding: 0.5% 2%; }\n    .App header .site-title {\n      -webkit-box-flex: 2;\n      -ms-flex: 2;\n      flex: 2; }\n      .App header .site-title img {\n        width: 100%;\n        max-width: 350px;\n        height: auto; }\n    .App header .main-nav {\n      -webkit-box-flex: 3;\n      -ms-flex: 3;\n      flex: 3;\n      margin-right: 30px;\n      font-size: 180%; }\n      .App header .main-nav ul {\n        position: relative;\n        float: right; }\n        .App header .main-nav ul li {\n          display: inline-block;\n          margin-left: 35px; }\n          .App header .main-nav ul li a {\n            position: relative;\n            display: inline-block; }\n          .App header .main-nav ul li a:link,\n          .App header .main-nav ul li a:visited {\n            padding: 8px 0;\n            color: #555;\n            padding-bottom: 2px;\n            -webkit-transition: font-weight 0.2s;\n            transition: font-weight 0.2s; }\n          .App header .main-nav ul li a::after {\n            content: '...';\n            color: #132366ce;\n            position: absolute;\n            left: 0;\n            right: 0;\n            top: 100%;\n            margin: 2px auto;\n            width: 15px;\n            height: 0;\n            opacity: 0;\n            margin-top: -30px;\n            -webkit-transition: opacity 0.3s;\n            transition: opacity 0.3s; }\n          .App header .main-nav ul li a:hover:after,\n          .App header .main-nav ul li a:active:after {\n            opacity: 1; }\n  .App .Blog {\n    width: 80%;\n    min-height: 80%;\n    margin: 0 auto;\n    padding-top: 50px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex; }\n    .App .Blog .Articles {\n      position: relative;\n      margin: 0 auto;\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex; }\n      .App .Blog .Articles .arrow-buttons {\n        position: relative;\n        width: 40px;\n        height: auto; }\n        .App .Blog .Articles .arrow-buttons ion-icon {\n          position: fixed;\n          width: 40px;\n          height: 80%;\n          opacity: 0.3;\n          -webkit-transition: opacity 0.2s;\n          transition: opacity 0.2s; }\n          .App .Blog .Articles .arrow-buttons ion-icon .icon-inner {\n            display: -webkit-box;\n            display: -ms-flexbox;\n            display: flex;\n            -webkit-box-align: center;\n            -ms-flex-align: center;\n            align-items: center; }\n        .App .Blog .Articles .arrow-buttons ion-icon:hover {\n          opacity: 1;\n          cursor: pointer; }\n      .App .Blog .Articles .ArticleContainer {\n        position: relative;\n        padding: 1em;\n        width: 100%; }\n        .App .Blog .Articles .ArticleContainer .Article .article-slide,\n        .App .Blog .Articles .ArticleContainer .Article .article-text,\n        .App .Blog .Articles .ArticleContainer .Article .article-footer,\n        .App .Blog .Articles .ArticleContainer .Article .article-social-shares {\n          margin-bottom: 10px; }\n        .App .Blog .Articles .ArticleContainer .Article .article-slide {\n          position: relative; }\n          .App .Blog .Articles .ArticleContainer .Article .article-slide img {\n            display: block;\n            max-width: 100%;\n            height: auto; }\n          .App .Blog .Articles .ArticleContainer .Article .article-slide .article-title {\n            background: rgba(0, 0, 0, 0.45);\n            color: #e1e1e1;\n            width: 100%;\n            bottom: 0;\n            left: 0;\n            position: absolute;\n            padding: 0.5em; }\n            .App .Blog .Articles .ArticleContainer .Article .article-slide .article-title .article-title-name {\n              float: left;\n              width: 70%;\n              font-weight: bold;\n              font-family: \"AkrobatBold\", arial;\n              font-weight: 700;\n              color: #e1e1e1; }\n            .App .Blog .Articles .ArticleContainer .Article .article-slide .article-title .article-title-tag {\n              float: right;\n              font-family: \"CaveatRegular\", arial;\n              cursor: pointer; }\n              .App .Blog .Articles .ArticleContainer .Article .article-slide .article-title .article-title-tag h4 {\n                color: #b5b4b4;\n                -webkit-transition: color 0.2s;\n                transition: color 0.2s; }\n              .App .Blog .Articles .ArticleContainer .Article .article-slide .article-title .article-title-tag h4:hover {\n                color: #e1e1e1; }\n        .App .Blog .Articles .ArticleContainer .Article .article-content {\n          max-width: 100%; }\n          .App .Blog .Articles .ArticleContainer .Article .article-content .article-text {\n            font-size: 80%; }\n            .App .Blog .Articles .ArticleContainer .Article .article-content .article-text .text-paragraph {\n              margin-bottom: 10px; }\n            .App .Blog .Articles .ArticleContainer .Article .article-content .article-text p {\n              text-align: left; }\n          .App .Blog .Articles .ArticleContainer .Article .article-content .article-social-shares {\n            display: -webkit-box;\n            display: -ms-flexbox;\n            display: flex; }\n            .App .Blog .Articles .ArticleContainer .Article .article-content .article-social-shares ion-icon {\n              width: 30px;\n              height: 30px;\n              margin-right: 5px;\n              opacity: 0.5; }\n            .App .Blog .Articles .ArticleContainer .Article .article-content .article-social-shares .social-icon {\n              cursor: pointer;\n              margin-right: 5px;\n              outline: 0;\n              opacity: 0.7;\n              transition: opacity 0.2s; }\n            .App .Blog .Articles .ArticleContainer .Article .article-content .article-social-shares .social-icon:hover {\n              opacity: 1; }\n              .App .Blog .Articles .ArticleContainer .Article .article-content .article-social-shares .social-icon:hover .tooltip {\n                visibility: visible; }\n          .App .Blog .Articles .ArticleContainer .Article .article-content .article-footer .article-date {\n            margin-bottom: 2em;\n            float: right;\n            font-size: 80%;\n            font-style: italic; }\n    .App .Blog .SideBar {\n      display: none;\n      z-index: 5;\n      position: fixed;\n      left: 200px;\n      height: 85%;\n      margin-left: -200px;\n      overflow-y: hidden;\n      overflow-x: hidden;\n      -webkit-transition: all 0.5s ease;\n      transition: all 0.5s ease; }\n    .App .Blog .SideList {\n      width: 20%;\n      min-width: 20%;\n      height: 80%;\n      float: right;\n      margin-top: 2em;\n      margin: 0 0.5em; }\n      .App .Blog .SideList .ListPosts {\n        margin-bottom: 2em;\n        font-family: \"AkrobatExtraLight\", arial; }\n        .App .Blog .SideList .ListPosts .listItem {\n          font-weight: 300;\n          font-size: 70%;\n          padding: 4px 4px;\n          -webkit-transition: background-color 0.2s;\n          transition: background-color 0.2s; }\n        .App .Blog .SideList .ListPosts .listItem:hover {\n          cursor: pointer;\n          background-color: #e1e1e1; }\n        .App .Blog .SideList .ListPosts .listItem.active {\n          font-weight: bold; }\n          .App .Blog .SideList .ListPosts .listItem.active ion-icon {\n            color: #132366ce;\n            margin-right: 5px; }\n  .App footer {\n    position: absolute;\n    width: 100%;\n    height: 40px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: justify;\n    -ms-flex-pack: justify;\n    justify-content: space-between;\n    background-color: #333;\n    padding: 5px; }\n    .App footer .copyright-text {\n      font-size: 80%; }\n    .App footer .social-icons {\n      float: right; }\n      .App footer .social-icons .social-icon {\n        position: relative;\n        display: inline; }\n        .App footer .social-icons .social-icon a {\n          width: 25px;\n          margin-right: 20px;\n          cursor: pointer;\n          color: #888; }\n          .App footer .social-icons .social-icon a #fb:hover {\n            color: #3b5999; }\n          .App footer .social-icons .social-icon a #tw:hover {\n            color: #55acee; }\n          .App footer .social-icons .social-icon a #gp:hover {\n            color: #dd4b39; }\n          .App footer .social-icons .social-icon a #ig:hover {\n            color: #e4405f; }\n        .App footer .social-icons .social-icon a:link,\n        .App footer .social-icons .social-icon a:visited {\n          text-decoration: none;\n          border: 0;\n          font-size: 130%;\n          color: #888;\n          -webkit-transition: color 0.2s;\n          transition: color 0.2s; }\n        .App footer .social-icons .social-icon .tooltip {\n          right: 40px;\n          bottom: 40px; }\n      .App footer .social-icons .social-icon:hover .tooltip {\n        visibility: visible; }\n    .App footer p {\n      color: #888;\n      text-align: center;\n      margin-top: 5px; }\n\n.fadeIn {\n  -webkit-animation: fadeIn 1.5s;\n  animation: fadeIn 1.5s; }\n\n.slideInLeft {\n  -webkit-animation: slideInLeft 0.8s;\n  animation: slideInLeft 0.8s; }\n\n.slideInRight {\n  -webkit-animation: slideInRight 0.8s;\n  animation: slideInRight 0.8s; }\n\n.fadeInLeft {\n  -webkit-animation: fadeInLeft 0.8s;\n  animation: fadeInLeft 0.8s; }\n\n.pulse {\n  -webkit-animation: pulse 0.8s;\n  animation: pulse 0.8s; }\n\n.flipInY {\n  -webkit-animation: flipInY 0.8s;\n  animation: flipInY 0.8s; }\n\n.flipInX {\n  -webkit-animation: flipInX 0.8s;\n  animation: flipInX 0.8s; }\n", ""]);
 
 // exports
 
@@ -3296,6 +3327,42 @@ function toComment(sourceMap) {
 	return '/*# ' + data + ' */';
 }
 
+
+/***/ }),
+
+/***/ "./node_modules/detect-passive-events/lib/index.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+// adapted from https://github.com/WICG/EventListenerOptions/blob/gh-pages/explainer.md
+var detectPassiveEvents = {
+  update: function update() {
+    if (typeof window !== 'undefined' && typeof window.addEventListener === 'function') {
+      var passive = false;
+      var options = Object.defineProperty({}, 'passive', {
+        get: function get() {
+          passive = true;
+        }
+      });
+      // note: have to set and remove a no-op listener instead of null
+      // (which was used previously), becasue Edge v15 throws an error
+      // when providing a null callback.
+      // https://github.com/rafrex/detect-passive-events/pull/3
+      var noop = function noop() {};
+      window.addEventListener('testPassiveEventSupport', noop, options);
+      window.removeEventListener('testPassiveEventSupport', noop, options);
+      detectPassiveEvents.hasSupport = passive;
+    }
+  }
+};
+
+detectPassiveEvents.update();
+exports.default = detectPassiveEvents;
 
 /***/ }),
 
@@ -30559,6 +30626,334 @@ module.exports = ReactPropTypesSecret;
 
 /***/ }),
 
+/***/ "./node_modules/react-scroll-up-button/lib/react-scroll-up-button.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.VerticleButton = exports.CircleArrow = exports.TinyButton = undefined;
+
+var _extends2 = __webpack_require__("./node_modules/babel-runtime/helpers/extends.js");
+
+var _extends3 = _interopRequireDefault(_extends2);
+
+var _defineProperty2 = __webpack_require__("./node_modules/babel-runtime/helpers/defineProperty.js");
+
+var _defineProperty3 = _interopRequireDefault(_defineProperty2);
+
+var _assign = __webpack_require__("./node_modules/babel-runtime/core-js/object/assign.js");
+
+var _assign2 = _interopRequireDefault(_assign);
+
+var _getPrototypeOf = __webpack_require__("./node_modules/babel-runtime/core-js/object/get-prototype-of.js");
+
+var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+
+var _classCallCheck2 = __webpack_require__("./node_modules/babel-runtime/helpers/classCallCheck.js");
+
+var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+var _createClass2 = __webpack_require__("./node_modules/babel-runtime/helpers/createClass.js");
+
+var _createClass3 = _interopRequireDefault(_createClass2);
+
+var _possibleConstructorReturn2 = __webpack_require__("./node_modules/babel-runtime/helpers/possibleConstructorReturn.js");
+
+var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+
+var _inherits2 = __webpack_require__("./node_modules/babel-runtime/helpers/inherits.js");
+
+var _inherits3 = _interopRequireDefault(_inherits2);
+
+var _react = __webpack_require__("./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _tweenFunctions = __webpack_require__("./node_modules/tween-functions/index.js");
+
+var _tweenFunctions2 = _interopRequireDefault(_tweenFunctions);
+
+var _propTypes = __webpack_require__("./node_modules/prop-types/index.js");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _detectPassiveEvents = __webpack_require__("./node_modules/detect-passive-events/lib/index.js");
+
+var _detectPassiveEvents2 = _interopRequireDefault(_detectPassiveEvents);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ScrollUpButton = function (_React$Component) {
+  (0, _inherits3.default)(ScrollUpButton, _React$Component);
+
+  function ScrollUpButton(props) {
+    (0, _classCallCheck3.default)(this, ScrollUpButton);
+
+    var _this = (0, _possibleConstructorReturn3.default)(this, (ScrollUpButton.__proto__ || (0, _getPrototypeOf2.default)(ScrollUpButton)).call(this, props));
+
+    _this.state = { ToggleScrollUp: '' };
+    _this.Animation = { StartPosition: 0, CurrentAnimationTime: 0, StartTime: null, AnimationFrame: null };
+    _this.HandleScroll = _this.HandleScroll.bind(_this);
+    _this.StopScrollingFrame = _this.StopScrollingFrame.bind(_this);
+    _this.ScrollingFrame = _this.ScrollingFrame.bind(_this);
+    _this.HandleClick = _this.HandleClick.bind(_this);
+    return _this;
+  }
+
+  (0, _createClass3.default)(ScrollUpButton, [{
+    key: "HandleScroll",
+    value: function HandleScroll() {
+      //window.pageYOffset = current scroll position
+      //ShowAtPostion = position at which we want the button to show.
+      if (window.pageYOffset > this.props.ShowAtPostion) {
+        //styles.Toggled = the class name we want applied to transition the button in.
+        this.setState({ ToggleScrollUp: this.props.TransitionClassName });
+      } else {
+        //remove the class name
+        this.setState({ ToggleScrollUp: '' });
+      }
+    }
+  }, {
+    key: "HandleClick",
+    value: function HandleClick() {
+      this.StopScrollingFrame(); //Stoping all AnimationFrames
+      this.Animation.StartPosition = window.pageYOffset; //current scroll position
+      this.Animation.CurrentAnimationTime = 0;
+      this.Animation.StartTime = null;
+      //Start the scrolling animation.
+      this.Animation.AnimationFrame = window.requestAnimationFrame(this.ScrollingFrame);
+    }
+  }, {
+    key: "ScrollingFrame",
+    value: function ScrollingFrame() {
+      var timestamp = Math.floor(Date.now());
+      //If StartTime has not been assigned a value, assign it the start timestamp.
+      if (!this.Animation.StartTime) {
+        this.Animation.StartTime = timestamp;
+      }
+
+      //set CurrentAnimationTime every iteration of ScrollingFrame()
+      this.Animation.CurrentAnimationTime = timestamp - this.Animation.StartTime;
+      //if we hit the StopPosition, StopScrollingFrame()
+      if (window.pageYOffset <= this.props.StopPosition) {
+        this.StopScrollingFrame();
+      } else {
+        //Otherwise continue ScrollingFrame to the StopPosition.
+        //Does not support horizontal ScrollingFrame.
+        //Let TweenFunctions handle the math to give us a new position based on AnimationDuration and EasingType type
+        var YPos = _tweenFunctions2.default[this.props.EasingType](this.Animation.CurrentAnimationTime, this.Animation.StartPosition, this.props.StopPosition, this.props.AnimationDuration);
+        window.scrollTo(0, YPos);
+        //Request another frame to be painted
+        this.Animation.AnimationFrame = window.requestAnimationFrame(this.ScrollingFrame);
+      }
+    }
+  }, {
+    key: "StopScrollingFrame",
+    value: function StopScrollingFrame() {
+      //Stop the Animation Frames.
+      window.cancelAnimationFrame(this.Animation.AnimationFrame);
+    }
+  }, {
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      this.HandleScroll(); // run HandleScroll() at mount incase we are already scrolled down
+      window.addEventListener('scroll', this.HandleScroll);
+      window.addEventListener("wheel", this.StopScrollingFrame, _detectPassiveEvents2.default.hasSupport ? { passive: true } : false); //Stop animation if user mouse wheels during animation.
+      window.addEventListener("touchstart", this.StopScrollingFrame, _detectPassiveEvents2.default.hasSupport ? { passive: true } : false); //Stop animation if user touches the screen during animation.
+    }
+  }, {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      //Remove all events, since component is no longer mounted.
+      window.removeEventListener('scroll', this.HandleScroll);
+      window.removeEventListener("wheel", this.StopScrollingFrame, false);
+      window.removeEventListener("touchstart", this.StopScrollingFrame, false);
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      var styles = {
+        MainStyle: {
+          backgroundColor: 'rgba(50, 50, 50, 0.5)',
+          height: 50,
+          position: 'fixed',
+          bottom: 20,
+          width: 50,
+          WebkitTransition: 'all 0.5s ease-in-out',
+          transition: 'all 0.5s ease-in-out',
+          transitionProperty: 'opacity, right',
+          cursor: 'pointer',
+          opacity: 0,
+          right: -50,
+          zIndex: 1000
+        },
+        SvgStyle: {
+          display: 'inline-block',
+          width: '100%',
+          height: '100%',
+          strokeWidth: 0,
+          stroke: 'white',
+          fill: 'white',
+          paddingLeft: 9
+        },
+        ToggledStyle: {
+          opacity: 1,
+          right: 20
+        }
+      };
+      if (this.props.children) {
+        var childrenWithProps = _react2.default.Children.map(this.props.children, function (child) {
+          return _react2.default.cloneElement(child, {
+            className: _this2.className
+          });
+        });
+        return _react2.default.createElement(
+          "aside",
+          { style: (0, _assign2.default)({}, this.props.style, this.state.ToggleScrollUp && this.props.ToggledStyle), className: this.props.ContainerClassName + " " + this.state.ToggleScrollUp, onClick: this.HandleClick },
+          childrenWithProps
+        );
+      } else {
+        return _react2.default.createElement(
+          "aside",
+          { className: this.props.ContainerClassName + " " + this.state.ToggleScrollUp, style: (0, _assign2.default)({}, styles.MainStyle, this.props.style, this.state.ToggleScrollUp && styles.ToggledStyle, this.state.ToggleScrollUp && this.props.ToggledStyle), onClick: this.HandleClick },
+          _react2.default.createElement(
+            "svg",
+            { viewBox: "0 0 32 32", version: "1.1", xmlns: "http://www.w3.org/2000/svg", x: "0", y: "0", xmlSpace: "preserve", style: styles.SvgStyle },
+            _react2.default.createElement("path", { d: "M19.196 23.429q0 0.232-0.179 0.411l-0.893 0.893q-0.179 0.179-0.411 0.179t-0.411-0.179l-7.018-7.018-7.018 7.018q-0.179 0.179-0.411 0.179t-0.411-0.179l-0.893-0.893q-0.179-0.179-0.179-0.411t0.179-0.411l8.321-8.321q0.179-0.179 0.411-0.179t0.411 0.179l8.321 8.321q0.179 0.179 0.179 0.411zM19.196 16.571q0 0.232-0.179 0.411l-0.893 0.893q-0.179 0.179-0.411 0.179t-0.411-0.179l-7.018-7.018-7.018 7.018q-0.179 0.179-0.411 0.179t-0.411-0.179l-0.893-0.893q-0.179-0.179-0.179-0.411t0.179-0.411l8.321-8.321q0.179-0.179 0.411-0.179t0.411 0.179l8.321 8.321q0.179 0.179 0.179 0.411z" })
+          )
+        );
+      }
+    }
+  }]);
+  return ScrollUpButton;
+}(_react2.default.Component);
+
+exports.default = ScrollUpButton;
+var TinyButton = exports.TinyButton = function TinyButton(props) {
+  var styles = {
+    MainStyle: (0, _defineProperty3.default)({
+      backgroundColor: 'rgb(87, 86, 86)',
+      height: 30,
+      position: 'fixed',
+      bottom: 70,
+      width: 30,
+      WebkitTransition: 'all 0.5s ease-in-out',
+      transition: 'all 0.5s ease-in-out',
+      transitionProperty: 'opacity, right',
+      cursor: 'pointer',
+      opacity: 0,
+      right: -75,
+      zIndex: 1000,
+      fill: '#292929',
+      paddingBottom: 1,
+      paddingLeft: 1,
+      paddingRight: 1
+    }, "transition", 'fill 0.5s linear'),
+    ToggledStyle: {
+      opacity: 1,
+      right: 30
+    }
+  };
+  return _react2.default.createElement(
+    ScrollUpButton,
+    (0, _extends3.default)({}, props, { style: (0, _assign2.default)({}, styles.MainStyle, props.style), ToggledStyle: (0, _assign2.default)({}, styles.ToggledStyle, props.ToggledStyle) }),
+    _react2.default.createElement(
+      "svg",
+      { viewBox: "0 0 28 28", version: "1.1", xmlns: "http://www.w3.org/2000/svg", x: "0", y: "0", xmlSpace: "preserve" },
+      _react2.default.createElement("path", { d: "M26.297 20.797l-2.594 2.578c-0.391 0.391-1.016 0.391-1.406 0l-8.297-8.297-8.297 8.297c-0.391 0.391-1.016 0.391-1.406 0l-2.594-2.578c-0.391-0.391-0.391-1.031 0-1.422l11.594-11.578c0.391-0.391 1.016-0.391 1.406 0l11.594 11.578c0.391 0.391 0.391 1.031 0 1.422z" })
+    )
+  );
+};
+
+var CircleArrow = exports.CircleArrow = function CircleArrow(props) {
+  var styles = {
+    MainStyle: {
+      backgroundColor: 'rgb(255, 255, 255)',
+      borderRadius: '50%',
+      border: '5px solid black',
+      height: 50,
+      position: 'fixed',
+      bottom: 20,
+      width: 50,
+      WebkitTransition: 'all 0.5s ease-in-out',
+      transition: 'all 0.5s ease-in-out',
+      transitionProperty: 'opacity, right',
+      cursor: 'pointer',
+      opacity: 0,
+      right: -75
+    },
+    ToggledStyle: {
+      opacity: 1,
+      right: 20
+    }
+  };
+  return _react2.default.createElement(
+    ScrollUpButton,
+    (0, _extends3.default)({}, props, { style: (0, _assign2.default)({}, styles.MainStyle, props.style), ToggledStyle: (0, _assign2.default)({}, styles.ToggledStyle, props.ToggledStyle) }),
+    _react2.default.createElement(
+      "svg",
+      { viewBox: "0 0 32 32" },
+      _react2.default.createElement("path", { className: "path1", d: "M27.414 12.586l-10-10c-0.781-0.781-2.047-0.781-2.828 0l-10 10c-0.781 0.781-0.781 2.047 0 2.828s2.047 0.781 2.828 0l6.586-6.586v19.172c0 1.105 0.895 2 2 2s2-0.895 2-2v-19.172l6.586 6.586c0.39 0.39 0.902 0.586 1.414 0.586s1.024-0.195 1.414-0.586c0.781-0.781 0.781-2.047 0-2.828z" })
+    )
+  );
+};
+
+var VerticleButton = exports.VerticleButton = function VerticleButton(props) {
+  var styles = {
+    MainStyle: {
+      backgroundColor: 'rgb(58, 56, 56)',
+      position: 'fixed',
+      bottom: 60,
+      padding: "5px 10px",
+      WebkitTransition: 'all 0.5s ease-in-out',
+      transition: 'all 0.5s ease-in-out',
+      transitionProperty: 'opacity, right',
+      cursor: 'pointer',
+      opacity: 0,
+      right: -75,
+      transform: "rotate(-90deg)"
+    },
+    ToggledStyle: {
+      opacity: 1,
+      right: 10
+    }
+  };
+  return _react2.default.createElement(
+    ScrollUpButton,
+    (0, _extends3.default)({}, props, { style: (0, _assign2.default)({}, styles.MainStyle, props.style), ToggledStyle: (0, _assign2.default)({}, styles.ToggledStyle, props.ToggledStyle) }),
+    _react2.default.createElement(
+      "span",
+      { style: { fontSize: 23, color: "white" } },
+      "UP \u2192"
+    )
+  );
+};
+
+ScrollUpButton.defaultProps = {
+  ContainerClassName: 'ScrollUpButton__Container',
+  StopPosition: 0,
+  ShowAtPostion: 150,
+  EasingType: 'easeOutCubic',
+  AnimationDuration: 500,
+  TransitionClassName: 'ScrollUpButton__Toggled',
+  style: {},
+  ToggledStyle: {}
+};
+ScrollUpButton.propTypes = {
+  StopPosition: _propTypes2.default.number,
+  ShowAtPostion: _propTypes2.default.number.isRequired, // show button under this position,
+  EasingType: _propTypes2.default.oneOf(['linear', 'easeInQuad', 'easeOutQuad', 'easeInOutQuad', 'easeInCubic', 'easeOutCubic', 'easeInOutCubic', 'easeInQuart', 'easeOutQuart', 'easeInOutQuart', 'easeInQuint', 'easeOutQuint', 'easeInOutQuint', 'easeInSine', 'easeOutSine', 'easeInOutSine', 'easeInExpo', 'easeOutExpo', 'easeInOutExpo', 'easeInCirc', 'easeOutCirc', 'easeInOutCirc', 'easeInElastic', 'easeOutElastic', 'easeInOutElastic', 'easeInBack', 'easeOutBack', 'easeInOutBack', 'easeInBounce', 'easeOutBounce', 'easeInOutBounce']),
+  AnimationDuration: _propTypes2.default.number // seconds
+};
+
+/***/ }),
+
 /***/ "./node_modules/react-share/es/EmailIcon.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -34510,6 +34905,263 @@ module.exports = function (css) {
 
 /***/ }),
 
+/***/ "./node_modules/tween-functions/index.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+// t: current time, b: beginning value, _c: final value, d: total duration
+var tweenFunctions = {
+  linear: function(t, b, _c, d) {
+    var c = _c - b;
+    return c * t / d + b;
+  },
+  easeInQuad: function(t, b, _c, d) {
+    var c = _c - b;
+    return c * (t /= d) * t + b;
+  },
+  easeOutQuad: function(t, b, _c, d) {
+    var c = _c - b;
+    return -c * (t /= d) * (t - 2) + b;
+  },
+  easeInOutQuad: function(t, b, _c, d) {
+    var c = _c - b;
+    if ((t /= d / 2) < 1) {
+      return c / 2 * t * t + b;
+    } else {
+      return -c / 2 * ((--t) * (t - 2) - 1) + b;
+    }
+  },
+  easeInCubic: function(t, b, _c, d) {
+    var c = _c - b;
+    return c * (t /= d) * t * t + b;
+  },
+  easeOutCubic: function(t, b, _c, d) {
+    var c = _c - b;
+    return c * ((t = t / d - 1) * t * t + 1) + b;
+  },
+  easeInOutCubic: function(t, b, _c, d) {
+    var c = _c - b;
+    if ((t /= d / 2) < 1) {
+      return c / 2 * t * t * t + b;
+    } else {
+      return c / 2 * ((t -= 2) * t * t + 2) + b;
+    }
+  },
+  easeInQuart: function(t, b, _c, d) {
+    var c = _c - b;
+    return c * (t /= d) * t * t * t + b;
+  },
+  easeOutQuart: function(t, b, _c, d) {
+    var c = _c - b;
+    return -c * ((t = t / d - 1) * t * t * t - 1) + b;
+  },
+  easeInOutQuart: function(t, b, _c, d) {
+    var c = _c - b;
+    if ((t /= d / 2) < 1) {
+      return c / 2 * t * t * t * t + b;
+    } else {
+      return -c / 2 * ((t -= 2) * t * t * t - 2) + b;
+    }
+  },
+  easeInQuint: function(t, b, _c, d) {
+    var c = _c - b;
+    return c * (t /= d) * t * t * t * t + b;
+  },
+  easeOutQuint: function(t, b, _c, d) {
+    var c = _c - b;
+    return c * ((t = t / d - 1) * t * t * t * t + 1) + b;
+  },
+  easeInOutQuint: function(t, b, _c, d) {
+    var c = _c - b;
+    if ((t /= d / 2) < 1) {
+      return c / 2 * t * t * t * t * t + b;
+    } else {
+      return c / 2 * ((t -= 2) * t * t * t * t + 2) + b;
+    }
+  },
+  easeInSine: function(t, b, _c, d) {
+    var c = _c - b;
+    return -c * Math.cos(t / d * (Math.PI / 2)) + c + b;
+  },
+  easeOutSine: function(t, b, _c, d) {
+    var c = _c - b;
+    return c * Math.sin(t / d * (Math.PI / 2)) + b;
+  },
+  easeInOutSine: function(t, b, _c, d) {
+    var c = _c - b;
+    return -c / 2 * (Math.cos(Math.PI * t / d) - 1) + b;
+  },
+  easeInExpo: function(t, b, _c, d) {
+    var c = _c - b;
+    return (t==0) ? b : c * Math.pow(2, 10 * (t/d - 1)) + b;
+  },
+  easeOutExpo: function(t, b, _c, d) {
+    var c = _c - b;
+    return (t==d) ? b+c : c * (-Math.pow(2, -10 * t/d) + 1) + b;
+  },
+  easeInOutExpo: function(t, b, _c, d) {
+    var c = _c - b;
+    if (t === 0) {
+      return b;
+    }
+    if (t === d) {
+      return b + c;
+    }
+    if ((t /= d / 2) < 1) {
+      return c / 2 * Math.pow(2, 10 * (t - 1)) + b;
+    } else {
+      return c / 2 * (-Math.pow(2, -10 * --t) + 2) + b;
+    }
+  },
+  easeInCirc: function(t, b, _c, d) {
+    var c = _c - b;
+    return -c * (Math.sqrt(1 - (t /= d) * t) - 1) + b;
+  },
+  easeOutCirc: function(t, b, _c, d) {
+    var c = _c - b;
+    return c * Math.sqrt(1 - (t = t / d - 1) * t) + b;
+  },
+  easeInOutCirc: function(t, b, _c, d) {
+    var c = _c - b;
+    if ((t /= d / 2) < 1) {
+      return -c / 2 * (Math.sqrt(1 - t * t) - 1) + b;
+    } else {
+      return c / 2 * (Math.sqrt(1 - (t -= 2) * t) + 1) + b;
+    }
+  },
+  easeInElastic: function(t, b, _c, d) {
+    var c = _c - b;
+    var a, p, s;
+    s = 1.70158;
+    p = 0;
+    a = c;
+    if (t === 0) {
+      return b;
+    } else if ((t /= d) === 1) {
+      return b + c;
+    }
+    if (!p) {
+      p = d * 0.3;
+    }
+    if (a < Math.abs(c)) {
+      a = c;
+      s = p / 4;
+    } else {
+      s = p / (2 * Math.PI) * Math.asin(c / a);
+    }
+    return -(a * Math.pow(2, 10 * (t -= 1)) * Math.sin((t * d - s) * (2 * Math.PI) / p)) + b;
+  },
+  easeOutElastic: function(t, b, _c, d) {
+    var c = _c - b;
+    var a, p, s;
+    s = 1.70158;
+    p = 0;
+    a = c;
+    if (t === 0) {
+      return b;
+    } else if ((t /= d) === 1) {
+      return b + c;
+    }
+    if (!p) {
+      p = d * 0.3;
+    }
+    if (a < Math.abs(c)) {
+      a = c;
+      s = p / 4;
+    } else {
+      s = p / (2 * Math.PI) * Math.asin(c / a);
+    }
+    return a * Math.pow(2, -10 * t) * Math.sin((t * d - s) * (2 * Math.PI) / p) + c + b;
+  },
+  easeInOutElastic: function(t, b, _c, d) {
+    var c = _c - b;
+    var a, p, s;
+    s = 1.70158;
+    p = 0;
+    a = c;
+    if (t === 0) {
+      return b;
+    } else if ((t /= d / 2) === 2) {
+      return b + c;
+    }
+    if (!p) {
+      p = d * (0.3 * 1.5);
+    }
+    if (a < Math.abs(c)) {
+      a = c;
+      s = p / 4;
+    } else {
+      s = p / (2 * Math.PI) * Math.asin(c / a);
+    }
+    if (t < 1) {
+      return -0.5 * (a * Math.pow(2, 10 * (t -= 1)) * Math.sin((t * d - s) * (2 * Math.PI) / p)) + b;
+    } else {
+      return a * Math.pow(2, -10 * (t -= 1)) * Math.sin((t * d - s) * (2 * Math.PI) / p) * 0.5 + c + b;
+    }
+  },
+  easeInBack: function(t, b, _c, d, s) {
+    var c = _c - b;
+    if (s === void 0) {
+      s = 1.70158;
+    }
+    return c * (t /= d) * t * ((s + 1) * t - s) + b;
+  },
+  easeOutBack: function(t, b, _c, d, s) {
+    var c = _c - b;
+    if (s === void 0) {
+      s = 1.70158;
+    }
+    return c * ((t = t / d - 1) * t * ((s + 1) * t + s) + 1) + b;
+  },
+  easeInOutBack: function(t, b, _c, d, s) {
+    var c = _c - b;
+    if (s === void 0) {
+      s = 1.70158;
+    }
+    if ((t /= d / 2) < 1) {
+      return c / 2 * (t * t * (((s *= 1.525) + 1) * t - s)) + b;
+    } else {
+      return c / 2 * ((t -= 2) * t * (((s *= 1.525) + 1) * t + s) + 2) + b;
+    }
+  },
+  easeInBounce: function(t, b, _c, d) {
+    var c = _c - b;
+    var v;
+    v = tweenFunctions.easeOutBounce(d - t, 0, c, d);
+    return c - v + b;
+  },
+  easeOutBounce: function(t, b, _c, d) {
+    var c = _c - b;
+    if ((t /= d) < 1 / 2.75) {
+      return c * (7.5625 * t * t) + b;
+    } else if (t < 2 / 2.75) {
+      return c * (7.5625 * (t -= 1.5 / 2.75) * t + 0.75) + b;
+    } else if (t < 2.5 / 2.75) {
+      return c * (7.5625 * (t -= 2.25 / 2.75) * t + 0.9375) + b;
+    } else {
+      return c * (7.5625 * (t -= 2.625 / 2.75) * t + 0.984375) + b;
+    }
+  },
+  easeInOutBounce: function(t, b, _c, d) {
+    var c = _c - b;
+    var v;
+    if (t < d / 2) {
+      v = tweenFunctions.easeInBounce(t * 2, 0, c, d);
+      return v * 0.5 + b;
+    } else {
+      v = tweenFunctions.easeOutBounce(t * 2 - d, 0, c, d);
+      return v * 0.5 + c * 0.5 + b;
+    }
+  }
+};
+
+module.exports = tweenFunctions;
+
+
+/***/ }),
+
 /***/ "./node_modules/util/node_modules/inherits/inherits_browser.js":
 /***/ (function(module, exports) {
 
@@ -35414,13 +36066,15 @@ if(true) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__("./node_modules/prop-types/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_router_dom__ = __webpack_require__("./node_modules/react-router-dom/es/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ui_HeadBlock__ = __webpack_require__("./src/components/ui/HeadBlock.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ui_Blog__ = __webpack_require__("./src/components/ui/Blog.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ui_FooterBlock__ = __webpack_require__("./src/components/ui/FooterBlock.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__assets_styles_style_scss__ = __webpack_require__("./src/assets/styles/style.scss");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__assets_styles_style_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__assets_styles_style_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__assets_styles_queries_scss__ = __webpack_require__("./src/assets/styles/queries.scss");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__assets_styles_queries_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__assets_styles_queries_scss__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_scroll_up_button__ = __webpack_require__("./node_modules/react-scroll-up-button/lib/react-scroll-up-button.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_scroll_up_button___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_scroll_up_button__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ui_HeadBlock__ = __webpack_require__("./src/components/ui/HeadBlock.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ui_Blog__ = __webpack_require__("./src/components/ui/Blog.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ui_FooterBlock__ = __webpack_require__("./src/components/ui/FooterBlock.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__assets_styles_style_scss__ = __webpack_require__("./src/assets/styles/style.scss");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__assets_styles_style_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__assets_styles_style_scss__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__assets_styles_queries_scss__ = __webpack_require__("./src/assets/styles/queries.scss");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__assets_styles_queries_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__assets_styles_queries_scss__);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -35428,6 +36082,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
 
 
 
@@ -35479,18 +36135,20 @@ var App = function (_Component) {
     }, {
         key: 'render',
         value: function render() {
+
             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'div',
                 { className: 'App' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__ui_HeadBlock__["a" /* default */], null),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__ui_HeadBlock__["a" /* default */], null),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     __WEBPACK_IMPORTED_MODULE_2_react_router_dom__["d" /* Switch */],
                     null,
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_router_dom__["c" /* Route */], { exact: true, path: '/', component: __WEBPACK_IMPORTED_MODULE_4__ui_Blog__["a" /* default */] }),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_router_dom__["c" /* Route */], { exact: true, path: '/:tag', component: __WEBPACK_IMPORTED_MODULE_4__ui_Blog__["a" /* default */] }),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_router_dom__["c" /* Route */], { exact: true, path: '/:tag/:id', component: __WEBPACK_IMPORTED_MODULE_4__ui_Blog__["a" /* default */] })
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_router_dom__["c" /* Route */], { exact: true, path: '/', component: __WEBPACK_IMPORTED_MODULE_5__ui_Blog__["a" /* default */] }),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_router_dom__["c" /* Route */], { exact: true, path: '/:tag', component: __WEBPACK_IMPORTED_MODULE_5__ui_Blog__["a" /* default */] }),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_router_dom__["c" /* Route */], { exact: true, path: '/:tag/:id', component: __WEBPACK_IMPORTED_MODULE_5__ui_Blog__["a" /* default */] })
                 ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__ui_FooterBlock__["a" /* default */], null)
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6__ui_FooterBlock__["a" /* default */], null),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(ScrollUp, null)
             );
         }
     }]);
@@ -35500,6 +36158,10 @@ var App = function (_Component) {
 
 /* harmony default export */ __webpack_exports__["a"] = (App);
 
+
+var ScrollUp = function ScrollUp() {
+    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_react_scroll_up_button___default.a, { style: { width: 40, height: 40, bottom: 50 } });
+};
 
 App.childContextTypes = {
     posts: __WEBPACK_IMPORTED_MODULE_1_prop_types__["PropTypes"].array,
@@ -35837,12 +36499,6 @@ var Articles = function (_Component) {
 
 
             openPost(changedId);
-        }, _this.tooltip = function (title) {
-            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'span',
-                { className: 'tooltip' },
-                title
-            );
         }, _temp), _possibleConstructorReturn(_this, _ret);
     }
 
@@ -35874,8 +36530,7 @@ var Articles = function (_Component) {
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'div',
                     { className: 'arrow-buttons', onClick: this.handleOpenPrev },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('ion-icon', { name: 'ios-arrow-back' }),
-                    this.tooltip('Листати назад')
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('ion-icon', { name: 'ios-arrow-back' })
                 ),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__ArticleContainer__["a" /* default */], {
                     post: activePost,
@@ -35887,8 +36542,7 @@ var Articles = function (_Component) {
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'div',
                     { className: 'arrow-buttons', onClick: this.handleOpenNext },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('ion-icon', { name: 'ios-arrow-forward' }),
-                    this.tooltip('Листати вперед')
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('ion-icon', { name: 'ios-arrow-forward' })
                 )
             );
         }
