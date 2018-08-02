@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { PropTypes } from 'prop-types'
 import { Route, Switch } from 'react-router-dom'
+import ScrollUpButton from 'react-scroll-up-button'
+
 import HeadBlock from './ui/HeadBlock'
 import Blog from './ui/Blog'
 import FooterBlock from './ui/FooterBlock'
@@ -37,6 +39,7 @@ export default class App extends Component {
     }
 
     render() {
+
         return(
             <div className="App">
                 <HeadBlock />
@@ -46,10 +49,13 @@ export default class App extends Component {
                     <Route exact path='/:tag/:id' component={Blog} /> 
                 </Switch>
                 <FooterBlock />
+                <ScrollUp />
             </div>    
         )
     }
 }
+
+const ScrollUp = () => <ScrollUpButton style={{ width: 40, height: 40, bottom: 50 }} />
 
 App.childContextTypes = {
     posts: PropTypes.array,
