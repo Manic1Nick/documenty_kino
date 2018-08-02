@@ -36,8 +36,6 @@ export default class Articles extends Component {
         openPost(changedId)
     }
 
-    tooltip = (title) => <span className='tooltip' >{title}</span>
-
     render() {
         const { posts, activePostIndex, shifted, openSideBar } = this.props,
             activePost = posts[activePostIndex]
@@ -50,7 +48,6 @@ export default class Articles extends Component {
             <div className={ classArticles }>
                 <div className='arrow-buttons' onClick={ this.handleOpenPrev }>
                     <ion-icon name="ios-arrow-back"></ion-icon>
-                    { this.tooltip('Листати назад') }
                 </div>
 
                 <ArticleContainer
@@ -63,7 +60,6 @@ export default class Articles extends Component {
                 
                 <div className='arrow-buttons' onClick={ this.handleOpenNext }>
                     <ion-icon name="ios-arrow-forward"></ion-icon>
-                    { this.tooltip('Листати вперед') }
                 </div>
             </div>
         )
