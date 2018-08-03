@@ -39,7 +39,7 @@ export default class ArticleContent extends Component {
                             <h3>{ title }</h3>
                         </div>
                         <div className='article-title-tag' onClick={ () => this.handleOpenSideBar() }>   
-                            <Link to={`/${tag}/${id}`}>
+                            <Link to={`/${tag}/${id}`} title='Сортувати за роздiлом'>
                                 <h4>:{ group }</h4>
                             </Link>
                         </div>
