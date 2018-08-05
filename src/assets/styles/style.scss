@@ -1,7 +1,5 @@
 @import "./animate.css";
 @import "./react-dd-menu.css";
-// @import url('https://fonts.googleapis.com/css?family=Arimo:400,400i,700,700i|Fira+Sans:300,400,700|Pacifico');
-// @import url('https://fonts.googleapis.com/css?family=Caveat:400,700&subset=cyrillic,latin-ext');
 
 @font-face {
     font-family: AkrobatExtraLight;
@@ -448,10 +446,11 @@ a:visited {
                 justify-content: space-between;
 
                 .quote-text {
-                    font-family: 'Gogol';
+                    font-family: $fontMenu;
                     font-size: 120%;
+                    font-weight: 100;
                     margin-bottom: 0.5em;
-                    word-break: break-all;
+                    //word-break: break-all;
                 }
                 .quote-link {
                     cursor: pointer;

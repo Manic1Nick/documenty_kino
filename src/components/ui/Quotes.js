@@ -36,11 +36,7 @@ export default class Quotes extends Component {
     }
 
     changeActivePostIndex = () => {
-        let lastIndex = this.state.activePostIndex,
-            activePostIndex
-
-        while (!activePostIndex || activePostIndex === lastIndex)
-            activePostIndex = Math.floor(Math.random() * this.state.postsWithQuotes.length)
+        let activePostIndex = this._getRandomIndex()
 
         this.setState({ activePostIndex })
         this.activeAnimate()
@@ -75,6 +71,17 @@ export default class Quotes extends Component {
                 </button>
             </div>
         )
+    }
+
+    _getRandomIndex = () => {
+        const { activePostIndex, postsWithQuotes } = this.state
+
+        let getRandom = () => Math.floor(Math.random() * postsWithQuotes.length),
+            newActivePostIndex = getRandom()
+        
+        while (activePostIndex === newActivePostIndex) newActivePostIndex = getRandom()
+
+        return newActivePostIndex
     }
 }
 
