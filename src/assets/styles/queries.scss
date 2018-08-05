@@ -6,6 +6,18 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
 /* Big tablets to 1200px (widths smaller than 1140px row) */
 @media only screen and (max-width: 1200px) {
 
+    .App {
+        .Blog {
+            .SideList {
+                .Quotes {    
+                    .quote-text {
+                        font-size: 100%;
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 /* Small tablets to big tablets from 768px to 1023px */
@@ -27,6 +39,15 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
 
         .Blog {
             width: 90%;
+
+            .SideList {
+                .Quotes {    
+                    .quote-text {
+                        font-size: 90%;
+                        line-height: 0.9;
+                    }
+                }
+            }
         }
     }
     
@@ -90,6 +111,12 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
         
             .SideList {
                 width: 20%;
+
+                .Quotes {
+                    .quote-link {
+                        font-size: 60%;
+                    }
+                }
     
                 .ListPosts {
                     .listItem {
@@ -122,9 +149,10 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
                 }
             }
         }
-        .Blog {            
-            .Articles {
+        .Blog {           
+            padding-top: 0;
 
+            .Articles {
                 .arrow-buttons {
                     width: 20px;
 
@@ -132,7 +160,7 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
                 }
     
                 .ArticleContainer { 
-                    padding: 0.5em;
+                    padding: 0.2em;
 
                     .Article {
                         .article-slide {
@@ -155,8 +183,20 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
                 }        
             }
 
-            .SideList {    
+            .SideList { 
+                padding-top: 0.2em;
                 margin-left: 0.5em;
+
+                .Quotes {
+                    .quote-text {
+                        font-size: 70%;
+                    }
+
+                    .quote-link {
+                        font-size: 50%;
+                        padding: 0 2px;
+                    }
+                }
 
                 .ListPosts {
                     .post-title {

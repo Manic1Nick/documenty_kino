@@ -434,18 +434,24 @@ a:visited {
             height: 80%;
             float: right;
             margin-top: 2em;
+            padding-top: 1em;
             margin: 0 0.5em;
 
             .Quotes {
-                margin-top: 1em;
                 margin-bottom: 2em;
                 padding: 10px;
                 background-color: $colorBackground;
+                min-height: 275px;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
 
                 .quote-text {
                     font-family: 'Gogol';
                     font-size: 120%;
                     margin-bottom: 0.5em;
+                    word-break: break-all;
                 }
                 .quote-link {
                     cursor: pointer;
