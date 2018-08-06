@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import classNames from 'classnames'
 
 import ArticleContainer from './ArticleContainer'
+import SocialShareButtons from './SocialShareButtons'
 
 export default class Articles extends Component {
 
@@ -46,8 +47,12 @@ export default class Articles extends Component {
 
         return(
             <div className={ classArticles }>
-                <div className='arrow-buttons' onClick={ this.handleOpenPrev }>
-                    <ion-icon name="ios-arrow-back"></ion-icon>
+                <div className='article-side'>
+                    <SocialShareButtons post={ activePost } />
+
+                    <div className='arrow-buttons'>
+                        <ion-icon name="ios-arrow-back" onClick={ this.handleOpenPrev }></ion-icon>
+                    </div>
                 </div>
 
                 <ArticleContainer
@@ -58,8 +63,10 @@ export default class Articles extends Component {
                     shifted={ shifted }
                 />
                 
-                <div className='arrow-buttons' onClick={ this.handleOpenNext }>
-                    <ion-icon name="ios-arrow-forward"></ion-icon>
+                <div className='article-side'>
+                    <div className='arrow-buttons'>
+                        <ion-icon name="ios-arrow-forward" onClick={ this.handleOpenNext }></ion-icon>
+                    </div>
                 </div>
             </div>
         )

@@ -48,17 +48,21 @@ export default class ArticleContent extends Component {
 
                 <div className='article-content'>
 
-                    <SocialShareButtons post={ post } />
-
-                    <div className='article-text'>
-                        { postText }
-                    </div>
-
-                    <div className='article-footer'>
+                    <div className='article-info'>
+                        <div className='article-count'>
+                            <ion-icon name="ios-eye"></ion-icon>
+                            <span>23</span>
+                        </div>
                         <div className='article-date'>
                             { date }    
-                        </div>           
-                    </div>            
+                        </div> 
+                    </div>
+
+                    <SocialShareButtons post={ post } />
+                    
+                    <div className='article-text'>
+                        { postText }
+                    </div>        
 
                 </div>
 

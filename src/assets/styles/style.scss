@@ -131,23 +131,6 @@ a:visited {
 }
 
 
-/* TOOLTIP
-==================================*/
-
-.tooltip {
-    visibility: hidden;
-    width: 140px;
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    font-size: 70%;
-    padding: 5px 0;
-    border-radius: 6px;
-    opacity: 0.7;
-    position: absolute;
-    z-index: 1;
-}
-
 /* APP 
 ==================================*/
 
@@ -267,16 +250,51 @@ a:visited {
             display: -ms-flexbox;
             display: flex;
 
-            .arrow-buttons {
+            .article-side {
                 position: relative;
                 width: 40px; 
-                height: auto;
+                //height: 40px;
 
-                ion-icon {
+                .article-social-shares {
+                    position: -webkit-sticky;
+                    position: sticky;
+                    top: 0;
+                    padding-left: 10px;
+                    padding-top: 20px;
+
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    flex-direction: column;
+
+                    .social-icon-common ion-icon,
+                    .social-icon {
+                        width: 30px;
+                        height: 30px;
+                        opacity: 0.5;
+                    }
+        
+                    .social-icon {
+                        transform: scale(1);
+                        cursor: pointer;
+                        margin-top: 5px; 
+                        outline: 0;
+                        opacity: 0.7;
+                        transition: opacity 0.4s, transform 0.4s;                        
+                    }
+                    
+                    .social-icon:hover {
+                        transform: scale(1.1);
+                        opacity: 1;
+                    }
+                }
+
+                .arrow-buttons ion-icon {
                     position: fixed;
                     //top: 50%;
                     width: 40px;
-                    height: 80%;
+                    height: 20%;
+                    top: 50%;
                     opacity: 0.3;
                     -webkit-transition: opacity 0.2s;
                     transition: opacity 0.2s;
@@ -291,7 +309,7 @@ a:visited {
                     }
                 } 
     
-                ion-icon:hover {
+                .arrow-buttons ion-icon:hover {
                     opacity: 1;
                     cursor: pointer;
                 }
@@ -302,12 +320,13 @@ a:visited {
                 padding: 1em;
                 width: 100%;  
                 
-                .Article {                    
+                .Article {       
+                    
+                    .article-social-shares { display: none; }
                     
                     .article-slide,
                     .article-text,
-                    .article-footer,
-                    .article-social-shares {
+                    .article-footer {
                         margin-bottom: 10px;
                     }    
             
@@ -359,45 +378,32 @@ a:visited {
                     .article-content {
                         max-width: 100%;
 
+                        .article-info {
+                            display: flex;
+                            justify-content: space-between;
+
+                            .article-count {
+                                display: flex;
+
+                                ion-icon {
+                                    width: 25px;
+                                    height: 25px;
+                                }
+                                span { 
+                                    font-size: 80%;
+                                    margin: 5px 0 0 5px;
+                                }
+                            }                                
+                        }
+
                         .article-text {
                             font-size: 80%;
+                            margin-top: 10px;
     
                             .text-paragraph { margin-bottom: 10px; }
     
                             p { text-align: left;  }
-                        }
-                
-                        .article-social-shares {
-                            display: -webkit-box;
-                            display: -ms-flexbox;
-                            display: flex;
-    
-                            ion-icon {
-                                width: 30px;
-                                height: 30px;
-                                margin-right: 15px;
-                                opacity: 0.5;
-                            }
-    
-                            .social-icon {
-                                transform: scale(1);
-                                cursor: pointer;
-                                margin-right: 10px; 
-                                outline: 0;
-                                opacity: 0.7;
-                                transition: opacity 0.4s, transform 0.4s;                        
-                            }
-                            
-                            .social-icon:hover {
-                                transform: scale(1.1);
-                                opacity: 1;
-    
-                                .tooltip {
-                                    visibility: visible;
-                                }
-                            }
-                        }
-                        
+                        }                        
     
                         .article-footer {
                             .article-date {
@@ -537,17 +543,6 @@ a:visited {
                     color: $colorTextSecond;
                     -webkit-transition: color 0.2s;
                     transition: color 0.2s;
-                }
-                
-                .tooltip {
-                    right: 40px;
-                    bottom: 40px;
-                }
-            }
-            
-            .social-icon:hover {
-                .tooltip { 
-                    visibility: visible;
                 }
             }
         }

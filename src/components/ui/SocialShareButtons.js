@@ -53,7 +53,9 @@ const SocialShareButtons = ({ post: { id, tag, title } }) => {
     return(
         <div className='article-social-shares'>
 
-            <ion-icon name="share"></ion-icon>
+            <div className='social-icon-common'>
+                <ion-icon name="share"></ion-icon>
+            </div>
 
             <FacebookShareButton className='social-icon' quote={ postTitle } url={ postLink }>
                 <a title='Поширити у Facebook'>
