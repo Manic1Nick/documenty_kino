@@ -113,6 +113,8 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
                 width: 20%;
 
                 .Quotes {
+                    min-height: 240px;
+
                     .quote-link {
                         font-size: 60%;
                     }
@@ -188,6 +190,8 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
                 margin-left: 0.5em;
 
                 .Quotes {
+                    min-height: 180px;
+
                     .quote-text {
                         font-size: 70%;
                     }

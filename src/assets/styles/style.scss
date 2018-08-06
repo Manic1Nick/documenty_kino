@@ -382,14 +382,14 @@ a:visited {
                             .social-icon {
                                 transform: scale(1);
                                 cursor: pointer;
-                                margin-right: 15px; 
+                                margin-right: 10px; 
                                 outline: 0;
                                 opacity: 0.7;
                                 transition: opacity 0.4s, transform 0.4s;                        
                             }
                             
                             .social-icon:hover {
-                                transform: scale(1.2);
+                                transform: scale(1.1);
                                 opacity: 1;
     
                                 .tooltip {
@@ -439,7 +439,7 @@ a:visited {
                 margin-bottom: 2em;
                 padding: 10px;
                 background-color: $colorBackground;
-                min-height: 275px;
+                min-height: 280px;
 
                 display: flex;
                 flex-direction: column;
@@ -450,6 +450,7 @@ a:visited {
                     font-size: 120%;
                     font-weight: 100;
                     margin-bottom: 0.5em;
+                    line-height: 1;
                     //word-break: break-all;
                 }
                 .quote-link {
