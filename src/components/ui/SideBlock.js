@@ -5,7 +5,7 @@ const SideBlock = (props) => {
 
     if (props.screenWidth > 480) 
         return <SideList { ...props } />
-    else 
+    else
         return <SideBar isOpen={ props.isSideBarOpening } { ...props } />
 }
 

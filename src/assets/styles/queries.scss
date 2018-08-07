@@ -130,8 +130,8 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
         }
 
         footer {
-            height: 30px;
-            font-size: 60%;
+            height: 40px;
+            // font-size: 60%;
         }
     }
 }
@@ -224,15 +224,6 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
                                         visibility: visible;
                                     }
                                 }
-                            }
-    
-                            .article-social-shares {  
-
-                                ion-icon,
-                                .social-icon {
-                                    width: 25px;
-                                    height: 25px;
-                                }              
                             }
                         }
                     }
@@ -349,31 +340,19 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
         }
 
         .Blog {
-            overflow-x: hidden;  
+            overflow-x: hidden;
             margin-top: 55px;
 
             .Articles {
                 width: 100%;
                 -webkit-transition: all 0.3s ease-out;
                 transition: all 0.3s ease-out;
-                margin-right: 15px;   
+
+                .article-side { display: none }
     
                 .ArticleContainer {
                     padding: 0.5em;    
                     min-height: 100vh;
-
-                    .Article {
-
-                        .article-content {
-                            .article-social-shares { 
-
-                                // .social-icon {
-                                //     width: 20px;
-                                //     height: 20px;
-                                // }  
-                            }
-                        }
-                    }
                 } 
             }
 
@@ -397,18 +376,22 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
             }
         }
 
-        footer {
-            
+        footer {           
+            flex-direction: column;
+            text-align: center;
+            height: 80px;
+            margin-bottom: 0;
 
-            .copyright-text { font-size: 70%; }
+            // .copyright-text { font-size: 70%; }
 
             .social-icons {
-                font-size: 100%;
+                // font-size: 100%;
+                margin: 10px;
 
                 .social-icon {
                     a {
-                        width: 20px;
-                        margin-right: 10px;
+                        // width: 20px;
+                        margin: 5px;
                     }
                 }
             }    

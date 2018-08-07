@@ -55,7 +55,7 @@ export default class App extends Component {
     }
 }
 
-const ScrollUp = () => <ScrollUpButton style={{ width: 40, height: 40, bottom: 50 }} />
+const ScrollUp = () => <ScrollUpButton style={{ width: 40, height: 40, bottom: 40 }} />
 
 App.childContextTypes = {
     posts: PropTypes.array,
