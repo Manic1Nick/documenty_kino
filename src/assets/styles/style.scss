@@ -361,6 +361,11 @@ a:visited {
                                 float: right;
                                 font-family: $fontMenu, arial;
                                 cursor: pointer;
+
+                                span { 
+                                    margin-right: 5px;
+                                    animation: blinker 1.5s linear infinite; 
+                                }                                
                                 
                                 h4 {
                                     color: $colorTextThird;
@@ -557,6 +562,12 @@ a:visited {
 
 // =====================
 // ANIMATIONS
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
 
 .fadeIn {
     -webkit-animation: fadeIn 1.5s;

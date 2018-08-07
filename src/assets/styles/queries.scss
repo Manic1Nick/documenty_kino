@@ -168,7 +168,8 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
 
                     .Article {
                         .article-slide {
-                            .article-title { font-size: 60%; }
+                            .article-title-name { font-size: 60%; }
+                            .article-title-tag { margin-top: -5px; }
                         }
                         .article-content {
                             .article-text { font-size: 70%; }
@@ -234,19 +235,7 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
                 padding-top: 0.2em;
                 margin-left: 0.5em;
 
-                .Quotes {
-                    display: none;
-                    // min-height: 180px;
-
-                    // .quote-text {
-                    //     font-size: 70%;
-                    // }
-
-                    // .quote-link {
-                    //     font-size: 50%;
-                    //     padding: 0 2px;
-                    // }
-                }
+                .Quotes { display: none; }
 
                 .ListPosts {
                     .post-title {
