@@ -1,17 +1,11 @@
 import React, { Component } from 'react'
 import classNames from 'classnames'
 
-import ArticleContainer from './ArticleContainer'
+import ArticleWrapper from './ArticleWrapper'
 import SocialShareButtons from './SocialShareButtons'
+import ArrowButton from './ArrowButton'
 
 export default class Articles extends Component {
-
-    // handleChangePage = (indexPost) => {
-    //     const { posts, match, openPost } = this.props
-
-    //     let post = posts[indexPost]
-    //     if (post) openPost(post.id, match.params.tag)
-    // }
 
     shouldComponentUpdate = (nextProps) => {
         return nextProps.posts !== this.props.posts
@@ -47,26 +41,21 @@ export default class Articles extends Component {
 
         return(
             <div className={ classArticles }>
-                <div className='article-side'>
+                <div className='blog-nav'>                
                     <SocialShareButtons post={ activePost } />
-
-                    <div className='arrow-buttons'>
-                        <ion-icon name="ios-arrow-back" onClick={ this.handleOpenPrev }></ion-icon>
-                    </div>
+                    <ArrowButton name='back' action={ this.handleOpenPrev } />
                 </div>
 
-                <ArticleContainer
+                <ArticleWrapper
                     post={ activePost } 
-                    onPrev={ this.handleOpenPrev } 
-                    onNext={ this.handleOpenNext } 
                     openSideBar={ openSideBar }
                     shifted={ shifted }
+                    onPrev={ this.handleOpenPrev } //for mobile scrolling
+                    onNext={ this.handleOpenNext } //for mobile scrolling
                 />
                 
-                <div className='article-side'>
-                    <div className='arrow-buttons'>
-                        <ion-icon name="ios-arrow-forward" onClick={ this.handleOpenNext }></ion-icon>
-                    </div>
+                <div className='blog-nav'>
+                    <ArrowButton name='forward' action={ this.handleOpenNext } />
                 </div>
             </div>
         )

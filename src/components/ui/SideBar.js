@@ -1,7 +1,7 @@
 import { Component } from 'react'
 import classNames from 'classnames'
 import onClickOutside from "react-onclickoutside"
-import ListPosts from './ListPosts'
+import ListTitles from './ListTitles'
 
 class SideBar extends Component {
 
@@ -25,7 +25,7 @@ class SideBar extends Component {
 
         return(
             <div className={ classSideBar }>
-                <ListPosts { ...this.props } />
+                <ListTitles { ...this.props } />
             </div>
         )
     }

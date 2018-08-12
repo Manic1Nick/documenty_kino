@@ -33,7 +33,7 @@ export default class ArticleContainer extends Component {
         const { animate } = this.state,
             { shifted } = this.props
         
-        let classArticle = classNames('ArticleContainer', { fadeIn: animate })
+        let classArticle = classNames('ArticleWrapper', { fadeIn: animate })
 
         return(
             <div className={ classArticle }>

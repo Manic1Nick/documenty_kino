@@ -1,7 +1,7 @@
 import { Component } from 'react'
 import classNames from 'classnames'
 
-export default class ListPostsItem extends Component {
+export default class ListTitlesItem extends Component {
 
     constructor() {
         super()
@@ -66,7 +66,7 @@ export default class ListPostsItem extends Component {
         let isActivePost = post.id === parseInt(match.params.id),
             styleItem = { 'display': hidden ? 'none' : 'block' },
             classListItem = classNames(
-                'listItem', 
+                'listTitlesItem', 
                 { active: isActivePost }, 
                 { fadeInLeft: animateIn },
                 { flipInX: animateSelect }

@@ -35,8 +35,9 @@ $colorTextMain: #555;
 $colorTextSecond: #888;
 $colorTextThird: rgb(181, 180, 180);
 $colorTextHover: #132366ce;
-$colorBackground: rgb(225, 225, 225);
-$colorBackgroundFooter: #333;
+$colorBackgroundLight: rgb(240, 240, 240);
+$colorBackgroundDark: rgb(225, 225, 225);
+$colorackgroundFooter: #333;
 
 /*---------------------------------------------------------*/
 /* BASIC SETUP */
@@ -142,14 +143,79 @@ a:visited {
     height: 0;
 }
 
-.ListPosts {
+.ListTitles {
     margin-bottom: 2em;
     font-family: $fontTextSecond, arial;
 }
 
+.blog-nav {
+    position: relative;
+    width: 40px; 
+    //height: 40px;
+
+    .article-social-shares {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        padding-left: 10px;
+        padding-top: 20px;
+
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: column;
+
+        .social-icon-common ion-icon,
+        .social-icon {
+            width: 30px;
+            height: 30px;
+            opacity: 0.5;
+        }
+
+        .social-icon {
+            transform: scale(1);
+            cursor: pointer;
+            margin-top: 5px; 
+            outline: 0;
+            opacity: 0.7;
+            transition: opacity 0.4s, transform 0.4s;                        
+        }
+        
+        .social-icon:hover {
+            transform: scale(1.1);
+            opacity: 1;
+        }
+    }
+
+    .arrow-buttons ion-icon {
+        position: fixed;
+        //top: 50%;
+        width: 40px;
+        height: 20%;
+        top: 50%;
+        opacity: 0.3;
+        -webkit-transition: opacity 0.2s;
+        transition: opacity 0.2s;
+
+        .icon-inner { 
+            display: -webkit-box; 
+            display: -ms-flexbox; 
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+        }
+    } 
+
+    .arrow-buttons ion-icon:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
+}
+
 .App {
     width: 100vw;
-    height: 100%;
+    height: 100vh;
 
     header {
         display: -webkit-box;
@@ -162,6 +228,7 @@ a:visited {
             -ms-flex-align: center;
                 align-items: center;
         width: 100%;
+        height: 110px;
         padding: 0.5% 2%;
 
         .site-title { 
@@ -234,88 +301,28 @@ a:visited {
     
     .Blog {
         width: 80%;
-        min-height: 80%;
+        min-height: 77vh; //todo ???
         margin: 0 auto;
         padding-top: 50px;
 
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        
-        .Articles {
+
+        .Articles,
+        .Previews {
             position: relative;            
             margin: 0 auto;
 
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
-
-            .article-side {
-                position: relative;
-                width: 40px; 
-                //height: 40px;
-
-                .article-social-shares {
-                    position: -webkit-sticky;
-                    position: sticky;
-                    top: 0;
-                    padding-left: 10px;
-                    padding-top: 20px;
-
-                    display: -webkit-box;
-                    display: -ms-flexbox;
-                    display: flex;
-                    flex-direction: column;
-
-                    .social-icon-common ion-icon,
-                    .social-icon {
-                        width: 30px;
-                        height: 30px;
-                        opacity: 0.5;
-                    }
+        }
         
-                    .social-icon {
-                        transform: scale(1);
-                        cursor: pointer;
-                        margin-top: 5px; 
-                        outline: 0;
-                        opacity: 0.7;
-                        transition: opacity 0.4s, transform 0.4s;                        
-                    }
-                    
-                    .social-icon:hover {
-                        transform: scale(1.1);
-                        opacity: 1;
-                    }
-                }
+        .Articles {
+            
 
-                .arrow-buttons ion-icon {
-                    position: fixed;
-                    //top: 50%;
-                    width: 40px;
-                    height: 20%;
-                    top: 50%;
-                    opacity: 0.3;
-                    -webkit-transition: opacity 0.2s;
-                    transition: opacity 0.2s;
-
-                    .icon-inner { 
-                        display: -webkit-box; 
-                        display: -ms-flexbox; 
-                        display: flex;
-                        -webkit-box-align: center;
-                            -ms-flex-align: center;
-                                align-items: center;
-                    }
-                } 
-    
-                .arrow-buttons ion-icon:hover {
-                    opacity: 1;
-                    cursor: pointer;
-                }
-            }
-
-            .ArticleContainer {
+            .ArticleWrapper {
                 position: relative;
                 padding: 1em;
                 width: 100%;  
@@ -341,7 +348,7 @@ a:visited {
 
                         .article-title {
                             background: rgba(0, 0, 0, 0.45);
-                            color: $colorBackground;
+                            color: $colorBackgroundDark;
                             width: 100%;
                             bottom: 0;
                             left: 0;
@@ -354,7 +361,7 @@ a:visited {
                                 font-weight: bold;
                                 font-family: $fontTextTitle, arial;
                                 font-weight: 700;
-                                color: $colorBackground;
+                                color: $colorBackgroundDark;
                             }
                             
                             .article-title-tag {
@@ -374,7 +381,7 @@ a:visited {
                                 }
     
                                 h4:hover {
-                                    color: $colorBackground;
+                                    color: $colorBackgroundDark;
                                 }
                             }
                         } 
@@ -423,6 +430,43 @@ a:visited {
             }    
         }
 
+        .Previews {
+
+            .ListPreviews {
+                display: flex;
+                flex-direction: column;
+    
+                .ListPreviewsItem {
+                    position: relative;
+                    margin: 0.5em;
+                    padding: 0.5em;
+                    width: 100%;
+                    cursor: pointer;
+    
+                    .article-preview-image {
+                        float: left;
+                        width: 30%;
+                        
+                        img { 
+                            width: 200px; 
+                            height: auto;
+                        }
+                    }
+    
+                    .article-preview-title {
+                        float: right;
+                        width: 60%;
+                    }
+    
+                }
+    
+                .ListPreviewsItem:hover {
+                    background: $colorBackgroundLight;
+                }
+            }
+        }
+
+
         .SideBar {
             display: none;
             z-index: 5;
@@ -449,7 +493,7 @@ a:visited {
             .Quotes {
                 margin-bottom: 2em;
                 padding: 10px;
-                background-color: $colorBackground;
+                background-color: $colorBackgroundDark;
                 min-height: 280px;
 
                 display: flex;
@@ -467,15 +511,16 @@ a:visited {
                 .quote-link {
                     cursor: pointer;
                     font-size: 70%;
-                    padding: 0 10px;
+
+                    a { display: block; }
                 }
             }
 
-            .ListPosts {
+            .ListTitles {
                 margin-bottom: 2em;
                 font-family: $fontTextSecond, arial;
 
-                .listItem {
+                .listTitlesItem {
                     font-weight: 300;
                     font-size: 70%;
                     padding: 4px 4px;
@@ -483,12 +528,12 @@ a:visited {
                     transition: background-color 0.2s;
                 }
 
-                .listItem:hover {
+                .listTitlesItem:hover {
                     cursor: pointer;
-                    background-color: $colorBackground;
+                    background-color: $colorBackgroundLight;
                 }
 
-                .listItem.active {
+                .listTitlesItem.active {
                     font-weight: bold;
 
                     ion-icon {
@@ -514,7 +559,7 @@ a:visited {
             -ms-flex-pack: justify;
                 justify-content: space-between;
 
-        background-color: $colorBackgroundFooter;
+        background-color: $colorackgroundFooter;
         padding: 5px;
         
         .copyright-text {

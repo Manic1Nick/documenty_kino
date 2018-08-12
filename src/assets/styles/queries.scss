@@ -56,10 +56,6 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
 /* Small phones to small tablets from 624px to 767px */
 @media only screen and (max-width: 767px) {
 
-    .tooltip {
-        display: none;
-    }
-
     h1 {
         font-size: 180%;
     }
@@ -88,14 +84,16 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
             width: 100%;
             padding-right: 1%;
 
-            .Articles {    
-                .article-side {
-                    width: 30px;
+            .blog-nav {
+                width: 30px;
 
-                    .arrow-buttons ion-icon { width: 30px; }
-                }
+                .arrow-buttons ion-icon { width: 30px; }
+            }
+
+            .Articles {    
+                
     
-                .ArticleContainer {
+                .ArticleWrapper {
                     padding: 1em;    
 
                     .Article {
@@ -121,8 +119,8 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
                     }
                 }
     
-                .ListPosts {
-                    .listItem {
+                .ListTitles {
+                    .listTitlesItem {
                         font-size: 70%;
                     }
                 }
@@ -155,15 +153,16 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
         .Blog {           
             padding-top: 0;
 
-            .Articles {
-                .article-side {
-                    width: 20px;
+            .blog-nav {
+                width: 20px;
 
-                    .arrow-buttons ion-icon { width: 20px; }
-                    .article-social-shares { display: none; }
-                }
+                .arrow-buttons ion-icon { width: 20px; }
+                .article-social-shares { display: none; }
+            }
+
+            .Articles {
     
-                .ArticleContainer { 
+                .ArticleWrapper { 
                     padding: 0.2em;
 
                     .Article {
@@ -237,7 +236,7 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
 
                 .Quotes { display: none; }
 
-                .ListPosts {
+                .ListTitles {
                     .post-title {
                         font-size: 60%;
                     }
@@ -250,11 +249,11 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
 /* Small phones from 0px to 480px */
 @media only screen and (max-width: 480px) {
 
-    .ListPosts {                
+    .ListTitles {                
         width: 200px;
         padding-left: 10px;
 
-        .listItem {
+        .listTitlesItem {
             font-weight: 300;
             font-size: 80%;
             padding: 4px 4px;
@@ -262,12 +261,12 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
             transition: background-color 0.2s;
         }
 
-        .listItem:hover {
+        .listTitlesItem:hover {
             cursor: pointer;
             background-color: $colorBackground;
         }
 
-        .listItem.active {
+        .listTitlesItem.active {
             font-weight: bold;
             font-style: italic;
 
@@ -332,15 +331,15 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
             overflow-x: hidden;
             margin-top: 55px;
 
+            .blog-nav { display: none }
+
             .Articles {
                 width: 100%;
                 margin-right: 0;
                 -webkit-transition: all 0.3s ease-out;
                 transition: all 0.3s ease-out;
-
-                .article-side { display: none }
     
-                .ArticleContainer {
+                .ArticleWrapper {
                     padding: 0.5em;    
                     min-height: 100vh;
                 } 

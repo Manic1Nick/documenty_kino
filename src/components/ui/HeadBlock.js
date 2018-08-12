@@ -50,7 +50,8 @@ export default class HeadBlock extends Component {
             {
                 LINKS.map((tag, i) => 
                     <li key={i}>
-                        <Link to={ this._getLinkByTag(tag) }>
+                        {/* <Link to={ this._getLinkByTag(tag) }> */}
+                        <Link to={ `/${tag}` }>
                             {LINKS_UKR[i]}
                         </Link>
                     </li>
@@ -66,7 +67,8 @@ export default class HeadBlock extends Component {
         return(
             <header>
                 <div className='site-title'>
-                    <Link to={ this._getLinkByTag('all') }>
+                    {/* <Link to={ this._getLinkByTag('all') }> */}
+                    <Link to={ `/all` }>
                         {
                             screenWidth > 624
                         ?
@@ -90,15 +92,15 @@ export default class HeadBlock extends Component {
         )
     }
 
-    _getLinkByTag = (tag) => {
-        const { posts } = this.context
+    // _getLinkByTag = (tag) => {
+    //     const { posts } = this.context
 
-        let post = tag === 'all'
-            ? posts[0]
-            : posts.find(post => post.tag === tag)
+    //     let post = tag === 'all'
+    //         ? posts[0]
+    //         : posts.find(post => post.tag === tag)
 
-        return `/${tag}/${post ? post.id : 0}`
-    }
+    //     return `/${tag}/${post ? post.id : 0}`
+    // }
 }
 
 HeadBlock.contextTypes = {

@@ -66,7 +66,7 @@ export default class Quotes extends Component {
 
                 <button className='quote-link'>
                     <Link to={`/${post.tag}/${post.id}`} title={ post.title }>
-                        Читати статтю
+                        Читати статтю                   
                     </Link>
                 </button>
             </div>

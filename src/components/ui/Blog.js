@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { PropTypes } from 'prop-types'
-import SideBlock from './SideBlock'
-import SideBar from './SideBar'
 import Articles from './Articles'
+import SideBlock from './SideBlock'
+import Previews from './Previews'
 
 export default class Blog extends Component {
 
@@ -50,26 +50,37 @@ export default class Blog extends Component {
 
     render() {
         const { listPosts, openSideBar } = this.state,
-            { id } = this.props.match.params,
-            activePostIndex = listPosts.findIndex(post => post.id === parseInt(id))
+            { match } = this.props,
+            activePostIndex = listPosts.findIndex(post => post.id === parseInt(match.params.id))
 
         return(
             <div className='Blog'>
-                <Articles
-                    shifted={ openSideBar }
-                    posts={ listPosts }
-                    activePostIndex={ activePostIndex }
-                    openPost={ this.handleOpenPost } 
-                    openSideBar={ this.handleOpenSideBar }
-                />
-                <SideBlock 
+                {
+                    match.params.id
+                ?
+                    <Articles
+                        posts={ listPosts }
+                        shifted={ openSideBar }
+                        activePostIndex={ activePostIndex }
+                        openPost={ this.handleOpenPost } 
+                        openSideBar={ this.handleOpenSideBar }
+                    />
+                :
+                    <Previews
+                        posts={ listPosts }
+                        match={ match } 
+                        openPost={ this.handleOpenPost }
+                    />
+                }
+                <SideBlock
                     screenWidth={ this.context.screenWidth }
                     isSideBarOpening={ openSideBar }
+                    isPreviewsOpen={ !match.params.id }
                     posts={ listPosts } 
-                    match={ this.props.match } 
+                    match={ match } 
                     openPost={ this.handleOpenPost }
                     hideSideBar={ this.handleHideSideBar }
-                />
+                />      
             </div>
         )
     }
