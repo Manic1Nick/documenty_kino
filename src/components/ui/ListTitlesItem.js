@@ -66,7 +66,7 @@ export default class ListTitlesItem extends Component {
         let isActivePost = post.id === parseInt(match.params.id),
             styleItem = { 'display': hidden ? 'none' : 'block' },
             classListItem = classNames(
-                'listTitlesItem', 
+                'ListTitlesItem', 
                 { active: isActivePost }, 
                 { fadeInLeft: animateIn },
                 { flipInX: animateSelect }

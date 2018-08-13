@@ -40,6 +40,10 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
         .Blog {
             width: 90%;
 
+            .Previews {
+                font-size: 90%;
+            }
+
             .SideList {
                 .Quotes {    
                     .quote-text {
@@ -90,6 +94,10 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
                 .arrow-buttons ion-icon { width: 30px; }
             }
 
+            .Previews {
+                font-size: 80%;
+            }
+
             .Articles {    
                 
     
@@ -120,7 +128,7 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
                 }
     
                 .ListTitles {
-                    .listTitlesItem {
+                    .ListTitlesItem {
                         font-size: 70%;
                     }
                 }
@@ -253,7 +261,7 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
         width: 200px;
         padding-left: 10px;
 
-        .listTitlesItem {
+        .ListTitlesItem {
             font-weight: 300;
             font-size: 80%;
             padding: 4px 4px;
@@ -261,12 +269,12 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
             transition: background-color 0.2s;
         }
 
-        .listTitlesItem:hover {
+        .ListTitlesItem:hover {
             cursor: pointer;
             background-color: $colorBackground;
         }
 
-        .listTitlesItem.active {
+        .ListTitlesItem.active {
             font-weight: bold;
             font-style: italic;
 

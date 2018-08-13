@@ -5,9 +5,9 @@ import Quotes from './Quotes'
 export default class SideList extends Component {
 
     renderListTitles = () => {
-        return (this.props.isPreviewsOpen) 
-            ? null 
-            : <ListTitles { ...this.props } />
+        if (this.props.isPreviewsOpen) return null
+
+        return <ListTitles { ...this.props } />
     }
 
     render() {

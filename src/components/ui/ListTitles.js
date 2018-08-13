@@ -16,7 +16,11 @@ export default class ListTitles extends Component {
             {
                 posts.map((post, i) =>
                     <li key={i}>
-                        <ListTitlesItem post={ post } { ...this.props } timeoutMs={ 50*i } />
+                        <ListTitlesItem 
+                            post={ post } 
+                            timeoutMs={ 50*i } 
+                            { ...this.props } 
+                        />
                     </li>
                 )
             }

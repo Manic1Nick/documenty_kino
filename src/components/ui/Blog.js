@@ -11,7 +11,7 @@ export default class Blog extends Component {
         this.state = { 
             listPosts: [],
             openSideBar: false
-         }
+        }
     }
 
     componentWillMount = () => {

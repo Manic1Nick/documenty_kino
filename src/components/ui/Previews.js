@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { PropTypes } from 'prop-types'
 
 import ListPreviews from './ListPreviews'
 import ArrowButton from './ArrowButton'
@@ -10,43 +11,49 @@ export default class Previews extends Component {
     constructor() {
         super()
         this.state = {
-            indexBegin: 0,
-            indexEnd: SIZE
+            pages: [],
+            activePageIndex: 0
         }
     }
 
-    // componentDidMount = () => {
-    //     this.setState({
-    //         postsOnScreen: this.props.posts.slice(0, LIST_PREVIEWS_SIZE)
-    //     })
-    // }
+    componentWillMount = () => {
+        this.updatePages(this.props.posts)
+    }
 
-    // shouldComponentUpdate = (nextProps) => {
-    //     return nextProps.posts !== this.props.posts
-    // }
+    shouldComponentUpdate = (nextProps, nextState) => {
+        return nextProps.posts && nextProps.posts !== this.props.posts
+            || nextState.activePageIndex !== this.state.activePageIndex
+    }
+
+    componentWillReceiveProps = (nextProps) => {
+        if (nextProps.posts !== this.props.posts) {
+            this.updatePages(nextProps.posts)
+        }
+    }
+
+    updatePages = (posts) => {
+        let size = this.context.screenWidth > 480 ? SIZE : posts.length,
+            pages = this._splitPosts(posts, size)
+
+        this.setState({ pages, activePageIndex: 0 })
+    }
 
     handleOpenPrev = () => {
-        let { indexBegin, indexEnd } = this.state
+        let { activePageIndex } = this.state
 
-        indexBegin = (indexBegin - SIZE > 0) ? indexBegin - SIZE : 0
-        if (indexEnd - SIZE > 0) indexEnd - SIZE
-
-        this.setState({ indexBegin, indexEnd })
+        if (activePageIndex > 0) activePageIndex--
+        this.setState({ activePageIndex })
     }
 
     handleOpenNext = () => {
-        let { indexBegin, indexEnd } = this.state,
-            lastIndex = this.props.posts.length - 1
+        let { pages, activePageIndex } = this.state
 
-        if (indexBegin + SIZE < lastIndex) indexBegin += SIZE
-        indexEnd = (indexEnd + SIZE > lastIndex) ? lastIndex : indexEnd + SIZE
-
-        this.setState({ indexBegin, indexEnd })
+        if (activePageIndex < pages.length - 1) activePageIndex++
+        this.setState({ activePageIndex })
     }
 
     render() {
-        const { indexBegin, indexEnd } = this.state,
-            postsOnScreen = this.props.posts.slice(indexBegin, indexEnd)
+        const { pages, activePageIndex } = this.state
 
         return(
             <div className='Previews'>
@@ -56,7 +63,7 @@ export default class Previews extends Component {
 
                 <ListPreviews
                     { ...this.props }
-                    postsOnScreen={ postsOnScreen }
+                    postsOnScreen={ pages[activePageIndex] }
                     onPrev={ this.handleOpenPrev } //for mobile scrolling
                     onNext={ this.handleOpenNext } //for mobile scrolling
                 />
@@ -67,4 +74,17 @@ export default class Previews extends Component {
             </div>
         )
     }
+
+    _splitPosts = (posts, postsOnPage) => {
+        let pages = [], postsCopy = [].concat(posts)
+
+        while (postsCopy.length > 0) 
+            pages.push(postsCopy.splice(0, postsOnPage))
+
+        return pages
+    }
+}
+
+Previews.contextTypes = {
+    screenWidth: PropTypes.number
 }
