@@ -323,7 +323,7 @@ a:visited {
             display: flex;
         }
         
-        .Articles {            
+        .Articles {         
 
             .ArticleWrapper {
                 position: relative;
@@ -434,10 +434,12 @@ a:visited {
         }
 
         .Previews {
+            width: 100%;
 
             .ListPreviews {
                 display: flex;
                 flex-direction: column;
+                flex: 1;
     
                 .ListPreviewsItem {
                     position: relative;
