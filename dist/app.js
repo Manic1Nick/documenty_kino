@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "9e637c22e33fe78d4c02"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "69e0104c0c99b404dd5e"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -3194,7 +3194,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "/* Big tablets to 1200px (widths smaller than 1140px row) */\n@media only screen and (max-width: 1200px) {\n  .App .Blog .SideList .Quotes .quote-text {\n    font-size: 100%; } }\n\n/* Small tablets to big tablets from 768px to 1023px */\n@media only screen and (max-width: 1023px) {\n  .App header .main-nav ul li {\n    margin-left: 20px;\n    font-size: 80%; }\n    .App header .main-nav ul li a:after {\n      margin-top: -20px; }\n  .App .Blog {\n    width: 90%; }\n    .App .Blog .SideList .Quotes .quote-text {\n      font-size: 90%;\n      line-height: 0.9; } }\n\n/* Small phones to small tablets from 624px to 767px */\n@media only screen and (max-width: 767px) {\n  .tooltip {\n    display: none; }\n  h1 {\n    font-size: 180%; }\n  .App header .site-title {\n    -webkit-box-flex: 1;\n    -ms-flex: 1;\n    flex: 1;\n    font-size: 80%; }\n  .App header .main-nav {\n    -webkit-box-flex: 2;\n    -ms-flex: 2;\n    flex: 2; }\n    .App header .main-nav ul li {\n      font-size: 70%; }\n  .App .Blog {\n    width: 100%;\n    padding-right: 1%; }\n    .App .Blog .Articles .article-side {\n      width: 30px; }\n      .App .Blog .Articles .article-side .arrow-buttons ion-icon {\n        width: 30px; }\n    .App .Blog .Articles .ArticleContainer {\n      padding: 1em; }\n      .App .Blog .Articles .ArticleContainer .Article .article-slide .article-title {\n        font-size: 80%; }\n      .App .Blog .Articles .ArticleContainer .Article .article-content .article-text {\n        font-size: 80%; }\n      .App .Blog .Articles .ArticleContainer .Article .article-content .article-date {\n        font-size: 80%; }\n    .App .Blog .SideList {\n      width: 20%; }\n      .App .Blog .SideList .Quotes {\n        min-height: 240px; }\n        .App .Blog .SideList .Quotes .quote-link {\n          font-size: 60%; }\n      .App .Blog .SideList .ListPosts .listItem {\n        font-size: 70%; }\n  .App footer {\n    height: 40px; } }\n\n/* Small phones to small tablets from 481px to 623px */\n@media only screen and (max-width: 623px) {\n  .App header .main-nav ul li {\n    margin-left: 10px;\n    font-size: 60%; }\n    .App header .main-nav ul li a:link {\n      padding-bottom: 20px; }\n    .App header .main-nav ul li a:after {\n      margin-top: -30px; }\n  .App .Blog {\n    padding-top: 0; }\n    .App .Blog .Articles .article-side {\n      width: 20px; }\n      .App .Blog .Articles .article-side .arrow-buttons ion-icon {\n        width: 20px; }\n      .App .Blog .Articles .article-side .article-social-shares {\n        display: none; }\n    .App .Blog .Articles .ArticleContainer {\n      padding: 0.2em; }\n      .App .Blog .Articles .ArticleContainer .Article .article-slide .article-title-name {\n        font-size: 60%; }\n      .App .Blog .Articles .ArticleContainer .Article .article-slide .article-title-tag {\n        margin-top: -5px; }\n      .App .Blog .Articles .ArticleContainer .Article .article-content .article-text {\n        font-size: 70%; }\n      .App .Blog .Articles .ArticleContainer .Article .article-content .article-info,\n      .App .Blog .Articles .ArticleContainer .Article .article-content .article-social-shares,\n      .App .Blog .Articles .ArticleContainer .Article .article-content .article-text {\n        margin-top: 5px; }\n      .App .Blog .Articles .ArticleContainer .Article .article-content .article-info {\n        font-size: 80%; }\n        .App .Blog .Articles .ArticleContainer .Article .article-content .article-info .article-count {\n          display: flex; }\n          .App .Blog .Articles .ArticleContainer .Article .article-content .article-info .article-count ion-icon {\n            width: 20px;\n            height: 20px; }\n          .App .Blog .Articles .ArticleContainer .Article .article-content .article-info .article-count span {\n            margin: 3px 0 0 3px; }\n      .App .Blog .Articles .ArticleContainer .Article .article-content .article-social-shares {\n        display: -webkit-box;\n        display: -ms-flexbox;\n        display: flex; }\n        .App .Blog .Articles .ArticleContainer .Article .article-content .article-social-shares .social-icon-common ion-icon,\n        .App .Blog .Articles .ArticleContainer .Article .article-content .article-social-shares .social-icon {\n          width: 25px;\n          height: 25px;\n          opacity: 0.5; }\n        .App .Blog .Articles .ArticleContainer .Article .article-content .article-social-shares .social-icon {\n          transform: scale(1);\n          cursor: pointer;\n          margin-left: 5px;\n          outline: 0;\n          opacity: 0.7;\n          transition: opacity 0.4s, transform 0.4s; }\n        .App .Blog .Articles .ArticleContainer .Article .article-content .article-social-shares .social-icon:hover {\n          transform: scale(1.1);\n          opacity: 1; }\n          .App .Blog .Articles .ArticleContainer .Article .article-content .article-social-shares .social-icon:hover .tooltip {\n            visibility: visible; }\n    .App .Blog .SideList {\n      padding-top: 0.2em;\n      margin-left: 0.5em; }\n      .App .Blog .SideList .Quotes {\n        display: none; }\n      .App .Blog .SideList .ListPosts .post-title {\n        font-size: 60%; } }\n\n/* Small phones from 0px to 480px */\n@media only screen and (max-width: 480px) {\n  .ListPosts {\n    width: 200px;\n    padding-left: 10px; }\n    .ListPosts .listItem {\n      font-weight: 300;\n      font-size: 80%;\n      padding: 4px 4px;\n      -webkit-transition: background-color 0.2s;\n      transition: background-color 0.2s; }\n    .ListPosts .listItem:hover {\n      cursor: pointer;\n      background-color: #e1e1e1; }\n    .ListPosts .listItem.active {\n      font-weight: bold;\n      font-style: italic; }\n      .ListPosts .listItem.active ion-icon {\n        color: #132366ce;\n        margin-right: 5px; }\n  .App header {\n    height: 60px;\n    position: fixed;\n    top: 0;\n    z-index: 10;\n    background-color: #f6f8ff; }\n    .App header .site-title {\n      -webkit-box-flex: 2;\n      -ms-flex: 2;\n      flex: 2; }\n    .App header .main-nav {\n      -webkit-box-flex: 1;\n      -ms-flex: 1;\n      flex: 1;\n      margin-right: 10px; }\n      .App header .main-nav .dd-menu {\n        float: right;\n        cursor: pointer; }\n        .App header .main-nav .dd-menu ion-icon {\n          width: 30px;\n          height: 30px; }\n        .App header .main-nav .dd-menu ul {\n          width: 130%;\n          height: 100%; }\n          .App header .main-nav .dd-menu ul li {\n            width: 100%;\n            margin: 0 auto; }\n            .App header .main-nav .dd-menu ul li a {\n              font-size: 120%;\n              text-align: center; }\n            .App header .main-nav .dd-menu ul li a:link {\n              padding-bottom: 10px; }\n            .App header .main-nav .dd-menu ul li a:hover {\n              background-color: #e1e1e1; }\n            .App header .main-nav .dd-menu ul li a:after {\n              content: ''; }\n  .App .Blog {\n    overflow-x: hidden;\n    margin-top: 55px; }\n    .App .Blog .Articles {\n      width: 100%;\n      margin-right: 0;\n      -webkit-transition: all 0.3s ease-out;\n      transition: all 0.3s ease-out; }\n      .App .Blog .Articles .article-side {\n        display: none; }\n      .App .Blog .Articles .ArticleContainer {\n        padding: 0.5em;\n        min-height: 100vh; }\n    .App .Blog .Articles.shifted {\n      margin-right: -200px;\n      background: rgba(0, 0, 0, 0.3);\n      -webkit-filter: brightness(50%);\n      filter: brightness(50%); }\n    .App .Blog .SideList {\n      display: none; }\n    .App .Blog .SideBar {\n      display: block;\n      width: 0;\n      padding-bottom: 40px; }\n    .App .Blog .SideBar.open {\n      width: 200px;\n      overflow-y: auto; }\n  .App footer {\n    flex-direction: column;\n    text-align: center;\n    height: 80px;\n    margin-bottom: 0; }\n    .App footer .social-icons {\n      margin: 10px; }\n      .App footer .social-icons .social-icon a {\n        margin: 5px; } }\n", ""]);
+exports.push([module.i, "/* Big tablets to 1200px (widths smaller than 1140px row) */\n@media only screen and (max-width: 1200px) {\n  .App .Blog .SideList .Quotes .quote-text {\n    font-size: 100%; } }\n\n/* Small tablets to big tablets from 768px to 1023px */\n@media only screen and (max-width: 1023px) {\n  .App header .main-nav ul li {\n    margin-left: 20px;\n    font-size: 80%; }\n    .App header .main-nav ul li a:after {\n      margin-top: -20px; }\n  .App .Blog {\n    width: 90%; }\n    .App .Blog .Previews {\n      font-size: 90%; }\n    .App .Blog .SideList .Quotes .quote-text {\n      font-size: 90%;\n      line-height: 0.9; } }\n\n/* Small phones to small tablets from 624px to 767px */\n@media only screen and (max-width: 767px) {\n  h1 {\n    font-size: 180%; }\n  .App header .site-title {\n    -webkit-box-flex: 1;\n    -ms-flex: 1;\n    flex: 1;\n    font-size: 80%; }\n  .App header .main-nav {\n    -webkit-box-flex: 2;\n    -ms-flex: 2;\n    flex: 2; }\n    .App header .main-nav ul li {\n      font-size: 70%; }\n  .App .Blog {\n    width: 100%;\n    padding-right: 1%; }\n    .App .Blog .blog-nav {\n      width: 30px; }\n      .App .Blog .blog-nav .arrow-buttons ion-icon {\n        width: 30px; }\n    .App .Blog .Previews {\n      font-size: 80%; }\n    .App .Blog .Articles .ArticleWrapper {\n      padding: 1em; }\n      .App .Blog .Articles .ArticleWrapper .Article .article-slide .article-title {\n        font-size: 80%; }\n      .App .Blog .Articles .ArticleWrapper .Article .article-content .article-text {\n        font-size: 80%; }\n      .App .Blog .Articles .ArticleWrapper .Article .article-content .article-date {\n        font-size: 80%; }\n    .App .Blog .SideList {\n      width: 20%; }\n      .App .Blog .SideList .Quotes {\n        min-height: 240px; }\n        .App .Blog .SideList .Quotes .quote-link {\n          font-size: 60%; }\n      .App .Blog .SideList .ListTitles .ListTitlesItem {\n        font-size: 70%; }\n  .App footer {\n    height: 40px; } }\n\n/* Small phones to small tablets from 481px to 623px */\n@media only screen and (max-width: 623px) {\n  .App header .main-nav ul li {\n    margin-left: 10px;\n    font-size: 60%; }\n    .App header .main-nav ul li a:link {\n      padding-bottom: 20px; }\n    .App header .main-nav ul li a:after {\n      margin-top: -30px; }\n  .App .Blog {\n    padding-top: 0; }\n    .App .Blog .blog-nav {\n      width: 20px; }\n      .App .Blog .blog-nav .arrow-buttons ion-icon {\n        width: 20px; }\n      .App .Blog .blog-nav .article-social-shares {\n        display: none; }\n    .App .Blog .Articles .ArticleWrapper {\n      padding: 0.2em; }\n      .App .Blog .Articles .ArticleWrapper .Article .article-slide .article-title-name {\n        font-size: 60%; }\n      .App .Blog .Articles .ArticleWrapper .Article .article-slide .article-title-tag {\n        margin-top: -5px; }\n      .App .Blog .Articles .ArticleWrapper .Article .article-content .article-text {\n        font-size: 70%; }\n      .App .Blog .Articles .ArticleWrapper .Article .article-content .article-info,\n      .App .Blog .Articles .ArticleWrapper .Article .article-content .article-social-shares,\n      .App .Blog .Articles .ArticleWrapper .Article .article-content .article-text {\n        margin-top: 5px; }\n      .App .Blog .Articles .ArticleWrapper .Article .article-content .article-info {\n        font-size: 80%; }\n        .App .Blog .Articles .ArticleWrapper .Article .article-content .article-info .article-count {\n          display: flex; }\n          .App .Blog .Articles .ArticleWrapper .Article .article-content .article-info .article-count ion-icon {\n            width: 20px;\n            height: 20px; }\n          .App .Blog .Articles .ArticleWrapper .Article .article-content .article-info .article-count span {\n            margin: 3px 0 0 3px; }\n      .App .Blog .Articles .ArticleWrapper .Article .article-content .article-social-shares {\n        display: -webkit-box;\n        display: -ms-flexbox;\n        display: flex; }\n        .App .Blog .Articles .ArticleWrapper .Article .article-content .article-social-shares .social-icon-common ion-icon,\n        .App .Blog .Articles .ArticleWrapper .Article .article-content .article-social-shares .social-icon {\n          width: 25px;\n          height: 25px;\n          opacity: 0.5; }\n        .App .Blog .Articles .ArticleWrapper .Article .article-content .article-social-shares .social-icon {\n          transform: scale(1);\n          cursor: pointer;\n          margin-left: 5px;\n          outline: 0;\n          opacity: 0.7;\n          transition: opacity 0.4s, transform 0.4s; }\n        .App .Blog .Articles .ArticleWrapper .Article .article-content .article-social-shares .social-icon:hover {\n          transform: scale(1.1);\n          opacity: 1; }\n          .App .Blog .Articles .ArticleWrapper .Article .article-content .article-social-shares .social-icon:hover .tooltip {\n            visibility: visible; }\n    .App .Blog .SideList {\n      padding-top: 0.2em;\n      margin-left: 0.5em; }\n      .App .Blog .SideList .Quotes {\n        display: none; }\n      .App .Blog .SideList .ListTitles .post-title {\n        font-size: 60%; } }\n\n/* Small phones from 0px to 480px */\n@media only screen and (max-width: 480px) {\n  .ListTitles {\n    width: 200px;\n    padding-left: 10px; }\n    .ListTitles .ListTitlesItem {\n      font-weight: 300;\n      font-size: 80%;\n      padding: 4px 4px;\n      -webkit-transition: background-color 0.2s;\n      transition: background-color 0.2s; }\n    .ListTitles .ListTitlesItem:hover {\n      cursor: pointer;\n      background-color: #e1e1e1; }\n    .ListTitles .ListTitlesItem.active {\n      font-weight: bold;\n      font-style: italic; }\n      .ListTitles .ListTitlesItem.active ion-icon {\n        color: #132366ce;\n        margin-right: 5px; }\n  .App header {\n    height: 60px;\n    position: fixed;\n    top: 0;\n    z-index: 10;\n    background-color: #f6f8ff; }\n    .App header .site-title {\n      -webkit-box-flex: 2;\n      -ms-flex: 2;\n      flex: 2; }\n    .App header .main-nav {\n      -webkit-box-flex: 1;\n      -ms-flex: 1;\n      flex: 1;\n      margin-right: 10px; }\n      .App header .main-nav .dd-menu {\n        float: right;\n        cursor: pointer; }\n        .App header .main-nav .dd-menu ion-icon {\n          width: 30px;\n          height: 30px; }\n        .App header .main-nav .dd-menu ul {\n          width: 130%;\n          height: 100%; }\n          .App header .main-nav .dd-menu ul li {\n            width: 100%;\n            margin: 0 auto; }\n            .App header .main-nav .dd-menu ul li a {\n              font-size: 120%;\n              text-align: center; }\n            .App header .main-nav .dd-menu ul li a:link {\n              padding-bottom: 10px; }\n            .App header .main-nav .dd-menu ul li a:hover {\n              background-color: #e1e1e1; }\n            .App header .main-nav .dd-menu ul li a:after {\n              content: ''; }\n  .App .Blog {\n    overflow-x: hidden;\n    margin-top: 55px; }\n    .App .Blog .blog-nav {\n      display: none; }\n    .App .Blog .Articles {\n      width: 100%;\n      margin-right: 0;\n      -webkit-transition: all 0.3s ease-out;\n      transition: all 0.3s ease-out; }\n      .App .Blog .Articles .ArticleWrapper {\n        padding: 0.5em;\n        min-height: 100vh; }\n    .App .Blog .Articles.shifted {\n      margin-right: -200px;\n      background: rgba(0, 0, 0, 0.3);\n      -webkit-filter: brightness(50%);\n      filter: brightness(50%); }\n    .App .Blog .SideList {\n      display: none; }\n    .App .Blog .SideBar {\n      display: block;\n      width: 0;\n      padding-bottom: 40px; }\n    .App .Blog .SideBar.open {\n      width: 200px;\n      overflow-y: auto; }\n  .App footer {\n    flex-direction: column;\n    text-align: center;\n    height: 80px;\n    margin-bottom: 0; }\n    .App footer .social-icons {\n      margin: 10px; }\n      .App footer .social-icons .social-icon a {\n        margin: 5px; } }\n", ""]);
 
 // exports
 
@@ -3210,7 +3210,7 @@ exports.i(__webpack_require__("./node_modules/css-loader/index.js!./src/assets/s
 exports.i(__webpack_require__("./node_modules/css-loader/index.js!./src/assets/styles/react-dd-menu.css"), "");
 
 // module
-exports.push([module.i, "@font-face {\n  font-family: AkrobatExtraLight;\n  src: url(" + __webpack_require__("./src/assets/fonts/Akrobat-ExtraLight.otf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: AkrobatBold;\n  src: url(" + __webpack_require__("./src/assets/fonts/Akrobat-Bold.otf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: AkrobatRegular;\n  src: url(" + __webpack_require__("./src/assets/fonts/Akrobat-Regular.otf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: CaveatRegular;\n  src: url(" + __webpack_require__("./src/assets/fonts/Caveat-Regular.ttf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: Gogol;\n  src: url(" + __webpack_require__("./src/assets/fonts/Gogol.otf") + ") format(\"opentype\"); }\n\n/*---------------------------------------------------------*/\n/* BASIC SETUP */\n/*---------------------------------------------------------*/\n* {\n  margin: 0;\n  padding: 0;\n  -webkit-box-sizing: border-box;\n  box-sizing: border-box; }\n\nhtml,\nbody {\n  color: #555;\n  font-family: \"AkrobatRegular\", cursive;\n  font-weight: 400;\n  font-size: 20px;\n  background-image: url(" + __webpack_require__("./src/assets/images/1920x1080-background.jpg") + ");\n  background-size: cover;\n  background-position: center;\n  height: 100%; }\n\nhtml {\n  overflow: auto;\n  overflow-x: hidden; }\n\nul {\n  list-style: none; }\n\n.social-icon {\n  width: 30px;\n  height: 30px; }\n\n/* TITLES \n==================================*/\nh1 {\n  margin-top: 0;\n  font-size: 300%;\n  word-spacing: 4px;\n  letter-spacing: 1px; }\n\nh2 {\n  font-size: 180%;\n  word-spacing: 2px;\n  text-align: center;\n  letter-spacing: 1px; }\n\nh3 {\n  font-size: 160%; }\n\nh4 {\n  font-size: 120%; }\n\n/* LINKS \n==================================*/\n.main-nav a {\n  font-family: \"CaveatRegular\", arial !important; }\n\na {\n  text-decoration: none;\n  background: transparent; }\n\na:link,\na:visited {\n  text-decoration: none;\n  padding-bottom: 1px; }\n\n/* APP \n==================================*/\n.clearfix:after {\n  content: \".\";\n  display: block;\n  clear: both;\n  visibility: hidden;\n  height: 0; }\n\n.ListPosts {\n  margin-bottom: 2em;\n  font-family: \"AkrobatExtraLight\", arial; }\n\n.App {\n  width: 100vw;\n  height: 100%; }\n  .App header {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: justify;\n    -ms-flex-pack: justify;\n    justify-content: space-between;\n    -webkit-box-align: center;\n    -ms-flex-align: center;\n    align-items: center;\n    width: 100%;\n    padding: 0.5% 2%; }\n    .App header .site-title {\n      -webkit-box-flex: 2;\n      -ms-flex: 2;\n      flex: 2; }\n      .App header .site-title img {\n        width: 100%;\n        max-width: 350px;\n        height: auto; }\n    .App header .main-nav {\n      -webkit-box-flex: 3;\n      -ms-flex: 3;\n      flex: 3;\n      margin-right: 30px;\n      font-size: 180%; }\n      .App header .main-nav ul {\n        position: relative;\n        float: right; }\n        .App header .main-nav ul li {\n          display: inline-block;\n          margin-left: 35px; }\n          .App header .main-nav ul li a {\n            position: relative;\n            display: inline-block; }\n          .App header .main-nav ul li a:link,\n          .App header .main-nav ul li a:visited {\n            padding: 8px 0;\n            color: #555;\n            padding-bottom: 2px;\n            -webkit-transition: font-weight 0.2s;\n            transition: font-weight 0.2s; }\n          .App header .main-nav ul li a::after {\n            content: '...';\n            color: #132366ce;\n            position: absolute;\n            left: 0;\n            right: 0;\n            top: 100%;\n            margin: 2px auto;\n            width: 15px;\n            height: 0;\n            opacity: 0;\n            margin-top: -30px;\n            -webkit-transition: opacity 0.3s;\n            transition: opacity 0.3s; }\n          .App header .main-nav ul li a:hover:after,\n          .App header .main-nav ul li a:active:after {\n            opacity: 1; }\n  .App .Blog {\n    width: 80%;\n    min-height: 80%;\n    margin: 0 auto;\n    padding-top: 50px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex; }\n    .App .Blog .Articles {\n      position: relative;\n      margin: 0 auto;\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex; }\n      .App .Blog .Articles .article-side {\n        position: relative;\n        width: 40px; }\n        .App .Blog .Articles .article-side .article-social-shares {\n          position: -webkit-sticky;\n          position: sticky;\n          top: 0;\n          padding-left: 10px;\n          padding-top: 20px;\n          display: -webkit-box;\n          display: -ms-flexbox;\n          display: flex;\n          flex-direction: column; }\n          .App .Blog .Articles .article-side .article-social-shares .social-icon-common ion-icon,\n          .App .Blog .Articles .article-side .article-social-shares .social-icon {\n            width: 30px;\n            height: 30px;\n            opacity: 0.5; }\n          .App .Blog .Articles .article-side .article-social-shares .social-icon {\n            transform: scale(1);\n            cursor: pointer;\n            margin-top: 5px;\n            outline: 0;\n            opacity: 0.7;\n            transition: opacity 0.4s, transform 0.4s; }\n          .App .Blog .Articles .article-side .article-social-shares .social-icon:hover {\n            transform: scale(1.1);\n            opacity: 1; }\n        .App .Blog .Articles .article-side .arrow-buttons ion-icon {\n          position: fixed;\n          width: 40px;\n          height: 20%;\n          top: 50%;\n          opacity: 0.3;\n          -webkit-transition: opacity 0.2s;\n          transition: opacity 0.2s; }\n          .App .Blog .Articles .article-side .arrow-buttons ion-icon .icon-inner {\n            display: -webkit-box;\n            display: -ms-flexbox;\n            display: flex;\n            -webkit-box-align: center;\n            -ms-flex-align: center;\n            align-items: center; }\n        .App .Blog .Articles .article-side .arrow-buttons ion-icon:hover {\n          opacity: 1;\n          cursor: pointer; }\n      .App .Blog .Articles .ArticleContainer {\n        position: relative;\n        padding: 1em;\n        width: 100%; }\n        .App .Blog .Articles .ArticleContainer .Article .article-social-shares {\n          display: none; }\n        .App .Blog .Articles .ArticleContainer .Article .article-slide,\n        .App .Blog .Articles .ArticleContainer .Article .article-text,\n        .App .Blog .Articles .ArticleContainer .Article .article-footer {\n          margin-bottom: 10px; }\n        .App .Blog .Articles .ArticleContainer .Article .article-slide {\n          position: relative; }\n          .App .Blog .Articles .ArticleContainer .Article .article-slide img {\n            display: block;\n            max-width: 100%;\n            height: auto; }\n          .App .Blog .Articles .ArticleContainer .Article .article-slide .article-title {\n            background: rgba(0, 0, 0, 0.45);\n            color: #e1e1e1;\n            width: 100%;\n            bottom: 0;\n            left: 0;\n            position: absolute;\n            padding: 0.5em; }\n            .App .Blog .Articles .ArticleContainer .Article .article-slide .article-title .article-title-name {\n              float: left;\n              width: 70%;\n              font-weight: bold;\n              font-family: \"AkrobatBold\", arial;\n              font-weight: 700;\n              color: #e1e1e1; }\n            .App .Blog .Articles .ArticleContainer .Article .article-slide .article-title .article-title-tag {\n              float: right;\n              font-family: \"CaveatRegular\", arial;\n              cursor: pointer; }\n              .App .Blog .Articles .ArticleContainer .Article .article-slide .article-title .article-title-tag span {\n                margin-right: 5px;\n                animation: blinker 1.5s linear infinite; }\n              .App .Blog .Articles .ArticleContainer .Article .article-slide .article-title .article-title-tag h4 {\n                color: #b5b4b4;\n                -webkit-transition: color 0.2s;\n                transition: color 0.2s; }\n              .App .Blog .Articles .ArticleContainer .Article .article-slide .article-title .article-title-tag h4:hover {\n                color: #e1e1e1; }\n        .App .Blog .Articles .ArticleContainer .Article .article-content {\n          max-width: 100%; }\n          .App .Blog .Articles .ArticleContainer .Article .article-content .article-info {\n            display: flex;\n            justify-content: space-between; }\n            .App .Blog .Articles .ArticleContainer .Article .article-content .article-info .article-count {\n              display: flex; }\n              .App .Blog .Articles .ArticleContainer .Article .article-content .article-info .article-count ion-icon {\n                width: 25px;\n                height: 25px; }\n              .App .Blog .Articles .ArticleContainer .Article .article-content .article-info .article-count span {\n                font-size: 80%;\n                margin: 5px 0 0 5px; }\n          .App .Blog .Articles .ArticleContainer .Article .article-content .article-text {\n            font-size: 80%;\n            margin-top: 10px; }\n            .App .Blog .Articles .ArticleContainer .Article .article-content .article-text .text-paragraph {\n              margin-bottom: 10px; }\n            .App .Blog .Articles .ArticleContainer .Article .article-content .article-text p {\n              text-align: left; }\n          .App .Blog .Articles .ArticleContainer .Article .article-content .article-footer .article-date {\n            margin-bottom: 2em;\n            float: right;\n            font-size: 80%;\n            font-style: italic; }\n    .App .Blog .SideBar {\n      display: none;\n      z-index: 5;\n      position: fixed;\n      left: 200px;\n      height: 85%;\n      margin-left: -200px;\n      overflow-y: hidden;\n      overflow-x: hidden;\n      -webkit-transition: all 0.5s ease;\n      transition: all 0.5s ease; }\n    .App .Blog .SideList {\n      width: 20%;\n      min-width: 20%;\n      height: 80%;\n      float: right;\n      margin-top: 2em;\n      padding-top: 1em;\n      margin: 0 0.5em; }\n      .App .Blog .SideList .Quotes {\n        margin-bottom: 2em;\n        padding: 10px;\n        background-color: #e1e1e1;\n        min-height: 280px;\n        display: flex;\n        flex-direction: column;\n        justify-content: space-between; }\n        .App .Blog .SideList .Quotes .quote-text {\n          font-family: \"CaveatRegular\";\n          font-size: 120%;\n          font-weight: 100;\n          margin-bottom: 0.5em;\n          line-height: 1; }\n        .App .Blog .SideList .Quotes .quote-link {\n          cursor: pointer;\n          font-size: 70%;\n          padding: 0 10px; }\n      .App .Blog .SideList .ListPosts {\n        margin-bottom: 2em;\n        font-family: \"AkrobatExtraLight\", arial; }\n        .App .Blog .SideList .ListPosts .listItem {\n          font-weight: 300;\n          font-size: 70%;\n          padding: 4px 4px;\n          -webkit-transition: background-color 0.2s;\n          transition: background-color 0.2s; }\n        .App .Blog .SideList .ListPosts .listItem:hover {\n          cursor: pointer;\n          background-color: #e1e1e1; }\n        .App .Blog .SideList .ListPosts .listItem.active {\n          font-weight: bold; }\n          .App .Blog .SideList .ListPosts .listItem.active ion-icon {\n            color: #132366ce;\n            margin-right: 5px; }\n  .App footer {\n    position: absolute;\n    width: 100%;\n    height: 40px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: justify;\n    -ms-flex-pack: justify;\n    justify-content: space-between;\n    background-color: #333;\n    padding: 5px; }\n    .App footer .copyright-text {\n      font-size: 80%; }\n    .App footer .social-icons {\n      float: right; }\n      .App footer .social-icons .social-icon {\n        position: relative;\n        display: inline; }\n        .App footer .social-icons .social-icon a {\n          width: 25px;\n          margin-right: 20px;\n          cursor: pointer;\n          color: #888; }\n          .App footer .social-icons .social-icon a #fb:hover {\n            color: #3b5999; }\n          .App footer .social-icons .social-icon a #tw:hover {\n            color: #55acee; }\n          .App footer .social-icons .social-icon a #gp:hover {\n            color: #dd4b39; }\n          .App footer .social-icons .social-icon a #ig:hover {\n            color: #e4405f; }\n        .App footer .social-icons .social-icon a:link,\n        .App footer .social-icons .social-icon a:visited {\n          text-decoration: none;\n          border: 0;\n          font-size: 130%;\n          color: #888;\n          -webkit-transition: color 0.2s;\n          transition: color 0.2s; }\n    .App footer p {\n      color: #888;\n      text-align: center;\n      margin-top: 5px; }\n\n@keyframes blinker {\n  50% {\n    opacity: 0; } }\n\n.fadeIn {\n  -webkit-animation: fadeIn 1.5s;\n  animation: fadeIn 1.5s; }\n\n.slideInLeft {\n  -webkit-animation: slideInLeft 0.8s;\n  animation: slideInLeft 0.8s; }\n\n.slideInRight {\n  -webkit-animation: slideInRight 0.8s;\n  animation: slideInRight 0.8s; }\n\n.fadeInLeft {\n  -webkit-animation: fadeInLeft 0.8s;\n  animation: fadeInLeft 0.8s; }\n\n.pulse {\n  -webkit-animation: pulse 0.8s;\n  animation: pulse 0.8s; }\n\n.flipInY {\n  -webkit-animation: flipInY 0.8s;\n  animation: flipInY 0.8s; }\n\n.flipInX {\n  -webkit-animation: flipInX 0.8s;\n  animation: flipInX 0.8s; }\n", ""]);
+exports.push([module.i, "@font-face {\n  font-family: AkrobatExtraLight;\n  src: url(" + __webpack_require__("./src/assets/fonts/Akrobat-ExtraLight.otf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: AkrobatBold;\n  src: url(" + __webpack_require__("./src/assets/fonts/Akrobat-Bold.otf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: AkrobatRegular;\n  src: url(" + __webpack_require__("./src/assets/fonts/Akrobat-Regular.otf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: CaveatRegular;\n  src: url(" + __webpack_require__("./src/assets/fonts/Caveat-Regular.ttf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: Gogol;\n  src: url(" + __webpack_require__("./src/assets/fonts/Gogol.otf") + ") format(\"opentype\"); }\n\n/*---------------------------------------------------------*/\n/* BASIC SETUP */\n/*---------------------------------------------------------*/\n* {\n  margin: 0;\n  padding: 0;\n  -webkit-box-sizing: border-box;\n  box-sizing: border-box; }\n\nhtml,\nbody {\n  color: #555;\n  font-family: \"AkrobatRegular\", cursive;\n  font-weight: 400;\n  font-size: 20px;\n  background-image: url(" + __webpack_require__("./src/assets/images/1920x1080-background.jpg") + ");\n  background-size: cover;\n  background-position: center;\n  height: 100%; }\n\nhtml {\n  overflow: auto;\n  overflow-x: hidden; }\n\nul {\n  list-style: none; }\n\n.social-icon {\n  width: 30px;\n  height: 30px; }\n\n/* TITLES \n==================================*/\nh1 {\n  margin-top: 0;\n  font-size: 300%;\n  word-spacing: 4px;\n  letter-spacing: 1px; }\n\nh2 {\n  font-size: 180%;\n  word-spacing: 2px;\n  text-align: center;\n  letter-spacing: 1px; }\n\nh3 {\n  font-size: 160%; }\n\nh4 {\n  font-size: 120%; }\n\n/* LINKS \n==================================*/\n.main-nav a {\n  font-family: \"CaveatRegular\", arial !important; }\n\na {\n  text-decoration: none;\n  background: transparent; }\n\na:link,\na:visited {\n  text-decoration: none;\n  padding-bottom: 1px; }\n\n/* APP \n==================================*/\n.clearfix:after {\n  content: \".\";\n  display: block;\n  clear: both;\n  visibility: hidden;\n  height: 0; }\n\n.ListTitles {\n  margin-bottom: 2em;\n  font-family: \"AkrobatExtraLight\", arial; }\n\n.blog-nav {\n  position: relative;\n  width: 40px; }\n  .blog-nav .article-social-shares {\n    position: -webkit-sticky;\n    position: sticky;\n    top: 0;\n    padding-left: 10px;\n    padding-top: 20px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    flex-direction: column; }\n    .blog-nav .article-social-shares .social-icon-common ion-icon,\n    .blog-nav .article-social-shares .social-icon {\n      width: 30px;\n      height: 30px;\n      opacity: 0.5; }\n    .blog-nav .article-social-shares .social-icon {\n      transform: scale(1);\n      cursor: pointer;\n      margin-top: 5px;\n      outline: 0;\n      opacity: 0.7;\n      transition: opacity 0.4s, transform 0.4s; }\n    .blog-nav .article-social-shares .social-icon:hover {\n      transform: scale(1.1);\n      opacity: 1; }\n  .blog-nav .arrow-buttons ion-icon {\n    position: fixed;\n    width: 40px;\n    height: 20%;\n    top: 50%;\n    opacity: 0.3;\n    -webkit-transition: opacity 0.2s;\n    transition: opacity 0.2s; }\n    .blog-nav .arrow-buttons ion-icon .icon-inner {\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-align: center;\n      -ms-flex-align: center;\n      align-items: center; }\n  .blog-nav .arrow-buttons ion-icon:hover {\n    opacity: 1;\n    cursor: pointer; }\n\n.App {\n  width: 100vw;\n  display: flex;\n  min-height: 100vh;\n  flex-direction: column; }\n  .App header {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: justify;\n    -ms-flex-pack: justify;\n    justify-content: space-between;\n    -webkit-box-align: center;\n    -ms-flex-align: center;\n    align-items: center;\n    width: 100%;\n    height: 110px;\n    padding: 0.5% 2%; }\n    .App header .site-title {\n      -webkit-box-flex: 2;\n      -ms-flex: 2;\n      flex: 2; }\n      .App header .site-title img {\n        width: 100%;\n        max-width: 350px;\n        height: auto; }\n    .App header .main-nav {\n      -webkit-box-flex: 3;\n      -ms-flex: 3;\n      flex: 3;\n      margin-right: 30px;\n      font-size: 180%; }\n      .App header .main-nav ul {\n        position: relative;\n        float: right; }\n        .App header .main-nav ul li {\n          display: inline-block;\n          margin-left: 35px; }\n          .App header .main-nav ul li a {\n            position: relative;\n            display: inline-block; }\n          .App header .main-nav ul li a:link,\n          .App header .main-nav ul li a:visited {\n            padding: 8px 0;\n            color: #555;\n            padding-bottom: 2px;\n            -webkit-transition: font-weight 0.2s;\n            transition: font-weight 0.2s; }\n          .App header .main-nav ul li a::after {\n            content: '...';\n            color: #132366ce;\n            position: absolute;\n            left: 0;\n            right: 0;\n            top: 100%;\n            margin: 2px auto;\n            width: 15px;\n            height: 0;\n            opacity: 0;\n            margin-top: -30px;\n            -webkit-transition: opacity 0.3s;\n            transition: opacity 0.3s; }\n          .App header .main-nav ul li a:hover:after,\n          .App header .main-nav ul li a:active:after {\n            opacity: 1; }\n  .App .Blog {\n    flex: 1;\n    width: 80%;\n    margin: 0 auto;\n    padding-top: 50px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex; }\n    .App .Blog .Articles,\n    .App .Blog .Previews {\n      position: relative;\n      margin: 0 auto;\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex; }\n    .App .Blog .Articles .ArticleWrapper {\n      position: relative;\n      padding: 1em;\n      width: 100%; }\n      .App .Blog .Articles .ArticleWrapper .Article .article-social-shares {\n        display: none; }\n      .App .Blog .Articles .ArticleWrapper .Article .article-slide,\n      .App .Blog .Articles .ArticleWrapper .Article .article-text,\n      .App .Blog .Articles .ArticleWrapper .Article .article-footer {\n        margin-bottom: 10px; }\n      .App .Blog .Articles .ArticleWrapper .Article .article-slide {\n        position: relative; }\n        .App .Blog .Articles .ArticleWrapper .Article .article-slide img {\n          display: block;\n          max-width: 100%;\n          height: auto; }\n        .App .Blog .Articles .ArticleWrapper .Article .article-slide .article-title {\n          background: rgba(0, 0, 0, 0.45);\n          color: #e1e1e1;\n          width: 100%;\n          bottom: 0;\n          left: 0;\n          position: absolute;\n          padding: 0.5em; }\n          .App .Blog .Articles .ArticleWrapper .Article .article-slide .article-title .article-title-name {\n            float: left;\n            width: 70%;\n            font-weight: bold;\n            font-family: \"AkrobatBold\", arial;\n            font-weight: 700;\n            color: #e1e1e1; }\n          .App .Blog .Articles .ArticleWrapper .Article .article-slide .article-title .article-title-tag {\n            float: right;\n            font-family: \"CaveatRegular\", arial;\n            cursor: pointer; }\n            .App .Blog .Articles .ArticleWrapper .Article .article-slide .article-title .article-title-tag span {\n              margin-right: 5px;\n              animation: blinker 1.5s linear infinite; }\n            .App .Blog .Articles .ArticleWrapper .Article .article-slide .article-title .article-title-tag h4 {\n              color: #b5b4b4;\n              -webkit-transition: color 0.2s;\n              transition: color 0.2s; }\n            .App .Blog .Articles .ArticleWrapper .Article .article-slide .article-title .article-title-tag h4:hover {\n              color: #e1e1e1; }\n      .App .Blog .Articles .ArticleWrapper .Article .article-content {\n        max-width: 100%; }\n        .App .Blog .Articles .ArticleWrapper .Article .article-content .article-info {\n          display: flex;\n          justify-content: space-between; }\n          .App .Blog .Articles .ArticleWrapper .Article .article-content .article-info .article-count {\n            display: flex; }\n            .App .Blog .Articles .ArticleWrapper .Article .article-content .article-info .article-count ion-icon {\n              width: 25px;\n              height: 25px; }\n            .App .Blog .Articles .ArticleWrapper .Article .article-content .article-info .article-count span {\n              font-size: 80%;\n              margin: 5px 0 0 5px; }\n        .App .Blog .Articles .ArticleWrapper .Article .article-content .article-text {\n          font-size: 80%;\n          margin-top: 10px; }\n          .App .Blog .Articles .ArticleWrapper .Article .article-content .article-text .text-paragraph {\n            margin-bottom: 10px; }\n          .App .Blog .Articles .ArticleWrapper .Article .article-content .article-text p {\n            text-align: left; }\n        .App .Blog .Articles .ArticleWrapper .Article .article-content .article-footer .article-date {\n          margin-bottom: 2em;\n          float: right;\n          font-size: 80%;\n          font-style: italic; }\n    .App .Blog .Previews .ListPreviews {\n      display: flex;\n      flex-direction: column; }\n      .App .Blog .Previews .ListPreviews .ListPreviewsItem {\n        position: relative;\n        margin: 0.5em;\n        padding: 0.5em;\n        width: 100%;\n        cursor: pointer; }\n        .App .Blog .Previews .ListPreviews .ListPreviewsItem .article-preview-image {\n          float: left;\n          width: 30%; }\n          .App .Blog .Previews .ListPreviews .ListPreviewsItem .article-preview-image img {\n            width: 100%;\n            max-width: 200px;\n            height: auto; }\n        .App .Blog .Previews .ListPreviews .ListPreviewsItem .article-preview-title {\n          float: right;\n          width: 70%;\n          padding: 0 2%; }\n      .App .Blog .Previews .ListPreviews .ListPreviewsItem:hover {\n        background: #f0f0f0; }\n    .App .Blog .SideBar {\n      display: none;\n      z-index: 5;\n      position: fixed;\n      left: 200px;\n      height: 85%;\n      margin-left: -200px;\n      overflow-y: hidden;\n      overflow-x: hidden;\n      -webkit-transition: all 0.5s ease;\n      transition: all 0.5s ease; }\n    .App .Blog .SideList {\n      width: 20%;\n      min-width: 20%;\n      height: 80%;\n      float: right;\n      margin-top: 2em;\n      padding-top: 1em;\n      margin: 0 0.5em; }\n      .App .Blog .SideList .Quotes {\n        margin-bottom: 2em;\n        padding: 10px;\n        background-color: #e1e1e1;\n        min-height: 280px;\n        display: flex;\n        flex-direction: column;\n        justify-content: space-between; }\n        .App .Blog .SideList .Quotes .quote-text {\n          font-family: \"CaveatRegular\";\n          font-size: 120%;\n          font-weight: 100;\n          margin-bottom: 0.5em;\n          line-height: 1; }\n        .App .Blog .SideList .Quotes .quote-link {\n          cursor: pointer;\n          font-size: 70%; }\n          .App .Blog .SideList .Quotes .quote-link a {\n            display: block; }\n      .App .Blog .SideList .ListTitles {\n        margin-bottom: 2em;\n        font-family: \"AkrobatExtraLight\", arial; }\n        .App .Blog .SideList .ListTitles .ListTitlesItem {\n          font-weight: 300;\n          font-size: 70%;\n          padding: 4px 4px;\n          -webkit-transition: background-color 0.2s;\n          transition: background-color 0.2s; }\n        .App .Blog .SideList .ListTitles .ListTitlesItem:hover {\n          cursor: pointer;\n          background-color: #f0f0f0; }\n        .App .Blog .SideList .ListTitles .ListTitlesItem.active {\n          font-weight: bold; }\n          .App .Blog .SideList .ListTitles .ListTitlesItem.active ion-icon {\n            color: #132366ce;\n            margin-right: 5px; }\n  .App footer {\n    width: 100%;\n    height: 40px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: justify;\n    -ms-flex-pack: justify;\n    justify-content: space-between;\n    background-color: #333;\n    padding: 5px; }\n    .App footer .copyright-text {\n      font-size: 80%; }\n    .App footer .social-icons {\n      float: right; }\n      .App footer .social-icons .social-icon {\n        position: relative;\n        display: inline; }\n        .App footer .social-icons .social-icon a {\n          width: 25px;\n          margin-right: 20px;\n          cursor: pointer;\n          color: #888; }\n          .App footer .social-icons .social-icon a #fb:hover {\n            color: #3b5999; }\n          .App footer .social-icons .social-icon a #tw:hover {\n            color: #55acee; }\n          .App footer .social-icons .social-icon a #gp:hover {\n            color: #dd4b39; }\n          .App footer .social-icons .social-icon a #ig:hover {\n            color: #e4405f; }\n        .App footer .social-icons .social-icon a:link,\n        .App footer .social-icons .social-icon a:visited {\n          text-decoration: none;\n          border: 0;\n          font-size: 130%;\n          color: #888;\n          -webkit-transition: color 0.2s;\n          transition: color 0.2s; }\n    .App footer p {\n      color: #888;\n      text-align: center;\n      margin-top: 5px; }\n\n@keyframes blinker {\n  50% {\n    opacity: 0; } }\n\n.fadeIn {\n  -webkit-animation: fadeIn 1.5s;\n  animation: fadeIn 1.5s; }\n\n.slideInLeft {\n  -webkit-animation: slideInLeft 0.8s;\n  animation: slideInLeft 0.8s; }\n\n.slideInRight {\n  -webkit-animation: slideInRight 0.8s;\n  animation: slideInRight 0.8s; }\n\n.fadeInLeft {\n  -webkit-animation: fadeInLeft 0.8s;\n  animation: fadeInLeft 0.8s; }\n\n.pulse {\n  -webkit-animation: pulse 0.8s;\n  animation: pulse 0.8s; }\n\n.flipInY {\n  -webkit-animation: flipInY 0.8s;\n  animation: flipInY 0.8s; }\n\n.flipInX {\n  -webkit-animation: flipInX 0.8s;\n  animation: flipInX 0.8s; }\n", ""]);
 
 // exports
 
@@ -36177,6 +36177,26 @@ App.childContextTypes = {
 
 /***/ }),
 
+/***/ "./src/components/ui/ArrowButton.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var ArrowButton = function ArrowButton(_ref) {
+    var name = _ref.name,
+        action = _ref.action;
+    return React.createElement(
+        'div',
+        { className: 'arrow-buttons' },
+        React.createElement('ion-icon', { name: 'ios-arrow-' + name, onClick: function onClick() {
+                return action();
+            } })
+    );
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (ArrowButton);
+
+/***/ }),
+
 /***/ "./src/components/ui/Article.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -36339,7 +36359,50 @@ ArticleContent.contextTypes = {
 
 /***/ }),
 
-/***/ "./src/components/ui/ArticleContainer.js":
+/***/ "./src/components/ui/ArticleSwiped.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Article__ = __webpack_require__("./src/components/ui/Article.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__wrapperSwipe__ = __webpack_require__("./src/components/ui/wrapperSwipe.js");
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+
+var ArticleSwiped = function (_Component) {
+    _inherits(ArticleSwiped, _Component);
+
+    function ArticleSwiped() {
+        _classCallCheck(this, ArticleSwiped);
+
+        return _possibleConstructorReturn(this, (ArticleSwiped.__proto__ || Object.getPrototypeOf(ArticleSwiped)).apply(this, arguments));
+    }
+
+    _createClass(ArticleSwiped, [{
+        key: 'render',
+        value: function render() {
+            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__Article__["a" /* default */], this.props);
+        }
+    }]);
+
+    return ArticleSwiped;
+}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
+
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_2__wrapperSwipe__["a" /* default */])('onPrev', 'onNext')(ArticleSwiped));
+
+/***/ }),
+
+/***/ "./src/components/ui/ArticleWrapper.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -36404,7 +36467,7 @@ var ArticleContainer = function (_Component) {
                 shifted = this.props.shifted;
 
 
-            var classArticle = __WEBPACK_IMPORTED_MODULE_1_classnames___default()('ArticleContainer', { fadeIn: animate });
+            var classArticle = __WEBPACK_IMPORTED_MODULE_1_classnames___default()('ArticleWrapper', { fadeIn: animate });
 
             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'div',
@@ -36421,49 +36484,6 @@ var ArticleContainer = function (_Component) {
 
 /***/ }),
 
-/***/ "./src/components/ui/ArticleSwiped.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Article__ = __webpack_require__("./src/components/ui/Article.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__wrapperSwipe__ = __webpack_require__("./src/components/ui/wrapperSwipe.js");
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-
-
-
-
-var ArticleSwiped = function (_Component) {
-    _inherits(ArticleSwiped, _Component);
-
-    function ArticleSwiped() {
-        _classCallCheck(this, ArticleSwiped);
-
-        return _possibleConstructorReturn(this, (ArticleSwiped.__proto__ || Object.getPrototypeOf(ArticleSwiped)).apply(this, arguments));
-    }
-
-    _createClass(ArticleSwiped, [{
-        key: 'render',
-        value: function render() {
-            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__Article__["a" /* default */], this.props);
-        }
-    }]);
-
-    return ArticleSwiped;
-}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
-
-/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_2__wrapperSwipe__["a" /* default */])('onPrev', 'onNext')(ArticleSwiped));
-
-/***/ }),
-
 /***/ "./src/components/ui/Articles.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -36472,8 +36492,9 @@ var ArticleSwiped = function (_Component) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_classnames__ = __webpack_require__("./node_modules/classnames/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_classnames___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_classnames__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ArticleContainer__ = __webpack_require__("./src/components/ui/ArticleContainer.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ArticleWrapper__ = __webpack_require__("./src/components/ui/ArticleWrapper.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__SocialShareButtons__ = __webpack_require__("./src/components/ui/SocialShareButtons.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ArrowButton__ = __webpack_require__("./src/components/ui/ArrowButton.js");
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -36481,6 +36502,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 
 
 
@@ -36525,13 +36547,6 @@ var Articles = function (_Component) {
         }, _temp), _possibleConstructorReturn(_this, _ret);
     }
 
-    // handleChangePage = (indexPost) => {
-    //     const { posts, match, openPost } = this.props
-
-    //     let post = posts[indexPost]
-    //     if (post) openPost(post.id, match.params.tag)
-    // }
-
     _createClass(Articles, [{
         key: 'render',
         value: function render() {
@@ -36552,29 +36567,21 @@ var Articles = function (_Component) {
                 { className: classArticles },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'div',
-                    { className: 'article-side' },
+                    { className: 'blog-nav' },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__SocialShareButtons__["a" /* default */], { post: activePost }),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'div',
-                        { className: 'arrow-buttons' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('ion-icon', { name: 'ios-arrow-back', onClick: this.handleOpenPrev })
-                    )
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__ArrowButton__["a" /* default */], { name: 'back', action: this.handleOpenPrev })
                 ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__ArticleContainer__["a" /* default */], {
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__ArticleWrapper__["a" /* default */], {
                     post: activePost,
-                    onPrev: this.handleOpenPrev,
-                    onNext: this.handleOpenNext,
                     openSideBar: openSideBar,
-                    shifted: shifted
+                    shifted: shifted,
+                    onPrev: this.handleOpenPrev //for mobile scrolling
+                    , onNext: this.handleOpenNext //for mobile scrolling
                 }),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'div',
-                    { className: 'article-side' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'div',
-                        { className: 'arrow-buttons' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('ion-icon', { name: 'ios-arrow-forward', onClick: this.handleOpenNext })
-                    )
+                    { className: 'blog-nav' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__ArrowButton__["a" /* default */], { name: 'forward', action: this.handleOpenNext })
                 )
             );
         }
@@ -36595,9 +36602,9 @@ var Articles = function (_Component) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__("./node_modules/prop-types/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__SideBlock__ = __webpack_require__("./src/components/ui/SideBlock.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__SideBar__ = __webpack_require__("./src/components/ui/SideBar.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Articles__ = __webpack_require__("./src/components/ui/Articles.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Articles__ = __webpack_require__("./src/components/ui/Articles.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__SideBlock__ = __webpack_require__("./src/components/ui/SideBlock.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Previews__ = __webpack_require__("./src/components/ui/Previews.js");
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -36680,27 +36687,32 @@ var Blog = function (_Component) {
             var _state = this.state,
                 listPosts = _state.listPosts,
                 openSideBar = _state.openSideBar,
-                id = this.props.match.params.id,
+                match = this.props.match,
                 activePostIndex = listPosts.findIndex(function (post) {
-                return post.id === parseInt(id);
+                return post.id === parseInt(match.params.id);
             });
 
 
             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'div',
                 { className: 'Blog' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__Articles__["a" /* default */], {
-                    shifted: openSideBar,
+                match.params.id ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__Articles__["a" /* default */], {
                     posts: listPosts,
+                    shifted: openSideBar,
                     activePostIndex: activePostIndex,
                     openPost: this.handleOpenPost,
                     openSideBar: this.handleOpenSideBar
+                }) : __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__Previews__["a" /* default */], {
+                    posts: listPosts,
+                    match: match,
+                    openPost: this.handleOpenPost
                 }),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__SideBlock__["a" /* default */], {
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__SideBlock__["a" /* default */], {
                     screenWidth: this.context.screenWidth,
                     isSideBarOpening: openSideBar,
+                    isPreviewsOpen: !match.params.id,
                     posts: listPosts,
-                    match: this.props.match,
+                    match: match,
                     openPost: this.handleOpenPost,
                     hideSideBar: this.handleHideSideBar
                 })
@@ -36822,17 +36834,6 @@ var HeadBlock = function (_Component) {
 
         var _this = _possibleConstructorReturn(this, (HeadBlock.__proto__ || Object.getPrototypeOf(HeadBlock)).call(this));
 
-        _this._getLinkByTag = function (tag) {
-            var posts = _this.context.posts;
-
-
-            var post = tag === 'all' ? posts[0] : posts.find(function (post) {
-                return post.tag === tag;
-            });
-
-            return '/' + tag + '/' + (post ? post.id : 0);
-        };
-
         _this.state = {
             activeLinkIndex: 0,
             isMenuOpen: false
@@ -36871,8 +36872,6 @@ var HeadBlock = function (_Component) {
     }, {
         key: 'renderLinks',
         value: function renderLinks() {
-            var _this2 = this;
-
             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'ul',
                 { className: 'links' },
@@ -36882,7 +36881,7 @@ var HeadBlock = function (_Component) {
                         { key: i },
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             __WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Link */],
-                            { to: _this2._getLinkByTag(tag) },
+                            { to: '/' + tag },
                             __WEBPACK_IMPORTED_MODULE_3__constants__["b" /* LINKS_UKR */][i]
                         )
                     );
@@ -36903,7 +36902,7 @@ var HeadBlock = function (_Component) {
                     { className: 'site-title' },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         __WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Link */],
-                        { to: this._getLinkByTag('all') },
+                        { to: '/all' },
                         screenWidth > 624 ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_5__assets_images_documenty_logo_full_2_png___default.a, alt: 'logo-full' }) : __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_6__assets_images_documenty_logo_1_png___default.a, alt: 'logo-word' })
                     )
                 ),
@@ -36914,6 +36913,17 @@ var HeadBlock = function (_Component) {
                 )
             );
         }
+
+        // _getLinkByTag = (tag) => {
+        //     const { posts } = this.context
+
+        //     let post = tag === 'all'
+        //         ? posts[0]
+        //         : posts.find(post => post.tag === tag)
+
+        //     return `/${tag}/${post ? post.id : 0}`
+        // }
+
     }]);
 
     return HeadBlock;
@@ -36929,13 +36939,13 @@ HeadBlock.contextTypes = {
 
 /***/ }),
 
-/***/ "./src/components/ui/ListPosts.js":
+/***/ "./src/components/ui/ListPreviews.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListPostsItem__ = __webpack_require__("./src/components/ui/ListPostsItem.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListPreviewsItem__ = __webpack_require__("./src/components/ui/ListPreviewsItem.js");
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -36949,55 +36959,55 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 
-var ListPosts = function (_Component) {
-    _inherits(ListPosts, _Component);
+var ListPreviews = function (_Component) {
+    _inherits(ListPreviews, _Component);
 
-    function ListPosts() {
+    function ListPreviews() {
         var _ref;
 
         var _temp, _this, _ret;
 
-        _classCallCheck(this, ListPosts);
+        _classCallCheck(this, ListPreviews);
 
         for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
             args[_key] = arguments[_key];
         }
 
-        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = ListPosts.__proto__ || Object.getPrototypeOf(ListPosts)).call.apply(_ref, [this].concat(args))), _this), _this.shouldComponentUpdate = function (nextProps) {
-            return nextProps.posts !== _this.props.posts || nextProps.match.params.id !== _this.props.match.params.id;
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = ListPreviews.__proto__ || Object.getPrototypeOf(ListPreviews)).call.apply(_ref, [this].concat(args))), _this), _this.shouldComponentUpdate = function (nextProps) {
+            return nextProps.postsOnScreen !== _this.props.postsOnScreen;
         }, _temp), _possibleConstructorReturn(_this, _ret);
     }
 
-    _createClass(ListPosts, [{
+    _createClass(ListPreviews, [{
         key: 'render',
         value: function render() {
             var _this2 = this;
 
-            var posts = this.props.posts;
+            var postsOnScreen = this.props.postsOnScreen;
 
 
             return React.createElement(
-                'ul',
-                { className: 'ListPosts' },
-                posts.map(function (post, i) {
-                    return React.createElement(
-                        'li',
-                        { key: i },
-                        React.createElement(__WEBPACK_IMPORTED_MODULE_1__ListPostsItem__["a" /* default */], _extends({ post: post }, _this2.props, { timeoutMs: 50 * i }))
-                    );
+                'div',
+                { className: 'ListPreviews' },
+                postsOnScreen.map(function (post, i) {
+                    return React.createElement(__WEBPACK_IMPORTED_MODULE_1__ListPreviewsItem__["a" /* default */], _extends({
+                        key: i,
+                        post: post,
+                        timeoutMs: 100 * i
+                    }, _this2.props));
                 })
             );
         }
     }]);
 
-    return ListPosts;
+    return ListPreviews;
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
 
-/* harmony default export */ __webpack_exports__["a"] = (ListPosts);
+/* harmony default export */ __webpack_exports__["a"] = (ListPreviews);
 
 /***/ }),
 
-/***/ "./src/components/ui/ListPostsItem.js":
+/***/ "./src/components/ui/ListPreviewsItem.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -37016,13 +37026,206 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 
-var ListPostsItem = function (_Component) {
-    _inherits(ListPostsItem, _Component);
+var ListPreviewsItem = function (_Component) {
+    _inherits(ListPreviewsItem, _Component);
 
-    function ListPostsItem() {
-        _classCallCheck(this, ListPostsItem);
+    function ListPreviewsItem() {
+        _classCallCheck(this, ListPreviewsItem);
 
-        var _this = _possibleConstructorReturn(this, (ListPostsItem.__proto__ || Object.getPrototypeOf(ListPostsItem)).call(this));
+        var _this = _possibleConstructorReturn(this, (ListPreviewsItem.__proto__ || Object.getPrototypeOf(ListPreviewsItem)).call(this));
+
+        _this.componentDidUpdate = function (prevProps) {
+            if (prevProps.post !== _this.props.post) {
+                _this.setState({ hidden: true });
+                _this.activeAnimateIn();
+            }
+        };
+
+        _this.handleSelectItem = function (id) {
+            _this.props.openPost(id);
+        };
+
+        _this.state = {
+            animateIn: false,
+            hidden: true
+        };
+        return _this;
+    }
+
+    _createClass(ListPreviewsItem, [{
+        key: 'componentDidMount',
+        value: function componentDidMount() {
+            this.activeAnimateIn();
+        }
+    }, {
+        key: 'activeAnimateIn',
+        value: function activeAnimateIn() {
+            var _this2 = this;
+
+            var timeoutMs = this.props.timeoutMs;
+
+
+            setTimeout(function () {
+                _this2.setState({
+                    animateIn: true,
+                    hidden: false
+                });
+            }, timeoutMs);
+
+            setTimeout(function () {
+                _this2.setState({ animateIn: false });
+            }, timeoutMs + 1000);
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var _this3 = this;
+
+            var post = this.props.post,
+                id = post.id,
+                title = post.title,
+                tag = post.tag,
+                image = post.image,
+                text = post.text,
+                date = post.date,
+                _state = this.state,
+                animateIn = _state.animateIn,
+                hidden = _state.hidden;
+
+
+            var styleItem = { 'display': hidden ? 'none' : 'block' },
+                classListItem = __WEBPACK_IMPORTED_MODULE_1_classnames___default()('ListPreviewsItem', { fadeIn: animateIn });
+
+            return React.createElement(
+                'div',
+                { className: classListItem,
+                    onClick: function onClick() {
+                        return _this3.handleSelectItem(post.id);
+                    },
+                    style: styleItem
+                },
+                React.createElement(
+                    'div',
+                    { className: 'article-preview-image' },
+                    React.createElement('img', { src: '' + image, alt: title, title: title })
+                ),
+                React.createElement(
+                    'div',
+                    { className: 'article-preview-title' },
+                    React.createElement(
+                        'span',
+                        null,
+                        title
+                    )
+                )
+            );
+        }
+    }]);
+
+    return ListPreviewsItem;
+}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
+
+/* harmony default export */ __webpack_exports__["a"] = (ListPreviewsItem);
+
+/***/ }),
+
+/***/ "./src/components/ui/ListTitles.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListTitlesItem__ = __webpack_require__("./src/components/ui/ListTitlesItem.js");
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+var ListTitles = function (_Component) {
+    _inherits(ListTitles, _Component);
+
+    function ListTitles() {
+        var _ref;
+
+        var _temp, _this, _ret;
+
+        _classCallCheck(this, ListTitles);
+
+        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+            args[_key] = arguments[_key];
+        }
+
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = ListTitles.__proto__ || Object.getPrototypeOf(ListTitles)).call.apply(_ref, [this].concat(args))), _this), _this.shouldComponentUpdate = function (nextProps) {
+            return nextProps.posts !== _this.props.posts || nextProps.match.params.id !== _this.props.match.params.id;
+        }, _temp), _possibleConstructorReturn(_this, _ret);
+    }
+
+    _createClass(ListTitles, [{
+        key: 'render',
+        value: function render() {
+            var _this2 = this;
+
+            var posts = this.props.posts;
+
+
+            return React.createElement(
+                'ul',
+                { className: 'ListTitles' },
+                posts.map(function (post, i) {
+                    return React.createElement(
+                        'li',
+                        { key: i },
+                        React.createElement(__WEBPACK_IMPORTED_MODULE_1__ListTitlesItem__["a" /* default */], _extends({
+                            post: post,
+                            timeoutMs: 50 * i
+                        }, _this2.props))
+                    );
+                })
+            );
+        }
+    }]);
+
+    return ListTitles;
+}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
+
+/* harmony default export */ __webpack_exports__["a"] = (ListTitles);
+
+/***/ }),
+
+/***/ "./src/components/ui/ListTitlesItem.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_classnames__ = __webpack_require__("./node_modules/classnames/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_classnames___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_classnames__);
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+var ListTitlesItem = function (_Component) {
+    _inherits(ListTitlesItem, _Component);
+
+    function ListTitlesItem() {
+        _classCallCheck(this, ListTitlesItem);
+
+        var _this = _possibleConstructorReturn(this, (ListTitlesItem.__proto__ || Object.getPrototypeOf(ListTitlesItem)).call(this));
 
         _this.componentDidUpdate = function (prevProps) {
             if (prevProps.post !== _this.props.post) {
@@ -37055,7 +37258,7 @@ var ListPostsItem = function (_Component) {
         return _this;
     }
 
-    _createClass(ListPostsItem, [{
+    _createClass(ListTitlesItem, [{
         key: 'componentDidMount',
         value: function componentDidMount() {
             this.activeAnimateIn();
@@ -37106,7 +37309,7 @@ var ListPostsItem = function (_Component) {
 
             var isActivePost = post.id === parseInt(match.params.id),
                 styleItem = { 'display': hidden ? 'none' : 'block' },
-                classListItem = __WEBPACK_IMPORTED_MODULE_1_classnames___default()('listItem', { active: isActivePost }, { fadeInLeft: animateIn }, { flipInX: animateSelect });
+                classListItem = __WEBPACK_IMPORTED_MODULE_1_classnames___default()('ListTitlesItem', { active: isActivePost }, { fadeInLeft: animateIn }, { flipInX: animateSelect });
 
             return React.createElement(
                 'div',
@@ -37126,10 +37329,144 @@ var ListPostsItem = function (_Component) {
         }
     }]);
 
-    return ListPostsItem;
+    return ListTitlesItem;
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
 
-/* harmony default export */ __webpack_exports__["a"] = (ListPostsItem);
+/* harmony default export */ __webpack_exports__["a"] = (ListTitlesItem);
+
+/***/ }),
+
+/***/ "./src/components/ui/Previews.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__("./node_modules/prop-types/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ListPreviews__ = __webpack_require__("./src/components/ui/ListPreviews.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ArrowButton__ = __webpack_require__("./src/components/ui/ArrowButton.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__constants__ = __webpack_require__("./src/constants.js");
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+
+
+
+
+
+var Previews = function (_Component) {
+    _inherits(Previews, _Component);
+
+    function Previews() {
+        _classCallCheck(this, Previews);
+
+        var _this = _possibleConstructorReturn(this, (Previews.__proto__ || Object.getPrototypeOf(Previews)).call(this));
+
+        _this.componentWillMount = function () {
+            _this.updatePages(_this.props.posts);
+        };
+
+        _this.shouldComponentUpdate = function (nextProps, nextState) {
+            return nextProps.posts && nextProps.posts !== _this.props.posts || nextState.activePageIndex !== _this.state.activePageIndex;
+        };
+
+        _this.componentWillReceiveProps = function (nextProps) {
+            if (nextProps.posts !== _this.props.posts) {
+                _this.updatePages(nextProps.posts);
+            }
+        };
+
+        _this.updatePages = function (posts) {
+            var size = _this.context.screenWidth > 480 ? __WEBPACK_IMPORTED_MODULE_4__constants__["c" /* LIST_PREVIEWS_SIZE */] : posts.length,
+                pages = _this._splitPosts(posts, size);
+
+            _this.setState({ pages: pages, activePageIndex: 0 });
+        };
+
+        _this.handleOpenPrev = function () {
+            var activePageIndex = _this.state.activePageIndex;
+
+
+            if (activePageIndex > 0) activePageIndex--;
+            _this.setState({ activePageIndex: activePageIndex });
+        };
+
+        _this.handleOpenNext = function () {
+            var _this$state = _this.state,
+                pages = _this$state.pages,
+                activePageIndex = _this$state.activePageIndex;
+
+
+            if (activePageIndex < pages.length - 1) activePageIndex++;
+            _this.setState({ activePageIndex: activePageIndex });
+        };
+
+        _this._splitPosts = function (posts, postsOnPage) {
+            var pages = [],
+                postsCopy = [].concat(posts);
+
+            while (postsCopy.length > 0) {
+                pages.push(postsCopy.splice(0, postsOnPage));
+            }return pages;
+        };
+
+        _this.state = {
+            pages: [],
+            activePageIndex: 0
+        };
+        return _this;
+    }
+
+    _createClass(Previews, [{
+        key: 'render',
+        value: function render() {
+            var _state = this.state,
+                pages = _state.pages,
+                activePageIndex = _state.activePageIndex;
+
+
+            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                { className: 'Previews' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'blog-nav' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__ArrowButton__["a" /* default */], { name: 'back', action: this.handleOpenPrev })
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__ListPreviews__["a" /* default */], _extends({}, this.props, {
+                    postsOnScreen: pages[activePageIndex],
+                    onPrev: this.handleOpenPrev //for mobile scrolling
+                    , onNext: this.handleOpenNext //for mobile scrolling
+                })),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'blog-nav' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__ArrowButton__["a" /* default */], { name: 'forward', action: this.handleOpenNext })
+                )
+            );
+        }
+    }]);
+
+    return Previews;
+}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
+
+/* harmony default export */ __webpack_exports__["a"] = (Previews);
+
+
+Previews.contextTypes = {
+    screenWidth: __WEBPACK_IMPORTED_MODULE_1_prop_types__["PropTypes"].number
+};
 
 /***/ }),
 
@@ -37289,7 +37626,7 @@ Quotes.contextTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_classnames__ = __webpack_require__("./node_modules/classnames/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_classnames___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_classnames__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_onclickoutside__ = __webpack_require__("./node_modules/react-onclickoutside/dist/react-onclickoutside.es.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ListPosts__ = __webpack_require__("./src/components/ui/ListPosts.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ListTitles__ = __webpack_require__("./src/components/ui/ListTitles.js");
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -37342,7 +37679,7 @@ var SideBar = function (_Component) {
             return React.createElement(
                 'div',
                 { className: classSideBar },
-                React.createElement(__WEBPACK_IMPORTED_MODULE_3__ListPosts__["a" /* default */], this.props)
+                React.createElement(__WEBPACK_IMPORTED_MODULE_3__ListTitles__["a" /* default */], this.props)
             );
         }
     }]);
@@ -37367,7 +37704,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 var SideBlock = function SideBlock(props) {
 
-    if (props.screenWidth > 480) return React.createElement(__WEBPACK_IMPORTED_MODULE_1__SideList__["a" /* default */], props);else return React.createElement(__WEBPACK_IMPORTED_MODULE_0__SideBar__["a" /* default */], _extends({ isOpen: props.isSideBarOpening }, props));
+    if (props.isPreviewsOpen) return null;else if (props.screenWidth > 480) return React.createElement(__WEBPACK_IMPORTED_MODULE_1__SideList__["a" /* default */], props);else return React.createElement(__WEBPACK_IMPORTED_MODULE_0__SideBar__["a" /* default */], _extends({ isOpen: props.isSideBarOpening }, props));
 };
 
 /* harmony default export */ __webpack_exports__["a"] = (SideBlock);
@@ -37380,7 +37717,7 @@ var SideBlock = function SideBlock(props) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListPosts__ = __webpack_require__("./src/components/ui/ListPosts.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListTitles__ = __webpack_require__("./src/components/ui/ListTitles.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Quotes__ = __webpack_require__("./src/components/ui/Quotes.js");
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -37398,9 +37735,21 @@ var SideList = function (_Component) {
     _inherits(SideList, _Component);
 
     function SideList() {
+        var _ref;
+
+        var _temp, _this, _ret;
+
         _classCallCheck(this, SideList);
 
-        return _possibleConstructorReturn(this, (SideList.__proto__ || Object.getPrototypeOf(SideList)).apply(this, arguments));
+        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+            args[_key] = arguments[_key];
+        }
+
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = SideList.__proto__ || Object.getPrototypeOf(SideList)).call.apply(_ref, [this].concat(args))), _this), _this.renderListTitles = function () {
+            if (_this.props.isPreviewsOpen) return null;
+
+            return React.createElement(__WEBPACK_IMPORTED_MODULE_1__ListTitles__["a" /* default */], _this.props);
+        }, _temp), _possibleConstructorReturn(_this, _ret);
     }
 
     _createClass(SideList, [{
@@ -37410,7 +37759,7 @@ var SideList = function (_Component) {
                 'div',
                 { className: 'SideList' },
                 React.createElement(__WEBPACK_IMPORTED_MODULE_2__Quotes__["a" /* default */], this.props),
-                React.createElement(__WEBPACK_IMPORTED_MODULE_1__ListPosts__["a" /* default */], this.props)
+                this.renderListTitles()
             );
         }
     }]);
@@ -37576,6 +37925,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return LINKS_UKR; });
 /* unused harmony export MAIN_TITLE */
 /* unused harmony export ANIMATIONS */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return LIST_PREVIEWS_SIZE; });
 var LINKS = ['names', 'festivals', 'paragraphs', 'live', 'all'];
 
 var LINKS_UKR = ['iмена', 'фестивалi', 'параграфи', 'live', 'все'];
@@ -37586,6 +37936,8 @@ var ANIMATIONS = {
     article: 'fadeIn',
     listPostsItem: 'fadeIn'
 };
+
+var LIST_PREVIEWS_SIZE = 3;
 
 /***/ }),
 

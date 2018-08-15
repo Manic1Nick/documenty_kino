@@ -17,7 +17,7 @@ export default class ListPreviews extends Component {
                     <ListPreviewsItem 
                         key={i} 
                         post={ post } 
-                        timeoutMs={ 200*i } 
+                        timeoutMs={ 100*i } 
                         { ...this.props } 
                     />
                 )
