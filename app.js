@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "d29a24d4172a953809a7"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "65b43da508a2a3d0438f"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -36183,13 +36183,23 @@ App.childContextTypes = {
 "use strict";
 var ArrowButton = function ArrowButton(_ref) {
     var name = _ref.name,
-        action = _ref.action;
+        action = _ref.action,
+        title = _ref.title,
+        hidden = _ref.hidden;
     return React.createElement(
         'div',
         { className: 'arrow-buttons' },
-        React.createElement('ion-icon', { name: 'ios-arrow-' + name, onClick: function onClick() {
-                return action();
-            } })
+        React.createElement(
+            'a',
+            { title: title },
+            React.createElement('ion-icon', {
+                name: 'ios-arrow-' + name,
+                onClick: function onClick() {
+                    return action();
+                },
+                style: { 'display': hidden ? 'none' : 'block' }
+            })
+        )
     );
 };
 
@@ -36527,23 +36537,37 @@ var Articles = function (_Component) {
         return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Articles.__proto__ || Object.getPrototypeOf(Articles)).call.apply(_ref, [this].concat(args))), _this), _this.shouldComponentUpdate = function (nextProps) {
             return nextProps.posts !== _this.props.posts || nextProps.activePostIndex !== _this.props.activePostIndex || nextProps.shifted !== _this.props.shifted;
         }, _this.handleOpenPrev = function () {
+            // const { posts, activePostIndex, openPost } = this.props,
+            //     changedId = activePostIndex > 0
+            //         ? posts[activePostIndex - 1].id
+            //         : posts[posts.length - 1].id
+
+            // openPost(changedId)
+
             var _this$props = _this.props,
                 posts = _this$props.posts,
                 activePostIndex = _this$props.activePostIndex,
                 openPost = _this$props.openPost,
-                changedId = activePostIndex > 0 ? posts[activePostIndex - 1].id : posts[posts.length - 1].id;
+                prevPost = posts[activePostIndex - 1];
 
 
-            openPost(changedId);
+            if (prevPost) openPost(prevPost.id);
         }, _this.handleOpenNext = function () {
+            // const { posts, activePostIndex, openPost } = this.props,            
+            //     changedId = activePostIndex < posts.length - 1
+            //         ? posts[activePostIndex + 1].id
+            //         : posts[0].id
+
+            // openPost(changedId)
+
             var _this$props2 = _this.props,
                 posts = _this$props2.posts,
                 activePostIndex = _this$props2.activePostIndex,
                 openPost = _this$props2.openPost,
-                changedId = activePostIndex < posts.length - 1 ? posts[activePostIndex + 1].id : posts[0].id;
+                nextPost = posts[activePostIndex + 1];
 
 
-            openPost(changedId);
+            if (nextPost) openPost(nextPost.id);
         }, _temp), _possibleConstructorReturn(_this, _ret);
     }
 
@@ -36555,7 +36579,9 @@ var Articles = function (_Component) {
                 activePostIndex = _props.activePostIndex,
                 shifted = _props.shifted,
                 openSideBar = _props.openSideBar,
-                activePost = posts[activePostIndex];
+                activePost = posts[activePostIndex],
+                prevPost = posts[activePostIndex - 1],
+                nextPost = posts[activePostIndex + 1];
 
 
             if (!activePost) return null;
@@ -36569,7 +36595,12 @@ var Articles = function (_Component) {
                     'div',
                     { className: 'blog-nav' },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__SocialShareButtons__["a" /* default */], { post: activePost }),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__ArrowButton__["a" /* default */], { name: 'back', action: this.handleOpenPrev })
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__ArrowButton__["a" /* default */], {
+                        name: 'back',
+                        action: this.handleOpenPrev,
+                        title: prevPost ? '\u041F\u043E\u043F\u0435\u0440\u0435\u0434\u043Di\u0439: ' + prevPost.title : null,
+                        hidden: !prevPost
+                    })
                 ),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__ArticleWrapper__["a" /* default */], {
                     post: activePost,
@@ -36581,7 +36612,12 @@ var Articles = function (_Component) {
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'div',
                     { className: 'blog-nav' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__ArrowButton__["a" /* default */], { name: 'forward', action: this.handleOpenNext })
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__ArrowButton__["a" /* default */], {
+                        name: 'forward',
+                        action: this.handleOpenNext,
+                        title: nextPost ? '\u041D\u0430\u0441\u0442\u0443\u043F\u043D\u0438\u0439: ' + nextPost.title : null,
+                        hidden: !nextPost
+                    })
                 )
             );
         }
@@ -36881,7 +36917,7 @@ var HeadBlock = function (_Component) {
                         { key: i },
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             __WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Link */],
-                            { to: '/' + tag },
+                            { to: '/' + tag, title: '\u0421\u043E\u0440\u0442\u0443\u0432\u0430\u0442\u0438 \u0437\u0430 \u0440\u043E\u0437\u0434i\u043B\u043E\u043C' },
                             __WEBPACK_IMPORTED_MODULE_3__constants__["b" /* LINKS_UKR */][i]
                         )
                     );
@@ -37394,12 +37430,17 @@ var Previews = function (_Component) {
             _this.setState({ pages: pages, activePageIndex: 0 });
         };
 
+        _this.updatePage = function (activePageIndex) {
+            _this.setState({ activePageIndex: activePageIndex });
+            window.scrollTo(0, 0);
+        };
+
         _this.handleOpenPrev = function () {
             var activePageIndex = _this.state.activePageIndex;
 
 
             if (activePageIndex > 0) activePageIndex--;
-            _this.setState({ activePageIndex: activePageIndex });
+            _this.updatePage(activePageIndex);
         };
 
         _this.handleOpenNext = function () {
@@ -37409,7 +37450,7 @@ var Previews = function (_Component) {
 
 
             if (activePageIndex < pages.length - 1) activePageIndex++;
-            _this.setState({ activePageIndex: activePageIndex });
+            _this.updatePage(activePageIndex);
         };
 
         _this._splitPosts = function (posts, postsOnPage) {
@@ -37433,7 +37474,9 @@ var Previews = function (_Component) {
         value: function render() {
             var _state = this.state,
                 pages = _state.pages,
-                activePageIndex = _state.activePageIndex;
+                activePageIndex = _state.activePageIndex,
+                prevPage = pages[activePageIndex - 1],
+                nextPage = pages[activePageIndex + 1];
 
 
             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -37442,7 +37485,12 @@ var Previews = function (_Component) {
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'div',
                     { className: 'blog-nav' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__ArrowButton__["a" /* default */], { name: 'back', action: this.handleOpenPrev })
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__ArrowButton__["a" /* default */], {
+                        name: 'back',
+                        action: this.handleOpenPrev,
+                        title: prevPage ? '\u041F\u043E\u043F\u0435\u0440\u0435\u0434\u043Di ' + prevPage.length : null,
+                        hidden: !prevPage
+                    })
                 ),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__ListPreviews__["a" /* default */], _extends({}, this.props, {
                     postsOnScreen: pages[activePageIndex],
@@ -37452,7 +37500,12 @@ var Previews = function (_Component) {
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'div',
                     { className: 'blog-nav' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__ArrowButton__["a" /* default */], { name: 'forward', action: this.handleOpenNext })
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__ArrowButton__["a" /* default */], {
+                        name: 'forward',
+                        action: this.handleOpenNext,
+                        title: nextPage ? '\u041D\u0430\u0441\u0442\u0443\u043F\u043Di ' + nextPage.length : null,
+                        hidden: !nextPage
+                    })
                 )
             );
         }
@@ -37937,7 +37990,7 @@ var ANIMATIONS = {
     listPostsItem: 'fadeIn'
 };
 
-var LIST_PREVIEWS_SIZE = 3;
+var LIST_PREVIEWS_SIZE = 5;
 
 /***/ }),
 
