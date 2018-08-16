@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "8186546791e0e7cbe2da"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "4e881eb1762f47871490"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -36466,7 +36466,6 @@ var ArticleContainer = function (_Component) {
 
         _this.componentDidUpdate = function (prevProps) {
             if (prevProps.post !== _this.props.post) {
-                window.scrollTo(0, 0);
                 _this.activeAnimate();
             }
         };
@@ -36712,6 +36711,8 @@ var Blog = function (_Component) {
             if (!id) id = _this.state.listPosts[0].id;
 
             history.push('/' + tag + '/' + id);
+
+            window.scrollTo(0, 0);
         };
 
         _this.handleOpenSideBar = function () {
