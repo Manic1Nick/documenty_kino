@@ -97,10 +97,14 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
             .Previews {
                 font-size: 80%;
             }
+            .Previews .ListPreviews .ListPreviewsItem .article-preview-text .article-preview-title .article-count {    
+                ion-icon {
+                    width: 12px;
+                    height: 12px;
+                }
+            }
 
-            .Articles {    
-                
-    
+            .Articles { 
                 .ArticleWrapper {
                     padding: 1em;    
 

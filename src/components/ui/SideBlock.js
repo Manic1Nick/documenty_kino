@@ -3,7 +3,7 @@ import SideList from './SideList'
 
 const SideBlock = (props) => {
 
-    if (props.isPreviewsOpen) 
+    if (props.isPreviewsOpen && props.screenWidth < 624) 
         return null
 
     else if (props.screenWidth > 480) 

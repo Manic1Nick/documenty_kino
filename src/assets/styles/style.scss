@@ -12,6 +12,11 @@
 }
 
 @font-face {
+    font-family: AkrobatSemiBold;
+    src: url('../fonts/Akrobat-SemiBold.otf') format('opentype');
+}
+
+@font-face {
     font-family: AkrobatRegular;
     src: url('../fonts/Akrobat-Regular.otf') format('opentype');
 }
@@ -28,6 +33,7 @@
 
 $fontTextMain: 'AkrobatRegular';
 $fontTextTitle: 'AkrobatBold';
+$fontTextTitlePreview: 'AkrobatSemiBold';
 $fontTextSecond: 'AkrobatExtraLight';
 $fontMenu: 'CaveatRegular';
 
@@ -213,6 +219,19 @@ a:visited {
     }
 }
 
+.article-count {
+    display: flex;
+
+    ion-icon {
+        width: 25px;
+        height: 25px;
+    }
+    span { 
+        font-size: 80%;
+        margin: 5px 0 0 5px;
+    }
+} 
+
 .App {
     width: 100vw;
     // height: 100vh;
@@ -395,20 +414,7 @@ a:visited {
 
                         .article-info {
                             display: flex;
-                            justify-content: space-between;
-
-                            .article-count {
-                                display: flex;
-
-                                ion-icon {
-                                    width: 25px;
-                                    height: 25px;
-                                }
-                                span { 
-                                    font-size: 80%;
-                                    margin: 5px 0 0 5px;
-                                }
-                            }                                
+                            justify-content: space-between;                               
                         }
 
                         .article-text {
@@ -459,10 +465,36 @@ a:visited {
                         }
                     }
     
-                    .article-preview-title {
+                    .article-preview-text {
                         float: right;
                         width: 70%;
                         padding: 0 2%;
+
+                        p {
+                            width: 100%;
+                            margin-bottom: 10px;
+                        }
+
+                        .article-preview-title {
+                            font-family: $fontTextTitlePreview;
+
+                            .article-count {
+                                display: inline-block;
+                                font-size: 90%;
+                                margin-left: 2%;                                
+
+                                ion-icon {
+                                    width: 15px;
+                                    height: 15px;                                    
+                                }
+                                span { 
+                                    margin: 2px 0 0 2px; 
+                                }
+                            }
+                        }
+                        .article-preview-cutted {
+                            font-size: 80%;
+                        }
                     }    
                 }
     

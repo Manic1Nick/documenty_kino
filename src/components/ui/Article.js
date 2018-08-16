@@ -3,6 +3,7 @@ import { PropTypes } from 'prop-types'
 import { Link } from 'react-router-dom'
 import { LINKS, LINKS_UKR } from '../../constants'
 import SocialShareButtons from './SocialShareButtons'
+import ArticleCount from './ArticleCount'
 
 export default class ArticleContent extends Component {
 
@@ -49,10 +50,8 @@ export default class ArticleContent extends Component {
                 <div className='article-content'>
 
                     <div className='article-info'>
-                        <div className='article-count'>
-                            <ion-icon name="ios-eye"></ion-icon>
-                            <span>23</span>
-                        </div>
+                        <ArticleCount />
+
                         <div className='article-date'>
                             { date }    
                         </div> 
