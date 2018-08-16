@@ -149,10 +149,16 @@ a:visited {
     height: 0;
 }
 
+/* --------------------------
+list titles */
+
 .ListTitles {
     margin-bottom: 2em;
     font-family: $fontTextSecond, arial;
 }
+
+/* --------------------------
+navigations in blog */
 
 .blog-nav {
     position: relative;
@@ -218,6 +224,9 @@ a:visited {
         cursor: pointer;
     }
 }
+
+/* --------------------------
+count views in blog */
 
 .article-count {
     display: flex;
@@ -312,11 +321,13 @@ a:visited {
                     }
         
                     a:hover:after,
-                    a:active:after {
+                    a:active:after { 
                         //border-bottom: 3px dotted $colorTextHover;
                         opacity: 1;
                     }
                 }
+
+                li.active a { font-weight: bold; }
             }
         }
     }

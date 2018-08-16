@@ -13,11 +13,15 @@ export default class HeadBlock extends Component {
         super()
         this.state = { 
             activeLinkIndex: 0,
-            isMenuOpen: false 
+            isMenuOpen: false
         }
 
         this.menuToggle = this.menuToggle.bind(this)
         this.menuClose = this.menuClose.bind(this)
+    }
+
+    handleChangeActiveLinkIndex = (activeLinkIndex) => {
+        this.setState({ activeLinkIndex })
     }
 
     menuToggle() {
@@ -45,13 +49,18 @@ export default class HeadBlock extends Component {
     }
 
     renderLinks() {
+        const { activeLinkIndex } = this.state
+
         return(
             <ul className="links">
             {
-                LINKS.map((tag, i) => 
-                    <li key={i}>
+                LINKS.map((tag, i) =>
+                    <li key={i} 
+                        className={ i === activeLinkIndex ? 'active' : '' }
+                        onClick={ () => this.handleChangeActiveLinkIndex(i) } 
+                    >
                         {/* <Link to={ this._getLinkByTag(tag) }> */}
-                        <Link to={ `/${tag}` } title='Сортувати за роздiлом' >
+                        <Link to={ `/${tag}` } title='Сортувати за роздiлом'>
                             {LINKS_UKR[i]}
                         </Link>
                     </li>
