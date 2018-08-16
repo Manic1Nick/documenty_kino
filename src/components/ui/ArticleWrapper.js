@@ -16,7 +16,6 @@ export default class ArticleContainer extends Component {
     
     componentDidUpdate = (prevProps) => {
         if (prevProps.post !== this.props.post) {
-            window.scrollTo(0, 0)
             this.activeAnimate()
         }
     }

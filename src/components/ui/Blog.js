@@ -38,6 +38,8 @@ export default class Blog extends Component {
         if (!id) id = this.state.listPosts[0].id
 
         history.push(`/${tag}/${id}`)
+        
+        window.scrollTo(0, 0)
     }
 
     handleOpenSideBar = () => {
