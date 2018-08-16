@@ -51,7 +51,7 @@ export default class HeadBlock extends Component {
                 LINKS.map((tag, i) => 
                     <li key={i}>
                         {/* <Link to={ this._getLinkByTag(tag) }> */}
-                        <Link to={ `/${tag}` }>
+                        <Link to={ `/${tag}` } title='Сортувати за роздiлом' >
                             {LINKS_UKR[i]}
                         </Link>
                     </li>

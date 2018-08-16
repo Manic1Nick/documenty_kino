@@ -1,6 +1,12 @@
-const ArrowButton = ({ name, action }) => 
+const ArrowButton = ({ name, action, title, hidden }) => 
     <div className='arrow-buttons'>
-        <ion-icon name={`ios-arrow-${name}`} onClick={ () => action() } ></ion-icon>
+        <a title={ title }>
+            <ion-icon 
+                name={`ios-arrow-${name}`} 
+                onClick={ () => action() } 
+                style={{ 'display': hidden ? 'none' : 'block' }}
+            ></ion-icon> 
+        </a>
     </div>
 
 export default ArrowButton

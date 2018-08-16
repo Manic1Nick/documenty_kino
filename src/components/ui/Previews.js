@@ -38,27 +38,39 @@ export default class Previews extends Component {
         this.setState({ pages, activePageIndex: 0 })
     }
 
+    updatePage = (activePageIndex) => {
+        this.setState({ activePageIndex })
+        window.scrollTo(0, 0)
+    }
+
     handleOpenPrev = () => {
         let { activePageIndex } = this.state
 
         if (activePageIndex > 0) activePageIndex--
-        this.setState({ activePageIndex })
+        this.updatePage(activePageIndex)
     }
 
     handleOpenNext = () => {
         let { pages, activePageIndex } = this.state
 
         if (activePageIndex < pages.length - 1) activePageIndex++
-        this.setState({ activePageIndex })
+        this.updatePage(activePageIndex)
     }
 
     render() {
-        const { pages, activePageIndex } = this.state
+        const { pages, activePageIndex } = this.state,
+            prevPage = pages[activePageIndex - 1],
+            nextPage = pages[activePageIndex + 1]
 
         return(
             <div className='Previews'>
                 <div className='blog-nav'>
-                    <ArrowButton name='back' action={ this.handleOpenPrev } />
+                    <ArrowButton 
+                        name='back' 
+                        action={ this.handleOpenPrev } 
+                        title={ prevPage ? `Попереднi ${prevPage.length}` : null }
+                        hidden={ !prevPage }
+                    />
                 </div>
 
                 <ListPreviews
@@ -69,7 +81,12 @@ export default class Previews extends Component {
                 />
                 
                 <div className='blog-nav'>
-                    <ArrowButton name='forward' action={ this.handleOpenNext } />
+                    <ArrowButton 
+                        name='forward' 
+                        action={ this.handleOpenNext } 
+                        title={ nextPage ? `Наступнi ${nextPage.length}` : null }
+                        hidden={ !nextPage } 
+                    />
                 </div>
             </div>
         )
