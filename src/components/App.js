@@ -40,8 +40,24 @@ export default class App extends Component {
 
     render() {
 
+        const styleBeta = {
+            'width': '100%',
+            'background': 'red',
+            'textAlign': 'center',
+            'color': 'white',
+            'fontWeight': 'bold',
+            'position': 'fixed',
+            'top': '0',
+            'z-index': '10'
+        }
+
+        // delete row 252 in style.css after delete beta
+        // change row 344 in queries.css after delete beta
+
         return(
             <div className="App">
+                <div style={ styleBeta }>Бета-версiя</div>
+
                 <HeadBlock />
                 <Switch>
                     <Route exact path="/" component={Blog} />

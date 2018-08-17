@@ -45,10 +45,11 @@ import {
     ViberIcon,
   } from 'react-share'
 
-const SocialShareButtons = ({ post: { id, tag, title } }) => {
+const SocialShareButtons = ({ post: { id, tag, title, image } }) => {
 
-    const postLink = `https://manic1nick.github.io/documenty_kino/#/${tag}/${id}`,
-        postTitle = `Документи - ${title}`
+    const siteLink = 'www.docs.co.ua',
+        postLink = `${siteLink}/#/${tag}/${id}`,
+        shareInfo = `${title} - Документи | ${siteLink}`
 
     return(
         <div className='article-social-shares'>
@@ -57,19 +58,31 @@ const SocialShareButtons = ({ post: { id, tag, title } }) => {
                 <ion-icon name="share"></ion-icon>
             </div>
 
-            <FacebookShareButton className='social-icon' quote={ postTitle } url={ postLink }>
+            <FacebookShareButton 
+                className='social-icon' 
+                quote={ shareInfo } 
+                url={ postLink }
+            >
                 <a title='Поширити у Facebook'>
                     <FacebookIcon size={32} round={true} />
                 </a>
             </FacebookShareButton>
 
-            <TwitterShareButton className='social-icon' title={ postTitle } url={ postLink }>
+            <TwitterShareButton 
+                className='social-icon' 
+                title={ shareInfo } 
+                url={ postLink }
+            >
                 <a title='Поширити у Twitter'>
                     <TwitterIcon size={32} round={true} />
                 </a>
             </TwitterShareButton>
 
-            <TelegramShareButton className='social-icon' title={ postTitle } url={ postLink }>
+            <TelegramShareButton 
+                className='social-icon' 
+                title={ shareInfo } 
+                url={ postLink }
+            >
                 <a title='Поширити у Telegram'>
                     <TelegramIcon size={32} round={true} />
                 </a>

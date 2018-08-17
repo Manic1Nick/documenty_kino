@@ -47,13 +47,9 @@ export default class ListPreviewsItem extends Component {
             { id, title, tag, image, text, date } = post,
             { animateIn, hidden } = this.state
 
-        const textCutted = this._cutText(text)
-
-        let styleItem = { 'display': hidden ? 'none' : 'block' },
-            classListItem = classNames(
-                'ListPreviewsItem',
-                { fadeIn: animateIn }
-            )
+        let textCutted = text ? this._cutText(text) : '',
+            styleItem = { 'display': hidden ? 'none' : 'block' },
+            classListItem = classNames('ListPreviewsItem', { fadeIn: animateIn })
 
         return(
             <div className={ classListItem } 
@@ -76,7 +72,7 @@ export default class ListPreviewsItem extends Component {
 
     _cutText = (text) => {
         let cuttedText = text.substring(0, 200),
-            lastSpaceIndex = cuttedText.lastIndexOf(" ")
+            lastSpaceIndex = cuttedText.lastIndexOf(" ") || 0
 
         return cuttedText.substring(0, lastSpaceIndex) + " ..."
     }

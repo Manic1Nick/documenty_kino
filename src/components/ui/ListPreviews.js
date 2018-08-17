@@ -10,6 +10,8 @@ export default class ListPreviews extends Component {
     render() {
         const { postsOnScreen } = this.props
 
+        if (!postsOnScreen) return null
+
         return(
             <div className='ListPreviews'>
             {
