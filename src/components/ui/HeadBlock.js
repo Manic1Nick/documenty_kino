@@ -11,17 +11,10 @@ export default class HeadBlock extends Component {
 
     constructor() {
         super()
-        this.state = { 
-            activeLinkIndex: 0,
-            isMenuOpen: false
-        }
+        this.state = { isMenuOpen: false }
 
         this.menuToggle = this.menuToggle.bind(this)
         this.menuClose = this.menuClose.bind(this)
-    }
-
-    handleChangeActiveLinkIndex = (activeLinkIndex) => {
-        this.setState({ activeLinkIndex })
     }
 
     menuToggle() {
@@ -49,15 +42,15 @@ export default class HeadBlock extends Component {
     }
 
     renderLinks() {
-        const { activeLinkIndex } = this.state
+        const { activeTag, changeActiveTag } = this.context
 
         return(
             <ul className="links">
             {
                 LINKS.map((tag, i) =>
                     <li key={i} 
-                        className={ i === activeLinkIndex ? 'active' : '' }
-                        onClick={ () => this.handleChangeActiveLinkIndex(i) } 
+                        className={ tag === activeTag ? 'active' : '' }
+                        onClick={ () => changeActiveTag(tag) } 
                     >
                         {/* <Link to={ this._getLinkByTag(tag) }> */}
                         <Link to={ `/${tag}` } title='Сортувати за роздiлом'>
@@ -114,5 +107,7 @@ export default class HeadBlock extends Component {
 
 HeadBlock.contextTypes = {
     posts: PropTypes.array,
-    screenWidth: PropTypes.number
+    screenWidth: PropTypes.number,
+    activeTag: PropTypes.string,
+    changeActiveTag: PropTypes.func
 }

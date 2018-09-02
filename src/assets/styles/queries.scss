@@ -25,6 +25,8 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
 
     .App {
         header {
+            padding-left: 8%;
+
             .main-nav {    
                 ul {        
                     li { 
@@ -66,6 +68,8 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
 
     .App {
         header {
+            padding-left: 5%;
+
             .site-title {
                 -webkit-box-flex: 1;
                     -ms-flex: 1;
@@ -150,6 +154,8 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
 @media only screen and (max-width: 623px) {
     .App {
         header {
+            padding-left: 2%;
+
             .main-nav {    
                 ul {
                     li { 
@@ -341,7 +347,7 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
 
         .Blog {
             overflow-x: hidden;
-            margin-top: 80px; //55px without text "beta-version"
+            margin-top: 100px; //55px without text "beta-version"
 
             .blog-nav { display: none }
 

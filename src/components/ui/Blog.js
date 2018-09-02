@@ -20,13 +20,15 @@ export default class Blog extends Component {
     
     componentDidMount = () => {
         this.handleOpenPost()
-    }
+    }    
 
     componentWillReceiveProps = (nextProps) => { 
-        const { tag } = nextProps.match.params
+        const { tag } = nextProps.match.params,
+            { changeActiveTag } = this.context
 
         if (tag !== this.props.match.params.tag) {
             this._updatePosts(tag)
+            changeActiveTag(tag)
         } 
     }
 
@@ -88,10 +90,11 @@ export default class Blog extends Component {
     }
 
     _updatePosts = (tag) => {
+        const { posts } = this.context
 
         let listPosts = (tag && tag !== 'all')
-            ? this.context.posts.filter(post => post.tag === tag) 
-            : this.context.posts
+            ? posts.filter(post => post.tag === tag) 
+            : posts
 
         this.setState({ listPosts })
     }
@@ -99,5 +102,6 @@ export default class Blog extends Component {
 
 Blog.contextTypes = {
     posts: PropTypes.array,
-    screenWidth: PropTypes.number
+    screenWidth: PropTypes.number,
+    changeActiveTag: PropTypes.func
 }

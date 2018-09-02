@@ -14,7 +14,11 @@ export default class App extends Component {
 
     constructor() {
         super()
-        this.state = { width: 0, height: 0 }
+        this.state = { 
+            width: 0, 
+            height: 0,
+            activeTag: ''
+        }
         this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
     }
 
@@ -28,13 +32,22 @@ export default class App extends Component {
     }
       
     updateWindowDimensions() {
-        this.setState({ width: window.innerWidth, height: window.innerHeight })
+        this.setState({ 
+            width: window.innerWidth, 
+            height: window.innerHeight 
+        })
+    }
+
+    onChangeActiveTag = (activeTag) => {
+        this.setState({ activeTag })
     }
     
     getChildContext() {
         return {
            posts: this.props.state.articles,
-           screenWidth: this.state.width
+           screenWidth: this.state.width,
+           activeTag: this.state.activeTag,
+           changeActiveTag: this.onChangeActiveTag
         }
     }
 
@@ -48,7 +61,7 @@ export default class App extends Component {
             'fontWeight': 'bold',
             'position': 'fixed',
             'top': '0',
-            'z-index': '10'
+            'zIndex': '10'
         }
 
         // delete row 252 in style.css after delete beta
@@ -75,5 +88,7 @@ const ScrollUp = () => <ScrollUpButton style={{ width: 40, height: 40, bottom: 5
 
 App.childContextTypes = {
     posts: PropTypes.array,
-    screenWidth: PropTypes.number
+    screenWidth: PropTypes.number,
+    activeTag: PropTypes.string,
+    changeActiveTag: PropTypes.func
 }
