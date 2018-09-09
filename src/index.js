@@ -26,12 +26,14 @@ import { HashRouter as Router} from 'react-router-dom'
 // const saveState = () => 
 //     localStorage["redux-store-posts"] = JSON.stringify(store.getState())
 
+
+let link = "https://public-api.wordpress.com/rest/v1/sites/docs772827771.wordpress.com/posts"
+
 window.React = React
 
 render(
 	<Router>
-		{/* <App state={ state } /> */}
-		<App />
+		<App link={ link } />
 	</Router>,
   	document.getElementById('react-container')
 )

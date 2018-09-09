@@ -1,6 +1,7 @@
 import { Component } from 'react'
 import classNames from 'classnames'
 import ArticleCount from './ArticleCount'
+import ReactHtmlParser from 'react-html-parser'
 
 export default class ListPreviewsItem extends Component {
 
@@ -47,8 +48,7 @@ export default class ListPreviewsItem extends Component {
             { id, title, tag, image, text, date } = post,
             { animateIn, hidden } = this.state
 
-        let textCutted = text ? this._cutText(text) : '',
-            styleItem = { 'display': hidden ? 'none' : 'block' },
+        let styleItem = { 'display': hidden ? 'none' : 'block' },
             classListItem = classNames('ListPreviewsItem', { fadeIn: animateIn })
 
         return(
@@ -64,16 +64,18 @@ export default class ListPreviewsItem extends Component {
                         <span>{ title }</span>
                         <ArticleCount />
                     </p>
-                    <p className='article-preview-cutted'>{ textCutted }</p>
+                    <p className='article-preview-cutted'>
+                        { ReactHtmlParser(text)[0] }
+                    </p>
                 </div>                    
             </div>
         )
     }
 
-    _cutText = (text) => {
-        let cuttedText = text.substring(0, 200),
-            lastSpaceIndex = cuttedText.lastIndexOf(" ") || 0
+    // _cutText = (text) => {
+    //     let cuttedText = text.substring(0, 200),
+    //         lastSpaceIndex = cuttedText.lastIndexOf(" ") || 0
 
-        return cuttedText.substring(0, lastSpaceIndex) + " ..."
-    }
+    //     return cuttedText.substring(0, lastSpaceIndex) + " ..."
+    // }
 }

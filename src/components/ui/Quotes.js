@@ -2,6 +2,7 @@ import { Component } from 'react'
 import { PropTypes } from 'prop-types'
 import { Link } from 'react-router-dom'
 import classNames from 'classnames'
+import ReactHtmlParser from 'react-html-parser'
 
 export default class Quotes extends Component {
     
@@ -52,7 +53,8 @@ export default class Quotes extends Component {
  
     render() {
         const { postsWithQuotes, activePostIndex, animate } = this.state,
-            post = postsWithQuotes[activePostIndex]
+            post = postsWithQuotes[activePostIndex],
+            { id, tag, title, quote } = post
 
         if (!post) return null
 
@@ -62,10 +64,12 @@ export default class Quotes extends Component {
             <div className='Quotes'>
                 <ion-icon name="quote"></ion-icon>
 
-                <div className={ classQuoteText }>{ post.quote }</div> 
+                <div className={ classQuoteText }>
+                    { ReactHtmlParser(quote) }
+                </div> 
 
                 <button className='quote-link'>
-                    <Link to={`/${post.tag}/${post.id}`} title={ post.title }>
+                    <Link to={`/${tag}/${id}`} title={ title }>
                         Читати статтю                   
                     </Link>
                 </button>

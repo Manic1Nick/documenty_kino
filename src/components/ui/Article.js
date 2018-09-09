@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import { LINKS, LINKS_UKR } from '../../constants'
 import SocialShareButtons from './SocialShareButtons'
 import ArticleCount from './ArticleCount'
+import ReactHtmlParser from 'react-html-parser'
 
 export default class ArticleContent extends Component {
 
@@ -17,15 +18,15 @@ export default class ArticleContent extends Component {
         }
     }
 
-    render() {
+    render() {        
         const { post } = this.props,
             { id, title, tag, image, text, date } = post
 
         const group = LINKS_UKR[LINKS.indexOf(tag)]
 
-        const postText = text
-            .split('\n')
-            .map((part, i) => <p key={i} className='text-paragraph'>{part}</p>)
+        // const postText = text
+        //     .split('\n')
+        //     .map((part, i) => <p key={i} className='text-paragraph'>{part}</p>)
 
         return(
             <div className='Article'>
@@ -60,7 +61,7 @@ export default class ArticleContent extends Component {
                     <SocialShareButtons post={ post } />
                     
                     <div className='article-text'>
-                        { postText }
+                        { ReactHtmlParser(text) }
                     </div>        
 
                 </div>
