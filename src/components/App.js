@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { PropTypes } from 'prop-types'
 import { Route, Switch } from 'react-router-dom'
 import ScrollUpButton from 'react-scroll-up-button'
+import axios from 'axios'
 
 import HeadBlock from './ui/HeadBlock'
 import Blog from './ui/Blog'
@@ -15,6 +16,7 @@ export default class App extends Component {
     constructor() {
         super()
         this.state = { 
+            posts: [],
             width: 0, 
             height: 0,
             activeTag: ''
@@ -23,6 +25,16 @@ export default class App extends Component {
     }
 
     componentDidMount() {
+        axios
+      .get(
+        "http://public-api.wordpress.com/rest/v1/sites/docs772827771.wordpress.com/posts"
+      )
+      .then(res => {
+        this.setState({ posts: res.data.posts });
+        console.log(this.state.posts);
+      })
+      .catch(error => console.log(error));
+
         this.updateWindowDimensions()
         window.addEventListener('resize', this.updateWindowDimensions)
     }
@@ -44,7 +56,8 @@ export default class App extends Component {
     
     getChildContext() {
         return {
-           posts: this.props.state.articles,
+        //    posts: this.props.state.articles,
+            posts: this.state.posts,
            screenWidth: this.state.width,
            activeTag: this.state.activeTag,
            changeActiveTag: this.onChangeActiveTag
@@ -72,11 +85,11 @@ export default class App extends Component {
                 <div style={ styleBeta }>Бета-версiя</div>
 
                 <HeadBlock />
-                <Switch>
+                {/* <Switch>
                     <Route exact path="/" component={Blog} />
                     <Route exact path='/:tag' component={Blog} />
                     <Route exact path='/:tag/:id' component={Blog} /> 
-                </Switch>
+                </Switch> */}
                 <FooterBlock />
                 <ScrollUp />
             </div>    

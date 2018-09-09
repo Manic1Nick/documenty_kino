@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from 'react-dom'
-import sampleData from './initialState_test'
+// import sampleData from './initialState'
 
 //import fetch from 'isomorphic-fetch'
 //import sampleData from 'https://sendeyo.com/en/3957c0bb3a'
@@ -19,9 +19,9 @@ import { HashRouter as Router} from 'react-router-dom'
 
 // 	console.log(sampleData)
 
-const state = (localStorage["redux-store-documenty"]) ?
-    JSON.parse(localStorage["redux-store-documenty"]) :
-    sampleData
+// const state = (localStorage["redux-store-documenty"]) ?
+//     JSON.parse(localStorage["redux-store-documenty"]) :
+//     sampleData
 
 // const saveState = () => 
 //     localStorage["redux-store-posts"] = JSON.stringify(store.getState())
@@ -30,7 +30,8 @@ window.React = React
 
 render(
 	<Router>
-		<App state={ state } />
+		{/* <App state={ state } /> */}
+		<App />
 	</Router>,
   	document.getElementById('react-container')
 )
