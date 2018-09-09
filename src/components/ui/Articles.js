@@ -59,7 +59,7 @@ export default class Articles extends Component {
                     <ArrowButton 
                         name='back' 
                         action={ this.handleOpenPrev } 
-                        title={ prevPost ? `Попереднiй: ${prevPost.title}` : null }
+                        title={ prevPost ? `Назад: ${prevPost.title}` : null }
                         hidden={ !prevPost }
                     />
                 </div>
@@ -76,7 +76,7 @@ export default class Articles extends Component {
                     <ArrowButton 
                         name='forward' 
                         action={ this.handleOpenNext } 
-                        title={ nextPost ? `Наступний: ${nextPost.title}` : null }
+                        title={ nextPost ? `Вперед: ${nextPost.title}` : null }
                         hidden={ !nextPost }
                     />
                 </div>

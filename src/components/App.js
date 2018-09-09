@@ -3,7 +3,6 @@ import { PropTypes } from 'prop-types'
 import { Route, Switch } from 'react-router-dom'
 import ScrollUpButton from 'react-scroll-up-button'
 import axios from 'axios'
-import ReactHtmlParser from 'react-html-parser'
 
 import HeadBlock from './ui/HeadBlock'
 import Blog from './ui/Blog'
@@ -93,23 +92,23 @@ export default class App extends Component {
     _loadData = () => {
         axios
         .get(this.props.link)
-        .then(res => { 
-            let data = res.data.posts,
-                post = {},
-                posts = []
-
-            console.log(data)
-
-            data.forEach(dataPost => {
-                post = this._parsePost(dataPost)
-                posts.push(post)
-            })
-
-            console.log(posts)
-
+        .then(res => {
+            let posts = this._parsePosts(res.data.posts)
             this.setState({ posts }) 
         })
         .catch(error => alert(error))
+    }
+
+    _parsePosts = (data) => {
+        let posts = []
+
+        let i
+        for (i = data.length - 1; i >= 0; i--) { 
+            let post = this._parsePost(data[i])
+            posts.push(post)
+        }
+
+        return posts
     }
 
     _parsePost = (data) => {

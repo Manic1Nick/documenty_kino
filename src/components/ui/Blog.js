@@ -37,7 +37,7 @@ export default class Blog extends Component {
 
         if (!tag) tag = match.params.tag || 'all'
         //if (!id) id = listPosts[listPosts.length - 1].id
-        if (!id) id = this.state.listPosts[0].id
+        if (!id) id = this.state.listPosts[this.state.listPosts.length - 1].id
 
         history.push(`/${tag}/${id}`)
         
