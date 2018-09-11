@@ -14,13 +14,6 @@ export default class Articles extends Component {
     }
 
     handleOpenPrev = () => {
-        // const { posts, activePostIndex, openPost } = this.props,
-        //     changedId = activePostIndex > 0
-        //         ? posts[activePostIndex - 1].id
-        //         : posts[posts.length - 1].id
-
-        // openPost(changedId)
-
         const { posts, activePostIndex, openPost } = this.props,
             prevPost = posts[activePostIndex - 1]
         
@@ -28,13 +21,6 @@ export default class Articles extends Component {
     }
 
     handleOpenNext = () => {
-        // const { posts, activePostIndex, openPost } = this.props,            
-        //     changedId = activePostIndex < posts.length - 1
-        //         ? posts[activePostIndex + 1].id
-        //         : posts[0].id
-
-        // openPost(changedId)
-
         const { posts, activePostIndex, openPost } = this.props,
             nextPost = posts[activePostIndex + 1]
         

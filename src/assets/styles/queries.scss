@@ -3,15 +3,102 @@ $colorBackgroundMenuMobile: rgb(246, 248, 255);
 $colorTextHover: #132366ce;
 $colorArticleShifted: rgba(0, 0, 0, 0.3);
 
-/* Big tablets to 1200px (widths smaller than 1140px row) */
-@media only screen and (max-width: 1200px) {
+/* Big screens to 1920px (widths smaller than 1920px row) */
+@media only screen and (max-width: 1920px) {
+
+    .blog-nav {    
+        .arrow-buttons ion-icon {
+                top: 60%;
+            }
+        }
 
     .App {
+        header {
+            padding-left: 12%;
+            padding-right: 12%;
+        }
+
         .Blog {
+            width: 80%;
+        }
+    }
+}
+
+/* Big screens to 1440px (widths smaller than 1440px row) */
+@media only screen and (max-width: 1440px) {
+
+    .social-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .blog-nav {
+        width: 40px;
+
+        .article-social-shares {
+            padding-top: 20px;
+    
+            .social-icon-common ion-icon,
+            .social-icon {
+                width: 30px;
+                height: 30px;
+                opacity: 0.5;
+            }
+    
+            .social-icon {
+                margin-top: 5px;
+            }
+    
+            .arrow-buttons ion-icon {
+                width: 40px;
+                top: 60%;
+            }
+        }
+    }
+
+    .App {
+        header {
+            padding-right: 2%;
+            font-size: 100%;
+        }
+
+        .Blog {
+            width: 80%;
+            font-size: 100%;
+
             .SideList {
-                .Quotes {    
+                .Quotes {
+                    min-height: 300px;
+
                     .quote-text {
                         font-size: 100%;
+                    }
+                }
+            }
+
+            .Previews {
+                .ListPreviews {
+                    .ListPreviewsItem {
+                        .article-preview-image {
+                            max-width: 200px;
+                        }
+                    }
+                }
+            }
+        }
+
+        footer {
+            height: 40px;
+
+            .copyright-text {
+                font-size: 80%;
+            }
+
+            .social-icons {
+                .social-icon {
+                    a:link,
+                    a:visited {
+                        font-size: 130%;
                     }
                 }
             }
@@ -19,6 +106,7 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
     }
 
 }
+
 
 /* Small tablets to big tablets from 768px to 1023px */
 @media only screen and (max-width: 1023px) {

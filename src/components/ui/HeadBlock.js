@@ -52,7 +52,6 @@ export default class HeadBlock extends Component {
                         className={ tag === activeTag ? 'active' : '' }
                         onClick={ () => changeActiveTag(tag) } 
                     >
-                        {/* <Link to={ this._getLinkByTag(tag) }> */}
                         <Link to={ `/${tag}` } title='Сортувати за роздiлом'>
                             {LINKS_UKR[i]}
                         </Link>
@@ -69,7 +68,6 @@ export default class HeadBlock extends Component {
         return(
             <header>
                 <div className='site-title'>
-                    {/* <Link to={ this._getLinkByTag('all') }> */}
                     <Link to={ `/all` }>
                         {
                             screenWidth > 624
@@ -93,16 +91,6 @@ export default class HeadBlock extends Component {
             </header>
         )
     }
-
-    // _getLinkByTag = (tag) => {
-    //     const { posts } = this.context
-
-    //     let post = tag === 'all'
-    //         ? posts[0]
-    //         : posts.find(post => post.tag === tag)
-
-    //     return `/${tag}/${post ? post.id : 0}`
-    // }
 }
 
 HeadBlock.contextTypes = {

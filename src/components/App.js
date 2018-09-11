@@ -61,7 +61,7 @@ export default class App extends Component {
 
         const styleBeta = {
             'width': '100%',
-            'background': 'red',
+            'background': 'grey',
             'textAlign': 'center',
             'color': 'white',
             'fontWeight': 'bold',
@@ -96,7 +96,7 @@ export default class App extends Component {
             let posts = this._parsePosts(res.data.posts)
             this.setState({ posts }) 
         })
-        .catch(error => alert(error))
+        .catch(error => alert('Can\'t load data:', error))
     }
 
     _parsePosts = (data) => {

@@ -33,11 +33,12 @@ export default class Blog extends Component {
     }
 
     handleOpenPost = (id, tag) => {
-        const { match, history } = this.props
+        const { match, history } = this.props,
+            { listPosts } = this.state
 
         if (!tag) tag = match.params.tag || 'all'
         //if (!id) id = listPosts[listPosts.length - 1].id
-        if (!id) id = this.state.listPosts[this.state.listPosts.length - 1].id
+        if (!id) id = listPosts[listPosts.length - 1].id
 
         history.push(`/${tag}/${id}`)
         
