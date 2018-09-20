@@ -1,6 +1,6 @@
 import { Component } from 'react'
 import classNames from 'classnames'
-import ArticleCount from './ArticleCount'
+import ViewCount from './ViewCount'
 import ReactHtmlParser from 'react-html-parser'
 
 export default class ListPreviewsItem extends Component {
@@ -17,12 +17,12 @@ export default class ListPreviewsItem extends Component {
 		this.activeAnimateIn()
     }
     
-    componentDidUpdate = (prevProps) => {
-        if (prevProps.post !== this.props.post) {
-            this.setState({ hidden: true })
-            this.activeAnimateIn()
-        }
-    }
+    // componentDidUpdate = (prevProps) => {
+    //     if (prevProps.post !== this.props.post) {
+    //         this.setState({ hidden: true })
+    //         this.activeAnimateIn()
+    //     }
+    // }
 
     activeAnimateIn() {
         const { timeoutMs } = this.props
@@ -34,9 +34,9 @@ export default class ListPreviewsItem extends Component {
             })
         }, timeoutMs)
         
-		setTimeout(() => {
-			this.setState({ animateIn: false })
-        }, timeoutMs + 1000)
+		// setTimeout(() => {
+		// 	this.setState({ animateIn: false })
+        // }, timeoutMs + 1000)
     }
 
     handleSelectItem = (id) => {        
@@ -62,11 +62,11 @@ export default class ListPreviewsItem extends Component {
                 <div className='article-preview-text'>
                     <p className='article-preview-title'>
                         <span>{ title }</span>
-                        <ArticleCount />
+                        <ViewCount />
                     </p>
-                    <p className='article-preview-cutted'>
+                    <div className='article-preview-cutted'>
                         { ReactHtmlParser(text)[0] }
-                    </p>
+                    </div>
                 </div>                    
             </div>
         )

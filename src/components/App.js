@@ -57,7 +57,7 @@ export default class App extends Component {
 
     render() {
 
-        if (this.state.posts.length === 0) return null
+        if (!this.state.posts.length) return null
 
         const styleBeta = {
             'width': '100%',

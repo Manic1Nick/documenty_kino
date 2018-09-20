@@ -3,10 +3,10 @@ import { PropTypes } from 'prop-types'
 import { Link } from 'react-router-dom'
 import { LINKS, LINKS_UKR } from '../../constants'
 import SocialShareButtons from './SocialShareButtons'
-import ArticleCount from './ArticleCount'
+import ViewCount from './ViewCount'
 import ReactHtmlParser from 'react-html-parser'
 
-export default class ArticleContent extends Component {
+export default class Article extends Component {
 
     shouldComponentUpdate = (nextProps) => {
         return nextProps.post.id !== this.props.post.id
@@ -51,7 +51,7 @@ export default class ArticleContent extends Component {
                 <div className='article-content'>
 
                     <div className='article-info'>
-                        <ArticleCount />
+                        <ViewCount />
 
                         <div className='article-date'>
                             { date }    
@@ -71,6 +71,6 @@ export default class ArticleContent extends Component {
     }
 }
 
-ArticleContent.contextTypes = {
+Article.contextTypes = {
     screenWidth: PropTypes.number
 }

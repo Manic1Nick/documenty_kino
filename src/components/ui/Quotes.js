@@ -67,12 +67,16 @@ export default class Quotes extends Component {
                 <div className={ classQuoteText }>
                     { ReactHtmlParser(quote) }
                 </div> 
+                
+                <Link className='quote-link' to={`/${tag}/${id}`} title={ title }>
+                    <ion-icon md="md-open"></ion-icon>
+                </Link>
 
-                <button className='quote-link'>
-                    <Link to={`/${tag}/${id}`} title={ title }>
-                        Читати статтю                   
+                {/* <button className='quote-link'>
+                    <Link className='quote-link' to={`/${tag}/${id}`} title={ title }>
+                        Читати статтю            
                     </Link>
-                </button>
+                </button> */}
             </div>
         )
     }

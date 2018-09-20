@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import classNames from 'classnames'
 
-import ArticleWrapper from './ArticleWrapper'
+import ArticleContainer from './ArticleContainer'
 import SocialShareButtons from './SocialShareButtons'
 import ArrowButton from './ArrowButton'
 
@@ -50,7 +50,7 @@ export default class Articles extends Component {
                     />
                 </div>
 
-                <ArticleWrapper
+                <ArticleContainer
                     post={ activePost } 
                     openSideBar={ openSideBar }
                     shifted={ shifted }

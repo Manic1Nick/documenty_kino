@@ -47,12 +47,12 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
     
             .social-icon {
                 margin-top: 5px;
-            }
-    
-            .arrow-buttons ion-icon {
-                width: 40px;
-                top: 60%;
-            }
+            }    
+        }
+
+        .arrow-buttons ion-icon {
+            width: 40px;
+            top: 60%;
         }
     }
 
@@ -189,7 +189,7 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
             .Previews {
                 font-size: 80%;
             }
-            .Previews .ListPreviews .ListPreviewsItem .article-preview-text .article-preview-title .article-count {    
+            .Previews .ListPreviews .ListPreviewsItem .article-preview-text .article-preview-title .view-count {    
                 ion-icon {
                     width: 12px;
                     height: 12px;
@@ -197,16 +197,16 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
             }
 
             .Articles { 
-                .ArticleWrapper {
+                .ArticleContainer {
                     padding: 1em;    
 
                     .Article {
                         .article-slide {
-                            .article-title { font-size: 80%; }
+                            .article-title-name { font-size: 60%; }
                         }
                         .article-content {
-                            .article-text { font-size: 80%; }
-                            .article-date { font-size: 80%; }
+                            .article-text { font-size: 60%; }
+                            .article-date { font-size: 60%; }
                         }                
                     }
                 }        
@@ -218,22 +218,22 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
                 .Quotes {
                     min-height: 240px;
 
-                    .quote-link {
-                        font-size: 60%;
+                    .quote-text {
+                        font-size: 80%;
                     }
                 }
     
                 .ListTitles {
                     .ListTitlesItem {
-                        font-size: 70%;
+                        font-size: 50%;
                     }
                 }
             }
         }
 
         footer {
-            height: 40px;
-            // font-size: 60%;
+            height: 35px;
+            font-size: 70%;
         }
     }
 }
@@ -268,7 +268,7 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
 
             .Articles {
     
-                .ArticleWrapper { 
+                .ArticleContainer { 
                     padding: 0.2em;
 
                     .Article {
@@ -288,7 +288,7 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
                             .article-info {
                                 font-size: 80%;
     
-                                .article-count {
+                                .view-count {
                                     display: flex;
     
                                     ion-icon {
@@ -445,7 +445,7 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
                 -webkit-transition: all 0.3s ease-out;
                 transition: all 0.3s ease-out;
     
-                .ArticleWrapper {
+                .ArticleContainer {
                     padding: 0.5em;    
                     min-height: 100vh;
                 } 
