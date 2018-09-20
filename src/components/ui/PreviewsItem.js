@@ -3,7 +3,7 @@ import classNames from 'classnames'
 import ViewCount from './ViewCount'
 import ReactHtmlParser from 'react-html-parser'
 
-export default class ListPreviewsItem extends Component {
+export default class PreviewsItem extends Component {
 
     constructor() {
         super()
@@ -49,7 +49,7 @@ export default class ListPreviewsItem extends Component {
             { animateIn, hidden } = this.state
 
         let styleItem = { 'display': hidden ? 'none' : 'block' },
-            classListItem = classNames('ListPreviewsItem', { fadeIn: animateIn })
+            classListItem = classNames('PreviewsItem', { fadeIn: animateIn })
 
         return(
             <div className={ classListItem } 

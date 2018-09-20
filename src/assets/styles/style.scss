@@ -478,21 +478,22 @@ count views in blog */
         .Previews {
             width: 100%;
 
-            .ListPreviews {
-                display: flex;
-                flex-direction: column;
-                flex: 1;
+            .PreviewsGrid {
+                // display: flex;
+                // flex-direction: column;
+                // flex: 1;
     
-                .ListPreviewsItem {
-                    position: relative;
+                .PreviewsItem {
+                    // position: relative;
                     margin: 0.5em;
                     padding: 0.5em;
-                    width: 100%;
+                    // width: 100%;
+                    width: 200px;
                     cursor: pointer;
     
                     .article-preview-image {
-                        float: left;
-                        width: 30%;
+                        // float: left;
+                        // width: 30%;
                         
                         img { 
                             width: 100%;
@@ -502,9 +503,9 @@ count views in blog */
                     }
     
                     .article-preview-text {
-                        float: right;
-                        width: 70%;
-                        padding: 0 2%;
+                        // float: right;
+                        // width: 70%;
+                        // padding: 0 2%;
 
                         p {
                             width: 100%;
@@ -534,7 +535,7 @@ count views in blog */
                     }    
                 }
     
-                .ListPreviewsItem:hover {
+                .PreviewsItem:hover {
                     background: $colorBackgroundLight;
                 }
             }

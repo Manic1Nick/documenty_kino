@@ -1,7 +1,7 @@
 import { Component } from 'react'
-import ListPreviewsItem from './ListPreviewsItem'
+import PreviewsItem from './PreviewsItem'
 
-export default class ListPreviews extends Component {
+export default class PreviewsList extends Component {
 
     shouldComponentUpdate = (nextProps) => {
         return nextProps.postsOnScreen !== this.props.postsOnScreen
@@ -16,7 +16,7 @@ export default class ListPreviews extends Component {
             <div className='ListPreviews'>
             {
                 postsOnScreen.map((post, i) =>
-                    <ListPreviewsItem 
+                    <PreviewsItem 
                         key={i} 
                         post={ post } 
                         timeoutMs={ 100*i } 
