@@ -8,12 +8,26 @@ import ReactHtmlParser from 'react-html-parser'
 
 export default class Article extends Component {
 
+    constructor(props) {
+        super()
+        this.state = { 
+            screenWidth: props.screenWidth
+        }
+    }
+
+    componentWillReceiveProps = (nextProps) => {
+        if (nextProps.screenWidth !== this.props.screenWidth) {
+            this.setState({ screenWidth: nextProps.screenWidth })
+        }
+    }
+
     shouldComponentUpdate = (nextProps) => {
         return nextProps.post.id !== this.props.post.id
+            || nextProps.screenWidth !== this.props.screenWidth
     }
 
     handleOpenSideBar = () => {
-        if (this.context.screenWidth <= 480) {
+        if (this.state.screenWidth <= 480) {
             this.props.openSideBar()
         }
     }
@@ -69,8 +83,4 @@ export default class Article extends Component {
             </div>
         )
     }
-}
-
-Article.contextTypes = {
-    screenWidth: PropTypes.number
 }

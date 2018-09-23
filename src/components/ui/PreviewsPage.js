@@ -7,7 +7,7 @@ import ArrowButton from './ArrowButton'
 
 import { LIST_PREVIEWS_SIZE as SIZE} from '../../constants'
 
-export default class Previews extends Component {
+export default class PreviewsPage extends Component {
 
     constructor() {
         super()
@@ -24,6 +24,7 @@ export default class Previews extends Component {
     shouldComponentUpdate = (nextProps, nextState) => {
         return nextProps.posts && nextProps.posts !== this.props.posts
             || nextState.activePageIndex !== this.state.activePageIndex
+            || nextProps.screenWidth !== this.props.screenWidth
     }
 
     componentWillReceiveProps = (nextProps) => {
@@ -33,9 +34,9 @@ export default class Previews extends Component {
     }
 
     updatePages = (posts) => {
-        let size = this.context.screenWidth > 480 ? SIZE : posts.length,
+        let size = this.props.screenWidth > 480 ? SIZE : posts.length,
             pages = this._splitPosts(posts, size)
-
+        
         this.setState({ pages, activePageIndex: 0 })
     }
 
@@ -64,7 +65,7 @@ export default class Previews extends Component {
             nextPage = pages[activePageIndex + 1]
 
         return(
-            <div className='Previews'>
+            <div className='PreviewsPage'>
                 {/* <div className='blog-nav'>
                     <ArrowButton 
                         name='back' 
@@ -89,7 +90,12 @@ export default class Previews extends Component {
                         hidden={ !nextPage } 
                     />
                 </div> */}
-                <PreviewsGrid items={ pages[activePageIndex] } />
+                <PreviewsGrid 
+                    { ...this.props }
+                    posts={ pages[activePageIndex] } 
+                    onPrev={ this.handleOpenPrev } //for mobile scrolling
+                    onNext={ this.handleOpenNext } //for mobile scrolling
+                />
             </div>
         )
     }
@@ -102,8 +108,4 @@ export default class Previews extends Component {
 
         return pages
     }
-}
-
-Previews.contextTypes = {
-    screenWidth: PropTypes.number
 }

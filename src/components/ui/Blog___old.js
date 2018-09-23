@@ -3,7 +3,7 @@ import { PropTypes } from 'prop-types'
 
 import ArticlePage from './ArticlePage'
 import PreviewsPage from './PreviewsPage'
-// import SideBlock from './SideBlock'
+import SideBlock from './SideBlock'
 
 export default class Blog extends Component {
 
@@ -22,11 +22,6 @@ export default class Blog extends Component {
     componentDidMount = () => {
         this.handleOpenPost()
     }    
-
-    shouldComponentUpdate = (nextProps, nextState, nextContext) => {
-        return nextProps.match !== this.props.match
-            || nextContext.screenWidth !== this.context.screenWidth
-    }
 
     componentWillReceiveProps = (nextProps) => { 
         const { tag } = nextProps.match.params,
@@ -75,19 +70,15 @@ export default class Blog extends Component {
                         activePostIndex={ activePostIndex }
                         openPost={ this.handleOpenPost } 
                         openSideBar={ this.handleOpenSideBar }
-                        hideSideBar={ this.handleHideSideBar }
-                        screenWidth={ this.context.screenWidth }
-                        match={ match }
                     />
                 :
                     <PreviewsPage
                         posts={ listPosts }
                         match={ match } 
-                        screenWidth={ this.context.screenWidth }
                         openPost={ this.handleOpenPost }
                     />
                 }
-                {/* <SideBlock
+                <SideBlock
                     screenWidth={ this.context.screenWidth }
                     isSideBarOpening={ openSideBar }
                     isPreviewsOpen={ !match.params.id }
@@ -95,7 +86,7 @@ export default class Blog extends Component {
                     match={ match } 
                     openPost={ this.handleOpenPost }
                     hideSideBar={ this.handleHideSideBar }
-                />*/}
+                />      
             </div>
         )
     }

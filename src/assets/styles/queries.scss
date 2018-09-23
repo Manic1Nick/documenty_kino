@@ -19,13 +19,13 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
         }
 
         .Blog {
-            width: 80%;
+            width: 90%;
         }
     }
 }
 
-/* Big screens to 1440px (widths smaller than 1440px row) */
-@media only screen and (max-width: 1440px) {
+/* Big screens to 1440px (widths smaller than 1600px row) */
+@media only screen and (max-width: 1600px) {
 
     .social-icon {
         width: 30px;
@@ -59,29 +59,46 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
     .App {
         header {
             padding-right: 2%;
-            font-size: 100%;
+            font-size: 80%;
         }
 
         .Blog {
-            width: 80%;
+            // width: 80%;
             font-size: 100%;
 
-            .SideList {
-                .Quotes {
-                    min-height: 300px;
+            .ArticlePage {
+                .ArticleContainer {
+                    .Article {
+                        .article-slide {
+                            .article-title-name { font-size: 80%; }
+                        }
+                    }
+                } 
 
-                    .quote-text {
-                        font-size: 100%;
+                .SideList {
+                    .Quotes {
+                        min-height: 300px;
+    
+                        .quote-text {
+                            font-size: 100%;
+                        }
                     }
                 }
             }
 
-            .Previews {
-                .ListPreviews {
+            .PreviewsPage {
+                .PreviewsGrid {
                     .PreviewsItem {
-                        .article-preview-image {
-                            max-width: 200px;
-                        }
+                        width: 250px;
+
+                        // .article-preview-text {
+                        //     .article-preview-cutted {
+                        //         font-size: 60%;
+                        //     }
+                        //     .article-preview-time {
+                        //         font-size: 50%;
+                        //     }
+                        // }
                     }
                 }
             }
@@ -119,7 +136,7 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
                 ul {        
                     li { 
                         margin-left: 20px;
-                        font-size: 80%;
+                        // font-size: 80%;
 
                         a:after {  margin-top: -20px; }
                     }
@@ -128,9 +145,19 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
         }
 
         .Blog {
-            width: 90%;
+            // width: 90%;
 
-            .Previews {
+            .ArticlePage {
+                .ArticleContainer {
+                    .Article {
+                        .article-slide {
+                            .article-title-name { font-size: 70%; }
+                        }
+                    }
+                } 
+            }
+
+            .PreviewsPage {
                 font-size: 90%;
             }
 
@@ -186,17 +213,18 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
                 .arrow-buttons ion-icon { width: 30px; }
             }
 
-            .Previews {
+            .PreviewsPage {
                 font-size: 80%;
             }
-            .Previews .ListPreviews .PreviewsItem .article-preview-text .article-preview-title .view-count {    
+            .PreviewsPage .ListPreviews .PreviewsItem .article-preview-text .article-preview-title .view-count {    
                 ion-icon {
                     width: 12px;
                     height: 12px;
                 }
             }
 
-            .Articles { 
+            .ArticlePage { 
+
                 .ArticleContainer {
                     padding: 1em;    
 
@@ -209,26 +237,27 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
                             .article-date { font-size: 60%; }
                         }                
                     }
-                }        
+                }    
+
+                .SideList {
+                    width: 20%;
+    
+                    .Quotes {
+                        min-height: 240px;
+    
+                        .quote-text {
+                            font-size: 80%;
+                        }
+                    }
+        
+                    .ListTitles {
+                        .ListTitlesItem {
+                            font-size: 50%;
+                        }
+                    }
+                }
             }
         
-            .SideList {
-                width: 20%;
-
-                .Quotes {
-                    min-height: 240px;
-
-                    .quote-text {
-                        font-size: 80%;
-                    }
-                }
-    
-                .ListTitles {
-                    .ListTitlesItem {
-                        font-size: 50%;
-                    }
-                }
-            }
         }
 
         footer {
@@ -266,7 +295,7 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
                 .article-social-shares { display: none; }
             }
 
-            .Articles {
+            .ArticlePage {
     
                 .ArticleContainer { 
                     padding: 0.2em;
@@ -333,21 +362,22 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
                             }
                         }
                     }
-                }        
-            }
+                }      
 
-            .SideList { 
-                padding-top: 0.2em;
-                margin-left: 0.5em;
-
-                .Quotes { display: none; }
-
-                .ListTitles {
-                    .post-title {
-                        font-size: 60%;
+                .SideList { 
+                    padding-top: 0.2em;
+                    margin-left: 0.5em;
+    
+                    .Quotes { display: none; }
+    
+                    .ListTitles {
+                        .post-title {
+                            font-size: 60%;
+                        }
                     }
                 }
             }
+
         }
     }
 }
@@ -439,7 +469,7 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
 
             .blog-nav { display: none }
 
-            .Articles {
+            .ArticlePage {
                 width: 100%;
                 margin-right: 0;
                 -webkit-transition: all 0.3s ease-out;
@@ -449,26 +479,27 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
                     padding: 0.5em;    
                     min-height: 100vh;
                 } 
+
+                .SideList { display: none; }
+    
+                .SideBar { 
+                    display: block; 
+                    width: 0;
+                    padding-bottom: 40px;
+                }
+                .SideBar.open {
+                    width: 200px;
+                    overflow-y: auto;
+                }
             }
 
-            .Articles.shifted {
+            .ArticlePage.shifted {
                 margin-right: -200px;
                 background: $colorArticleShifted;
                 -webkit-filter: brightness(50%);
                         filter: brightness(50%);
             }
 
-            .SideList { display: none; }
-
-            .SideBar { 
-                display: block; 
-                width: 0;
-                padding-bottom: 40px;
-            }
-            .SideBar.open {
-                width: 200px;
-                overflow-y: auto;
-            }
         }
 
         footer {           

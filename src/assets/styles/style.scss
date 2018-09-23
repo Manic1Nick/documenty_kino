@@ -54,6 +54,7 @@ $colorTextHover: #132366ce;
 $colorBackgroundLight: rgb(240, 240, 240);
 $colorBackgroundDark: rgb(225, 225, 225);
 $colorackgroundFooter: #333;
+$colorBorder: rgb(204, 204, 204);
 
 /*---------------------------------------------------------*/
 /* BASIC SETUP */
@@ -348,7 +349,7 @@ count views in blog */
     
     .Blog {
         flex: 1;
-        width: 60%;
+        width: 70%;
         // min-height: 77vh; //todo ???
         margin: 0 auto;
         padding-top: 50px;
@@ -358,7 +359,7 @@ count views in blog */
         display: -ms-flexbox;
         display: flex;
 
-        .Articles,
+        .ArticlePage,
         .Previews {
             position: relative;            
             margin: 0 auto;
@@ -368,117 +369,209 @@ count views in blog */
             display: flex;
         }
         
-        .Articles {         
+        .ArticlePage { 
+            display: flex;
 
-            .ArticleContainer {
-                position: relative;
-                padding: 1em;
-                width: 100%;  
+            .ArticleBlock {
+                flex: 1;
+                display: flex;
+
+                .ArticleContainer {
+                    flex: 1;
+                    position: relative;
+                    padding: 1em;
+                    width: 100%;  
+                    
+                    .Article {       
+                        
+                        .article-social-shares { display: none; }
+                        
+                        .article-slide,
+                        .article-text,
+                        .article-footer {
+                            margin-bottom: 10px;
+                        }    
                 
-                .Article {       
-                    
-                    .article-social-shares { display: none; }
-                    
-                    .article-slide,
-                    .article-text,
-                    .article-footer {
-                        margin-bottom: 10px;
-                    }    
-            
-                    .article-slide {
-                        position: relative;
-
-                        img {
-                            display: block;
-                            max-width: 100%;
-                            height: auto;
-                        }
-
-                        .article-title {
-                            background: rgba(0, 0, 0, 0.45);
-                            color: $colorBackgroundDark;
-                            width: 100%;
-                            bottom: 0;
-                            left: 0;
-                            position: absolute;
-                            padding: 0.5em;
+                        .article-slide {
+                            position: relative;
     
-                            .article-title-name {
-                                float: left;
-                                width: 70%;
-                                font-weight: bold;
-                                font-family: $fontTextTitle, arial;
-                                font-weight: 700;
-                                color: $colorBackgroundDark;
+                            img {
+                                display: block;
+                                max-width: 100%;
+                                height: auto;
                             }
-                            
-                            .article-title-tag {
-                                float: right;
-                                font-family: $fontMenu, arial;
-                                cursor: pointer;
-
-                                span { 
-                                    margin-right: 5px;
-                                    animation: blinker 1.5s linear infinite; 
-                                }                                
-                                
-                                h4 {
-                                    color: $colorTextThird;
-                                    -webkit-transition: color 0.2s;
-                                    transition: color 0.2s;
-                                }
     
-                                h4:hover {
+                            .article-title {
+                                background: rgba(0, 0, 0, 0.45);
+                                color: $colorBackgroundDark;
+                                width: 100%;
+                                bottom: 0;
+                                left: 0;
+                                position: absolute;
+                                padding: 0.5em;
+        
+                                .article-title-name {
+                                    float: left;
+                                    width: 70%;
+                                    font-weight: bold;
+                                    font-family: $fontTextTitle, arial;
+                                    font-weight: 700;
                                     color: $colorBackgroundDark;
                                 }
-                            }
-                        } 
-                    }    
-
-                    .article-content {
-                        max-width: 100%;
-
-                        .article-info {
-                            display: flex;
-                            justify-content: space-between;                               
-                        }
-
-                        .article-text {
-                            font-size: 80%;
-                            margin-top: 10px;
+                                
+                                .article-title-tag {
+                                    float: right;
+                                    font-family: $fontMenu, arial;
+                                    cursor: pointer;
     
-                            .text-paragraph { margin-bottom: 10px; }
+                                    span { 
+                                        margin-right: 5px;
+                                        animation: blinker 1.5s linear infinite; 
+                                    }                                
+                                    
+                                    h4 {
+                                        color: $colorTextThird;
+                                        -webkit-transition: color 0.2s;
+                                        transition: color 0.2s;
+                                    }
+        
+                                    h4:hover {
+                                        color: $colorBackgroundDark;
+                                    }
+                                }
+                            } 
+                        }    
     
-                            p { text-align: left;  }
-
-                            img { 
-                                max-width: 100%;
-                                height: auto; 
-                                padding: 2% 0;
-                            }
-
-                            iframe {
-                                padding: 2% 0;
-                            }
-                        }                        
+                        .article-content {
+                            max-width: 100%;
     
-                        .article-footer {
-                            .article-date {
-                                margin-bottom: 2em;
-                                float: right;
+                            .article-info {
+                                display: flex;
+                                justify-content: space-between;                               
+                            }
+    
+                            .article-text {
                                 font-size: 80%;
-                                font-style: italic;
+                                margin-top: 10px;
+        
+                                .text-paragraph { margin-bottom: 10px; }
+        
+                                p { text-align: left;  }
+    
+                                img { 
+                                    max-width: 100%;
+                                    height: auto; 
+                                    padding: 2% 0;
+                                }
+    
+                                iframe {
+                                    padding: 2% 0;
+                                }
+                            }                        
+        
+                            .article-footer {
+                                .article-date {
+                                    margin-bottom: 2em;
+                                    float: right;
+                                    font-size: 80%;
+                                    font-style: italic;
+                                }
                             }
                         }
                     }
-                }
-            }    
+                }  
+                
+            } 
+
+            .SideList {
+                        width: 20%;
+                        min-width: 20%;
+                        height: 80%;
+                        float: right;
+                        margin-top: 2em;
+                        padding-top: 1em;
+                        margin: 0 0.5em;
+            
+                        .Quotes {
+                            margin-bottom: 2em;
+                            padding: 10px;
+                            background-color: $colorBackgroundDark;
+                            min-height: 450px;
+            
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+            
+                            .quote-text {
+                                font-family: $fontMenu;
+                                font-size: 120%;
+                                font-weight: 100;
+                                margin-bottom: 0.5em;
+                                line-height: 1;
+                                //word-break: break-all;
+                            }
+            
+                            .quote-link {
+                                // cursor: pointer;
+                                // font-size: 70%;
+                                position: relative;
+                                display: block;
+                                color: inherit;
+            
+                                ion-icon {
+                                    float: right;
+                                }
+            
+                                // a { display: block; }
+                            }
+                        }
+            
+                        .ListTitles {
+                            .ListTitlesItem {
+                                font-weight: 300;
+                                font-size: 70%;
+                                padding: 4px 4px;
+                                -webkit-transition: background-color 0.2s;
+                                transition: background-color 0.2s;
+                            }
+            
+                            .ListTitlesItem:hover {
+                                cursor: pointer;
+                                background-color: $colorBackgroundLight;
+                            }
+            
+                            .ListTitlesItem.active {
+                                font-weight: bold;
+            
+                                ion-icon {
+                                    color: $colorTextHover;
+                                    margin-right: 5px;
+                                }
+                            }
+                        }
+            }
+
+            .SideBar {
+                display: none;
+                z-index: 5;
+                position: fixed;
+                left: 200px;
+                //width: 0;
+                height: 85%;
+                margin-left: -200px;
+                overflow-y: hidden;
+                overflow-x: hidden;
+                -webkit-transition: all 0.5s ease;
+                transition: all 0.5s ease;
+            }
+
         }
 
-        .Previews {
+        .PreviewsPage {
             width: 100%;
 
             .PreviewsGrid {
+                margin: 2% auto;
                 // display: flex;
                 // flex-direction: column;
                 // flex: 1;
@@ -487,9 +580,12 @@ count views in blog */
                     // position: relative;
                     margin: 0.5em;
                     padding: 0.5em;
+                    width: 400px;
                     // width: 100%;
-                    width: 200px;
                     cursor: pointer;
+                    border-style: dotted;
+                    border-color: $colorBorder;
+                    border-radius: 10px;
     
                     .article-preview-image {
                         // float: left;
@@ -532,6 +628,9 @@ count views in blog */
                         .article-preview-cutted {
                             font-size: 80%;
                         }
+                        .article-preview-time {
+                            font-size: 60%;
+                        }
                     }    
                 }
     
@@ -539,90 +638,8 @@ count views in blog */
                     background: $colorBackgroundLight;
                 }
             }
-        }
-
-
-        .SideBar {
-            display: none;
-            z-index: 5;
-            position: fixed;
-            left: 200px;
-            //width: 0;
-            height: 85%;
-            margin-left: -200px;
-            overflow-y: hidden;
-            overflow-x: hidden;
-            -webkit-transition: all 0.5s ease;
-            transition: all 0.5s ease;
-        }
+        }        
     
-        .SideList {
-            width: 20%;
-            min-width: 20%;
-            height: 80%;
-            float: right;
-            margin-top: 2em;
-            padding-top: 1em;
-            margin: 0 0.5em;
-
-            .Quotes {
-                margin-bottom: 2em;
-                padding: 10px;
-                background-color: $colorBackgroundDark;
-                min-height: 450px;
-
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-
-                .quote-text {
-                    font-family: $fontMenu;
-                    font-size: 120%;
-                    font-weight: 100;
-                    margin-bottom: 0.5em;
-                    line-height: 1;
-                    //word-break: break-all;
-                }
-
-                .quote-link {
-                    // cursor: pointer;
-                    // font-size: 70%;
-                    position: relative;
-                    display: block;
-                    color: inherit;
-
-                    ion-icon {
-                        float: right;
-                    }
-
-                    // a { display: block; }
-                }
-            }
-
-            .ListTitles {
-                .ListTitlesItem {
-                    font-weight: 300;
-                    font-size: 70%;
-                    padding: 4px 4px;
-                    -webkit-transition: background-color 0.2s;
-                    transition: background-color 0.2s;
-                }
-
-                .ListTitlesItem:hover {
-                    cursor: pointer;
-                    background-color: $colorBackgroundLight;
-                }
-
-                .ListTitlesItem.active {
-                    font-weight: bold;
-
-                    ion-icon {
-                        color: $colorTextHover;
-                        margin-right: 5px;
-                    }
-                }
-            }
-        }
     }
 
     footer {

@@ -1,21 +1,29 @@
+import { PropTypes } from 'prop-types'
 import { Component } from 'react'
 import classNames from 'classnames'
-import ViewCount from './ViewCount'
 import ReactHtmlParser from 'react-html-parser'
+
+import ViewCount from './ViewCount'
 
 export default class PreviewsItem extends Component {
 
-    constructor() {
+    constructor(props) {
         super()
         this.state = { 
             animateIn: false,
-            hidden: true 
+            hidden: true
         }
     }
 
     componentDidMount() {
 		this.activeAnimateIn()
     }
+
+    // componentWillReceiveProps = (nextProps) => {
+    //     if (nextProps.screenWidth !== this.props.screenWidth) {
+    //         this.setState({ screenWidth: nextProps.screenWidth })
+    //     }
+    // }
     
     // componentDidUpdate = (prevProps) => {
     //     if (prevProps.post !== this.props.post) {
@@ -48,7 +56,9 @@ export default class PreviewsItem extends Component {
             { id, title, tag, image, text, date } = post,
             { animateIn, hidden } = this.state
 
-        let styleItem = { 'display': hidden ? 'none' : 'block' },
+        let styleItem = { 
+                'display': hidden ? 'none' : 'block'
+            },
             classListItem = classNames('PreviewsItem', { fadeIn: animateIn })
 
         return(
@@ -59,6 +69,7 @@ export default class PreviewsItem extends Component {
                 <div className='article-preview-image'>
                     <img src={`${image}`} alt={ title } title={ title } />
                 </div>
+
                 <div className='article-preview-text'>
                     <p className='article-preview-title'>
                         <span>{ title }</span>
@@ -67,7 +78,10 @@ export default class PreviewsItem extends Component {
                     <div className='article-preview-cutted'>
                         { ReactHtmlParser(text)[0] }
                     </div>
-                </div>                    
+                    <p className='article-preview-time'>
+                        Розмiщено 5 днiв назад
+                    </p>
+                </div>        
             </div>
         )
     }

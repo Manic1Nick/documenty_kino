@@ -5,45 +5,51 @@ import PreviewsItem from './PreviewsItem'
 
 class PreviewsGrid extends Component {
 
-	// constructor(props) {
-	// 	super()
-	// 	this.state = { screenSize: props.screenSize }
-	// }
+	constructor(props) {
+		super()
+		this.state = { 
+			posts: props.posts
+		}
+	}
 
 	componentDidMount() {
+		let grid = this.refs.grid
+			
+		this.msnry = new Masonry( grid, {
+			itemSelector: '.PreviewsItem',
+			columnWidth: '.PreviewsItem',
+			gutter: 10,
+			isFitWidth: true
+		})
 		this._msnryLayout()
 	}
 
 	componentWillReceiveProps(nextProps) {
-		if (nextProps.screenSize !== this.props.screenSize) {
-			// this.setState({ screenSize: nextProps.screenSize })
-			this._msnryLayout()
+		// if (nextProps.screenWidth !== this.props.screenWidth) {
+		// 	this.setState({ screenWidth: nextProps.screenWidth })
+		// }
+		if (nextProps.posts !== this.props.posts) {
+			this.setState({ posts: nextProps.posts })
 		}
 	}
 
 	componentDidUpdate(prevProps, prevState) {
-		if (prevProps.items !== this.props.items) {
+		if (prevState.posts !== this.state.posts) {
+			this.msnry.reloadItems()
 			this._msnryLayout()
 		}
 	}
 	
 	render() {
-		// const {
-		// 	items=[],
-		// 	buyItem=f=>f,
-		// 	openItem=f=>f
-		// } = this.props
-	
 		return (
 			<div className='PreviewsGrid' ref='grid'>
 			{
-				this.props.items.map((post, i) => 
+				this.state.posts.map((post, i) => 
 					<PreviewsItem 
 						key={i}
 						post={ post } 
-                        timeoutMs={ 100*i }
-						// buyItem={() => buyItem(item) }
-						// openItem={() => openItem(item) }
+						timeoutMs={ 100*i }
+						{...this.props}
 					/>						
 				)
 			}
@@ -52,23 +58,31 @@ class PreviewsGrid extends Component {
 	}
 
 	_msnryLayout() {
-		let grid = this.refs.grid	
-			
+		let grid = this.refs.grid
+
 		imagesLoaded( grid, () => {
-			this.msnry = new Masonry( grid, {
-				itemSelector: '.PreviewsItem',
-				columnWidth: 150,
-				gutter: 10,
-				isFitWidth: true
-			})
 			this.msnry.layout()
 		})
 	}
 }
 
+// 	_msnryLayout() {
+// 		let grid = this.refs.grid
+			
+// 		imagesLoaded( grid, () => {
+// 			this.msnry = new Masonry( grid, {
+// 				itemSelector: '.PreviewsItem',
+// 				gutter: 10,
+// 				isFitWidth: true
+// 			})
+// 			this.msnry.layout()
+// 		})
+// 	}
+// }
+
 PreviewsGrid.propTypes = {
-	items: PropTypes.array,
-	screenSize: PropTypes.string
+	posts: PropTypes.array,
+	screenWidth: PropTypes.number
     // buyItem: PropTypes.func, 
     // openItem: PropTypes.func
 }

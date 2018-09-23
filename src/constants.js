@@ -13,4 +13,4 @@ export const ANIMATIONS = {
     listPostsItem: 'fadeIn'
 }
 
-export const LIST_PREVIEWS_SIZE = 5
+export const LIST_PREVIEWS_SIZE = 20
