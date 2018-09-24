@@ -3,7 +3,7 @@ import { PropTypes } from 'prop-types'
 
 import ArticlePage from './ArticlePage'
 import PreviewsPage from './PreviewsPage'
-// import SideBlock from './SideBlock'
+import SideBlock from './SideBlock'
 
 export default class Blog extends Component {
 
@@ -39,14 +39,13 @@ export default class Blog extends Component {
     }
 
     handleOpenPost = (id, tag) => {
-        const { match, history } = this.props,
-            { listPosts } = this.state
+        const { match, history } = this.props
 
         if (!tag) tag = match.params.tag || 'all'
-        //if (!id) id = listPosts[listPosts.length - 1].id
-        if (!id) id = listPosts[listPosts.length - 1].id
+        // if (!id) id = listPosts[listPosts.length - 1].id
 
-        history.push(`/${tag}/${id}`)
+        if (id) history.push(`/${tag}/${id}`)
+        else history.push(`/${tag}`)
         
         window.scrollTo(0, 0)
     }
@@ -62,40 +61,32 @@ export default class Blog extends Component {
     render() {
         const { listPosts, openSideBar } = this.state,
             { match } = this.props,
-            activePostIndex = listPosts.findIndex(post => post.id === parseInt(match.params.id))
+            activePostIndex = listPosts.findIndex(post => post.id === parseInt(match.params.id)),
+            dataProps = {
+                posts: listPosts,
+                match,
+                screenWidth: this.context.screenWidth,
+                openPost: this.handleOpenPost
+            }
 
         return(
             <div className='Blog'>
                 {
                     match.params.id
                 ?
-                    <ArticlePage
-                        posts={ listPosts }
+                    <ArticlePage {...dataProps} 
                         shifted={ openSideBar }
                         activePostIndex={ activePostIndex }
-                        openPost={ this.handleOpenPost } 
                         openSideBar={ this.handleOpenSideBar }
                         hideSideBar={ this.handleHideSideBar }
-                        screenWidth={ this.context.screenWidth }
-                        match={ match }
                     />
                 :
-                    <PreviewsPage
-                        posts={ listPosts }
-                        match={ match } 
-                        screenWidth={ this.context.screenWidth }
-                        openPost={ this.handleOpenPost }
-                    />
+                    <PreviewsPage {...dataProps} />
                 }
-                {/* <SideBlock
-                    screenWidth={ this.context.screenWidth }
+                <SideBlock {...dataProps}
                     isSideBarOpening={ openSideBar }
-                    isPreviewsOpen={ !match.params.id }
-                    posts={ listPosts } 
-                    match={ match } 
-                    openPost={ this.handleOpenPost }
                     hideSideBar={ this.handleHideSideBar }
-                />*/}
+                />
             </div>
         )
     }

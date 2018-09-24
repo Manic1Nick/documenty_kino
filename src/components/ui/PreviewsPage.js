@@ -60,36 +60,10 @@ export default class PreviewsPage extends Component {
     }
 
     render() {
-        const { pages, activePageIndex } = this.state,
-            prevPage = pages[activePageIndex - 1],
-            nextPage = pages[activePageIndex + 1]
+        const { pages, activePageIndex } = this.state
 
         return(
             <div className='PreviewsPage'>
-                {/* <div className='blog-nav'>
-                    <ArrowButton 
-                        name='back' 
-                        action={ this.handleOpenPrev } 
-                        title={ prevPage ? `Попереднi ${prevPage.length}` : null }
-                        hidden={ !prevPage }
-                    />
-                </div>
-
-                <PreviewsList
-                    { ...this.props }
-                    postsOnScreen={ pages[activePageIndex] }
-                    onPrev={ this.handleOpenPrev } //for mobile scrolling
-                    onNext={ this.handleOpenNext } //for mobile scrolling
-                />
-                
-                <div className='blog-nav'>
-                    <ArrowButton 
-                        name='forward' 
-                        action={ this.handleOpenNext } 
-                        title={ nextPage ? `Наступнi ${nextPage.length}` : null }
-                        hidden={ !nextPage } 
-                    />
-                </div> */}
                 <PreviewsGrid 
                     { ...this.props }
                     posts={ pages[activePageIndex] } 

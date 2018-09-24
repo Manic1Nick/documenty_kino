@@ -2,88 +2,73 @@ import { PropTypes } from 'prop-types'
 import { Component } from 'react'
 import classNames from 'classnames'
 import ReactHtmlParser from 'react-html-parser'
+import { isMobile } from 'react-device-detect'
 
 import ViewCount from './ViewCount'
+import LogoSignEmpty from '../../assets/images/documenty-logo-sign-empty-micro.png'
+import LogoSign from '../../assets/images/documenty-logo-sign-micro.png'
 
 export default class PreviewsItem extends Component {
 
     constructor(props) {
         super()
         this.state = { 
-            animateIn: false,
-            hidden: true
+            imageSrc: LogoSignEmpty
         }
-    }
-
-    componentDidMount() {
-		this.activeAnimateIn()
-    }
-
-    // componentWillReceiveProps = (nextProps) => {
-    //     if (nextProps.screenWidth !== this.props.screenWidth) {
-    //         this.setState({ screenWidth: nextProps.screenWidth })
-    //     }
-    // }
-    
-    // componentDidUpdate = (prevProps) => {
-    //     if (prevProps.post !== this.props.post) {
-    //         this.setState({ hidden: true })
-    //         this.activeAnimateIn()
-    //     }
-    // }
-
-    activeAnimateIn() {
-        const { timeoutMs } = this.props
-
-        setTimeout(() => {
-            this.setState({ 
-                animateIn: true, 
-                hidden: false 
-            })
-        }, timeoutMs)
-        
-		// setTimeout(() => {
-		// 	this.setState({ animateIn: false })
-        // }, timeoutMs + 1000)
-    }
+    }    
 
     handleSelectItem = (id) => {        
         this.props.openPost(id)
     }
 
+    handleChangeLogo = (imageSrc) => {
+        this.setState({ imageSrc })
+    }
+
     render() {
         const { post } = this.props,
             { id, title, tag, image, text, date } = post,
-            { animateIn, hidden } = this.state
+            { imageSrc } = this.state
 
-        let styleItem = { 
-                'display': hidden ? 'none' : 'block'
-            },
-            classListItem = classNames('PreviewsItem', { fadeIn: animateIn })
+        const days = this._getDaysFromDatePost(date)
 
         return(
-            <div className={ classListItem } 
+            <div className='PreviewsItem' 
                 onClick={ () => this.handleSelectItem(post.id) }
-                style={ styleItem }
+                onMouseOver={ () => this.handleChangeLogo(LogoSign) }
+                onMouseOut={ () => this.handleChangeLogo(LogoSignEmpty) }
             >
                 <div className='article-preview-image'>
                     <img src={`${image}`} alt={ title } title={ title } />
                 </div>
 
-                <div className='article-preview-text'>
+                <div className='article-preview-content'>
+
                     <p className='article-preview-title'>
                         <span>{ title }</span>
                         <ViewCount />
                     </p>
+
                     <div className='article-preview-cutted'>
                         { ReactHtmlParser(text)[0] }
                     </div>
-                    <p className='article-preview-time'>
-                        Розмiщено 5 днiв назад
+
+                    <p className='article-preview-footer'>
+                        <img src={ isMobile ? LogoSign : imageSrc } alt='logo-sign-empty' />
+                        <span>Розмiщено {days} днiв назад</span>
                     </p>
-                </div>        
+
+                </div>
+
             </div>
         )
+    }
+
+    _getDaysFromDatePost = (dateFromPost) => {
+        let datePost = new Date(dateFromPost),
+            today = new Date()
+        
+        return today.getDate() - datePost.getDate()
     }
 
     // _cutText = (text) => {

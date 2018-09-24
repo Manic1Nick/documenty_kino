@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import classNames from 'classnames'
 
-import SideBlock from './SideBlock'
+// import SideBlock from './SideBlock'
 import ArticleContainer from './ArticleContainer'
 import SocialShareButtons from './SocialShareButtons'
 import ArrowButton from './ArrowButton'
@@ -57,7 +57,7 @@ export default class ArticlePage extends Component {
                     </div>                
                 </div>
 
-                <SideBlock {...this.props} />
+                {/* <SideBlock {...this.props} /> */}
             </div>
         )
     }

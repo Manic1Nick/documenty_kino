@@ -35,8 +35,11 @@
   "dependencies": {
     "axios": "^0.18.0",
     "es6-promise": "^4.2.4",
+    "imagesloaded": "^4.1.4",
+    "masonry-layout": "^4.2.2",
     "react": "^16.3.2",
     "react-dd-menu": "^2.0.2",
+    "react-device-detect": "^1.6.1",
     "react-dom": "^16.3.2",
     "react-easy-swipe": "0.0.16",
     "react-material-snackbar": "^3.0.1",

@@ -41,11 +41,22 @@
     src: url('../fonts/OwnHand.ttf') format('opentype');
 }
 
+@font-face {
+    font-family: Vorona;
+    src: url('../fonts/DS_VTCorona_Cyr.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: PolyglOTT;
+    src: url('../fonts/Truetypewriter_PolyglOTT.ttf') format('opentype');
+}
+
 $fontTextMain: 'AkrobatRegular';
 $fontTextTitle: 'AkrobatBold';
 $fontTextTitlePreview: 'AkrobatSemiBold';
 $fontTextSecond: 'AkrobatExtraLight';
-$fontMenu: 'CaveatRegular';
+// $fontMenu: 'CaveatRegular';
+$fontMenu: 'PolyglOTT';
 
 $colorTextMain: #555;
 $colorTextSecond: #888;
@@ -55,6 +66,7 @@ $colorBackgroundLight: rgb(240, 240, 240);
 $colorBackgroundDark: rgb(225, 225, 225);
 $colorackgroundFooter: #333;
 $colorBorder: rgb(204, 204, 204);
+$colorBackgroundMenu: rgb(246, 248, 255);
 
 /*---------------------------------------------------------*/
 /* BASIC SETUP */
@@ -98,13 +110,6 @@ ul { list-style: none; }
 
 /* TITLES 
 ==================================*/
-
-h1, h2, h3, h4, h5 { 
-    //font-weight: 700;
-    //text-transform: uppercase;
-    // font-family: 'Caveat', cursive;
-    // font-weight: 700;
-}
 
 h1 {
     margin-top: 0;
@@ -179,14 +184,17 @@ navigations in blog */
     .article-social-shares {
         position: -webkit-sticky;
         position: sticky;
-        top: 0;
+        top: 120px;
         padding-left: 10px;
         padding-top: 30px;
 
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
 
         .social-icon-common ion-icon,
         .social-icon {
@@ -196,16 +204,21 @@ navigations in blog */
         }
 
         .social-icon {
-            transform: scale(1);
+            -webkit-transform: scale(1);
+                    transform: scale(1);
             cursor: pointer;
             margin-top: 10px; 
             outline: 0;
             opacity: 0.7;
-            transition: opacity 0.4s, transform 0.4s;                        
+            -webkit-transition: opacity 0.4s, -webkit-transform 0.4s;
+            transition: opacity 0.4s, -webkit-transform 0.4s;
+            transition: opacity 0.4s, transform 0.4s;
+            transition: opacity 0.4s, transform 0.4s, -webkit-transform 0.4s;                        
         }
         
         .social-icon:hover {
-            transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+                    transform: scale(1.1);
             opacity: 1;
         }
     }
@@ -240,6 +253,8 @@ navigations in blog */
 count views in blog */
 
 .view-count {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 
     ion-icon {
@@ -255,12 +270,17 @@ count views in blog */
 .App {
     width: 100vw;
     // height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     min-height: 100vh;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 
     header {
-        margin-top: 25px; //for text "beta version"
+        margin-top: 25px; //for text "beta version" ---------------------------------
         position: -webkit-sticky;
         font-size: 120%;
 
@@ -276,6 +296,16 @@ count views in blog */
         width: 100%;
         height: 110px;
         padding: 0.5% 20%;
+
+        position: fixed;
+        top: 0;
+        z-index: 10;
+        background-color: $colorBackgroundMenu;
+
+        border-bottom: solid 1px #CCC;
+        -moz-box-shadow: 1px 1px 3px #999;
+        -webkit-box-shadow: 1px 1px 3px #999;
+            box-shadow: 1px 1px 3px #999;
 
         .site-title { 
             -webkit-box-flex: 2; 
@@ -294,7 +324,8 @@ count views in blog */
                 -ms-flex: 3;
                     flex: 3;
             margin-right: 30px;
-            font-size: 180%;    
+            font-size: 180%; 
+            
 
             ul {
                 position: relative;
@@ -348,7 +379,9 @@ count views in blog */
     }
     
     .Blog {
-        flex: 1;
+        -webkit-box-flex: 1;
+            -ms-flex: 1;
+                flex: 1;
         width: 70%;
         // min-height: 77vh; //todo ???
         margin: 0 auto;
@@ -359,8 +392,10 @@ count views in blog */
         display: -ms-flexbox;
         display: flex;
 
+        margin-top: 100px; //55px without text "beta-version" 
+
         .ArticlePage,
-        .Previews {
+        .PreviewsPage {
             position: relative;            
             margin: 0 auto;
 
@@ -370,14 +405,22 @@ count views in blog */
         }
         
         .ArticlePage { 
+            display: -webkit-box; 
+            display: -ms-flexbox; 
             display: flex;
 
             .ArticleBlock {
-                flex: 1;
+                -webkit-box-flex: 1;
+                    -ms-flex: 1;
+                        flex: 1;
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
 
                 .ArticleContainer {
-                    flex: 1;
+                    -webkit-box-flex: 1;
+                        -ms-flex: 1;
+                            flex: 1;
                     position: relative;
                     padding: 1em;
                     width: 100%;  
@@ -387,7 +430,9 @@ count views in blog */
                         .article-social-shares { display: none; }
                         
                         .article-slide,
-                        .article-text,
+                        .article-info,
+                        .article-share,
+                        .article-content,
                         .article-footer {
                             margin-bottom: 10px;
                         }    
@@ -426,7 +471,8 @@ count views in blog */
     
                                     span { 
                                         margin-right: 5px;
-                                        animation: blinker 1.5s linear infinite; 
+                                        -webkit-animation: blinker 1.5s linear infinite;
+                                                animation: blinker 1.5s linear infinite; 
                                     }                                
                                     
                                     h4 {
@@ -442,129 +488,52 @@ count views in blog */
                             } 
                         }    
     
+                        .article-info {
+                            display: -webkit-box;
+                            display: -ms-flexbox;
+                            display: flex;
+                            -webkit-box-pack: justify;
+                                -ms-flex-pack: justify;
+                                    justify-content: space-between;                               
+                        }
+
                         .article-content {
-                            max-width: 100%;
+                            font-size: 80%;
+                            margin-top: 10px;
     
-                            .article-info {
-                                display: flex;
-                                justify-content: space-between;                               
+                            .text-paragraph { margin-bottom: 10px; }
+    
+                            p { text-align: left;  }
+
+                            img { 
+                                max-width: 100%;
+                                height: auto; 
+                                padding: 2% 0;
                             }
-    
-                            .article-text {
-                                font-size: 80%;
-                                margin-top: 10px;
-        
-                                .text-paragraph { margin-bottom: 10px; }
-        
-                                p { text-align: left;  }
-    
-                                img { 
-                                    max-width: 100%;
-                                    height: auto; 
-                                    padding: 2% 0;
-                                }
-    
-                                iframe {
-                                    padding: 2% 0;
-                                }
-                            }                        
-        
-                            .article-footer {
-                                .article-date {
-                                    margin-bottom: 2em;
-                                    float: right;
-                                    font-size: 80%;
-                                    font-style: italic;
-                                }
+
+                            iframe {
+                                padding: 2% 0;
+                            }
+                        } 
+
+                        .article-footer {
+                            // position: relative;
+                            text-align: center;
+
+                            img { 
+                                // float: right; 
+                                opacity: 0.4;
+                                transition: opacity 0.5s ease-out;
+                                cursor: pointer;
+                            }
+
+                            img:hover {
+                                opacity: 1;
                             }
                         }
                     }
-                }  
-                
+                } 
             } 
-
-            .SideList {
-                        width: 20%;
-                        min-width: 20%;
-                        height: 80%;
-                        float: right;
-                        margin-top: 2em;
-                        padding-top: 1em;
-                        margin: 0 0.5em;
-            
-                        .Quotes {
-                            margin-bottom: 2em;
-                            padding: 10px;
-                            background-color: $colorBackgroundDark;
-                            min-height: 450px;
-            
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: space-between;
-            
-                            .quote-text {
-                                font-family: $fontMenu;
-                                font-size: 120%;
-                                font-weight: 100;
-                                margin-bottom: 0.5em;
-                                line-height: 1;
-                                //word-break: break-all;
-                            }
-            
-                            .quote-link {
-                                // cursor: pointer;
-                                // font-size: 70%;
-                                position: relative;
-                                display: block;
-                                color: inherit;
-            
-                                ion-icon {
-                                    float: right;
-                                }
-            
-                                // a { display: block; }
-                            }
-                        }
-            
-                        .ListTitles {
-                            .ListTitlesItem {
-                                font-weight: 300;
-                                font-size: 70%;
-                                padding: 4px 4px;
-                                -webkit-transition: background-color 0.2s;
-                                transition: background-color 0.2s;
-                            }
-            
-                            .ListTitlesItem:hover {
-                                cursor: pointer;
-                                background-color: $colorBackgroundLight;
-                            }
-            
-                            .ListTitlesItem.active {
-                                font-weight: bold;
-            
-                                ion-icon {
-                                    color: $colorTextHover;
-                                    margin-right: 5px;
-                                }
-                            }
-                        }
-            }
-
-            .SideBar {
-                display: none;
-                z-index: 5;
-                position: fixed;
-                left: 200px;
-                //width: 0;
-                height: 85%;
-                margin-left: -200px;
-                overflow-y: hidden;
-                overflow-x: hidden;
-                -webkit-transition: all 0.5s ease;
-                transition: all 0.5s ease;
-            }
-
         }
 
         .PreviewsPage {
@@ -583,9 +552,13 @@ count views in blog */
                     width: 400px;
                     // width: 100%;
                     cursor: pointer;
-                    border-style: dotted;
-                    border-color: $colorBorder;
+                    background: transparent;
+                    border: 3px dashed $colorBorder;
                     border-radius: 10px;
+                    -webkit-transition: border 2s ease-out;
+                    transition: border 2s ease-out;
+                    -webkit-transition: backround 2s ease-out;
+                    transition: backround 2s ease-out;
     
                     .article-preview-image {
                         // float: left;
@@ -598,7 +571,7 @@ count views in blog */
                         }
                     }
     
-                    .article-preview-text {
+                    .article-preview-content {
                         // float: right;
                         // width: 70%;
                         // padding: 0 2%;
@@ -628,18 +601,113 @@ count views in blog */
                         .article-preview-cutted {
                             font-size: 80%;
                         }
-                        .article-preview-time {
+                        .article-preview-footer {
                             font-size: 60%;
+
+                            img { 
+                                width: 20px;
+                                height: auto;
+                                margin-right: 5px;
+                            }
                         }
                     }    
                 }
     
                 .PreviewsItem:hover {
                     background: $colorBackgroundLight;
+                    border: 3px solid $colorBorder;
                 }
             }
         }        
     
+        .SideList {
+            width: 20%;
+            min-width: 20%;
+            height: 80%;
+            float: right;
+            margin-top: 2em;
+            padding-top: 1em;
+            margin: 0 0.5em;
+        
+            .Quotes {
+                margin-bottom: 2em;
+                padding: 10px;
+                background-color: $colorBackgroundDark;
+                min-height: 450px;            
+                display: -webkit-box;            
+                display: -ms-flexbox;            
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                        flex-direction: column;
+                -webkit-box-pack: justify;
+                    -ms-flex-pack: justify;
+                        justify-content: space-between;
+        
+                .quote-text {
+                    font-family: $fontMenu;
+                    font-size: 120%;
+                    font-weight: 100;
+                    margin-bottom: 0.5em;
+                    line-height: 1;
+                    //word-break: break-all;
+                }
+        
+                .quote-link {
+                    // cursor: pointer;
+                    // font-size: 70%;
+                    position: relative;
+                    display: block;
+                    color: inherit;
+        
+                    ion-icon {
+                        float: right;
+                    }
+        
+                    // a { display: block; }
+                }
+            }
+        
+            .ListTitles {
+                .ListTitlesItem {
+                    font-weight: 300;
+                    font-size: 70%;
+                    padding: 4px 4px;
+                    -webkit-transition: background-color 0.2s;
+                    transition: background-color 0.2s;
+                }
+        
+                .ListTitlesItem:hover {
+                    cursor: pointer;
+                    background-color: $colorBackgroundLight;
+                }
+        
+                .ListTitlesItem.active {
+                   font-weight: bold;
+        
+                    ion-icon {
+                        color: $colorTextHover;
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+
+        .SideBar {
+            display: none;
+            z-index: 5;
+            position: fixed;
+            left: 200px;
+            //width: 0;
+            height: 85%;
+            margin-left: -200px;
+            overflow-y: hidden;
+            overflow-x: hidden;
+            -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+        }
+
     }
 
     footer {
@@ -704,6 +772,12 @@ count views in blog */
 
 // =====================
 // ANIMATIONS
+
+@-webkit-keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
 
 @keyframes blinker {
     50% {

@@ -6,6 +6,8 @@ import SocialShareButtons from './SocialShareButtons'
 import ViewCount from './ViewCount'
 import ReactHtmlParser from 'react-html-parser'
 
+import LogoImage from '../../assets/images/documenty-logo-sign-micro.png'
+
 export default class Article extends Component {
 
     constructor(props) {
@@ -62,24 +64,26 @@ export default class Article extends Component {
                     </div>
                 </div>
 
-                <div className='article-content'>
+                <div className='article-info'>
+                    <ViewCount />
 
-                    <div className='article-info'>
-                        <ViewCount />
-
-                        <div className='article-date'>
-                            { date }    
-                        </div> 
+                    <div className='article-date'>
+                        { date }    
                     </div>
-
-                    <SocialShareButtons post={ post } />
-                    
-                    <div className='article-text'>
-                        { ReactHtmlParser(text) }
-                    </div>        
-
                 </div>
 
+                <div className='article-share'>
+                    <SocialShareButtons post={ post } />
+                </div>
+
+                <div className='article-content'>
+                    { ReactHtmlParser(text) }
+                </div>
+
+                <div className='article-footer'>
+                    <img src={ LogoImage } alt='logo-image' />                    
+                </div>
+                
             </div>
         )
     }

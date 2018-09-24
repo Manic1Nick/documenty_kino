@@ -16,6 +16,14 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
         header {
             padding-left: 12%;
             padding-right: 12%;
+
+            .main-nav {    
+                ul {        
+                    li { 
+                        a:after {  margin-top: -20px; }
+                    }
+                }
+            }
         }
 
         .Blog {
@@ -74,31 +82,22 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
                         }
                     }
                 } 
-
-                .SideList {
-                    .Quotes {
-                        min-height: 300px;
-    
-                        .quote-text {
-                            font-size: 100%;
-                        }
-                    }
-                }
             }
 
             .PreviewsPage {
                 .PreviewsGrid {
                     .PreviewsItem {
                         width: 250px;
+                    }
+                }
+            }
 
-                        // .article-preview-text {
-                        //     .article-preview-cutted {
-                        //         font-size: 60%;
-                        //     }
-                        //     .article-preview-time {
-                        //         font-size: 50%;
-                        //     }
-                        // }
+            .SideList {
+                .Quotes {
+                    min-height: 300px;
+
+                    .quote-text {
+                        font-size: 100%;
                     }
                 }
             }
@@ -131,11 +130,14 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
     .App {
         header {
             padding-left: 8%;
+            height: 75px;
 
             .main-nav {    
                 ul {        
                     li { 
+                        font-size: 80%;
                         margin-left: 20px;
+                        margin-bottom: 20px;
                         // font-size: 80%;
 
                         a:after {  margin-top: -20px; }
@@ -148,13 +150,55 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
             // width: 90%;
 
             .ArticlePage {
-                .ArticleContainer {
-                    .Article {
-                        .article-slide {
-                            .article-title-name { font-size: 70%; }
-                        }
+                .ArticleBlock {
+                    .blog-nav {
+                        .article-social-shares { display: none; }
                     }
-                } 
+
+                    .ArticleContainer {
+                        .Article {
+                            .article-slide {
+                                .article-title-name { font-size: 70%; }
+                            }
+                            .article-social-shares {
+                                display: -webkit-box;
+                                display: -ms-flexbox;
+                                display: flex;
+                                margin-top: 10px;
+
+                                .social-icon-common ion-icon,
+                                .social-icon {
+                                    width: 25px;
+                                    height: 25px;
+                                    opacity: 0.5;
+                                }
+        
+                                .social-icon {
+                                    transform: scale(1);
+                                    cursor: pointer;
+                                    margin-left: 5px; 
+                                    outline: 0;
+                                    opacity: 0.7;
+                                    transition: opacity 0.4s, transform 0.4s;                        
+                                }
+                                
+                                .social-icon:hover {
+                                    transform: scale(1.1);
+                                    opacity: 1;
+        
+                                    .tooltip {
+                                        visibility: visible;
+                                    }
+                                }
+                            }
+
+                            .article-content iframe {
+                                width: 100%;
+                                // height: auto;
+                            }
+                        }
+                    } 
+                }
             }
 
             .PreviewsPage {
@@ -184,6 +228,7 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
     .App {
         header {
             padding-left: 5%;
+            height: 50px;
 
             .site-title {
                 -webkit-box-flex: 1;
@@ -216,7 +261,12 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
             .PreviewsPage {
                 font-size: 80%;
             }
-            .PreviewsPage .ListPreviews .PreviewsItem .article-preview-text .article-preview-title .view-count {    
+            .PreviewsPage 
+            .ListPreviews 
+            .PreviewsItem 
+            .article-preview-content 
+            .article-preview-title 
+            .view-count {    
                 ion-icon {
                     width: 12px;
                     height: 12px;
@@ -224,36 +274,35 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
             }
 
             .ArticlePage { 
-
-                .ArticleContainer {
-                    padding: 1em;    
-
-                    .Article {
-                        .article-slide {
-                            .article-title-name { font-size: 60%; }
-                        }
-                        .article-content {
-                            .article-text { font-size: 60%; }
-                            .article-date { font-size: 60%; }
-                        }                
-                    }
-                }    
-
-                .SideList {
-                    width: 20%;
+                .ArticleBlock {
+                    .ArticleContainer {
+                        padding: 1em;    
     
-                    .Quotes {
-                        min-height: 240px;
-    
-                        .quote-text {
-                            font-size: 80%;
+                        .Article {
+                            .article-slide {
+                                .article-title-name { font-size: 60%; }
+                            }
+                            .article-info { font-size: 60%; }
+                            .article-content { font-size: 60%; }                
                         }
                     }
-        
-                    .ListTitles {
-                        .ListTitlesItem {
-                            font-size: 50%;
-                        }
+                }
+            }
+
+            .SideList {
+                width: 20%;
+
+                .Quotes {
+                    min-height: 240px;
+
+                    .quote-text {
+                        font-size: 80%;
+                    }
+                }
+    
+                .ListTitles {
+                    .ListTitlesItem {
+                        font-size: 50%;
                     }
                 }
             }
@@ -272,6 +321,7 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
     .App {
         header {
             padding-left: 2%;
+            height: 40px;
 
             .main-nav {    
                 ul {
@@ -279,8 +329,8 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
                         margin-left: 10px;
                         font-size: 60%;
 
-                        a:link { padding-bottom: 20px; }
-                        a:after {  margin-top: -30px; }
+                        // a:link { padding-bottom: 20px; }
+                        a:after {  margin-top: -10px; }
                     }
                 }
             }
@@ -292,28 +342,25 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
                 width: 20px;
 
                 .arrow-buttons ion-icon { width: 20px; }
-                .article-social-shares { display: none; }
             }
 
             .ArticlePage {
+                .ArticleBlock {
+                    .ArticleContainer { 
+                        padding: 0.2em;
     
-                .ArticleContainer { 
-                    padding: 0.2em;
-
-                    .Article {
-                        .article-slide {
-                            .article-title-name { font-size: 60%; }
-                            .article-title-tag { margin-top: -5px; }
-                        }
-                        .article-content {
-                            .article-text { font-size: 70%; }
-
-                            .article-info,
-                            .article-social-shares,
-                            .article-text {
-                                margin-top: 5px;
+                        .Article {
+                            .article-slide {
+                                .article-title-name { font-size: 60%; }
+                                .article-title-tag { margin-top: -5px; }
                             }
                             
+                            .article-info,
+                            .article-social-shares,
+                            .article-content {
+                                margin-top: 5px;
+                            }
+
                             .article-info {
                                 font-size: 80%;
     
@@ -329,51 +376,22 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
                                     }
                                 }
                             }
-
-                            .article-social-shares {
-                                display: -webkit-box;
-                                display: -ms-flexbox;
-                                display: flex;
-
-                                .social-icon-common ion-icon,
-                                .social-icon {
-                                    width: 25px;
-                                    height: 25px;
-                                    opacity: 0.5;
-                                }
-        
-                                .social-icon {
-                                    transform: scale(1);
-                                    cursor: pointer;
-                                    margin-left: 5px; 
-                                    outline: 0;
-                                    opacity: 0.7;
-                                    transition: opacity 0.4s, transform 0.4s;                        
-                                }
-                                
-                                .social-icon:hover {
-                                    transform: scale(1.1);
-                                    opacity: 1;
-        
-                                    .tooltip {
-                                        visibility: visible;
-                                    }
-                                }
-                            }
+                            
+                            .article-content { font-size: 70%; }
                         }
-                    }
-                }      
+                    }      
+                }
+            }
 
-                .SideList { 
-                    padding-top: 0.2em;
-                    margin-left: 0.5em;
-    
-                    .Quotes { display: none; }
-    
-                    .ListTitles {
-                        .post-title {
-                            font-size: 60%;
-                        }
+            .SideList { 
+                padding-top: 0.2em;
+                margin-left: 0.5em;
+
+                .Quotes { display: none; }
+
+                .ListTitles {
+                    .post-title {
+                        font-size: 60%;
                     }
                 }
             }
@@ -415,16 +433,23 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
 
     .App {
         header {
-            height: 60px;
-            position: fixed;
-            top: 0;
-            z-index: 10;
-            background-color: $colorBackgroundMenuMobile;
+            height: 50px;
+            
+            // position: fixed;
+            // top: 0;
+            // z-index: 10;
+            // background-color: $colorBackgroundMenuMobile;
 
             .site-title {
                 -webkit-box-flex: 2;
                     -ms-flex: 2;
                         flex: 2;
+
+                img {
+                    // width: 100%;
+                    max-width: 200px;
+                    // height: auto;
+                }
             }
 
             .main-nav {   
@@ -465,31 +490,21 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
 
         .Blog {
             overflow-x: hidden;
-            margin-top: 100px; //55px without text "beta-version"
-
-            .blog-nav { display: none }
+            // margin-top: 100px; //55px without text "beta-version"            
 
             .ArticlePage {
                 width: 100%;
                 margin-right: 0;
                 -webkit-transition: all 0.3s ease-out;
                 transition: all 0.3s ease-out;
-    
-                .ArticleContainer {
-                    padding: 0.5em;    
-                    min-height: 100vh;
-                } 
 
-                .SideList { display: none; }
-    
-                .SideBar { 
-                    display: block; 
-                    width: 0;
-                    padding-bottom: 40px;
-                }
-                .SideBar.open {
-                    width: 200px;
-                    overflow-y: auto;
+                .ArticleBlock {
+                    .blog-nav { display: none }
+
+                    .ArticleContainer {
+                        padding: 0.5em;    
+                        min-height: 100vh;
+                    } 
                 }
             }
 
@@ -498,6 +513,18 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
                 background: $colorArticleShifted;
                 -webkit-filter: brightness(50%);
                         filter: brightness(50%);
+            }
+
+            .SideList { display: none; }
+    
+            .SideBar { 
+                display: block; 
+                width: 0;
+                padding-bottom: 40px;
+            }
+            .SideBar.open {
+                width: 200px;
+                overflow-y: auto;
             }
 
         }

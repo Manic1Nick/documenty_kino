@@ -70,7 +70,7 @@ export default class HeadBlock extends Component {
                 <div className='site-title'>
                     <Link to={ `/all` }>
                         {
-                            screenWidth > 624
+                            screenWidth > 1023
                         ?
                             <img src={LogoFullImage} alt='logo-full' />
                         :

@@ -6,7 +6,7 @@ const FooterBlock = () => {
         <footer>
             <div className='copyright-text'>
                 <p>
-                    Copyright &copy; 2018 by Documenty. All rights reserved.
+                    Авторське право &copy; 2018 належить Документам. Всi права захищенi.
                 </p>
             </div>
 
