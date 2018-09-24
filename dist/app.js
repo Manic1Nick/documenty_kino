@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "0388450bee07087d9347"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "b761bccf36f3d677ad9d"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -6798,7 +6798,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "/* Big screens to 1920px (widths smaller than 1920px row) */\n@media only screen and (max-width: 1920px) {\n  .blog-nav .arrow-buttons ion-icon {\n    top: 60%; }\n  .App header {\n    padding-left: 12%;\n    padding-right: 12%; }\n  .App .Blog {\n    width: 80%; } }\n\n/* Big screens to 1440px (widths smaller than 1440px row) */\n@media only screen and (max-width: 1440px) {\n  .social-icon {\n    width: 30px;\n    height: 30px; }\n  .blog-nav {\n    width: 40px; }\n    .blog-nav .article-social-shares {\n      padding-top: 20px; }\n      .blog-nav .article-social-shares .social-icon-common ion-icon,\n      .blog-nav .article-social-shares .social-icon {\n        width: 30px;\n        height: 30px;\n        opacity: 0.5; }\n      .blog-nav .article-social-shares .social-icon {\n        margin-top: 5px; }\n    .blog-nav .arrow-buttons ion-icon {\n      width: 40px;\n      top: 60%; }\n  .App header {\n    padding-right: 2%;\n    font-size: 100%; }\n  .App .Blog {\n    width: 80%;\n    font-size: 100%; }\n    .App .Blog .SideList .Quotes {\n      min-height: 300px; }\n      .App .Blog .SideList .Quotes .quote-text {\n        font-size: 100%; }\n    .App .Blog .Previews .ListPreviews .ListPreviewsItem .article-preview-image {\n      max-width: 200px; }\n  .App footer {\n    height: 40px; }\n    .App footer .copyright-text {\n      font-size: 80%; }\n    .App footer .social-icons .social-icon a:link,\n    .App footer .social-icons .social-icon a:visited {\n      font-size: 130%; } }\n\n/* Small tablets to big tablets from 768px to 1023px */\n@media only screen and (max-width: 1023px) {\n  .App header {\n    padding-left: 8%; }\n    .App header .main-nav ul li {\n      margin-left: 20px;\n      font-size: 80%; }\n      .App header .main-nav ul li a:after {\n        margin-top: -20px; }\n  .App .Blog {\n    width: 90%; }\n    .App .Blog .Previews {\n      font-size: 90%; }\n    .App .Blog .SideList .Quotes .quote-text {\n      font-size: 90%;\n      line-height: 0.9; } }\n\n/* Small phones to small tablets from 624px to 767px */\n@media only screen and (max-width: 767px) {\n  h1 {\n    font-size: 180%; }\n  .App header {\n    padding-left: 5%; }\n    .App header .site-title {\n      -webkit-box-flex: 1;\n      -ms-flex: 1;\n      flex: 1;\n      font-size: 80%; }\n    .App header .main-nav {\n      -webkit-box-flex: 2;\n      -ms-flex: 2;\n      flex: 2; }\n      .App header .main-nav ul li {\n        font-size: 70%; }\n  .App .Blog {\n    width: 100%;\n    padding-right: 1%; }\n    .App .Blog .blog-nav {\n      width: 30px; }\n      .App .Blog .blog-nav .arrow-buttons ion-icon {\n        width: 30px; }\n    .App .Blog .Previews {\n      font-size: 80%; }\n    .App .Blog .Previews .ListPreviews .ListPreviewsItem .article-preview-text .article-preview-title .view-count ion-icon {\n      width: 12px;\n      height: 12px; }\n    .App .Blog .Articles .ArticleContainer {\n      padding: 1em; }\n      .App .Blog .Articles .ArticleContainer .Article .article-slide .article-title-name {\n        font-size: 60%; }\n      .App .Blog .Articles .ArticleContainer .Article .article-content .article-text {\n        font-size: 60%; }\n      .App .Blog .Articles .ArticleContainer .Article .article-content .article-date {\n        font-size: 60%; }\n    .App .Blog .SideList {\n      width: 20%; }\n      .App .Blog .SideList .Quotes {\n        min-height: 240px; }\n        .App .Blog .SideList .Quotes .quote-text {\n          font-size: 80%; }\n      .App .Blog .SideList .ListTitles .ListTitlesItem {\n        font-size: 50%; }\n  .App footer {\n    height: 35px;\n    font-size: 70%; } }\n\n/* Small phones to small tablets from 481px to 623px */\n@media only screen and (max-width: 623px) {\n  .App header {\n    padding-left: 2%; }\n    .App header .main-nav ul li {\n      margin-left: 10px;\n      font-size: 60%; }\n      .App header .main-nav ul li a:link {\n        padding-bottom: 20px; }\n      .App header .main-nav ul li a:after {\n        margin-top: -30px; }\n  .App .Blog {\n    padding-top: 0; }\n    .App .Blog .blog-nav {\n      width: 20px; }\n      .App .Blog .blog-nav .arrow-buttons ion-icon {\n        width: 20px; }\n      .App .Blog .blog-nav .article-social-shares {\n        display: none; }\n    .App .Blog .Articles .ArticleContainer {\n      padding: 0.2em; }\n      .App .Blog .Articles .ArticleContainer .Article .article-slide .article-title-name {\n        font-size: 60%; }\n      .App .Blog .Articles .ArticleContainer .Article .article-slide .article-title-tag {\n        margin-top: -5px; }\n      .App .Blog .Articles .ArticleContainer .Article .article-content .article-text {\n        font-size: 70%; }\n      .App .Blog .Articles .ArticleContainer .Article .article-content .article-info,\n      .App .Blog .Articles .ArticleContainer .Article .article-content .article-social-shares,\n      .App .Blog .Articles .ArticleContainer .Article .article-content .article-text {\n        margin-top: 5px; }\n      .App .Blog .Articles .ArticleContainer .Article .article-content .article-info {\n        font-size: 80%; }\n        .App .Blog .Articles .ArticleContainer .Article .article-content .article-info .view-count {\n          display: flex; }\n          .App .Blog .Articles .ArticleContainer .Article .article-content .article-info .view-count ion-icon {\n            width: 20px;\n            height: 20px; }\n          .App .Blog .Articles .ArticleContainer .Article .article-content .article-info .view-count span {\n            margin: 3px 0 0 3px; }\n      .App .Blog .Articles .ArticleContainer .Article .article-content .article-social-shares {\n        display: -webkit-box;\n        display: -ms-flexbox;\n        display: flex; }\n        .App .Blog .Articles .ArticleContainer .Article .article-content .article-social-shares .social-icon-common ion-icon,\n        .App .Blog .Articles .ArticleContainer .Article .article-content .article-social-shares .social-icon {\n          width: 25px;\n          height: 25px;\n          opacity: 0.5; }\n        .App .Blog .Articles .ArticleContainer .Article .article-content .article-social-shares .social-icon {\n          transform: scale(1);\n          cursor: pointer;\n          margin-left: 5px;\n          outline: 0;\n          opacity: 0.7;\n          transition: opacity 0.4s, transform 0.4s; }\n        .App .Blog .Articles .ArticleContainer .Article .article-content .article-social-shares .social-icon:hover {\n          transform: scale(1.1);\n          opacity: 1; }\n          .App .Blog .Articles .ArticleContainer .Article .article-content .article-social-shares .social-icon:hover .tooltip {\n            visibility: visible; }\n    .App .Blog .SideList {\n      padding-top: 0.2em;\n      margin-left: 0.5em; }\n      .App .Blog .SideList .Quotes {\n        display: none; }\n      .App .Blog .SideList .ListTitles .post-title {\n        font-size: 60%; } }\n\n/* Small phones from 0px to 480px */\n@media only screen and (max-width: 480px) {\n  .ListTitles {\n    width: 200px;\n    padding-left: 10px; }\n    .ListTitles .ListTitlesItem {\n      font-weight: 300;\n      font-size: 80%;\n      padding: 4px 4px;\n      -webkit-transition: background-color 0.2s;\n      transition: background-color 0.2s; }\n    .ListTitles .ListTitlesItem:hover {\n      cursor: pointer;\n      background-color: #e1e1e1; }\n    .ListTitles .ListTitlesItem.active {\n      font-weight: bold;\n      font-style: italic; }\n      .ListTitles .ListTitlesItem.active ion-icon {\n        color: #132366ce;\n        margin-right: 5px; }\n  .App header {\n    height: 60px;\n    position: fixed;\n    top: 0;\n    z-index: 10;\n    background-color: #f6f8ff; }\n    .App header .site-title {\n      -webkit-box-flex: 2;\n      -ms-flex: 2;\n      flex: 2; }\n    .App header .main-nav {\n      -webkit-box-flex: 1;\n      -ms-flex: 1;\n      flex: 1;\n      margin-right: 10px; }\n      .App header .main-nav .dd-menu {\n        float: right;\n        cursor: pointer; }\n        .App header .main-nav .dd-menu ion-icon {\n          width: 30px;\n          height: 30px; }\n        .App header .main-nav .dd-menu ul {\n          width: 130%;\n          height: 100%; }\n          .App header .main-nav .dd-menu ul li {\n            width: 100%;\n            margin: 0 auto; }\n            .App header .main-nav .dd-menu ul li a {\n              font-size: 120%;\n              text-align: center; }\n            .App header .main-nav .dd-menu ul li a:link {\n              padding-bottom: 10px; }\n            .App header .main-nav .dd-menu ul li a:hover {\n              background-color: #e1e1e1; }\n            .App header .main-nav .dd-menu ul li a:after {\n              content: ''; }\n  .App .Blog {\n    overflow-x: hidden;\n    margin-top: 100px; }\n    .App .Blog .blog-nav {\n      display: none; }\n    .App .Blog .Articles {\n      width: 100%;\n      margin-right: 0;\n      -webkit-transition: all 0.3s ease-out;\n      transition: all 0.3s ease-out; }\n      .App .Blog .Articles .ArticleContainer {\n        padding: 0.5em;\n        min-height: 100vh; }\n    .App .Blog .Articles.shifted {\n      margin-right: -200px;\n      background: rgba(0, 0, 0, 0.3);\n      -webkit-filter: brightness(50%);\n      filter: brightness(50%); }\n    .App .Blog .SideList {\n      display: none; }\n    .App .Blog .SideBar {\n      display: block;\n      width: 0;\n      padding-bottom: 40px; }\n    .App .Blog .SideBar.open {\n      width: 200px;\n      overflow-y: auto; }\n  .App footer {\n    flex-direction: column;\n    text-align: center;\n    height: 80px;\n    margin-bottom: 0; }\n    .App footer .social-icons {\n      margin: 10px; }\n      .App footer .social-icons .social-icon a {\n        margin: 5px; } }\n", ""]);
+exports.push([module.i, "/* Big screens to 1920px (widths smaller than 1920px row) */\n@media only screen and (max-width: 1920px) {\n  .blog-nav .arrow-buttons ion-icon {\n    top: 60%; }\n  .App header {\n    padding-left: 12%;\n    padding-right: 12%; }\n    .App header .main-nav ul li a:after {\n      margin-top: -20px; }\n  .App .Blog {\n    width: 90%; } }\n\n/* Big screens to 1440px (widths smaller than 1600px row) */\n@media only screen and (max-width: 1600px) {\n  .social-icon {\n    width: 30px;\n    height: 30px; }\n  .blog-nav {\n    width: 40px; }\n    .blog-nav .article-social-shares {\n      padding-top: 20px; }\n      .blog-nav .article-social-shares .social-icon-common ion-icon,\n      .blog-nav .article-social-shares .social-icon {\n        width: 30px;\n        height: 30px;\n        opacity: 0.5; }\n      .blog-nav .article-social-shares .social-icon {\n        margin-top: 5px; }\n    .blog-nav .arrow-buttons ion-icon {\n      width: 40px;\n      top: 60%; }\n  .App header {\n    padding-right: 2%;\n    font-size: 80%; }\n  .App .Blog {\n    font-size: 100%; }\n    .App .Blog .ArticlePage .ArticleContainer .Article .article-slide .article-title-name {\n      font-size: 80%; }\n    .App .Blog .PreviewsPage .PreviewsGrid .PreviewsItem {\n      width: 250px; }\n    .App .Blog .SideList .Quotes {\n      min-height: 300px; }\n      .App .Blog .SideList .Quotes .quote-text {\n        font-size: 100%; }\n  .App footer {\n    height: 40px; }\n    .App footer .copyright-text {\n      font-size: 80%; }\n    .App footer .social-icons .social-icon a:link,\n    .App footer .social-icons .social-icon a:visited {\n      font-size: 130%; } }\n\n/* Small tablets to big tablets from 768px to 1023px */\n@media only screen and (max-width: 1023px) {\n  .App header {\n    padding-left: 8%;\n    height: 75px; }\n    .App header .main-nav ul li {\n      font-size: 80%;\n      margin-left: 20px;\n      margin-bottom: 20px; }\n      .App header .main-nav ul li a:after {\n        margin-top: -20px; }\n  .App .Blog .ArticlePage .ArticleBlock .blog-nav .article-social-shares {\n    display: none; }\n  .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-slide .article-title-name {\n    font-size: 70%; }\n  .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-social-shares {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    margin-top: 10px; }\n    .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-social-shares .social-icon-common ion-icon,\n    .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-social-shares .social-icon {\n      width: 25px;\n      height: 25px;\n      opacity: 0.5; }\n    .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-social-shares .social-icon {\n      transform: scale(1);\n      cursor: pointer;\n      margin-left: 5px;\n      outline: 0;\n      opacity: 0.7;\n      transition: opacity 0.4s, transform 0.4s; }\n    .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-social-shares .social-icon:hover {\n      transform: scale(1.1);\n      opacity: 1; }\n      .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-social-shares .social-icon:hover .tooltip {\n        visibility: visible; }\n  .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-content iframe {\n    width: 100%; }\n  .App .Blog .PreviewsPage {\n    font-size: 90%; }\n  .App .Blog .SideList .Quotes .quote-text {\n    font-size: 90%;\n    line-height: 0.9; } }\n\n/* Small phones to small tablets from 624px to 767px */\n@media only screen and (max-width: 767px) {\n  h1 {\n    font-size: 180%; }\n  .App header {\n    padding-left: 5%;\n    height: 50px; }\n    .App header .site-title {\n      -webkit-box-flex: 1;\n      -ms-flex: 1;\n      flex: 1;\n      font-size: 80%; }\n    .App header .main-nav {\n      -webkit-box-flex: 2;\n      -ms-flex: 2;\n      flex: 2; }\n      .App header .main-nav ul li {\n        font-size: 70%; }\n  .App .Blog {\n    width: 100%;\n    padding-right: 1%; }\n    .App .Blog .blog-nav {\n      width: 30px; }\n      .App .Blog .blog-nav .arrow-buttons ion-icon {\n        width: 30px; }\n    .App .Blog .PreviewsPage {\n      font-size: 80%; }\n    .App .Blog .PreviewsPage\n.ListPreviews\n.PreviewsItem\n.article-preview-content\n.article-preview-title\n.view-count ion-icon {\n      width: 12px;\n      height: 12px; }\n    .App .Blog .ArticlePage .ArticleBlock .ArticleContainer {\n      padding: 1em; }\n      .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-slide .article-title-name {\n        font-size: 60%; }\n      .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-info {\n        font-size: 60%; }\n      .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-content {\n        font-size: 60%; }\n    .App .Blog .SideList {\n      width: 20%; }\n      .App .Blog .SideList .Quotes {\n        min-height: 240px; }\n        .App .Blog .SideList .Quotes .quote-text {\n          font-size: 80%; }\n      .App .Blog .SideList .ListTitles .ListTitlesItem {\n        font-size: 50%; }\n  .App footer {\n    height: 35px;\n    font-size: 70%; } }\n\n/* Small phones to small tablets from 481px to 623px */\n@media only screen and (max-width: 623px) {\n  .App header {\n    padding-left: 2%;\n    height: 40px; }\n    .App header .main-nav ul li {\n      margin-left: 10px;\n      font-size: 60%; }\n      .App header .main-nav ul li a:after {\n        margin-top: -10px; }\n  .App .Blog {\n    padding-top: 0; }\n    .App .Blog .blog-nav {\n      width: 20px; }\n      .App .Blog .blog-nav .arrow-buttons ion-icon {\n        width: 20px; }\n    .App .Blog .ArticlePage .ArticleBlock .ArticleContainer {\n      padding: 0.2em; }\n      .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-slide .article-title-name {\n        font-size: 60%; }\n      .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-slide .article-title-tag {\n        margin-top: -5px; }\n      .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-info,\n      .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-social-shares,\n      .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-content {\n        margin-top: 5px; }\n      .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-info {\n        font-size: 80%; }\n        .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-info .view-count {\n          display: flex; }\n          .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-info .view-count ion-icon {\n            width: 20px;\n            height: 20px; }\n          .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-info .view-count span {\n            margin: 3px 0 0 3px; }\n      .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-content {\n        font-size: 70%; }\n    .App .Blog .SideList {\n      padding-top: 0.2em;\n      margin-left: 0.5em; }\n      .App .Blog .SideList .Quotes {\n        display: none; }\n      .App .Blog .SideList .ListTitles .post-title {\n        font-size: 60%; } }\n\n/* Small phones from 0px to 480px */\n@media only screen and (max-width: 480px) {\n  .ListTitles {\n    width: 200px;\n    padding-left: 10px; }\n    .ListTitles .ListTitlesItem {\n      font-weight: 300;\n      font-size: 80%;\n      padding: 4px 4px;\n      -webkit-transition: background-color 0.2s;\n      transition: background-color 0.2s; }\n    .ListTitles .ListTitlesItem:hover {\n      cursor: pointer;\n      background-color: #e1e1e1; }\n    .ListTitles .ListTitlesItem.active {\n      font-weight: bold;\n      font-style: italic; }\n      .ListTitles .ListTitlesItem.active ion-icon {\n        color: #132366ce;\n        margin-right: 5px; }\n  .App header {\n    height: 50px; }\n    .App header .site-title {\n      -webkit-box-flex: 2;\n      -ms-flex: 2;\n      flex: 2; }\n      .App header .site-title img {\n        max-width: 200px; }\n    .App header .main-nav {\n      -webkit-box-flex: 1;\n      -ms-flex: 1;\n      flex: 1;\n      margin-right: 10px; }\n      .App header .main-nav .dd-menu {\n        float: right;\n        cursor: pointer; }\n        .App header .main-nav .dd-menu ion-icon {\n          width: 30px;\n          height: 30px; }\n        .App header .main-nav .dd-menu ul {\n          width: 130%;\n          height: 100%; }\n          .App header .main-nav .dd-menu ul li {\n            width: 100%;\n            margin: 0 auto; }\n            .App header .main-nav .dd-menu ul li a {\n              font-size: 120%;\n              text-align: center; }\n            .App header .main-nav .dd-menu ul li a:link {\n              padding-bottom: 10px; }\n            .App header .main-nav .dd-menu ul li a:hover {\n              background-color: #e1e1e1; }\n            .App header .main-nav .dd-menu ul li a:after {\n              content: ''; }\n  .App .Blog {\n    overflow-x: hidden; }\n    .App .Blog .ArticlePage {\n      width: 100%;\n      margin-right: 0;\n      -webkit-transition: all 0.3s ease-out;\n      transition: all 0.3s ease-out; }\n      .App .Blog .ArticlePage .ArticleBlock .blog-nav {\n        display: none; }\n      .App .Blog .ArticlePage .ArticleBlock .ArticleContainer {\n        padding: 0.5em;\n        min-height: 100vh; }\n    .App .Blog .ArticlePage.shifted {\n      margin-right: -200px;\n      background: rgba(0, 0, 0, 0.3);\n      -webkit-filter: brightness(50%);\n      filter: brightness(50%); }\n    .App .Blog .SideList {\n      display: none; }\n    .App .Blog .SideBar {\n      display: block;\n      width: 0;\n      padding-bottom: 40px; }\n    .App .Blog .SideBar.open {\n      width: 200px;\n      overflow-y: auto; }\n  .App footer {\n    flex-direction: column;\n    text-align: center;\n    height: 80px;\n    margin-bottom: 0; }\n    .App footer .social-icons {\n      margin: 10px; }\n      .App footer .social-icons .social-icon a {\n        margin: 5px; } }\n", ""]);
 
 // exports
 
@@ -6814,7 +6814,7 @@ exports.i(__webpack_require__("./node_modules/css-loader/index.js!./src/assets/s
 exports.i(__webpack_require__("./node_modules/css-loader/index.js!./src/assets/styles/react-dd-menu.css"), "");
 
 // module
-exports.push([module.i, "@font-face {\n  font-family: AkrobatExtraLight;\n  src: url(" + __webpack_require__("./src/assets/fonts/Akrobat-ExtraLight.otf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: AkrobatBold;\n  src: url(" + __webpack_require__("./src/assets/fonts/Akrobat-Bold.otf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: AkrobatSemiBold;\n  src: url(" + __webpack_require__("./src/assets/fonts/Akrobat-SemiBold.otf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: AkrobatRegular;\n  src: url(" + __webpack_require__("./src/assets/fonts/Akrobat-Regular.otf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: CaveatRegular;\n  src: url(" + __webpack_require__("./src/assets/fonts/Caveat-Regular.ttf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: Gogol;\n  src: url(" + __webpack_require__("./src/assets/fonts/Gogol.otf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: BadScript;\n  src: url(" + __webpack_require__("./src/assets/fonts/Bad_Script.ttf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: OwnHand;\n  src: url(" + __webpack_require__("./src/assets/fonts/OwnHand.ttf") + ") format(\"opentype\"); }\n\n/*---------------------------------------------------------*/\n/* BASIC SETUP */\n/*---------------------------------------------------------*/\n* {\n  margin: 0;\n  padding: 0;\n  -webkit-box-sizing: border-box;\n  box-sizing: border-box; }\n\nhtml,\nbody {\n  color: #555;\n  font-family: \"AkrobatRegular\", cursive;\n  font-weight: 400;\n  font-size: 20px;\n  background-image: url(" + __webpack_require__("./src/assets/images/1920x1080-background.jpg") + ");\n  background-size: cover;\n  background-position: center;\n  height: 100%; }\n\nhtml {\n  overflow: auto;\n  overflow-x: hidden; }\n\nul {\n  list-style: none; }\n\n.social-icon {\n  width: 40px;\n  height: 40px; }\n\n/* TITLES \n==================================*/\nh1 {\n  margin-top: 0;\n  font-size: 300%;\n  word-spacing: 4px;\n  letter-spacing: 1px; }\n\nh2 {\n  font-size: 180%;\n  word-spacing: 2px;\n  text-align: center;\n  letter-spacing: 1px; }\n\nh3 {\n  font-size: 160%; }\n\nh4 {\n  font-size: 120%; }\n\n/* LINKS \n==================================*/\n.main-nav a {\n  font-family: \"CaveatRegular\", arial !important; }\n\na {\n  text-decoration: none;\n  background: transparent; }\n\na:link,\na:visited {\n  text-decoration: none;\n  padding-bottom: 1px; }\n\n/* APP \n==================================*/\n.clearfix:after {\n  content: \".\";\n  display: block;\n  clear: both;\n  visibility: hidden;\n  height: 0; }\n\n/* --------------------------\nlist titles */\n.ListTitles {\n  margin-bottom: 2em;\n  font-family: \"AkrobatExtraLight\", arial; }\n\n/* --------------------------\nnavigations in blog */\n.blog-nav {\n  position: relative;\n  width: 60px; }\n  .blog-nav .article-social-shares {\n    position: -webkit-sticky;\n    position: sticky;\n    top: 0;\n    padding-left: 10px;\n    padding-top: 30px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    flex-direction: column; }\n    .blog-nav .article-social-shares .social-icon-common ion-icon,\n    .blog-nav .article-social-shares .social-icon {\n      width: 40px;\n      height: 40px;\n      opacity: 0.5; }\n    .blog-nav .article-social-shares .social-icon {\n      transform: scale(1);\n      cursor: pointer;\n      margin-top: 10px;\n      outline: 0;\n      opacity: 0.7;\n      transition: opacity 0.4s, transform 0.4s; }\n    .blog-nav .article-social-shares .social-icon:hover {\n      transform: scale(1.1);\n      opacity: 1; }\n  .blog-nav .arrow-buttons ion-icon {\n    position: fixed;\n    width: 60px;\n    height: 10%;\n    top: 40%;\n    opacity: 0.3;\n    -webkit-transition: opacity 0.2s;\n    transition: opacity 0.2s; }\n    .blog-nav .arrow-buttons ion-icon .icon-inner {\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-align: center;\n      -ms-flex-align: center;\n      align-items: center; }\n  .blog-nav .arrow-buttons ion-icon:hover {\n    opacity: 1;\n    cursor: pointer; }\n\n/* --------------------------\ncount views in blog */\n.view-count {\n  display: flex; }\n  .view-count ion-icon {\n    width: 25px;\n    height: 25px; }\n  .view-count span {\n    font-size: 80%;\n    margin: 5px 0 0 5px; }\n\n.App {\n  width: 100vw;\n  display: flex;\n  min-height: 100vh;\n  flex-direction: column; }\n  .App header {\n    margin-top: 25px;\n    position: -webkit-sticky;\n    font-size: 120%;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: justify;\n    -ms-flex-pack: justify;\n    justify-content: space-between;\n    -webkit-box-align: center;\n    -ms-flex-align: center;\n    align-items: center;\n    width: 100%;\n    height: 110px;\n    padding: 0.5% 20%; }\n    .App header .site-title {\n      -webkit-box-flex: 2;\n      -ms-flex: 2;\n      flex: 2; }\n      .App header .site-title img {\n        width: 100%;\n        max-width: 350px;\n        height: auto; }\n    .App header .main-nav {\n      -webkit-box-flex: 3;\n      -ms-flex: 3;\n      flex: 3;\n      margin-right: 30px;\n      font-size: 180%; }\n      .App header .main-nav ul {\n        position: relative;\n        float: right; }\n        .App header .main-nav ul li {\n          display: inline-block;\n          margin-left: 35px; }\n          .App header .main-nav ul li a {\n            position: relative;\n            display: inline-block; }\n          .App header .main-nav ul li a:link,\n          .App header .main-nav ul li a:visited {\n            padding: 8px 0;\n            color: #555;\n            padding-bottom: 2px;\n            -webkit-transition: font-weight 0.2s;\n            transition: font-weight 0.2s; }\n          .App header .main-nav ul li a::after {\n            content: '...';\n            color: #132366ce;\n            position: absolute;\n            left: 0;\n            right: 0;\n            top: 100%;\n            margin: 2px auto;\n            width: 15px;\n            height: 0;\n            opacity: 0;\n            margin-top: -30px;\n            -webkit-transition: opacity 0.3s;\n            transition: opacity 0.3s; }\n          .App header .main-nav ul li a:hover:after,\n          .App header .main-nav ul li a:active:after {\n            opacity: 1; }\n        .App header .main-nav ul li.active a {\n          font-weight: bold; }\n  .App .Blog {\n    flex: 1;\n    width: 60%;\n    margin: 0 auto;\n    padding-top: 50px;\n    font-size: 150%;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex; }\n    .App .Blog .Articles,\n    .App .Blog .Previews {\n      position: relative;\n      margin: 0 auto;\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex; }\n    .App .Blog .Articles .ArticleContainer {\n      position: relative;\n      padding: 1em;\n      width: 100%; }\n      .App .Blog .Articles .ArticleContainer .Article .article-social-shares {\n        display: none; }\n      .App .Blog .Articles .ArticleContainer .Article .article-slide,\n      .App .Blog .Articles .ArticleContainer .Article .article-text,\n      .App .Blog .Articles .ArticleContainer .Article .article-footer {\n        margin-bottom: 10px; }\n      .App .Blog .Articles .ArticleContainer .Article .article-slide {\n        position: relative; }\n        .App .Blog .Articles .ArticleContainer .Article .article-slide img {\n          display: block;\n          max-width: 100%;\n          height: auto; }\n        .App .Blog .Articles .ArticleContainer .Article .article-slide .article-title {\n          background: rgba(0, 0, 0, 0.45);\n          color: #e1e1e1;\n          width: 100%;\n          bottom: 0;\n          left: 0;\n          position: absolute;\n          padding: 0.5em; }\n          .App .Blog .Articles .ArticleContainer .Article .article-slide .article-title .article-title-name {\n            float: left;\n            width: 70%;\n            font-weight: bold;\n            font-family: \"AkrobatBold\", arial;\n            font-weight: 700;\n            color: #e1e1e1; }\n          .App .Blog .Articles .ArticleContainer .Article .article-slide .article-title .article-title-tag {\n            float: right;\n            font-family: \"CaveatRegular\", arial;\n            cursor: pointer; }\n            .App .Blog .Articles .ArticleContainer .Article .article-slide .article-title .article-title-tag span {\n              margin-right: 5px;\n              animation: blinker 1.5s linear infinite; }\n            .App .Blog .Articles .ArticleContainer .Article .article-slide .article-title .article-title-tag h4 {\n              color: #b5b4b4;\n              -webkit-transition: color 0.2s;\n              transition: color 0.2s; }\n            .App .Blog .Articles .ArticleContainer .Article .article-slide .article-title .article-title-tag h4:hover {\n              color: #e1e1e1; }\n      .App .Blog .Articles .ArticleContainer .Article .article-content {\n        max-width: 100%; }\n        .App .Blog .Articles .ArticleContainer .Article .article-content .article-info {\n          display: flex;\n          justify-content: space-between; }\n        .App .Blog .Articles .ArticleContainer .Article .article-content .article-text {\n          font-size: 80%;\n          margin-top: 10px; }\n          .App .Blog .Articles .ArticleContainer .Article .article-content .article-text .text-paragraph {\n            margin-bottom: 10px; }\n          .App .Blog .Articles .ArticleContainer .Article .article-content .article-text p {\n            text-align: left; }\n          .App .Blog .Articles .ArticleContainer .Article .article-content .article-text img {\n            max-width: 100%;\n            height: auto;\n            padding: 2% 0; }\n          .App .Blog .Articles .ArticleContainer .Article .article-content .article-text iframe {\n            padding: 2% 0; }\n        .App .Blog .Articles .ArticleContainer .Article .article-content .article-footer .article-date {\n          margin-bottom: 2em;\n          float: right;\n          font-size: 80%;\n          font-style: italic; }\n    .App .Blog .Previews {\n      width: 100%; }\n      .App .Blog .Previews .ListPreviews {\n        display: flex;\n        flex-direction: column;\n        flex: 1; }\n        .App .Blog .Previews .ListPreviews .ListPreviewsItem {\n          position: relative;\n          margin: 0.5em;\n          padding: 0.5em;\n          width: 100%;\n          cursor: pointer; }\n          .App .Blog .Previews .ListPreviews .ListPreviewsItem .article-preview-image {\n            float: left;\n            width: 30%; }\n            .App .Blog .Previews .ListPreviews .ListPreviewsItem .article-preview-image img {\n              width: 100%;\n              max-width: 400px;\n              height: auto; }\n          .App .Blog .Previews .ListPreviews .ListPreviewsItem .article-preview-text {\n            float: right;\n            width: 70%;\n            padding: 0 2%; }\n            .App .Blog .Previews .ListPreviews .ListPreviewsItem .article-preview-text p {\n              width: 100%;\n              margin-bottom: 10px; }\n            .App .Blog .Previews .ListPreviews .ListPreviewsItem .article-preview-text .article-preview-title {\n              font-family: \"AkrobatSemiBold\"; }\n              .App .Blog .Previews .ListPreviews .ListPreviewsItem .article-preview-text .article-preview-title .view-count {\n                display: inline-block;\n                font-size: 90%;\n                margin-left: 2%; }\n                .App .Blog .Previews .ListPreviews .ListPreviewsItem .article-preview-text .article-preview-title .view-count ion-icon {\n                  width: 15px;\n                  height: 15px; }\n                .App .Blog .Previews .ListPreviews .ListPreviewsItem .article-preview-text .article-preview-title .view-count span {\n                  margin: 2px 0 0 2px; }\n            .App .Blog .Previews .ListPreviews .ListPreviewsItem .article-preview-text .article-preview-cutted {\n              font-size: 80%; }\n        .App .Blog .Previews .ListPreviews .ListPreviewsItem:hover {\n          background: #f0f0f0; }\n    .App .Blog .SideBar {\n      display: none;\n      z-index: 5;\n      position: fixed;\n      left: 200px;\n      height: 85%;\n      margin-left: -200px;\n      overflow-y: hidden;\n      overflow-x: hidden;\n      -webkit-transition: all 0.5s ease;\n      transition: all 0.5s ease; }\n    .App .Blog .SideList {\n      width: 20%;\n      min-width: 20%;\n      height: 80%;\n      float: right;\n      margin-top: 2em;\n      padding-top: 1em;\n      margin: 0 0.5em; }\n      .App .Blog .SideList .Quotes {\n        margin-bottom: 2em;\n        padding: 10px;\n        background-color: #e1e1e1;\n        min-height: 450px;\n        display: flex;\n        flex-direction: column;\n        justify-content: space-between; }\n        .App .Blog .SideList .Quotes .quote-text {\n          font-family: \"CaveatRegular\";\n          font-size: 120%;\n          font-weight: 100;\n          margin-bottom: 0.5em;\n          line-height: 1; }\n        .App .Blog .SideList .Quotes .quote-link {\n          position: relative;\n          display: block;\n          color: inherit; }\n          .App .Blog .SideList .Quotes .quote-link ion-icon {\n            float: right; }\n      .App .Blog .SideList .ListTitles .ListTitlesItem {\n        font-weight: 300;\n        font-size: 70%;\n        padding: 4px 4px;\n        -webkit-transition: background-color 0.2s;\n        transition: background-color 0.2s; }\n      .App .Blog .SideList .ListTitles .ListTitlesItem:hover {\n        cursor: pointer;\n        background-color: #f0f0f0; }\n      .App .Blog .SideList .ListTitles .ListTitlesItem.active {\n        font-weight: bold; }\n        .App .Blog .SideList .ListTitles .ListTitlesItem.active ion-icon {\n          color: #132366ce;\n          margin-right: 5px; }\n  .App footer {\n    width: 100%;\n    height: 50px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: justify;\n    -ms-flex-pack: justify;\n    justify-content: space-between;\n    background-color: #333;\n    padding: 5px; }\n    .App footer .copyright-text {\n      font-size: 120%; }\n    .App footer .social-icons {\n      float: right; }\n      .App footer .social-icons .social-icon {\n        position: relative;\n        display: inline; }\n        .App footer .social-icons .social-icon a {\n          width: 40px;\n          margin-right: 20px;\n          cursor: pointer;\n          color: #888; }\n          .App footer .social-icons .social-icon a #fb:hover {\n            color: #3b5999; }\n          .App footer .social-icons .social-icon a #tw:hover {\n            color: #55acee; }\n          .App footer .social-icons .social-icon a #gp:hover {\n            color: #dd4b39; }\n          .App footer .social-icons .social-icon a #ig:hover {\n            color: #e4405f; }\n        .App footer .social-icons .social-icon a:link,\n        .App footer .social-icons .social-icon a:visited {\n          text-decoration: none;\n          border: 0;\n          font-size: 180%;\n          color: #888;\n          -webkit-transition: color 0.2s;\n          transition: color 0.2s; }\n    .App footer p {\n      color: #888;\n      text-align: center;\n      margin-top: 5px; }\n\n@keyframes blinker {\n  50% {\n    opacity: 0; } }\n\n.fadeIn {\n  -webkit-animation: fadeIn 1.5s;\n  animation: fadeIn 1.5s; }\n\n.slideInLeft {\n  -webkit-animation: slideInLeft 0.8s;\n  animation: slideInLeft 0.8s; }\n\n.slideInRight {\n  -webkit-animation: slideInRight 0.8s;\n  animation: slideInRight 0.8s; }\n\n.fadeInLeft {\n  -webkit-animation: fadeInLeft 0.8s;\n  animation: fadeInLeft 0.8s; }\n\n.pulse {\n  -webkit-animation: pulse 0.8s;\n  animation: pulse 0.8s; }\n\n.flipInY {\n  -webkit-animation: flipInY 0.8s;\n  animation: flipInY 0.8s; }\n\n.flipInX {\n  -webkit-animation: flipInX 0.8s;\n  animation: flipInX 0.8s; }\n", ""]);
+exports.push([module.i, "@font-face {\n  font-family: AkrobatExtraLight;\n  src: url(" + __webpack_require__("./src/assets/fonts/Akrobat-ExtraLight.otf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: AkrobatBold;\n  src: url(" + __webpack_require__("./src/assets/fonts/Akrobat-Bold.otf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: AkrobatSemiBold;\n  src: url(" + __webpack_require__("./src/assets/fonts/Akrobat-SemiBold.otf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: AkrobatRegular;\n  src: url(" + __webpack_require__("./src/assets/fonts/Akrobat-Regular.otf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: CaveatRegular;\n  src: url(" + __webpack_require__("./src/assets/fonts/Caveat-Regular.ttf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: Gogol;\n  src: url(" + __webpack_require__("./src/assets/fonts/Gogol.otf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: BadScript;\n  src: url(" + __webpack_require__("./src/assets/fonts/Bad_Script.ttf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: OwnHand;\n  src: url(" + __webpack_require__("./src/assets/fonts/OwnHand.ttf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: Vorona;\n  src: url(" + __webpack_require__("./src/assets/fonts/DS_VTCorona_Cyr.ttf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: PolyglOTT;\n  src: url(" + __webpack_require__("./src/assets/fonts/Truetypewriter_PolyglOTT.ttf") + ") format(\"opentype\"); }\n\n/*---------------------------------------------------------*/\n/* BASIC SETUP */\n/*---------------------------------------------------------*/\n* {\n  margin: 0;\n  padding: 0;\n  -webkit-box-sizing: border-box;\n  box-sizing: border-box; }\n\nhtml,\nbody {\n  color: #555;\n  font-family: \"AkrobatRegular\", cursive;\n  font-weight: 400;\n  font-size: 20px;\n  background-image: url(" + __webpack_require__("./src/assets/images/1920x1080-background.jpg") + ");\n  background-size: cover;\n  background-position: center;\n  height: 100%; }\n\nhtml {\n  overflow: auto;\n  overflow-x: hidden; }\n\nul {\n  list-style: none; }\n\n.social-icon {\n  width: 40px;\n  height: 40px; }\n\n/* TITLES \n==================================*/\nh1 {\n  margin-top: 0;\n  font-size: 300%;\n  word-spacing: 4px;\n  letter-spacing: 1px; }\n\nh2 {\n  font-size: 180%;\n  word-spacing: 2px;\n  text-align: center;\n  letter-spacing: 1px; }\n\nh3 {\n  font-size: 160%; }\n\nh4 {\n  font-size: 120%; }\n\n/* LINKS \n==================================*/\n.main-nav a {\n  font-family: \"PolyglOTT\", arial !important; }\n\na {\n  text-decoration: none;\n  background: transparent; }\n\na:link,\na:visited {\n  text-decoration: none;\n  padding-bottom: 1px; }\n\n/* APP \n==================================*/\n.clearfix:after {\n  content: \".\";\n  display: block;\n  clear: both;\n  visibility: hidden;\n  height: 0; }\n\n/* --------------------------\nlist titles */\n.ListTitles {\n  margin-bottom: 2em;\n  font-family: \"AkrobatExtraLight\", arial; }\n\n/* --------------------------\nnavigations in blog */\n.blog-nav {\n  position: relative;\n  width: 60px; }\n  .blog-nav .article-social-shares {\n    position: -webkit-sticky;\n    position: sticky;\n    top: 120px;\n    padding-left: 10px;\n    padding-top: 30px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n    -ms-flex-direction: column;\n    flex-direction: column; }\n    .blog-nav .article-social-shares .social-icon-common ion-icon,\n    .blog-nav .article-social-shares .social-icon {\n      width: 40px;\n      height: 40px;\n      opacity: 0.5; }\n    .blog-nav .article-social-shares .social-icon {\n      -webkit-transform: scale(1);\n      transform: scale(1);\n      cursor: pointer;\n      margin-top: 10px;\n      outline: 0;\n      opacity: 0.7;\n      -webkit-transition: opacity 0.4s, -webkit-transform 0.4s;\n      transition: opacity 0.4s, -webkit-transform 0.4s;\n      transition: opacity 0.4s, transform 0.4s;\n      transition: opacity 0.4s, transform 0.4s, -webkit-transform 0.4s; }\n    .blog-nav .article-social-shares .social-icon:hover {\n      -webkit-transform: scale(1.1);\n      transform: scale(1.1);\n      opacity: 1; }\n  .blog-nav .arrow-buttons ion-icon {\n    position: fixed;\n    width: 60px;\n    height: 10%;\n    top: 40%;\n    opacity: 0.3;\n    -webkit-transition: opacity 0.2s;\n    transition: opacity 0.2s; }\n    .blog-nav .arrow-buttons ion-icon .icon-inner {\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-align: center;\n      -ms-flex-align: center;\n      align-items: center; }\n  .blog-nav .arrow-buttons ion-icon:hover {\n    opacity: 1;\n    cursor: pointer; }\n\n/* --------------------------\ncount views in blog */\n.view-count {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex; }\n  .view-count ion-icon {\n    width: 25px;\n    height: 25px; }\n  .view-count span {\n    font-size: 80%;\n    margin: 5px 0 0 5px; }\n\n.App {\n  width: 100vw;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  min-height: 100vh;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n  -ms-flex-direction: column;\n  flex-direction: column; }\n  .App header {\n    margin-top: 25px;\n    position: -webkit-sticky;\n    font-size: 120%;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: justify;\n    -ms-flex-pack: justify;\n    justify-content: space-between;\n    -webkit-box-align: center;\n    -ms-flex-align: center;\n    align-items: center;\n    width: 100%;\n    height: 110px;\n    padding: 0.5% 20%;\n    position: fixed;\n    top: 0;\n    z-index: 10;\n    background-color: #f6f8ff;\n    border-bottom: solid 1px #CCC;\n    -moz-box-shadow: 1px 1px 3px #999;\n    -webkit-box-shadow: 1px 1px 3px #999;\n    box-shadow: 1px 1px 3px #999; }\n    .App header .site-title {\n      -webkit-box-flex: 2;\n      -ms-flex: 2;\n      flex: 2; }\n      .App header .site-title img {\n        width: 100%;\n        max-width: 350px;\n        height: auto; }\n    .App header .main-nav {\n      -webkit-box-flex: 3;\n      -ms-flex: 3;\n      flex: 3;\n      margin-right: 30px;\n      font-size: 180%; }\n      .App header .main-nav ul {\n        position: relative;\n        float: right; }\n        .App header .main-nav ul li {\n          display: inline-block;\n          margin-left: 35px; }\n          .App header .main-nav ul li a {\n            position: relative;\n            display: inline-block; }\n          .App header .main-nav ul li a:link,\n          .App header .main-nav ul li a:visited {\n            padding: 8px 0;\n            color: #555;\n            padding-bottom: 2px;\n            -webkit-transition: font-weight 0.2s;\n            transition: font-weight 0.2s; }\n          .App header .main-nav ul li a::after {\n            content: '...';\n            color: #132366ce;\n            position: absolute;\n            left: 0;\n            right: 0;\n            top: 100%;\n            margin: 2px auto;\n            width: 15px;\n            height: 0;\n            opacity: 0;\n            margin-top: -30px;\n            -webkit-transition: opacity 0.3s;\n            transition: opacity 0.3s; }\n          .App header .main-nav ul li a:hover:after,\n          .App header .main-nav ul li a:active:after {\n            opacity: 1; }\n        .App header .main-nav ul li.active a {\n          font-weight: bold; }\n  .App .Blog {\n    -webkit-box-flex: 1;\n    -ms-flex: 1;\n    flex: 1;\n    width: 70%;\n    margin: 0 auto;\n    padding-top: 50px;\n    font-size: 150%;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    margin-top: 100px; }\n    .App .Blog .ArticlePage,\n    .App .Blog .PreviewsPage {\n      position: relative;\n      margin: 0 auto;\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex; }\n    .App .Blog .ArticlePage {\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex; }\n      .App .Blog .ArticlePage .ArticleBlock {\n        -webkit-box-flex: 1;\n        -ms-flex: 1;\n        flex: 1;\n        display: -webkit-box;\n        display: -ms-flexbox;\n        display: flex; }\n        .App .Blog .ArticlePage .ArticleBlock .ArticleContainer {\n          -webkit-box-flex: 1;\n          -ms-flex: 1;\n          flex: 1;\n          position: relative;\n          padding: 1em;\n          width: 100%; }\n          .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-social-shares {\n            display: none; }\n          .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-slide,\n          .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-info,\n          .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-share,\n          .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-content,\n          .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-footer {\n            margin-bottom: 10px; }\n          .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-slide {\n            position: relative; }\n            .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-slide img {\n              display: block;\n              max-width: 100%;\n              height: auto; }\n            .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-slide .article-title {\n              background: rgba(0, 0, 0, 0.45);\n              color: #e1e1e1;\n              width: 100%;\n              bottom: 0;\n              left: 0;\n              position: absolute;\n              padding: 0.5em; }\n              .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-slide .article-title .article-title-name {\n                float: left;\n                width: 70%;\n                font-weight: bold;\n                font-family: \"AkrobatBold\", arial;\n                font-weight: 700;\n                color: #e1e1e1; }\n              .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-slide .article-title .article-title-tag {\n                float: right;\n                font-family: \"PolyglOTT\", arial;\n                cursor: pointer; }\n                .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-slide .article-title .article-title-tag span {\n                  margin-right: 5px;\n                  -webkit-animation: blinker 1.5s linear infinite;\n                  animation: blinker 1.5s linear infinite; }\n                .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-slide .article-title .article-title-tag h4 {\n                  color: #b5b4b4;\n                  -webkit-transition: color 0.2s;\n                  transition: color 0.2s; }\n                .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-slide .article-title .article-title-tag h4:hover {\n                  color: #e1e1e1; }\n          .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-info {\n            display: -webkit-box;\n            display: -ms-flexbox;\n            display: flex;\n            -webkit-box-pack: justify;\n            -ms-flex-pack: justify;\n            justify-content: space-between; }\n          .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-content {\n            font-size: 80%;\n            margin-top: 10px; }\n            .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-content .text-paragraph {\n              margin-bottom: 10px; }\n            .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-content p {\n              text-align: left; }\n            .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-content img {\n              max-width: 100%;\n              height: auto;\n              padding: 2% 0; }\n            .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-content iframe {\n              padding: 2% 0; }\n          .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-footer {\n            text-align: center; }\n            .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-footer img {\n              opacity: 0.4;\n              transition: opacity 0.5s ease-out;\n              cursor: pointer; }\n            .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-footer img:hover {\n              opacity: 1; }\n    .App .Blog .PreviewsPage {\n      width: 100%; }\n      .App .Blog .PreviewsPage .PreviewsGrid {\n        margin: 2% auto; }\n        .App .Blog .PreviewsPage .PreviewsGrid .PreviewsItem {\n          margin: 0.5em;\n          padding: 0.5em;\n          width: 400px;\n          cursor: pointer;\n          background: transparent;\n          border: 3px dashed #cccccc;\n          border-radius: 10px;\n          -webkit-transition: border 2s ease-out;\n          transition: border 2s ease-out;\n          -webkit-transition: backround 2s ease-out;\n          transition: backround 2s ease-out; }\n          .App .Blog .PreviewsPage .PreviewsGrid .PreviewsItem .article-preview-image img {\n            width: 100%;\n            max-width: 400px;\n            height: auto; }\n          .App .Blog .PreviewsPage .PreviewsGrid .PreviewsItem .article-preview-content p {\n            width: 100%;\n            margin-bottom: 10px; }\n          .App .Blog .PreviewsPage .PreviewsGrid .PreviewsItem .article-preview-content .article-preview-title {\n            font-family: \"AkrobatSemiBold\"; }\n            .App .Blog .PreviewsPage .PreviewsGrid .PreviewsItem .article-preview-content .article-preview-title .view-count {\n              display: inline-block;\n              font-size: 90%;\n              margin-left: 2%; }\n              .App .Blog .PreviewsPage .PreviewsGrid .PreviewsItem .article-preview-content .article-preview-title .view-count ion-icon {\n                width: 15px;\n                height: 15px; }\n              .App .Blog .PreviewsPage .PreviewsGrid .PreviewsItem .article-preview-content .article-preview-title .view-count span {\n                margin: 2px 0 0 2px; }\n          .App .Blog .PreviewsPage .PreviewsGrid .PreviewsItem .article-preview-content .article-preview-cutted {\n            font-size: 80%; }\n          .App .Blog .PreviewsPage .PreviewsGrid .PreviewsItem .article-preview-content .article-preview-footer {\n            font-size: 60%; }\n            .App .Blog .PreviewsPage .PreviewsGrid .PreviewsItem .article-preview-content .article-preview-footer img {\n              width: 20px;\n              height: auto;\n              margin-right: 5px; }\n        .App .Blog .PreviewsPage .PreviewsGrid .PreviewsItem:hover {\n          background: #f0f0f0;\n          border: 3px solid #cccccc; }\n    .App .Blog .SideList {\n      width: 20%;\n      min-width: 20%;\n      height: 80%;\n      float: right;\n      margin-top: 2em;\n      padding-top: 1em;\n      margin: 0 0.5em; }\n      .App .Blog .SideList .Quotes {\n        margin-bottom: 2em;\n        padding: 10px;\n        background-color: #e1e1e1;\n        min-height: 450px;\n        display: -webkit-box;\n        display: -ms-flexbox;\n        display: flex;\n        -webkit-box-orient: vertical;\n        -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n        flex-direction: column;\n        -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n        justify-content: space-between; }\n        .App .Blog .SideList .Quotes .quote-text {\n          font-family: \"PolyglOTT\";\n          font-size: 120%;\n          font-weight: 100;\n          margin-bottom: 0.5em;\n          line-height: 1; }\n        .App .Blog .SideList .Quotes .quote-link {\n          position: relative;\n          display: block;\n          color: inherit; }\n          .App .Blog .SideList .Quotes .quote-link ion-icon {\n            float: right; }\n      .App .Blog .SideList .ListTitles .ListTitlesItem {\n        font-weight: 300;\n        font-size: 70%;\n        padding: 4px 4px;\n        -webkit-transition: background-color 0.2s;\n        transition: background-color 0.2s; }\n      .App .Blog .SideList .ListTitles .ListTitlesItem:hover {\n        cursor: pointer;\n        background-color: #f0f0f0; }\n      .App .Blog .SideList .ListTitles .ListTitlesItem.active {\n        font-weight: bold; }\n        .App .Blog .SideList .ListTitles .ListTitlesItem.active ion-icon {\n          color: #132366ce;\n          margin-right: 5px; }\n    .App .Blog .SideBar {\n      display: none;\n      z-index: 5;\n      position: fixed;\n      left: 200px;\n      height: 85%;\n      margin-left: -200px;\n      overflow-y: hidden;\n      overflow-x: hidden;\n      -webkit-transition: all 0.5s ease;\n      transition: all 0.5s ease; }\n  .App footer {\n    width: 100%;\n    height: 50px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: justify;\n    -ms-flex-pack: justify;\n    justify-content: space-between;\n    background-color: #333;\n    padding: 5px; }\n    .App footer .copyright-text {\n      font-size: 120%; }\n    .App footer .social-icons {\n      float: right; }\n      .App footer .social-icons .social-icon {\n        position: relative;\n        display: inline; }\n        .App footer .social-icons .social-icon a {\n          width: 40px;\n          margin-right: 20px;\n          cursor: pointer;\n          color: #888; }\n          .App footer .social-icons .social-icon a #fb:hover {\n            color: #3b5999; }\n          .App footer .social-icons .social-icon a #tw:hover {\n            color: #55acee; }\n          .App footer .social-icons .social-icon a #gp:hover {\n            color: #dd4b39; }\n          .App footer .social-icons .social-icon a #ig:hover {\n            color: #e4405f; }\n        .App footer .social-icons .social-icon a:link,\n        .App footer .social-icons .social-icon a:visited {\n          text-decoration: none;\n          border: 0;\n          font-size: 180%;\n          color: #888;\n          -webkit-transition: color 0.2s;\n          transition: color 0.2s; }\n    .App footer p {\n      color: #888;\n      text-align: center;\n      margin-top: 5px; }\n\n@-webkit-keyframes blinker {\n  50% {\n    opacity: 0; } }\n\n@keyframes blinker {\n  50% {\n    opacity: 0; } }\n\n.fadeIn {\n  -webkit-animation: fadeIn 1.5s;\n  animation: fadeIn 1.5s; }\n\n.slideInLeft {\n  -webkit-animation: slideInLeft 0.8s;\n  animation: slideInLeft 0.8s; }\n\n.slideInRight {\n  -webkit-animation: slideInRight 0.8s;\n  animation: slideInRight 0.8s; }\n\n.fadeInLeft {\n  -webkit-animation: fadeInLeft 0.8s;\n  animation: fadeInLeft 0.8s; }\n\n.pulse {\n  -webkit-animation: pulse 0.8s;\n  animation: pulse 0.8s; }\n\n.flipInY {\n  -webkit-animation: flipInY 0.8s;\n  animation: flipInY 0.8s; }\n\n.flipInX {\n  -webkit-animation: flipInX 0.8s;\n  animation: flipInX 0.8s; }\n", ""]);
 
 // exports
 
@@ -6930,6 +6930,70 @@ function toComment(sourceMap) {
 
 	return '/*# ' + data + ' */';
 }
+
+
+/***/ }),
+
+/***/ "./node_modules/desandro-matches-selector/matches-selector.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
+ * matchesSelector v2.0.2
+ * matchesSelector( element, '.selector' )
+ * MIT license
+ */
+
+/*jshint browser: true, strict: true, undef: true, unused: true */
+
+( function( window, factory ) {
+  /*global define: false, module: false */
+  'use strict';
+  // universal module definition
+  if ( true ) {
+    // AMD
+    !(__WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.call(exports, __webpack_require__, exports, module)) :
+				__WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+  } else if ( typeof module == 'object' && module.exports ) {
+    // CommonJS
+    module.exports = factory();
+  } else {
+    // browser global
+    window.matchesSelector = factory();
+  }
+
+}( window, function factory() {
+  'use strict';
+
+  var matchesMethod = ( function() {
+    var ElemProto = window.Element.prototype;
+    // check for the standard method name first
+    if ( ElemProto.matches ) {
+      return 'matches';
+    }
+    // check un-prefixed
+    if ( ElemProto.matchesSelector ) {
+      return 'matchesSelector';
+    }
+    // check vendor prefixes
+    var prefixes = [ 'webkit', 'moz', 'ms', 'o' ];
+
+    for ( var i=0; i < prefixes.length; i++ ) {
+      var prefix = prefixes[i];
+      var method = prefix + 'MatchesSelector';
+      if ( ElemProto[ method ] ) {
+        return method;
+      }
+    }
+  })();
+
+  return function matchesSelector( elem, selector ) {
+    return elem[ matchesMethod ]( selector );
+  };
+
+}));
 
 
 /***/ }),
@@ -8212,6 +8276,129 @@ module.exports = {"amp":"&","apos":"'","gt":">","lt":"<","quot":"\""}
 
 /***/ }),
 
+/***/ "./node_modules/ev-emitter/ev-emitter.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
+ * EvEmitter v1.1.0
+ * Lil' event emitter
+ * MIT License
+ */
+
+/* jshint unused: true, undef: true, strict: true */
+
+( function( global, factory ) {
+  // universal module definition
+  /* jshint strict: false */ /* globals define, module, window */
+  if ( true ) {
+    // AMD - RequireJS
+    !(__WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.call(exports, __webpack_require__, exports, module)) :
+				__WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+  } else if ( typeof module == 'object' && module.exports ) {
+    // CommonJS - Browserify, Webpack
+    module.exports = factory();
+  } else {
+    // Browser globals
+    global.EvEmitter = factory();
+  }
+
+}( typeof window != 'undefined' ? window : this, function() {
+
+"use strict";
+
+function EvEmitter() {}
+
+var proto = EvEmitter.prototype;
+
+proto.on = function( eventName, listener ) {
+  if ( !eventName || !listener ) {
+    return;
+  }
+  // set events hash
+  var events = this._events = this._events || {};
+  // set listeners array
+  var listeners = events[ eventName ] = events[ eventName ] || [];
+  // only add once
+  if ( listeners.indexOf( listener ) == -1 ) {
+    listeners.push( listener );
+  }
+
+  return this;
+};
+
+proto.once = function( eventName, listener ) {
+  if ( !eventName || !listener ) {
+    return;
+  }
+  // add event
+  this.on( eventName, listener );
+  // set once flag
+  // set onceEvents hash
+  var onceEvents = this._onceEvents = this._onceEvents || {};
+  // set onceListeners object
+  var onceListeners = onceEvents[ eventName ] = onceEvents[ eventName ] || {};
+  // set flag
+  onceListeners[ listener ] = true;
+
+  return this;
+};
+
+proto.off = function( eventName, listener ) {
+  var listeners = this._events && this._events[ eventName ];
+  if ( !listeners || !listeners.length ) {
+    return;
+  }
+  var index = listeners.indexOf( listener );
+  if ( index != -1 ) {
+    listeners.splice( index, 1 );
+  }
+
+  return this;
+};
+
+proto.emitEvent = function( eventName, args ) {
+  var listeners = this._events && this._events[ eventName ];
+  if ( !listeners || !listeners.length ) {
+    return;
+  }
+  // copy over to avoid interference if .off() in listener
+  listeners = listeners.slice(0);
+  args = args || [];
+  // once stuff
+  var onceListeners = this._onceEvents && this._onceEvents[ eventName ];
+
+  for ( var i=0; i < listeners.length; i++ ) {
+    var listener = listeners[i]
+    var isOnce = onceListeners && onceListeners[ listener ];
+    if ( isOnce ) {
+      // remove listener
+      // remove before trigger to prevent recursion
+      this.off( eventName, listener );
+      // unset once flag
+      delete onceListeners[ listener ];
+    }
+    // trigger listener
+    listener.apply( this, args );
+  }
+
+  return this;
+};
+
+proto.allOff = function() {
+  delete this._events;
+  delete this._onceEvents;
+};
+
+return EvEmitter;
+
+}));
+
+
+/***/ }),
+
 /***/ "./node_modules/events/events.js":
 /***/ (function(module, exports) {
 
@@ -9134,6 +9321,473 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = warning;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__("./node_modules/process/browser.js")))
+
+/***/ }),
+
+/***/ "./node_modules/fizzy-ui-utils/utils.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
+ * Fizzy UI utils v2.0.7
+ * MIT license
+ */
+
+/*jshint browser: true, undef: true, unused: true, strict: true */
+
+( function( window, factory ) {
+  // universal module definition
+  /*jshint strict: false */ /*globals define, module, require */
+
+  if ( true ) {
+    // AMD
+    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [
+      __webpack_require__("./node_modules/desandro-matches-selector/matches-selector.js")
+    ], __WEBPACK_AMD_DEFINE_RESULT__ = (function( matchesSelector ) {
+      return factory( window, matchesSelector );
+    }).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+  } else if ( typeof module == 'object' && module.exports ) {
+    // CommonJS
+    module.exports = factory(
+      window,
+      require('desandro-matches-selector')
+    );
+  } else {
+    // browser global
+    window.fizzyUIUtils = factory(
+      window,
+      window.matchesSelector
+    );
+  }
+
+}( window, function factory( window, matchesSelector ) {
+
+'use strict';
+
+var utils = {};
+
+// ----- extend ----- //
+
+// extends objects
+utils.extend = function( a, b ) {
+  for ( var prop in b ) {
+    a[ prop ] = b[ prop ];
+  }
+  return a;
+};
+
+// ----- modulo ----- //
+
+utils.modulo = function( num, div ) {
+  return ( ( num % div ) + div ) % div;
+};
+
+// ----- makeArray ----- //
+
+var arraySlice = Array.prototype.slice;
+
+// turn element or nodeList into an array
+utils.makeArray = function( obj ) {
+  if ( Array.isArray( obj ) ) {
+    // use object if already an array
+    return obj;
+  }
+  // return empty array if undefined or null. #6
+  if ( obj === null || obj === undefined ) {
+    return [];
+  }
+
+  var isArrayLike = typeof obj == 'object' && typeof obj.length == 'number';
+  if ( isArrayLike ) {
+    // convert nodeList to array
+    return arraySlice.call( obj );
+  }
+
+  // array of single index
+  return [ obj ];
+};
+
+// ----- removeFrom ----- //
+
+utils.removeFrom = function( ary, obj ) {
+  var index = ary.indexOf( obj );
+  if ( index != -1 ) {
+    ary.splice( index, 1 );
+  }
+};
+
+// ----- getParent ----- //
+
+utils.getParent = function( elem, selector ) {
+  while ( elem.parentNode && elem != document.body ) {
+    elem = elem.parentNode;
+    if ( matchesSelector( elem, selector ) ) {
+      return elem;
+    }
+  }
+};
+
+// ----- getQueryElement ----- //
+
+// use element as selector string
+utils.getQueryElement = function( elem ) {
+  if ( typeof elem == 'string' ) {
+    return document.querySelector( elem );
+  }
+  return elem;
+};
+
+// ----- handleEvent ----- //
+
+// enable .ontype to trigger from .addEventListener( elem, 'type' )
+utils.handleEvent = function( event ) {
+  var method = 'on' + event.type;
+  if ( this[ method ] ) {
+    this[ method ]( event );
+  }
+};
+
+// ----- filterFindElements ----- //
+
+utils.filterFindElements = function( elems, selector ) {
+  // make array of elems
+  elems = utils.makeArray( elems );
+  var ffElems = [];
+
+  elems.forEach( function( elem ) {
+    // check that elem is an actual element
+    if ( !( elem instanceof HTMLElement ) ) {
+      return;
+    }
+    // add elem if no selector
+    if ( !selector ) {
+      ffElems.push( elem );
+      return;
+    }
+    // filter & find items if we have a selector
+    // filter
+    if ( matchesSelector( elem, selector ) ) {
+      ffElems.push( elem );
+    }
+    // find children
+    var childElems = elem.querySelectorAll( selector );
+    // concat childElems to filterFound array
+    for ( var i=0; i < childElems.length; i++ ) {
+      ffElems.push( childElems[i] );
+    }
+  });
+
+  return ffElems;
+};
+
+// ----- debounceMethod ----- //
+
+utils.debounceMethod = function( _class, methodName, threshold ) {
+  threshold = threshold || 100;
+  // original method
+  var method = _class.prototype[ methodName ];
+  var timeoutName = methodName + 'Timeout';
+
+  _class.prototype[ methodName ] = function() {
+    var timeout = this[ timeoutName ];
+    clearTimeout( timeout );
+
+    var args = arguments;
+    var _this = this;
+    this[ timeoutName ] = setTimeout( function() {
+      method.apply( _this, args );
+      delete _this[ timeoutName ];
+    }, threshold );
+  };
+};
+
+// ----- docReady ----- //
+
+utils.docReady = function( callback ) {
+  var readyState = document.readyState;
+  if ( readyState == 'complete' || readyState == 'interactive' ) {
+    // do async to allow for other scripts to run. metafizzy/flickity#441
+    setTimeout( callback );
+  } else {
+    document.addEventListener( 'DOMContentLoaded', callback );
+  }
+};
+
+// ----- htmlInit ----- //
+
+// http://jamesroberts.name/blog/2010/02/22/string-functions-for-javascript-trim-to-camel-case-to-dashed-and-to-underscore/
+utils.toDashed = function( str ) {
+  return str.replace( /(.)([A-Z])/g, function( match, $1, $2 ) {
+    return $1 + '-' + $2;
+  }).toLowerCase();
+};
+
+var console = window.console;
+/**
+ * allow user to initialize classes via [data-namespace] or .js-namespace class
+ * htmlInit( Widget, 'widgetName' )
+ * options are parsed from data-namespace-options
+ */
+utils.htmlInit = function( WidgetClass, namespace ) {
+  utils.docReady( function() {
+    var dashedNamespace = utils.toDashed( namespace );
+    var dataAttr = 'data-' + dashedNamespace;
+    var dataAttrElems = document.querySelectorAll( '[' + dataAttr + ']' );
+    var jsDashElems = document.querySelectorAll( '.js-' + dashedNamespace );
+    var elems = utils.makeArray( dataAttrElems )
+      .concat( utils.makeArray( jsDashElems ) );
+    var dataOptionsAttr = dataAttr + '-options';
+    var jQuery = window.jQuery;
+
+    elems.forEach( function( elem ) {
+      var attr = elem.getAttribute( dataAttr ) ||
+        elem.getAttribute( dataOptionsAttr );
+      var options;
+      try {
+        options = attr && JSON.parse( attr );
+      } catch ( error ) {
+        // log error, do not initialize
+        if ( console ) {
+          console.error( 'Error parsing ' + dataAttr + ' on ' + elem.className +
+          ': ' + error );
+        }
+        return;
+      }
+      // initialize
+      var instance = new WidgetClass( elem, options );
+      // make available via $().data('namespace')
+      if ( jQuery ) {
+        jQuery.data( elem, namespace, instance );
+      }
+    });
+
+  });
+};
+
+// -----  ----- //
+
+return utils;
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/get-size/get-size.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
+ * getSize v2.0.3
+ * measure size of elements
+ * MIT license
+ */
+
+/* jshint browser: true, strict: true, undef: true, unused: true */
+/* globals console: false */
+
+( function( window, factory ) {
+  /* jshint strict: false */ /* globals define, module */
+  if ( true ) {
+    // AMD
+    !(__WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.call(exports, __webpack_require__, exports, module)) :
+				__WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+  } else if ( typeof module == 'object' && module.exports ) {
+    // CommonJS
+    module.exports = factory();
+  } else {
+    // browser global
+    window.getSize = factory();
+  }
+
+})( window, function factory() {
+'use strict';
+
+// -------------------------- helpers -------------------------- //
+
+// get a number from a string, not a percentage
+function getStyleSize( value ) {
+  var num = parseFloat( value );
+  // not a percent like '100%', and a number
+  var isValid = value.indexOf('%') == -1 && !isNaN( num );
+  return isValid && num;
+}
+
+function noop() {}
+
+var logError = typeof console == 'undefined' ? noop :
+  function( message ) {
+    console.error( message );
+  };
+
+// -------------------------- measurements -------------------------- //
+
+var measurements = [
+  'paddingLeft',
+  'paddingRight',
+  'paddingTop',
+  'paddingBottom',
+  'marginLeft',
+  'marginRight',
+  'marginTop',
+  'marginBottom',
+  'borderLeftWidth',
+  'borderRightWidth',
+  'borderTopWidth',
+  'borderBottomWidth'
+];
+
+var measurementsLength = measurements.length;
+
+function getZeroSize() {
+  var size = {
+    width: 0,
+    height: 0,
+    innerWidth: 0,
+    innerHeight: 0,
+    outerWidth: 0,
+    outerHeight: 0
+  };
+  for ( var i=0; i < measurementsLength; i++ ) {
+    var measurement = measurements[i];
+    size[ measurement ] = 0;
+  }
+  return size;
+}
+
+// -------------------------- getStyle -------------------------- //
+
+/**
+ * getStyle, get style of element, check for Firefox bug
+ * https://bugzilla.mozilla.org/show_bug.cgi?id=548397
+ */
+function getStyle( elem ) {
+  var style = getComputedStyle( elem );
+  if ( !style ) {
+    logError( 'Style returned ' + style +
+      '. Are you running this code in a hidden iframe on Firefox? ' +
+      'See https://bit.ly/getsizebug1' );
+  }
+  return style;
+}
+
+// -------------------------- setup -------------------------- //
+
+var isSetup = false;
+
+var isBoxSizeOuter;
+
+/**
+ * setup
+ * check isBoxSizerOuter
+ * do on first getSize() rather than on page load for Firefox bug
+ */
+function setup() {
+  // setup once
+  if ( isSetup ) {
+    return;
+  }
+  isSetup = true;
+
+  // -------------------------- box sizing -------------------------- //
+
+  /**
+   * Chrome & Safari measure the outer-width on style.width on border-box elems
+   * IE11 & Firefox<29 measures the inner-width
+   */
+  var div = document.createElement('div');
+  div.style.width = '200px';
+  div.style.padding = '1px 2px 3px 4px';
+  div.style.borderStyle = 'solid';
+  div.style.borderWidth = '1px 2px 3px 4px';
+  div.style.boxSizing = 'border-box';
+
+  var body = document.body || document.documentElement;
+  body.appendChild( div );
+  var style = getStyle( div );
+  // round value for browser zoom. desandro/masonry#928
+  isBoxSizeOuter = Math.round( getStyleSize( style.width ) ) == 200;
+  getSize.isBoxSizeOuter = isBoxSizeOuter;
+
+  body.removeChild( div );
+}
+
+// -------------------------- getSize -------------------------- //
+
+function getSize( elem ) {
+  setup();
+
+  // use querySeletor if elem is string
+  if ( typeof elem == 'string' ) {
+    elem = document.querySelector( elem );
+  }
+
+  // do not proceed on non-objects
+  if ( !elem || typeof elem != 'object' || !elem.nodeType ) {
+    return;
+  }
+
+  var style = getStyle( elem );
+
+  // if hidden, everything is 0
+  if ( style.display == 'none' ) {
+    return getZeroSize();
+  }
+
+  var size = {};
+  size.width = elem.offsetWidth;
+  size.height = elem.offsetHeight;
+
+  var isBorderBox = size.isBorderBox = style.boxSizing == 'border-box';
+
+  // get all measurements
+  for ( var i=0; i < measurementsLength; i++ ) {
+    var measurement = measurements[i];
+    var value = style[ measurement ];
+    var num = parseFloat( value );
+    // any 'auto', 'medium' value will be 0
+    size[ measurement ] = !isNaN( num ) ? num : 0;
+  }
+
+  var paddingWidth = size.paddingLeft + size.paddingRight;
+  var paddingHeight = size.paddingTop + size.paddingBottom;
+  var marginWidth = size.marginLeft + size.marginRight;
+  var marginHeight = size.marginTop + size.marginBottom;
+  var borderWidth = size.borderLeftWidth + size.borderRightWidth;
+  var borderHeight = size.borderTopWidth + size.borderBottomWidth;
+
+  var isBorderBoxSizeOuter = isBorderBox && isBoxSizeOuter;
+
+  // overwrite width and height if we can get it from style
+  var styleWidth = getStyleSize( style.width );
+  if ( styleWidth !== false ) {
+    size.width = styleWidth +
+      // add padding and border unless it's already including it
+      ( isBorderBoxSizeOuter ? 0 : paddingWidth + borderWidth );
+  }
+
+  var styleHeight = getStyleSize( style.height );
+  if ( styleHeight !== false ) {
+    size.height = styleHeight +
+      // add padding and border unless it's already including it
+      ( isBorderBoxSizeOuter ? 0 : paddingHeight + borderHeight );
+  }
+
+  size.innerWidth = size.width - ( paddingWidth + borderWidth );
+  size.innerHeight = size.height - ( paddingHeight + borderHeight );
+
+  size.outerWidth = size.width + marginWidth;
+  size.outerHeight = size.height + marginHeight;
+
+  return size;
+}
+
+return getSize;
+
+});
+
 
 /***/ }),
 
@@ -10499,6 +11153,391 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
 
 /***/ }),
 
+/***/ "./node_modules/imagesloaded/imagesloaded.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
+ * imagesLoaded v4.1.4
+ * JavaScript is all like "You images are done yet or what?"
+ * MIT License
+ */
+
+( function( window, factory ) { 'use strict';
+  // universal module definition
+
+  /*global define: false, module: false, require: false */
+
+  if ( true ) {
+    // AMD
+    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [
+      __webpack_require__("./node_modules/ev-emitter/ev-emitter.js")
+    ], __WEBPACK_AMD_DEFINE_RESULT__ = (function( EvEmitter ) {
+      return factory( window, EvEmitter );
+    }).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+  } else if ( typeof module == 'object' && module.exports ) {
+    // CommonJS
+    module.exports = factory(
+      window,
+      require('ev-emitter')
+    );
+  } else {
+    // browser global
+    window.imagesLoaded = factory(
+      window,
+      window.EvEmitter
+    );
+  }
+
+})( typeof window !== 'undefined' ? window : this,
+
+// --------------------------  factory -------------------------- //
+
+function factory( window, EvEmitter ) {
+
+'use strict';
+
+var $ = window.jQuery;
+var console = window.console;
+
+// -------------------------- helpers -------------------------- //
+
+// extend objects
+function extend( a, b ) {
+  for ( var prop in b ) {
+    a[ prop ] = b[ prop ];
+  }
+  return a;
+}
+
+var arraySlice = Array.prototype.slice;
+
+// turn element or nodeList into an array
+function makeArray( obj ) {
+  if ( Array.isArray( obj ) ) {
+    // use object if already an array
+    return obj;
+  }
+
+  var isArrayLike = typeof obj == 'object' && typeof obj.length == 'number';
+  if ( isArrayLike ) {
+    // convert nodeList to array
+    return arraySlice.call( obj );
+  }
+
+  // array of single index
+  return [ obj ];
+}
+
+// -------------------------- imagesLoaded -------------------------- //
+
+/**
+ * @param {Array, Element, NodeList, String} elem
+ * @param {Object or Function} options - if function, use as callback
+ * @param {Function} onAlways - callback function
+ */
+function ImagesLoaded( elem, options, onAlways ) {
+  // coerce ImagesLoaded() without new, to be new ImagesLoaded()
+  if ( !( this instanceof ImagesLoaded ) ) {
+    return new ImagesLoaded( elem, options, onAlways );
+  }
+  // use elem as selector string
+  var queryElem = elem;
+  if ( typeof elem == 'string' ) {
+    queryElem = document.querySelectorAll( elem );
+  }
+  // bail if bad element
+  if ( !queryElem ) {
+    console.error( 'Bad element for imagesLoaded ' + ( queryElem || elem ) );
+    return;
+  }
+
+  this.elements = makeArray( queryElem );
+  this.options = extend( {}, this.options );
+  // shift arguments if no options set
+  if ( typeof options == 'function' ) {
+    onAlways = options;
+  } else {
+    extend( this.options, options );
+  }
+
+  if ( onAlways ) {
+    this.on( 'always', onAlways );
+  }
+
+  this.getImages();
+
+  if ( $ ) {
+    // add jQuery Deferred object
+    this.jqDeferred = new $.Deferred();
+  }
+
+  // HACK check async to allow time to bind listeners
+  setTimeout( this.check.bind( this ) );
+}
+
+ImagesLoaded.prototype = Object.create( EvEmitter.prototype );
+
+ImagesLoaded.prototype.options = {};
+
+ImagesLoaded.prototype.getImages = function() {
+  this.images = [];
+
+  // filter & find items if we have an item selector
+  this.elements.forEach( this.addElementImages, this );
+};
+
+/**
+ * @param {Node} element
+ */
+ImagesLoaded.prototype.addElementImages = function( elem ) {
+  // filter siblings
+  if ( elem.nodeName == 'IMG' ) {
+    this.addImage( elem );
+  }
+  // get background image on element
+  if ( this.options.background === true ) {
+    this.addElementBackgroundImages( elem );
+  }
+
+  // find children
+  // no non-element nodes, #143
+  var nodeType = elem.nodeType;
+  if ( !nodeType || !elementNodeTypes[ nodeType ] ) {
+    return;
+  }
+  var childImgs = elem.querySelectorAll('img');
+  // concat childElems to filterFound array
+  for ( var i=0; i < childImgs.length; i++ ) {
+    var img = childImgs[i];
+    this.addImage( img );
+  }
+
+  // get child background images
+  if ( typeof this.options.background == 'string' ) {
+    var children = elem.querySelectorAll( this.options.background );
+    for ( i=0; i < children.length; i++ ) {
+      var child = children[i];
+      this.addElementBackgroundImages( child );
+    }
+  }
+};
+
+var elementNodeTypes = {
+  1: true,
+  9: true,
+  11: true
+};
+
+ImagesLoaded.prototype.addElementBackgroundImages = function( elem ) {
+  var style = getComputedStyle( elem );
+  if ( !style ) {
+    // Firefox returns null if in a hidden iframe https://bugzil.la/548397
+    return;
+  }
+  // get url inside url("...")
+  var reURL = /url\((['"])?(.*?)\1\)/gi;
+  var matches = reURL.exec( style.backgroundImage );
+  while ( matches !== null ) {
+    var url = matches && matches[2];
+    if ( url ) {
+      this.addBackground( url, elem );
+    }
+    matches = reURL.exec( style.backgroundImage );
+  }
+};
+
+/**
+ * @param {Image} img
+ */
+ImagesLoaded.prototype.addImage = function( img ) {
+  var loadingImage = new LoadingImage( img );
+  this.images.push( loadingImage );
+};
+
+ImagesLoaded.prototype.addBackground = function( url, elem ) {
+  var background = new Background( url, elem );
+  this.images.push( background );
+};
+
+ImagesLoaded.prototype.check = function() {
+  var _this = this;
+  this.progressedCount = 0;
+  this.hasAnyBroken = false;
+  // complete if no images
+  if ( !this.images.length ) {
+    this.complete();
+    return;
+  }
+
+  function onProgress( image, elem, message ) {
+    // HACK - Chrome triggers event before object properties have changed. #83
+    setTimeout( function() {
+      _this.progress( image, elem, message );
+    });
+  }
+
+  this.images.forEach( function( loadingImage ) {
+    loadingImage.once( 'progress', onProgress );
+    loadingImage.check();
+  });
+};
+
+ImagesLoaded.prototype.progress = function( image, elem, message ) {
+  this.progressedCount++;
+  this.hasAnyBroken = this.hasAnyBroken || !image.isLoaded;
+  // progress event
+  this.emitEvent( 'progress', [ this, image, elem ] );
+  if ( this.jqDeferred && this.jqDeferred.notify ) {
+    this.jqDeferred.notify( this, image );
+  }
+  // check if completed
+  if ( this.progressedCount == this.images.length ) {
+    this.complete();
+  }
+
+  if ( this.options.debug && console ) {
+    console.log( 'progress: ' + message, image, elem );
+  }
+};
+
+ImagesLoaded.prototype.complete = function() {
+  var eventName = this.hasAnyBroken ? 'fail' : 'done';
+  this.isComplete = true;
+  this.emitEvent( eventName, [ this ] );
+  this.emitEvent( 'always', [ this ] );
+  if ( this.jqDeferred ) {
+    var jqMethod = this.hasAnyBroken ? 'reject' : 'resolve';
+    this.jqDeferred[ jqMethod ]( this );
+  }
+};
+
+// --------------------------  -------------------------- //
+
+function LoadingImage( img ) {
+  this.img = img;
+}
+
+LoadingImage.prototype = Object.create( EvEmitter.prototype );
+
+LoadingImage.prototype.check = function() {
+  // If complete is true and browser supports natural sizes,
+  // try to check for image status manually.
+  var isComplete = this.getIsImageComplete();
+  if ( isComplete ) {
+    // report based on naturalWidth
+    this.confirm( this.img.naturalWidth !== 0, 'naturalWidth' );
+    return;
+  }
+
+  // If none of the checks above matched, simulate loading on detached element.
+  this.proxyImage = new Image();
+  this.proxyImage.addEventListener( 'load', this );
+  this.proxyImage.addEventListener( 'error', this );
+  // bind to image as well for Firefox. #191
+  this.img.addEventListener( 'load', this );
+  this.img.addEventListener( 'error', this );
+  this.proxyImage.src = this.img.src;
+};
+
+LoadingImage.prototype.getIsImageComplete = function() {
+  // check for non-zero, non-undefined naturalWidth
+  // fixes Safari+InfiniteScroll+Masonry bug infinite-scroll#671
+  return this.img.complete && this.img.naturalWidth;
+};
+
+LoadingImage.prototype.confirm = function( isLoaded, message ) {
+  this.isLoaded = isLoaded;
+  this.emitEvent( 'progress', [ this, this.img, message ] );
+};
+
+// ----- events ----- //
+
+// trigger specified handler for event type
+LoadingImage.prototype.handleEvent = function( event ) {
+  var method = 'on' + event.type;
+  if ( this[ method ] ) {
+    this[ method ]( event );
+  }
+};
+
+LoadingImage.prototype.onload = function() {
+  this.confirm( true, 'onload' );
+  this.unbindEvents();
+};
+
+LoadingImage.prototype.onerror = function() {
+  this.confirm( false, 'onerror' );
+  this.unbindEvents();
+};
+
+LoadingImage.prototype.unbindEvents = function() {
+  this.proxyImage.removeEventListener( 'load', this );
+  this.proxyImage.removeEventListener( 'error', this );
+  this.img.removeEventListener( 'load', this );
+  this.img.removeEventListener( 'error', this );
+};
+
+// -------------------------- Background -------------------------- //
+
+function Background( url, element ) {
+  this.url = url;
+  this.element = element;
+  this.img = new Image();
+}
+
+// inherit LoadingImage prototype
+Background.prototype = Object.create( LoadingImage.prototype );
+
+Background.prototype.check = function() {
+  this.img.addEventListener( 'load', this );
+  this.img.addEventListener( 'error', this );
+  this.img.src = this.url;
+  // check if image is already complete
+  var isComplete = this.getIsImageComplete();
+  if ( isComplete ) {
+    this.confirm( this.img.naturalWidth !== 0, 'naturalWidth' );
+    this.unbindEvents();
+  }
+};
+
+Background.prototype.unbindEvents = function() {
+  this.img.removeEventListener( 'load', this );
+  this.img.removeEventListener( 'error', this );
+};
+
+Background.prototype.confirm = function( isLoaded, message ) {
+  this.isLoaded = isLoaded;
+  this.emitEvent( 'progress', [ this, this.element, message ] );
+};
+
+// -------------------------- jQuery -------------------------- //
+
+ImagesLoaded.makeJQueryPlugin = function( jQuery ) {
+  jQuery = jQuery || window.jQuery;
+  if ( !jQuery ) {
+    return;
+  }
+  // set local variable
+  $ = jQuery;
+  // $().imagesLoaded()
+  $.fn.imagesLoaded = function( options, callback ) {
+    var instance = new ImagesLoaded( this, options, callback );
+    return instance.jqDeferred.promise( $(this) );
+  };
+};
+// try making plugin
+ImagesLoaded.makeJQueryPlugin();
+
+// --------------------------  -------------------------- //
+
+return ImagesLoaded;
+
+});
+
+
+/***/ }),
+
 /***/ "./node_modules/inherits/inherits_browser.js":
 /***/ (function(module, exports) {
 
@@ -11135,6 +12174,254 @@ function coerce(val) {
 
 /***/ }),
 
+/***/ "./node_modules/masonry-layout/masonry.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
+ * Masonry v4.2.2
+ * Cascading grid layout library
+ * https://masonry.desandro.com
+ * MIT License
+ * by David DeSandro
+ */
+
+( function( window, factory ) {
+  // universal module definition
+  /* jshint strict: false */ /*globals define, module, require */
+  if ( true ) {
+    // AMD
+    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [
+        __webpack_require__("./node_modules/outlayer/outlayer.js"),
+        __webpack_require__("./node_modules/get-size/get-size.js")
+      ], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+  } else if ( typeof module == 'object' && module.exports ) {
+    // CommonJS
+    module.exports = factory(
+      require('outlayer'),
+      require('get-size')
+    );
+  } else {
+    // browser global
+    window.Masonry = factory(
+      window.Outlayer,
+      window.getSize
+    );
+  }
+
+}( window, function factory( Outlayer, getSize ) {
+
+'use strict';
+
+// -------------------------- masonryDefinition -------------------------- //
+
+  // create an Outlayer layout class
+  var Masonry = Outlayer.create('masonry');
+  // isFitWidth -> fitWidth
+  Masonry.compatOptions.fitWidth = 'isFitWidth';
+
+  var proto = Masonry.prototype;
+
+  proto._resetLayout = function() {
+    this.getSize();
+    this._getMeasurement( 'columnWidth', 'outerWidth' );
+    this._getMeasurement( 'gutter', 'outerWidth' );
+    this.measureColumns();
+
+    // reset column Y
+    this.colYs = [];
+    for ( var i=0; i < this.cols; i++ ) {
+      this.colYs.push( 0 );
+    }
+
+    this.maxY = 0;
+    this.horizontalColIndex = 0;
+  };
+
+  proto.measureColumns = function() {
+    this.getContainerWidth();
+    // if columnWidth is 0, default to outerWidth of first item
+    if ( !this.columnWidth ) {
+      var firstItem = this.items[0];
+      var firstItemElem = firstItem && firstItem.element;
+      // columnWidth fall back to item of first element
+      this.columnWidth = firstItemElem && getSize( firstItemElem ).outerWidth ||
+        // if first elem has no width, default to size of container
+        this.containerWidth;
+    }
+
+    var columnWidth = this.columnWidth += this.gutter;
+
+    // calculate columns
+    var containerWidth = this.containerWidth + this.gutter;
+    var cols = containerWidth / columnWidth;
+    // fix rounding errors, typically with gutters
+    var excess = columnWidth - containerWidth % columnWidth;
+    // if overshoot is less than a pixel, round up, otherwise floor it
+    var mathMethod = excess && excess < 1 ? 'round' : 'floor';
+    cols = Math[ mathMethod ]( cols );
+    this.cols = Math.max( cols, 1 );
+  };
+
+  proto.getContainerWidth = function() {
+    // container is parent if fit width
+    var isFitWidth = this._getOption('fitWidth');
+    var container = isFitWidth ? this.element.parentNode : this.element;
+    // check that this.size and size are there
+    // IE8 triggers resize on body size change, so they might not be
+    var size = getSize( container );
+    this.containerWidth = size && size.innerWidth;
+  };
+
+  proto._getItemLayoutPosition = function( item ) {
+    item.getSize();
+    // how many columns does this brick span
+    var remainder = item.size.outerWidth % this.columnWidth;
+    var mathMethod = remainder && remainder < 1 ? 'round' : 'ceil';
+    // round if off by 1 pixel, otherwise use ceil
+    var colSpan = Math[ mathMethod ]( item.size.outerWidth / this.columnWidth );
+    colSpan = Math.min( colSpan, this.cols );
+    // use horizontal or top column position
+    var colPosMethod = this.options.horizontalOrder ?
+      '_getHorizontalColPosition' : '_getTopColPosition';
+    var colPosition = this[ colPosMethod ]( colSpan, item );
+    // position the brick
+    var position = {
+      x: this.columnWidth * colPosition.col,
+      y: colPosition.y
+    };
+    // apply setHeight to necessary columns
+    var setHeight = colPosition.y + item.size.outerHeight;
+    var setMax = colSpan + colPosition.col;
+    for ( var i = colPosition.col; i < setMax; i++ ) {
+      this.colYs[i] = setHeight;
+    }
+
+    return position;
+  };
+
+  proto._getTopColPosition = function( colSpan ) {
+    var colGroup = this._getTopColGroup( colSpan );
+    // get the minimum Y value from the columns
+    var minimumY = Math.min.apply( Math, colGroup );
+
+    return {
+      col: colGroup.indexOf( minimumY ),
+      y: minimumY,
+    };
+  };
+
+  /**
+   * @param {Number} colSpan - number of columns the element spans
+   * @returns {Array} colGroup
+   */
+  proto._getTopColGroup = function( colSpan ) {
+    if ( colSpan < 2 ) {
+      // if brick spans only one column, use all the column Ys
+      return this.colYs;
+    }
+
+    var colGroup = [];
+    // how many different places could this brick fit horizontally
+    var groupCount = this.cols + 1 - colSpan;
+    // for each group potential horizontal position
+    for ( var i = 0; i < groupCount; i++ ) {
+      colGroup[i] = this._getColGroupY( i, colSpan );
+    }
+    return colGroup;
+  };
+
+  proto._getColGroupY = function( col, colSpan ) {
+    if ( colSpan < 2 ) {
+      return this.colYs[ col ];
+    }
+    // make an array of colY values for that one group
+    var groupColYs = this.colYs.slice( col, col + colSpan );
+    // and get the max value of the array
+    return Math.max.apply( Math, groupColYs );
+  };
+
+  // get column position based on horizontal index. #873
+  proto._getHorizontalColPosition = function( colSpan, item ) {
+    var col = this.horizontalColIndex % this.cols;
+    var isOver = colSpan > 1 && col + colSpan > this.cols;
+    // shift to next row if item can't fit on current row
+    col = isOver ? 0 : col;
+    // don't let zero-size items take up space
+    var hasSize = item.size.outerWidth && item.size.outerHeight;
+    this.horizontalColIndex = hasSize ? col + colSpan : this.horizontalColIndex;
+
+    return {
+      col: col,
+      y: this._getColGroupY( col, colSpan ),
+    };
+  };
+
+  proto._manageStamp = function( stamp ) {
+    var stampSize = getSize( stamp );
+    var offset = this._getElementOffset( stamp );
+    // get the columns that this stamp affects
+    var isOriginLeft = this._getOption('originLeft');
+    var firstX = isOriginLeft ? offset.left : offset.right;
+    var lastX = firstX + stampSize.outerWidth;
+    var firstCol = Math.floor( firstX / this.columnWidth );
+    firstCol = Math.max( 0, firstCol );
+    var lastCol = Math.floor( lastX / this.columnWidth );
+    // lastCol should not go over if multiple of columnWidth #425
+    lastCol -= lastX % this.columnWidth ? 0 : 1;
+    lastCol = Math.min( this.cols - 1, lastCol );
+    // set colYs to bottom of the stamp
+
+    var isOriginTop = this._getOption('originTop');
+    var stampMaxY = ( isOriginTop ? offset.top : offset.bottom ) +
+      stampSize.outerHeight;
+    for ( var i = firstCol; i <= lastCol; i++ ) {
+      this.colYs[i] = Math.max( stampMaxY, this.colYs[i] );
+    }
+  };
+
+  proto._getContainerSize = function() {
+    this.maxY = Math.max.apply( Math, this.colYs );
+    var size = {
+      height: this.maxY
+    };
+
+    if ( this._getOption('fitWidth') ) {
+      size.width = this._getContainerFitWidth();
+    }
+
+    return size;
+  };
+
+  proto._getContainerFitWidth = function() {
+    var unusedCols = 0;
+    // count unused columns
+    var i = this.cols;
+    while ( --i ) {
+      if ( this.colYs[i] !== 0 ) {
+        break;
+      }
+      unusedCols++;
+    }
+    // fit container to columns that have been used
+    return ( this.cols - unusedCols ) * this.columnWidth - this.gutter;
+  };
+
+  proto.needsResizeLayout = function() {
+    var previousWidth = this.containerWidth;
+    this.getContainerWidth();
+    return previousWidth != this.containerWidth;
+  };
+
+  return Masonry;
+
+}));
+
+
+/***/ }),
+
 /***/ "./node_modules/ms/index.js":
 /***/ (function(module, exports) {
 
@@ -11388,6 +12675,1513 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 	return to;
 };
+
+
+/***/ }),
+
+/***/ "./node_modules/outlayer/item.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
+ * Outlayer Item
+ */
+
+( function( window, factory ) {
+  // universal module definition
+  /* jshint strict: false */ /* globals define, module, require */
+  if ( true ) {
+    // AMD - RequireJS
+    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [
+        __webpack_require__("./node_modules/ev-emitter/ev-emitter.js"),
+        __webpack_require__("./node_modules/get-size/get-size.js")
+      ], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+  } else if ( typeof module == 'object' && module.exports ) {
+    // CommonJS - Browserify, Webpack
+    module.exports = factory(
+      require('ev-emitter'),
+      require('get-size')
+    );
+  } else {
+    // browser global
+    window.Outlayer = {};
+    window.Outlayer.Item = factory(
+      window.EvEmitter,
+      window.getSize
+    );
+  }
+
+}( window, function factory( EvEmitter, getSize ) {
+'use strict';
+
+// ----- helpers ----- //
+
+function isEmptyObj( obj ) {
+  for ( var prop in obj ) {
+    return false;
+  }
+  prop = null;
+  return true;
+}
+
+// -------------------------- CSS3 support -------------------------- //
+
+
+var docElemStyle = document.documentElement.style;
+
+var transitionProperty = typeof docElemStyle.transition == 'string' ?
+  'transition' : 'WebkitTransition';
+var transformProperty = typeof docElemStyle.transform == 'string' ?
+  'transform' : 'WebkitTransform';
+
+var transitionEndEvent = {
+  WebkitTransition: 'webkitTransitionEnd',
+  transition: 'transitionend'
+}[ transitionProperty ];
+
+// cache all vendor properties that could have vendor prefix
+var vendorProperties = {
+  transform: transformProperty,
+  transition: transitionProperty,
+  transitionDuration: transitionProperty + 'Duration',
+  transitionProperty: transitionProperty + 'Property',
+  transitionDelay: transitionProperty + 'Delay'
+};
+
+// -------------------------- Item -------------------------- //
+
+function Item( element, layout ) {
+  if ( !element ) {
+    return;
+  }
+
+  this.element = element;
+  // parent layout class, i.e. Masonry, Isotope, or Packery
+  this.layout = layout;
+  this.position = {
+    x: 0,
+    y: 0
+  };
+
+  this._create();
+}
+
+// inherit EvEmitter
+var proto = Item.prototype = Object.create( EvEmitter.prototype );
+proto.constructor = Item;
+
+proto._create = function() {
+  // transition objects
+  this._transn = {
+    ingProperties: {},
+    clean: {},
+    onEnd: {}
+  };
+
+  this.css({
+    position: 'absolute'
+  });
+};
+
+// trigger specified handler for event type
+proto.handleEvent = function( event ) {
+  var method = 'on' + event.type;
+  if ( this[ method ] ) {
+    this[ method ]( event );
+  }
+};
+
+proto.getSize = function() {
+  this.size = getSize( this.element );
+};
+
+/**
+ * apply CSS styles to element
+ * @param {Object} style
+ */
+proto.css = function( style ) {
+  var elemStyle = this.element.style;
+
+  for ( var prop in style ) {
+    // use vendor property if available
+    var supportedProp = vendorProperties[ prop ] || prop;
+    elemStyle[ supportedProp ] = style[ prop ];
+  }
+};
+
+ // measure position, and sets it
+proto.getPosition = function() {
+  var style = getComputedStyle( this.element );
+  var isOriginLeft = this.layout._getOption('originLeft');
+  var isOriginTop = this.layout._getOption('originTop');
+  var xValue = style[ isOriginLeft ? 'left' : 'right' ];
+  var yValue = style[ isOriginTop ? 'top' : 'bottom' ];
+  var x = parseFloat( xValue );
+  var y = parseFloat( yValue );
+  // convert percent to pixels
+  var layoutSize = this.layout.size;
+  if ( xValue.indexOf('%') != -1 ) {
+    x = ( x / 100 ) * layoutSize.width;
+  }
+  if ( yValue.indexOf('%') != -1 ) {
+    y = ( y / 100 ) * layoutSize.height;
+  }
+  // clean up 'auto' or other non-integer values
+  x = isNaN( x ) ? 0 : x;
+  y = isNaN( y ) ? 0 : y;
+  // remove padding from measurement
+  x -= isOriginLeft ? layoutSize.paddingLeft : layoutSize.paddingRight;
+  y -= isOriginTop ? layoutSize.paddingTop : layoutSize.paddingBottom;
+
+  this.position.x = x;
+  this.position.y = y;
+};
+
+// set settled position, apply padding
+proto.layoutPosition = function() {
+  var layoutSize = this.layout.size;
+  var style = {};
+  var isOriginLeft = this.layout._getOption('originLeft');
+  var isOriginTop = this.layout._getOption('originTop');
+
+  // x
+  var xPadding = isOriginLeft ? 'paddingLeft' : 'paddingRight';
+  var xProperty = isOriginLeft ? 'left' : 'right';
+  var xResetProperty = isOriginLeft ? 'right' : 'left';
+
+  var x = this.position.x + layoutSize[ xPadding ];
+  // set in percentage or pixels
+  style[ xProperty ] = this.getXValue( x );
+  // reset other property
+  style[ xResetProperty ] = '';
+
+  // y
+  var yPadding = isOriginTop ? 'paddingTop' : 'paddingBottom';
+  var yProperty = isOriginTop ? 'top' : 'bottom';
+  var yResetProperty = isOriginTop ? 'bottom' : 'top';
+
+  var y = this.position.y + layoutSize[ yPadding ];
+  // set in percentage or pixels
+  style[ yProperty ] = this.getYValue( y );
+  // reset other property
+  style[ yResetProperty ] = '';
+
+  this.css( style );
+  this.emitEvent( 'layout', [ this ] );
+};
+
+proto.getXValue = function( x ) {
+  var isHorizontal = this.layout._getOption('horizontal');
+  return this.layout.options.percentPosition && !isHorizontal ?
+    ( ( x / this.layout.size.width ) * 100 ) + '%' : x + 'px';
+};
+
+proto.getYValue = function( y ) {
+  var isHorizontal = this.layout._getOption('horizontal');
+  return this.layout.options.percentPosition && isHorizontal ?
+    ( ( y / this.layout.size.height ) * 100 ) + '%' : y + 'px';
+};
+
+proto._transitionTo = function( x, y ) {
+  this.getPosition();
+  // get current x & y from top/left
+  var curX = this.position.x;
+  var curY = this.position.y;
+
+  var didNotMove = x == this.position.x && y == this.position.y;
+
+  // save end position
+  this.setPosition( x, y );
+
+  // if did not move and not transitioning, just go to layout
+  if ( didNotMove && !this.isTransitioning ) {
+    this.layoutPosition();
+    return;
+  }
+
+  var transX = x - curX;
+  var transY = y - curY;
+  var transitionStyle = {};
+  transitionStyle.transform = this.getTranslate( transX, transY );
+
+  this.transition({
+    to: transitionStyle,
+    onTransitionEnd: {
+      transform: this.layoutPosition
+    },
+    isCleaning: true
+  });
+};
+
+proto.getTranslate = function( x, y ) {
+  // flip cooridinates if origin on right or bottom
+  var isOriginLeft = this.layout._getOption('originLeft');
+  var isOriginTop = this.layout._getOption('originTop');
+  x = isOriginLeft ? x : -x;
+  y = isOriginTop ? y : -y;
+  return 'translate3d(' + x + 'px, ' + y + 'px, 0)';
+};
+
+// non transition + transform support
+proto.goTo = function( x, y ) {
+  this.setPosition( x, y );
+  this.layoutPosition();
+};
+
+proto.moveTo = proto._transitionTo;
+
+proto.setPosition = function( x, y ) {
+  this.position.x = parseFloat( x );
+  this.position.y = parseFloat( y );
+};
+
+// ----- transition ----- //
+
+/**
+ * @param {Object} style - CSS
+ * @param {Function} onTransitionEnd
+ */
+
+// non transition, just trigger callback
+proto._nonTransition = function( args ) {
+  this.css( args.to );
+  if ( args.isCleaning ) {
+    this._removeStyles( args.to );
+  }
+  for ( var prop in args.onTransitionEnd ) {
+    args.onTransitionEnd[ prop ].call( this );
+  }
+};
+
+/**
+ * proper transition
+ * @param {Object} args - arguments
+ *   @param {Object} to - style to transition to
+ *   @param {Object} from - style to start transition from
+ *   @param {Boolean} isCleaning - removes transition styles after transition
+ *   @param {Function} onTransitionEnd - callback
+ */
+proto.transition = function( args ) {
+  // redirect to nonTransition if no transition duration
+  if ( !parseFloat( this.layout.options.transitionDuration ) ) {
+    this._nonTransition( args );
+    return;
+  }
+
+  var _transition = this._transn;
+  // keep track of onTransitionEnd callback by css property
+  for ( var prop in args.onTransitionEnd ) {
+    _transition.onEnd[ prop ] = args.onTransitionEnd[ prop ];
+  }
+  // keep track of properties that are transitioning
+  for ( prop in args.to ) {
+    _transition.ingProperties[ prop ] = true;
+    // keep track of properties to clean up when transition is done
+    if ( args.isCleaning ) {
+      _transition.clean[ prop ] = true;
+    }
+  }
+
+  // set from styles
+  if ( args.from ) {
+    this.css( args.from );
+    // force redraw. http://blog.alexmaccaw.com/css-transitions
+    var h = this.element.offsetHeight;
+    // hack for JSHint to hush about unused var
+    h = null;
+  }
+  // enable transition
+  this.enableTransition( args.to );
+  // set styles that are transitioning
+  this.css( args.to );
+
+  this.isTransitioning = true;
+
+};
+
+// dash before all cap letters, including first for
+// WebkitTransform => -webkit-transform
+function toDashedAll( str ) {
+  return str.replace( /([A-Z])/g, function( $1 ) {
+    return '-' + $1.toLowerCase();
+  });
+}
+
+var transitionProps = 'opacity,' + toDashedAll( transformProperty );
+
+proto.enableTransition = function(/* style */) {
+  // HACK changing transitionProperty during a transition
+  // will cause transition to jump
+  if ( this.isTransitioning ) {
+    return;
+  }
+
+  // make `transition: foo, bar, baz` from style object
+  // HACK un-comment this when enableTransition can work
+  // while a transition is happening
+  // var transitionValues = [];
+  // for ( var prop in style ) {
+  //   // dash-ify camelCased properties like WebkitTransition
+  //   prop = vendorProperties[ prop ] || prop;
+  //   transitionValues.push( toDashedAll( prop ) );
+  // }
+  // munge number to millisecond, to match stagger
+  var duration = this.layout.options.transitionDuration;
+  duration = typeof duration == 'number' ? duration + 'ms' : duration;
+  // enable transition styles
+  this.css({
+    transitionProperty: transitionProps,
+    transitionDuration: duration,
+    transitionDelay: this.staggerDelay || 0
+  });
+  // listen for transition end event
+  this.element.addEventListener( transitionEndEvent, this, false );
+};
+
+// ----- events ----- //
+
+proto.onwebkitTransitionEnd = function( event ) {
+  this.ontransitionend( event );
+};
+
+proto.onotransitionend = function( event ) {
+  this.ontransitionend( event );
+};
+
+// properties that I munge to make my life easier
+var dashedVendorProperties = {
+  '-webkit-transform': 'transform'
+};
+
+proto.ontransitionend = function( event ) {
+  // disregard bubbled events from children
+  if ( event.target !== this.element ) {
+    return;
+  }
+  var _transition = this._transn;
+  // get property name of transitioned property, convert to prefix-free
+  var propertyName = dashedVendorProperties[ event.propertyName ] || event.propertyName;
+
+  // remove property that has completed transitioning
+  delete _transition.ingProperties[ propertyName ];
+  // check if any properties are still transitioning
+  if ( isEmptyObj( _transition.ingProperties ) ) {
+    // all properties have completed transitioning
+    this.disableTransition();
+  }
+  // clean style
+  if ( propertyName in _transition.clean ) {
+    // clean up style
+    this.element.style[ event.propertyName ] = '';
+    delete _transition.clean[ propertyName ];
+  }
+  // trigger onTransitionEnd callback
+  if ( propertyName in _transition.onEnd ) {
+    var onTransitionEnd = _transition.onEnd[ propertyName ];
+    onTransitionEnd.call( this );
+    delete _transition.onEnd[ propertyName ];
+  }
+
+  this.emitEvent( 'transitionEnd', [ this ] );
+};
+
+proto.disableTransition = function() {
+  this.removeTransitionStyles();
+  this.element.removeEventListener( transitionEndEvent, this, false );
+  this.isTransitioning = false;
+};
+
+/**
+ * removes style property from element
+ * @param {Object} style
+**/
+proto._removeStyles = function( style ) {
+  // clean up transition styles
+  var cleanStyle = {};
+  for ( var prop in style ) {
+    cleanStyle[ prop ] = '';
+  }
+  this.css( cleanStyle );
+};
+
+var cleanTransitionStyle = {
+  transitionProperty: '',
+  transitionDuration: '',
+  transitionDelay: ''
+};
+
+proto.removeTransitionStyles = function() {
+  // remove transition
+  this.css( cleanTransitionStyle );
+};
+
+// ----- stagger ----- //
+
+proto.stagger = function( delay ) {
+  delay = isNaN( delay ) ? 0 : delay;
+  this.staggerDelay = delay + 'ms';
+};
+
+// ----- show/hide/remove ----- //
+
+// remove element from DOM
+proto.removeElem = function() {
+  this.element.parentNode.removeChild( this.element );
+  // remove display: none
+  this.css({ display: '' });
+  this.emitEvent( 'remove', [ this ] );
+};
+
+proto.remove = function() {
+  // just remove element if no transition support or no transition
+  if ( !transitionProperty || !parseFloat( this.layout.options.transitionDuration ) ) {
+    this.removeElem();
+    return;
+  }
+
+  // start transition
+  this.once( 'transitionEnd', function() {
+    this.removeElem();
+  });
+  this.hide();
+};
+
+proto.reveal = function() {
+  delete this.isHidden;
+  // remove display: none
+  this.css({ display: '' });
+
+  var options = this.layout.options;
+
+  var onTransitionEnd = {};
+  var transitionEndProperty = this.getHideRevealTransitionEndProperty('visibleStyle');
+  onTransitionEnd[ transitionEndProperty ] = this.onRevealTransitionEnd;
+
+  this.transition({
+    from: options.hiddenStyle,
+    to: options.visibleStyle,
+    isCleaning: true,
+    onTransitionEnd: onTransitionEnd
+  });
+};
+
+proto.onRevealTransitionEnd = function() {
+  // check if still visible
+  // during transition, item may have been hidden
+  if ( !this.isHidden ) {
+    this.emitEvent('reveal');
+  }
+};
+
+/**
+ * get style property use for hide/reveal transition end
+ * @param {String} styleProperty - hiddenStyle/visibleStyle
+ * @returns {String}
+ */
+proto.getHideRevealTransitionEndProperty = function( styleProperty ) {
+  var optionStyle = this.layout.options[ styleProperty ];
+  // use opacity
+  if ( optionStyle.opacity ) {
+    return 'opacity';
+  }
+  // get first property
+  for ( var prop in optionStyle ) {
+    return prop;
+  }
+};
+
+proto.hide = function() {
+  // set flag
+  this.isHidden = true;
+  // remove display: none
+  this.css({ display: '' });
+
+  var options = this.layout.options;
+
+  var onTransitionEnd = {};
+  var transitionEndProperty = this.getHideRevealTransitionEndProperty('hiddenStyle');
+  onTransitionEnd[ transitionEndProperty ] = this.onHideTransitionEnd;
+
+  this.transition({
+    from: options.visibleStyle,
+    to: options.hiddenStyle,
+    // keep hidden stuff hidden
+    isCleaning: true,
+    onTransitionEnd: onTransitionEnd
+  });
+};
+
+proto.onHideTransitionEnd = function() {
+  // check if still hidden
+  // during transition, item may have been un-hidden
+  if ( this.isHidden ) {
+    this.css({ display: 'none' });
+    this.emitEvent('hide');
+  }
+};
+
+proto.destroy = function() {
+  this.css({
+    position: '',
+    left: '',
+    right: '',
+    top: '',
+    bottom: '',
+    transition: '',
+    transform: ''
+  });
+};
+
+return Item;
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/outlayer/outlayer.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
+ * Outlayer v2.1.1
+ * the brains and guts of a layout library
+ * MIT license
+ */
+
+( function( window, factory ) {
+  'use strict';
+  // universal module definition
+  /* jshint strict: false */ /* globals define, module, require */
+  if ( true ) {
+    // AMD - RequireJS
+    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [
+        __webpack_require__("./node_modules/ev-emitter/ev-emitter.js"),
+        __webpack_require__("./node_modules/get-size/get-size.js"),
+        __webpack_require__("./node_modules/fizzy-ui-utils/utils.js"),
+        __webpack_require__("./node_modules/outlayer/item.js")
+      ], __WEBPACK_AMD_DEFINE_RESULT__ = (function( EvEmitter, getSize, utils, Item ) {
+        return factory( window, EvEmitter, getSize, utils, Item);
+      }).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+  } else if ( typeof module == 'object' && module.exports ) {
+    // CommonJS - Browserify, Webpack
+    module.exports = factory(
+      window,
+      require('ev-emitter'),
+      require('get-size'),
+      require('fizzy-ui-utils'),
+      require('./item')
+    );
+  } else {
+    // browser global
+    window.Outlayer = factory(
+      window,
+      window.EvEmitter,
+      window.getSize,
+      window.fizzyUIUtils,
+      window.Outlayer.Item
+    );
+  }
+
+}( window, function factory( window, EvEmitter, getSize, utils, Item ) {
+'use strict';
+
+// ----- vars ----- //
+
+var console = window.console;
+var jQuery = window.jQuery;
+var noop = function() {};
+
+// -------------------------- Outlayer -------------------------- //
+
+// globally unique identifiers
+var GUID = 0;
+// internal store of all Outlayer intances
+var instances = {};
+
+
+/**
+ * @param {Element, String} element
+ * @param {Object} options
+ * @constructor
+ */
+function Outlayer( element, options ) {
+  var queryElement = utils.getQueryElement( element );
+  if ( !queryElement ) {
+    if ( console ) {
+      console.error( 'Bad element for ' + this.constructor.namespace +
+        ': ' + ( queryElement || element ) );
+    }
+    return;
+  }
+  this.element = queryElement;
+  // add jQuery
+  if ( jQuery ) {
+    this.$element = jQuery( this.element );
+  }
+
+  // options
+  this.options = utils.extend( {}, this.constructor.defaults );
+  this.option( options );
+
+  // add id for Outlayer.getFromElement
+  var id = ++GUID;
+  this.element.outlayerGUID = id; // expando
+  instances[ id ] = this; // associate via id
+
+  // kick it off
+  this._create();
+
+  var isInitLayout = this._getOption('initLayout');
+  if ( isInitLayout ) {
+    this.layout();
+  }
+}
+
+// settings are for internal use only
+Outlayer.namespace = 'outlayer';
+Outlayer.Item = Item;
+
+// default options
+Outlayer.defaults = {
+  containerStyle: {
+    position: 'relative'
+  },
+  initLayout: true,
+  originLeft: true,
+  originTop: true,
+  resize: true,
+  resizeContainer: true,
+  // item options
+  transitionDuration: '0.4s',
+  hiddenStyle: {
+    opacity: 0,
+    transform: 'scale(0.001)'
+  },
+  visibleStyle: {
+    opacity: 1,
+    transform: 'scale(1)'
+  }
+};
+
+var proto = Outlayer.prototype;
+// inherit EvEmitter
+utils.extend( proto, EvEmitter.prototype );
+
+/**
+ * set options
+ * @param {Object} opts
+ */
+proto.option = function( opts ) {
+  utils.extend( this.options, opts );
+};
+
+/**
+ * get backwards compatible option value, check old name
+ */
+proto._getOption = function( option ) {
+  var oldOption = this.constructor.compatOptions[ option ];
+  return oldOption && this.options[ oldOption ] !== undefined ?
+    this.options[ oldOption ] : this.options[ option ];
+};
+
+Outlayer.compatOptions = {
+  // currentName: oldName
+  initLayout: 'isInitLayout',
+  horizontal: 'isHorizontal',
+  layoutInstant: 'isLayoutInstant',
+  originLeft: 'isOriginLeft',
+  originTop: 'isOriginTop',
+  resize: 'isResizeBound',
+  resizeContainer: 'isResizingContainer'
+};
+
+proto._create = function() {
+  // get items from children
+  this.reloadItems();
+  // elements that affect layout, but are not laid out
+  this.stamps = [];
+  this.stamp( this.options.stamp );
+  // set container style
+  utils.extend( this.element.style, this.options.containerStyle );
+
+  // bind resize method
+  var canBindResize = this._getOption('resize');
+  if ( canBindResize ) {
+    this.bindResize();
+  }
+};
+
+// goes through all children again and gets bricks in proper order
+proto.reloadItems = function() {
+  // collection of item elements
+  this.items = this._itemize( this.element.children );
+};
+
+
+/**
+ * turn elements into Outlayer.Items to be used in layout
+ * @param {Array or NodeList or HTMLElement} elems
+ * @returns {Array} items - collection of new Outlayer Items
+ */
+proto._itemize = function( elems ) {
+
+  var itemElems = this._filterFindItemElements( elems );
+  var Item = this.constructor.Item;
+
+  // create new Outlayer Items for collection
+  var items = [];
+  for ( var i=0; i < itemElems.length; i++ ) {
+    var elem = itemElems[i];
+    var item = new Item( elem, this );
+    items.push( item );
+  }
+
+  return items;
+};
+
+/**
+ * get item elements to be used in layout
+ * @param {Array or NodeList or HTMLElement} elems
+ * @returns {Array} items - item elements
+ */
+proto._filterFindItemElements = function( elems ) {
+  return utils.filterFindElements( elems, this.options.itemSelector );
+};
+
+/**
+ * getter method for getting item elements
+ * @returns {Array} elems - collection of item elements
+ */
+proto.getItemElements = function() {
+  return this.items.map( function( item ) {
+    return item.element;
+  });
+};
+
+// ----- init & layout ----- //
+
+/**
+ * lays out all items
+ */
+proto.layout = function() {
+  this._resetLayout();
+  this._manageStamps();
+
+  // don't animate first layout
+  var layoutInstant = this._getOption('layoutInstant');
+  var isInstant = layoutInstant !== undefined ?
+    layoutInstant : !this._isLayoutInited;
+  this.layoutItems( this.items, isInstant );
+
+  // flag for initalized
+  this._isLayoutInited = true;
+};
+
+// _init is alias for layout
+proto._init = proto.layout;
+
+/**
+ * logic before any new layout
+ */
+proto._resetLayout = function() {
+  this.getSize();
+};
+
+
+proto.getSize = function() {
+  this.size = getSize( this.element );
+};
+
+/**
+ * get measurement from option, for columnWidth, rowHeight, gutter
+ * if option is String -> get element from selector string, & get size of element
+ * if option is Element -> get size of element
+ * else use option as a number
+ *
+ * @param {String} measurement
+ * @param {String} size - width or height
+ * @private
+ */
+proto._getMeasurement = function( measurement, size ) {
+  var option = this.options[ measurement ];
+  var elem;
+  if ( !option ) {
+    // default to 0
+    this[ measurement ] = 0;
+  } else {
+    // use option as an element
+    if ( typeof option == 'string' ) {
+      elem = this.element.querySelector( option );
+    } else if ( option instanceof HTMLElement ) {
+      elem = option;
+    }
+    // use size of element, if element
+    this[ measurement ] = elem ? getSize( elem )[ size ] : option;
+  }
+};
+
+/**
+ * layout a collection of item elements
+ * @api public
+ */
+proto.layoutItems = function( items, isInstant ) {
+  items = this._getItemsForLayout( items );
+
+  this._layoutItems( items, isInstant );
+
+  this._postLayout();
+};
+
+/**
+ * get the items to be laid out
+ * you may want to skip over some items
+ * @param {Array} items
+ * @returns {Array} items
+ */
+proto._getItemsForLayout = function( items ) {
+  return items.filter( function( item ) {
+    return !item.isIgnored;
+  });
+};
+
+/**
+ * layout items
+ * @param {Array} items
+ * @param {Boolean} isInstant
+ */
+proto._layoutItems = function( items, isInstant ) {
+  this._emitCompleteOnItems( 'layout', items );
+
+  if ( !items || !items.length ) {
+    // no items, emit event with empty array
+    return;
+  }
+
+  var queue = [];
+
+  items.forEach( function( item ) {
+    // get x/y object from method
+    var position = this._getItemLayoutPosition( item );
+    // enqueue
+    position.item = item;
+    position.isInstant = isInstant || item.isLayoutInstant;
+    queue.push( position );
+  }, this );
+
+  this._processLayoutQueue( queue );
+};
+
+/**
+ * get item layout position
+ * @param {Outlayer.Item} item
+ * @returns {Object} x and y position
+ */
+proto._getItemLayoutPosition = function( /* item */ ) {
+  return {
+    x: 0,
+    y: 0
+  };
+};
+
+/**
+ * iterate over array and position each item
+ * Reason being - separating this logic prevents 'layout invalidation'
+ * thx @paul_irish
+ * @param {Array} queue
+ */
+proto._processLayoutQueue = function( queue ) {
+  this.updateStagger();
+  queue.forEach( function( obj, i ) {
+    this._positionItem( obj.item, obj.x, obj.y, obj.isInstant, i );
+  }, this );
+};
+
+// set stagger from option in milliseconds number
+proto.updateStagger = function() {
+  var stagger = this.options.stagger;
+  if ( stagger === null || stagger === undefined ) {
+    this.stagger = 0;
+    return;
+  }
+  this.stagger = getMilliseconds( stagger );
+  return this.stagger;
+};
+
+/**
+ * Sets position of item in DOM
+ * @param {Outlayer.Item} item
+ * @param {Number} x - horizontal position
+ * @param {Number} y - vertical position
+ * @param {Boolean} isInstant - disables transitions
+ */
+proto._positionItem = function( item, x, y, isInstant, i ) {
+  if ( isInstant ) {
+    // if not transition, just set CSS
+    item.goTo( x, y );
+  } else {
+    item.stagger( i * this.stagger );
+    item.moveTo( x, y );
+  }
+};
+
+/**
+ * Any logic you want to do after each layout,
+ * i.e. size the container
+ */
+proto._postLayout = function() {
+  this.resizeContainer();
+};
+
+proto.resizeContainer = function() {
+  var isResizingContainer = this._getOption('resizeContainer');
+  if ( !isResizingContainer ) {
+    return;
+  }
+  var size = this._getContainerSize();
+  if ( size ) {
+    this._setContainerMeasure( size.width, true );
+    this._setContainerMeasure( size.height, false );
+  }
+};
+
+/**
+ * Sets width or height of container if returned
+ * @returns {Object} size
+ *   @param {Number} width
+ *   @param {Number} height
+ */
+proto._getContainerSize = noop;
+
+/**
+ * @param {Number} measure - size of width or height
+ * @param {Boolean} isWidth
+ */
+proto._setContainerMeasure = function( measure, isWidth ) {
+  if ( measure === undefined ) {
+    return;
+  }
+
+  var elemSize = this.size;
+  // add padding and border width if border box
+  if ( elemSize.isBorderBox ) {
+    measure += isWidth ? elemSize.paddingLeft + elemSize.paddingRight +
+      elemSize.borderLeftWidth + elemSize.borderRightWidth :
+      elemSize.paddingBottom + elemSize.paddingTop +
+      elemSize.borderTopWidth + elemSize.borderBottomWidth;
+  }
+
+  measure = Math.max( measure, 0 );
+  this.element.style[ isWidth ? 'width' : 'height' ] = measure + 'px';
+};
+
+/**
+ * emit eventComplete on a collection of items events
+ * @param {String} eventName
+ * @param {Array} items - Outlayer.Items
+ */
+proto._emitCompleteOnItems = function( eventName, items ) {
+  var _this = this;
+  function onComplete() {
+    _this.dispatchEvent( eventName + 'Complete', null, [ items ] );
+  }
+
+  var count = items.length;
+  if ( !items || !count ) {
+    onComplete();
+    return;
+  }
+
+  var doneCount = 0;
+  function tick() {
+    doneCount++;
+    if ( doneCount == count ) {
+      onComplete();
+    }
+  }
+
+  // bind callback
+  items.forEach( function( item ) {
+    item.once( eventName, tick );
+  });
+};
+
+/**
+ * emits events via EvEmitter and jQuery events
+ * @param {String} type - name of event
+ * @param {Event} event - original event
+ * @param {Array} args - extra arguments
+ */
+proto.dispatchEvent = function( type, event, args ) {
+  // add original event to arguments
+  var emitArgs = event ? [ event ].concat( args ) : args;
+  this.emitEvent( type, emitArgs );
+
+  if ( jQuery ) {
+    // set this.$element
+    this.$element = this.$element || jQuery( this.element );
+    if ( event ) {
+      // create jQuery event
+      var $event = jQuery.Event( event );
+      $event.type = type;
+      this.$element.trigger( $event, args );
+    } else {
+      // just trigger with type if no event available
+      this.$element.trigger( type, args );
+    }
+  }
+};
+
+// -------------------------- ignore & stamps -------------------------- //
+
+
+/**
+ * keep item in collection, but do not lay it out
+ * ignored items do not get skipped in layout
+ * @param {Element} elem
+ */
+proto.ignore = function( elem ) {
+  var item = this.getItem( elem );
+  if ( item ) {
+    item.isIgnored = true;
+  }
+};
+
+/**
+ * return item to layout collection
+ * @param {Element} elem
+ */
+proto.unignore = function( elem ) {
+  var item = this.getItem( elem );
+  if ( item ) {
+    delete item.isIgnored;
+  }
+};
+
+/**
+ * adds elements to stamps
+ * @param {NodeList, Array, Element, or String} elems
+ */
+proto.stamp = function( elems ) {
+  elems = this._find( elems );
+  if ( !elems ) {
+    return;
+  }
+
+  this.stamps = this.stamps.concat( elems );
+  // ignore
+  elems.forEach( this.ignore, this );
+};
+
+/**
+ * removes elements to stamps
+ * @param {NodeList, Array, or Element} elems
+ */
+proto.unstamp = function( elems ) {
+  elems = this._find( elems );
+  if ( !elems ){
+    return;
+  }
+
+  elems.forEach( function( elem ) {
+    // filter out removed stamp elements
+    utils.removeFrom( this.stamps, elem );
+    this.unignore( elem );
+  }, this );
+};
+
+/**
+ * finds child elements
+ * @param {NodeList, Array, Element, or String} elems
+ * @returns {Array} elems
+ */
+proto._find = function( elems ) {
+  if ( !elems ) {
+    return;
+  }
+  // if string, use argument as selector string
+  if ( typeof elems == 'string' ) {
+    elems = this.element.querySelectorAll( elems );
+  }
+  elems = utils.makeArray( elems );
+  return elems;
+};
+
+proto._manageStamps = function() {
+  if ( !this.stamps || !this.stamps.length ) {
+    return;
+  }
+
+  this._getBoundingRect();
+
+  this.stamps.forEach( this._manageStamp, this );
+};
+
+// update boundingLeft / Top
+proto._getBoundingRect = function() {
+  // get bounding rect for container element
+  var boundingRect = this.element.getBoundingClientRect();
+  var size = this.size;
+  this._boundingRect = {
+    left: boundingRect.left + size.paddingLeft + size.borderLeftWidth,
+    top: boundingRect.top + size.paddingTop + size.borderTopWidth,
+    right: boundingRect.right - ( size.paddingRight + size.borderRightWidth ),
+    bottom: boundingRect.bottom - ( size.paddingBottom + size.borderBottomWidth )
+  };
+};
+
+/**
+ * @param {Element} stamp
+**/
+proto._manageStamp = noop;
+
+/**
+ * get x/y position of element relative to container element
+ * @param {Element} elem
+ * @returns {Object} offset - has left, top, right, bottom
+ */
+proto._getElementOffset = function( elem ) {
+  var boundingRect = elem.getBoundingClientRect();
+  var thisRect = this._boundingRect;
+  var size = getSize( elem );
+  var offset = {
+    left: boundingRect.left - thisRect.left - size.marginLeft,
+    top: boundingRect.top - thisRect.top - size.marginTop,
+    right: thisRect.right - boundingRect.right - size.marginRight,
+    bottom: thisRect.bottom - boundingRect.bottom - size.marginBottom
+  };
+  return offset;
+};
+
+// -------------------------- resize -------------------------- //
+
+// enable event handlers for listeners
+// i.e. resize -> onresize
+proto.handleEvent = utils.handleEvent;
+
+/**
+ * Bind layout to window resizing
+ */
+proto.bindResize = function() {
+  window.addEventListener( 'resize', this );
+  this.isResizeBound = true;
+};
+
+/**
+ * Unbind layout to window resizing
+ */
+proto.unbindResize = function() {
+  window.removeEventListener( 'resize', this );
+  this.isResizeBound = false;
+};
+
+proto.onresize = function() {
+  this.resize();
+};
+
+utils.debounceMethod( Outlayer, 'onresize', 100 );
+
+proto.resize = function() {
+  // don't trigger if size did not change
+  // or if resize was unbound. See #9
+  if ( !this.isResizeBound || !this.needsResizeLayout() ) {
+    return;
+  }
+
+  this.layout();
+};
+
+/**
+ * check if layout is needed post layout
+ * @returns Boolean
+ */
+proto.needsResizeLayout = function() {
+  var size = getSize( this.element );
+  // check that this.size and size are there
+  // IE8 triggers resize on body size change, so they might not be
+  var hasSizes = this.size && size;
+  return hasSizes && size.innerWidth !== this.size.innerWidth;
+};
+
+// -------------------------- methods -------------------------- //
+
+/**
+ * add items to Outlayer instance
+ * @param {Array or NodeList or Element} elems
+ * @returns {Array} items - Outlayer.Items
+**/
+proto.addItems = function( elems ) {
+  var items = this._itemize( elems );
+  // add items to collection
+  if ( items.length ) {
+    this.items = this.items.concat( items );
+  }
+  return items;
+};
+
+/**
+ * Layout newly-appended item elements
+ * @param {Array or NodeList or Element} elems
+ */
+proto.appended = function( elems ) {
+  var items = this.addItems( elems );
+  if ( !items.length ) {
+    return;
+  }
+  // layout and reveal just the new items
+  this.layoutItems( items, true );
+  this.reveal( items );
+};
+
+/**
+ * Layout prepended elements
+ * @param {Array or NodeList or Element} elems
+ */
+proto.prepended = function( elems ) {
+  var items = this._itemize( elems );
+  if ( !items.length ) {
+    return;
+  }
+  // add items to beginning of collection
+  var previousItems = this.items.slice(0);
+  this.items = items.concat( previousItems );
+  // start new layout
+  this._resetLayout();
+  this._manageStamps();
+  // layout new stuff without transition
+  this.layoutItems( items, true );
+  this.reveal( items );
+  // layout previous items
+  this.layoutItems( previousItems );
+};
+
+/**
+ * reveal a collection of items
+ * @param {Array of Outlayer.Items} items
+ */
+proto.reveal = function( items ) {
+  this._emitCompleteOnItems( 'reveal', items );
+  if ( !items || !items.length ) {
+    return;
+  }
+  var stagger = this.updateStagger();
+  items.forEach( function( item, i ) {
+    item.stagger( i * stagger );
+    item.reveal();
+  });
+};
+
+/**
+ * hide a collection of items
+ * @param {Array of Outlayer.Items} items
+ */
+proto.hide = function( items ) {
+  this._emitCompleteOnItems( 'hide', items );
+  if ( !items || !items.length ) {
+    return;
+  }
+  var stagger = this.updateStagger();
+  items.forEach( function( item, i ) {
+    item.stagger( i * stagger );
+    item.hide();
+  });
+};
+
+/**
+ * reveal item elements
+ * @param {Array}, {Element}, {NodeList} items
+ */
+proto.revealItemElements = function( elems ) {
+  var items = this.getItems( elems );
+  this.reveal( items );
+};
+
+/**
+ * hide item elements
+ * @param {Array}, {Element}, {NodeList} items
+ */
+proto.hideItemElements = function( elems ) {
+  var items = this.getItems( elems );
+  this.hide( items );
+};
+
+/**
+ * get Outlayer.Item, given an Element
+ * @param {Element} elem
+ * @param {Function} callback
+ * @returns {Outlayer.Item} item
+ */
+proto.getItem = function( elem ) {
+  // loop through items to get the one that matches
+  for ( var i=0; i < this.items.length; i++ ) {
+    var item = this.items[i];
+    if ( item.element == elem ) {
+      // return item
+      return item;
+    }
+  }
+};
+
+/**
+ * get collection of Outlayer.Items, given Elements
+ * @param {Array} elems
+ * @returns {Array} items - Outlayer.Items
+ */
+proto.getItems = function( elems ) {
+  elems = utils.makeArray( elems );
+  var items = [];
+  elems.forEach( function( elem ) {
+    var item = this.getItem( elem );
+    if ( item ) {
+      items.push( item );
+    }
+  }, this );
+
+  return items;
+};
+
+/**
+ * remove element(s) from instance and DOM
+ * @param {Array or NodeList or Element} elems
+ */
+proto.remove = function( elems ) {
+  var removeItems = this.getItems( elems );
+
+  this._emitCompleteOnItems( 'remove', removeItems );
+
+  // bail if no items to remove
+  if ( !removeItems || !removeItems.length ) {
+    return;
+  }
+
+  removeItems.forEach( function( item ) {
+    item.remove();
+    // remove item from collection
+    utils.removeFrom( this.items, item );
+  }, this );
+};
+
+// ----- destroy ----- //
+
+// remove and disable Outlayer instance
+proto.destroy = function() {
+  // clean up dynamic styles
+  var style = this.element.style;
+  style.height = '';
+  style.position = '';
+  style.width = '';
+  // destroy items
+  this.items.forEach( function( item ) {
+    item.destroy();
+  });
+
+  this.unbindResize();
+
+  var id = this.element.outlayerGUID;
+  delete instances[ id ]; // remove reference to instance by id
+  delete this.element.outlayerGUID;
+  // remove data for jQuery
+  if ( jQuery ) {
+    jQuery.removeData( this.element, this.constructor.namespace );
+  }
+
+};
+
+// -------------------------- data -------------------------- //
+
+/**
+ * get Outlayer instance from element
+ * @param {Element} elem
+ * @returns {Outlayer}
+ */
+Outlayer.data = function( elem ) {
+  elem = utils.getQueryElement( elem );
+  var id = elem && elem.outlayerGUID;
+  return id && instances[ id ];
+};
+
+
+// -------------------------- create Outlayer class -------------------------- //
+
+/**
+ * create a layout class
+ * @param {String} namespace
+ */
+Outlayer.create = function( namespace, options ) {
+  // sub-class Outlayer
+  var Layout = subclass( Outlayer );
+  // apply new options and compatOptions
+  Layout.defaults = utils.extend( {}, Outlayer.defaults );
+  utils.extend( Layout.defaults, options );
+  Layout.compatOptions = utils.extend( {}, Outlayer.compatOptions  );
+
+  Layout.namespace = namespace;
+
+  Layout.data = Outlayer.data;
+
+  // sub-class Item
+  Layout.Item = subclass( Item );
+
+  // -------------------------- declarative -------------------------- //
+
+  utils.htmlInit( Layout, namespace );
+
+  // -------------------------- jQuery bridge -------------------------- //
+
+  // make into jQuery plugin
+  if ( jQuery && jQuery.bridget ) {
+    jQuery.bridget( namespace, Layout );
+  }
+
+  return Layout;
+};
+
+function subclass( Parent ) {
+  function SubClass() {
+    Parent.apply( this, arguments );
+  }
+
+  SubClass.prototype = Object.create( Parent.prototype );
+  SubClass.prototype.constructor = SubClass;
+
+  return SubClass;
+}
+
+// ----- helpers ----- //
+
+// how many milliseconds are in each unit
+var msUnits = {
+  ms: 1,
+  s: 1000
+};
+
+// munge time-like parameter into millisecond number
+// '0.4s' -> 40
+function getMilliseconds( time ) {
+  if ( typeof time == 'number' ) {
+    return time;
+  }
+  var matches = time.match( /(^\d*\.?\d*)(\w*)/ );
+  var num = matches && matches[1];
+  var unit = matches && matches[2];
+  if ( !num.length ) {
+    return 0;
+  }
+  num = parseFloat( num );
+  var mult = msUnits[ unit ] || 1;
+  return num * mult;
+}
+
+// ----- fin ----- //
+
+// back in global
+Outlayer.Item = Item;
+
+return Outlayer;
+
+}));
 
 
 /***/ }),
@@ -13636,6 +16430,772 @@ if (process.env.NODE_ENV !== 'production') {
 module.exports = warning;
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__("./node_modules/process/browser.js")))
+
+/***/ }),
+
+/***/ "./node_modules/react-device-detect/dist/index.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports =
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, {
+/******/ 				configurable: false,
+/******/ 				enumerable: true,
+/******/ 				get: getter
+/******/ 			});
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ })
+/************************************************************************/
+/******/ ([
+/* 0 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var UAParser = __webpack_require__(6);
+
+var UA = exports.UA = new UAParser();
+
+var browser = exports.browser = UA.getBrowser();
+var cpu = exports.cpu = UA.getCPU();
+var device = exports.device = UA.getDevice();
+var engine = exports.engine = UA.getEngine();
+var os = exports.os = UA.getOS();
+var ua = exports.ua = UA.getUA();
+var setUA = exports.setUA = function setUA(uaStr) {
+  return UA.setUA(uaStr);
+};
+
+var mockUserAgent = exports.mockUserAgent = function mockUserAgent(userAgent) {
+  window.navigator.__defineGetter__("userAgent", function () {
+    return userAgent;
+  });
+};
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.isYandex = exports.isEdge = exports.getUA = exports.engineVersion = exports.engineName = exports.mobileModel = exports.mobileVendor = exports.browserName = exports.browserVersion = exports.fullBrowserVersion = exports.osName = exports.osVersion = exports.isIE = exports.isOpera = exports.isSafari = exports.isFirefox = exports.isChrome = exports.isIOS = exports.isWinPhone = exports.isAndroid = exports.isBrowser = exports.isTablet = exports.isMobileOnly = exports.isMobile = exports.isChromium = exports.isMobileSafari = exports.isWearable = exports.isConsole = exports.isSmartTV = undefined;
+
+var _getUaData = __webpack_require__(0);
+
+var _types = __webpack_require__(2);
+
+var CHROME = _types.BROWSER_TYPES.CHROME,
+    CHROMIUM = _types.BROWSER_TYPES.CHROMIUM,
+    IE = _types.BROWSER_TYPES.IE,
+    INTERNET_EXPLORER = _types.BROWSER_TYPES.INTERNET_EXPLORER,
+    OPERA = _types.BROWSER_TYPES.OPERA,
+    FIREFOX = _types.BROWSER_TYPES.FIREFOX,
+    SAFARI = _types.BROWSER_TYPES.SAFARI,
+    MOBILE_SAFARI = _types.BROWSER_TYPES.MOBILE_SAFARI,
+    EDGE = _types.BROWSER_TYPES.EDGE,
+    YANDEX = _types.BROWSER_TYPES.YANDEX;
+var MOBILE = _types.DEVICE_TYPES.MOBILE,
+    TABLET = _types.DEVICE_TYPES.TABLET,
+    SMART_TV = _types.DEVICE_TYPES.SMART_TV,
+    BROWSER = _types.DEVICE_TYPES.BROWSER,
+    WEARABLE = _types.DEVICE_TYPES.WEARABLE,
+    CONSOLE = _types.DEVICE_TYPES.CONSOLE;
+var ANDROID = _types.OS_TYPES.ANDROID,
+    WINDOWS_PHONE = _types.OS_TYPES.WINDOWS_PHONE,
+    IOS = _types.OS_TYPES.IOS;
+
+
+var isMobileType = function isMobileType() {
+  return _getUaData.device.type === MOBILE;
+};
+var isTabletType = function isTabletType() {
+  return _getUaData.device.type === TABLET;
+};
+
+var isMobileAndTabletType = function isMobileAndTabletType() {
+  switch (_getUaData.device.type) {
+    case MOBILE:
+    case TABLET:
+      return true;
+    default:
+      return false;
+  }
+};
+
+var isSmartTVType = function isSmartTVType() {
+  return _getUaData.device.type === SMART_TV;
+};
+var isBrowserType = function isBrowserType() {
+  return _getUaData.device.type === BROWSER;
+};
+var isWearableType = function isWearableType() {
+  return _getUaData.device.type === WEARABLE;
+};
+var isConsoleType = function isConsoleType() {
+  return _getUaData.device.type === CONSOLE;
+};
+var isAndroidType = function isAndroidType() {
+  return _getUaData.os.name === ANDROID;
+};
+var isWinPhoneType = function isWinPhoneType() {
+  return _getUaData.os.name === WINDOWS_PHONE;
+};
+var isIOSType = function isIOSType() {
+  return _getUaData.os.name === IOS;
+};
+var isChromeType = function isChromeType() {
+  return _getUaData.browser.name === CHROME;
+};
+var isFirefoxType = function isFirefoxType() {
+  return _getUaData.browser.name === FIREFOX;
+};
+var isChromiumType = function isChromiumType() {
+  return _getUaData.browser.name === CHROMIUM;
+};
+var isEdgeType = function isEdgeType() {
+  return _getUaData.browser.name === EDGE;
+};
+var isYandexType = function isYandexType() {
+  return _getUaData.browser.name === YANDEX;
+};
+var isSafariType = function isSafariType() {
+  return _getUaData.browser.name === SAFARI || _getUaData.browser.name === MOBILE_SAFARI;
+};
+var isMobileSafariType = function isMobileSafariType() {
+  return _getUaData.browser.name === MOBILE_SAFARI;
+};
+var isOperaType = function isOperaType() {
+  return _getUaData.browser.name === OPERA;
+};
+var isIEType = function isIEType() {
+  return _getUaData.browser.name === INTERNET_EXPLORER || _getUaData.browser.name === IE;
+};
+
+var getBrowserFullVersion = function getBrowserFullVersion() {
+  return _getUaData.browser.major;
+};
+var getBrowserVersion = function getBrowserVersion() {
+  return _getUaData.browser.version;
+};
+var getOsVersion = function getOsVersion() {
+  return _getUaData.os.version ? _getUaData.os.version : "none";
+};
+var getOsName = function getOsName() {
+  return _getUaData.os.name ? _getUaData.os.name : "none";
+};
+var getBrowserName = function getBrowserName() {
+  return _getUaData.browser.name;
+};
+var getMobileVendor = function getMobileVendor() {
+  return _getUaData.device.vendor ? _getUaData.device.vendor : "none";
+};
+var getMobileModel = function getMobileModel() {
+  return _getUaData.device.model ? _getUaData.device.model : "none";
+};
+var getEngineName = function getEngineName() {
+  return _getUaData.engine.name;
+};
+var getEngineVersion = function getEngineVersion() {
+  return _getUaData.engine.version;
+};
+var getUseragent = function getUseragent() {
+  return _getUaData.ua;
+};
+
+var isSmartTV = exports.isSmartTV = isSmartTVType();
+var isConsole = exports.isConsole = isConsoleType();
+var isWearable = exports.isWearable = isWearableType();
+var isMobileSafari = exports.isMobileSafari = isMobileSafariType();
+var isChromium = exports.isChromium = isChromiumType();
+var isMobile = exports.isMobile = isMobileAndTabletType();
+var isMobileOnly = exports.isMobileOnly = isMobileType();
+var isTablet = exports.isTablet = isTabletType();
+var isBrowser = exports.isBrowser = isBrowserType();
+var isAndroid = exports.isAndroid = isAndroidType();
+var isWinPhone = exports.isWinPhone = isWinPhoneType();
+var isIOS = exports.isIOS = isIOSType();
+var isChrome = exports.isChrome = isChromeType();
+var isFirefox = exports.isFirefox = isFirefoxType();
+var isSafari = exports.isSafari = isSafariType();
+var isOpera = exports.isOpera = isOperaType();
+var isIE = exports.isIE = isIEType();
+var osVersion = exports.osVersion = getOsVersion();
+var osName = exports.osName = getOsName();
+var fullBrowserVersion = exports.fullBrowserVersion = getBrowserFullVersion();
+var browserVersion = exports.browserVersion = getBrowserVersion();
+var browserName = exports.browserName = getBrowserName();
+var mobileVendor = exports.mobileVendor = getMobileVendor();
+var mobileModel = exports.mobileModel = getMobileModel();
+var engineName = exports.engineName = getEngineName();
+var engineVersion = exports.engineVersion = getEngineVersion();
+var getUA = exports.getUA = getUseragent();
+var isEdge = exports.isEdge = isEdgeType();
+var isYandex = exports.isYandex = isYandexType();
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.wearPayload = exports.consolePayload = exports.stvPayload = exports.mobilePayload = exports.broPayload = exports.getCurrentBrowser = exports.checkType = exports.OS_TYPES = exports.BROWSER_TYPES = exports.DEVICE_TYPES = undefined;
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _getUaData = __webpack_require__(0);
+
+var DEVICE_TYPES = exports.DEVICE_TYPES = {
+  MOBILE: 'mobile',
+  TABLET: 'tablet',
+  SMART_TV: 'smarttv',
+  CONSOLE: 'console',
+  WEARABLE: 'wearable',
+  BROWSER: undefined
+};
+
+var BROWSER_TYPES = exports.BROWSER_TYPES = {
+  CHROME: 'Chrome',
+  FIREFOX: "Firefox",
+  OPERA: "Opera",
+  YANDEX: "Yandex",
+  SAFARI: "Safari",
+  INTERNET_EXPLORER: "Internet Explorer",
+  EDGE: "Edge",
+  CHROMIUM: "Chromium",
+  IE: 'IE',
+  MOBILE_SAFARI: "Mobile Safari"
+};
+
+var OS_TYPES = exports.OS_TYPES = {
+  IOS: 'iOS',
+  ANDROID: "Android",
+  WINDOWS_PHONE: "Windows Phone"
+};
+
+var initialData = {
+  isMobile: false,
+  isTablet: false,
+  isBrowser: false,
+  isSmartTV: false,
+  isConsole: false,
+  isWearable: false
+};
+
+var checkType = exports.checkType = function checkType(type) {
+  switch (type) {
+    case DEVICE_TYPES.MOBILE:
+      return { isMobile: true };
+    case DEVICE_TYPES.TABLET:
+      return { isTablet: true };
+    case DEVICE_TYPES.SMART_TV:
+      return { isSmartTV: true };
+    case DEVICE_TYPES.CONSOLE:
+      return { isConsole: true };
+    case DEVICE_TYPES.WEARABLE:
+      return { isWearable: true };
+    case DEVICE_TYPES.BROWSER:
+      return { isBrowser: true };
+    default:
+      return initialData;
+  }
+};
+
+var getCurrentBrowser = exports.getCurrentBrowser = function getCurrentBrowser(name) {
+  switch (name) {
+    case BROWSER_TYPES.CHROME:
+    case BROWSER_TYPES.FIREFOX:
+    case BROWSER_TYPES.OPERA:
+    case BROWSER_TYPES.YANDEX:
+    case BROWSER_TYPES.SAFARI:
+    case BROWSER_TYPES.IE:
+    case BROWSER_TYPES.EDGE:
+    case BROWSER_TYPES.CHROMIUM:
+      return true;
+    default:
+      return false;
+  }
+};
+
+var broPayload = exports.broPayload = function broPayload(isBrowser, browser, engine, os, ua) {
+  return {
+    isBrowser: isBrowser,
+    browserMajorVersion: browser.major,
+    browserFullVersion: browser.version,
+    browserName: browser.name,
+    engineName: engine.name || false,
+    engineVersion: engine.version,
+    osName: os.name,
+    osVersion: os.version,
+    userAgent: ua
+  };
+};
+
+var mobilePayload = exports.mobilePayload = function mobilePayload(type, device, os, ua) {
+  return _extends({}, type, {
+    vendor: device.vendor || "none",
+    model: device.model || "none",
+    os: os.name || "none",
+    osVersion: os.version || "none",
+    ua: ua || "none"
+  });
+};
+
+var stvPayload = exports.stvPayload = function stvPayload(isSmartTV, engine, os, ua) {
+  return {
+    isSmartTV: isSmartTV,
+    engineName: engine.name || false,
+    engineVersion: engine.version,
+    osName: os.name,
+    osVersion: os.version,
+    userAgent: ua
+  };
+};
+
+var consolePayload = exports.consolePayload = function consolePayload(isConsole, engine, os, ua) {
+  return {
+    isConsole: isConsole,
+    engineName: engine.name || false,
+    engineVersion: engine.version,
+    osName: os.name,
+    osVersion: os.version,
+    userAgent: ua
+  };
+};
+
+var wearPayload = exports.wearPayload = function wearPayload(isWearable, engine, os, ua) {
+  return {
+    isWearable: isWearable,
+    engineName: engine.name || false,
+    engineVersion: engine.version,
+    osName: os.name,
+    osVersion: os.version,
+    userAgent: ua
+  };
+};
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.deviceDetect = undefined;
+
+var _views = __webpack_require__(4);
+
+Object.keys(_views).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function get() {
+      return _views[key];
+    }
+  });
+});
+
+var _selectors = __webpack_require__(1);
+
+Object.keys(_selectors).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function get() {
+      return _selectors[key];
+    }
+  });
+});
+
+var _detect = __webpack_require__(8);
+
+var _detect2 = _interopRequireDefault(_detect);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.deviceDetect = _detect2.default;
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.CustomView = exports.WearableView = exports.ConsoleView = exports.SmartTVView = exports.MobileOnlyView = exports.WinPhoneView = exports.TabletView = exports.MobileView = exports.IOSView = exports.IEView = exports.BrowserView = exports.AndroidView = undefined;
+
+var _react = __webpack_require__(5);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _selectors = __webpack_require__(1);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var AndroidView = exports.AndroidView = function AndroidView(_ref) {
+  var renderWithFragment = _ref.renderWithFragment,
+      children = _ref.children,
+      viewClassName = _ref.viewClassName,
+      style = _ref.style;
+
+  return _selectors.isAndroid ? renderWithFragment ? _react2.default.createElement(
+    _react.Fragment,
+    null,
+    children
+  ) : _react2.default.createElement(
+    'div',
+    { className: viewClassName, style: style },
+    children
+  ) : null;
+};
+
+var BrowserView = exports.BrowserView = function BrowserView(_ref2) {
+  var renderWithFragment = _ref2.renderWithFragment,
+      children = _ref2.children,
+      viewClassName = _ref2.viewClassName,
+      style = _ref2.style;
+
+  return _selectors.isBrowser ? renderWithFragment ? _react2.default.createElement(
+    _react.Fragment,
+    null,
+    children
+  ) : _react2.default.createElement(
+    'div',
+    { className: viewClassName, style: style },
+    children
+  ) : null;
+};
+
+var IEView = exports.IEView = function IEView(_ref3) {
+  var renderWithFragment = _ref3.renderWithFragment,
+      children = _ref3.children,
+      viewClassName = _ref3.viewClassName,
+      style = _ref3.style;
+
+  return _selectors.isIE ? renderWithFragment ? _react2.default.createElement(
+    _react.Fragment,
+    null,
+    children
+  ) : _react2.default.createElement(
+    'div',
+    { className: viewClassName, style: style },
+    children
+  ) : null;
+};
+
+var IOSView = exports.IOSView = function IOSView(_ref4) {
+  var renderWithFragment = _ref4.renderWithFragment,
+      children = _ref4.children,
+      viewClassName = _ref4.viewClassName,
+      style = _ref4.style;
+
+  return _selectors.isIOS ? renderWithFragment ? _react2.default.createElement(
+    _react.Fragment,
+    null,
+    children
+  ) : _react2.default.createElement(
+    'div',
+    { className: viewClassName, style: style },
+    children
+  ) : null;
+};
+
+var MobileView = exports.MobileView = function MobileView(_ref5) {
+  var renderWithFragment = _ref5.renderWithFragment,
+      children = _ref5.children,
+      viewClassName = _ref5.viewClassName,
+      style = _ref5.style;
+
+  return _selectors.isMobile ? renderWithFragment ? _react2.default.createElement(
+    _react.Fragment,
+    null,
+    children
+  ) : _react2.default.createElement(
+    'div',
+    { className: viewClassName, style: style },
+    children
+  ) : null;
+};
+
+var TabletView = exports.TabletView = function TabletView(_ref6) {
+  var renderWithFragment = _ref6.renderWithFragment,
+      children = _ref6.children,
+      viewClassName = _ref6.viewClassName,
+      style = _ref6.style;
+
+  return _selectors.isTablet ? renderWithFragment ? _react2.default.createElement(
+    _react.Fragment,
+    null,
+    children
+  ) : _react2.default.createElement(
+    'div',
+    { className: viewClassName, style: style },
+    children
+  ) : null;
+};
+
+var WinPhoneView = exports.WinPhoneView = function WinPhoneView(_ref7) {
+  var renderWithFragment = _ref7.renderWithFragment,
+      children = _ref7.children,
+      viewClassName = _ref7.viewClassName,
+      style = _ref7.style;
+
+  return _selectors.isWinPhone ? renderWithFragment ? _react2.default.createElement(
+    _react.Fragment,
+    null,
+    children
+  ) : _react2.default.createElement(
+    'div',
+    { className: viewClassName, style: style },
+    children
+  ) : null;
+};
+
+var MobileOnlyView = exports.MobileOnlyView = function MobileOnlyView(_ref8) {
+  var renderWithFragment = _ref8.renderWithFragment,
+      children = _ref8.children,
+      viewClassName = _ref8.viewClassName,
+      style = _ref8.style;
+
+  return _selectors.isMobileOnly ? renderWithFragment ? _react2.default.createElement(
+    _react.Fragment,
+    null,
+    children
+  ) : _react2.default.createElement(
+    'div',
+    { className: viewClassName, style: style },
+    children
+  ) : null;
+};
+
+var SmartTVView = exports.SmartTVView = function SmartTVView(_ref9) {
+  var renderWithFragment = _ref9.renderWithFragment,
+      children = _ref9.children,
+      viewClassName = _ref9.viewClassName,
+      style = _ref9.style;
+
+  return _selectors.isSmartTV ? renderWithFragment ? _react2.default.createElement(
+    _react.Fragment,
+    null,
+    children
+  ) : _react2.default.createElement(
+    'div',
+    { className: viewClassName, style: style },
+    children
+  ) : null;
+};
+
+var ConsoleView = exports.ConsoleView = function ConsoleView(_ref10) {
+  var renderWithFragment = _ref10.renderWithFragment,
+      children = _ref10.children,
+      viewClassName = _ref10.viewClassName,
+      style = _ref10.style;
+
+  return _selectors.isConsole ? renderWithFragment ? _react2.default.createElement(
+    _react.Fragment,
+    null,
+    children
+  ) : _react2.default.createElement(
+    'div',
+    { className: viewClassName, style: style },
+    children
+  ) : null;
+};
+
+var WearableView = exports.WearableView = function WearableView(_ref11) {
+  var renderWithFragment = _ref11.renderWithFragment,
+      children = _ref11.children,
+      viewClassName = _ref11.viewClassName,
+      style = _ref11.style;
+
+  return _selectors.isWearable ? renderWithFragment ? _react2.default.createElement(
+    _react.Fragment,
+    null,
+    children
+  ) : _react2.default.createElement(
+    'div',
+    { className: viewClassName, style: style },
+    children
+  ) : null;
+};
+
+var CustomView = exports.CustomView = function CustomView(_ref12) {
+  var renderWithFragment = _ref12.renderWithFragment,
+      children = _ref12.children,
+      viewClassName = _ref12.viewClassName,
+      style = _ref12.style,
+      condition = _ref12.condition;
+
+  return condition ? renderWithFragment ? _react2.default.createElement(
+    _react.Fragment,
+    null,
+    children
+  ) : _react2.default.createElement(
+    'div',
+    { className: viewClassName, style: style },
+    children
+  ) : null;
+};
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports) {
+
+module.exports = __webpack_require__("./node_modules/react/index.js");
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_RESULT__;/*!
+ * UAParser.js v0.7.18
+ * Lightweight JavaScript-based User-Agent string parser
+ * https://github.com/faisalman/ua-parser-js
+ *
+ * Copyright © 2012-2016 Faisal Salman <fyzlman@gmail.com>
+ * Dual licensed under GPLv2 or MIT
+ */
+(function(window,undefined){"use strict";var LIBVERSION="0.7.18",EMPTY="",UNKNOWN="?",FUNC_TYPE="function",UNDEF_TYPE="undefined",OBJ_TYPE="object",STR_TYPE="string",MAJOR="major",MODEL="model",NAME="name",TYPE="type",VENDOR="vendor",VERSION="version",ARCHITECTURE="architecture",CONSOLE="console",MOBILE="mobile",TABLET="tablet",SMARTTV="smarttv",WEARABLE="wearable",EMBEDDED="embedded";var util={extend:function(regexes,extensions){var margedRegexes={};for(var i in regexes){if(extensions[i]&&extensions[i].length%2===0){margedRegexes[i]=extensions[i].concat(regexes[i])}else{margedRegexes[i]=regexes[i]}}return margedRegexes},has:function(str1,str2){if(typeof str1==="string"){return str2.toLowerCase().indexOf(str1.toLowerCase())!==-1}else{return false}},lowerize:function(str){return str.toLowerCase()},major:function(version){return typeof version===STR_TYPE?version.replace(/[^\d\.]/g,"").split(".")[0]:undefined},trim:function(str){return str.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,"")}};var mapper={rgx:function(ua,arrays){var i=0,j,k,p,q,matches,match;while(i<arrays.length&&!matches){var regex=arrays[i],props=arrays[i+1];j=k=0;while(j<regex.length&&!matches){matches=regex[j++].exec(ua);if(!!matches){for(p=0;p<props.length;p++){match=matches[++k];q=props[p];if(typeof q===OBJ_TYPE&&q.length>0){if(q.length==2){if(typeof q[1]==FUNC_TYPE){this[q[0]]=q[1].call(this,match)}else{this[q[0]]=q[1]}}else if(q.length==3){if(typeof q[1]===FUNC_TYPE&&!(q[1].exec&&q[1].test)){this[q[0]]=match?q[1].call(this,match,q[2]):undefined}else{this[q[0]]=match?match.replace(q[1],q[2]):undefined}}else if(q.length==4){this[q[0]]=match?q[3].call(this,match.replace(q[1],q[2])):undefined}}else{this[q]=match?match:undefined}}}}i+=2}},str:function(str,map){for(var i in map){if(typeof map[i]===OBJ_TYPE&&map[i].length>0){for(var j=0;j<map[i].length;j++){if(util.has(map[i][j],str)){return i===UNKNOWN?undefined:i}}}else if(util.has(map[i],str)){return i===UNKNOWN?undefined:i}}return str}};var maps={browser:{oldsafari:{version:{"1.0":"/8",1.2:"/1",1.3:"/3","2.0":"/412","2.0.2":"/416","2.0.3":"/417","2.0.4":"/419","?":"/"}}},device:{amazon:{model:{"Fire Phone":["SD","KF"]}},sprint:{model:{"Evo Shift 4G":"7373KT"},vendor:{HTC:"APA",Sprint:"Sprint"}}},os:{windows:{version:{ME:"4.90","NT 3.11":"NT3.51","NT 4.0":"NT4.0",2000:"NT 5.0",XP:["NT 5.1","NT 5.2"],Vista:"NT 6.0",7:"NT 6.1",8:"NT 6.2",8.1:"NT 6.3",10:["NT 6.4","NT 10.0"],RT:"ARM"}}}};var regexes={browser:[[/(opera\smini)\/([\w\.-]+)/i,/(opera\s[mobiletab]+).+version\/([\w\.-]+)/i,/(opera).+version\/([\w\.]+)/i,/(opera)[\/\s]+([\w\.]+)/i],[NAME,VERSION],[/(opios)[\/\s]+([\w\.]+)/i],[[NAME,"Opera Mini"],VERSION],[/\s(opr)\/([\w\.]+)/i],[[NAME,"Opera"],VERSION],[/(kindle)\/([\w\.]+)/i,/(lunascape|maxthon|netfront|jasmine|blazer)[\/\s]?([\w\.]*)/i,/(avant\s|iemobile|slim|baidu)(?:browser)?[\/\s]?([\w\.]*)/i,/(?:ms|\()(ie)\s([\w\.]+)/i,/(rekonq)\/([\w\.]*)/i,/(chromium|flock|rockmelt|midori|epiphany|silk|skyfire|ovibrowser|bolt|iron|vivaldi|iridium|phantomjs|bowser|quark)\/([\w\.-]+)/i],[NAME,VERSION],[/(trident).+rv[:\s]([\w\.]+).+like\sgecko/i],[[NAME,"IE"],VERSION],[/(edge|edgios|edgea)\/((\d+)?[\w\.]+)/i],[[NAME,"Edge"],VERSION],[/(yabrowser)\/([\w\.]+)/i],[[NAME,"Yandex"],VERSION],[/(puffin)\/([\w\.]+)/i],[[NAME,"Puffin"],VERSION],[/((?:[\s\/])uc?\s?browser|(?:juc.+)ucweb)[\/\s]?([\w\.]+)/i],[[NAME,"UCBrowser"],VERSION],[/(comodo_dragon)\/([\w\.]+)/i],[[NAME,/_/g," "],VERSION],[/(micromessenger)\/([\w\.]+)/i],[[NAME,"WeChat"],VERSION],[/(qqbrowserlite)\/([\w\.]+)/i],[NAME,VERSION],[/(QQ)\/([\d\.]+)/i],[NAME,VERSION],[/m?(qqbrowser)[\/\s]?([\w\.]+)/i],[NAME,VERSION],[/(BIDUBrowser)[\/\s]?([\w\.]+)/i],[NAME,VERSION],[/(2345Explorer)[\/\s]?([\w\.]+)/i],[NAME,VERSION],[/(MetaSr)[\/\s]?([\w\.]+)/i],[NAME],[/(LBBROWSER)/i],[NAME],[/xiaomi\/miuibrowser\/([\w\.]+)/i],[VERSION,[NAME,"MIUI Browser"]],[/;fbav\/([\w\.]+);/i],[VERSION,[NAME,"Facebook"]],[/headlesschrome(?:\/([\w\.]+)|\s)/i],[VERSION,[NAME,"Chrome Headless"]],[/\swv\).+(chrome)\/([\w\.]+)/i],[[NAME,/(.+)/,"$1 WebView"],VERSION],[/((?:oculus|samsung)browser)\/([\w\.]+)/i],[[NAME,/(.+(?:g|us))(.+)/,"$1 $2"],VERSION],[/android.+version\/([\w\.]+)\s+(?:mobile\s?safari|safari)*/i],[VERSION,[NAME,"Android Browser"]],[/(chrome|omniweb|arora|[tizenoka]{5}\s?browser)\/v?([\w\.]+)/i],[NAME,VERSION],[/(dolfin)\/([\w\.]+)/i],[[NAME,"Dolphin"],VERSION],[/((?:android.+)crmo|crios)\/([\w\.]+)/i],[[NAME,"Chrome"],VERSION],[/(coast)\/([\w\.]+)/i],[[NAME,"Opera Coast"],VERSION],[/fxios\/([\w\.-]+)/i],[VERSION,[NAME,"Firefox"]],[/version\/([\w\.]+).+?mobile\/\w+\s(safari)/i],[VERSION,[NAME,"Mobile Safari"]],[/version\/([\w\.]+).+?(mobile\s?safari|safari)/i],[VERSION,NAME],[/webkit.+?(gsa)\/([\w\.]+).+?(mobile\s?safari|safari)(\/[\w\.]+)/i],[[NAME,"GSA"],VERSION],[/webkit.+?(mobile\s?safari|safari)(\/[\w\.]+)/i],[NAME,[VERSION,mapper.str,maps.browser.oldsafari.version]],[/(konqueror)\/([\w\.]+)/i,/(webkit|khtml)\/([\w\.]+)/i],[NAME,VERSION],[/(navigator|netscape)\/([\w\.-]+)/i],[[NAME,"Netscape"],VERSION],[/(swiftfox)/i,/(icedragon|iceweasel|camino|chimera|fennec|maemo\sbrowser|minimo|conkeror)[\/\s]?([\w\.\+]+)/i,/(firefox|seamonkey|k-meleon|icecat|iceape|firebird|phoenix|palemoon|basilisk|waterfox)\/([\w\.-]+)$/i,/(mozilla)\/([\w\.]+).+rv\:.+gecko\/\d+/i,/(polaris|lynx|dillo|icab|doris|amaya|w3m|netsurf|sleipnir)[\/\s]?([\w\.]+)/i,/(links)\s\(([\w\.]+)/i,/(gobrowser)\/?([\w\.]*)/i,/(ice\s?browser)\/v?([\w\._]+)/i,/(mosaic)[\/\s]([\w\.]+)/i],[NAME,VERSION]],cpu:[[/(?:(amd|x(?:(?:86|64)[_-])?|wow|win)64)[;\)]/i],[[ARCHITECTURE,"amd64"]],[/(ia32(?=;))/i],[[ARCHITECTURE,util.lowerize]],[/((?:i[346]|x)86)[;\)]/i],[[ARCHITECTURE,"ia32"]],[/windows\s(ce|mobile);\sppc;/i],[[ARCHITECTURE,"arm"]],[/((?:ppc|powerpc)(?:64)?)(?:\smac|;|\))/i],[[ARCHITECTURE,/ower/,"",util.lowerize]],[/(sun4\w)[;\)]/i],[[ARCHITECTURE,"sparc"]],[/((?:avr32|ia64(?=;))|68k(?=\))|arm(?:64|(?=v\d+;))|(?=atmel\s)avr|(?:irix|mips|sparc)(?:64)?(?=;)|pa-risc)/i],[[ARCHITECTURE,util.lowerize]]],device:[[/\((ipad|playbook);[\w\s\);-]+(rim|apple)/i],[MODEL,VENDOR,[TYPE,TABLET]],[/applecoremedia\/[\w\.]+ \((ipad)/],[MODEL,[VENDOR,"Apple"],[TYPE,TABLET]],[/(apple\s{0,1}tv)/i],[[MODEL,"Apple TV"],[VENDOR,"Apple"]],[/(archos)\s(gamepad2?)/i,/(hp).+(touchpad)/i,/(hp).+(tablet)/i,/(kindle)\/([\w\.]+)/i,/\s(nook)[\w\s]+build\/(\w+)/i,/(dell)\s(strea[kpr\s\d]*[\dko])/i],[VENDOR,MODEL,[TYPE,TABLET]],[/(kf[A-z]+)\sbuild\/.+silk\//i],[MODEL,[VENDOR,"Amazon"],[TYPE,TABLET]],[/(sd|kf)[0349hijorstuw]+\sbuild\/.+silk\//i],[[MODEL,mapper.str,maps.device.amazon.model],[VENDOR,"Amazon"],[TYPE,MOBILE]],[/\((ip[honed|\s\w*]+);.+(apple)/i],[MODEL,VENDOR,[TYPE,MOBILE]],[/\((ip[honed|\s\w*]+);/i],[MODEL,[VENDOR,"Apple"],[TYPE,MOBILE]],[/(blackberry)[\s-]?(\w+)/i,/(blackberry|benq|palm(?=\-)|sonyericsson|acer|asus|dell|meizu|motorola|polytron)[\s_-]?([\w-]*)/i,/(hp)\s([\w\s]+\w)/i,/(asus)-?(\w+)/i],[VENDOR,MODEL,[TYPE,MOBILE]],[/\(bb10;\s(\w+)/i],[MODEL,[VENDOR,"BlackBerry"],[TYPE,MOBILE]],[/android.+(transfo[prime\s]{4,10}\s\w+|eeepc|slider\s\w+|nexus 7|padfone)/i],[MODEL,[VENDOR,"Asus"],[TYPE,TABLET]],[/(sony)\s(tablet\s[ps])\sbuild\//i,/(sony)?(?:sgp.+)\sbuild\//i],[[VENDOR,"Sony"],[MODEL,"Xperia Tablet"],[TYPE,TABLET]],[/android.+\s([c-g]\d{4}|so[-l]\w+)\sbuild\//i],[MODEL,[VENDOR,"Sony"],[TYPE,MOBILE]],[/\s(ouya)\s/i,/(nintendo)\s([wids3u]+)/i],[VENDOR,MODEL,[TYPE,CONSOLE]],[/android.+;\s(shield)\sbuild/i],[MODEL,[VENDOR,"Nvidia"],[TYPE,CONSOLE]],[/(playstation\s[34portablevi]+)/i],[MODEL,[VENDOR,"Sony"],[TYPE,CONSOLE]],[/(sprint\s(\w+))/i],[[VENDOR,mapper.str,maps.device.sprint.vendor],[MODEL,mapper.str,maps.device.sprint.model],[TYPE,MOBILE]],[/(lenovo)\s?(S(?:5000|6000)+(?:[-][\w+]))/i],[VENDOR,MODEL,[TYPE,TABLET]],[/(htc)[;_\s-]+([\w\s]+(?=\))|\w+)*/i,/(zte)-(\w*)/i,/(alcatel|geeksphone|lenovo|nexian|panasonic|(?=;\s)sony)[_\s-]?([\w-]*)/i],[VENDOR,[MODEL,/_/g," "],[TYPE,MOBILE]],[/(nexus\s9)/i],[MODEL,[VENDOR,"HTC"],[TYPE,TABLET]],[/d\/huawei([\w\s-]+)[;\)]/i,/(nexus\s6p)/i],[MODEL,[VENDOR,"Huawei"],[TYPE,MOBILE]],[/(microsoft);\s(lumia[\s\w]+)/i],[VENDOR,MODEL,[TYPE,MOBILE]],[/[\s\(;](xbox(?:\sone)?)[\s\);]/i],[MODEL,[VENDOR,"Microsoft"],[TYPE,CONSOLE]],[/(kin\.[onetw]{3})/i],[[MODEL,/\./g," "],[VENDOR,"Microsoft"],[TYPE,MOBILE]],[/\s(milestone|droid(?:[2-4x]|\s(?:bionic|x2|pro|razr))?:?(\s4g)?)[\w\s]+build\//i,/mot[\s-]?(\w*)/i,/(XT\d{3,4}) build\//i,/(nexus\s6)/i],[MODEL,[VENDOR,"Motorola"],[TYPE,MOBILE]],[/android.+\s(mz60\d|xoom[\s2]{0,2})\sbuild\//i],[MODEL,[VENDOR,"Motorola"],[TYPE,TABLET]],[/hbbtv\/\d+\.\d+\.\d+\s+\([\w\s]*;\s*(\w[^;]*);([^;]*)/i],[[VENDOR,util.trim],[MODEL,util.trim],[TYPE,SMARTTV]],[/hbbtv.+maple;(\d+)/i],[[MODEL,/^/,"SmartTV"],[VENDOR,"Samsung"],[TYPE,SMARTTV]],[/\(dtv[\);].+(aquos)/i],[MODEL,[VENDOR,"Sharp"],[TYPE,SMARTTV]],[/android.+((sch-i[89]0\d|shw-m380s|gt-p\d{4}|gt-n\d+|sgh-t8[56]9|nexus 10))/i,/((SM-T\w+))/i],[[VENDOR,"Samsung"],MODEL,[TYPE,TABLET]],[/smart-tv.+(samsung)/i],[VENDOR,[TYPE,SMARTTV],MODEL],[/((s[cgp]h-\w+|gt-\w+|galaxy\snexus|sm-\w[\w\d]+))/i,/(sam[sung]*)[\s-]*(\w+-?[\w-]*)/i,/sec-((sgh\w+))/i],[[VENDOR,"Samsung"],MODEL,[TYPE,MOBILE]],[/sie-(\w*)/i],[MODEL,[VENDOR,"Siemens"],[TYPE,MOBILE]],[/(maemo|nokia).*(n900|lumia\s\d+)/i,/(nokia)[\s_-]?([\w-]*)/i],[[VENDOR,"Nokia"],MODEL,[TYPE,MOBILE]],[/android\s3\.[\s\w;-]{10}(a\d{3})/i],[MODEL,[VENDOR,"Acer"],[TYPE,TABLET]],[/android.+([vl]k\-?\d{3})\s+build/i],[MODEL,[VENDOR,"LG"],[TYPE,TABLET]],[/android\s3\.[\s\w;-]{10}(lg?)-([06cv9]{3,4})/i],[[VENDOR,"LG"],MODEL,[TYPE,TABLET]],[/(lg) netcast\.tv/i],[VENDOR,MODEL,[TYPE,SMARTTV]],[/(nexus\s[45])/i,/lg[e;\s\/-]+(\w*)/i,/android.+lg(\-?[\d\w]+)\s+build/i],[MODEL,[VENDOR,"LG"],[TYPE,MOBILE]],[/android.+(ideatab[a-z0-9\-\s]+)/i],[MODEL,[VENDOR,"Lenovo"],[TYPE,TABLET]],[/linux;.+((jolla));/i],[VENDOR,MODEL,[TYPE,MOBILE]],[/((pebble))app\/[\d\.]+\s/i],[VENDOR,MODEL,[TYPE,WEARABLE]],[/android.+;\s(oppo)\s?([\w\s]+)\sbuild/i],[VENDOR,MODEL,[TYPE,MOBILE]],[/crkey/i],[[MODEL,"Chromecast"],[VENDOR,"Google"]],[/android.+;\s(glass)\s\d/i],[MODEL,[VENDOR,"Google"],[TYPE,WEARABLE]],[/android.+;\s(pixel c)\s/i],[MODEL,[VENDOR,"Google"],[TYPE,TABLET]],[/android.+;\s(pixel xl|pixel)\s/i],[MODEL,[VENDOR,"Google"],[TYPE,MOBILE]],[/android.+;\s(\w+)\s+build\/hm\1/i,/android.+(hm[\s\-_]*note?[\s_]*(?:\d\w)?)\s+build/i,/android.+(mi[\s\-_]*(?:one|one[\s_]plus|note lte)?[\s_]*(?:\d?\w?)[\s_]*(?:plus)?)\s+build/i,/android.+(redmi[\s\-_]*(?:note)?(?:[\s_]*[\w\s]+))\s+build/i],[[MODEL,/_/g," "],[VENDOR,"Xiaomi"],[TYPE,MOBILE]],[/android.+(mi[\s\-_]*(?:pad)(?:[\s_]*[\w\s]+))\s+build/i],[[MODEL,/_/g," "],[VENDOR,"Xiaomi"],[TYPE,TABLET]],[/android.+;\s(m[1-5]\snote)\sbuild/i],[MODEL,[VENDOR,"Meizu"],[TYPE,TABLET]],[/android.+a000(1)\s+build/i,/android.+oneplus\s(a\d{4})\s+build/i],[MODEL,[VENDOR,"OnePlus"],[TYPE,MOBILE]],[/android.+[;\/]\s*(RCT[\d\w]+)\s+build/i],[MODEL,[VENDOR,"RCA"],[TYPE,TABLET]],[/android.+[;\/\s]+(Venue[\d\s]{2,7})\s+build/i],[MODEL,[VENDOR,"Dell"],[TYPE,TABLET]],[/android.+[;\/]\s*(Q[T|M][\d\w]+)\s+build/i],[MODEL,[VENDOR,"Verizon"],[TYPE,TABLET]],[/android.+[;\/]\s+(Barnes[&\s]+Noble\s+|BN[RT])(V?.*)\s+build/i],[[VENDOR,"Barnes & Noble"],MODEL,[TYPE,TABLET]],[/android.+[;\/]\s+(TM\d{3}.*\b)\s+build/i],[MODEL,[VENDOR,"NuVision"],[TYPE,TABLET]],[/android.+;\s(k88)\sbuild/i],[MODEL,[VENDOR,"ZTE"],[TYPE,TABLET]],[/android.+[;\/]\s*(gen\d{3})\s+build.*49h/i],[MODEL,[VENDOR,"Swiss"],[TYPE,MOBILE]],[/android.+[;\/]\s*(zur\d{3})\s+build/i],[MODEL,[VENDOR,"Swiss"],[TYPE,TABLET]],[/android.+[;\/]\s*((Zeki)?TB.*\b)\s+build/i],[MODEL,[VENDOR,"Zeki"],[TYPE,TABLET]],[/(android).+[;\/]\s+([YR]\d{2})\s+build/i,/android.+[;\/]\s+(Dragon[\-\s]+Touch\s+|DT)(\w{5})\sbuild/i],[[VENDOR,"Dragon Touch"],MODEL,[TYPE,TABLET]],[/android.+[;\/]\s*(NS-?\w{0,9})\sbuild/i],[MODEL,[VENDOR,"Insignia"],[TYPE,TABLET]],[/android.+[;\/]\s*((NX|Next)-?\w{0,9})\s+build/i],[MODEL,[VENDOR,"NextBook"],[TYPE,TABLET]],[/android.+[;\/]\s*(Xtreme\_)?(V(1[045]|2[015]|30|40|60|7[05]|90))\s+build/i],[[VENDOR,"Voice"],MODEL,[TYPE,MOBILE]],[/android.+[;\/]\s*(LVTEL\-)?(V1[12])\s+build/i],[[VENDOR,"LvTel"],MODEL,[TYPE,MOBILE]],[/android.+[;\/]\s*(V(100MD|700NA|7011|917G).*\b)\s+build/i],[MODEL,[VENDOR,"Envizen"],[TYPE,TABLET]],[/android.+[;\/]\s*(Le[\s\-]+Pan)[\s\-]+(\w{1,9})\s+build/i],[VENDOR,MODEL,[TYPE,TABLET]],[/android.+[;\/]\s*(Trio[\s\-]*.*)\s+build/i],[MODEL,[VENDOR,"MachSpeed"],[TYPE,TABLET]],[/android.+[;\/]\s*(Trinity)[\-\s]*(T\d{3})\s+build/i],[VENDOR,MODEL,[TYPE,TABLET]],[/android.+[;\/]\s*TU_(1491)\s+build/i],[MODEL,[VENDOR,"Rotor"],[TYPE,TABLET]],[/android.+(KS(.+))\s+build/i],[MODEL,[VENDOR,"Amazon"],[TYPE,TABLET]],[/android.+(Gigaset)[\s\-]+(Q\w{1,9})\s+build/i],[VENDOR,MODEL,[TYPE,TABLET]],[/\s(tablet|tab)[;\/]/i,/\s(mobile)(?:[;\/]|\ssafari)/i],[[TYPE,util.lowerize],VENDOR,MODEL],[/(android[\w\.\s\-]{0,9});.+build/i],[MODEL,[VENDOR,"Generic"]]],engine:[[/windows.+\sedge\/([\w\.]+)/i],[VERSION,[NAME,"EdgeHTML"]],[/(presto)\/([\w\.]+)/i,/(webkit|trident|netfront|netsurf|amaya|lynx|w3m)\/([\w\.]+)/i,/(khtml|tasman|links)[\/\s]\(?([\w\.]+)/i,/(icab)[\/\s]([23]\.[\d\.]+)/i],[NAME,VERSION],[/rv\:([\w\.]{1,9}).+(gecko)/i],[VERSION,NAME]],os:[[/microsoft\s(windows)\s(vista|xp)/i],[NAME,VERSION],[/(windows)\snt\s6\.2;\s(arm)/i,/(windows\sphone(?:\sos)*)[\s\/]?([\d\.\s\w]*)/i,/(windows\smobile|windows)[\s\/]?([ntce\d\.\s]+\w)/i],[NAME,[VERSION,mapper.str,maps.os.windows.version]],[/(win(?=3|9|n)|win\s9x\s)([nt\d\.]+)/i],[[NAME,"Windows"],[VERSION,mapper.str,maps.os.windows.version]],[/\((bb)(10);/i],[[NAME,"BlackBerry"],VERSION],[/(blackberry)\w*\/?([\w\.]*)/i,/(tizen)[\/\s]([\w\.]+)/i,/(android|webos|palm\sos|qnx|bada|rim\stablet\sos|meego|contiki)[\/\s-]?([\w\.]*)/i,/linux;.+(sailfish);/i],[NAME,VERSION],[/(symbian\s?os|symbos|s60(?=;))[\/\s-]?([\w\.]*)/i],[[NAME,"Symbian"],VERSION],[/\((series40);/i],[NAME],[/mozilla.+\(mobile;.+gecko.+firefox/i],[[NAME,"Firefox OS"],VERSION],[/(nintendo|playstation)\s([wids34portablevu]+)/i,/(mint)[\/\s\(]?(\w*)/i,/(mageia|vectorlinux)[;\s]/i,/(joli|[kxln]?ubuntu|debian|suse|opensuse|gentoo|(?=\s)arch|slackware|fedora|mandriva|centos|pclinuxos|redhat|zenwalk|linpus)[\/\s-]?(?!chrom)([\w\.-]*)/i,/(hurd|linux)\s?([\w\.]*)/i,/(gnu)\s?([\w\.]*)/i],[NAME,VERSION],[/(cros)\s[\w]+\s([\w\.]+\w)/i],[[NAME,"Chromium OS"],VERSION],[/(sunos)\s?([\w\.\d]*)/i],[[NAME,"Solaris"],VERSION],[/\s([frentopc-]{0,4}bsd|dragonfly)\s?([\w\.]*)/i],[NAME,VERSION],[/(haiku)\s(\w+)/i],[NAME,VERSION],[/cfnetwork\/.+darwin/i,/ip[honead]{2,4}(?:.*os\s([\w]+)\slike\smac|;\sopera)/i],[[VERSION,/_/g,"."],[NAME,"iOS"]],[/(mac\sos\sx)\s?([\w\s\.]*)/i,/(macintosh|mac(?=_powerpc)\s)/i],[[NAME,"Mac OS"],[VERSION,/_/g,"."]],[/((?:open)?solaris)[\/\s-]?([\w\.]*)/i,/(aix)\s((\d)(?=\.|\)|\s)[\w\.])*/i,/(plan\s9|minix|beos|os\/2|amigaos|morphos|risc\sos|openvms)/i,/(unix)\s?([\w\.]*)/i],[NAME,VERSION]]};var UAParser=function(uastring,extensions){if(typeof uastring==="object"){extensions=uastring;uastring=undefined}if(!(this instanceof UAParser)){return new UAParser(uastring,extensions).getResult()}var ua=uastring||(window&&window.navigator&&window.navigator.userAgent?window.navigator.userAgent:EMPTY);var rgxmap=extensions?util.extend(regexes,extensions):regexes;this.getBrowser=function(){var browser={name:undefined,version:undefined};mapper.rgx.call(browser,ua,rgxmap.browser);browser.major=util.major(browser.version);return browser};this.getCPU=function(){var cpu={architecture:undefined};mapper.rgx.call(cpu,ua,rgxmap.cpu);return cpu};this.getDevice=function(){var device={vendor:undefined,model:undefined,type:undefined};mapper.rgx.call(device,ua,rgxmap.device);return device};this.getEngine=function(){var engine={name:undefined,version:undefined};mapper.rgx.call(engine,ua,rgxmap.engine);return engine};this.getOS=function(){var os={name:undefined,version:undefined};mapper.rgx.call(os,ua,rgxmap.os);return os};this.getResult=function(){return{ua:this.getUA(),browser:this.getBrowser(),engine:this.getEngine(),os:this.getOS(),device:this.getDevice(),cpu:this.getCPU()}};this.getUA=function(){return ua};this.setUA=function(uastring){ua=uastring;return this};return this};UAParser.VERSION=LIBVERSION;UAParser.BROWSER={NAME:NAME,MAJOR:MAJOR,VERSION:VERSION};UAParser.CPU={ARCHITECTURE:ARCHITECTURE};UAParser.DEVICE={MODEL:MODEL,VENDOR:VENDOR,TYPE:TYPE,CONSOLE:CONSOLE,MOBILE:MOBILE,SMARTTV:SMARTTV,TABLET:TABLET,WEARABLE:WEARABLE,EMBEDDED:EMBEDDED};UAParser.ENGINE={NAME:NAME,VERSION:VERSION};UAParser.OS={NAME:NAME,VERSION:VERSION};if(typeof exports!==UNDEF_TYPE){if(typeof module!==UNDEF_TYPE&&module.exports){exports=module.exports=UAParser}exports.UAParser=UAParser}else{if("function"===FUNC_TYPE&&__webpack_require__(7)){!(__WEBPACK_AMD_DEFINE_RESULT__ = (function(){return UAParser}).call(exports, __webpack_require__, exports, module),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__))}else if(window){window.UAParser=UAParser}}var $=window&&(window.jQuery||window.Zepto);if(typeof $!==UNDEF_TYPE){var parser=new UAParser;$.ua=parser.getResult();$.ua.get=function(){return parser.getUA()};$.ua.set=function(uastring){parser.setUA(uastring);var result=parser.getResult();for(var prop in result){$.ua[prop]=result[prop]}}}})(typeof window==="object"?window:this);
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports) {
+
+/* WEBPACK VAR INJECTION */(function(__webpack_amd_options__) {/* globals __webpack_amd_options__ */
+module.exports = __webpack_amd_options__;
+
+/* WEBPACK VAR INJECTION */}.call(exports, {}))
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _getUaData = __webpack_require__(0);
+
+var _types = __webpack_require__(2);
+
+var create = _interopRequireWildcard(_types);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+var type = create.checkType(_getUaData.device.type);
+
+exports.default = function () {
+  var isBrowser = type.isBrowser,
+      isMobile = type.isMobile,
+      isTablet = type.isTablet,
+      isSmartTV = type.isSmartTV,
+      isConsole = type.isConsole,
+      isWearable = type.isWearable;
+
+  if (isBrowser) {
+    return create.broPayload(isBrowser, _getUaData.browser, _getUaData.engine, _getUaData.os, _getUaData.ua);
+  }
+
+  if (isSmartTV) {
+    return create.stvPayload(isSmartTV, _getUaData.engine, _getUaData.os, _getUaData.ua);
+  }
+
+  if (isConsole) {
+    return create.consolePayload(isConsole, _getUaData.engine, _getUaData.os, _getUaData.ua);
+  }
+
+  if (isMobile) {
+    return create.mobilePayload(type, _getUaData.device, _getUaData.os, _getUaData.ua);
+  }
+
+  if (isTablet) {
+    return create.mobilePayload(type, _getUaData.device, _getUaData.os, _getUaData.ua);
+  }
+
+  if (isWearable) {
+    return create.wearPayload(isWearable, _getUaData.engine, _getUaData.os, _getUaData.ua);
+  }
+};
+
+/***/ })
+/******/ ]);
 
 /***/ }),
 
@@ -46122,6 +49682,13 @@ module.exports = __webpack_require__.p + "21e34be24e1dcf90700db552fd3d17bf.ttf";
 
 /***/ }),
 
+/***/ "./src/assets/fonts/DS_VTCorona_Cyr.ttf":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "5ffdd99b8180ac36de597ce3dcc76543.ttf";
+
+/***/ }),
+
 /***/ "./src/assets/fonts/Gogol.otf":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -46136,10 +49703,31 @@ module.exports = __webpack_require__.p + "47175b64302fd2a4f4f8f91691347eab.ttf";
 
 /***/ }),
 
+/***/ "./src/assets/fonts/Truetypewriter_PolyglOTT.ttf":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "7393bd16360263e183954531ef21286f.ttf";
+
+/***/ }),
+
 /***/ "./src/assets/images/1920x1080-background.jpg":
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "6c1304767b031a9edb706785f3c6fbdb.jpg";
+
+/***/ }),
+
+/***/ "./src/assets/images/documenty-logo-sign-empty-micro.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "5ec1e9cd0cc9c0b3af698d93c43c9d30.png";
+
+/***/ }),
+
+/***/ "./src/assets/images/documenty-logo-sign-micro.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "97d368e6b09bdc799d843da8898aed63.png";
 
 /***/ }),
 
@@ -46454,6 +50042,8 @@ var ArrowButton = function ArrowButton(_ref) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ViewCount__ = __webpack_require__("./src/components/ui/ViewCount.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_react_html_parser__ = __webpack_require__("./node_modules/react-html-parser/lib/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_react_html_parser___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_react_html_parser__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__assets_images_documenty_logo_sign_micro_png__ = __webpack_require__("./src/assets/images/documenty-logo-sign-micro.png");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__assets_images_documenty_logo_sign_micro_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__assets_images_documenty_logo_sign_micro_png__);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -46470,27 +50060,36 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 
+
+
 var Article = function (_Component) {
     _inherits(Article, _Component);
 
-    function Article() {
-        var _ref;
-
-        var _temp, _this, _ret;
-
+    function Article(props) {
         _classCallCheck(this, Article);
 
-        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-            args[_key] = arguments[_key];
-        }
+        var _this = _possibleConstructorReturn(this, (Article.__proto__ || Object.getPrototypeOf(Article)).call(this));
 
-        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Article.__proto__ || Object.getPrototypeOf(Article)).call.apply(_ref, [this].concat(args))), _this), _this.shouldComponentUpdate = function (nextProps) {
-            return nextProps.post.id !== _this.props.post.id;
-        }, _this.handleOpenSideBar = function () {
-            if (_this.context.screenWidth <= 480) {
+        _this.componentWillReceiveProps = function (nextProps) {
+            if (nextProps.screenWidth !== _this.props.screenWidth) {
+                _this.setState({ screenWidth: nextProps.screenWidth });
+            }
+        };
+
+        _this.shouldComponentUpdate = function (nextProps) {
+            return nextProps.post.id !== _this.props.post.id || nextProps.screenWidth !== _this.props.screenWidth;
+        };
+
+        _this.handleOpenSideBar = function () {
+            if (_this.state.screenWidth <= 480) {
                 _this.props.openSideBar();
             }
-        }, _temp), _possibleConstructorReturn(_this, _ret);
+        };
+
+        _this.state = {
+            screenWidth: props.screenWidth
+        };
+        return _this;
     }
 
     _createClass(Article, [{
@@ -46560,23 +50159,28 @@ var Article = function (_Component) {
                 ),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'div',
-                    { className: 'article-content' },
+                    { className: 'article-info' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__ViewCount__["a" /* default */], null),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         'div',
-                        { className: 'article-info' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__ViewCount__["a" /* default */], null),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'div',
-                            { className: 'article-date' },
-                            date
-                        )
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__SocialShareButtons__["a" /* default */], { post: post }),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'div',
-                        { className: 'article-text' },
-                        __WEBPACK_IMPORTED_MODULE_6_react_html_parser___default()(text)
+                        { className: 'article-date' },
+                        date
                     )
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'article-share' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__SocialShareButtons__["a" /* default */], { post: post })
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'article-content' },
+                    __WEBPACK_IMPORTED_MODULE_6_react_html_parser___default()(text)
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'article-footer' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_7__assets_images_documenty_logo_sign_micro_png___default.a, alt: 'logo-image' })
                 )
             );
         }
@@ -46586,11 +50190,6 @@ var Article = function (_Component) {
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
 
 /* harmony default export */ __webpack_exports__["a"] = (Article);
-
-
-Article.contextTypes = {
-    screenWidth: __WEBPACK_IMPORTED_MODULE_1_prop_types__["PropTypes"].number
-};
 
 /***/ }),
 
@@ -46675,6 +50274,139 @@ var ArticleContainer = function (_Component) {
 
 /***/ }),
 
+/***/ "./src/components/ui/ArticlePage.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_classnames__ = __webpack_require__("./node_modules/classnames/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_classnames___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_classnames__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ArticleContainer__ = __webpack_require__("./src/components/ui/ArticleContainer.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__SocialShareButtons__ = __webpack_require__("./src/components/ui/SocialShareButtons.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ArrowButton__ = __webpack_require__("./src/components/ui/ArrowButton.js");
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+// import SideBlock from './SideBlock'
+
+
+
+
+var ArticlePage = function (_Component) {
+    _inherits(ArticlePage, _Component);
+
+    function ArticlePage() {
+        var _ref;
+
+        var _temp, _this, _ret;
+
+        _classCallCheck(this, ArticlePage);
+
+        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+            args[_key] = arguments[_key];
+        }
+
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = ArticlePage.__proto__ || Object.getPrototypeOf(ArticlePage)).call.apply(_ref, [this].concat(args))), _this), _this.shouldComponentUpdate = function (nextProps) {
+            return nextProps.posts !== _this.props.posts || nextProps.activePostIndex !== _this.props.activePostIndex || nextProps.shifted !== _this.props.shifted;
+        }, _this._getPrevPost = function () {
+            var _this$props = _this.props,
+                posts = _this$props.posts,
+                activePostIndex = _this$props.activePostIndex,
+                prevPost = posts[activePostIndex - 1];
+
+
+            return prevPost || posts[posts.length - 1];
+        }, _this._getNextPost = function () {
+            var _this$props2 = _this.props,
+                posts = _this$props2.posts,
+                activePostIndex = _this$props2.activePostIndex,
+                nextPost = posts[activePostIndex + 1];
+
+
+            return nextPost || posts[0];
+        }, _temp), _possibleConstructorReturn(_this, _ret);
+    }
+
+    _createClass(ArticlePage, [{
+        key: 'render',
+        value: function render() {
+            var _props = this.props,
+                posts = _props.posts,
+                activePostIndex = _props.activePostIndex,
+                shifted = _props.shifted,
+                openPost = _props.openPost,
+                activePost = posts[activePostIndex],
+                prevPost = this._getPrevPost(),
+                nextPost = this._getNextPost();
+
+            if (!activePost) return null;
+
+            var classArticles = __WEBPACK_IMPORTED_MODULE_1_classnames___default()('ArticlePage', { shifted: shifted });
+
+            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                { className: classArticles },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'ArticleBlock' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'div',
+                        { className: 'blog-nav' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__SocialShareButtons__["a" /* default */], { post: activePost }),
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__ArrowButton__["a" /* default */], {
+                            name: 'back',
+                            action: function action() {
+                                return openPost(prevPost.id);
+                            },
+                            title: prevPost ? '\u041D\u0430\u0437\u0430\u0434: ' + prevPost.title : null
+                            // hidden={ !prevPost }
+                        })
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__ArticleContainer__["a" /* default */], _extends({
+                        post: activePost,
+                        shifted: shifted,
+                        onPrev: function onPrev() {
+                            return openPost(prevPost.id);
+                        } //for mobile scrolling
+                        , onNext: function onNext() {
+                            return openPost(nextPost.id);
+                        } //for mobile scrolling
+                    }, this.props)),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'div',
+                        { className: 'blog-nav' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__ArrowButton__["a" /* default */], {
+                            name: 'forward',
+                            action: function action() {
+                                return openPost(nextPost.id);
+                            },
+                            title: nextPost ? '\u0412\u043F\u0435\u0440\u0435\u0434: ' + nextPost.title : null
+                            // hidden={ !nextPost }
+                        })
+                    )
+                )
+            );
+        }
+    }]);
+
+    return ArticlePage;
+}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
+
+/* harmony default export */ __webpack_exports__["a"] = (ArticlePage);
+
+/***/ }),
+
 /***/ "./src/components/ui/ArticleSwiped.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -46692,128 +50424,6 @@ var ArticleSwiped = function ArticleSwiped(props) {
 
 /***/ }),
 
-/***/ "./src/components/ui/Articles.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_classnames__ = __webpack_require__("./node_modules/classnames/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_classnames___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_classnames__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ArticleContainer__ = __webpack_require__("./src/components/ui/ArticleContainer.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__SocialShareButtons__ = __webpack_require__("./src/components/ui/SocialShareButtons.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ArrowButton__ = __webpack_require__("./src/components/ui/ArrowButton.js");
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-
-
-
-
-
-
-
-var Articles = function (_Component) {
-    _inherits(Articles, _Component);
-
-    function Articles() {
-        var _ref;
-
-        var _temp, _this, _ret;
-
-        _classCallCheck(this, Articles);
-
-        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-            args[_key] = arguments[_key];
-        }
-
-        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Articles.__proto__ || Object.getPrototypeOf(Articles)).call.apply(_ref, [this].concat(args))), _this), _this.shouldComponentUpdate = function (nextProps) {
-            return nextProps.posts !== _this.props.posts || nextProps.activePostIndex !== _this.props.activePostIndex || nextProps.shifted !== _this.props.shifted;
-        }, _this.handleOpenPrev = function () {
-            var _this$props = _this.props,
-                posts = _this$props.posts,
-                activePostIndex = _this$props.activePostIndex,
-                openPost = _this$props.openPost,
-                prevPost = posts[activePostIndex - 1];
-
-
-            if (prevPost) openPost(prevPost.id);
-        }, _this.handleOpenNext = function () {
-            var _this$props2 = _this.props,
-                posts = _this$props2.posts,
-                activePostIndex = _this$props2.activePostIndex,
-                openPost = _this$props2.openPost,
-                nextPost = posts[activePostIndex + 1];
-
-
-            if (nextPost) openPost(nextPost.id);
-        }, _temp), _possibleConstructorReturn(_this, _ret);
-    }
-
-    _createClass(Articles, [{
-        key: 'render',
-        value: function render() {
-            var _props = this.props,
-                posts = _props.posts,
-                activePostIndex = _props.activePostIndex,
-                shifted = _props.shifted,
-                openSideBar = _props.openSideBar,
-                activePost = posts[activePostIndex],
-                prevPost = posts[activePostIndex - 1],
-                nextPost = posts[activePostIndex + 1];
-
-
-            if (!activePost) return null;
-
-            var classArticles = __WEBPACK_IMPORTED_MODULE_1_classnames___default()('Articles', { shifted: shifted });
-
-            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                { className: classArticles },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'blog-nav' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__SocialShareButtons__["a" /* default */], { post: activePost }),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__ArrowButton__["a" /* default */], {
-                        name: 'back',
-                        action: this.handleOpenPrev,
-                        title: prevPost ? '\u041D\u0430\u0437\u0430\u0434: ' + prevPost.title : null,
-                        hidden: !prevPost
-                    })
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__ArticleContainer__["a" /* default */], {
-                    post: activePost,
-                    openSideBar: openSideBar,
-                    shifted: shifted,
-                    onPrev: this.handleOpenPrev //for mobile scrolling
-                    , onNext: this.handleOpenNext //for mobile scrolling
-                }),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'blog-nav' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__ArrowButton__["a" /* default */], {
-                        name: 'forward',
-                        action: this.handleOpenNext,
-                        title: nextPost ? '\u0412\u043F\u0435\u0440\u0435\u0434: ' + nextPost.title : null,
-                        hidden: !nextPost
-                    })
-                )
-            );
-        }
-    }]);
-
-    return Articles;
-}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
-
-/* harmony default export */ __webpack_exports__["a"] = (Articles);
-
-/***/ }),
-
 /***/ "./src/components/ui/Blog.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -46822,9 +50432,11 @@ var Articles = function (_Component) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__("./node_modules/prop-types/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Articles__ = __webpack_require__("./src/components/ui/Articles.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__SideBlock__ = __webpack_require__("./src/components/ui/SideBlock.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Previews__ = __webpack_require__("./src/components/ui/Previews.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ArticlePage__ = __webpack_require__("./src/components/ui/ArticlePage.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PreviewsPage__ = __webpack_require__("./src/components/ui/PreviewsPage.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__SideBlock__ = __webpack_require__("./src/components/ui/SideBlock.js");
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -46832,6 +50444,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 
 
 
@@ -46855,6 +50468,10 @@ var Blog = function (_Component) {
             _this.handleOpenPost();
         };
 
+        _this.shouldComponentUpdate = function (nextProps, nextState, nextContext) {
+            return nextProps.match !== _this.props.match || nextContext.screenWidth !== _this.context.screenWidth;
+        };
+
         _this.componentWillReceiveProps = function (nextProps) {
             var tag = nextProps.match.params.tag,
                 changeActiveTag = _this.context.changeActiveTag;
@@ -46869,15 +50486,13 @@ var Blog = function (_Component) {
         _this.handleOpenPost = function (id, tag) {
             var _this$props = _this.props,
                 match = _this$props.match,
-                history = _this$props.history,
-                listPosts = _this.state.listPosts;
+                history = _this$props.history;
 
 
             if (!tag) tag = match.params.tag || 'all';
-            //if (!id) id = listPosts[listPosts.length - 1].id
-            if (!id) id = listPosts[listPosts.length - 1].id;
+            // if (!id) id = listPosts[listPosts.length - 1].id
 
-            history.push('/' + tag + '/' + id);
+            if (id) history.push('/' + tag + '/' + id);else history.push('/' + tag);
 
             window.scrollTo(0, 0);
         };
@@ -46917,32 +50532,28 @@ var Blog = function (_Component) {
                 match = this.props.match,
                 activePostIndex = listPosts.findIndex(function (post) {
                 return post.id === parseInt(match.params.id);
-            });
+            }),
+                dataProps = {
+                posts: listPosts,
+                match: match,
+                screenWidth: this.context.screenWidth,
+                openPost: this.handleOpenPost
+            };
 
 
             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'div',
                 { className: 'Blog' },
-                match.params.id ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__Articles__["a" /* default */], {
-                    posts: listPosts,
+                match.params.id ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__ArticlePage__["a" /* default */], _extends({}, dataProps, {
                     shifted: openSideBar,
                     activePostIndex: activePostIndex,
-                    openPost: this.handleOpenPost,
-                    openSideBar: this.handleOpenSideBar
-                }) : __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__Previews__["a" /* default */], {
-                    posts: listPosts,
-                    match: match,
-                    openPost: this.handleOpenPost
-                }),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__SideBlock__["a" /* default */], {
-                    screenWidth: this.context.screenWidth,
-                    isSideBarOpening: openSideBar,
-                    isPreviewsOpen: !match.params.id,
-                    posts: listPosts,
-                    match: match,
-                    openPost: this.handleOpenPost,
+                    openSideBar: this.handleOpenSideBar,
                     hideSideBar: this.handleHideSideBar
-                })
+                })) : __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__PreviewsPage__["a" /* default */], dataProps),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__SideBlock__["a" /* default */], _extends({}, dataProps, {
+                    isSideBarOpening: openSideBar,
+                    hideSideBar: this.handleHideSideBar
+                }))
             );
         }
     }]);
@@ -46980,7 +50591,7 @@ var FooterBlock = function FooterBlock() {
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'p',
                 null,
-                'Copyright \xA9 2018 by Documenty. All rights reserved.'
+                '\u0410\u0432\u0442\u043E\u0440\u0441\u044C\u043A\u0435 \u043F\u0440\u0430\u0432\u043E \xA9 2018 \u043D\u0430\u043B\u0435\u0436\u0438\u0442\u044C \u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0430\u043C. \u0412\u0441i \u043F\u0440\u0430\u0432\u0430 \u0437\u0430\u0445\u0438\u0449\u0435\u043Di.'
             )
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -47138,7 +50749,7 @@ var HeadBlock = function (_Component) {
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         __WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Link */],
                         { to: '/all' },
-                        screenWidth > 624 ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_5__assets_images_documenty_logo_full_2_png___default.a, alt: 'logo-full' }) : __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_6__assets_images_documenty_logo_1_png___default.a, alt: 'logo-word' })
+                        screenWidth > 1023 ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_5__assets_images_documenty_logo_full_2_png___default.a, alt: 'logo-full' }) : __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_6__assets_images_documenty_logo_1_png___default.a, alt: 'logo-word' })
                     )
                 ),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -47162,222 +50773,6 @@ HeadBlock.contextTypes = {
     activeTag: __WEBPACK_IMPORTED_MODULE_2_prop_types__["PropTypes"].string,
     changeActiveTag: __WEBPACK_IMPORTED_MODULE_2_prop_types__["PropTypes"].func
 };
-
-/***/ }),
-
-/***/ "./src/components/ui/ListPreviews.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListPreviewsItem__ = __webpack_require__("./src/components/ui/ListPreviewsItem.js");
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-
-
-
-var ListPreviews = function (_Component) {
-    _inherits(ListPreviews, _Component);
-
-    function ListPreviews() {
-        var _ref;
-
-        var _temp, _this, _ret;
-
-        _classCallCheck(this, ListPreviews);
-
-        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-            args[_key] = arguments[_key];
-        }
-
-        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = ListPreviews.__proto__ || Object.getPrototypeOf(ListPreviews)).call.apply(_ref, [this].concat(args))), _this), _this.shouldComponentUpdate = function (nextProps) {
-            return nextProps.postsOnScreen !== _this.props.postsOnScreen;
-        }, _temp), _possibleConstructorReturn(_this, _ret);
-    }
-
-    _createClass(ListPreviews, [{
-        key: 'render',
-        value: function render() {
-            var _this2 = this;
-
-            var postsOnScreen = this.props.postsOnScreen;
-
-
-            if (!postsOnScreen) return null;
-
-            return React.createElement(
-                'div',
-                { className: 'ListPreviews' },
-                postsOnScreen.map(function (post, i) {
-                    return React.createElement(__WEBPACK_IMPORTED_MODULE_1__ListPreviewsItem__["a" /* default */], _extends({
-                        key: i,
-                        post: post,
-                        timeoutMs: 100 * i
-                    }, _this2.props));
-                })
-            );
-        }
-    }]);
-
-    return ListPreviews;
-}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
-
-/* harmony default export */ __webpack_exports__["a"] = (ListPreviews);
-
-/***/ }),
-
-/***/ "./src/components/ui/ListPreviewsItem.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_classnames__ = __webpack_require__("./node_modules/classnames/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_classnames___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_classnames__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ViewCount__ = __webpack_require__("./src/components/ui/ViewCount.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_html_parser__ = __webpack_require__("./node_modules/react-html-parser/lib/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_html_parser___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_html_parser__);
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-
-
-
-
-
-var ListPreviewsItem = function (_Component) {
-    _inherits(ListPreviewsItem, _Component);
-
-    function ListPreviewsItem() {
-        _classCallCheck(this, ListPreviewsItem);
-
-        var _this = _possibleConstructorReturn(this, (ListPreviewsItem.__proto__ || Object.getPrototypeOf(ListPreviewsItem)).call(this));
-
-        _this.handleSelectItem = function (id) {
-            _this.props.openPost(id);
-        };
-
-        _this.state = {
-            animateIn: false,
-            hidden: true
-        };
-        return _this;
-    }
-
-    _createClass(ListPreviewsItem, [{
-        key: 'componentDidMount',
-        value: function componentDidMount() {
-            this.activeAnimateIn();
-        }
-
-        // componentDidUpdate = (prevProps) => {
-        //     if (prevProps.post !== this.props.post) {
-        //         this.setState({ hidden: true })
-        //         this.activeAnimateIn()
-        //     }
-        // }
-
-    }, {
-        key: 'activeAnimateIn',
-        value: function activeAnimateIn() {
-            var _this2 = this;
-
-            var timeoutMs = this.props.timeoutMs;
-
-
-            setTimeout(function () {
-                _this2.setState({
-                    animateIn: true,
-                    hidden: false
-                });
-            }, timeoutMs);
-
-            // setTimeout(() => {
-            // 	this.setState({ animateIn: false })
-            // }, timeoutMs + 1000)
-        }
-    }, {
-        key: 'render',
-        value: function render() {
-            var _this3 = this;
-
-            var post = this.props.post,
-                id = post.id,
-                title = post.title,
-                tag = post.tag,
-                image = post.image,
-                text = post.text,
-                date = post.date,
-                _state = this.state,
-                animateIn = _state.animateIn,
-                hidden = _state.hidden;
-
-
-            var styleItem = { 'display': hidden ? 'none' : 'block' },
-                classListItem = __WEBPACK_IMPORTED_MODULE_1_classnames___default()('ListPreviewsItem', { fadeIn: animateIn });
-
-            return React.createElement(
-                'div',
-                { className: classListItem,
-                    onClick: function onClick() {
-                        return _this3.handleSelectItem(post.id);
-                    },
-                    style: styleItem
-                },
-                React.createElement(
-                    'div',
-                    { className: 'article-preview-image' },
-                    React.createElement('img', { src: '' + image, alt: title, title: title })
-                ),
-                React.createElement(
-                    'div',
-                    { className: 'article-preview-text' },
-                    React.createElement(
-                        'p',
-                        { className: 'article-preview-title' },
-                        React.createElement(
-                            'span',
-                            null,
-                            title
-                        ),
-                        React.createElement(__WEBPACK_IMPORTED_MODULE_2__ViewCount__["a" /* default */], null)
-                    ),
-                    React.createElement(
-                        'div',
-                        { className: 'article-preview-cutted' },
-                        __WEBPACK_IMPORTED_MODULE_3_react_html_parser___default()(text)[0]
-                    )
-                )
-            );
-        }
-
-        // _cutText = (text) => {
-        //     let cuttedText = text.substring(0, 200),
-        //         lastSpaceIndex = cuttedText.lastIndexOf(" ") || 0
-
-        //     return cuttedText.substring(0, lastSpaceIndex) + " ..."
-        // }
-
-    }]);
-
-    return ListPreviewsItem;
-}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
-
-/* harmony default export */ __webpack_exports__["a"] = (ListPreviewsItem);
 
 /***/ }),
 
@@ -47588,7 +50983,348 @@ var ListTitlesItem = function (_Component) {
 
 /***/ }),
 
-/***/ "./src/components/ui/Previews.js":
+/***/ "./src/components/ui/PreviewsGrid.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_prop_types__ = __webpack_require__("./node_modules/prop-types/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_prop_types__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__("./node_modules/react/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_imagesloaded__ = __webpack_require__("./node_modules/imagesloaded/imagesloaded.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_imagesloaded___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_imagesloaded__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_masonry_layout__ = __webpack_require__("./node_modules/masonry-layout/masonry.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_masonry_layout___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_masonry_layout__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__PreviewsItem__ = __webpack_require__("./src/components/ui/PreviewsItem.js");
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+
+
+
+
+var PreviewsGrid = function (_Component) {
+	_inherits(PreviewsGrid, _Component);
+
+	function PreviewsGrid() {
+		var _ref;
+
+		var _temp, _this, _ret;
+
+		_classCallCheck(this, PreviewsGrid);
+
+		for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+			args[_key] = arguments[_key];
+		}
+
+		return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = PreviewsGrid.__proto__ || Object.getPrototypeOf(PreviewsGrid)).call.apply(_ref, [this].concat(args))), _this), _this.componentWillUnmount = function () {
+			if (_this.msnry) _this.msnry.destroy();
+		}, _temp), _possibleConstructorReturn(_this, _ret);
+	}
+
+	_createClass(PreviewsGrid, [{
+		key: 'componentDidMount',
+		value: function componentDidMount() {
+			var _this2 = this;
+
+			var grid = this.refs.grid;
+
+			__WEBPACK_IMPORTED_MODULE_2_imagesloaded___default()(grid, function () {
+				_this2.msnry = new __WEBPACK_IMPORTED_MODULE_3_masonry_layout___default.a(grid, {
+					itemSelector: '.PreviewsItem',
+					gutter: 10,
+					isFitWidth: true
+				});
+			});
+		}
+	}, {
+		key: 'componentDidUpdate',
+		value: function componentDidUpdate(prevProps, prevState) {
+			if (!prevProps.posts.length || prevProps.posts !== this.props.posts || prevProps.screenWidth !== this.props.screenWidth) {
+
+				this._msnryLayout();
+			}
+		}
+	}, {
+		key: 'render',
+		value: function render() {
+			var _this3 = this;
+
+			var posts = this.props.posts;
+
+
+			return React.createElement(
+				'div',
+				{ className: 'PreviewsGrid', ref: 'grid' },
+				posts.map(function (post, i) {
+					return React.createElement(__WEBPACK_IMPORTED_MODULE_4__PreviewsItem__["a" /* default */], _extends({
+						key: i,
+						post: post
+					}, _this3.props));
+				})
+			);
+		}
+	}, {
+		key: '_msnryLayout',
+		value: function _msnryLayout() {
+			var _this4 = this;
+
+			var grid = this.refs.grid;
+
+			this.msnry.reloadItems();
+
+			__WEBPACK_IMPORTED_MODULE_2_imagesloaded___default()(grid, function () {
+				_this4.msnry.layout();
+			});
+		}
+	}]);
+
+	return PreviewsGrid;
+}(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
+
+PreviewsGrid.propTypes = {
+	posts: __WEBPACK_IMPORTED_MODULE_0_prop_types__["PropTypes"].array,
+	screenWidth: __WEBPACK_IMPORTED_MODULE_0_prop_types__["PropTypes"].number
+	// buyItem: PropTypes.func, 
+	// openItem: PropTypes.func
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (PreviewsGrid);
+
+/***/ }),
+
+/***/ "./src/components/ui/PreviewsItem.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_prop_types__ = __webpack_require__("./node_modules/prop-types/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_prop_types__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__("./node_modules/react/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_classnames__ = __webpack_require__("./node_modules/classnames/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_classnames___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_classnames__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_html_parser__ = __webpack_require__("./node_modules/react-html-parser/lib/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_html_parser___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_html_parser__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_device_detect__ = __webpack_require__("./node_modules/react-device-detect/dist/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_device_detect___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_react_device_detect__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ViewCount__ = __webpack_require__("./src/components/ui/ViewCount.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__assets_images_documenty_logo_sign_empty_micro_png__ = __webpack_require__("./src/assets/images/documenty-logo-sign-empty-micro.png");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__assets_images_documenty_logo_sign_empty_micro_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__assets_images_documenty_logo_sign_empty_micro_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__assets_images_documenty_logo_sign_micro_png__ = __webpack_require__("./src/assets/images/documenty-logo-sign-micro.png");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__assets_images_documenty_logo_sign_micro_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__assets_images_documenty_logo_sign_micro_png__);
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+
+
+
+
+
+
+
+var PreviewsItem = function (_Component) {
+    _inherits(PreviewsItem, _Component);
+
+    function PreviewsItem(props) {
+        _classCallCheck(this, PreviewsItem);
+
+        var _this = _possibleConstructorReturn(this, (PreviewsItem.__proto__ || Object.getPrototypeOf(PreviewsItem)).call(this));
+
+        _this.handleSelectItem = function (id) {
+            _this.props.openPost(id);
+        };
+
+        _this.handleChangeLogo = function (imageSrc) {
+            _this.setState({ imageSrc: imageSrc });
+        };
+
+        _this._getDaysFromDatePost = function (dateFromPost) {
+            var datePost = new Date(dateFromPost),
+                today = new Date();
+
+            return today.getDate() - datePost.getDate();
+        };
+
+        _this.state = {
+            imageSrc: __WEBPACK_IMPORTED_MODULE_6__assets_images_documenty_logo_sign_empty_micro_png___default.a
+        };
+        return _this;
+    }
+
+    _createClass(PreviewsItem, [{
+        key: 'render',
+
+
+        // _cutText = (text) => {
+        //     let cuttedText = text.substring(0, 200),
+        //         lastSpaceIndex = cuttedText.lastIndexOf(" ") || 0
+
+        //     return cuttedText.substring(0, lastSpaceIndex) + " ..."
+        // }
+        value: function render() {
+            var _this2 = this;
+
+            var post = this.props.post,
+                id = post.id,
+                title = post.title,
+                tag = post.tag,
+                image = post.image,
+                text = post.text,
+                date = post.date,
+                imageSrc = this.state.imageSrc;
+
+
+            var days = this._getDaysFromDatePost(date);
+
+            return React.createElement(
+                'div',
+                { className: 'PreviewsItem',
+                    onClick: function onClick() {
+                        return _this2.handleSelectItem(post.id);
+                    },
+                    onMouseOver: function onMouseOver() {
+                        return _this2.handleChangeLogo(__WEBPACK_IMPORTED_MODULE_7__assets_images_documenty_logo_sign_micro_png___default.a);
+                    },
+                    onMouseOut: function onMouseOut() {
+                        return _this2.handleChangeLogo(__WEBPACK_IMPORTED_MODULE_6__assets_images_documenty_logo_sign_empty_micro_png___default.a);
+                    }
+                },
+                React.createElement(
+                    'div',
+                    { className: 'article-preview-image' },
+                    React.createElement('img', { src: '' + image, alt: title, title: title })
+                ),
+                React.createElement(
+                    'div',
+                    { className: 'article-preview-content' },
+                    React.createElement(
+                        'p',
+                        { className: 'article-preview-title' },
+                        React.createElement(
+                            'span',
+                            null,
+                            title
+                        ),
+                        React.createElement(__WEBPACK_IMPORTED_MODULE_5__ViewCount__["a" /* default */], null)
+                    ),
+                    React.createElement(
+                        'div',
+                        { className: 'article-preview-cutted' },
+                        __WEBPACK_IMPORTED_MODULE_3_react_html_parser___default()(text)[0]
+                    ),
+                    React.createElement(
+                        'p',
+                        { className: 'article-preview-footer' },
+                        React.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_4_react_device_detect__["isMobile"] ? __WEBPACK_IMPORTED_MODULE_7__assets_images_documenty_logo_sign_micro_png___default.a : imageSrc, alt: 'logo-sign-empty' }),
+                        React.createElement(
+                            'span',
+                            null,
+                            '\u0420\u043E\u0437\u043Ci\u0449\u0435\u043D\u043E ',
+                            days,
+                            ' \u0434\u043Di\u0432 \u043D\u0430\u0437\u0430\u0434'
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return PreviewsItem;
+}(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
+
+/* harmony default export */ __webpack_exports__["a"] = (PreviewsItem);
+
+/***/ }),
+
+/***/ "./src/components/ui/PreviewsList.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__PreviewsItem__ = __webpack_require__("./src/components/ui/PreviewsItem.js");
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+var PreviewsList = function (_Component) {
+    _inherits(PreviewsList, _Component);
+
+    function PreviewsList() {
+        var _ref;
+
+        var _temp, _this, _ret;
+
+        _classCallCheck(this, PreviewsList);
+
+        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+            args[_key] = arguments[_key];
+        }
+
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = PreviewsList.__proto__ || Object.getPrototypeOf(PreviewsList)).call.apply(_ref, [this].concat(args))), _this), _this.shouldComponentUpdate = function (nextProps) {
+            return nextProps.postsOnScreen !== _this.props.postsOnScreen;
+        }, _temp), _possibleConstructorReturn(_this, _ret);
+    }
+
+    _createClass(PreviewsList, [{
+        key: 'render',
+        value: function render() {
+            var _this2 = this;
+
+            var postsOnScreen = this.props.postsOnScreen;
+
+
+            if (!postsOnScreen) return null;
+
+            return React.createElement(
+                'div',
+                { className: 'ListPreviews' },
+                postsOnScreen.map(function (post, i) {
+                    return React.createElement(__WEBPACK_IMPORTED_MODULE_1__PreviewsItem__["a" /* default */], _extends({
+                        key: i,
+                        post: post,
+                        timeoutMs: 100 * i
+                    }, _this2.props));
+                })
+            );
+        }
+    }]);
+
+    return PreviewsList;
+}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
+
+/* unused harmony default export */ var _unused_webpack_default_export = (PreviewsList);
+
+/***/ }),
+
+/***/ "./src/components/ui/PreviewsPage.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -47596,9 +51332,10 @@ var ListTitlesItem = function (_Component) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__("./node_modules/prop-types/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ListPreviews__ = __webpack_require__("./src/components/ui/ListPreviews.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ArrowButton__ = __webpack_require__("./src/components/ui/ArrowButton.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__constants__ = __webpack_require__("./src/constants.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__PreviewsList__ = __webpack_require__("./src/components/ui/PreviewsList.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PreviewsGrid__ = __webpack_require__("./src/components/ui/PreviewsGrid.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ArrowButton__ = __webpack_require__("./src/components/ui/ArrowButton.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__constants__ = __webpack_require__("./src/constants.js");
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -47617,20 +51354,21 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 
-var Previews = function (_Component) {
-    _inherits(Previews, _Component);
 
-    function Previews() {
-        _classCallCheck(this, Previews);
+var PreviewsPage = function (_Component) {
+    _inherits(PreviewsPage, _Component);
 
-        var _this = _possibleConstructorReturn(this, (Previews.__proto__ || Object.getPrototypeOf(Previews)).call(this));
+    function PreviewsPage() {
+        _classCallCheck(this, PreviewsPage);
+
+        var _this = _possibleConstructorReturn(this, (PreviewsPage.__proto__ || Object.getPrototypeOf(PreviewsPage)).call(this));
 
         _this.componentWillMount = function () {
             _this.updatePages(_this.props.posts);
         };
 
         _this.shouldComponentUpdate = function (nextProps, nextState) {
-            return nextProps.posts && nextProps.posts !== _this.props.posts || nextState.activePageIndex !== _this.state.activePageIndex;
+            return nextProps.posts && nextProps.posts !== _this.props.posts || nextState.activePageIndex !== _this.state.activePageIndex || nextProps.screenWidth !== _this.props.screenWidth;
         };
 
         _this.componentWillReceiveProps = function (nextProps) {
@@ -47640,7 +51378,7 @@ var Previews = function (_Component) {
         };
 
         _this.updatePages = function (posts) {
-            var size = _this.context.screenWidth > 480 ? __WEBPACK_IMPORTED_MODULE_4__constants__["c" /* LIST_PREVIEWS_SIZE */] : posts.length,
+            var size = _this.props.screenWidth > 480 ? __WEBPACK_IMPORTED_MODULE_5__constants__["c" /* LIST_PREVIEWS_SIZE */] : posts.length,
                 pages = _this._splitPosts(posts, size);
 
             _this.setState({ pages: pages, activePageIndex: 0 });
@@ -47685,57 +51423,30 @@ var Previews = function (_Component) {
         return _this;
     }
 
-    _createClass(Previews, [{
+    _createClass(PreviewsPage, [{
         key: 'render',
         value: function render() {
             var _state = this.state,
                 pages = _state.pages,
-                activePageIndex = _state.activePageIndex,
-                prevPage = pages[activePageIndex - 1],
-                nextPage = pages[activePageIndex + 1];
+                activePageIndex = _state.activePageIndex;
 
 
             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'div',
-                { className: 'Previews' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'blog-nav' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__ArrowButton__["a" /* default */], {
-                        name: 'back',
-                        action: this.handleOpenPrev,
-                        title: prevPage ? '\u041F\u043E\u043F\u0435\u0440\u0435\u0434\u043Di ' + prevPage.length : null,
-                        hidden: !prevPage
-                    })
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__ListPreviews__["a" /* default */], _extends({}, this.props, {
-                    postsOnScreen: pages[activePageIndex],
+                { className: 'PreviewsPage' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__PreviewsGrid__["a" /* default */], _extends({}, this.props, {
+                    posts: pages[activePageIndex],
                     onPrev: this.handleOpenPrev //for mobile scrolling
                     , onNext: this.handleOpenNext //for mobile scrolling
-                })),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'blog-nav' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__ArrowButton__["a" /* default */], {
-                        name: 'forward',
-                        action: this.handleOpenNext,
-                        title: nextPage ? '\u041D\u0430\u0441\u0442\u0443\u043F\u043Di ' + nextPage.length : null,
-                        hidden: !nextPage
-                    })
-                )
+                }))
             );
         }
     }]);
 
-    return Previews;
+    return PreviewsPage;
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
 
-/* harmony default export */ __webpack_exports__["a"] = (Previews);
-
-
-Previews.contextTypes = {
-    screenWidth: __WEBPACK_IMPORTED_MODULE_1_prop_types__["PropTypes"].number
-};
+/* harmony default export */ __webpack_exports__["a"] = (PreviewsPage);
 
 /***/ }),
 
@@ -47976,7 +51687,9 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 var SideBlock = function SideBlock(props) {
 
-    if (props.isPreviewsOpen && props.screenWidth < 624) return null;else if (props.screenWidth > 480) return React.createElement(__WEBPACK_IMPORTED_MODULE_1__SideList__["a" /* default */], props);else return React.createElement(__WEBPACK_IMPORTED_MODULE_0__SideBar__["a" /* default */], _extends({ isOpen: props.isSideBarOpening }, props));
+    var isPreviewsPageOpen = !props.match.params.id;
+
+    if (isPreviewsPageOpen) return null;else if (props.screenWidth > 480) return React.createElement(__WEBPACK_IMPORTED_MODULE_1__SideList__["a" /* default */], props);else return React.createElement(__WEBPACK_IMPORTED_MODULE_0__SideBar__["a" /* default */], _extends({ isOpen: props.isSideBarOpening }, props));
 };
 
 /* harmony default export */ __webpack_exports__["a"] = (SideBlock);
@@ -48244,7 +51957,7 @@ var ANIMATIONS = {
     listPostsItem: 'fadeIn'
 };
 
-var LIST_PREVIEWS_SIZE = 5;
+var LIST_PREVIEWS_SIZE = 20;
 
 /***/ }),
 
