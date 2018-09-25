@@ -333,47 +333,71 @@ count views in blog */
     
                 li { 
                     display: inline-block; 
-                    margin-left: 35px;
+                    margin-left: 20px;
     
                     a {
                         position: relative;
                         display: inline-block;
+                        padding-bottom: 2px; 
+
+                        .link-content {
+                            display: flex;
+                            // justify-content: space-between;
+                            flex-direction: column;
+                            align-items: center;
+
+                            ion-icon { 
+                                width: 20px;
+                                opacity: 0;
+                                margin-right: 2px; 
+                                color: $colorTextHover;
+                                transition: opacity 2ms;
+                            }
+                        }
                     }
                     
                     a:link,
                     a:visited {
                         padding: 8px 0;
                         color: $colorTextMain;
-                        padding-bottom: 2px; 
+                        // padding-bottom: 2px; 
                         -webkit-transition: font-weight 0.2s; 
                         transition: font-weight 0.2s;                   
                     }
     
-                    a::after {
-                        content: '...';
-                        color: $colorTextHover;
-                        position: absolute;
-                        left: 0;
-                        right: 0;
-                        top: 100%;
-                        margin: 2px auto;
-                        width: 15px;
-                        height: 0;
-                        opacity: 0;
-                        //border-bottom: 3px transparent;
-                        margin-top: -30px;
-                        -webkit-transition: opacity 0.3s;
-                        transition: opacity 0.3s;
-                    }
+                    // a::after {
+                    //     content: url('../images/documenty-logo-glass-micro.png');
+                    //     // color: $colorTextHover;
+                    //     position: absolute;
+                    //     left: 0;
+                    //     right: 0;
+                    //     top: 100%;
+                    //     // margin: 2px auto;
+                    //     width: 5px;
+                    //     // height: 0;
+                    //     opacity: 0;
+                    //     //border-bottom: 3px transparent;
+                    //     margin-top: -30px;
+                    //     -webkit-transition: opacity 0.3s;
+                    //     transition: opacity 0.3s;
+                    // }
         
-                    a:hover:after,
-                    a:active:after { 
-                        //border-bottom: 3px dotted $colorTextHover;
-                        opacity: 1;
-                    }
+                    // a:hover:after,
+                    // a:active:after { 
+                    //     //border-bottom: 3px dotted $colorTextHover;
+                    //     opacity: 1;
+                    // }
                 }
 
-                li.active a { font-weight: bold; }
+                li.active a { 
+                    // font-weight: bold; 
+
+                    .link-content {
+                        ion-icon {
+                            opacity: 1;
+                        }
+                    }
+                }
             }
         }
     }
@@ -392,7 +416,7 @@ count views in blog */
         display: -ms-flexbox;
         display: flex;
 
-        margin-top: 100px; //55px without text "beta-version" 
+        margin-top: 100px; //55px without text "beta-version" ----------------------
 
         .ArticlePage,
         .PreviewsPage {
@@ -498,7 +522,6 @@ count views in blog */
                         }
 
                         .article-content {
-                            font-size: 80%;
                             margin-top: 10px;
     
                             .text-paragraph { margin-bottom: 10px; }
@@ -628,6 +651,7 @@ count views in blog */
             margin-top: 2em;
             padding-top: 1em;
             margin: 0 0.5em;
+            font-size: 80%;
         
             .Quotes {
                 margin-bottom: 2em;
@@ -647,7 +671,7 @@ count views in blog */
         
                 .quote-text {
                     font-family: $fontMenu;
-                    font-size: 100%;
+                    // font-size: 100%;
                     font-weight: 100;
                     margin-bottom: 0.5em;
                     line-height: 1;
@@ -671,8 +695,7 @@ count views in blog */
         
             .ListTitles {
                 .ListTitlesItem {
-                    font-weight: 300;
-                    font-size: 60%;
+                    font-weight: 300;                    
                     padding: 4px 4px;
                     -webkit-transition: background-color 0.2s;
                     transition: background-color 0.2s;

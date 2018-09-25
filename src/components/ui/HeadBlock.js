@@ -53,7 +53,10 @@ export default class HeadBlock extends Component {
                         onClick={ () => changeActiveTag(tag) } 
                     >
                         <Link to={ `/${tag}` } title='Сортувати за роздiлом'>
-                            {LINKS_UKR[i]}
+                            <span className='link-content'>
+                                <span>{ LINKS_UKR[i] }</span>
+                                <ion-icon name="film"></ion-icon>
+                            </span>
                         </Link>
                     </li>
                 )

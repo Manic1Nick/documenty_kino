@@ -9,18 +9,12 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
     .blog-nav {    
         .arrow-buttons ion-icon {
                 top: 60%;
-            }
         }
+    }
 
     .App {
-        header {
-            .main-nav {    
-                ul {        
-                    li { 
-                        a:after {  margin-top: -20px; }
-                    }
-                }
-            }
+        .Blog {
+            // font-size: 90%;
         }
     }
 }
@@ -64,18 +58,7 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
         }
 
         .Blog {
-            // width: 80%;
-            font-size: 100%;
-
-            .ArticlePage {
-                .ArticleContainer {
-                    .Article {
-                        .article-slide {
-                            .article-title-name { font-size: 80%; }
-                        }
-                    }
-                } 
-            }
+            font-size: 80%;
 
             .PreviewsPage {
                 .PreviewsGrid {
@@ -88,10 +71,6 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
             .SideList {
                 .Quotes {
                     min-height: 300px;
-
-                    .quote-text {
-                        font-size: 100%;
-                    }
                 }
             }
         }
@@ -129,18 +108,15 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
                 ul {        
                     li { 
                         font-size: 80%;
-                        margin-left: 20px;
-                        margin-bottom: 20px;
-                        // font-size: 80%;
-
-                        a:after {  margin-top: -20px; }
+                        // a:after {  margin-top: -20px; }
                     }
                 }
             }
         }
 
         .Blog {
-            // width: 90%;
+            width: 90%;
+            font-size: 70%;
 
             .ArticlePage {
                 .ArticleBlock {
@@ -150,9 +126,6 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
 
                     .ArticleContainer {
                         .Article {
-                            .article-slide {
-                                .article-title-name { font-size: 70%; }
-                            }
                             .article-social-shares {
                                 display: -webkit-box;
                                 display: -ms-flexbox;
@@ -194,14 +167,9 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
                 }
             }
 
-            .PreviewsPage {
-                font-size: 90%;
-            }
-
             .SideList {
                 .Quotes {    
                     .quote-text {
-                        font-size: 90%;
                         line-height: 0.9;
                     }
                 }
@@ -244,6 +212,7 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
         .Blog { 
             width: 100%;
             padding-right: 1%;
+            // font-size: 70%;
 
             .blog-nav {
                 width: 30px;
@@ -251,9 +220,6 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
                 .arrow-buttons ion-icon { width: 30px; }
             }
 
-            .PreviewsPage {
-                font-size: 80%;
-            }
             .PreviewsPage 
             .ListPreviews 
             .PreviewsItem 
@@ -269,15 +235,7 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
             .ArticlePage { 
                 .ArticleBlock {
                     .ArticleContainer {
-                        padding: 1em;    
-    
-                        .Article {
-                            .article-slide {
-                                .article-title-name { font-size: 60%; }
-                            }
-                            .article-info { font-size: 60%; }
-                            .article-content { font-size: 60%; }                
-                        }
+                        padding: 1em;
                     }
                 }
             }
@@ -287,19 +245,8 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
 
                 .Quotes {
                     min-height: 240px;
-
-                    .quote-text {
-                        font-size: 80%;
-                    }
                 }
-    
-                .ListTitles {
-                    .ListTitlesItem {
-                        font-size: 50%;
-                    }
-                }
-            }
-        
+            }        
         }
 
         footer {
@@ -323,13 +270,14 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
                         font-size: 60%;
 
                         // a:link { padding-bottom: 20px; }
-                        a:after {  margin-top: -10px; }
+                        // a:after {  margin-top: -10px; }
                     }
                 }
             }
         }
         .Blog {           
             padding-top: 0;
+            font-size: 60%;
 
             .blog-nav {
                 width: 20px;
@@ -342,12 +290,7 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
                     .ArticleContainer { 
                         padding: 0.2em;
     
-                        .Article {
-                            .article-slide {
-                                .article-title-name { font-size: 60%; }
-                                .article-title-tag { margin-top: -5px; }
-                            }
-                            
+                        .Article {                            
                             .article-info,
                             .article-social-shares,
                             .article-content {
@@ -381,12 +324,6 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
                 margin-left: 0.5em;
 
                 .Quotes { display: none; }
-
-                .ListTitles {
-                    .post-title {
-                        font-size: 60%;
-                    }
-                }
             }
 
         }
@@ -474,7 +411,7 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
                             }
                             a:link { padding-bottom: 10px; }
                             a:hover { background-color: $colorBackground; }
-                            a:after { content: ''; }
+                            // a:after { content: ''; }
                         }
                     }
                 }
