@@ -262,7 +262,7 @@ count views in blog */
         height: 25px;
     }
     span { 
-        font-size: 80%;
+        font-size: 70%;
         margin: 5px 0 0 5px;
     }
 } 
@@ -282,7 +282,7 @@ count views in blog */
     header {
         margin-top: 25px; //for text "beta version" ---------------------------------
         position: -webkit-sticky;
-        font-size: 120%;
+        font-size: 100%;
 
         display: -webkit-box;
         display: -ms-flexbox;
@@ -324,7 +324,7 @@ count views in blog */
                 -ms-flex: 3;
                     flex: 3;
             margin-right: 30px;
-            font-size: 180%; 
+            font-size: 140%; 
             
 
             ul {
@@ -386,7 +386,7 @@ count views in blog */
         // min-height: 77vh; //todo ???
         margin: 0 auto;
         padding-top: 50px;
-        font-size: 150%;
+        font-size: 120%;
 
         display: -webkit-box;
         display: -ms-flexbox;
@@ -647,7 +647,7 @@ count views in blog */
         
                 .quote-text {
                     font-family: $fontMenu;
-                    font-size: 120%;
+                    font-size: 100%;
                     font-weight: 100;
                     margin-bottom: 0.5em;
                     line-height: 1;
@@ -672,7 +672,7 @@ count views in blog */
             .ListTitles {
                 .ListTitlesItem {
                     font-weight: 300;
-                    font-size: 70%;
+                    font-size: 60%;
                     padding: 4px 4px;
                     -webkit-transition: background-color 0.2s;
                     transition: background-color 0.2s;

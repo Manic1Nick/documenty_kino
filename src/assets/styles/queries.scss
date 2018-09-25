@@ -14,9 +14,6 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
 
     .App {
         header {
-            padding-left: 12%;
-            padding-right: 12%;
-
             .main-nav {    
                 ul {        
                     li { 
@@ -24,10 +21,6 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
                     }
                 }
             }
-        }
-
-        .Blog {
-            width: 90%;
         }
     }
 }
