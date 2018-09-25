@@ -52,16 +52,23 @@ export default class Article extends Component {
                         <img src={`${image}`} alt={ title } title={ title } />
                     </Link>
 
-                    <div className='article-title'>
-                        <div className='article-title-name'>
+                    <div className='article-slide-title'>
+                        <div className='article-slide-title-name'>
                             <h3>{ title }</h3>
                         </div>
-                        <div className='article-title-tag' onClick={ () => this.handleOpenSideBar() }>   
-                            <Link to={`/${tag}/${id}`} title='Сортувати за роздiлом'>
+
+                        <div className='article-slide-title-tag' 
+                            onClick={ () => this.handleOpenSideBar() }
+                        >   
+                            <Link to={`/${tag}/${id}`} title='Вiдiбрати за роздiлом'>
                                 <h4><span>:</span>{ group }</h4>
                             </Link>
                         </div>
                     </div>
+                </div>
+
+                <div className='article-title-name'>
+                    <h3>{ title }</h3>
                 </div>
 
                 <div className='article-info'>

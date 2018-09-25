@@ -451,7 +451,14 @@ count views in blog */
                     
                     .Article {       
                         
-                        .article-social-shares { display: none; }
+                        .article-social-shares { 
+                            display: none; 
+                        }
+
+                        .article-title-name { 
+                            display: none; 
+                            margin-bottom: 2%;
+                        }
                         
                         .article-slide,
                         .article-info,
@@ -470,7 +477,7 @@ count views in blog */
                                 height: auto;
                             }
     
-                            .article-title {
+                            .article-slide-title {
                                 background: rgba(0, 0, 0, 0.45);
                                 color: $colorBackgroundDark;
                                 width: 100%;
@@ -479,7 +486,8 @@ count views in blog */
                                 position: absolute;
                                 padding: 0.5em;
         
-                                .article-title-name {
+                                .article-slide-title-name {
+                                    display: block;
                                     float: left;
                                     width: 70%;
                                     font-weight: bold;
@@ -488,7 +496,7 @@ count views in blog */
                                     color: $colorBackgroundDark;
                                 }
                                 
-                                .article-title-tag {
+                                .article-slide-title-tag {
                                     float: right;
                                     font-family: $fontMenu, arial;
                                     cursor: pointer;
@@ -564,29 +572,48 @@ count views in blog */
 
             .PreviewsGrid {
                 margin: 2% auto;
-                // display: flex;
-                // flex-direction: column;
-                // flex: 1;
     
                 .PreviewsItem {
-                    // position: relative;
+                    // margin: 0.5em;
+                    // padding: 0.5em;
+                    // width: 400px;
+                    // cursor: pointer;
+                    // background: transparent;
+                    // border: 3px dashed $colorBorder;
+                    // border-radius: 10px;
+                    // -webkit-transition: border 2s ease-out;
+                    // transition: border 2s ease-out;
+                    // -webkit-transition: backround 2s ease-out;
+                    // transition: backround 2s ease-out;
+                    // --------------------------------------
+
                     margin: 0.5em;
                     padding: 0.5em;
                     width: 400px;
-                    // width: 100%;
                     cursor: pointer;
+
                     background: transparent;
-                    border: 3px dashed $colorBorder;
-                    border-radius: 10px;
-                    -webkit-transition: border 2s ease-out;
-                    transition: border 2s ease-out;
-                    -webkit-transition: backround 2s ease-out;
-                    transition: backround 2s ease-out;
+                    padding:1rem 1rem;
+                    transition: all .5s ease;
+                    color: #41403E;
+                    outline: none;
+                    box-shadow: 20px 38px 34px -26px hsla(0,0%,0%,.2);
+                    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+                    border: solid 2px #41403E;
+
+                    .article-preview-header {
+                        float: left;
+                        font-family: $fontMenu, arial;
+                        cursor: pointer;               
+                                    
+                        h4 {
+                            color: $colorTextThird;
+                            -webkit-transition: color 0.2s;
+                            transition: color 0.2s;
+                        }
+                    }
     
-                    .article-preview-image {
-                        // float: left;
-                        // width: 30%;
-                        
+                    .article-preview-image {                        
                         img { 
                             width: 100%;
                             max-width: 400px;
@@ -595,10 +622,6 @@ count views in blog */
                     }
     
                     .article-preview-content {
-                        // float: right;
-                        // width: 70%;
-                        // padding: 0 2%;
-
                         p {
                             width: 100%;
                             margin-bottom: 10px;
@@ -638,7 +661,10 @@ count views in blog */
     
                 .PreviewsItem:hover {
                     background: $colorBackgroundLight;
-                    border: 3px solid $colorBorder;
+                    // border: 3px solid $colorBorder;
+                    // -----------------------------------
+
+                    box-shadow:2px 8px 4px -6px hsla(0,0%,0%,.3);
                 }
             }
         }        
@@ -654,43 +680,43 @@ count views in blog */
             font-size: 80%;
         
             .Quotes {
-                margin-bottom: 2em;
-                padding: 10px;
-                background-color: $colorBackgroundDark;
-                min-height: 450px;            
+                min-height: 450px;   
+                font-family: $fontMenu;    
+                
                 display: -webkit-box;            
                 display: -ms-flexbox;            
                 display: flex;
-                -webkit-box-orient: vertical;
-                -webkit-box-direction: normal;
-                    -ms-flex-direction: column;
-                        flex-direction: column;
-                -webkit-box-pack: justify;
-                    -ms-flex-pack: justify;
-                        justify-content: space-between;
-        
-                .quote-text {
-                    font-family: $fontMenu;
-                    // font-size: 100%;
-                    font-weight: 100;
-                    margin-bottom: 0.5em;
-                    line-height: 1;
-                    //word-break: break-all;
-                }
-        
+                flex-direction: column;
+                justify-content: space-between;
+                
+                margin: 0.5em;
+                margin-bottom: 2em;
+                padding: 0.5em;
+                cursor: pointer;
+    
+                background: transparent;
+                padding: 1rem 1rem;
+                transition: all .5s ease;
+                color: #41403E;
+                outline: none;
+                box-shadow: 20px 38px 34px -26px hsla(0,0%,0%,.2);
+                border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+                border: solid 1px #41403E;
+
                 .quote-link {
-                    // cursor: pointer;
-                    // font-size: 70%;
                     position: relative;
                     display: block;
                     color: inherit;
-        
+
                     ion-icon {
                         float: right;
-                    }
-        
-                    // a { display: block; }
+                    }        
                 }
+            }
+
+            .Quotes:hover {
+                background: $colorBackgroundLight;
+                box-shadow:2px 8px 4px -6px hsla(0,0%,0%,.3);
             }
         
             .ListTitles {

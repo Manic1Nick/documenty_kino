@@ -60,6 +60,26 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
         .Blog {
             font-size: 80%;
 
+            .ArticlePage { 
+                .ArticleBlock {
+                    .ArticleContainer {
+                       .Article {
+                           .article-title-name {
+                               display: block;
+                           }
+
+                            .article-slide {
+                                .article-slide-title {
+                                    .article-slide-title-name {
+                                        display: none;
+                                    }
+                                }
+                            }
+                       }
+                    }
+                }
+            }
+
             .PreviewsPage {
                 .PreviewsGrid {
                     .PreviewsItem {

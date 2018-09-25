@@ -1,8 +1,8 @@
-import { PropTypes } from 'prop-types'
 import { Component } from 'react'
-import classNames from 'classnames'
 import ReactHtmlParser from 'react-html-parser'
 import { isMobile } from 'react-device-detect'
+
+import { LINKS, LINKS_UKR } from '../../constants'
 
 import ViewCount from './ViewCount'
 import LogoSignEmpty from '../../assets/images/documenty-logo-sign-empty-micro.png'
@@ -30,7 +30,8 @@ export default class PreviewsItem extends Component {
             { id, title, tag, image, text, date } = post,
             { imageSrc } = this.state
 
-        const days = this._getDaysFromDatePost(date)
+        const group = LINKS_UKR[LINKS.indexOf(tag)],
+            days = this._getDaysFromDatePost(date)
 
         return(
             <div className='PreviewsItem' 
@@ -38,6 +39,10 @@ export default class PreviewsItem extends Component {
                 onMouseOver={ () => this.handleChangeLogo(LogoSign) }
                 onMouseOut={ () => this.handleChangeLogo(LogoSignEmpty) }
             >
+                <div className='article-preview-header'>   
+                    <h4>{ group }</h4>
+                </div>
+
                 <div className='article-preview-image'>
                     <img src={`${image}`} alt={ title } title={ title } />
                 </div>

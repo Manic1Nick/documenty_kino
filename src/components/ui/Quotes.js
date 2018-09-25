@@ -50,6 +50,10 @@ export default class Quotes extends Component {
 			this.setState({ animate: false })
 		}, 1000)
     }
+
+    handleOpenPost = (id, tag) => {
+        this.props.openPost(id, tag)
+    }
  
     render() {
         const { postsWithQuotes, activePostIndex, animate } = this.state,
@@ -61,22 +65,16 @@ export default class Quotes extends Component {
         let classQuoteText = classNames('quote-text', { fadeIn: animate })
         
         return(
-            <div className='Quotes'>
+            <div className='Quotes' onClick={ () => this.handleOpenPost(id, tag) } title={ title }>
                 <ion-icon name="quote"></ion-icon>
 
                 <div className={ classQuoteText }>
                     { ReactHtmlParser(quote) }
                 </div> 
-                
-                <Link className='quote-link' to={`/${tag}/${id}`} title={ title }>
-                    <ion-icon md="md-open"></ion-icon>
-                </Link>
 
-                {/* <button className='quote-link'>
-                    <Link className='quote-link' to={`/${tag}/${id}`} title={ title }>
-                        Читати статтю            
-                    </Link>
-                </button> */}
+                <div className='quote-link'>
+                    <ion-icon md="md-open"></ion-icon>
+                </div>                
             </div>
         )
     }
