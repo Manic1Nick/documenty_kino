@@ -19,7 +19,7 @@ export default class App extends Component {
             posts: [],
             width: 0, 
             height: 0,
-            activeTag: ''
+            activeTag: 'all'
         }
         this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
     }

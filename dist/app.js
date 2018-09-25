@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "c9ea1f5cdf1e5acd12f6"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "dcb183a3bdff12638bcc"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -6814,7 +6814,7 @@ exports.i(__webpack_require__("./node_modules/css-loader/index.js!./src/assets/s
 exports.i(__webpack_require__("./node_modules/css-loader/index.js!./src/assets/styles/react-dd-menu.css"), "");
 
 // module
-exports.push([module.i, "@font-face {\n  font-family: AkrobatExtraLight;\n  src: url(" + __webpack_require__("./src/assets/fonts/Akrobat-ExtraLight.otf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: AkrobatBold;\n  src: url(" + __webpack_require__("./src/assets/fonts/Akrobat-Bold.otf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: AkrobatSemiBold;\n  src: url(" + __webpack_require__("./src/assets/fonts/Akrobat-SemiBold.otf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: AkrobatRegular;\n  src: url(" + __webpack_require__("./src/assets/fonts/Akrobat-Regular.otf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: CaveatRegular;\n  src: url(" + __webpack_require__("./src/assets/fonts/Caveat-Regular.ttf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: Gogol;\n  src: url(" + __webpack_require__("./src/assets/fonts/Gogol.otf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: BadScript;\n  src: url(" + __webpack_require__("./src/assets/fonts/Bad_Script.ttf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: OwnHand;\n  src: url(" + __webpack_require__("./src/assets/fonts/OwnHand.ttf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: Vorona;\n  src: url(" + __webpack_require__("./src/assets/fonts/DS_VTCorona_Cyr.ttf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: PolyglOTT;\n  src: url(" + __webpack_require__("./src/assets/fonts/Truetypewriter_PolyglOTT.ttf") + ") format(\"opentype\"); }\n\n/*---------------------------------------------------------*/\n/* BASIC SETUP */\n/*---------------------------------------------------------*/\n* {\n  margin: 0;\n  padding: 0;\n  -webkit-box-sizing: border-box;\n  box-sizing: border-box; }\n\nhtml,\nbody {\n  color: #555;\n  font-family: \"AkrobatRegular\", cursive;\n  font-weight: 400;\n  font-size: 20px;\n  background-image: url(" + __webpack_require__("./src/assets/images/1920x1080-background.jpg") + ");\n  background-size: cover;\n  background-position: center;\n  height: 100%; }\n\nhtml {\n  overflow: auto;\n  overflow-x: hidden; }\n\nul {\n  list-style: none; }\n\n.social-icon {\n  width: 40px;\n  height: 40px; }\n\n/* TITLES \n==================================*/\nh1 {\n  margin-top: 0;\n  font-size: 300%;\n  word-spacing: 4px;\n  letter-spacing: 1px; }\n\nh2 {\n  font-size: 180%;\n  word-spacing: 2px;\n  text-align: center;\n  letter-spacing: 1px; }\n\nh3 {\n  font-size: 160%; }\n\nh4 {\n  font-size: 120%; }\n\n/* LINKS \n==================================*/\n.main-nav a {\n  font-family: \"PolyglOTT\", arial !important; }\n\na {\n  text-decoration: none;\n  background: transparent; }\n\na:link,\na:visited {\n  text-decoration: none;\n  padding-bottom: 1px; }\n\n/* APP \n==================================*/\n.clearfix:after {\n  content: \".\";\n  display: block;\n  clear: both;\n  visibility: hidden;\n  height: 0; }\n\n/* --------------------------\nlist titles */\n.ListTitles {\n  margin-bottom: 2em;\n  font-family: \"AkrobatExtraLight\", arial; }\n\n/* --------------------------\nnavigations in blog */\n.blog-nav {\n  position: relative;\n  width: 60px; }\n  .blog-nav .article-social-shares {\n    position: -webkit-sticky;\n    position: sticky;\n    top: 120px;\n    padding-left: 10px;\n    padding-top: 30px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n    -ms-flex-direction: column;\n    flex-direction: column; }\n    .blog-nav .article-social-shares .social-icon-common ion-icon,\n    .blog-nav .article-social-shares .social-icon {\n      width: 40px;\n      height: 40px;\n      opacity: 0.5; }\n    .blog-nav .article-social-shares .social-icon {\n      -webkit-transform: scale(1);\n      transform: scale(1);\n      cursor: pointer;\n      margin-top: 10px;\n      outline: 0;\n      opacity: 0.7;\n      -webkit-transition: opacity 0.4s, -webkit-transform 0.4s;\n      transition: opacity 0.4s, -webkit-transform 0.4s;\n      transition: opacity 0.4s, transform 0.4s;\n      transition: opacity 0.4s, transform 0.4s, -webkit-transform 0.4s; }\n    .blog-nav .article-social-shares .social-icon:hover {\n      -webkit-transform: scale(1.1);\n      transform: scale(1.1);\n      opacity: 1; }\n  .blog-nav .arrow-buttons ion-icon {\n    position: fixed;\n    width: 60px;\n    height: 10%;\n    top: 40%;\n    opacity: 0.3;\n    -webkit-transition: opacity 0.2s;\n    transition: opacity 0.2s; }\n    .blog-nav .arrow-buttons ion-icon .icon-inner {\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-align: center;\n      -ms-flex-align: center;\n      align-items: center; }\n  .blog-nav .arrow-buttons ion-icon:hover {\n    opacity: 1;\n    cursor: pointer; }\n\n/* --------------------------\ncount views in blog */\n.view-count {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex; }\n  .view-count ion-icon {\n    width: 25px;\n    height: 25px; }\n  .view-count span {\n    font-size: 70%;\n    margin: 5px 0 0 5px; }\n\n.App {\n  width: 100vw;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  min-height: 100vh;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n  -ms-flex-direction: column;\n  flex-direction: column; }\n  .App header {\n    margin-top: 25px;\n    position: -webkit-sticky;\n    font-size: 100%;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: justify;\n    -ms-flex-pack: justify;\n    justify-content: space-between;\n    -webkit-box-align: center;\n    -ms-flex-align: center;\n    align-items: center;\n    width: 100%;\n    height: 110px;\n    padding: 0.5% 20%;\n    position: fixed;\n    top: 0;\n    z-index: 10;\n    background-color: #f6f8ff;\n    border-bottom: solid 1px #CCC;\n    -moz-box-shadow: 1px 1px 3px #999;\n    -webkit-box-shadow: 1px 1px 3px #999;\n    box-shadow: 1px 1px 3px #999; }\n    .App header .site-title {\n      -webkit-box-flex: 2;\n      -ms-flex: 2;\n      flex: 2; }\n      .App header .site-title img {\n        width: 100%;\n        max-width: 350px;\n        height: auto; }\n    .App header .main-nav {\n      -webkit-box-flex: 3;\n      -ms-flex: 3;\n      flex: 3;\n      margin-right: 30px;\n      font-size: 140%; }\n      .App header .main-nav ul {\n        position: relative;\n        float: right; }\n        .App header .main-nav ul li {\n          display: inline-block;\n          margin-left: 20px; }\n          .App header .main-nav ul li a {\n            position: relative;\n            display: inline-block;\n            padding-bottom: 2px; }\n            .App header .main-nav ul li a .link-content {\n              display: flex;\n              flex-direction: column;\n              align-items: center; }\n              .App header .main-nav ul li a .link-content ion-icon {\n                width: 20px;\n                opacity: 0;\n                margin-right: 2px;\n                color: #132366ce;\n                transition: opacity 2ms; }\n          .App header .main-nav ul li a:link,\n          .App header .main-nav ul li a:visited {\n            padding: 8px 0;\n            color: #555;\n            -webkit-transition: font-weight 0.2s;\n            transition: font-weight 0.2s; }\n        .App header .main-nav ul li.active a .link-content ion-icon {\n          opacity: 1; }\n  .App .Blog {\n    -webkit-box-flex: 1;\n    -ms-flex: 1;\n    flex: 1;\n    width: 70%;\n    margin: 0 auto;\n    padding-top: 50px;\n    font-size: 120%;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    margin-top: 100px; }\n    .App .Blog .ArticlePage,\n    .App .Blog .PreviewsPage {\n      position: relative;\n      margin: 0 auto;\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex; }\n    .App .Blog .ArticlePage {\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex; }\n      .App .Blog .ArticlePage .ArticleBlock {\n        -webkit-box-flex: 1;\n        -ms-flex: 1;\n        flex: 1;\n        display: -webkit-box;\n        display: -ms-flexbox;\n        display: flex; }\n        .App .Blog .ArticlePage .ArticleBlock .ArticleContainer {\n          -webkit-box-flex: 1;\n          -ms-flex: 1;\n          flex: 1;\n          position: relative;\n          padding: 1em;\n          width: 100%; }\n          .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-social-shares {\n            display: none; }\n          .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-title-name {\n            display: none;\n            margin-bottom: 2%; }\n          .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-slide,\n          .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-info,\n          .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-share,\n          .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-content,\n          .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-footer {\n            margin-bottom: 10px; }\n          .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-slide {\n            position: relative; }\n            .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-slide img {\n              display: block;\n              max-width: 100%;\n              height: auto; }\n            .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-slide .article-slide-title {\n              background: rgba(0, 0, 0, 0.45);\n              color: #e1e1e1;\n              width: 100%;\n              bottom: 0;\n              left: 0;\n              position: absolute;\n              padding: 0.5em; }\n              .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-slide .article-slide-title .article-slide-title-name {\n                display: block;\n                float: left;\n                width: 70%;\n                font-weight: bold;\n                font-family: \"AkrobatBold\", arial;\n                font-weight: 700;\n                color: #e1e1e1; }\n              .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-slide .article-slide-title .article-slide-title-tag {\n                float: right;\n                font-family: \"PolyglOTT\", arial;\n                cursor: pointer; }\n                .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-slide .article-slide-title .article-slide-title-tag span {\n                  margin-right: 5px;\n                  -webkit-animation: blinker 1.5s linear infinite;\n                  animation: blinker 1.5s linear infinite; }\n                .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-slide .article-slide-title .article-slide-title-tag h4 {\n                  color: #b5b4b4;\n                  -webkit-transition: color 0.2s;\n                  transition: color 0.2s; }\n                .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-slide .article-slide-title .article-slide-title-tag h4:hover {\n                  color: #e1e1e1; }\n          .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-info {\n            display: -webkit-box;\n            display: -ms-flexbox;\n            display: flex;\n            -webkit-box-pack: justify;\n            -ms-flex-pack: justify;\n            justify-content: space-between; }\n          .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-content {\n            margin-top: 10px; }\n            .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-content .text-paragraph {\n              margin-bottom: 10px; }\n            .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-content p {\n              text-align: left; }\n            .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-content img {\n              max-width: 100%;\n              height: auto;\n              padding: 2% 0; }\n            .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-content iframe {\n              padding: 2% 0; }\n          .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-footer {\n            text-align: center; }\n            .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-footer img {\n              opacity: 0.4;\n              transition: opacity 0.5s ease-out;\n              cursor: pointer; }\n            .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-footer img:hover {\n              opacity: 1; }\n    .App .Blog .PreviewsPage {\n      width: 100%; }\n      .App .Blog .PreviewsPage .PreviewsGrid {\n        margin: 2% auto; }\n        .App .Blog .PreviewsPage .PreviewsGrid .PreviewsItem {\n          margin: 0.5em;\n          padding: 0.5em;\n          width: 400px;\n          cursor: pointer;\n          background: transparent;\n          padding: 1rem 1rem;\n          transition: all .5s ease;\n          color: #41403E;\n          outline: none;\n          box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.2);\n          border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;\n          border: solid 2px #41403E; }\n          .App .Blog .PreviewsPage .PreviewsGrid .PreviewsItem .article-preview-header {\n            float: left;\n            font-family: \"PolyglOTT\", arial;\n            cursor: pointer; }\n            .App .Blog .PreviewsPage .PreviewsGrid .PreviewsItem .article-preview-header h4 {\n              color: #b5b4b4;\n              -webkit-transition: color 0.2s;\n              transition: color 0.2s; }\n          .App .Blog .PreviewsPage .PreviewsGrid .PreviewsItem .article-preview-image img {\n            width: 100%;\n            max-width: 400px;\n            height: auto; }\n          .App .Blog .PreviewsPage .PreviewsGrid .PreviewsItem .article-preview-content p {\n            width: 100%;\n            margin-bottom: 10px; }\n          .App .Blog .PreviewsPage .PreviewsGrid .PreviewsItem .article-preview-content .article-preview-title {\n            font-family: \"AkrobatSemiBold\"; }\n            .App .Blog .PreviewsPage .PreviewsGrid .PreviewsItem .article-preview-content .article-preview-title .view-count {\n              display: inline-block;\n              font-size: 90%;\n              margin-left: 2%; }\n              .App .Blog .PreviewsPage .PreviewsGrid .PreviewsItem .article-preview-content .article-preview-title .view-count ion-icon {\n                width: 15px;\n                height: 15px; }\n              .App .Blog .PreviewsPage .PreviewsGrid .PreviewsItem .article-preview-content .article-preview-title .view-count span {\n                margin: 2px 0 0 2px; }\n          .App .Blog .PreviewsPage .PreviewsGrid .PreviewsItem .article-preview-content .article-preview-cutted {\n            font-size: 80%; }\n          .App .Blog .PreviewsPage .PreviewsGrid .PreviewsItem .article-preview-content .article-preview-footer {\n            font-size: 60%; }\n            .App .Blog .PreviewsPage .PreviewsGrid .PreviewsItem .article-preview-content .article-preview-footer img {\n              width: 20px;\n              height: auto;\n              margin-right: 5px; }\n        .App .Blog .PreviewsPage .PreviewsGrid .PreviewsItem:hover {\n          background: #f0f0f0;\n          box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, 0.3); }\n    .App .Blog .SideList {\n      width: 20%;\n      min-width: 20%;\n      height: 80%;\n      float: right;\n      margin-top: 2em;\n      padding-top: 1em;\n      margin: 0 0.5em;\n      font-size: 80%; }\n      .App .Blog .SideList .Quotes {\n        min-height: 450px;\n        font-family: \"PolyglOTT\";\n        display: -webkit-box;\n        display: -ms-flexbox;\n        display: flex;\n        flex-direction: column;\n        justify-content: space-between;\n        margin: 0.5em;\n        margin-bottom: 2em;\n        padding: 0.5em;\n        cursor: pointer;\n        background: transparent;\n        padding: 1rem 1rem;\n        transition: all .5s ease;\n        color: #41403E;\n        outline: none;\n        box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.2);\n        border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;\n        border: solid 1px #41403E; }\n        .App .Blog .SideList .Quotes .quote-link {\n          position: relative;\n          display: block;\n          color: inherit; }\n          .App .Blog .SideList .Quotes .quote-link ion-icon {\n            float: right; }\n      .App .Blog .SideList .Quotes:hover {\n        background: #f0f0f0;\n        box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, 0.3); }\n      .App .Blog .SideList .ListTitles .ListTitlesItem {\n        font-weight: 300;\n        padding: 4px 4px;\n        -webkit-transition: background-color 0.2s;\n        transition: background-color 0.2s; }\n      .App .Blog .SideList .ListTitles .ListTitlesItem:hover {\n        cursor: pointer;\n        background-color: #f0f0f0; }\n      .App .Blog .SideList .ListTitles .ListTitlesItem.active {\n        font-weight: bold; }\n        .App .Blog .SideList .ListTitles .ListTitlesItem.active ion-icon {\n          color: #132366ce;\n          margin-right: 5px; }\n    .App .Blog .SideBar {\n      display: none;\n      z-index: 5;\n      position: fixed;\n      left: 200px;\n      height: 85%;\n      margin-left: -200px;\n      overflow-y: hidden;\n      overflow-x: hidden;\n      -webkit-transition: all 0.5s ease;\n      transition: all 0.5s ease; }\n  .App footer {\n    width: 100%;\n    height: 50px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: justify;\n    -ms-flex-pack: justify;\n    justify-content: space-between;\n    background-color: #333;\n    padding: 5px; }\n    .App footer .copyright-text {\n      font-size: 120%; }\n    .App footer .social-icons {\n      float: right; }\n      .App footer .social-icons .social-icon {\n        position: relative;\n        display: inline; }\n        .App footer .social-icons .social-icon a {\n          width: 40px;\n          margin-right: 20px;\n          cursor: pointer;\n          color: #888; }\n          .App footer .social-icons .social-icon a #fb:hover {\n            color: #3b5999; }\n          .App footer .social-icons .social-icon a #tw:hover {\n            color: #55acee; }\n          .App footer .social-icons .social-icon a #gp:hover {\n            color: #dd4b39; }\n          .App footer .social-icons .social-icon a #ig:hover {\n            color: #e4405f; }\n        .App footer .social-icons .social-icon a:link,\n        .App footer .social-icons .social-icon a:visited {\n          text-decoration: none;\n          border: 0;\n          font-size: 180%;\n          color: #888;\n          -webkit-transition: color 0.2s;\n          transition: color 0.2s; }\n    .App footer p {\n      color: #888;\n      text-align: center;\n      margin-top: 5px; }\n\n@-webkit-keyframes blinker {\n  50% {\n    opacity: 0; } }\n\n@keyframes blinker {\n  50% {\n    opacity: 0; } }\n\n.fadeIn {\n  -webkit-animation: fadeIn 1.5s;\n  animation: fadeIn 1.5s; }\n\n.slideInLeft {\n  -webkit-animation: slideInLeft 0.8s;\n  animation: slideInLeft 0.8s; }\n\n.slideInRight {\n  -webkit-animation: slideInRight 0.8s;\n  animation: slideInRight 0.8s; }\n\n.fadeInLeft {\n  -webkit-animation: fadeInLeft 0.8s;\n  animation: fadeInLeft 0.8s; }\n\n.pulse {\n  -webkit-animation: pulse 0.8s;\n  animation: pulse 0.8s; }\n\n.flipInY {\n  -webkit-animation: flipInY 0.8s;\n  animation: flipInY 0.8s; }\n\n.flipInX {\n  -webkit-animation: flipInX 0.8s;\n  animation: flipInX 0.8s; }\n", ""]);
+exports.push([module.i, "@font-face {\n  font-family: AkrobatExtraLight;\n  src: url(" + __webpack_require__("./src/assets/fonts/Akrobat-ExtraLight.otf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: AkrobatBold;\n  src: url(" + __webpack_require__("./src/assets/fonts/Akrobat-Bold.otf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: AkrobatSemiBold;\n  src: url(" + __webpack_require__("./src/assets/fonts/Akrobat-SemiBold.otf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: AkrobatRegular;\n  src: url(" + __webpack_require__("./src/assets/fonts/Akrobat-Regular.otf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: CaveatRegular;\n  src: url(" + __webpack_require__("./src/assets/fonts/Caveat-Regular.ttf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: Gogol;\n  src: url(" + __webpack_require__("./src/assets/fonts/Gogol.otf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: BadScript;\n  src: url(" + __webpack_require__("./src/assets/fonts/Bad_Script.ttf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: OwnHand;\n  src: url(" + __webpack_require__("./src/assets/fonts/OwnHand.ttf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: Vorona;\n  src: url(" + __webpack_require__("./src/assets/fonts/DS_VTCorona_Cyr.ttf") + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: PolyglOTT;\n  src: url(" + __webpack_require__("./src/assets/fonts/Truetypewriter_PolyglOTT.ttf") + ") format(\"opentype\"); }\n\n/*---------------------------------------------------------*/\n/* BASIC SETUP */\n/*---------------------------------------------------------*/\n* {\n  margin: 0;\n  padding: 0;\n  -webkit-box-sizing: border-box;\n  box-sizing: border-box; }\n\nhtml,\nbody {\n  color: #555;\n  font-family: \"AkrobatRegular\", cursive;\n  font-weight: 400;\n  font-size: 20px;\n  background-image: url(" + __webpack_require__("./src/assets/images/1920x1080-background.jpg") + ");\n  background-size: cover;\n  background-position: center;\n  height: 100%; }\n\nhtml {\n  overflow: auto;\n  overflow-x: hidden; }\n\nul {\n  list-style: none; }\n\n.social-icon {\n  width: 40px;\n  height: 40px; }\n\n/* TITLES \n==================================*/\nh1 {\n  margin-top: 0;\n  font-size: 300%;\n  word-spacing: 4px;\n  letter-spacing: 1px; }\n\nh2 {\n  font-size: 180%;\n  word-spacing: 2px;\n  text-align: center;\n  letter-spacing: 1px; }\n\nh3 {\n  font-size: 160%; }\n\nh4 {\n  font-size: 120%; }\n\n/* LINKS \n==================================*/\n.main-nav a {\n  font-family: \"PolyglOTT\", arial !important; }\n\na {\n  text-decoration: none;\n  background: transparent; }\n\na:link,\na:visited {\n  text-decoration: none;\n  padding-bottom: 1px; }\n\n/* APP \n==================================*/\n.clearfix:after {\n  content: \".\";\n  display: block;\n  clear: both;\n  visibility: hidden;\n  height: 0; }\n\n/* --------------------------\nlist titles */\n.ListTitles {\n  margin-bottom: 2em;\n  font-family: \"AkrobatExtraLight\", arial; }\n\n/* --------------------------\nnavigations in blog */\n.blog-nav {\n  position: relative;\n  width: 60px; }\n  .blog-nav .article-social-shares {\n    position: -webkit-sticky;\n    position: sticky;\n    top: 120px;\n    padding-left: 10px;\n    padding-top: 30px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n    -ms-flex-direction: column;\n    flex-direction: column; }\n    .blog-nav .article-social-shares .social-icon-common ion-icon,\n    .blog-nav .article-social-shares .social-icon {\n      width: 40px;\n      height: 40px;\n      opacity: 0.5; }\n    .blog-nav .article-social-shares .social-icon {\n      -webkit-transform: scale(1);\n      transform: scale(1);\n      cursor: pointer;\n      margin-top: 10px;\n      outline: 0;\n      opacity: 0.7;\n      -webkit-transition: opacity 0.4s, -webkit-transform 0.4s;\n      transition: opacity 0.4s, -webkit-transform 0.4s;\n      transition: opacity 0.4s, transform 0.4s;\n      transition: opacity 0.4s, transform 0.4s, -webkit-transform 0.4s; }\n    .blog-nav .article-social-shares .social-icon:hover {\n      -webkit-transform: scale(1.1);\n      transform: scale(1.1);\n      opacity: 1; }\n  .blog-nav .arrow-buttons ion-icon {\n    position: fixed;\n    width: 60px;\n    height: 10%;\n    top: 40%;\n    opacity: 0.3;\n    -webkit-transition: opacity 0.2s;\n    transition: opacity 0.2s; }\n    .blog-nav .arrow-buttons ion-icon .icon-inner {\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-align: center;\n      -ms-flex-align: center;\n      align-items: center; }\n  .blog-nav .arrow-buttons ion-icon:hover {\n    opacity: 1;\n    cursor: pointer; }\n\n/* --------------------------\ncount views in blog */\n.view-count {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex; }\n  .view-count ion-icon {\n    width: 25px;\n    height: 25px; }\n  .view-count span {\n    font-size: 70%;\n    margin: 5px 0 0 5px; }\n\n.App {\n  width: 100vw;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  min-height: 100vh;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n  -ms-flex-direction: column;\n  flex-direction: column; }\n  .App header {\n    margin-top: 25px;\n    position: -webkit-sticky;\n    font-size: 100%;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: justify;\n    -ms-flex-pack: justify;\n    justify-content: space-between;\n    -webkit-box-align: center;\n    -ms-flex-align: center;\n    align-items: center;\n    width: 100%;\n    height: 110px;\n    padding: 0.5% 20%;\n    position: fixed;\n    top: 0;\n    z-index: 10;\n    background-color: #f6f8ff;\n    border-bottom: solid 1px #CCC;\n    -moz-box-shadow: 1px 1px 3px #999;\n    -webkit-box-shadow: 1px 1px 3px #999;\n    box-shadow: 1px 1px 3px #999; }\n    .App header .site-title {\n      -webkit-box-flex: 2;\n      -ms-flex: 2;\n      flex: 2; }\n      .App header .site-title img {\n        width: 100%;\n        max-width: 350px;\n        height: auto; }\n    .App header .main-nav {\n      -webkit-box-flex: 3;\n      -ms-flex: 3;\n      flex: 3;\n      margin-right: 30px;\n      font-size: 140%; }\n      .App header .main-nav ul {\n        position: relative;\n        float: right; }\n        .App header .main-nav ul li {\n          display: inline-block;\n          margin-left: 20px; }\n          .App header .main-nav ul li a {\n            position: relative;\n            display: inline-block;\n            padding-bottom: 2px; }\n            .App header .main-nav ul li a .link-content {\n              display: flex;\n              justify-content: space-between;\n              align-items: center; }\n              .App header .main-nav ul li a .link-content ion-icon {\n                width: 20px;\n                opacity: 0;\n                margin-right: 2px;\n                color: #132366ce;\n                transition: opacity 2ms; }\n          .App header .main-nav ul li a:link,\n          .App header .main-nav ul li a:visited {\n            padding: 8px 0;\n            color: #555;\n            -webkit-transition: font-weight 0.2s;\n            transition: font-weight 0.2s; }\n        .App header .main-nav ul li.active a {\n          font-weight: bold; }\n          .App header .main-nav ul li.active a .link-content ion-icon {\n            opacity: 1; }\n  .App .Blog {\n    -webkit-box-flex: 1;\n    -ms-flex: 1;\n    flex: 1;\n    width: 70%;\n    margin: 0 auto;\n    padding-top: 50px;\n    font-size: 120%;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    margin-top: 100px; }\n    .App .Blog .ArticlePage,\n    .App .Blog .PreviewsPage {\n      position: relative;\n      margin: 0 auto;\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex; }\n    .App .Blog .ArticlePage {\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex; }\n      .App .Blog .ArticlePage .ArticleBlock {\n        -webkit-box-flex: 1;\n        -ms-flex: 1;\n        flex: 1;\n        display: -webkit-box;\n        display: -ms-flexbox;\n        display: flex; }\n        .App .Blog .ArticlePage .ArticleBlock .ArticleContainer {\n          -webkit-box-flex: 1;\n          -ms-flex: 1;\n          flex: 1;\n          position: relative;\n          padding: 1em;\n          width: 100%; }\n          .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-social-shares {\n            display: none; }\n          .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-title-name {\n            display: none;\n            margin-bottom: 2%; }\n          .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-slide,\n          .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-info,\n          .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-share,\n          .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-content,\n          .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-footer {\n            margin-bottom: 10px; }\n          .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-slide {\n            position: relative; }\n            .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-slide img {\n              display: block;\n              max-width: 100%;\n              height: auto; }\n            .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-slide .article-slide-title {\n              background: rgba(0, 0, 0, 0.45);\n              color: #e1e1e1;\n              width: 100%;\n              bottom: 0;\n              left: 0;\n              position: absolute;\n              padding: 0.5em; }\n              .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-slide .article-slide-title .article-slide-title-name {\n                display: block;\n                float: left;\n                width: 70%;\n                font-weight: bold;\n                font-family: \"AkrobatBold\", arial;\n                font-weight: 700;\n                color: #e1e1e1; }\n              .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-slide .article-slide-title .article-slide-title-tag {\n                float: right;\n                font-family: \"PolyglOTT\", arial;\n                cursor: pointer; }\n                .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-slide .article-slide-title .article-slide-title-tag span {\n                  margin-right: 5px;\n                  -webkit-animation: blinker 1.5s linear infinite;\n                  animation: blinker 1.5s linear infinite; }\n                .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-slide .article-slide-title .article-slide-title-tag h4 {\n                  color: #b5b4b4;\n                  -webkit-transition: color 0.2s;\n                  transition: color 0.2s; }\n                .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-slide .article-slide-title .article-slide-title-tag h4:hover {\n                  color: #e1e1e1; }\n          .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-info {\n            display: -webkit-box;\n            display: -ms-flexbox;\n            display: flex;\n            -webkit-box-pack: justify;\n            -ms-flex-pack: justify;\n            justify-content: space-between; }\n          .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-content {\n            margin-top: 10px; }\n            .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-content .text-paragraph {\n              margin-bottom: 10px; }\n            .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-content p {\n              text-align: left; }\n            .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-content img {\n              max-width: 100%;\n              height: auto;\n              padding: 2% 0; }\n            .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-content iframe {\n              padding: 2% 0; }\n          .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-footer {\n            text-align: center; }\n            .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-footer img {\n              opacity: 0.4;\n              transition: opacity 0.5s ease-out;\n              cursor: pointer; }\n            .App .Blog .ArticlePage .ArticleBlock .ArticleContainer .Article .article-footer img:hover {\n              opacity: 1; }\n    .App .Blog .PreviewsPage {\n      width: 100%; }\n      .App .Blog .PreviewsPage .PreviewsGrid {\n        margin: 2% auto; }\n        .App .Blog .PreviewsPage .PreviewsGrid .PreviewsItem {\n          margin: 0.5em;\n          padding: 0.5em;\n          width: 400px;\n          cursor: pointer;\n          background: transparent;\n          padding: 1rem 1rem;\n          transition: all .5s ease;\n          color: #41403E;\n          outline: none;\n          box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.2);\n          border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;\n          border: solid 2px #41403E; }\n          .App .Blog .PreviewsPage .PreviewsGrid .PreviewsItem .article-preview-header {\n            float: left;\n            font-family: \"PolyglOTT\", arial;\n            cursor: pointer; }\n            .App .Blog .PreviewsPage .PreviewsGrid .PreviewsItem .article-preview-header h4 {\n              color: #b5b4b4;\n              -webkit-transition: color 0.2s;\n              transition: color 0.2s; }\n          .App .Blog .PreviewsPage .PreviewsGrid .PreviewsItem .article-preview-image img {\n            width: 100%;\n            max-width: 400px;\n            height: auto; }\n          .App .Blog .PreviewsPage .PreviewsGrid .PreviewsItem .article-preview-content p {\n            width: 100%;\n            margin-bottom: 10px; }\n          .App .Blog .PreviewsPage .PreviewsGrid .PreviewsItem .article-preview-content .article-preview-title {\n            font-family: \"AkrobatSemiBold\"; }\n            .App .Blog .PreviewsPage .PreviewsGrid .PreviewsItem .article-preview-content .article-preview-title .view-count {\n              display: inline-block;\n              font-size: 90%;\n              margin-left: 2%; }\n              .App .Blog .PreviewsPage .PreviewsGrid .PreviewsItem .article-preview-content .article-preview-title .view-count ion-icon {\n                width: 15px;\n                height: 15px; }\n              .App .Blog .PreviewsPage .PreviewsGrid .PreviewsItem .article-preview-content .article-preview-title .view-count span {\n                margin: 2px 0 0 2px; }\n          .App .Blog .PreviewsPage .PreviewsGrid .PreviewsItem .article-preview-content .article-preview-cutted {\n            font-size: 80%; }\n          .App .Blog .PreviewsPage .PreviewsGrid .PreviewsItem .article-preview-content .article-preview-footer {\n            font-size: 60%; }\n            .App .Blog .PreviewsPage .PreviewsGrid .PreviewsItem .article-preview-content .article-preview-footer img {\n              width: 20px;\n              height: auto;\n              margin-right: 5px; }\n        .App .Blog .PreviewsPage .PreviewsGrid .PreviewsItem:hover {\n          background: #f0f0f0;\n          box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, 0.3); }\n    .App .Blog .SideList {\n      width: 20%;\n      min-width: 20%;\n      height: 80%;\n      float: right;\n      margin-top: 2em;\n      padding-top: 1em;\n      margin: 0 0.5em;\n      font-size: 80%; }\n      .App .Blog .SideList .Quotes {\n        min-height: 450px;\n        font-family: \"PolyglOTT\";\n        display: -webkit-box;\n        display: -ms-flexbox;\n        display: flex;\n        flex-direction: column;\n        justify-content: space-between;\n        margin: 0.5em;\n        margin-bottom: 2em;\n        padding: 0.5em;\n        cursor: pointer;\n        background: transparent;\n        padding: 1rem 1rem;\n        transition: all .5s ease;\n        color: #41403E;\n        outline: none;\n        box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.2);\n        border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;\n        border: solid 1px #41403E; }\n        .App .Blog .SideList .Quotes .quote-link {\n          position: relative;\n          display: block;\n          color: inherit; }\n          .App .Blog .SideList .Quotes .quote-link ion-icon {\n            float: right; }\n      .App .Blog .SideList .Quotes:hover {\n        background: #f0f0f0;\n        box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, 0.3); }\n      .App .Blog .SideList .ListTitles .ListTitlesItem {\n        font-weight: 300;\n        padding: 4px 4px;\n        -webkit-transition: background-color 0.2s;\n        transition: background-color 0.2s; }\n      .App .Blog .SideList .ListTitles .ListTitlesItem:hover {\n        cursor: pointer;\n        background-color: #f0f0f0; }\n      .App .Blog .SideList .ListTitles .ListTitlesItem.active {\n        font-weight: bold; }\n        .App .Blog .SideList .ListTitles .ListTitlesItem.active ion-icon {\n          color: #132366ce;\n          margin-right: 5px; }\n    .App .Blog .SideBar {\n      display: none;\n      z-index: 5;\n      position: fixed;\n      left: 200px;\n      height: 85%;\n      margin-left: -200px;\n      overflow-y: hidden;\n      overflow-x: hidden;\n      -webkit-transition: all 0.5s ease;\n      transition: all 0.5s ease; }\n  .App footer {\n    width: 100%;\n    height: 50px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: justify;\n    -ms-flex-pack: justify;\n    justify-content: space-between;\n    background-color: #333;\n    padding: 5px; }\n    .App footer .copyright-text {\n      font-size: 120%; }\n    .App footer .social-icons {\n      float: right; }\n      .App footer .social-icons .social-icon {\n        position: relative;\n        display: inline; }\n        .App footer .social-icons .social-icon a {\n          width: 40px;\n          margin-right: 20px;\n          cursor: pointer;\n          color: #888; }\n          .App footer .social-icons .social-icon a #fb:hover {\n            color: #3b5999; }\n          .App footer .social-icons .social-icon a #tw:hover {\n            color: #55acee; }\n          .App footer .social-icons .social-icon a #gp:hover {\n            color: #dd4b39; }\n          .App footer .social-icons .social-icon a #ig:hover {\n            color: #e4405f; }\n        .App footer .social-icons .social-icon a:link,\n        .App footer .social-icons .social-icon a:visited {\n          text-decoration: none;\n          border: 0;\n          font-size: 180%;\n          color: #888;\n          -webkit-transition: color 0.2s;\n          transition: color 0.2s; }\n    .App footer p {\n      color: #888;\n      text-align: center;\n      margin-top: 5px; }\n\n@-webkit-keyframes blinker {\n  50% {\n    opacity: 0; } }\n\n@keyframes blinker {\n  50% {\n    opacity: 0; } }\n\n.fadeIn {\n  -webkit-animation: fadeIn 1.5s;\n  animation: fadeIn 1.5s; }\n\n.slideInLeft {\n  -webkit-animation: slideInLeft 0.8s;\n  animation: slideInLeft 0.8s; }\n\n.slideInRight {\n  -webkit-animation: slideInRight 0.8s;\n  animation: slideInRight 0.8s; }\n\n.fadeInLeft {\n  -webkit-animation: fadeInLeft 0.8s;\n  animation: fadeInLeft 0.8s; }\n\n.pulse {\n  -webkit-animation: pulse 0.8s;\n  animation: pulse 0.8s; }\n\n.flipInY {\n  -webkit-animation: flipInY 0.8s;\n  animation: flipInY 0.8s; }\n\n.flipInX {\n  -webkit-animation: flipInX 0.8s;\n  animation: flipInX 0.8s; }\n", ""]);
 
 // exports
 
@@ -49858,43 +49858,20 @@ var App = function (_Component) {
 
         var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this));
 
-        _this.onChangeActiveTag = function (activeTag) {
-            _this.setState({ activeTag: activeTag });
+        _this.onChangeActiveTag = function () {
+            return _this.__onChangeActiveTag__REACT_HOT_LOADER__.apply(_this, arguments);
         };
 
         _this._loadData = function () {
-            __WEBPACK_IMPORTED_MODULE_4_axios___default.a.get(_this.props.link).then(function (res) {
-                var posts = _this._parsePosts(res.data.posts);
-                _this.setState({ posts: posts });
-            }).catch(function (error) {
-                return alert('Can\'t load data:', error);
-            });
+            return _this.___loadData__REACT_HOT_LOADER__.apply(_this, arguments);
         };
 
-        _this._parsePosts = function (data) {
-            var posts = [];
-
-            var i = void 0;
-            for (i = data.length - 1; i >= 0; i--) {
-                var post = _this._parsePost(data[i]);
-                posts.push(post);
-            }
-
-            return posts;
+        _this._parsePosts = function () {
+            return _this.___parsePosts__REACT_HOT_LOADER__.apply(_this, arguments);
         };
 
-        _this._parsePost = function (data) {
-            var post = {};
-
-            post.id = data.ID;
-            post.date = data.date.substring(0, 10);
-            post.tag = Object.keys(data.categories)[0];
-            post.title = data.title;
-            post.image = data.featured_image;
-            post.quote = data.excerpt;
-            post.text = data.content;
-
-            return post;
+        _this._parsePost = function () {
+            return _this.___parsePost__REACT_HOT_LOADER__.apply(_this, arguments);
         };
 
         _this.state = {
@@ -49908,6 +49885,26 @@ var App = function (_Component) {
     }
 
     _createClass(App, [{
+        key: '___parsePost__REACT_HOT_LOADER__',
+        value: function ___parsePost__REACT_HOT_LOADER__() {
+            return this.___parsePost__REACT_HOT_LOADER__.apply(this, arguments);
+        }
+    }, {
+        key: '___parsePosts__REACT_HOT_LOADER__',
+        value: function ___parsePosts__REACT_HOT_LOADER__() {
+            return this.___parsePosts__REACT_HOT_LOADER__.apply(this, arguments);
+        }
+    }, {
+        key: '___loadData__REACT_HOT_LOADER__',
+        value: function ___loadData__REACT_HOT_LOADER__() {
+            return this.___loadData__REACT_HOT_LOADER__.apply(this, arguments);
+        }
+    }, {
+        key: '__onChangeActiveTag__REACT_HOT_LOADER__',
+        value: function __onChangeActiveTag__REACT_HOT_LOADER__() {
+            return this.__onChangeActiveTag__REACT_HOT_LOADER__.apply(this, arguments);
+        }
+    }, {
         key: 'componentDidMount',
         value: function componentDidMount() {
             this._loadData();
@@ -49927,6 +49924,11 @@ var App = function (_Component) {
                 width: window.innerWidth,
                 height: window.innerHeight
             });
+        }
+    }, {
+        key: '__onChangeActiveTag__REACT_HOT_LOADER__',
+        value: function __onChangeActiveTag__REACT_HOT_LOADER__(activeTag) {
+            this.setState({ activeTag: activeTag });
         }
     }, {
         key: 'getChildContext',
@@ -49977,12 +49979,53 @@ var App = function (_Component) {
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(ScrollUp, null)
             );
         }
+    }, {
+        key: '___loadData__REACT_HOT_LOADER__',
+        value: function ___loadData__REACT_HOT_LOADER__() {
+            var _this2 = this;
+
+            __WEBPACK_IMPORTED_MODULE_4_axios___default.a.get(this.props.link).then(function (res) {
+                var posts = _this2._parsePosts(res.data.posts);
+                _this2.setState({ posts: posts });
+            }).catch(function (error) {
+                return alert('Can\'t load data:', error);
+            });
+        }
+    }, {
+        key: '___parsePosts__REACT_HOT_LOADER__',
+        value: function ___parsePosts__REACT_HOT_LOADER__(data) {
+            var posts = [];
+
+            var i = void 0;
+            for (i = data.length - 1; i >= 0; i--) {
+                var post = this._parsePost(data[i]);
+                posts.push(post);
+            }
+
+            return posts;
+        }
+    }, {
+        key: '___parsePost__REACT_HOT_LOADER__',
+        value: function ___parsePost__REACT_HOT_LOADER__(data) {
+            var post = {};
+
+            post.id = data.ID;
+            post.date = data.date.substring(0, 10);
+            post.tag = Object.keys(data.categories)[0];
+            post.title = data.title;
+            post.image = data.featured_image;
+            post.quote = data.excerpt;
+            post.text = data.content;
+
+            return post;
+        }
     }]);
 
     return App;
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
 
-/* harmony default export */ __webpack_exports__["a"] = (App);
+var _default = App;
+/* harmony default export */ __webpack_exports__["a"] = (_default);
 
 
 var ScrollUp = function ScrollUp() {
@@ -49995,6 +50038,21 @@ App.childContextTypes = {
     activeTag: __WEBPACK_IMPORTED_MODULE_1_prop_types__["PropTypes"].string,
     changeActiveTag: __WEBPACK_IMPORTED_MODULE_1_prop_types__["PropTypes"].func
 };
+;
+
+var _temp = function () {
+    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+        return;
+    }
+
+    __REACT_HOT_LOADER__.register(App, 'App', '/home/nick/dev/Freelance/Documenty_React/src/components/App.js');
+
+    __REACT_HOT_LOADER__.register(ScrollUp, 'ScrollUp', '/home/nick/dev/Freelance/Documenty_React/src/components/App.js');
+
+    __REACT_HOT_LOADER__.register(_default, 'default', '/home/nick/dev/Freelance/Documenty_React/src/components/App.js');
+}();
+
+;
 
 /***/ }),
 
@@ -50024,7 +50082,21 @@ var ArrowButton = function ArrowButton(_ref) {
     );
 };
 
-/* harmony default export */ __webpack_exports__["a"] = (ArrowButton);
+var _default = ArrowButton;
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+var _temp = function () {
+    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+        return;
+    }
+
+    __REACT_HOT_LOADER__.register(ArrowButton, 'ArrowButton', '/home/nick/dev/Freelance/Documenty_React/src/components/ui/ArrowButton.js');
+
+    __REACT_HOT_LOADER__.register(_default, 'default', '/home/nick/dev/Freelance/Documenty_React/src/components/ui/ArrowButton.js');
+}();
+
+;
 
 /***/ }),
 
@@ -50070,20 +50142,16 @@ var Article = function (_Component) {
 
         var _this = _possibleConstructorReturn(this, (Article.__proto__ || Object.getPrototypeOf(Article)).call(this));
 
-        _this.componentWillReceiveProps = function (nextProps) {
-            if (nextProps.screenWidth !== _this.props.screenWidth) {
-                _this.setState({ screenWidth: nextProps.screenWidth });
-            }
+        _this.componentWillReceiveProps = function () {
+            return _this.__componentWillReceiveProps__REACT_HOT_LOADER__.apply(_this, arguments);
         };
 
-        _this.shouldComponentUpdate = function (nextProps) {
-            return nextProps.post.id !== _this.props.post.id || nextProps.screenWidth !== _this.props.screenWidth;
+        _this.shouldComponentUpdate = function () {
+            return _this.__shouldComponentUpdate__REACT_HOT_LOADER__.apply(_this, arguments);
         };
 
         _this.handleOpenSideBar = function () {
-            if (_this.state.screenWidth <= 480) {
-                _this.props.openSideBar();
-            }
+            return _this.__handleOpenSideBar__REACT_HOT_LOADER__.apply(_this, arguments);
         };
 
         _this.state = {
@@ -50093,6 +50161,40 @@ var Article = function (_Component) {
     }
 
     _createClass(Article, [{
+        key: '__handleOpenSideBar__REACT_HOT_LOADER__',
+        value: function __handleOpenSideBar__REACT_HOT_LOADER__() {
+            return this.__handleOpenSideBar__REACT_HOT_LOADER__.apply(this, arguments);
+        }
+    }, {
+        key: '__shouldComponentUpdate__REACT_HOT_LOADER__',
+        value: function __shouldComponentUpdate__REACT_HOT_LOADER__() {
+            return this.__shouldComponentUpdate__REACT_HOT_LOADER__.apply(this, arguments);
+        }
+    }, {
+        key: '__componentWillReceiveProps__REACT_HOT_LOADER__',
+        value: function __componentWillReceiveProps__REACT_HOT_LOADER__() {
+            return this.__componentWillReceiveProps__REACT_HOT_LOADER__.apply(this, arguments);
+        }
+    }, {
+        key: '__componentWillReceiveProps__REACT_HOT_LOADER__',
+        value: function __componentWillReceiveProps__REACT_HOT_LOADER__(nextProps) {
+            if (nextProps.screenWidth !== this.props.screenWidth) {
+                this.setState({ screenWidth: nextProps.screenWidth });
+            }
+        }
+    }, {
+        key: '__shouldComponentUpdate__REACT_HOT_LOADER__',
+        value: function __shouldComponentUpdate__REACT_HOT_LOADER__(nextProps) {
+            return nextProps.post.id !== this.props.post.id || nextProps.screenWidth !== this.props.screenWidth;
+        }
+    }, {
+        key: '__handleOpenSideBar__REACT_HOT_LOADER__',
+        value: function __handleOpenSideBar__REACT_HOT_LOADER__() {
+            if (this.state.screenWidth <= 480) {
+                this.props.openSideBar();
+            }
+        }
+    }, {
         key: 'render',
         value: function render() {
             var _this2 = this;
@@ -50200,7 +50302,21 @@ var Article = function (_Component) {
     return Article;
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
 
-/* harmony default export */ __webpack_exports__["a"] = (Article);
+var _default = Article;
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+var _temp = function () {
+    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+        return;
+    }
+
+    __REACT_HOT_LOADER__.register(Article, 'Article', '/home/nick/dev/Freelance/Documenty_React/src/components/ui/Article.js');
+
+    __REACT_HOT_LOADER__.register(_default, 'default', '/home/nick/dev/Freelance/Documenty_React/src/components/ui/Article.js');
+}();
+
+;
 
 /***/ }),
 
@@ -50235,10 +50351,8 @@ var ArticleContainer = function (_Component) {
 
         var _this = _possibleConstructorReturn(this, (ArticleContainer.__proto__ || Object.getPrototypeOf(ArticleContainer)).call(this));
 
-        _this.componentDidUpdate = function (prevProps) {
-            if (prevProps.post !== _this.props.post) {
-                _this.activeAnimate();
-            }
+        _this.componentDidUpdate = function () {
+            return _this.__componentDidUpdate__REACT_HOT_LOADER__.apply(_this, arguments);
         };
 
         _this.state = { animate: false };
@@ -50246,9 +50360,21 @@ var ArticleContainer = function (_Component) {
     }
 
     _createClass(ArticleContainer, [{
+        key: '__componentDidUpdate__REACT_HOT_LOADER__',
+        value: function __componentDidUpdate__REACT_HOT_LOADER__() {
+            return this.__componentDidUpdate__REACT_HOT_LOADER__.apply(this, arguments);
+        }
+    }, {
         key: 'componentDidMount',
         value: function componentDidMount() {
             this.activeAnimate();
+        }
+    }, {
+        key: '__componentDidUpdate__REACT_HOT_LOADER__',
+        value: function __componentDidUpdate__REACT_HOT_LOADER__(prevProps) {
+            if (prevProps.post !== this.props.post) {
+                this.activeAnimate();
+            }
         }
     }, {
         key: 'activeAnimate',
@@ -50281,7 +50407,21 @@ var ArticleContainer = function (_Component) {
     return ArticleContainer;
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
 
-/* harmony default export */ __webpack_exports__["a"] = (ArticleContainer);
+var _default = ArticleContainer;
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+var _temp = function () {
+    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+        return;
+    }
+
+    __REACT_HOT_LOADER__.register(ArticleContainer, 'ArticleContainer', '/home/nick/dev/Freelance/Documenty_React/src/components/ui/ArticleContainer.js');
+
+    __REACT_HOT_LOADER__.register(_default, 'default', '/home/nick/dev/Freelance/Documenty_React/src/components/ui/ArticleContainer.js');
+}();
+
+;
 
 /***/ }),
 
@@ -50328,28 +50468,42 @@ var ArticlePage = function (_Component) {
             args[_key] = arguments[_key];
         }
 
-        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = ArticlePage.__proto__ || Object.getPrototypeOf(ArticlePage)).call.apply(_ref, [this].concat(args))), _this), _this.shouldComponentUpdate = function (nextProps) {
-            return nextProps.posts !== _this.props.posts || nextProps.activePostIndex !== _this.props.activePostIndex || nextProps.shifted !== _this.props.shifted;
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = ArticlePage.__proto__ || Object.getPrototypeOf(ArticlePage)).call.apply(_ref, [this].concat(args))), _this), _this.shouldComponentUpdate = function () {
+            var _this2;
+
+            return (_this2 = _this).__shouldComponentUpdate__REACT_HOT_LOADER__.apply(_this2, arguments);
         }, _this._getPrevPost = function () {
-            var _this$props = _this.props,
-                posts = _this$props.posts,
-                activePostIndex = _this$props.activePostIndex,
-                prevPost = posts[activePostIndex - 1];
+            var _this3;
 
-
-            return prevPost || posts[posts.length - 1];
+            return (_this3 = _this).___getPrevPost__REACT_HOT_LOADER__.apply(_this3, arguments);
         }, _this._getNextPost = function () {
-            var _this$props2 = _this.props,
-                posts = _this$props2.posts,
-                activePostIndex = _this$props2.activePostIndex,
-                nextPost = posts[activePostIndex + 1];
+            var _this4;
 
-
-            return nextPost || posts[0];
+            return (_this4 = _this).___getNextPost__REACT_HOT_LOADER__.apply(_this4, arguments);
         }, _temp), _possibleConstructorReturn(_this, _ret);
     }
 
     _createClass(ArticlePage, [{
+        key: '___getNextPost__REACT_HOT_LOADER__',
+        value: function ___getNextPost__REACT_HOT_LOADER__() {
+            return this.___getNextPost__REACT_HOT_LOADER__.apply(this, arguments);
+        }
+    }, {
+        key: '___getPrevPost__REACT_HOT_LOADER__',
+        value: function ___getPrevPost__REACT_HOT_LOADER__() {
+            return this.___getPrevPost__REACT_HOT_LOADER__.apply(this, arguments);
+        }
+    }, {
+        key: '__shouldComponentUpdate__REACT_HOT_LOADER__',
+        value: function __shouldComponentUpdate__REACT_HOT_LOADER__() {
+            return this.__shouldComponentUpdate__REACT_HOT_LOADER__.apply(this, arguments);
+        }
+    }, {
+        key: '__shouldComponentUpdate__REACT_HOT_LOADER__',
+        value: function __shouldComponentUpdate__REACT_HOT_LOADER__(nextProps) {
+            return nextProps.posts !== this.props.posts || nextProps.activePostIndex !== this.props.activePostIndex || nextProps.shifted !== this.props.shifted;
+        }
+    }, {
         key: 'render',
         value: function render() {
             var _props = this.props,
@@ -50409,12 +50563,48 @@ var ArticlePage = function (_Component) {
                 )
             );
         }
+    }, {
+        key: '___getPrevPost__REACT_HOT_LOADER__',
+        value: function ___getPrevPost__REACT_HOT_LOADER__() {
+            var _props2 = this.props,
+                posts = _props2.posts,
+                activePostIndex = _props2.activePostIndex,
+                prevPost = posts[activePostIndex - 1];
+
+
+            return prevPost || posts[posts.length - 1];
+        }
+    }, {
+        key: '___getNextPost__REACT_HOT_LOADER__',
+        value: function ___getNextPost__REACT_HOT_LOADER__() {
+            var _props3 = this.props,
+                posts = _props3.posts,
+                activePostIndex = _props3.activePostIndex,
+                nextPost = posts[activePostIndex + 1];
+
+
+            return nextPost || posts[0];
+        }
     }]);
 
     return ArticlePage;
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
 
-/* harmony default export */ __webpack_exports__["a"] = (ArticlePage);
+var _default = ArticlePage;
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+var _temp2 = function () {
+    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+        return;
+    }
+
+    __REACT_HOT_LOADER__.register(ArticlePage, 'ArticlePage', '/home/nick/dev/Freelance/Documenty_React/src/components/ui/ArticlePage.js');
+
+    __REACT_HOT_LOADER__.register(_default, 'default', '/home/nick/dev/Freelance/Documenty_React/src/components/ui/ArticlePage.js');
+}();
+
+;
 
 /***/ }),
 
@@ -50431,7 +50621,22 @@ var ArticleSwiped = function ArticleSwiped(props) {
   return React.createElement(__WEBPACK_IMPORTED_MODULE_1__Article__["a" /* default */], props);
 };
 
-/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_0__wrapperSwipe__["a" /* default */])('onPrev', 'onNext')(ArticleSwiped));
+var _default = Object(__WEBPACK_IMPORTED_MODULE_0__wrapperSwipe__["a" /* default */])('onPrev', 'onNext')(ArticleSwiped);
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(ArticleSwiped, 'ArticleSwiped', '/home/nick/dev/Freelance/Documenty_React/src/components/ui/ArticleSwiped.js');
+
+  __REACT_HOT_LOADER__.register(_default, 'default', '/home/nick/dev/Freelance/Documenty_React/src/components/ui/ArticleSwiped.js');
+}();
+
+;
 
 /***/ }),
 
@@ -50472,59 +50677,35 @@ var Blog = function (_Component) {
         var _this = _possibleConstructorReturn(this, (Blog.__proto__ || Object.getPrototypeOf(Blog)).call(this));
 
         _this.componentWillMount = function () {
-            _this._updatePosts();
+            return _this.__componentWillMount__REACT_HOT_LOADER__.apply(_this, arguments);
         };
 
         _this.componentDidMount = function () {
-            _this.handleOpenPost();
+            return _this.__componentDidMount__REACT_HOT_LOADER__.apply(_this, arguments);
         };
 
-        _this.shouldComponentUpdate = function (nextProps, nextState, nextContext) {
-            return nextProps.match !== _this.props.match || nextContext.screenWidth !== _this.context.screenWidth;
+        _this.shouldComponentUpdate = function () {
+            return _this.__shouldComponentUpdate__REACT_HOT_LOADER__.apply(_this, arguments);
         };
 
-        _this.componentWillReceiveProps = function (nextProps) {
-            var tag = nextProps.match.params.tag,
-                changeActiveTag = _this.context.changeActiveTag;
-
-
-            if (tag !== _this.props.match.params.tag) {
-                _this._updatePosts(tag);
-                changeActiveTag(tag);
-            }
+        _this.componentWillReceiveProps = function () {
+            return _this.__componentWillReceiveProps__REACT_HOT_LOADER__.apply(_this, arguments);
         };
 
-        _this.handleOpenPost = function (id, tag) {
-            var _this$props = _this.props,
-                match = _this$props.match,
-                history = _this$props.history;
-
-
-            if (!tag) tag = match.params.tag || 'all';
-            // if (!id) id = listPosts[listPosts.length - 1].id
-
-            if (id) history.push('/' + tag + '/' + id);else history.push('/' + tag);
-
-            window.scrollTo(0, 0);
+        _this.handleOpenPost = function () {
+            return _this.__handleOpenPost__REACT_HOT_LOADER__.apply(_this, arguments);
         };
 
         _this.handleOpenSideBar = function () {
-            _this.setState({ openSideBar: true });
+            return _this.__handleOpenSideBar__REACT_HOT_LOADER__.apply(_this, arguments);
         };
 
         _this.handleHideSideBar = function () {
-            _this.setState({ openSideBar: false });
+            return _this.__handleHideSideBar__REACT_HOT_LOADER__.apply(_this, arguments);
         };
 
-        _this._updatePosts = function (tag) {
-            var posts = _this.context.posts;
-
-
-            var listPosts = tag && tag !== 'all' ? posts.filter(function (post) {
-                return post.tag === tag;
-            }) : posts;
-
-            _this.setState({ listPosts: listPosts });
+        _this._updatePosts = function () {
+            return _this.___updatePosts__REACT_HOT_LOADER__.apply(_this, arguments);
         };
 
         _this.state = {
@@ -50535,6 +50716,98 @@ var Blog = function (_Component) {
     }
 
     _createClass(Blog, [{
+        key: '___updatePosts__REACT_HOT_LOADER__',
+        value: function ___updatePosts__REACT_HOT_LOADER__() {
+            return this.___updatePosts__REACT_HOT_LOADER__.apply(this, arguments);
+        }
+    }, {
+        key: '__handleHideSideBar__REACT_HOT_LOADER__',
+        value: function __handleHideSideBar__REACT_HOT_LOADER__() {
+            return this.__handleHideSideBar__REACT_HOT_LOADER__.apply(this, arguments);
+        }
+    }, {
+        key: '__handleOpenSideBar__REACT_HOT_LOADER__',
+        value: function __handleOpenSideBar__REACT_HOT_LOADER__() {
+            return this.__handleOpenSideBar__REACT_HOT_LOADER__.apply(this, arguments);
+        }
+    }, {
+        key: '__handleOpenPost__REACT_HOT_LOADER__',
+        value: function __handleOpenPost__REACT_HOT_LOADER__() {
+            return this.__handleOpenPost__REACT_HOT_LOADER__.apply(this, arguments);
+        }
+    }, {
+        key: '__componentWillReceiveProps__REACT_HOT_LOADER__',
+        value: function __componentWillReceiveProps__REACT_HOT_LOADER__() {
+            return this.__componentWillReceiveProps__REACT_HOT_LOADER__.apply(this, arguments);
+        }
+    }, {
+        key: '__shouldComponentUpdate__REACT_HOT_LOADER__',
+        value: function __shouldComponentUpdate__REACT_HOT_LOADER__() {
+            return this.__shouldComponentUpdate__REACT_HOT_LOADER__.apply(this, arguments);
+        }
+    }, {
+        key: '__componentDidMount__REACT_HOT_LOADER__',
+        value: function __componentDidMount__REACT_HOT_LOADER__() {
+            return this.__componentDidMount__REACT_HOT_LOADER__.apply(this, arguments);
+        }
+    }, {
+        key: '__componentWillMount__REACT_HOT_LOADER__',
+        value: function __componentWillMount__REACT_HOT_LOADER__() {
+            return this.__componentWillMount__REACT_HOT_LOADER__.apply(this, arguments);
+        }
+    }, {
+        key: '__componentWillMount__REACT_HOT_LOADER__',
+        value: function __componentWillMount__REACT_HOT_LOADER__() {
+            this._updatePosts();
+        }
+    }, {
+        key: '__componentDidMount__REACT_HOT_LOADER__',
+        value: function __componentDidMount__REACT_HOT_LOADER__() {
+            this.handleOpenPost();
+        }
+    }, {
+        key: '__shouldComponentUpdate__REACT_HOT_LOADER__',
+        value: function __shouldComponentUpdate__REACT_HOT_LOADER__(nextProps, nextState, nextContext) {
+            return nextProps.match !== this.props.match || nextContext.screenWidth !== this.context.screenWidth;
+        }
+    }, {
+        key: '__componentWillReceiveProps__REACT_HOT_LOADER__',
+        value: function __componentWillReceiveProps__REACT_HOT_LOADER__(nextProps) {
+            var tag = nextProps.match.params.tag,
+                changeActiveTag = this.context.changeActiveTag;
+
+
+            if (tag !== this.props.match.params.tag) {
+                this._updatePosts(tag);
+                changeActiveTag(tag);
+            }
+        }
+    }, {
+        key: '__handleOpenPost__REACT_HOT_LOADER__',
+        value: function __handleOpenPost__REACT_HOT_LOADER__(id, tag) {
+            var _props = this.props,
+                match = _props.match,
+                history = _props.history;
+
+
+            if (!tag) tag = match.params.tag || 'all';
+            // if (!id) id = listPosts[listPosts.length - 1].id
+
+            if (id) history.push('/' + tag + '/' + id);else history.push('/' + tag);
+
+            window.scrollTo(0, 0);
+        }
+    }, {
+        key: '__handleOpenSideBar__REACT_HOT_LOADER__',
+        value: function __handleOpenSideBar__REACT_HOT_LOADER__() {
+            this.setState({ openSideBar: true });
+        }
+    }, {
+        key: '__handleHideSideBar__REACT_HOT_LOADER__',
+        value: function __handleHideSideBar__REACT_HOT_LOADER__() {
+            this.setState({ openSideBar: false });
+        }
+    }, {
         key: 'render',
         value: function render() {
             var _state = this.state,
@@ -50567,12 +50840,25 @@ var Blog = function (_Component) {
                 }))
             );
         }
+    }, {
+        key: '___updatePosts__REACT_HOT_LOADER__',
+        value: function ___updatePosts__REACT_HOT_LOADER__(tag) {
+            var posts = this.context.posts;
+
+
+            var listPosts = tag && tag !== 'all' ? posts.filter(function (post) {
+                return post.tag === tag;
+            }) : posts;
+
+            this.setState({ listPosts: listPosts });
+        }
     }]);
 
     return Blog;
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
 
-/* harmony default export */ __webpack_exports__["a"] = (Blog);
+var _default = Blog;
+/* harmony default export */ __webpack_exports__["a"] = (_default);
 
 
 Blog.contextTypes = {
@@ -50580,6 +50866,19 @@ Blog.contextTypes = {
     screenWidth: __WEBPACK_IMPORTED_MODULE_1_prop_types__["PropTypes"].number,
     changeActiveTag: __WEBPACK_IMPORTED_MODULE_1_prop_types__["PropTypes"].func
 };
+;
+
+var _temp = function () {
+    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+        return;
+    }
+
+    __REACT_HOT_LOADER__.register(Blog, 'Blog', '/home/nick/dev/Freelance/Documenty_React/src/components/ui/Blog.js');
+
+    __REACT_HOT_LOADER__.register(_default, 'default', '/home/nick/dev/Freelance/Documenty_React/src/components/ui/Blog.js');
+}();
+
+;
 
 /***/ }),
 
@@ -50639,7 +50938,21 @@ var FooterBlock = function FooterBlock() {
     );
 };
 
-/* harmony default export */ __webpack_exports__["a"] = (FooterBlock);
+var _default = FooterBlock;
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+var _temp = function () {
+    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+        return;
+    }
+
+    __REACT_HOT_LOADER__.register(FooterBlock, 'FooterBlock', '/home/nick/dev/Freelance/Documenty_React/src/components/ui/FooterBlock.js');
+
+    __REACT_HOT_LOADER__.register(_default, 'default', '/home/nick/dev/Freelance/Documenty_React/src/components/ui/FooterBlock.js');
+}();
+
+;
 
 /***/ }),
 
@@ -50738,16 +51051,16 @@ var HeadBlock = function (_Component) {
                         },
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             __WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Link */],
-                            { to: '/' + tag, title: '\u0421\u043E\u0440\u0442\u0443\u0432\u0430\u0442\u0438 \u0437\u0430 \u0440\u043E\u0437\u0434i\u043B\u043E\u043C' },
+                            { to: '/' + tag, title: '\u0412i\u0434i\u0431\u0440\u0430\u0442\u0438 \u0437\u0430 \u0440\u043E\u0437\u0434i\u043B\u043E\u043C' },
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 'span',
                                 { className: 'link-content' },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('ion-icon', { name: 'film' }),
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                     'span',
                                     null,
                                     __WEBPACK_IMPORTED_MODULE_3__constants__["b" /* LINKS_UKR */][i]
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('ion-icon', { name: 'film' })
+                                )
                             )
                         )
                     );
@@ -50784,7 +51097,8 @@ var HeadBlock = function (_Component) {
     return HeadBlock;
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
 
-/* harmony default export */ __webpack_exports__["a"] = (HeadBlock);
+var _default = HeadBlock;
+/* harmony default export */ __webpack_exports__["a"] = (_default);
 
 
 HeadBlock.contextTypes = {
@@ -50793,6 +51107,19 @@ HeadBlock.contextTypes = {
     activeTag: __WEBPACK_IMPORTED_MODULE_2_prop_types__["PropTypes"].string,
     changeActiveTag: __WEBPACK_IMPORTED_MODULE_2_prop_types__["PropTypes"].func
 };
+;
+
+var _temp = function () {
+    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+        return;
+    }
+
+    __REACT_HOT_LOADER__.register(HeadBlock, 'HeadBlock', '/home/nick/dev/Freelance/Documenty_React/src/components/ui/HeadBlock.js');
+
+    __REACT_HOT_LOADER__.register(_default, 'default', '/home/nick/dev/Freelance/Documenty_React/src/components/ui/HeadBlock.js');
+}();
+
+;
 
 /***/ }),
 
@@ -50830,15 +51157,27 @@ var ListTitles = function (_Component) {
             args[_key] = arguments[_key];
         }
 
-        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = ListTitles.__proto__ || Object.getPrototypeOf(ListTitles)).call.apply(_ref, [this].concat(args))), _this), _this.shouldComponentUpdate = function (nextProps) {
-            return nextProps.posts !== _this.props.posts || nextProps.match.params.id !== _this.props.match.params.id;
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = ListTitles.__proto__ || Object.getPrototypeOf(ListTitles)).call.apply(_ref, [this].concat(args))), _this), _this.shouldComponentUpdate = function () {
+            var _this2;
+
+            return (_this2 = _this).__shouldComponentUpdate__REACT_HOT_LOADER__.apply(_this2, arguments);
         }, _temp), _possibleConstructorReturn(_this, _ret);
     }
 
     _createClass(ListTitles, [{
+        key: '__shouldComponentUpdate__REACT_HOT_LOADER__',
+        value: function __shouldComponentUpdate__REACT_HOT_LOADER__() {
+            return this.__shouldComponentUpdate__REACT_HOT_LOADER__.apply(this, arguments);
+        }
+    }, {
+        key: '__shouldComponentUpdate__REACT_HOT_LOADER__',
+        value: function __shouldComponentUpdate__REACT_HOT_LOADER__(nextProps) {
+            return nextProps.posts !== this.props.posts || nextProps.match.params.id !== this.props.match.params.id;
+        }
+    }, {
         key: 'render',
         value: function render() {
-            var _this2 = this;
+            var _this3 = this;
 
             var posts = this.props.posts;
 
@@ -50853,7 +51192,7 @@ var ListTitles = function (_Component) {
                         React.createElement(__WEBPACK_IMPORTED_MODULE_1__ListTitlesItem__["a" /* default */], _extends({
                             post: post,
                             timeoutMs: 50 * i
-                        }, _this2.props))
+                        }, _this3.props))
                     );
                 })
             );
@@ -50863,7 +51202,21 @@ var ListTitles = function (_Component) {
     return ListTitles;
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
 
-/* harmony default export */ __webpack_exports__["a"] = (ListTitles);
+var _default = ListTitles;
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+var _temp2 = function () {
+    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+        return;
+    }
+
+    __REACT_HOT_LOADER__.register(ListTitles, 'ListTitles', '/home/nick/dev/Freelance/Documenty_React/src/components/ui/ListTitles.js');
+
+    __REACT_HOT_LOADER__.register(_default, 'default', '/home/nick/dev/Freelance/Documenty_React/src/components/ui/ListTitles.js');
+}();
+
+;
 
 /***/ }),
 
@@ -50894,27 +51247,16 @@ var ListTitlesItem = function (_Component) {
 
         var _this = _possibleConstructorReturn(this, (ListTitlesItem.__proto__ || Object.getPrototypeOf(ListTitlesItem)).call(this));
 
-        _this.componentDidUpdate = function (prevProps) {
-            if (prevProps.post !== _this.props.post) {
-                _this.setState({ hidden: true });
-                _this.activeAnimateIn();
-            }
+        _this.componentDidUpdate = function () {
+            return _this.__componentDidUpdate__REACT_HOT_LOADER__.apply(_this, arguments);
         };
 
-        _this.componentWillReceiveProps = function (nextProps) {
-            if (nextProps.post.id === parseInt(nextProps.match.params.id)) {
-                _this.activeAnimateSelect();
-            }
+        _this.componentWillReceiveProps = function () {
+            return _this.__componentWillReceiveProps__REACT_HOT_LOADER__.apply(_this, arguments);
         };
 
-        _this.handleSelectItem = function (id) {
-            var _this$props = _this.props,
-                openPost = _this$props.openPost,
-                hideSideBar = _this$props.hideSideBar;
-
-
-            openPost(id);
-            if (hideSideBar) hideSideBar();
+        _this.handleSelectItem = function () {
+            return _this.__handleSelectItem__REACT_HOT_LOADER__.apply(_this, arguments);
         };
 
         _this.state = {
@@ -50926,9 +51268,39 @@ var ListTitlesItem = function (_Component) {
     }
 
     _createClass(ListTitlesItem, [{
+        key: '__handleSelectItem__REACT_HOT_LOADER__',
+        value: function __handleSelectItem__REACT_HOT_LOADER__() {
+            return this.__handleSelectItem__REACT_HOT_LOADER__.apply(this, arguments);
+        }
+    }, {
+        key: '__componentWillReceiveProps__REACT_HOT_LOADER__',
+        value: function __componentWillReceiveProps__REACT_HOT_LOADER__() {
+            return this.__componentWillReceiveProps__REACT_HOT_LOADER__.apply(this, arguments);
+        }
+    }, {
+        key: '__componentDidUpdate__REACT_HOT_LOADER__',
+        value: function __componentDidUpdate__REACT_HOT_LOADER__() {
+            return this.__componentDidUpdate__REACT_HOT_LOADER__.apply(this, arguments);
+        }
+    }, {
         key: 'componentDidMount',
         value: function componentDidMount() {
             this.activeAnimateIn();
+        }
+    }, {
+        key: '__componentDidUpdate__REACT_HOT_LOADER__',
+        value: function __componentDidUpdate__REACT_HOT_LOADER__(prevProps) {
+            if (prevProps.post !== this.props.post) {
+                this.setState({ hidden: true });
+                this.activeAnimateIn();
+            }
+        }
+    }, {
+        key: '__componentWillReceiveProps__REACT_HOT_LOADER__',
+        value: function __componentWillReceiveProps__REACT_HOT_LOADER__(nextProps) {
+            if (nextProps.post.id === parseInt(nextProps.match.params.id)) {
+                this.activeAnimateSelect();
+            }
         }
     }, {
         key: 'activeAnimateSelect',
@@ -50961,13 +51333,24 @@ var ListTitlesItem = function (_Component) {
             }, timeoutMs + 1000);
         }
     }, {
+        key: '__handleSelectItem__REACT_HOT_LOADER__',
+        value: function __handleSelectItem__REACT_HOT_LOADER__(id) {
+            var _props = this.props,
+                openPost = _props.openPost,
+                hideSideBar = _props.hideSideBar;
+
+
+            openPost(id);
+            if (hideSideBar) hideSideBar();
+        }
+    }, {
         key: 'render',
         value: function render() {
             var _this4 = this;
 
-            var _props = this.props,
-                post = _props.post,
-                match = _props.match,
+            var _props2 = this.props,
+                post = _props2.post,
+                match = _props2.match,
                 _state = this.state,
                 animateIn = _state.animateIn,
                 animateSelect = _state.animateSelect,
@@ -50999,7 +51382,21 @@ var ListTitlesItem = function (_Component) {
     return ListTitlesItem;
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
 
-/* harmony default export */ __webpack_exports__["a"] = (ListTitlesItem);
+var _default = ListTitlesItem;
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+var _temp = function () {
+    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+        return;
+    }
+
+    __REACT_HOT_LOADER__.register(ListTitlesItem, 'ListTitlesItem', '/home/nick/dev/Freelance/Documenty_React/src/components/ui/ListTitlesItem.js');
+
+    __REACT_HOT_LOADER__.register(_default, 'default', '/home/nick/dev/Freelance/Documenty_React/src/components/ui/ListTitlesItem.js');
+}();
+
+;
 
 /***/ }),
 
@@ -51048,19 +51445,26 @@ var PreviewsGrid = function (_Component) {
 		}
 
 		return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = PreviewsGrid.__proto__ || Object.getPrototypeOf(PreviewsGrid)).call.apply(_ref, [this].concat(args))), _this), _this.componentWillUnmount = function () {
-			if (_this.msnry) _this.msnry.destroy();
+			var _this2;
+
+			return (_this2 = _this).__componentWillUnmount__REACT_HOT_LOADER__.apply(_this2, arguments);
 		}, _temp), _possibleConstructorReturn(_this, _ret);
 	}
 
 	_createClass(PreviewsGrid, [{
+		key: '__componentWillUnmount__REACT_HOT_LOADER__',
+		value: function __componentWillUnmount__REACT_HOT_LOADER__() {
+			return this.__componentWillUnmount__REACT_HOT_LOADER__.apply(this, arguments);
+		}
+	}, {
 		key: 'componentDidMount',
 		value: function componentDidMount() {
-			var _this2 = this;
+			var _this3 = this;
 
 			var grid = this.refs.grid;
 
 			__WEBPACK_IMPORTED_MODULE_2_imagesloaded___default()(grid, function () {
-				_this2.msnry = new __WEBPACK_IMPORTED_MODULE_3_masonry_layout___default.a(grid, {
+				_this3.msnry = new __WEBPACK_IMPORTED_MODULE_3_masonry_layout___default.a(grid, {
 					itemSelector: '.PreviewsItem',
 					gutter: 10,
 					isFitWidth: true
@@ -51076,9 +51480,14 @@ var PreviewsGrid = function (_Component) {
 			}
 		}
 	}, {
+		key: '__componentWillUnmount__REACT_HOT_LOADER__',
+		value: function __componentWillUnmount__REACT_HOT_LOADER__() {
+			if (this.msnry) this.msnry.destroy();
+		}
+	}, {
 		key: 'render',
 		value: function render() {
-			var _this3 = this;
+			var _this4 = this;
 
 			var posts = this.props.posts;
 
@@ -51090,21 +51499,21 @@ var PreviewsGrid = function (_Component) {
 					return React.createElement(__WEBPACK_IMPORTED_MODULE_4__PreviewsItem__["a" /* default */], _extends({
 						key: i,
 						post: post
-					}, _this3.props));
+					}, _this4.props));
 				})
 			);
 		}
 	}, {
 		key: '_msnryLayout',
 		value: function _msnryLayout() {
-			var _this4 = this;
+			var _this5 = this;
 
 			var grid = this.refs.grid;
 
 			this.msnry.reloadItems();
 
 			__WEBPACK_IMPORTED_MODULE_2_imagesloaded___default()(grid, function () {
-				_this4.msnry.layout();
+				_this5.msnry.layout();
 			});
 		}
 	}]);
@@ -51119,7 +51528,21 @@ PreviewsGrid.propTypes = {
 	// openItem: PropTypes.func
 };
 
-/* harmony default export */ __webpack_exports__["a"] = (PreviewsGrid);
+var _default = PreviewsGrid;
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+var _temp2 = function () {
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
+
+	__REACT_HOT_LOADER__.register(PreviewsGrid, 'PreviewsGrid', '/home/nick/dev/Freelance/Documenty_React/src/components/ui/PreviewsGrid.js');
+
+	__REACT_HOT_LOADER__.register(_default, 'default', '/home/nick/dev/Freelance/Documenty_React/src/components/ui/PreviewsGrid.js');
+}();
+
+;
 
 /***/ }),
 
@@ -51165,19 +51588,16 @@ var PreviewsItem = function (_Component) {
 
         var _this = _possibleConstructorReturn(this, (PreviewsItem.__proto__ || Object.getPrototypeOf(PreviewsItem)).call(this));
 
-        _this.handleSelectItem = function (id) {
-            _this.props.openPost(id);
+        _this.handleSelectItem = function () {
+            return _this.__handleSelectItem__REACT_HOT_LOADER__.apply(_this, arguments);
         };
 
-        _this.handleChangeLogo = function (imageSrc) {
-            _this.setState({ imageSrc: imageSrc });
+        _this.handleChangeLogo = function () {
+            return _this.__handleChangeLogo__REACT_HOT_LOADER__.apply(_this, arguments);
         };
 
-        _this._getDaysFromDatePost = function (dateFromPost) {
-            var datePost = new Date(dateFromPost),
-                today = new Date();
-
-            return today.getDate() - datePost.getDate();
+        _this._getDaysFromDatePost = function () {
+            return _this.___getDaysFromDatePost__REACT_HOT_LOADER__.apply(_this, arguments);
         };
 
         _this.state = {
@@ -51187,15 +51607,32 @@ var PreviewsItem = function (_Component) {
     }
 
     _createClass(PreviewsItem, [{
+        key: '___getDaysFromDatePost__REACT_HOT_LOADER__',
+        value: function ___getDaysFromDatePost__REACT_HOT_LOADER__() {
+            return this.___getDaysFromDatePost__REACT_HOT_LOADER__.apply(this, arguments);
+        }
+    }, {
+        key: '__handleChangeLogo__REACT_HOT_LOADER__',
+        value: function __handleChangeLogo__REACT_HOT_LOADER__() {
+            return this.__handleChangeLogo__REACT_HOT_LOADER__.apply(this, arguments);
+        }
+    }, {
+        key: '__handleSelectItem__REACT_HOT_LOADER__',
+        value: function __handleSelectItem__REACT_HOT_LOADER__() {
+            return this.__handleSelectItem__REACT_HOT_LOADER__.apply(this, arguments);
+        }
+    }, {
+        key: '__handleSelectItem__REACT_HOT_LOADER__',
+        value: function __handleSelectItem__REACT_HOT_LOADER__(id) {
+            this.props.openPost(id);
+        }
+    }, {
+        key: '__handleChangeLogo__REACT_HOT_LOADER__',
+        value: function __handleChangeLogo__REACT_HOT_LOADER__(imageSrc) {
+            this.setState({ imageSrc: imageSrc });
+        }
+    }, {
         key: 'render',
-
-
-        // _cutText = (text) => {
-        //     let cuttedText = text.substring(0, 200),
-        //         lastSpaceIndex = cuttedText.lastIndexOf(" ") || 0
-
-        //     return cuttedText.substring(0, lastSpaceIndex) + " ..."
-        // }
         value: function render() {
             var _this2 = this;
 
@@ -51272,12 +51709,42 @@ var PreviewsItem = function (_Component) {
                 )
             );
         }
+    }, {
+        key: '___getDaysFromDatePost__REACT_HOT_LOADER__',
+
+
+        // _cutText = (text) => {
+        //     let cuttedText = text.substring(0, 200),
+        //         lastSpaceIndex = cuttedText.lastIndexOf(" ") || 0
+
+        //     return cuttedText.substring(0, lastSpaceIndex) + " ..."
+        // }
+        value: function ___getDaysFromDatePost__REACT_HOT_LOADER__(dateFromPost) {
+            var datePost = new Date(dateFromPost),
+                today = new Date();
+
+            return today.getDate() - datePost.getDate();
+        }
     }]);
 
     return PreviewsItem;
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
 
-/* harmony default export */ __webpack_exports__["a"] = (PreviewsItem);
+var _default = PreviewsItem;
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+var _temp = function () {
+    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+        return;
+    }
+
+    __REACT_HOT_LOADER__.register(PreviewsItem, 'PreviewsItem', '/home/nick/dev/Freelance/Documenty_React/src/components/ui/PreviewsItem.js');
+
+    __REACT_HOT_LOADER__.register(_default, 'default', '/home/nick/dev/Freelance/Documenty_React/src/components/ui/PreviewsItem.js');
+}();
+
+;
 
 /***/ }),
 
@@ -51315,15 +51782,27 @@ var PreviewsList = function (_Component) {
             args[_key] = arguments[_key];
         }
 
-        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = PreviewsList.__proto__ || Object.getPrototypeOf(PreviewsList)).call.apply(_ref, [this].concat(args))), _this), _this.shouldComponentUpdate = function (nextProps) {
-            return nextProps.postsOnScreen !== _this.props.postsOnScreen;
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = PreviewsList.__proto__ || Object.getPrototypeOf(PreviewsList)).call.apply(_ref, [this].concat(args))), _this), _this.shouldComponentUpdate = function () {
+            var _this2;
+
+            return (_this2 = _this).__shouldComponentUpdate__REACT_HOT_LOADER__.apply(_this2, arguments);
         }, _temp), _possibleConstructorReturn(_this, _ret);
     }
 
     _createClass(PreviewsList, [{
+        key: '__shouldComponentUpdate__REACT_HOT_LOADER__',
+        value: function __shouldComponentUpdate__REACT_HOT_LOADER__() {
+            return this.__shouldComponentUpdate__REACT_HOT_LOADER__.apply(this, arguments);
+        }
+    }, {
+        key: '__shouldComponentUpdate__REACT_HOT_LOADER__',
+        value: function __shouldComponentUpdate__REACT_HOT_LOADER__(nextProps) {
+            return nextProps.postsOnScreen !== this.props.postsOnScreen;
+        }
+    }, {
         key: 'render',
         value: function render() {
-            var _this2 = this;
+            var _this3 = this;
 
             var postsOnScreen = this.props.postsOnScreen;
 
@@ -51338,7 +51817,7 @@ var PreviewsList = function (_Component) {
                         key: i,
                         post: post,
                         timeoutMs: 100 * i
-                    }, _this2.props));
+                    }, _this3.props));
                 })
             );
         }
@@ -51347,7 +51826,21 @@ var PreviewsList = function (_Component) {
     return PreviewsList;
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
 
-/* unused harmony default export */ var _unused_webpack_default_export = (PreviewsList);
+var _default = PreviewsList;
+/* unused harmony default export */ var _unused_webpack_default_export = (_default);
+;
+
+var _temp2 = function () {
+    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+        return;
+    }
+
+    __REACT_HOT_LOADER__.register(PreviewsList, 'PreviewsList', '/home/nick/dev/Freelance/Documenty_React/src/components/ui/PreviewsList.js');
+
+    __REACT_HOT_LOADER__.register(_default, 'default', '/home/nick/dev/Freelance/Documenty_React/src/components/ui/PreviewsList.js');
+}();
+
+;
 
 /***/ }),
 
@@ -51391,56 +51884,35 @@ var PreviewsPage = function (_Component) {
         var _this = _possibleConstructorReturn(this, (PreviewsPage.__proto__ || Object.getPrototypeOf(PreviewsPage)).call(this));
 
         _this.componentWillMount = function () {
-            _this.updatePages(_this.props.posts);
+            return _this.__componentWillMount__REACT_HOT_LOADER__.apply(_this, arguments);
         };
 
-        _this.shouldComponentUpdate = function (nextProps, nextState) {
-            return nextProps.posts && nextProps.posts !== _this.props.posts || nextState.activePageIndex !== _this.state.activePageIndex || nextProps.screenWidth !== _this.props.screenWidth;
+        _this.shouldComponentUpdate = function () {
+            return _this.__shouldComponentUpdate__REACT_HOT_LOADER__.apply(_this, arguments);
         };
 
-        _this.componentWillReceiveProps = function (nextProps) {
-            if (nextProps.posts !== _this.props.posts) {
-                _this.updatePages(nextProps.posts);
-            }
+        _this.componentWillReceiveProps = function () {
+            return _this.__componentWillReceiveProps__REACT_HOT_LOADER__.apply(_this, arguments);
         };
 
-        _this.updatePages = function (posts) {
-            var size = _this.props.screenWidth > 480 ? __WEBPACK_IMPORTED_MODULE_5__constants__["c" /* LIST_PREVIEWS_SIZE */] : posts.length,
-                pages = _this._splitPosts(posts, size);
-
-            _this.setState({ pages: pages, activePageIndex: 0 });
+        _this.updatePages = function () {
+            return _this.__updatePages__REACT_HOT_LOADER__.apply(_this, arguments);
         };
 
-        _this.updatePage = function (activePageIndex) {
-            _this.setState({ activePageIndex: activePageIndex });
-            window.scrollTo(0, 0);
+        _this.updatePage = function () {
+            return _this.__updatePage__REACT_HOT_LOADER__.apply(_this, arguments);
         };
 
         _this.handleOpenPrev = function () {
-            var activePageIndex = _this.state.activePageIndex;
-
-
-            if (activePageIndex > 0) activePageIndex--;
-            _this.updatePage(activePageIndex);
+            return _this.__handleOpenPrev__REACT_HOT_LOADER__.apply(_this, arguments);
         };
 
         _this.handleOpenNext = function () {
-            var _this$state = _this.state,
-                pages = _this$state.pages,
-                activePageIndex = _this$state.activePageIndex;
-
-
-            if (activePageIndex < pages.length - 1) activePageIndex++;
-            _this.updatePage(activePageIndex);
+            return _this.__handleOpenNext__REACT_HOT_LOADER__.apply(_this, arguments);
         };
 
-        _this._splitPosts = function (posts, postsOnPage) {
-            var pages = [],
-                postsCopy = [].concat(posts);
-
-            while (postsCopy.length > 0) {
-                pages.push(postsCopy.splice(0, postsOnPage));
-            }return pages;
+        _this._splitPosts = function () {
+            return _this.___splitPosts__REACT_HOT_LOADER__.apply(_this, arguments);
         };
 
         _this.state = {
@@ -51451,11 +51923,102 @@ var PreviewsPage = function (_Component) {
     }
 
     _createClass(PreviewsPage, [{
-        key: 'render',
-        value: function render() {
+        key: '___splitPosts__REACT_HOT_LOADER__',
+        value: function ___splitPosts__REACT_HOT_LOADER__() {
+            return this.___splitPosts__REACT_HOT_LOADER__.apply(this, arguments);
+        }
+    }, {
+        key: '__handleOpenNext__REACT_HOT_LOADER__',
+        value: function __handleOpenNext__REACT_HOT_LOADER__() {
+            return this.__handleOpenNext__REACT_HOT_LOADER__.apply(this, arguments);
+        }
+    }, {
+        key: '__handleOpenPrev__REACT_HOT_LOADER__',
+        value: function __handleOpenPrev__REACT_HOT_LOADER__() {
+            return this.__handleOpenPrev__REACT_HOT_LOADER__.apply(this, arguments);
+        }
+    }, {
+        key: '__updatePage__REACT_HOT_LOADER__',
+        value: function __updatePage__REACT_HOT_LOADER__() {
+            return this.__updatePage__REACT_HOT_LOADER__.apply(this, arguments);
+        }
+    }, {
+        key: '__updatePages__REACT_HOT_LOADER__',
+        value: function __updatePages__REACT_HOT_LOADER__() {
+            return this.__updatePages__REACT_HOT_LOADER__.apply(this, arguments);
+        }
+    }, {
+        key: '__componentWillReceiveProps__REACT_HOT_LOADER__',
+        value: function __componentWillReceiveProps__REACT_HOT_LOADER__() {
+            return this.__componentWillReceiveProps__REACT_HOT_LOADER__.apply(this, arguments);
+        }
+    }, {
+        key: '__shouldComponentUpdate__REACT_HOT_LOADER__',
+        value: function __shouldComponentUpdate__REACT_HOT_LOADER__() {
+            return this.__shouldComponentUpdate__REACT_HOT_LOADER__.apply(this, arguments);
+        }
+    }, {
+        key: '__componentWillMount__REACT_HOT_LOADER__',
+        value: function __componentWillMount__REACT_HOT_LOADER__() {
+            return this.__componentWillMount__REACT_HOT_LOADER__.apply(this, arguments);
+        }
+    }, {
+        key: '__componentWillMount__REACT_HOT_LOADER__',
+        value: function __componentWillMount__REACT_HOT_LOADER__() {
+            this.updatePages(this.props.posts);
+        }
+    }, {
+        key: '__shouldComponentUpdate__REACT_HOT_LOADER__',
+        value: function __shouldComponentUpdate__REACT_HOT_LOADER__(nextProps, nextState) {
+            return nextProps.posts && nextProps.posts !== this.props.posts || nextState.activePageIndex !== this.state.activePageIndex || nextProps.screenWidth !== this.props.screenWidth;
+        }
+    }, {
+        key: '__componentWillReceiveProps__REACT_HOT_LOADER__',
+        value: function __componentWillReceiveProps__REACT_HOT_LOADER__(nextProps) {
+            if (nextProps.posts !== this.props.posts) {
+                this.updatePages(nextProps.posts);
+            }
+        }
+    }, {
+        key: '__updatePages__REACT_HOT_LOADER__',
+        value: function __updatePages__REACT_HOT_LOADER__(posts) {
+            var size = this.props.screenWidth > 480 ? __WEBPACK_IMPORTED_MODULE_5__constants__["c" /* LIST_PREVIEWS_SIZE */] : posts.length,
+                pages = this._splitPosts(posts, size);
+
+            this.setState({ pages: pages, activePageIndex: 0 });
+        }
+    }, {
+        key: '__updatePage__REACT_HOT_LOADER__',
+        value: function __updatePage__REACT_HOT_LOADER__(activePageIndex) {
+            this.setState({ activePageIndex: activePageIndex });
+            window.scrollTo(0, 0);
+        }
+    }, {
+        key: '__handleOpenPrev__REACT_HOT_LOADER__',
+        value: function __handleOpenPrev__REACT_HOT_LOADER__() {
+            var activePageIndex = this.state.activePageIndex;
+
+
+            if (activePageIndex > 0) activePageIndex--;
+            this.updatePage(activePageIndex);
+        }
+    }, {
+        key: '__handleOpenNext__REACT_HOT_LOADER__',
+        value: function __handleOpenNext__REACT_HOT_LOADER__() {
             var _state = this.state,
                 pages = _state.pages,
                 activePageIndex = _state.activePageIndex;
+
+
+            if (activePageIndex < pages.length - 1) activePageIndex++;
+            this.updatePage(activePageIndex);
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var _state2 = this.state,
+                pages = _state2.pages,
+                activePageIndex = _state2.activePageIndex;
 
 
             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -51468,12 +52031,36 @@ var PreviewsPage = function (_Component) {
                 }))
             );
         }
+    }, {
+        key: '___splitPosts__REACT_HOT_LOADER__',
+        value: function ___splitPosts__REACT_HOT_LOADER__(posts, postsOnPage) {
+            var pages = [],
+                postsCopy = [].concat(posts);
+
+            while (postsCopy.length > 0) {
+                pages.push(postsCopy.splice(0, postsOnPage));
+            }return pages;
+        }
     }]);
 
     return PreviewsPage;
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
 
-/* harmony default export */ __webpack_exports__["a"] = (PreviewsPage);
+var _default = PreviewsPage;
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+var _temp = function () {
+    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+        return;
+    }
+
+    __REACT_HOT_LOADER__.register(PreviewsPage, 'PreviewsPage', '/home/nick/dev/Freelance/Documenty_React/src/components/ui/PreviewsPage.js');
+
+    __REACT_HOT_LOADER__.register(_default, 'default', '/home/nick/dev/Freelance/Documenty_React/src/components/ui/PreviewsPage.js');
+}();
+
+;
 
 /***/ }),
 
@@ -51513,45 +52100,23 @@ var Quotes = function (_Component) {
         var _this = _possibleConstructorReturn(this, (Quotes.__proto__ || Object.getPrototypeOf(Quotes)).call(this));
 
         _this.componentWillMount = function () {
-            var postsWithQuotes = _this.context.posts.filter(function (post) {
-                return post.quote.length > 0;
-            });
-
-            _this.setState({
-                postsWithQuotes: postsWithQuotes,
-                activePostIndex: Math.floor(Math.random() * postsWithQuotes.length)
-            });
+            return _this.__componentWillMount__REACT_HOT_LOADER__.apply(_this, arguments);
         };
 
         _this.componentWillUnmount = function () {
-            clearInterval(_this.timerID);
+            return _this.__componentWillUnmount__REACT_HOT_LOADER__.apply(_this, arguments);
         };
 
         _this.changeActivePostIndex = function () {
-            var activePostIndex = _this._getRandomIndex();
-
-            _this.setState({ activePostIndex: activePostIndex });
-            _this.activeAnimate();
+            return _this.__changeActivePostIndex__REACT_HOT_LOADER__.apply(_this, arguments);
         };
 
-        _this.handleOpenPost = function (id, tag) {
-            _this.props.openPost(id, tag);
+        _this.handleOpenPost = function () {
+            return _this.__handleOpenPost__REACT_HOT_LOADER__.apply(_this, arguments);
         };
 
         _this._getRandomIndex = function () {
-            var _this$state = _this.state,
-                activePostIndex = _this$state.activePostIndex,
-                postsWithQuotes = _this$state.postsWithQuotes;
-
-
-            var getRandom = function getRandom() {
-                return Math.floor(Math.random() * postsWithQuotes.length);
-            },
-                newActivePostIndex = getRandom();
-
-            while (activePostIndex === newActivePostIndex) {
-                newActivePostIndex = getRandom();
-            }return newActivePostIndex;
+            return _this.___getRandomIndex__REACT_HOT_LOADER__.apply(_this, arguments);
         };
 
         _this.state = {
@@ -51563,6 +52128,48 @@ var Quotes = function (_Component) {
     }
 
     _createClass(Quotes, [{
+        key: '___getRandomIndex__REACT_HOT_LOADER__',
+        value: function ___getRandomIndex__REACT_HOT_LOADER__() {
+            return this.___getRandomIndex__REACT_HOT_LOADER__.apply(this, arguments);
+        }
+    }, {
+        key: '__handleOpenPost__REACT_HOT_LOADER__',
+        value: function __handleOpenPost__REACT_HOT_LOADER__() {
+            return this.__handleOpenPost__REACT_HOT_LOADER__.apply(this, arguments);
+        }
+    }, {
+        key: '__changeActivePostIndex__REACT_HOT_LOADER__',
+        value: function __changeActivePostIndex__REACT_HOT_LOADER__() {
+            return this.__changeActivePostIndex__REACT_HOT_LOADER__.apply(this, arguments);
+        }
+    }, {
+        key: '__componentWillUnmount__REACT_HOT_LOADER__',
+        value: function __componentWillUnmount__REACT_HOT_LOADER__() {
+            return this.__componentWillUnmount__REACT_HOT_LOADER__.apply(this, arguments);
+        }
+    }, {
+        key: '__componentWillMount__REACT_HOT_LOADER__',
+        value: function __componentWillMount__REACT_HOT_LOADER__() {
+            return this.__componentWillMount__REACT_HOT_LOADER__.apply(this, arguments);
+        }
+    }, {
+        key: '__componentWillMount__REACT_HOT_LOADER__',
+        value: function __componentWillMount__REACT_HOT_LOADER__() {
+            var postsWithQuotes = this.context.posts.filter(function (post) {
+                return post.quote.length > 0;
+            });
+
+            this.setState({
+                postsWithQuotes: postsWithQuotes,
+                activePostIndex: Math.floor(Math.random() * postsWithQuotes.length)
+            });
+        }
+    }, {
+        key: '__componentWillUnmount__REACT_HOT_LOADER__',
+        value: function __componentWillUnmount__REACT_HOT_LOADER__() {
+            clearInterval(this.timerID);
+        }
+    }, {
         key: 'componentDidMount',
         value: function componentDidMount() {
             var _this2 = this;
@@ -51570,6 +52177,14 @@ var Quotes = function (_Component) {
             this.timerID = setInterval(function () {
                 return _this2.changeActivePostIndex();
             }, 10000);
+            this.activeAnimate();
+        }
+    }, {
+        key: '__changeActivePostIndex__REACT_HOT_LOADER__',
+        value: function __changeActivePostIndex__REACT_HOT_LOADER__() {
+            var activePostIndex = this._getRandomIndex();
+
+            this.setState({ activePostIndex: activePostIndex });
             this.activeAnimate();
         }
     }, {
@@ -51582,6 +52197,11 @@ var Quotes = function (_Component) {
             setTimeout(function () {
                 _this3.setState({ animate: false });
             }, 1000);
+        }
+    }, {
+        key: '__handleOpenPost__REACT_HOT_LOADER__',
+        value: function __handleOpenPost__REACT_HOT_LOADER__(id, tag) {
+            this.props.openPost(id, tag);
         }
     }, {
         key: 'render',
@@ -51621,17 +52241,48 @@ var Quotes = function (_Component) {
                 )
             );
         }
+    }, {
+        key: '___getRandomIndex__REACT_HOT_LOADER__',
+        value: function ___getRandomIndex__REACT_HOT_LOADER__() {
+            var _state2 = this.state,
+                activePostIndex = _state2.activePostIndex,
+                postsWithQuotes = _state2.postsWithQuotes;
+
+
+            var getRandom = function getRandom() {
+                return Math.floor(Math.random() * postsWithQuotes.length);
+            },
+                newActivePostIndex = getRandom();
+
+            while (activePostIndex === newActivePostIndex) {
+                newActivePostIndex = getRandom();
+            }return newActivePostIndex;
+        }
     }]);
 
     return Quotes;
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
 
-/* harmony default export */ __webpack_exports__["a"] = (Quotes);
+var _default = Quotes;
+/* harmony default export */ __webpack_exports__["a"] = (_default);
 
 
 Quotes.contextTypes = {
     posts: __WEBPACK_IMPORTED_MODULE_1_prop_types__["PropTypes"].array
 };
+;
+
+var _temp = function () {
+    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+        return;
+    }
+
+    __REACT_HOT_LOADER__.register(Quotes, 'Quotes', '/home/nick/dev/Freelance/Documenty_React/src/components/ui/Quotes.js');
+
+    __REACT_HOT_LOADER__.register(_default, 'default', '/home/nick/dev/Freelance/Documenty_React/src/components/ui/Quotes.js');
+}();
+
+;
 
 /***/ }),
 
@@ -51672,22 +52323,65 @@ var SideBar = function (_Component) {
             args[_key] = arguments[_key];
         }
 
-        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = SideBar.__proto__ || Object.getPrototypeOf(SideBar)).call.apply(_ref, [this].concat(args))), _this), _this.shouldComponentUpdate = function (nextProps) {
-            return nextProps.isOpen !== _this.props.isOpen;
-        }, _this.componentWillReceiveProps = function (_ref2) {
-            var isOpen = _ref2.isOpen;
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = SideBar.__proto__ || Object.getPrototypeOf(SideBar)).call.apply(_ref, [this].concat(args))), _this), _this.shouldComponentUpdate = function () {
+            var _this2;
 
-            if (isOpen !== _this.props.isOpen) {
-                _this._changeHtmlScrollingY(isOpen);
-            }
-        }, _this.handleClickOutside = function (evt) {
-            _this.props.hideSideBar();
-        }, _this._changeHtmlScrollingY = function (isOpenSideBar) {
-            document.getElementsByTagName("html")[0].style.overflowY = isOpenSideBar ? 'hidden' : 'auto';
+            return (_this2 = _this).__shouldComponentUpdate__REACT_HOT_LOADER__.apply(_this2, arguments);
+        }, _this.componentWillReceiveProps = function () {
+            var _this3;
+
+            return (_this3 = _this).__componentWillReceiveProps__REACT_HOT_LOADER__.apply(_this3, arguments);
+        }, _this.handleClickOutside = function () {
+            var _this4;
+
+            return (_this4 = _this).__handleClickOutside__REACT_HOT_LOADER__.apply(_this4, arguments);
+        }, _this._changeHtmlScrollingY = function () {
+            var _this5;
+
+            return (_this5 = _this).___changeHtmlScrollingY__REACT_HOT_LOADER__.apply(_this5, arguments);
         }, _temp), _possibleConstructorReturn(_this, _ret);
     }
 
     _createClass(SideBar, [{
+        key: '___changeHtmlScrollingY__REACT_HOT_LOADER__',
+        value: function ___changeHtmlScrollingY__REACT_HOT_LOADER__() {
+            return this.___changeHtmlScrollingY__REACT_HOT_LOADER__.apply(this, arguments);
+        }
+    }, {
+        key: '__handleClickOutside__REACT_HOT_LOADER__',
+        value: function __handleClickOutside__REACT_HOT_LOADER__() {
+            return this.__handleClickOutside__REACT_HOT_LOADER__.apply(this, arguments);
+        }
+    }, {
+        key: '__componentWillReceiveProps__REACT_HOT_LOADER__',
+        value: function __componentWillReceiveProps__REACT_HOT_LOADER__() {
+            return this.__componentWillReceiveProps__REACT_HOT_LOADER__.apply(this, arguments);
+        }
+    }, {
+        key: '__shouldComponentUpdate__REACT_HOT_LOADER__',
+        value: function __shouldComponentUpdate__REACT_HOT_LOADER__() {
+            return this.__shouldComponentUpdate__REACT_HOT_LOADER__.apply(this, arguments);
+        }
+    }, {
+        key: '__shouldComponentUpdate__REACT_HOT_LOADER__',
+        value: function __shouldComponentUpdate__REACT_HOT_LOADER__(nextProps) {
+            return nextProps.isOpen !== this.props.isOpen;
+        }
+    }, {
+        key: '__componentWillReceiveProps__REACT_HOT_LOADER__',
+        value: function __componentWillReceiveProps__REACT_HOT_LOADER__(_ref2) {
+            var isOpen = _ref2.isOpen;
+
+            if (isOpen !== this.props.isOpen) {
+                this._changeHtmlScrollingY(isOpen);
+            }
+        }
+    }, {
+        key: '__handleClickOutside__REACT_HOT_LOADER__',
+        value: function __handleClickOutside__REACT_HOT_LOADER__(evt) {
+            this.props.hideSideBar();
+        }
+    }, {
         key: 'render',
         value: function render() {
             var isOpen = this.props.isOpen,
@@ -51700,12 +52394,32 @@ var SideBar = function (_Component) {
                 React.createElement(__WEBPACK_IMPORTED_MODULE_3__ListTitles__["a" /* default */], this.props)
             );
         }
+    }, {
+        key: '___changeHtmlScrollingY__REACT_HOT_LOADER__',
+        value: function ___changeHtmlScrollingY__REACT_HOT_LOADER__(isOpenSideBar) {
+            document.getElementsByTagName("html")[0].style.overflowY = isOpenSideBar ? 'hidden' : 'auto';
+        }
     }]);
 
     return SideBar;
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
 
-/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_2_react_onclickoutside__["a" /* default */])(SideBar));
+var _default = Object(__WEBPACK_IMPORTED_MODULE_2_react_onclickoutside__["a" /* default */])(SideBar);
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+var _temp2 = function () {
+    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+        return;
+    }
+
+    __REACT_HOT_LOADER__.register(SideBar, 'SideBar', '/home/nick/dev/Freelance/Documenty_React/src/components/ui/SideBar.js');
+
+    __REACT_HOT_LOADER__.register(_default, 'default', '/home/nick/dev/Freelance/Documenty_React/src/components/ui/SideBar.js');
+}();
+
+;
 
 /***/ }),
 
@@ -51727,7 +52441,21 @@ var SideBlock = function SideBlock(props) {
     if (isPreviewsPageOpen) return null;else if (props.screenWidth > 480) return React.createElement(__WEBPACK_IMPORTED_MODULE_1__SideList__["a" /* default */], props);else return React.createElement(__WEBPACK_IMPORTED_MODULE_0__SideBar__["a" /* default */], _extends({ isOpen: props.isSideBarOpening }, props));
 };
 
-/* harmony default export */ __webpack_exports__["a"] = (SideBlock);
+var _default = SideBlock;
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+var _temp = function () {
+    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+        return;
+    }
+
+    __REACT_HOT_LOADER__.register(SideBlock, 'SideBlock', '/home/nick/dev/Freelance/Documenty_React/src/components/ui/SideBlock.js');
+
+    __REACT_HOT_LOADER__.register(_default, 'default', '/home/nick/dev/Freelance/Documenty_React/src/components/ui/SideBlock.js');
+}();
+
+;
 
 /***/ }),
 
@@ -51766,13 +52494,25 @@ var SideList = function (_Component) {
         }
 
         return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = SideList.__proto__ || Object.getPrototypeOf(SideList)).call.apply(_ref, [this].concat(args))), _this), _this.renderListTitles = function () {
-            if (_this.props.isPreviewsOpen) return null;
+            var _this2;
 
-            return React.createElement(__WEBPACK_IMPORTED_MODULE_1__ListTitles__["a" /* default */], _this.props);
+            return (_this2 = _this).__renderListTitles__REACT_HOT_LOADER__.apply(_this2, arguments);
         }, _temp), _possibleConstructorReturn(_this, _ret);
     }
 
     _createClass(SideList, [{
+        key: '__renderListTitles__REACT_HOT_LOADER__',
+        value: function __renderListTitles__REACT_HOT_LOADER__() {
+            return this.__renderListTitles__REACT_HOT_LOADER__.apply(this, arguments);
+        }
+    }, {
+        key: '__renderListTitles__REACT_HOT_LOADER__',
+        value: function __renderListTitles__REACT_HOT_LOADER__() {
+            if (this.props.isPreviewsOpen) return null;
+
+            return React.createElement(__WEBPACK_IMPORTED_MODULE_1__ListTitles__["a" /* default */], this.props);
+        }
+    }, {
         key: 'render',
         value: function render() {
             return React.createElement(
@@ -51787,7 +52527,21 @@ var SideList = function (_Component) {
     return SideList;
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
 
-/* harmony default export */ __webpack_exports__["a"] = (SideList);
+var _default = SideList;
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+var _temp2 = function () {
+    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+        return;
+    }
+
+    __REACT_HOT_LOADER__.register(SideList, 'SideList', '/home/nick/dev/Freelance/Documenty_React/src/components/ui/SideList.js');
+
+    __REACT_HOT_LOADER__.register(_default, 'default', '/home/nick/dev/Freelance/Documenty_React/src/components/ui/SideList.js');
+}();
+
+;
 
 /***/ }),
 
@@ -51868,7 +52622,21 @@ var SocialShareButtons = function SocialShareButtons(_ref) {
     );
 };
 
-/* harmony default export */ __webpack_exports__["a"] = (SocialShareButtons);
+var _default = SocialShareButtons;
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+var _temp = function () {
+    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+        return;
+    }
+
+    __REACT_HOT_LOADER__.register(SocialShareButtons, 'SocialShareButtons', '/home/nick/dev/Freelance/Documenty_React/src/components/ui/SocialShareButtons.js');
+
+    __REACT_HOT_LOADER__.register(_default, 'default', '/home/nick/dev/Freelance/Documenty_React/src/components/ui/SocialShareButtons.js');
+}();
+
+;
 
 /***/ }),
 
@@ -51889,7 +52657,21 @@ var ViewCount = function ViewCount(props) {
     );
 };
 
-/* harmony default export */ __webpack_exports__["a"] = (ViewCount);
+var _default = ViewCount;
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+var _temp = function () {
+    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+        return;
+    }
+
+    __REACT_HOT_LOADER__.register(ViewCount, "ViewCount", "/home/nick/dev/Freelance/Documenty_React/src/components/ui/ViewCount.js");
+
+    __REACT_HOT_LOADER__.register(_default, "default", "/home/nick/dev/Freelance/Documenty_React/src/components/ui/ViewCount.js");
+}();
+
+;
 
 /***/ }),
 
@@ -51912,7 +52694,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 
-/* harmony default export */ __webpack_exports__["a"] = (function (funcPrev, funcNext) {
+var _default = function _default(funcPrev, funcNext) {
     return function (SwipingComponent) {
 
         return function (_Component) {
@@ -51968,7 +52750,20 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
             return wrapperSwipe;
         }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
     };
-});
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+var _temp = function () {
+    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+        return;
+    }
+
+    __REACT_HOT_LOADER__.register(_default, 'default', '/home/nick/dev/Freelance/Documenty_React/src/components/ui/wrapperSwipe.js');
+}();
+
+;
 
 /***/ }),
 
@@ -51993,6 +52788,25 @@ var ANIMATIONS = {
 };
 
 var LIST_PREVIEWS_SIZE = 20;
+;
+
+var _temp = function () {
+    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+        return;
+    }
+
+    __REACT_HOT_LOADER__.register(LINKS, 'LINKS', '/home/nick/dev/Freelance/Documenty_React/src/constants.js');
+
+    __REACT_HOT_LOADER__.register(LINKS_UKR, 'LINKS_UKR', '/home/nick/dev/Freelance/Documenty_React/src/constants.js');
+
+    __REACT_HOT_LOADER__.register(MAIN_TITLE, 'MAIN_TITLE', '/home/nick/dev/Freelance/Documenty_React/src/constants.js');
+
+    __REACT_HOT_LOADER__.register(ANIMATIONS, 'ANIMATIONS', '/home/nick/dev/Freelance/Documenty_React/src/constants.js');
+
+    __REACT_HOT_LOADER__.register(LIST_PREVIEWS_SIZE, 'LIST_PREVIEWS_SIZE', '/home/nick/dev/Freelance/Documenty_React/src/constants.js');
+}();
+
+;
 
 /***/ }),
 
@@ -52022,6 +52836,17 @@ Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MOD
 	null,
 	__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__components_App__["a" /* default */], { link: link })
 ), document.getElementById('react-container'));
+;
+
+var _temp = function () {
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
+
+	__REACT_HOT_LOADER__.register(link, 'link', '/home/nick/dev/Freelance/Documenty_React/src/index.js');
+}();
+
+;
 
 /***/ }),
 

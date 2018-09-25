@@ -35,6 +35,8 @@ export default class Blog extends Component {
         if (tag !== this.props.match.params.tag) {
             this._updatePosts(tag)
             changeActiveTag(tag)
+            
+            window.scrollTo(0, 0)
         } 
     }
 

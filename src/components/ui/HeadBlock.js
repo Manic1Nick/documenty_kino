@@ -52,10 +52,10 @@ export default class HeadBlock extends Component {
                         className={ tag === activeTag ? 'active' : '' }
                         onClick={ () => changeActiveTag(tag) } 
                     >
-                        <Link to={ `/${tag}` } title='Сортувати за роздiлом'>
+                        <Link to={ `/${tag}` } title='Вiдiбрати за роздiлом'>
                             <span className='link-content'>
-                                <span>{ LINKS_UKR[i] }</span>
                                 <ion-icon name="film"></ion-icon>
+                                <span>{ LINKS_UKR[i] }</span>
                             </span>
                         </Link>
                     </li>
@@ -84,7 +84,7 @@ export default class HeadBlock extends Component {
                 
                 <div className="main-nav">
                 {
-                    screenWidth > 480
+                    screenWidth > 1023
                 ?
                     this.renderLinks()
                 :

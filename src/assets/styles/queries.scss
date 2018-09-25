@@ -11,12 +11,6 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
                 top: 60%;
         }
     }
-
-    .App {
-        .Blog {
-            // font-size: 90%;
-        }
-    }
 }
 
 /* Big screens to 1440px (widths smaller than 1600px row) */
@@ -54,7 +48,6 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
     .App {
         header {
             padding-right: 2%;
-            font-size: 80%;
         }
 
         .Blog {
@@ -94,23 +87,6 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
                 }
             }
         }
-
-        footer {
-            height: 40px;
-
-            .copyright-text {
-                font-size: 80%;
-            }
-
-            .social-icons {
-                .social-icon {
-                    a:link,
-                    a:visited {
-                        font-size: 130%;
-                    }
-                }
-            }
-        }
     }
 
 }
@@ -121,22 +97,22 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
 
     .App {
         header {
-            padding-left: 8%;
+            padding: 0 15%;
             height: 75px;
 
-            .main-nav {    
+            .main-nav {   
+                flex: 1;
+
                 ul {        
                     li { 
                         font-size: 80%;
-                        // a:after {  margin-top: -20px; }
                     }
                 }
             }
         }
 
         .Blog {
-            width: 90%;
-            font-size: 70%;
+            width: 80%;
 
             .ArticlePage {
                 .ArticleBlock {
@@ -208,31 +184,22 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
 
     .App {
         header {
-            padding-left: 5%;
-            height: 50px;
+            padding: 0 2%;
+            height: 60px;
 
             .site-title {
-                -webkit-box-flex: 1;
-                    -ms-flex: 1;
-                        flex: 1;
                 font-size: 80%;
             }
             .main-nav {    
-                -webkit-box-flex: 2;    
-                    -ms-flex: 2;    
-                        flex: 2;
-                ul {        
-                    li { 
-                        font-size: 70%;
-                    }
-                }
+                -webkit-box-flex: 3;    
+                    -ms-flex: 3;    
+                        flex: 3;
             }
         }
 
         .Blog { 
             width: 100%;
             padding-right: 1%;
-            // font-size: 70%;
 
             .blog-nav {
                 width: 30px;
@@ -271,7 +238,6 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
 
         footer {
             height: 35px;
-            font-size: 70%;
         }
     }
 }
@@ -279,25 +245,8 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
 /* Small phones to small tablets from 481px to 623px */
 @media only screen and (max-width: 623px) {
     .App {
-        header {
-            padding-left: 2%;
-            height: 40px;
-
-            .main-nav {    
-                ul {
-                    li { 
-                        margin-left: 10px;
-                        font-size: 60%;
-
-                        // a:link { padding-bottom: 20px; }
-                        // a:after {  margin-top: -10px; }
-                    }
-                }
-            }
-        }
         .Blog {           
             padding-top: 0;
-            font-size: 60%;
 
             .blog-nav {
                 width: 20px;
@@ -318,7 +267,7 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
                             }
 
                             .article-info {
-                                font-size: 80%;
+                                // font-size: 80%;
     
                                 .view-count {
                                     display: flex;
@@ -333,7 +282,7 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
                                 }
                             }
                             
-                            .article-content { font-size: 70%; }
+                            // .article-content { font-size: 70%; }
                         }
                     }      
                 }
@@ -384,11 +333,6 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
     .App {
         header {
             height: 50px;
-            
-            // position: fixed;
-            // top: 0;
-            // z-index: 10;
-            // background-color: $colorBackgroundMenuMobile;
 
             .site-title {
                 -webkit-box-flex: 2;
@@ -407,38 +351,13 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
                     -ms-flex: 1;   
                         flex: 1;
                 margin-right: 10px;
-
-                .dd-menu {                
-                    float: right;
-                    cursor: pointer;
-    
-                    ion-icon {
-                        width: 30px;
-                        height: 30px;
-                    }
-    
-                    ul { 
-                        width: 130%;
-                        height: 100%;
-
-                        li { 
-                            width: 100%;
-                            margin: 0 auto;
-
-                            a { 
-                                font-size: 120%;
-                                text-align: center; 
-                            }
-                            a:link { padding-bottom: 10px; }
-                            a:hover { background-color: $colorBackground; }
-                            // a:after { content: ''; }
-                        }
-                    }
-                }
             }
         }
 
         .Blog {
+            font-size: 70%;
+            padding-left: 1%;
+            padding-right: 3%;
             overflow-x: hidden;
             // margin-top: 100px; //55px without text "beta-version"            
 
@@ -482,18 +401,19 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
         footer {           
             flex-direction: column;
             text-align: center;
-            height: 80px;
+            height: 100px;
             margin-bottom: 0;
 
-            // .copyright-text { font-size: 70%; }
+            .copyright-text { 
+                font-size: 70%; 
+                margin: 0 10px;
+            }
 
             .social-icons {
-                // font-size: 100%;
                 margin: 10px;
 
                 .social-icon {
                     a {
-                        // width: 20px;
                         margin: 5px;
                     }
                 }
