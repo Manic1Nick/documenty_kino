@@ -47,10 +47,12 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
 
     .App {
         header {
-            padding-right: 2%;
+
+            padding: 0.5% 0.2%;
         }
 
         .Blog {
+            width: 90%;
             font-size: 80%;
 
             .ArticlePage { 
@@ -171,6 +173,28 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
                 }
             }
         }
+
+        footer {           
+            flex-direction: column;
+            text-align: center;
+            height: 100px;
+            margin-bottom: 0;
+
+            .copyright-text { 
+                font-size: 70%; 
+                margin: 0 10px;
+            }
+
+            .social-icons {
+                margin: 10px;
+
+                .social-icon {
+                    a {
+                        margin: 5px;
+                    }
+                }
+            }    
+        }
     }
     
 }
@@ -234,10 +258,6 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
                     min-height: 240px;
                 }
             }        
-        }
-
-        footer {
-            height: 35px;
         }
     }
 }
@@ -396,28 +416,6 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
                 overflow-y: auto;
             }
 
-        }
-
-        footer {           
-            flex-direction: column;
-            text-align: center;
-            height: 100px;
-            margin-bottom: 0;
-
-            .copyright-text { 
-                font-size: 70%; 
-                margin: 0 10px;
-            }
-
-            .social-icons {
-                margin: 10px;
-
-                .social-icon {
-                    a {
-                        margin: 5px;
-                    }
-                }
-            }    
         }
     }
 }
