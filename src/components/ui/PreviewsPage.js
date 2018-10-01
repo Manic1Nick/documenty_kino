@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { PropTypes } from 'prop-types'
 
 import PreviewsList from './PreviewsList'
-import PreviewsGrid from './PreviewsGrid'
+// import PreviewsGrid from './PreviewsGrid'
 import ArrowButton from './ArrowButton'
 
 import { LIST_PREVIEWS_SIZE as SIZE} from '../../constants'
@@ -64,7 +64,7 @@ export default class PreviewsPage extends Component {
 
         return(
             <div className='PreviewsPage'>
-                <PreviewsGrid 
+                <PreviewsList 
                     { ...this.props }
                     posts={ pages[activePageIndex] } 
                     onPrev={ this.handleOpenPrev } //for mobile scrolling

@@ -76,7 +76,7 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
             }
 
             .PreviewsPage {
-                .PreviewsGrid {
+                .PreviewsList {
                     .PreviewsItem {
                         width: 250px;
                     }
@@ -232,7 +232,7 @@ $colorArticleShifted: rgba(0, 0, 0, 0.3);
             }
 
             .PreviewsPage 
-            .ListPreviews 
+            .PreviewsList 
             .PreviewsItem 
             .article-preview-content 
             .article-preview-title 

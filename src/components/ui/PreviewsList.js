@@ -4,22 +4,21 @@ import PreviewsItem from './PreviewsItem'
 export default class PreviewsList extends Component {
 
     shouldComponentUpdate = (nextProps) => {
-        return nextProps.postsOnScreen !== this.props.postsOnScreen
+        return nextProps.posts !== this.props.posts
     }
 
     render() {
-        const { postsOnScreen } = this.props
+        const { posts } = this.props
 
-        if (!postsOnScreen) return null
+        if (!posts) return null
 
         return(
-            <div className='ListPreviews'>
+            <div className='PreviewsList'>
             {
-                postsOnScreen.map((post, i) =>
+                posts.map((post, i) =>
                     <PreviewsItem 
                         key={i} 
-                        post={ post } 
-                        timeoutMs={ 100*i } 
+                        post={ post }
                         { ...this.props } 
                     />
                 )

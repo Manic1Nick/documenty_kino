@@ -576,26 +576,21 @@ count views in blog */
         .PreviewsPage {
             width: 100%;
 
-            .PreviewsGrid {
+            .PreviewsList {
+                display: flex;
+                flex-direction: column;
+                flex: 1;
                 margin: 2% auto;
     
                 .PreviewsItem {
+                    position: relative;
                     margin: 0.5em;
                     padding: 0.5em;
-                    width: 400px;
+                    width: 100%;
                     cursor: pointer;
 
-                    background: transparent;
-                    padding:1rem 1rem;
-                    transition: all .5s ease;
-                    color: #41403E;
-                    outline: none;
-                    box-shadow: 20px 38px 34px -26px hsla(0,0%,0%,.2);
-                    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-                    border: solid 2px #41403E;
-
                     .article-preview-header {
-                        float: left;
+                        // float: left;
                         font-family: $fontMenu, arial;
                         cursor: pointer;               
                                     
@@ -607,6 +602,9 @@ count views in blog */
                     }
     
                     .article-preview-image {                        
+                        float: left;
+                        width: 30%;
+                        
                         img { 
                             width: 100%;
                             max-width: 400px;
@@ -615,12 +613,17 @@ count views in blog */
                     }
     
                     .article-preview-content {
+                        float: right;
+                        width: 70%;
+                        padding: 0 2%;
+
                         p {
                             width: 100%;
                             margin-bottom: 10px;
                         }
 
                         .article-preview-title {
+                            font-size: 140%;
                             font-family: $fontTextTitlePreview;
 
                             .view-count {
@@ -654,7 +657,6 @@ count views in blog */
     
                 .PreviewsItem:hover {
                     background: $colorBackgroundLight;
-                    box-shadow:2px 8px 4px -6px hsla(0,0%,0%,.3);
                 }
             }
         }        
