@@ -13,22 +13,22 @@ const FooterBlock = () => {
             <div className='social-icons'>   
 
                 <div className='social-icon'>              
-                    <a href="http://facebook.com" title='Читати у Facebook'>
+                    <a href="https://www.facebook.com/Ukrdocuments/" title='Читати у Facebook'>
                         <ion-icon id="fb" name="logo-facebook"></ion-icon>
                     </a>
                 </div>
 
-                <div className='social-icon'>     
-                    <a href="http://twitter.com" title='Читати в Twitter'>
-                        <ion-icon id="tw" name="logo-twitter"></ion-icon>
+                <div className='social-icon'>
+                    <a href="https://t.me/ukraineDocs" title='Читати в Telegram'>
+                        <ion-icon id="tg" name="paper-plane"></ion-icon>
                     </a>
                 </div>
 
-                <div className='social-icon'>
-                    <a href="http://googleplus.com" title='Читати в Google+'>
-                        <ion-icon id="gp" name="logo-googleplus"></ion-icon>
+                {/*<div className='social-icon'>     
+                    <a href="http://twitter.com" title='Читати в Twitter'>
+                        <ion-icon id="tw" name="logo-twitter"></ion-icon>
                     </a>
-                </div>
+                </div>*/}
             </div>
         </footer>
     )

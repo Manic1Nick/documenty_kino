@@ -68,16 +68,6 @@ const SocialShareButtons = ({ post: { id, tag, title, image } }) => {
                 </a>
             </FacebookShareButton>
 
-            <TwitterShareButton 
-                className='social-icon' 
-                title={ shareInfo } 
-                url={ postLink }
-            >
-                <a title='Поширити у Twitter'>
-                    <TwitterIcon size={32} round={true} />
-                </a>
-            </TwitterShareButton>
-
             <TelegramShareButton 
                 className='social-icon' 
                 title={ shareInfo } 
@@ -87,6 +77,16 @@ const SocialShareButtons = ({ post: { id, tag, title, image } }) => {
                     <TelegramIcon size={32} round={true} />
                 </a>
             </TelegramShareButton>
+
+            <TwitterShareButton 
+                className='social-icon' 
+                title={ shareInfo } 
+                url={ postLink }
+            >
+                <a title='Поширити у Twitter'>
+                    <TwitterIcon size={32} round={true} />
+                </a>
+            </TwitterShareButton>
 
         </div>
     )
